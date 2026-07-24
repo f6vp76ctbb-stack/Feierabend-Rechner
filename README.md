@@ -18,13 +18,18 @@ schöner Hauptbildschirm (Countdown, Dark Mode, Overlays). `flutter analyze` + `
 sind grün (25 Tests).
 
 ## Testen auf dem iPhone (GitHub Pages)
-Jeder Push baut die App und veröffentlicht sie automatisch als Web-App.
-**Einmalig aktivieren:** Repo → *Settings* → *Pages* → *Source* = **GitHub Actions**.
+Jeder Push baut die App, prüft sie (analyze + test) und schiebt die Web-Version in den
+`gh-pages`-Branch. **Einmalig aktivieren:** Repo → *Settings* → *Pages* →
+*Source* = **Deploy from a branch** → Branch **`gh-pages`** → **`/ (root)`** → *Save*.
 Danach erreichbar unter:
 
     https://f6vp76ctbb-stack.github.io/Feierabend-Rechner/
 
 Auf dem iPhone in Safari öffnen → Teilen → **Zum Home-Bildschirm** → startet wie eine echte App.
+
+> Hinweis: Wir liefern bewusst über den `gh-pages`-Branch aus (nicht über die
+> „GitHub Actions"-Pages-Quelle), weil letztere nur vom Default-Branch deployt —
+> die Branch-Methode funktioniert auch vom Feature-Branch.
 
 ## Lokal entwickeln
 ```bash
