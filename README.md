@@ -13,4 +13,22 @@ Geplant für den **Google Play Store** (Freemium mit einmaligem Pro-Kauf).
 - **[MARKETING.md](MARKETING.md)** — Vermarktung, ASO & Kauf-Anreize
 
 ## Status
-Phase 0 (Planung) abgeschlossen. Nächster Schritt: Flutter-Projekt initialisieren (siehe TODO.md → Phase 1).
+Phasen 0–3 stehen: Flutter-Projekt, getestete Kern-Logik und ein funktionierender,
+schöner Hauptbildschirm (Countdown, Dark Mode, Overlays). `flutter analyze` + `flutter test`
+sind grün (25 Tests).
+
+## Testen auf dem iPhone (GitHub Pages)
+Jeder Push baut die App und veröffentlicht sie automatisch als Web-App.
+**Einmalig aktivieren:** Repo → *Settings* → *Pages* → *Source* = **GitHub Actions**.
+Danach erreichbar unter:
+
+    https://f6vp76ctbb-stack.github.io/Feierabend-Rechner/
+
+Auf dem iPhone in Safari öffnen → Teilen → **Zum Home-Bildschirm** → startet wie eine echte App.
+
+## Lokal entwickeln
+```bash
+flutter pub get
+flutter test        # Tests
+flutter run -d chrome   # oder ein Gerät/Emulator
+```

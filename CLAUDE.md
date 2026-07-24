@@ -144,5 +144,15 @@ test/                      # Unit- + Widget-Tests (domain/ = 100 % Ziel)
 
 ## 9. Aktueller Stand
 
-- Phase 0 (Planung): Dokumente angelegt. Flutter-Projekt noch **nicht** initialisiert.
-- Nächster Schritt: siehe `TODO.md` → Phase 1.
+- **Phasen 0–3 erledigt.** Flutter-Projekt initialisiert (`de.feierabendrechner`,
+  Plattformen web/android/ios). Riverpod, Material-3-Theme (hell/dunkel), Inter als
+  gebündelte Variable Font.
+- **Domain** (`lib/domain/`): `FeierabendCalculator` + Modelle, voll unit-getestet
+  (18 Domain-, 7 Format-, 2 Widget-Tests → grün). `flutter analyze` sauber.
+- **UI** (`lib/features/home/`): Hauptbildschirm mit Startzeit-Picker, Arbeitszeit-/
+  Pausen-Overlays (Bottom-Sheet), großem Ergebnis, Countdown-Ring, ArbZG-Toggle.
+- **Testen/Deploy**: GitHub-Actions-Workflow (`.github/workflows/deploy.yml`) prüft +
+  baut Web + deployt auf GitHub Pages. iPhone-Test via PWA („Zum Home-Bildschirm").
+- **Wichtig für Web/Font**: Gewichte über `fontVariations` (Variable Font), nicht `fontWeight`.
+- Nächster Schritt: siehe `TODO.md` → Phase 4 (Persistenz mit shared_preferences/Hive)
+  bzw. Phase 5 (Pro-Features). Offen: echte Zeitzonen-/DST-Behandlung.

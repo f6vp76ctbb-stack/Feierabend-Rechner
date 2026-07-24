@@ -10,33 +10,38 @@ Legende: `[ ]` offen · `[x]` erledigt · 👤 = du · 🤖 = Claude · 🤝 = z
 
 ## Phase 0 — Fundament ✅
 - [x] 🤖 CLAUDE.md, MASTERPLAN.md, TODO.md, MARKETING.md anlegen
+- [ ] 👤 **GitHub Pages aktivieren** für iPhone-Test: Repo → Settings → Pages →
+      Source = „GitHub Actions" (einmalig). Danach deployt jeder Push automatisch.
+      URL: `https://f6vp76ctbb-stack.github.io/Feierabend-Rechner/`
 - [ ] 👤 App-Name & Verfügbarkeit prüfen (Play Store Suche + ggf. Markenrecherche DPMA)
 - [ ] 👤 Google-Play-Entwicklerkonto anlegen (einmalig 25 $) — kann parallel laufen
 - [ ] 👤 Entscheiden: finaler Preis-Startwert (Empfehlung: 3,99 € einmalig)
 
-## Phase 1 — Gerüst 🤖
-- [ ] 🤖 `flutter create` mit Package-ID (z. B. `de.deinname.feierabendrechner`)
-- [ ] 🤖 Ordnerstruktur laut CLAUDE.md §6 anlegen
-- [ ] 🤖 Riverpod einbinden, App-Skelett + Routing
-- [ ] 🤖 Design-System: Theme (hell/dunkel), Farben, Typografie, Basis-Widgets
-- [ ] 🤖 `.gitignore`, README-Update, GitHub-Actions-CI (`flutter analyze` + `flutter test`)
+## Phase 1 — Gerüst ✅
+- [x] 🤖 `flutter create` mit Package-ID (`de.feierabendrechner`)
+- [x] 🤖 Ordnerstruktur laut CLAUDE.md §6 anlegen
+- [x] 🤖 Riverpod einbinden, App-Skelett + Routing
+- [x] 🤖 Design-System: Theme (hell/dunkel), Farben, Typografie (Inter gebündelt)
+- [x] 🤖 GitHub-Actions-CI (`flutter analyze` + `flutter test`) + Web-Deploy auf Pages
 - [ ] 👤 Flutter lokal installieren (falls du selbst bauen/testen willst) — optional
 
-## Phase 2 — Kern-Logik 🤖
-- [ ] 🤖 Modelle: `Startzeit`, `Arbeitszeit`, `Pause`, `Feierabend-Ergebnis`
-- [ ] 🤖 `FeierabendCalculator` implementieren (start + arbeit + pause)
-- [ ] 🤖 ArbZG-Auto-Pausenlogik (>6 h→30, >9 h→45) als optionalen Modus
-- [ ] 🤖 Edge Cases: Mitternachts-Überlauf, 0-Pause, Teilzeit, Rundung auf Minute
-- [ ] 🤖 Unit-Tests für alle Fälle (Ziel: 100 % der Domain)
+## Phase 2 — Kern-Logik ✅
+- [x] 🤖 Modelle: `WorkConfig`, `FeierabendResult`
+- [x] 🤖 `FeierabendCalculator` implementieren (start + arbeit + pause)
+- [x] 🤖 ArbZG-Auto-Pausenlogik (>6 h→30, >9 h→45) als optionalen Modus
+- [x] 🤖 Edge Cases: Mitternachts-Überlauf, 0-Pause, Teilzeit, Rundung auf Minute
+- [x] 🤖 Unit-Tests für alle Fälle (18 Domain- + 7 Format-Tests, grün)
+- [ ] 🤖 TODO: echte Zeitzonen-/DST-Behandlung (aktuell bewusst simpel)
 
-## Phase 3 — Hauptbildschirm (MVP-UI) 🤖
-- [ ] 🤖 Startzeit-Picker (schön, groß, „jetzt" als Default)
-- [ ] 🤖 Arbeitszeit- & Pausen-Eingabe (Stepper/Slider, Default 8 h / 45 min)
-- [ ] 🤖 Großes Ergebnis: „Feierabend um **15:29**"
-- [ ] 🤖 Live-Countdown („noch 6 Std 12 Min")
-- [ ] 🤖 Dark Mode gleichwertig
-- [ ] 🤖 Sanfte Overlays/Animationen + Haptik
+## Phase 3 — Hauptbildschirm (MVP-UI) ✅
+- [x] 🤖 Startzeit-Picker (24 h, „jetzt" als Default)
+- [x] 🤖 Arbeitszeit- & Pausen-Eingabe (Bottom-Sheet mit Stepper + Presets)
+- [x] 🤖 Großes Ergebnis: „Feierabend um **15:29**" (+1-Tag-Badge bei Nachtschicht)
+- [x] 🤖 Live-Countdown im Fortschritts-Ring („noch 6 Std 12 Min")
+- [x] 🤖 Dark Mode gleichwertig (folgt System)
+- [x] 🤖 Sanfte Overlays/Animationen + Haptik
 - [ ] 👤 Erstes Feedback: Fühlt sich „ein-Blick-klar" an? Farben angenehm?
+- [ ] 🤖 TODO: gebündelte Schrift ist schon offline; Font-Datei ist Variable Inter
 
 ## Phase 4 — Persistenz & Settings 🤖
 - [ ] 🤖 Hive einrichten, letzte Eingaben & Defaults speichern

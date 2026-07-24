@@ -1,0 +1,67 @@
+name: CI & Deploy (GitHub Pages)
+
+# Baut die App bei jedem Push: prüft (analyze + test), baut die Web-Version
+# und veröffentlicht sie auf GitHub Pages (zum Testen z. B. auf dem iPhone).
+on:
+  push:
+    branches:
+      - main
+      - claude/feierabend-rechner-app-joa1y4
+  workflow_dispatch:
+
+# Nur ein Deploy gleichzeitig.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+env:
+  FLUTTER_VERSION: "3.44.8"
+  # Muss zum Repo-Namen passen (GitHub Pages liegt unter /<repo>/).
+  BASE_HREF: "/Feierabend-Rechner/"
+
+jobs:
+  build:
+    name: Prüfen & Web bauen
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+
+      - name: Dependencies
+        run: flutter pub get
+
+      - name: Analyze
+        run: flutter analyze
+
+      - name: Test
+        run: flutter test
+
+      - name: Web bauen
+        run: flutter build web --release --base-href "$BASE_HREF"
+
+      - name: Pages-Artefakt hochladen
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: build/web
+
+  deploy:
+    name: Auf GitHub Pages veröffentlichen
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
