@@ -1,6 +1,9 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../../data/sprueche.dart';
 import '../../../domain/feierabend_calculator.dart';
 import '../../../domain/models/feierabend_result.dart';
 import '../../../domain/models/work_config.dart';
@@ -77,6 +80,37 @@ final remainingProvider = Provider<Duration>((ref) {
   final end = ref.watch(feierabendDateTimeProvider);
   final now = ref.watch(nowProvider).valueOrNull ?? DateTime.now();
   return end.difference(now);
+});
+
+/// Ausgewählte Berufsgruppe für den Sprüche-Katalog (Default: Allgemein).
+class BerufsgruppeNotifier extends Notifier<String> {
+  @override
+  String build() => Sprueche.defaultGruppe;
+
+  void set(String gruppe) => state = gruppe;
+}
+
+final berufsgruppeProvider =
+    NotifierProvider<BerufsgruppeNotifier, String>(BerufsgruppeNotifier.new);
+
+/// Seed, der den aktuell gezeigten Spruch bestimmt. „Neuer Spruch" erhöht ihn.
+class SpruchSeedNotifier extends Notifier<int> {
+  @override
+  int build() => DateTime.now().millisecondsSinceEpoch;
+
+  void shuffle() => state = state + 1 + Random().nextInt(100000);
+}
+
+final spruchSeedProvider =
+    NotifierProvider<SpruchSeedNotifier, int>(SpruchSeedNotifier.new);
+
+/// Aktueller Spruch, abhängig von Berufsgruppe + Seed.
+final spruchProvider = Provider<String>((ref) {
+  final gruppe = ref.watch(berufsgruppeProvider);
+  final seed = ref.watch(spruchSeedProvider);
+  final list = Sprueche.forGruppe(gruppe);
+  if (list.isEmpty) return '';
+  return list[Random(seed).nextInt(list.length)];
 });
 
 /// Fortschritt des Arbeitstags 0.0–1.0 (für den Countdown-Ring).

@@ -7,6 +7,8 @@ import '../../design/app_colors.dart';
 import 'state/home_providers.dart';
 import 'widgets/countdown_ring.dart';
 import 'widgets/duration_adjust_sheet.dart';
+import 'widgets/spruch_card.dart';
+import 'widgets/start_time_sheet.dart';
 
 /// Hauptbildschirm — beantwortet EINE Frage: „Wann habe ich frei?"
 class HomeScreen extends ConsumerWidget {
@@ -51,7 +53,9 @@ class HomeScreen extends ConsumerWidget {
                             ),
                           ),
                         ),
-                        const SizedBox(height: 28),
+                        const SizedBox(height: 24),
+                        const SpruchCard(),
+                        const SizedBox(height: 12),
                         _InputCard(),
                         const SizedBox(height: 16),
                         Text(
@@ -180,6 +184,9 @@ class _InputCard extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final start = ref.watch(startTimeProvider);
     final config = ref.watch(workConfigProvider);
+    final calc = ref.watch(calculatorProvider);
+    final effectiveBreak = calc.effectiveBreak(config);
+    final auto = config.arbzgAutoBreak;
 
     return Card(
       child: Padding(
@@ -189,7 +196,7 @@ class _InputCard extends ConsumerWidget {
             _Tile(
               icon: Icons.login_rounded,
               label: 'Start',
-              value: start.format(context),
+              value: Formatting.clock(start.hour, start.minute),
               onTap: () => _pickStart(context, ref),
             ),
             const Divider(height: 1, indent: 16, endIndent: 16),
@@ -203,7 +210,9 @@ class _InputCard extends ConsumerWidget {
             _Tile(
               icon: Icons.coffee_rounded,
               label: 'Pause',
-              value: Formatting.durationHm(config.breakTime),
+              value: Formatting.durationHm(effectiveBreak),
+              subtitle: auto ? 'automatisch nach ArbZG' : null,
+              enabled: !auto,
               onTap: () => _pickBreak(context, ref),
             ),
             const Divider(height: 1, indent: 16, endIndent: 16),
@@ -225,16 +234,7 @@ class _InputCard extends ConsumerWidget {
   }
 
   Future<void> _pickStart(BuildContext context, WidgetRef ref) async {
-    final current = ref.read(startTimeProvider);
-    final picked = await showTimePicker(
-      context: context,
-      initialTime: current,
-      initialEntryMode: TimePickerEntryMode.input,
-      builder: (context, child) => MediaQuery(
-        data: MediaQuery.of(context).copyWith(alwaysUse24HourFormat: true),
-        child: child!,
-      ),
-    );
+    final picked = await StartTimeSheet.show(context, ref.read(startTimeProvider));
     if (picked != null) {
       ref.read(startTimeProvider.notifier).set(picked);
     }
@@ -287,33 +287,46 @@ class _Tile extends StatelessWidget {
     required this.label,
     required this.value,
     required this.onTap,
+    this.subtitle,
+    this.enabled = true,
   });
 
   final IconData icon;
   final String label;
   final String value;
   final VoidCallback onTap;
+  final String? subtitle;
+  final bool enabled;
 
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final scheme = theme.colorScheme;
+    final dim = enabled ? 1.0 : 0.5;
     return ListTile(
+      enabled: enabled,
       contentPadding: const EdgeInsets.symmetric(horizontal: 16),
-      leading: Icon(icon, color: theme.colorScheme.primary),
+      leading: Icon(icon, color: scheme.primary.withValues(alpha: dim)),
       title: Text(label, style: theme.textTheme.bodyLarge),
+      subtitle: subtitle == null ? null : Text(subtitle!, style: theme.textTheme.bodyMedium),
       trailing: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
           Text(value, style: theme.textTheme.titleMedium),
           const SizedBox(width: 4),
-          Icon(Icons.chevron_right_rounded,
-              color: theme.colorScheme.onSurface.withValues(alpha: 0.3)),
+          Icon(
+            enabled ? Icons.chevron_right_rounded : Icons.lock_outline_rounded,
+            size: enabled ? 24 : 18,
+            color: scheme.onSurface.withValues(alpha: 0.3),
+          ),
         ],
       ),
-      onTap: () {
-        HapticFeedback.selectionClick();
-        onTap();
-      },
+      onTap: enabled
+          ? () {
+              HapticFeedback.selectionClick();
+              onTap();
+            }
+          : null,
     );
   }
 }

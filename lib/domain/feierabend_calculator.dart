@@ -28,12 +28,13 @@ class FeierabendCalculator {
     return Duration.zero;
   }
 
-  /// Effektive Pause. Im ArbZG-Auto-Modus wird die eingestellte Pause auf das
-  /// gesetzliche Minimum angehoben (aber nie darunter gesenkt).
+  /// Effektive Pause. Im ArbZG-Auto-Modus wird die Pause **automatisch** auf das
+  /// gesetzliche Minimum für die aktuelle Arbeitszeit gesetzt (die manuell
+  /// eingestellte Pause wird dann ignoriert). Ohne Auto-Modus gilt die manuelle
+  /// Pause.
   Duration effectiveBreak(WorkConfig config) {
     if (!config.arbzgAutoBreak) return config.breakTime;
-    final legal = legalMinimumBreak(config.work);
-    return config.breakTime >= legal ? config.breakTime : legal;
+    return legalMinimumBreak(config.work);
   }
 
   /// Gesamte Anwesenheit (Arbeit + effektive Pause).

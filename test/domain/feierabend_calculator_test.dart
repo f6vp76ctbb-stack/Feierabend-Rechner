@@ -128,7 +128,7 @@ void main() {
       expect(r.breakUsed, const Duration(minutes: 45));
     });
 
-    test('Eingestellte Pause über Minimum bleibt erhalten (60 > 30)', () {
+    test('Auto-Modus überschreibt manuelle Pause auf gesetzliches Minimum', () {
       final r = calc.calculate(
         start: atTime(8, 0),
         config: const WorkConfig(
@@ -137,7 +137,22 @@ void main() {
           arbzgAutoBreak: true,
         ),
       );
-      expect(r.breakUsed, const Duration(minutes: 60));
+      // 8 h → gesetzliches Minimum 30 min (nicht die manuellen 60).
+      expect(r.breakUsed, const Duration(minutes: 30));
+    });
+
+    test('≤ 6 h Arbeit im Auto-Modus → 0 Pause', () {
+      final r = calc.calculate(
+        start: atTime(9, 0),
+        config: const WorkConfig(
+          work: Duration(hours: 6),
+          breakTime: Duration(minutes: 45),
+          arbzgAutoBreak: true,
+        ),
+      );
+      expect(r.breakUsed, Duration.zero);
+      expect(r.endHour, 15);
+      expect(r.endMinute, 0);
     });
 
     test('Ohne Auto-Modus wird nichts angehoben (10h, 0 Pause bleibt 0)', () {
