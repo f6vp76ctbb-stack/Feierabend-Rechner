@@ -18,14 +18,18 @@
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <!-- Kein viewport-fit=cover: sonst liegt der Inhalt unter der iOS-Statusleiste
+       und Taps werden um den Safe-Area-Versatz verschoben registriert. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Berechne in Sekunden, wann du Feierabend hast.">
   <meta name="theme-color" content="#6C5CE7">
 
   <!-- iOS: als App auf dem Home-Bildschirm -->
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <!-- 'default' (nicht translucent): Inhalt sitzt unter der Statusleiste,
+       damit sichtbare Position und Tap-Trefferfläche exakt übereinstimmen. -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="Feierabend">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
