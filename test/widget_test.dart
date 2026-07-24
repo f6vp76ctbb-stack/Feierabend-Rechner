@@ -1,13 +1,23 @@
 import 'package:feierabend_rechner/app.dart';
+import 'package:feierabend_rechner/features/home/state/home_providers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+
+/// Baut die App mit gemockter Persistenz (leere Voreinstellungen).
+Future<Widget> buildApp([Map<String, Object> initial = const {}]) async {
+  SharedPreferences.setMockInitialValues(initial);
+  final prefs = await SharedPreferences.getInstance();
+  return ProviderScope(
+    overrides: [sharedPreferencesProvider.overrideWithValue(prefs)],
+    child: const FeierabendApp(),
+  );
+}
 
 void main() {
   testWidgets('Home zeigt Feierabend-Überschrift und Eingaben', (tester) async {
-    await tester.pumpWidget(
-      const ProviderScope(child: FeierabendApp()),
-    );
+    await tester.pumpWidget(await buildApp());
     await tester.pump();
 
     expect(find.text('Feierabend'), findsOneWidget);
@@ -18,9 +28,7 @@ void main() {
   });
 
   testWidgets('Pause-Zeile öffnet das Einstell-Overlay', (tester) async {
-    await tester.pumpWidget(
-      const ProviderScope(child: FeierabendApp()),
-    );
+    await tester.pumpWidget(await buildApp());
     await tester.pump();
 
     await tester.ensureVisible(find.text('Pause'));
@@ -32,7 +40,7 @@ void main() {
   });
 
   testWidgets('Startzeit-Overlay zeigt ▲▼-Stepper und „Jetzt"', (tester) async {
-    await tester.pumpWidget(const ProviderScope(child: FeierabendApp()));
+    await tester.pumpWidget(await buildApp());
     await tester.pump();
 
     await tester.ensureVisible(find.text('Start'));
@@ -48,10 +56,30 @@ void main() {
   });
 
   testWidgets('Sprüche-Karte zeigt Berufsgruppe „Allgemein"', (tester) async {
-    await tester.pumpWidget(const ProviderScope(child: FeierabendApp()));
+    await tester.pumpWidget(await buildApp());
     await tester.pump();
 
     expect(find.text('Allgemein'), findsOneWidget);
     expect(find.text('neuer Spruch'), findsOneWidget);
+  });
+
+  testWidgets('Gespeicherte Berufsgruppe wird beim Start geladen', (tester) async {
+    await tester.pumpWidget(await buildApp({'berufsgruppe': 'IT'}));
+    await tester.pump();
+
+    expect(find.text('IT'), findsOneWidget);
+  });
+
+  testWidgets('Einstellungen-Overlay bietet Theme-Wahl', (tester) async {
+    await tester.pumpWidget(await buildApp());
+    await tester.pump();
+
+    await tester.tap(find.byIcon(Icons.tune_rounded));
+    await tester.pumpAndSettle();
+
+    expect(find.text('Einstellungen'), findsOneWidget);
+    expect(find.text('System'), findsOneWidget);
+    expect(find.text('Hell'), findsOneWidget);
+    expect(find.text('Dunkel'), findsOneWidget);
   });
 }

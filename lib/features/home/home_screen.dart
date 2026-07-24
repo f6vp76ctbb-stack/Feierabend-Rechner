@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/formatting.dart';
 import '../../design/app_colors.dart';
+import '../settings/settings_sheet.dart';
 import 'state/home_providers.dart';
 import 'widgets/countdown_ring.dart';
 import 'widgets/duration_adjust_sheet.dart';
@@ -100,6 +101,12 @@ class _Header extends StatelessWidget {
         ),
         const SizedBox(width: 12),
         Text('Feierabend', style: theme.textTheme.headlineMedium),
+        const Spacer(),
+        IconButton(
+          tooltip: 'Einstellungen',
+          icon: const Icon(Icons.tune_rounded),
+          onPressed: () => SettingsSheet.show(context),
+        ),
       ],
     );
   }

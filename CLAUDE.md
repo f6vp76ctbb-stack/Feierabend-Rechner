@@ -154,5 +154,13 @@ test/                      # Unit- + Widget-Tests (domain/ = 100 % Ziel)
 - **Testen/Deploy**: GitHub-Actions-Workflow (`.github/workflows/deploy.yml`) prüft +
   baut Web + deployt auf GitHub Pages. iPhone-Test via PWA („Zum Home-Bildschirm").
 - **Wichtig für Web/Font**: Gewichte über `fontVariations` (Variable Font), nicht `fontWeight`.
-- Nächster Schritt: siehe `TODO.md` → Phase 4 (Persistenz mit shared_preferences/Hive)
-  bzw. Phase 5 (Pro-Features). Offen: echte Zeitzonen-/DST-Behandlung.
+- **Phase 4 erledigt**: Persistenz via `shared_preferences` (`lib/data/settings_repository.dart`).
+  `sharedPreferencesProvider` wird in `main()` (async) und in Tests via
+  `SharedPreferences.setMockInitialValues` überschrieben. Gespeichert: Arbeitszeit,
+  Pause, ArbZG, letzte Startzeit, Berufsgruppe, Theme. Einstellungs-Overlay
+  (`lib/features/settings/`) mit Theme-Wahl.
+- **Sprüche**: `lib/data/sprueche.dart` — Katalog nach Berufsgruppe, in der UI wählbar.
+- **ArbZG-Auto**: setzt die Pause aufs gesetzliche Minimum (überschreibt manuelle Pause).
+- **Deploy**: über `gh-pages`-Branch (peaceiris), Pages-Quelle = „Deploy from a branch".
+- Nächster Schritt: `TODO.md` → Phase 5 (Pro-Features: Profile, Überstunden, Widget,
+  Notifications). Offen: echte Zeitzonen-/DST-Behandlung; Hive für strukturierte Daten.

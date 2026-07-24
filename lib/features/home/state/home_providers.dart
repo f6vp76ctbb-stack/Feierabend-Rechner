@@ -2,44 +2,80 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../../data/settings_repository.dart';
 import '../../../data/sprueche.dart';
 import '../../../domain/feierabend_calculator.dart';
 import '../../../domain/models/feierabend_result.dart';
 import '../../../domain/models/work_config.dart';
+
+/// Wird in `main()` (und in Tests) mit einer echten Instanz überschrieben.
+final sharedPreferencesProvider = Provider<SharedPreferences>(
+  (ref) => throw UnimplementedError('sharedPreferencesProvider must be overridden'),
+);
+
+/// Zentrale Persistenz-Schicht.
+final settingsRepositoryProvider = Provider<SettingsRepository>(
+  (ref) => SettingsRepository(ref.watch(sharedPreferencesProvider)),
+);
 
 /// Die (zustandslose) Kern-Logik als Provider — leicht mockbar in Tests.
 final calculatorProvider = Provider<FeierabendCalculator>(
   (ref) => const FeierabendCalculator(),
 );
 
-/// Startzeit (Wanduhr). Default: aktuelle Uhrzeit (auf Minute).
+/// Startzeit (Wanduhr). Zuletzt genutzte Zeit, sonst aktuelle Uhrzeit.
 class StartTimeNotifier extends Notifier<TimeOfDay> {
   @override
   TimeOfDay build() {
+    final saved = ref.read(settingsRepositoryProvider).loadStartMinutes();
+    if (saved != null) {
+      return TimeOfDay(hour: saved ~/ 60, minute: saved % 60);
+    }
     final now = DateTime.now();
     return TimeOfDay(hour: now.hour, minute: now.minute);
   }
 
-  void set(TimeOfDay value) => state = value;
+  void set(TimeOfDay value) {
+    state = value;
+    ref
+        .read(settingsRepositoryProvider)
+        .saveStartMinutes(value.hour * 60 + value.minute);
+  }
 
   void resetToNow() {
     final now = DateTime.now();
-    state = TimeOfDay(hour: now.hour, minute: now.minute);
+    set(TimeOfDay(hour: now.hour, minute: now.minute));
   }
 }
 
 final startTimeProvider =
     NotifierProvider<StartTimeNotifier, TimeOfDay>(StartTimeNotifier.new);
 
-/// Arbeitszeit-/Pausen-Konfiguration.
+/// Arbeitszeit-/Pausen-Konfiguration (persistiert).
 class WorkConfigNotifier extends Notifier<WorkConfig> {
   @override
-  WorkConfig build() => const WorkConfig();
+  WorkConfig build() =>
+      ref.read(settingsRepositoryProvider).loadWorkConfig() ?? const WorkConfig();
 
-  void setWork(Duration work) => state = state.copyWith(work: work);
-  void setBreak(Duration breakTime) => state = state.copyWith(breakTime: breakTime);
-  void setArbzgAuto(bool value) => state = state.copyWith(arbzgAutoBreak: value);
+  void _persist() =>
+      ref.read(settingsRepositoryProvider).saveWorkConfig(state);
+
+  void setWork(Duration work) {
+    state = state.copyWith(work: work);
+    _persist();
+  }
+
+  void setBreak(Duration breakTime) {
+    state = state.copyWith(breakTime: breakTime);
+    _persist();
+  }
+
+  void setArbzgAuto(bool value) {
+    state = state.copyWith(arbzgAutoBreak: value);
+    _persist();
+  }
 }
 
 final workConfigProvider =
@@ -82,12 +118,17 @@ final remainingProvider = Provider<Duration>((ref) {
   return end.difference(now);
 });
 
-/// Ausgewählte Berufsgruppe für den Sprüche-Katalog (Default: Allgemein).
+/// Ausgewählte Berufsgruppe für den Sprüche-Katalog (persistiert).
 class BerufsgruppeNotifier extends Notifier<String> {
   @override
-  String build() => Sprueche.defaultGruppe;
+  String build() =>
+      ref.read(settingsRepositoryProvider).loadBerufsgruppe() ??
+      Sprueche.defaultGruppe;
 
-  void set(String gruppe) => state = gruppe;
+  void set(String gruppe) {
+    state = gruppe;
+    ref.read(settingsRepositoryProvider).saveBerufsgruppe(gruppe);
+  }
 }
 
 final berufsgruppeProvider =
@@ -112,6 +153,29 @@ final spruchProvider = Provider<String>((ref) {
   if (list.isEmpty) return '';
   return list[Random(seed).nextInt(list.length)];
 });
+
+/// Theme-Modus (System/Hell/Dunkel), persistiert.
+class ThemeModeNotifier extends Notifier<ThemeMode> {
+  @override
+  ThemeMode build() {
+    switch (ref.read(settingsRepositoryProvider).loadThemeName()) {
+      case 'light':
+        return ThemeMode.light;
+      case 'dark':
+        return ThemeMode.dark;
+      default:
+        return ThemeMode.system;
+    }
+  }
+
+  void set(ThemeMode mode) {
+    state = mode;
+    ref.read(settingsRepositoryProvider).saveThemeName(mode.name);
+  }
+}
+
+final themeModeProvider =
+    NotifierProvider<ThemeModeNotifier, ThemeMode>(ThemeModeNotifier.new);
 
 /// Fortschritt des Arbeitstags 0.0–1.0 (für den Countdown-Ring).
 final progressProvider = Provider<double>((ref) {

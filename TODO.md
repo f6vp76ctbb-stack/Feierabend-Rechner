@@ -43,10 +43,12 @@ Legende: `[ ]` offen · `[x]` erledigt · 👤 = du · 🤖 = Claude · 🤝 = z
 - [ ] 👤 Erstes Feedback: Fühlt sich „ein-Blick-klar" an? Farben angenehm?
 - [ ] 🤖 TODO: gebündelte Schrift ist schon offline; Font-Datei ist Variable Inter
 
-## Phase 4 — Persistenz & Settings 🤖
-- [ ] 🤖 Hive einrichten, letzte Eingaben & Defaults speichern
-- [ ] 🤖 Settings-Screen (Standard-Arbeitszeit/Pause, ArbZG-Toggle, Theme)
-- [ ] 🤖 App merkt sich Zustand über Neustarts
+## Phase 4 — Persistenz & Settings ✅
+- [x] 🤖 Persistenz via `shared_preferences` (SettingsRepository)
+- [x] 🤖 Gespeichert: Arbeitszeit, Pause, ArbZG, letzte Startzeit, Berufsgruppe, Theme
+- [x] 🤖 Einstellungs-Overlay mit Theme-Wahl (System/Hell/Dunkel)
+- [x] 🤖 App merkt sich Zustand über Neustarts (38 Tests grün)
+- [ ] 🤖 Später: Hive für strukturierte Daten (Profile/Überstunden) in Phase 5
 
 ## Phase 5 — Pro-Features 🤖
 - [ ] 🤖 Mehrere Profile (Mo–Do/Fr, Schichten) + Umschalter
