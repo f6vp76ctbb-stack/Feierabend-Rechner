@@ -162,5 +162,10 @@ test/                      # Unit- + Widget-Tests (domain/ = 100 % Ziel)
 - **Sprüche**: `lib/data/sprueche.dart` — Katalog nach Berufsgruppe, in der UI wählbar.
 - **ArbZG-Auto**: setzt die Pause aufs gesetzliche Minimum (überschreibt manuelle Pause).
 - **Deploy**: über `gh-pages`-Branch (peaceiris), Pages-Quelle = „Deploy from a branch".
-- Nächster Schritt: `TODO.md` → Phase 5 (Pro-Features: Profile, Überstunden, Widget,
-  Notifications). Offen: echte Zeitzonen-/DST-Behandlung; Hive für strukturierte Daten.
+- **Phase 5 (läuft)**: Mehrere **Profile** (`lib/domain/models/profile.dart`,
+  `ProfilesController` in `home_providers.dart`). Aktives Profil speist `workConfigProvider`.
+  Persistenz als JSON-Blob (`profiles_v1`) via `SettingsRepository`. UI: `ProfileBar`
+  (Schnell-Umschalten) + `ProfileManageSheet` (anlegen/umbenennen/löschen). Migration:
+  altes Einzel-Config → „Standard"-Profil.
+- Nächste Schritte in Phase 5: Überstunden-Konto/Wochenübersicht, Widget, Notifications.
+  In Phase 6 Profile hinter Pro gaten (Free = 1). Offen: echte Zeitzonen-/DST-Behandlung.

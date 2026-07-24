@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
@@ -8,6 +9,7 @@ import '../../../data/settings_repository.dart';
 import '../../../data/sprueche.dart';
 import '../../../domain/feierabend_calculator.dart';
 import '../../../domain/models/feierabend_result.dart';
+import '../../../domain/models/profile.dart';
 import '../../../domain/models/work_config.dart';
 
 /// Wird in `main()` (und in Tests) mit einer echten Instanz überschrieben.
@@ -53,33 +55,124 @@ class StartTimeNotifier extends Notifier<TimeOfDay> {
 final startTimeProvider =
     NotifierProvider<StartTimeNotifier, TimeOfDay>(StartTimeNotifier.new);
 
-/// Arbeitszeit-/Pausen-Konfiguration (persistiert).
-class WorkConfigNotifier extends Notifier<WorkConfig> {
-  @override
-  WorkConfig build() =>
-      ref.read(settingsRepositoryProvider).loadWorkConfig() ?? const WorkConfig();
+/// Zustand aller Profile + aktuell aktives Profil.
+class ProfilesState {
+  final List<Profile> profiles;
+  final String activeId;
 
-  void _persist() =>
-      ref.read(settingsRepositoryProvider).saveWorkConfig(state);
+  const ProfilesState({required this.profiles, required this.activeId});
 
-  void setWork(Duration work) {
-    state = state.copyWith(work: work);
-    _persist();
-  }
+  Profile get active =>
+      profiles.firstWhere((p) => p.id == activeId, orElse: () => profiles.first);
 
-  void setBreak(Duration breakTime) {
-    state = state.copyWith(breakTime: breakTime);
-    _persist();
-  }
-
-  void setArbzgAuto(bool value) {
-    state = state.copyWith(arbzgAutoBreak: value);
-    _persist();
-  }
+  ProfilesState copyWith({List<Profile>? profiles, String? activeId}) =>
+      ProfilesState(
+        profiles: profiles ?? this.profiles,
+        activeId: activeId ?? this.activeId,
+      );
 }
 
+/// Verwaltet Profile (anlegen, umschalten, umbenennen, löschen) inkl. der
+/// Arbeitszeit-/Pausen-Konfiguration des aktiven Profils. Persistiert als JSON.
+class ProfilesController extends Notifier<ProfilesState> {
+  @override
+  ProfilesState build() {
+    final repo = ref.read(settingsRepositoryProvider);
+    final raw = repo.loadProfilesRaw();
+    if (raw != null) {
+      try {
+        final map = jsonDecode(raw) as Map<String, dynamic>;
+        final profiles = (map['profiles'] as List)
+            .map((e) => Profile.fromJson((e as Map).cast<String, dynamic>()))
+            .toList();
+        if (profiles.isNotEmpty) {
+          final savedActive = map['activeId'] as String?;
+          final activeId = profiles.any((p) => p.id == savedActive)
+              ? savedActive!
+              : profiles.first.id;
+          return ProfilesState(profiles: profiles, activeId: activeId);
+        }
+      } catch (_) {
+        // Kaputter Blob → auf Default zurückfallen.
+      }
+    }
+    // Migration: altes Einzel-Config (Phase 4) oder Default → „Standard"-Profil.
+    final legacy = repo.loadWorkConfig() ?? const WorkConfig();
+    final def = Profile(id: _newId(), name: 'Standard', config: legacy);
+    return ProfilesState(profiles: [def], activeId: def.id);
+  }
+
+  static String _newId() =>
+      '${DateTime.now().microsecondsSinceEpoch}_${Random().nextInt(1 << 20)}';
+
+  void _apply(ProfilesState next) {
+    state = next;
+    final json = jsonEncode({
+      'activeId': next.activeId,
+      'profiles': next.profiles.map((p) => p.toJson()).toList(),
+    });
+    ref.read(settingsRepositoryProvider).saveProfilesRaw(json);
+  }
+
+  void _updateActiveConfig(WorkConfig config) {
+    final profiles = [
+      for (final p in state.profiles)
+        if (p.id == state.activeId) p.copyWith(config: config) else p,
+    ];
+    _apply(state.copyWith(profiles: profiles));
+  }
+
+  void setActive(String id) {
+    if (state.profiles.any((p) => p.id == id)) {
+      _apply(state.copyWith(activeId: id));
+    }
+  }
+
+  /// Legt ein neues Profil an (kopiert die aktuelle Config) und aktiviert es.
+  String addProfile(String name) {
+    final id = _newId();
+    final profile = Profile(id: id, name: name, config: state.active.config);
+    _apply(ProfilesState(
+      profiles: [...state.profiles, profile],
+      activeId: id,
+    ));
+    return id;
+  }
+
+  void renameProfile(String id, String name) {
+    final profiles = [
+      for (final p in state.profiles)
+        if (p.id == id) p.copyWith(name: name) else p,
+    ];
+    _apply(state.copyWith(profiles: profiles));
+  }
+
+  /// Löscht ein Profil (mind. eines bleibt immer erhalten).
+  void deleteProfile(String id) {
+    if (state.profiles.length <= 1) return;
+    final profiles = state.profiles.where((p) => p.id != id).toList();
+    final activeId = state.activeId == id ? profiles.first.id : state.activeId;
+    _apply(ProfilesState(profiles: profiles, activeId: activeId));
+  }
+
+  void setWork(Duration work) =>
+      _updateActiveConfig(state.active.config.copyWith(work: work));
+  void setBreak(Duration breakTime) =>
+      _updateActiveConfig(state.active.config.copyWith(breakTime: breakTime));
+  void setArbzgAuto(bool value) =>
+      _updateActiveConfig(state.active.config.copyWith(arbzgAutoBreak: value));
+}
+
+final profilesControllerProvider =
+    NotifierProvider<ProfilesController, ProfilesState>(ProfilesController.new);
+
+/// Das aktuell aktive Profil.
+final activeProfileProvider =
+    Provider<Profile>((ref) => ref.watch(profilesControllerProvider).active);
+
+/// Arbeitszeit-/Pausen-Konfiguration des aktiven Profils (Basis der Berechnung).
 final workConfigProvider =
-    NotifierProvider<WorkConfigNotifier, WorkConfig>(WorkConfigNotifier.new);
+    Provider<WorkConfig>((ref) => ref.watch(activeProfileProvider).config);
 
 /// Abgeleitetes Ergebnis (Uhrzeit-Darstellung, Mitternachts-Flag).
 final resultProvider = Provider<FeierabendResult>((ref) {

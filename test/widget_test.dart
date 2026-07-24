@@ -70,11 +70,24 @@ void main() {
     expect(find.text('IT'), findsOneWidget);
   });
 
+  testWidgets('Profil-Leiste zeigt „Standard" und öffnet die Verwaltung',
+      (tester) async {
+    await tester.pumpWidget(await buildApp());
+    await tester.pump();
+
+    expect(find.text('Standard'), findsOneWidget);
+
+    await tester.tap(find.text('Profile'));
+    await tester.pumpAndSettle();
+
+    expect(find.text('Neues Profil'), findsOneWidget);
+  });
+
   testWidgets('Einstellungen-Overlay bietet Theme-Wahl', (tester) async {
     await tester.pumpWidget(await buildApp());
     await tester.pump();
 
-    await tester.tap(find.byIcon(Icons.tune_rounded));
+    await tester.tap(find.byIcon(Icons.settings_rounded));
     await tester.pumpAndSettle();
 
     expect(find.text('Einstellungen'), findsOneWidget);

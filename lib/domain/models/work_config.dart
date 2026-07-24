@@ -30,6 +30,18 @@ class WorkConfig {
     );
   }
 
+  Map<String, dynamic> toJson() => {
+        'work': work.inMinutes,
+        'break': breakTime.inMinutes,
+        'arbzg': arbzgAutoBreak,
+      };
+
+  factory WorkConfig.fromJson(Map<String, dynamic> json) => WorkConfig(
+        work: Duration(minutes: (json['work'] as num?)?.toInt() ?? 480),
+        breakTime: Duration(minutes: (json['break'] as num?)?.toInt() ?? 45),
+        arbzgAutoBreak: json['arbzg'] as bool? ?? false,
+      );
+
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||

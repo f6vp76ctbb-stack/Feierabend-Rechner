@@ -8,6 +8,7 @@ import '../settings/settings_sheet.dart';
 import 'state/home_providers.dart';
 import 'widgets/countdown_ring.dart';
 import 'widgets/duration_adjust_sheet.dart';
+import 'widgets/profile_bar.dart';
 import 'widgets/spruch_card.dart';
 import 'widgets/start_time_sheet.dart';
 
@@ -38,7 +39,9 @@ class HomeScreen extends ConsumerWidget {
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
                         const _Header(),
-                        const SizedBox(height: 24),
+                        const SizedBox(height: 12),
+                        const ProfileBar(),
+                        const SizedBox(height: 16),
                         Center(
                           child: CountdownRing(
                             progress: progress,
@@ -104,7 +107,7 @@ class _Header extends StatelessWidget {
         const Spacer(),
         IconButton(
           tooltip: 'Einstellungen',
-          icon: const Icon(Icons.tune_rounded),
+          icon: const Icon(Icons.settings_rounded),
           onPressed: () => SettingsSheet.show(context),
         ),
       ],
@@ -231,7 +234,7 @@ class _InputCard extends ConsumerWidget {
               value: config.arbzgAutoBreak,
               onChanged: (v) {
                 HapticFeedback.selectionClick();
-                ref.read(workConfigProvider.notifier).setArbzgAuto(v);
+                ref.read(profilesControllerProvider.notifier).setArbzgAuto(v);
               },
             ),
           ],
@@ -263,7 +266,7 @@ class _InputCard extends ConsumerWidget {
       ],
     );
     if (picked != null) {
-      ref.read(workConfigProvider.notifier).setWork(picked);
+      ref.read(profilesControllerProvider.notifier).setWork(picked);
     }
   }
 
@@ -283,7 +286,7 @@ class _InputCard extends ConsumerWidget {
       ],
     );
     if (picked != null) {
-      ref.read(workConfigProvider.notifier).setBreak(picked);
+      ref.read(profilesControllerProvider.notifier).setBreak(picked);
     }
   }
 }

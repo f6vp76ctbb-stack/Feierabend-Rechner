@@ -18,6 +18,7 @@ class SettingsRepository {
   static const _kStartMinutes = 'start_minutes';
   static const _kBerufsgruppe = 'berufsgruppe';
   static const _kThemeName = 'theme_name';
+  static const _kProfiles = 'profiles_v1';
 
   // --- Arbeitszeit-/Pausen-Konfiguration ---
 
@@ -58,4 +59,11 @@ class SettingsRepository {
 
   Future<void> saveThemeName(String name) =>
       _prefs.setString(_kThemeName, name);
+
+  // --- Profile (kompletter Zustand als JSON-Blob) ---
+
+  String? loadProfilesRaw() => _prefs.getString(_kProfiles);
+
+  Future<void> saveProfilesRaw(String json) =>
+      _prefs.setString(_kProfiles, json);
 }
