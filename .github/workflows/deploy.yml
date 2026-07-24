@@ -1,7 +1,10 @@
 name: CI & Deploy (GitHub Pages)
 
 # Baut die App bei jedem Push: prüft (analyze + test), baut die Web-Version
-# und veröffentlicht sie auf GitHub Pages (zum Testen z. B. auf dem iPhone).
+# und veröffentlicht sie in den gh-pages-Branch (zum Testen z. B. auf dem iPhone).
+#
+# Diese Methode (Push in gh-pages) funktioniert von JEDEM Branch aus — anders als
+# die "GitHub Actions"-Pages-Quelle, die nur vom Default-Branch deployt.
 on:
   push:
     branches:
@@ -9,15 +12,13 @@ on:
       - claude/feierabend-rechner-app-joa1y4
   workflow_dispatch:
 
-# Nur ein Deploy gleichzeitig.
 concurrency:
   group: pages
   cancel-in-progress: true
 
+# Schreibrecht, um den gh-pages-Branch zu aktualisieren.
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 env:
   FLUTTER_VERSION: "3.44.8"
@@ -25,17 +26,11 @@ env:
   BASE_HREF: "/Feierabend-Rechner/"
 
 jobs:
-  build:
-    name: Prüfen & Web bauen
+  build-and-deploy:
+    name: Prüfen, bauen & veröffentlichen
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      # Registriert/aktiviert die Pages-Site per API (behebt 404 beim Erst-Deploy).
-      - name: Pages einrichten
-        uses: actions/configure-pages@v5
-        with:
-          enablement: true
 
       - uses: subosito/flutter-action@v2
         with:
@@ -57,19 +52,10 @@ jobs:
         # damit die App auch in restriktiven Netzen und offline lädt.
         run: flutter build web --release --no-web-resources-cdn --base-href "$BASE_HREF"
 
-      - name: Pages-Artefakt hochladen
-        uses: actions/upload-pages-artifact@v3
+      - name: In gh-pages veröffentlichen
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          path: build/web
-
-  deploy:
-    name: Auf GitHub Pages veröffentlichen
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy
-        id: deployment
-        uses: actions/deploy-pages@v4
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build/web
+          publish_branch: gh-pages
+          # .nojekyll wird automatisch gesetzt (Flutter-Assets nicht von Jekyll anfassen).
