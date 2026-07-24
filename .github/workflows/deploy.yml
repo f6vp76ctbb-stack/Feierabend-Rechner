@@ -47,7 +47,9 @@ jobs:
         run: flutter test
 
       - name: Web bauen
-        run: flutter build web --release --base-href "$BASE_HREF"
+        # --no-web-resources-cdn: CanvasKit lokal bündeln (kein gstatic-CDN),
+        # damit die App auch in restriktiven Netzen und offline lädt.
+        run: flutter build web --release --no-web-resources-cdn --base-href "$BASE_HREF"
 
       - name: Pages-Artefakt hochladen
         uses: actions/upload-pages-artifact@v3
