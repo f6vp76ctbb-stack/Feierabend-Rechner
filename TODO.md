@@ -10,8 +10,8 @@ Legende: `[ ]` offen · `[x]` erledigt · 👤 = du · 🤖 = Claude · 🤝 = z
 
 ## Phase 0 — Fundament ✅
 - [x] 🤖 CLAUDE.md, MASTERPLAN.md, TODO.md, MARKETING.md anlegen
-- [ ] 👤 **GitHub Pages aktivieren** für iPhone-Test: Repo → Settings → Pages →
-      Source = „GitHub Actions" (einmalig). Danach deployt jeder Push automatisch.
+- [x] 👤 **GitHub Pages aktiviert** (iPhone-Test): Source = „Deploy from a branch" →
+      `gh-pages`. Live & bestätigt. Jeder Push deployt automatisch.
       URL: `https://f6vp76ctbb-stack.github.io/Feierabend-Rechner/`
 - [ ] 👤 App-Name & Verfügbarkeit prüfen (Play Store Suche + ggf. Markenrecherche DPMA)
 - [ ] 👤 Google-Play-Entwicklerkonto anlegen (einmalig 25 $) — kann parallel laufen
