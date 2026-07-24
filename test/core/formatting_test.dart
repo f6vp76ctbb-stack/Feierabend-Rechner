@@ -33,6 +33,22 @@ void main() {
     });
   });
 
+  group('signedDuration', () {
+    test('positiv mit Stunden und Minuten', () {
+      expect(Formatting.signedDuration(330), '+5 Std 30 Min');
+    });
+    test('negativ nutzt typografisches Minus', () {
+      expect(Formatting.signedDuration(-75), '−1 Std 15 Min');
+    });
+    test('nur Minuten / nur Stunden', () {
+      expect(Formatting.signedDuration(45), '+45 Min');
+      expect(Formatting.signedDuration(120), '+2 Std');
+    });
+    test('null → ±0 Min', () {
+      expect(Formatting.signedDuration(0), '±0 Min');
+    });
+  });
+
   group('countdown', () {
     test('hh:mm:ss', () {
       expect(

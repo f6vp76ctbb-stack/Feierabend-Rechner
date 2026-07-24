@@ -21,6 +21,22 @@ abstract final class Formatting {
     return '$h:${m.toString().padLeft(2, '0')} h';
   }
 
+  /// Signierte Dauer aus Minuten: `+5 Std 30 Min`, `−1 Std 15 Min`, `±0 Min`.
+  /// Nutzt das typografische Minus (−) für ein ruhigeres Schriftbild.
+  static String signedDuration(int minutes) {
+    if (minutes == 0) return '±0 Min';
+    final sign = minutes < 0 ? '−' : '+';
+    final abs = minutes.abs();
+    final h = abs ~/ 60;
+    final m = abs % 60;
+    final body = h > 0 && m > 0
+        ? '$h Std $m Min'
+        : h > 0
+            ? '$h Std'
+            : '$m Min';
+    return '$sign$body';
+  }
+
   /// Countdown `06:12:03` (Std:Min:Sek), immer zweistellig.
   static String countdown(Duration d) {
     final total = d.isNegative ? Duration.zero : d;

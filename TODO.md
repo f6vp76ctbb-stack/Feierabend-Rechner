@@ -53,7 +53,7 @@ Legende: `[ ]` offen · `[x]` erledigt · 👤 = du · 🤖 = Claude · 🤝 = z
 ## Phase 5 — Pro-Features 🤖
 - [x] 🤖 Mehrere Profile (Mo–Do/Fr, Schichten) + Umschalter + Verwaltung (anlegen/umbenennen/löschen), persistiert
 - [ ] 🤖 TODO: In Phase 6 hinter Pro gaten (Free = 1 Profil)
-- [ ] 🤖 Überstunden-Konto + Wochenübersicht
+- [x] 🤖 Überstunden-Konto + Wochenübersicht (Tageseinträge, Wochen-/Gesamtsaldo, persistiert)
 - [ ] 🤖 Home-Screen-Widget (Countdown) via `home_widget`
 - [ ] 🤖 Lokale Benachrichtigungen („noch 30 Min", „Feierabend!")
 - [ ] 🤖 Premium-Themes / Farbwelten

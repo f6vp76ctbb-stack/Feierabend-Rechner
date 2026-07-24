@@ -167,5 +167,10 @@ test/                      # Unit- + Widget-Tests (domain/ = 100 % Ziel)
   Persistenz als JSON-Blob (`profiles_v1`) via `SettingsRepository`. UI: `ProfileBar`
   (Schnell-Umschalten) + `ProfileManageSheet` (anlegen/umbenennen/löschen). Migration:
   altes Einzel-Config → „Standard"-Profil.
-- Nächste Schritte in Phase 5: Überstunden-Konto/Wochenübersicht, Widget, Notifications.
-  In Phase 6 Profile hinter Pro gaten (Free = 1). Offen: echte Zeitzonen-/DST-Behandlung.
+- **Überstunden-Konto** (`lib/domain/overtime_calculator.dart` + `models/overtime_entry.dart`,
+  `OvertimeController` in `home_providers.dart`, `lib/features/overtime/`): Tageseinträge
+  (gearbeitet vs. Soll), Wochen-/Gesamtsaldo, persistiert als JSON-Blob (`overtime_v1`).
+  Einstieg via `OvertimeCard` auf dem Hauptschirm → `OvertimeScreen`.
+- Nächste Schritte in Phase 5: Home-Widget + Notifications (nativ Android, nicht per Web-PWA
+  testbar), Premium-Themes. In Phase 6 Pro-Features gaten (Free = 1 Profil, kein Überstunden-
+  Konto o. Ä.). Offen: echte Zeitzonen-/DST-Behandlung.

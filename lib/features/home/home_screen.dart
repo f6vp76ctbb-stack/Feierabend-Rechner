@@ -8,6 +8,7 @@ import '../settings/settings_sheet.dart';
 import 'state/home_providers.dart';
 import 'widgets/countdown_ring.dart';
 import 'widgets/duration_adjust_sheet.dart';
+import 'widgets/overtime_card.dart';
 import 'widgets/profile_bar.dart';
 import 'widgets/spruch_card.dart';
 import 'widgets/start_time_sheet.dart';
@@ -59,6 +60,8 @@ class HomeScreen extends ConsumerWidget {
                         ),
                         const SizedBox(height: 24),
                         const SpruchCard(),
+                        const SizedBox(height: 12),
+                        const OvertimeCard(),
                         const SizedBox(height: 12),
                         _InputCard(),
                         const SizedBox(height: 16),

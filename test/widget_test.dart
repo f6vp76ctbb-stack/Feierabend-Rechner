@@ -83,6 +83,21 @@ void main() {
     expect(find.text('Neues Profil'), findsOneWidget);
   });
 
+  testWidgets('Überstunden-Karte öffnet das Konto', (tester) async {
+    await tester.pumpWidget(await buildApp());
+    await tester.pump();
+
+    expect(find.text('Überstunden-Konto'), findsOneWidget);
+
+    await tester.ensureVisible(find.text('Überstunden-Konto'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Überstunden-Konto'));
+    await tester.pumpAndSettle();
+
+    expect(find.text('GESAMTSALDO'), findsOneWidget);
+    expect(find.text('Noch keine Einträge'), findsOneWidget);
+  });
+
   testWidgets('Einstellungen-Overlay bietet Theme-Wahl', (tester) async {
     await tester.pumpWidget(await buildApp());
     await tester.pump();

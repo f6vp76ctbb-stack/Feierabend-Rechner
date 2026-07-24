@@ -19,6 +19,7 @@ class SettingsRepository {
   static const _kBerufsgruppe = 'berufsgruppe';
   static const _kThemeName = 'theme_name';
   static const _kProfiles = 'profiles_v1';
+  static const _kOvertime = 'overtime_v1';
 
   // --- Arbeitszeit-/Pausen-Konfiguration ---
 
@@ -66,4 +67,11 @@ class SettingsRepository {
 
   Future<void> saveProfilesRaw(String json) =>
       _prefs.setString(_kProfiles, json);
+
+  // --- Überstunden-Konto (Liste als JSON-Blob) ---
+
+  String? loadOvertimeRaw() => _prefs.getString(_kOvertime);
+
+  Future<void> saveOvertimeRaw(String json) =>
+      _prefs.setString(_kOvertime, json);
 }

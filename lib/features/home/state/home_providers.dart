@@ -9,8 +9,10 @@ import '../../../data/settings_repository.dart';
 import '../../../data/sprueche.dart';
 import '../../../domain/feierabend_calculator.dart';
 import '../../../domain/models/feierabend_result.dart';
+import '../../../domain/models/overtime_entry.dart';
 import '../../../domain/models/profile.dart';
 import '../../../domain/models/work_config.dart';
+import '../../../domain/overtime_calculator.dart';
 
 /// Wird in `main()` (und in Tests) mit einer echten Instanz überschrieben.
 final sharedPreferencesProvider = Provider<SharedPreferences>(
@@ -246,6 +248,69 @@ final spruchProvider = Provider<String>((ref) {
   if (list.isEmpty) return '';
   return list[Random(seed).nextInt(list.length)];
 });
+
+/// Überstunden-Konto: Liste von Tageseinträgen, persistiert. Immer nach Datum
+/// absteigend sortiert; ein Eintrag pro Kalendertag.
+class OvertimeController extends Notifier<List<OvertimeEntry>> {
+  @override
+  List<OvertimeEntry> build() {
+    final raw = ref.read(settingsRepositoryProvider).loadOvertimeRaw();
+    if (raw != null) {
+      try {
+        final list = (jsonDecode(raw) as List)
+            .map((e) => OvertimeEntry.fromJson((e as Map).cast<String, dynamic>()))
+            .toList();
+        return _sorted(list);
+      } catch (_) {
+        // Kaputter Blob → leer starten.
+      }
+    }
+    return const [];
+  }
+
+  static List<OvertimeEntry> _sorted(List<OvertimeEntry> list) =>
+      [...list]..sort((a, b) => b.date.compareTo(a.date));
+
+  void _apply(List<OvertimeEntry> next) {
+    state = _sorted(next);
+    final json = jsonEncode(state.map((e) => e.toJson()).toList());
+    ref.read(settingsRepositoryProvider).saveOvertimeRaw(json);
+  }
+
+  /// Legt einen Tag an oder überschreibt den bestehenden desselben Datums.
+  void upsert(OvertimeEntry entry) {
+    final rest = state.where((e) => e.date != entry.date).toList();
+    _apply([...rest, entry]);
+  }
+
+  void deleteFor(DateTime date) {
+    final key = DateTime(date.year, date.month, date.day);
+    _apply(state.where((e) => e.date != key).toList());
+  }
+}
+
+final overtimeControllerProvider =
+    NotifierProvider<OvertimeController, List<OvertimeEntry>>(
+  OvertimeController.new,
+);
+
+/// Gesamtsaldo (Minuten) des Überstunden-Kontos.
+final overtimeBalanceProvider = Provider<int>(
+  (ref) => OvertimeCalculator.totalBalance(ref.watch(overtimeControllerProvider)),
+);
+
+/// Saldo (Minuten) der aktuellen Woche.
+final overtimeThisWeekProvider = Provider<int>(
+  (ref) => OvertimeCalculator.balanceForWeekOf(
+    ref.watch(overtimeControllerProvider),
+    DateTime.now(),
+  ),
+);
+
+/// Nach Woche gruppierte Einträge (neueste Woche zuerst).
+final overtimeWeeksProvider = Provider<List<OvertimeWeek>>(
+  (ref) => OvertimeCalculator.groupByWeek(ref.watch(overtimeControllerProvider)),
+);
 
 /// Theme-Modus (System/Hell/Dunkel), persistiert.
 class ThemeModeNotifier extends Notifier<ThemeMode> {
