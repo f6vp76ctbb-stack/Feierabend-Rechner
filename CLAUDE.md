@@ -159,8 +159,13 @@ test/                      # Unit- + Widget-Tests (domain/ = 100 % Ziel)
   `SharedPreferences.setMockInitialValues` überschrieben. Gespeichert: Arbeitszeit,
   Pause, ArbZG, letzte Startzeit, Berufsgruppe, Theme. Einstellungs-Overlay
   (`lib/features/settings/`) mit Theme-Wahl.
-- **Sprüche**: `lib/data/sprueche.dart` — Katalog nach Berufsgruppe, in der UI wählbar.
+- **Sprüche**: `lib/data/sprueche.dart` — großer Katalog nach Berufsgruppe, in der UI
+  wählbar. `SpruchController.next()` wiederholt nie den direkt vorherigen Spruch.
 - **ArbZG-Auto**: setzt die Pause aufs gesetzliche Minimum (überschreibt manuelle Pause).
+- **Schnellwahl** (Home): „6 Std ohne Pause" / „8 Std + 45 min" setzen Arbeitszeit+Pause.
+- **Soll pro Tag** (`dailyTargetProvider`, Einstellungen, Default 8 h): Vergleichswert fürs
+  Überstunden-Konto — unabhängig von der heute geplanten Arbeitszeit. „Heute buchen" im
+  Überstunden-Screen bucht heute (gearbeitet = Arbeitszeit des Profils, Soll = Soll pro Tag).
 - **Deploy**: über `gh-pages`-Branch (peaceiris), Pages-Quelle = „Deploy from a branch".
 - **Phase 5 (läuft)**: Mehrere **Profile** (`lib/domain/models/profile.dart`,
   `ProfilesController` in `home_providers.dart`). Aktives Profil speist `workConfigProvider`.
