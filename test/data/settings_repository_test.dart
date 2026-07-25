@@ -44,4 +44,11 @@ void main() {
     await repo.saveThemeName('dark');
     expect(repo.loadThemeName(), 'dark');
   });
+
+  test('Soll pro Tag Round-Trip', () async {
+    final repo = await makeRepo();
+    expect(repo.loadDailyTargetMinutes(), isNull);
+    await repo.saveDailyTargetMinutes(480);
+    expect(repo.loadDailyTargetMinutes(), 480);
+  });
 }

@@ -64,6 +64,8 @@ class HomeScreen extends ConsumerWidget {
                         const OvertimeCard(),
                         const SizedBox(height: 12),
                         _InputCard(),
+                        const SizedBox(height: 12),
+                        const _QuickPresets(),
                         const SizedBox(height: 16),
                         Text(
                           'Anwesenheit ${Formatting.durationHm(result.presence)} '
@@ -291,6 +293,61 @@ class _InputCard extends ConsumerWidget {
     if (picked != null) {
       ref.read(profilesControllerProvider.notifier).setBreak(picked);
     }
+  }
+}
+
+/// Schnellwahl für typische Tage (setzt Arbeitszeit + Pause auf einmal).
+class _QuickPresets extends ConsumerWidget {
+  const _QuickPresets();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final theme = Theme.of(context);
+    final config = ref.watch(workConfigProvider);
+    final ctrl = ref.read(profilesControllerProvider.notifier);
+
+    void apply(Duration work, Duration pause) {
+      HapticFeedback.selectionClick();
+      // ArbZG-Auto ggf. deaktivieren, damit die gewählte Pause exakt greift.
+      if (config.arbzgAutoBreak) ctrl.setArbzgAuto(false);
+      ctrl.setWork(work);
+      ctrl.setBreak(pause);
+    }
+
+    final isSixNoBreak = config.work == const Duration(hours: 6) &&
+        config.breakTime == Duration.zero &&
+        !config.arbzgAutoBreak;
+
+    return Align(
+      alignment: Alignment.centerLeft,
+      child: Wrap(
+        spacing: 8,
+        runSpacing: 8,
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(right: 2, top: 6),
+            child: Text('Schnellwahl', style: theme.textTheme.labelLarge),
+          ),
+          ActionChip(
+            avatar: Icon(
+              isSixNoBreak ? Icons.check_rounded : Icons.bolt_rounded,
+              size: 18,
+            ),
+            label: const Text('6 Std ohne Pause'),
+            onPressed: () =>
+                apply(const Duration(hours: 6), Duration.zero),
+          ),
+          ActionChip(
+            avatar: const Icon(Icons.work_history_rounded, size: 18),
+            label: const Text('8 Std + 45 min'),
+            onPressed: () => apply(
+              const Duration(hours: 8),
+              const Duration(minutes: 45),
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
 

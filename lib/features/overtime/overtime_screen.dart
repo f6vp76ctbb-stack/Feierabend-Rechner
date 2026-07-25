@@ -34,6 +34,12 @@ class OvertimeScreen extends ConsumerWidget {
         padding: const EdgeInsets.fromLTRB(16, 12, 16, 96),
         children: [
           _BalanceHeader(total: total, thisWeek: thisWeek),
+          const SizedBox(height: 12),
+          FilledButton.tonalIcon(
+            onPressed: () => _bookToday(context, ref),
+            icon: const Icon(Icons.today_rounded),
+            label: const Text('Heute buchen'),
+          ),
           const SizedBox(height: 16),
           if (weeks.isEmpty)
             const _EmptyState()
@@ -44,15 +50,37 @@ class OvertimeScreen extends ConsumerWidget {
     );
   }
 
+  /// Bucht den heutigen Tag mit einem Tipp: gearbeitet = heutige Arbeitszeit
+  /// des aktiven Profils, Soll = „Soll pro Tag".
+  void _bookToday(BuildContext context, WidgetRef ref) {
+    final worked = ref.read(workConfigProvider).work.inMinutes;
+    final target = ref.read(dailyTargetProvider).inMinutes;
+    final entry = OvertimeEntry(
+      date: DateTime.now(),
+      workedMinutes: worked,
+      targetMinutes: target,
+    );
+    ref.read(overtimeControllerProvider.notifier).upsert(entry);
+    ScaffoldMessenger.of(context)
+      ..hideCurrentSnackBar()
+      ..showSnackBar(SnackBar(
+        content: Text(
+          'Heute gebucht: ${Formatting.signedDuration(entry.overtimeMinutes)}',
+        ),
+      ));
+  }
+
   Future<void> _addOrEdit(
     BuildContext context,
     WidgetRef ref, {
     OvertimeEntry? existing,
   }) async {
-    final target = ref.read(workConfigProvider).work.inMinutes;
+    final worked = ref.read(workConfigProvider).work.inMinutes;
+    final target = ref.read(dailyTargetProvider).inMinutes;
     final result = await OvertimeEntrySheet.show(
       context,
       existing: existing,
+      defaultWorkedMinutes: worked,
       defaultTargetMinutes: target,
     );
     if (result != null) {
@@ -206,11 +234,11 @@ class _EntryTile extends ConsumerWidget {
         ],
       ),
       onTap: () async {
-        final target = ref.read(workConfigProvider).work.inMinutes;
         final result = await OvertimeEntrySheet.show(
           context,
           existing: entry,
-          defaultTargetMinutes: target,
+          defaultWorkedMinutes: entry.workedMinutes,
+          defaultTargetMinutes: entry.targetMinutes,
         );
         if (result != null) {
           ref.read(overtimeControllerProvider.notifier).upsert(result);

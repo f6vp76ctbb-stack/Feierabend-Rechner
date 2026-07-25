@@ -21,7 +21,7 @@ class SpruchCard extends ConsumerWidget {
       child: InkWell(
         onTap: () {
           HapticFeedback.selectionClick();
-          ref.read(spruchSeedProvider.notifier).shuffle();
+          ref.read(spruchControllerProvider.notifier).next();
         },
         child: Padding(
           padding: const EdgeInsets.fromLTRB(20, 18, 20, 12),
@@ -98,9 +98,8 @@ class SpruchCard extends ConsumerWidget {
                       selected: g == current,
                       onSelected: (_) {
                         HapticFeedback.selectionClick();
+                        // Gruppenwechsel wählt automatisch einen frischen Spruch.
                         ref.read(berufsgruppeProvider.notifier).set(g);
-                        // Frischen Spruch aus der neuen Gruppe zeigen.
-                        ref.read(spruchSeedProvider.notifier).shuffle();
                         Navigator.of(context).pop();
                       },
                     ),

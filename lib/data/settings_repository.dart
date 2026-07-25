@@ -20,6 +20,7 @@ class SettingsRepository {
   static const _kThemeName = 'theme_name';
   static const _kProfiles = 'profiles_v1';
   static const _kOvertime = 'overtime_v1';
+  static const _kDailyTarget = 'daily_target_minutes';
 
   // --- Arbeitszeit-/Pausen-Konfiguration ---
 
@@ -74,4 +75,11 @@ class SettingsRepository {
 
   Future<void> saveOvertimeRaw(String json) =>
       _prefs.setString(_kOvertime, json);
+
+  // --- Soll pro Tag (Vergleichswert fürs Überstunden-Konto), Minuten ---
+
+  int? loadDailyTargetMinutes() => _prefs.getInt(_kDailyTarget);
+
+  Future<void> saveDailyTargetMinutes(int minutes) =>
+      _prefs.setInt(_kDailyTarget, minutes);
 }

@@ -229,24 +229,37 @@ class BerufsgruppeNotifier extends Notifier<String> {
 final berufsgruppeProvider =
     NotifierProvider<BerufsgruppeNotifier, String>(BerufsgruppeNotifier.new);
 
-/// Seed, der den aktuell gezeigten Spruch bestimmt. „Neuer Spruch" erhöht ihn.
-class SpruchSeedNotifier extends Notifier<int> {
-  @override
-  int build() => DateTime.now().millisecondsSinceEpoch;
+/// Index des aktuell gezeigten Spruchs in der Gruppe. „Neuer Spruch" wählt
+/// immer einen ANDEREN Spruch (keine direkte Wiederholung). Wechselt die
+/// Berufsgruppe, wird automatisch ein frischer Spruch gewählt.
+class SpruchController extends Notifier<int> {
+  final Random _random = Random();
 
-  void shuffle() => state = state + 1 + Random().nextInt(100000);
+  @override
+  int build() {
+    final list = Sprueche.forGruppe(ref.watch(berufsgruppeProvider));
+    return list.length <= 1 ? 0 : _random.nextInt(list.length);
+  }
+
+  void next() {
+    final len = Sprueche.forGruppe(ref.read(berufsgruppeProvider)).length;
+    if (len <= 1) return;
+    // Gleichverteilt aus den übrigen (len-1) wählen → nie derselbe wie zuletzt.
+    var i = _random.nextInt(len - 1);
+    if (i >= state) i += 1;
+    state = i;
+  }
 }
 
-final spruchSeedProvider =
-    NotifierProvider<SpruchSeedNotifier, int>(SpruchSeedNotifier.new);
+final spruchControllerProvider =
+    NotifierProvider<SpruchController, int>(SpruchController.new);
 
-/// Aktueller Spruch, abhängig von Berufsgruppe + Seed.
+/// Aktueller Spruch, abhängig von Berufsgruppe + Index.
 final spruchProvider = Provider<String>((ref) {
-  final gruppe = ref.watch(berufsgruppeProvider);
-  final seed = ref.watch(spruchSeedProvider);
-  final list = Sprueche.forGruppe(gruppe);
+  final list = Sprueche.forGruppe(ref.watch(berufsgruppeProvider));
+  final index = ref.watch(spruchControllerProvider);
   if (list.isEmpty) return '';
-  return list[Random(seed).nextInt(list.length)];
+  return list[index.clamp(0, list.length - 1)];
 });
 
 /// Überstunden-Konto: Liste von Tageseinträgen, persistiert. Immer nach Datum
@@ -293,6 +306,23 @@ final overtimeControllerProvider =
     NotifierProvider<OvertimeController, List<OvertimeEntry>>(
   OvertimeController.new,
 );
+
+/// Soll pro Tag (Vergleichswert fürs Überstunden-Konto), persistiert. Default 8 h.
+class DailyTargetNotifier extends Notifier<Duration> {
+  @override
+  Duration build() {
+    final m = ref.read(settingsRepositoryProvider).loadDailyTargetMinutes();
+    return Duration(minutes: m ?? 8 * 60);
+  }
+
+  void set(Duration value) {
+    state = value;
+    ref.read(settingsRepositoryProvider).saveDailyTargetMinutes(value.inMinutes);
+  }
+}
+
+final dailyTargetProvider =
+    NotifierProvider<DailyTargetNotifier, Duration>(DailyTargetNotifier.new);
 
 /// Gesamtsaldo (Minuten) des Überstunden-Kontos.
 final overtimeBalanceProvider = Provider<int>(

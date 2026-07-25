@@ -11,15 +11,18 @@ class OvertimeEntrySheet extends StatefulWidget {
   const OvertimeEntrySheet({
     super.key,
     this.existing,
+    required this.defaultWorkedMinutes,
     required this.defaultTargetMinutes,
   });
 
   final OvertimeEntry? existing;
+  final int defaultWorkedMinutes;
   final int defaultTargetMinutes;
 
   static Future<OvertimeEntry?> show(
     BuildContext context, {
     OvertimeEntry? existing,
+    required int defaultWorkedMinutes,
     required int defaultTargetMinutes,
   }) {
     return showModalBottomSheet<OvertimeEntry>(
@@ -27,6 +30,7 @@ class OvertimeEntrySheet extends StatefulWidget {
       isScrollControlled: true,
       builder: (_) => OvertimeEntrySheet(
         existing: existing,
+        defaultWorkedMinutes: defaultWorkedMinutes,
         defaultTargetMinutes: defaultTargetMinutes,
       ),
     );
@@ -40,7 +44,7 @@ class _OvertimeEntrySheetState extends State<OvertimeEntrySheet> {
   late DateTime _date =
       widget.existing?.date ?? DateTime.now();
   late int _worked =
-      widget.existing?.workedMinutes ?? widget.defaultTargetMinutes;
+      widget.existing?.workedMinutes ?? widget.defaultWorkedMinutes;
   late int _target =
       widget.existing?.targetMinutes ?? widget.defaultTargetMinutes;
 
