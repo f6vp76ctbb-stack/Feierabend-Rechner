@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../profiles/profile_manage_sheet.dart';
 import '../state/home_providers.dart';
+import '../../../l10n/l10n_ext.dart';
 
 /// Horizontale Leiste zum schnellen Umschalten zwischen Profilen.
 /// Zeigt nur mehr als ein Element, wenn es mehrere Profile gibt — bleibt sonst dezent.
@@ -34,7 +35,7 @@ class ProfileBar extends ConsumerWidget {
             ),
           ActionChip(
             avatar: const Icon(Icons.tune_rounded, size: 18),
-            label: const Text('Profile'),
+            label: Text(context.l10n.profiles),
             onPressed: () => ProfileManageSheet.show(context),
           ),
         ],

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '../../../core/formatting.dart';
+import '../../../l10n/l10n_ext.dart';
 
 /// Bottom-Sheet zum Einstellen der Startzeit über ▲▼-Pfeile (Stunde & Minute).
 ///
@@ -66,14 +67,14 @@ class _StartTimeSheetState extends State<StartTimeSheet> {
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Text('Startzeit', style: theme.textTheme.titleMedium),
+          Text(context.l10n.startTimeTitle, style: theme.textTheme.titleMedium),
           const SizedBox(height: 16),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               _Stepper(
-                label: 'Stunde',
+                label: context.l10n.hour,
                 value: _hour.toString().padLeft(2, '0'),
                 onUp: () => _changeHour(1),
                 onDown: () => _changeHour(-1),
@@ -86,7 +87,7 @@ class _StartTimeSheetState extends State<StartTimeSheet> {
                 ),
               ),
               _Stepper(
-                label: 'Minute',
+                label: context.l10n.minute,
                 value: _minute.toString().padLeft(2, '0'),
                 onUp: () => _changeMinute(1),
                 onDown: () => _changeMinute(-1),
@@ -98,12 +99,12 @@ class _StartTimeSheetState extends State<StartTimeSheet> {
             child: TextButton.icon(
               onPressed: _setNow,
               icon: const Icon(Icons.schedule_rounded, size: 18),
-              label: const Text('Jetzt'),
+              label: Text(context.l10n.now),
             ),
           ),
           const SizedBox(height: 8),
           Text(
-            'Feierabend wird ab ${Formatting.clock(_hour, _minute)} berechnet.',
+            context.l10n.startTimeHint(Formatting.clock(_hour, _minute)),
             textAlign: TextAlign.center,
             style: theme.textTheme.bodyMedium,
           ),
@@ -111,7 +112,7 @@ class _StartTimeSheetState extends State<StartTimeSheet> {
           FilledButton(
             onPressed: () =>
                 Navigator.of(context).pop(TimeOfDay(hour: _hour, minute: _minute)),
-            child: const Text('Übernehmen'),
+            child: Text(context.l10n.apply),
           ),
         ],
       ),

@@ -4,6 +4,10 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/formatting.dart';
 import '../../design/app_colors.dart';
+import '../../l10n/l10n_ext.dart';
+import '../pro/banner_ad_view.dart';
+import '../pro/paywall_sheet.dart';
+import '../pro/pro_providers.dart';
 import '../settings/settings_sheet.dart';
 import 'state/home_providers.dart';
 import 'widgets/countdown_ring.dart';
@@ -20,12 +24,14 @@ class HomeScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
+    final l = context.l10n;
     final result = ref.watch(resultProvider);
     final remaining = ref.watch(remainingProvider);
     final progress = ref.watch(progressProvider);
     final reached = remaining <= Duration.zero;
 
     return Scaffold(
+      bottomNavigationBar: const BottomBannerAd(),
       body: Stack(
         children: [
           const _BackgroundGlow(),
@@ -59,17 +65,20 @@ class HomeScreen extends ConsumerWidget {
                           ),
                         ),
                         const SizedBox(height: 24),
-                        const SpruchCard(),
-                        const SizedBox(height: 12),
-                        const OvertimeCard(),
-                        const SizedBox(height: 12),
-                        _InputCard(),
+                        const _InputCard(),
                         const SizedBox(height: 12),
                         const _QuickPresets(),
                         const SizedBox(height: 16),
+                        const SpruchCard(),
+                        const SizedBox(height: 12),
+                        const OvertimeCard(),
+                        const SizedBox(height: 16),
                         Text(
-                          'Anwesenheit ${Formatting.durationHm(result.presence)} '
-                          '· inkl. ${Formatting.durationLong(result.breakUsed)} Pause',
+                          l.presenceSummary(
+                            Formatting.durationHm(result.presence),
+                            Formatting.durationLong(
+                                result.breakUsed, context.units),
+                          ),
                           textAlign: TextAlign.center,
                           style: theme.textTheme.bodyMedium,
                         ),
@@ -105,13 +114,14 @@ class _Header extends StatelessWidget {
             ),
             borderRadius: BorderRadius.circular(12),
           ),
-          child: const Icon(Icons.wb_twilight_rounded, color: Colors.white, size: 24),
+          child: const Icon(Icons.wb_twilight_rounded,
+              color: Colors.white, size: 24),
         ),
         const SizedBox(width: 12),
-        Text('Feierabend', style: theme.textTheme.headlineMedium),
+        Text(context.l10n.brandName, style: theme.textTheme.headlineMedium),
         const Spacer(),
         IconButton(
-          tooltip: 'Einstellungen',
+          tooltip: context.l10n.settingsTooltip,
           icon: const Icon(Icons.settings_rounded),
           onPressed: () => SettingsSheet.show(context),
         ),
@@ -136,10 +146,11 @@ class _RingContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final l = context.l10n;
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Text('FEIERABEND UM', style: theme.textTheme.labelLarge),
+        Text(l.clockOutAt, style: theme.textTheme.labelLarge),
         const SizedBox(height: 4),
         FittedBox(
           fit: BoxFit.scaleDown,
@@ -172,7 +183,7 @@ class _RingContent extends StatelessWidget {
               const Text('🎉', style: TextStyle(fontSize: 18)),
               const SizedBox(width: 6),
               Text(
-                'Feierabend!',
+                l.reached,
                 style: theme.textTheme.titleMedium?.copyWith(
                   color: AppColors.success,
                 ),
@@ -182,9 +193,9 @@ class _RingContent extends StatelessWidget {
         else
           Column(
             children: [
-              Text('noch', style: theme.textTheme.bodyMedium),
+              Text(l.remainingLabel, style: theme.textTheme.bodyMedium),
               Text(
-                Formatting.durationLong(remaining),
+                Formatting.durationLong(remaining, context.units),
                 style: theme.textTheme.titleMedium,
               ),
             ],
@@ -195,11 +206,15 @@ class _RingContent extends StatelessWidget {
 }
 
 class _InputCard extends ConsumerWidget {
+  const _InputCard();
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final l = context.l10n;
     final start = ref.watch(startTimeProvider);
     final config = ref.watch(workConfigProvider);
     final calc = ref.watch(calculatorProvider);
+    final isPro = ref.watch(isProProvider);
     final effectiveBreak = calc.effectiveBreak(config);
     final auto = config.arbzgAutoBreak;
 
@@ -210,23 +225,23 @@ class _InputCard extends ConsumerWidget {
           children: [
             _Tile(
               icon: Icons.login_rounded,
-              label: 'Start',
+              label: l.startLabel,
               value: Formatting.clock(start.hour, start.minute),
               onTap: () => _pickStart(context, ref),
             ),
             const Divider(height: 1, indent: 16, endIndent: 16),
             _Tile(
               icon: Icons.work_outline_rounded,
-              label: 'Arbeitszeit',
+              label: l.workLabel,
               value: Formatting.durationHm(config.work),
               onTap: () => _pickWork(context, ref),
             ),
             const Divider(height: 1, indent: 16, endIndent: 16),
             _Tile(
               icon: Icons.coffee_rounded,
-              label: 'Pause',
+              label: l.breakLabel,
               value: Formatting.durationHm(effectiveBreak),
-              subtitle: auto ? 'automatisch nach ArbZG' : null,
+              subtitle: auto ? l.breakAuto : null,
               enabled: !auto,
               onTap: () => _pickBreak(context, ref),
             ),
@@ -234,11 +249,24 @@ class _InputCard extends ConsumerWidget {
             SwitchListTile(
               contentPadding: const EdgeInsets.symmetric(horizontal: 16),
               secondary: const Icon(Icons.gavel_rounded),
-              title: const Text('Pause nach Gesetz (ArbZG)'),
-              subtitle: const Text('> 6 h → 30 min · > 9 h → 45 min'),
-              value: config.arbzgAutoBreak,
+              title: Row(
+                children: [
+                  Flexible(child: Text(l.arbzgTitle)),
+                  if (!isPro) ...[
+                    const SizedBox(width: 8),
+                    const ProBadge(),
+                  ],
+                ],
+              ),
+              subtitle: Text(l.arbzgSubtitle),
+              value: auto,
               onChanged: (v) {
                 HapticFeedback.selectionClick();
+                // Ausschalten geht immer, Einschalten ist eine Pro-Funktion.
+                if (v && !isPro) {
+                  PaywallSheet.show(context);
+                  return;
+                }
                 ref.read(profilesControllerProvider.notifier).setArbzgAuto(v);
               },
             ),
@@ -249,7 +277,8 @@ class _InputCard extends ConsumerWidget {
   }
 
   Future<void> _pickStart(BuildContext context, WidgetRef ref) async {
-    final picked = await StartTimeSheet.show(context, ref.read(startTimeProvider));
+    final picked =
+        await StartTimeSheet.show(context, ref.read(startTimeProvider));
     if (picked != null) {
       ref.read(startTimeProvider.notifier).set(picked);
     }
@@ -258,7 +287,7 @@ class _InputCard extends ConsumerWidget {
   Future<void> _pickWork(BuildContext context, WidgetRef ref) async {
     final picked = await DurationAdjustSheet.show(
       context,
-      title: 'Arbeitszeit',
+      title: context.l10n.workLabel,
       initial: ref.read(workConfigProvider).work,
       step: const Duration(minutes: 15),
       min: Duration.zero,
@@ -278,7 +307,7 @@ class _InputCard extends ConsumerWidget {
   Future<void> _pickBreak(BuildContext context, WidgetRef ref) async {
     final picked = await DurationAdjustSheet.show(
       context,
-      title: 'Pause',
+      title: context.l10n.breakLabel,
       initial: ref.read(workConfigProvider).breakTime,
       step: const Duration(minutes: 5),
       min: Duration.zero,
@@ -303,6 +332,7 @@ class _QuickPresets extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
+    final l = context.l10n;
     final config = ref.watch(workConfigProvider);
     final ctrl = ref.read(profilesControllerProvider.notifier);
 
@@ -326,20 +356,19 @@ class _QuickPresets extends ConsumerWidget {
         children: [
           Padding(
             padding: const EdgeInsets.only(right: 2, top: 6),
-            child: Text('Schnellwahl', style: theme.textTheme.labelLarge),
+            child: Text(l.quickSelect, style: theme.textTheme.labelLarge),
           ),
           ActionChip(
             avatar: Icon(
               isSixNoBreak ? Icons.check_rounded : Icons.bolt_rounded,
               size: 18,
             ),
-            label: const Text('6 Std ohne Pause'),
-            onPressed: () =>
-                apply(const Duration(hours: 6), Duration.zero),
+            label: Text(l.presetSixNoBreak),
+            onPressed: () => apply(const Duration(hours: 6), Duration.zero),
           ),
           ActionChip(
             avatar: const Icon(Icons.work_history_rounded, size: 18),
-            label: const Text('8 Std + 45 min'),
+            label: Text(l.presetEightStandard),
             onPressed: () => apply(
               const Duration(hours: 8),
               const Duration(minutes: 45),
@@ -378,7 +407,9 @@ class _Tile extends StatelessWidget {
       contentPadding: const EdgeInsets.symmetric(horizontal: 16),
       leading: Icon(icon, color: scheme.primary.withValues(alpha: dim)),
       title: Text(label, style: theme.textTheme.bodyLarge),
-      subtitle: subtitle == null ? null : Text(subtitle!, style: theme.textTheme.bodyMedium),
+      subtitle: subtitle == null
+          ? null
+          : Text(subtitle!, style: theme.textTheme.bodyMedium),
       trailing: Row(
         mainAxisSize: MainAxisSize.min,
         children: [

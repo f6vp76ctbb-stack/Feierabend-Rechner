@@ -1,19 +1,7 @@
-import 'package:feierabend_rechner/app.dart';
-import 'package:feierabend_rechner/features/home/state/home_providers.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
-/// Baut die App mit gemockter Persistenz (leere Voreinstellungen).
-Future<Widget> buildApp([Map<String, Object> initial = const {}]) async {
-  SharedPreferences.setMockInitialValues(initial);
-  final prefs = await SharedPreferences.getInstance();
-  return ProviderScope(
-    overrides: [sharedPreferencesProvider.overrideWithValue(prefs)],
-    child: const FeierabendApp(),
-  );
-}
+import 'test_helpers.dart';
 
 void main() {
   testWidgets('Home zeigt Feierabend-Überschrift und Eingaben', (tester) async {
@@ -25,6 +13,16 @@ void main() {
     expect(find.text('Start'), findsOneWidget);
     expect(find.text('Arbeitszeit'), findsOneWidget);
     expect(find.text('Pause'), findsOneWidget);
+  });
+
+  testWidgets('Englische Oberfläche', (tester) async {
+    await tester.pumpWidget(await buildApp(locale: const Locale('en')));
+    await tester.pump();
+
+    expect(find.text('CLOCK-OUT AT'), findsOneWidget);
+    expect(find.text('Work time'), findsOneWidget);
+    expect(find.text('Break'), findsOneWidget);
+    expect(find.text('General'), findsOneWidget); // Berufsgruppe übersetzt
   });
 
   testWidgets('Pause-Zeile öffnet das Einstell-Overlay', (tester) async {
@@ -64,7 +62,7 @@ void main() {
   });
 
   testWidgets('Gespeicherte Berufsgruppe wird beim Start geladen', (tester) async {
-    await tester.pumpWidget(await buildApp({'berufsgruppe': 'IT'}));
+    await tester.pumpWidget(await buildApp(initial: {'berufsgruppe': 'IT'}));
     await tester.pump();
 
     expect(find.text('IT'), findsOneWidget);
@@ -83,11 +81,9 @@ void main() {
     expect(find.text('Neues Profil'), findsOneWidget);
   });
 
-  testWidgets('Überstunden-Karte öffnet das Konto', (tester) async {
+  testWidgets('Pro: Überstunden-Karte öffnet das Konto', (tester) async {
     await tester.pumpWidget(await buildApp());
     await tester.pump();
-
-    expect(find.text('Überstunden-Konto'), findsOneWidget);
 
     await tester.ensureVisible(find.text('Überstunden-Konto'));
     await tester.pumpAndSettle();
@@ -96,6 +92,52 @@ void main() {
 
     expect(find.text('GESAMTSALDO'), findsOneWidget);
     expect(find.text('Noch keine Einträge'), findsOneWidget);
+  });
+
+  testWidgets('Free: Überstunden-Karte öffnet die Paywall', (tester) async {
+    await tester.pumpWidget(await buildApp(pro: false));
+    await tester.pump();
+
+    await tester.ensureVisible(find.text('Überstunden-Konto'));
+    await tester.pumpAndSettle();
+    expect(find.text('PRO'), findsWidgets);
+    await tester.tap(find.text('Überstunden-Konto'));
+    await tester.pumpAndSettle();
+
+    expect(find.text('Einmal zahlen. Für immer frei.'), findsOneWidget);
+    expect(find.text('GESAMTSALDO'), findsNothing);
+  });
+
+  testWidgets('Free: ArbZG-Schalter öffnet die Paywall statt einzuschalten',
+      (tester) async {
+    await tester.pumpWidget(await buildApp(pro: false));
+    await tester.pump();
+
+    final toggle = find.byType(SwitchListTile);
+    await tester.ensureVisible(toggle);
+    await tester.pumpAndSettle();
+    await tester.tap(toggle);
+    await tester.pumpAndSettle();
+
+    expect(find.text('Feierabend Pro'), findsOneWidget);
+    expect(find.text('automatisch nach ArbZG'), findsNothing);
+  });
+
+  testWidgets('Paywall zeigt Store-Preis und startet den Kauf', (tester) async {
+    final store = FakePurchaseBackend();
+    await tester.pumpWidget(await buildApp(pro: false, purchases: store));
+    await tester.pump();
+
+    await tester.ensureVisible(find.text('Überstunden-Konto'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Überstunden-Konto'));
+    await tester.pumpAndSettle();
+
+    final buy = find.text('Pro freischalten – 3,99 €');
+    expect(buy, findsOneWidget);
+    await tester.tap(buy);
+    await tester.pumpAndSettle();
+    expect(store.buyCalls, 1);
   });
 
   testWidgets('Einstellungen-Overlay bietet Theme-Wahl', (tester) async {

@@ -60,4 +60,15 @@ void main() {
       expect(Formatting.countdown(const Duration(seconds: -1)), '00:00:00');
     });
   });
+
+  group('Englische Einheiten', () {
+    test('durationLong EN', () {
+      expect(Formatting.durationLong(const Duration(hours: 6, minutes: 12), Units.en),
+          '6 h 12 min');
+    });
+    test('signedDuration EN', () {
+      expect(Formatting.signedDuration(-75, Units.en), '−1 h 15 min');
+      expect(Formatting.signedDuration(0, Units.en), '±0 min');
+    });
+  });
 }

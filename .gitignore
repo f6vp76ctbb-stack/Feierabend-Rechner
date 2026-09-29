@@ -43,3 +43,11 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# Release-Artefakte & Geheimnisse (nie committen)
+*.aab
+*.apk
+/release/
+android/key.properties
+*.jks
+*.keystore

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '../../../core/formatting.dart';
+import '../../../l10n/l10n_ext.dart';
 
 /// Sanftes Bottom-Sheet zum Einstellen einer Dauer (Arbeitszeit / Pause).
 ///
@@ -116,7 +117,7 @@ class _DurationAdjustSheetState extends State<DurationAdjustSheet> {
           const SizedBox(height: 24),
           FilledButton(
             onPressed: () => Navigator.of(context).pop(_value),
-            child: const Text('Übernehmen'),
+            child: Text(context.l10n.apply),
           ),
         ],
       ),

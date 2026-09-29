@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:intl/intl.dart';
 
 import '../../core/formatting.dart';
 import '../../domain/models/overtime_entry.dart';
 import '../../domain/overtime_calculator.dart';
+import '../../l10n/l10n_ext.dart';
 import '../home/state/home_providers.dart';
 import 'overtime_entry_sheet.dart';
 
@@ -24,11 +26,11 @@ class OvertimeScreen extends ConsumerWidget {
     final thisWeek = ref.watch(overtimeThisWeekProvider);
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Überstunden-Konto')),
+      appBar: AppBar(title: Text(context.l10n.overtimeAccount)),
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () => _addOrEdit(context, ref),
         icon: const Icon(Icons.add_rounded),
-        label: const Text('Tag'),
+        label: Text(context.l10n.addDay),
       ),
       body: ListView(
         padding: const EdgeInsets.fromLTRB(16, 12, 16, 96),
@@ -38,7 +40,7 @@ class OvertimeScreen extends ConsumerWidget {
           FilledButton.tonalIcon(
             onPressed: () => _bookToday(context, ref),
             icon: const Icon(Icons.today_rounded),
-            label: const Text('Heute buchen'),
+            label: Text(context.l10n.bookToday),
           ),
           const SizedBox(height: 16),
           if (weeks.isEmpty)
@@ -65,7 +67,8 @@ class OvertimeScreen extends ConsumerWidget {
       ..hideCurrentSnackBar()
       ..showSnackBar(SnackBar(
         content: Text(
-          'Heute gebucht: ${Formatting.signedDuration(entry.overtimeMinutes)}',
+          context.l10n.bookedToday(
+              Formatting.signedDuration(entry.overtimeMinutes, context.units)),
         ),
       ));
   }
@@ -106,19 +109,20 @@ class _BalanceHeader extends StatelessWidget {
         padding: const EdgeInsets.all(20),
         child: Column(
           children: [
-            Text('GESAMTSALDO', style: theme.textTheme.labelLarge),
+            Text(context.l10n.totalBalance, style: theme.textTheme.labelLarge),
             const SizedBox(height: 6),
             FittedBox(
               fit: BoxFit.scaleDown,
               child: Text(
-                Formatting.signedDuration(total),
+                Formatting.signedDuration(total, context.units),
                 style: theme.textTheme.displayLarge
                     ?.copyWith(fontSize: 52, color: color),
               ),
             ),
             const SizedBox(height: 8),
             Text(
-              'Diese Woche: ${Formatting.signedDuration(thisWeek)}',
+              context.l10n.overtimeThisWeekColon(
+                  Formatting.signedDuration(thisWeek, context.units)),
               style: theme.textTheme.bodyMedium,
             ),
           ],
@@ -133,14 +137,9 @@ class _WeekSection extends ConsumerWidget {
 
   final OvertimeWeek week;
 
-  static const _months = [
-    'Jan', 'Feb', 'März', 'Apr', 'Mai', 'Juni',
-    'Juli', 'Aug', 'Sept', 'Okt', 'Nov', 'Dez',
-  ];
-  static const _weekdays = ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So'];
-
-  String _dayLabel(DateTime d) => _weekdays[d.weekday - 1];
-  String _shortDate(DateTime d) => '${d.day}. ${_months[d.month - 1]}';
+  String _dayLabel(BuildContext c, DateTime d) => DateFormat.E(c.lang).format(d);
+  String _shortDate(BuildContext c, DateTime d) =>
+      DateFormat.MMMd(c.lang).format(d);
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -156,12 +155,12 @@ class _WeekSection extends ConsumerWidget {
             children: [
               Expanded(
                 child: Text(
-                  '${_shortDate(start)} – ${_shortDate(end)}',
+                  '${_shortDate(context, start)} – ${_shortDate(context, end)}',
                   style: theme.textTheme.labelLarge,
                 ),
               ),
               Text(
-                Formatting.signedDuration(week.balanceMinutes),
+                Formatting.signedDuration(week.balanceMinutes, context.units),
                 style: theme.textTheme.titleMedium?.copyWith(
                   color: week.balanceMinutes >= 0
                       ? theme.colorScheme.secondary
@@ -179,8 +178,8 @@ class _WeekSection extends ConsumerWidget {
                 if (i > 0) const Divider(height: 1, indent: 16, endIndent: 16),
                 _EntryTile(
                   entry: week.entries[i],
-                  dayLabel: _dayLabel(week.entries[i].date),
-                  shortDate: _shortDate(week.entries[i].date),
+                  dayLabel: _dayLabel(context, week.entries[i].date),
+                  shortDate: _shortDate(context, week.entries[i].date),
                 ),
               ],
             ],
@@ -209,15 +208,17 @@ class _EntryTile extends ConsumerWidget {
     return ListTile(
       title: Text('$dayLabel, $shortDate'),
       subtitle: Text(
-        '${Formatting.durationHm(Duration(minutes: entry.workedMinutes))} '
-        'von ${Formatting.durationHm(Duration(minutes: entry.targetMinutes))}',
+        context.l10n.workedOf(
+          Formatting.durationHm(Duration(minutes: entry.workedMinutes)),
+          Formatting.durationHm(Duration(minutes: entry.targetMinutes)),
+        ),
         style: theme.textTheme.bodyMedium,
       ),
       trailing: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
           Text(
-            Formatting.signedDuration(ot),
+            Formatting.signedDuration(ot, context.units),
             style: theme.textTheme.titleMedium?.copyWith(
               color: ot >= 0
                   ? theme.colorScheme.secondary
@@ -225,7 +226,7 @@ class _EntryTile extends ConsumerWidget {
             ),
           ),
           IconButton(
-            tooltip: 'Löschen',
+            tooltip: context.l10n.delete,
             icon: const Icon(Icons.delete_outline_rounded),
             onPressed: () => ref
                 .read(overtimeControllerProvider.notifier)
@@ -261,10 +262,10 @@ class _EmptyState extends StatelessWidget {
           Icon(Icons.event_note_rounded,
               size: 56, color: theme.colorScheme.primary.withValues(alpha: 0.5)),
           const SizedBox(height: 12),
-          Text('Noch keine Einträge', style: theme.textTheme.titleMedium),
+          Text(context.l10n.noEntries, style: theme.textTheme.titleMedium),
           const SizedBox(height: 4),
           Text(
-            'Tippe auf „Tag", um deinen ersten Arbeitstag zu erfassen.',
+            context.l10n.noEntriesHint,
             textAlign: TextAlign.center,
             style: theme.textTheme.bodyMedium,
           ),

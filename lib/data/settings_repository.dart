@@ -21,6 +21,8 @@ class SettingsRepository {
   static const _kProfiles = 'profiles_v1';
   static const _kOvertime = 'overtime_v1';
   static const _kDailyTarget = 'daily_target_minutes';
+  static const _kProPurchased = 'pro_purchased';
+  static const _kProTrialUntil = 'pro_trial_until_ms';
 
   // --- Arbeitszeit-/Pausen-Konfiguration ---
 
@@ -82,4 +84,19 @@ class SettingsRepository {
 
   Future<void> saveDailyTargetMinutes(int minutes) =>
       _prefs.setInt(_kDailyTarget, minutes);
+
+  // --- Pro (Kauf-Cache + Gratis-Test nach Belohnungsvideo) ---
+
+  bool loadProPurchased() => _prefs.getBool(_kProPurchased) ?? false;
+
+  Future<void> saveProPurchased(bool value) =>
+      _prefs.setBool(_kProPurchased, value);
+
+  DateTime? loadProTrialUntil() {
+    final ms = _prefs.getInt(_kProTrialUntil);
+    return ms == null ? null : DateTime.fromMillisecondsSinceEpoch(ms);
+  }
+
+  Future<void> saveProTrialUntil(DateTime until) =>
+      _prefs.setInt(_kProTrialUntil, until.millisecondsSinceEpoch);
 }

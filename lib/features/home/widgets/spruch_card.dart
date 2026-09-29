@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../data/sprueche.dart';
+import '../../../l10n/l10n_ext.dart';
 import '../state/home_providers.dart';
 
 /// Karte mit lustigem Spruch (antippen = neuer Spruch) + Berufsgruppen-Auswahl.
@@ -13,8 +14,10 @@ class SpruchCard extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
     final scheme = theme.colorScheme;
-    final spruch = ref.watch(spruchProvider);
     final gruppe = ref.watch(berufsgruppeProvider);
+    final index = ref.watch(spruchControllerProvider);
+    final list = Sprueche.forGruppe(gruppe, context.lang);
+    final spruch = list.isEmpty ? '' : list[index % list.length];
 
     return Card(
       clipBehavior: Clip.antiAlias,
@@ -53,14 +56,14 @@ class SpruchCard extends ConsumerWidget {
                 children: [
                   ActionChip(
                     avatar: Icon(Icons.badge_outlined, size: 18, color: scheme.primary),
-                    label: Text(gruppe),
+                    label: Text(Sprueche.label(gruppe, context.lang)),
                     onPressed: () => _pickGruppe(context, ref),
                   ),
                   const Spacer(),
                   Icon(Icons.refresh_rounded,
                       size: 20, color: scheme.onSurface.withValues(alpha: 0.4)),
                   const SizedBox(width: 4),
-                  Text('neuer Spruch', style: theme.textTheme.bodyMedium),
+                  Text(context.l10n.newQuote, style: theme.textTheme.bodyMedium),
                 ],
               ),
             ],
@@ -83,9 +86,9 @@ class SpruchCard extends ConsumerWidget {
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Text('Berufsgruppe wählen', style: theme.textTheme.titleMedium),
+              Text(context.l10n.chooseJobTitle, style: theme.textTheme.titleMedium),
               const SizedBox(height: 4),
-              Text('Bestimmt den Sprüche-Katalog.',
+              Text(context.l10n.chooseJobSubtitle,
                   style: theme.textTheme.bodyMedium),
               const SizedBox(height: 16),
               Wrap(
@@ -94,7 +97,7 @@ class SpruchCard extends ConsumerWidget {
                 children: [
                   for (final g in Sprueche.berufsgruppen)
                     ChoiceChip(
-                      label: Text(g),
+                      label: Text(Sprueche.label(g, context.lang)),
                       selected: g == current,
                       onSelected: (_) {
                         HapticFeedback.selectionClick();

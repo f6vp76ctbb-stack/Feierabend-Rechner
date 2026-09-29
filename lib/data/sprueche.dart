@@ -139,7 +139,150 @@ abstract final class Sprueche {
     ],
   };
 
-  /// Liefert die Spruchliste einer Gruppe (Fallback: Allgemein).
-  static List<String> forGruppe(String gruppe) =>
-      katalog[gruppe] ?? katalog[defaultGruppe]!;
+  /// Englische Anzeigenamen der Berufsgruppen (IDs bleiben die deutschen Namen).
+  static const Map<String, String> labelsEn = {
+    'Allgemein': 'General',
+    'Büro': 'Office',
+    'Handwerk': 'Trades',
+    'IT': 'IT',
+    'Pflege & Gesundheit': 'Care & Health',
+    'Lehrkraft': 'Teaching',
+    'Gastro': 'Hospitality',
+    'Einzelhandel': 'Retail',
+    'Schicht': 'Shift work',
+  };
+
+  /// Englischer Katalog — pro Gruppe genauso viele Sprüche wie auf Deutsch,
+  /// damit der Index sprachunabhängig ist.
+  static const Map<String, List<String>> katalogEn = {
+    'Allgemein': [
+      'Hang in there – quitting time is calling.',
+      'Soon the day belongs to you again.',
+      'Work is just the time between two evenings off.',
+      'Early bird? Nah – I’m a clock-out bird.',
+      'Countdown running. Couch and snacks are waiting.',
+      'Clocking out is the best part of the workday.',
+      'Almost done – then nothing but free time.',
+      'Just a few minutes between you and happiness.',
+      'Soon: shoes off, feet up.',
+      'The last stretch is the sweetest.',
+      'Your inner freedom bell is about to ring.',
+      'Your bed has missed you.',
+      'One more deep breath, then you’re out.',
+      'Clocking out – because nobody can work forever.',
+      'Your brain is about to switch to “off duty”.',
+      'A mini weekend is coming: tonight.',
+      'The fridge is looking forward to your visit.',
+      'Soon you’ll trade the keyboard for the remote.',
+      'Just a blink, then it’s quitting time.',
+      'You crushed it today – a break is coming.',
+    ],
+    'Büro': [
+      'Three more emails, then your office chair rolls into the evening.',
+      'Excel will close itself soon – promise.',
+      'That meeting could have been an email. Clocking out can’t.',
+      'Coffee empty, battery empty – time to clock out.',
+      'Outbox empty, head empty soon too.',
+      'Your computer shuts down soon – and you power up.',
+      'Hit “Send”, then hit the couch.',
+      'The printer beeps, freedom calls.',
+      'Soon your desk is just a memory.',
+      'Clocking out: the only task without a deadline.',
+    ],
+    'Handwerk': [
+      'Tools away, hands washed – almost clock-out time.',
+      'After a job well done, the evening drink tastes best.',
+      'Measured twice – clock-out fits perfectly.',
+      'Customer first, couch second.',
+      'Dust off, evening on.',
+      'The drill gets a break – and so do you.',
+      'Site clean, head clear soon.',
+      'Finished on schedule – time to go home.',
+      'Trowel down, feet up.',
+      'Good work is half the celebration.',
+    ],
+    'IT': [
+      'Deploy once more, then merge into the evening.',
+      'Ticket closed, laptop closed, clock-out committed.',
+      'Works on my evening off.',
+      'Ctrl + S for the day – checkout branch weekend.',
+      'No bug survives until quitting time.',
+      'Build green, mood green, clock-out soon.',
+      'git push origin couch.',
+      'Last commit: “finally off”.',
+      'Server’s running, you’re leaving soon.',
+      'Clear cache, clear mind, clock out.',
+    ],
+    'Pflege & Gesundheit': [
+      'Shift almost done – you’re doing amazing.',
+      'One more round, then you’ve earned it.',
+      'Shift over – now it’s your turn.',
+      'You showed heart – now treat yourself.',
+      'Handover done, evening taken over.',
+      'You helped so many today – now help yourself.',
+      'Scrubs off, calm on.',
+      'After the shift comes well-deserved quiet.',
+      'Soon only your own recovery counts.',
+      'Great job – now put your feet up.',
+    ],
+    'Lehrkraft': [
+      'The bell rings for you too: almost done.',
+      'Today’s homework: relax.',
+      'The timetable says: free time.',
+      'Chalk down, feet up.',
+      'One last look at the class, then off you go.',
+      'Put down the red pen – green light for your evening.',
+      'The bell counts for you today too.',
+      'Board wiped, head clear soon.',
+      'School’s out soon – for you.',
+      'Clocking out: no substitute needed.',
+    ],
+    'Gastro': [
+      'Last order out, evening in.',
+      'Last ticket torn, apron off – done.',
+      'After service comes the sofa.',
+      'Guests are full, you’re free soon.',
+      'Bar wiped, evening poured.',
+      'Kitchen cold, evening warmly awaited.',
+      'Your own evening drink is about to fizz.',
+      'Chairs up, mood up.',
+      'The last table leaves – so do you.',
+      'One order of “time off” – coming right up.',
+    ],
+    'Einzelhandel': [
+      'Register closing soon, evening opening up.',
+      'Shelves full, battery empty – almost done.',
+      'Last customer, then the store is yours – to leave.',
+      'Shutters down, spirits up.',
+      'Receipt of the day: time off, priceless.',
+      'One last beep and you’re done.',
+      'Stock sorted, thoughts soon too.',
+      'The window glows, you head home.',
+      'Time off is in stock – at eye level.',
+      'Closing time is your favorite deal.',
+    ],
+    'Schicht': [
+      'Shift’s almost over – nearly clock-out time.',
+      'Night turns to day, work turns to free time.',
+      'A little longer, then your bed takes over.',
+      'You made it – rest is coming.',
+      'Handover set, clock-out running.',
+      'Soon you’ll trade the safety vest for a pillow.',
+      'The machine keeps running, you take a break.',
+      'After the shift comes sleep.',
+      'Clock-out knows no hour – only you.',
+      'Soon your time is yours again.',
+    ],
+  };
+
+  /// Liefert die Spruchliste einer Gruppe in der gewünschten Sprache
+  /// (Fallback: Allgemein bzw. Deutsch).
+  static List<String> forGruppe(String gruppe, [String lang = 'de']) {
+    final source = lang == 'en' ? katalogEn : katalog;
+    return source[gruppe] ?? source[defaultGruppe]!;
+  }
+
+  /// Anzeigename einer Berufsgruppe in der gewünschten Sprache.
+  static String label(String gruppe, [String lang = 'de']) =>
+      lang == 'en' ? (labelsEn[gruppe] ?? gruppe) : gruppe;
 }

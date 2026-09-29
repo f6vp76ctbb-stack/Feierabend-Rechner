@@ -1,4 +1,4 @@
-package de.feierabendrechner.feierabend_rechner
+package com.thinkube.feierabendrechner
 
 import io.flutter.embedding.android.FlutterActivity
 

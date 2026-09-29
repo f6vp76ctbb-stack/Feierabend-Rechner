@@ -1,3 +1,4 @@
+import 'package:feierabend_rechner/data/sprueche.dart';
 import 'package:feierabend_rechner/features/home/state/home_providers.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -34,5 +35,13 @@ void main() {
     c.read(berufsgruppeProvider.notifier).set('IT');
     final spruch = c.read(spruchProvider);
     expect(spruch, isNotEmpty);
+  });
+
+  test('DE und EN haben je Gruppe gleich viele Sprüche', () {
+    for (final g in Sprueche.berufsgruppen) {
+      expect(Sprueche.katalogEn[g]!.length, Sprueche.katalog[g]!.length,
+          reason: g);
+      expect(Sprueche.labelsEn.containsKey(g), isTrue, reason: g);
+    }
   });
 }

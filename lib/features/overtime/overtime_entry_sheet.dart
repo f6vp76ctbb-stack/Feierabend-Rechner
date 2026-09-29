@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:intl/intl.dart';
 
 import '../../core/formatting.dart';
 import '../../domain/models/overtime_entry.dart';
+import '../../l10n/l10n_ext.dart';
 
 /// Overlay zum Anlegen/Bearbeiten eines Überstunden-Tages.
 ///
@@ -68,15 +70,7 @@ class _OvertimeEntrySheetState extends State<OvertimeEntrySheet> {
     if (picked != null) setState(() => _date = picked);
   }
 
-  static const _weekdays = [
-    'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So',
-  ];
-
-  String get _dateLabel {
-    final wd = _weekdays[_date.weekday - 1];
-    return '$wd, ${_date.day.toString().padLeft(2, '0')}.'
-        '${_date.month.toString().padLeft(2, '0')}.${_date.year}';
-  }
+  String get _dateLabel => DateFormat.yMMMEd(context.lang).format(_date);
 
   @override
   Widget build(BuildContext context) {
@@ -95,7 +89,9 @@ class _OvertimeEntrySheetState extends State<OvertimeEntrySheet> {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Text(
-            widget.existing == null ? 'Tag hinzufügen' : 'Tag bearbeiten',
+            widget.existing == null
+                ? context.l10n.addDayTitle
+                : context.l10n.editDayTitle,
             style: theme.textTheme.titleMedium,
           ),
           const SizedBox(height: 16),
@@ -106,14 +102,14 @@ class _OvertimeEntrySheetState extends State<OvertimeEntrySheet> {
           ),
           const SizedBox(height: 16),
           _StepperRow(
-            label: 'Gearbeitet',
+            label: context.l10n.worked,
             value: Formatting.durationHm(Duration(minutes: _worked)),
             onMinus: () => _bump((v) => _worked = v, _worked, -_step),
             onPlus: () => _bump((v) => _worked = v, _worked, _step),
           ),
           const SizedBox(height: 12),
           _StepperRow(
-            label: 'Soll',
+            label: context.l10n.target,
             value: Formatting.durationHm(Duration(minutes: _target)),
             onMinus: () => _bump((v) => _target = v, _target, -_step),
             onPlus: () => _bump((v) => _target = v, _target, _step),
@@ -121,7 +117,8 @@ class _OvertimeEntrySheetState extends State<OvertimeEntrySheet> {
           const SizedBox(height: 16),
           Center(
             child: Text(
-              'Saldo: ${Formatting.signedDuration(overtime)}',
+              context.l10n.balance(
+                  Formatting.signedDuration(overtime, context.units)),
               style: theme.textTheme.titleMedium?.copyWith(
                 color: overtime >= 0
                     ? theme.colorScheme.secondary
@@ -138,7 +135,7 @@ class _OvertimeEntrySheetState extends State<OvertimeEntrySheet> {
                 targetMinutes: _target,
               ),
             ),
-            child: const Text('Speichern'),
+            child: Text(context.l10n.save),
           ),
         ],
       ),

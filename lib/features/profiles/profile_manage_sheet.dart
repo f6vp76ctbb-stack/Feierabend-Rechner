@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../../l10n/l10n_ext.dart';
 import '../home/state/home_providers.dart';
+import '../pro/paywall_sheet.dart';
+import '../pro/pro_providers.dart';
 
 /// Overlay zur Profil-Verwaltung: umschalten, anlegen, umbenennen, löschen.
 class ProfileManageSheet extends ConsumerWidget {
@@ -22,6 +25,8 @@ class ProfileManageSheet extends ConsumerWidget {
     final state = ref.watch(profilesControllerProvider);
     final controller = ref.read(profilesControllerProvider.notifier);
     final canDelete = state.profiles.length > 1;
+    final isPro = ref.watch(isProProvider);
+    final l = context.l10n;
 
     return Padding(
       padding: EdgeInsets.fromLTRB(
@@ -36,7 +41,7 @@ class ProfileManageSheet extends ConsumerWidget {
         children: [
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 8),
-            child: Text('Profile', style: theme.textTheme.titleMedium),
+            child: Text(l.profiles, style: theme.textTheme.titleMedium),
           ),
           const SizedBox(height: 8),
           ...state.profiles.map(
@@ -58,7 +63,7 @@ class ProfileManageSheet extends ConsumerWidget {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   IconButton(
-                    tooltip: 'Umbenennen',
+                    tooltip: l.rename,
                     icon: const Icon(Icons.edit_rounded),
                     onPressed: () async {
                       final name = await _promptName(context, initial: p.name);
@@ -68,7 +73,7 @@ class ProfileManageSheet extends ConsumerWidget {
                     },
                   ),
                   IconButton(
-                    tooltip: canDelete ? 'Löschen' : 'Mindestens ein Profil',
+                    tooltip: canDelete ? l.delete : l.atLeastOneProfile,
                     icon: const Icon(Icons.delete_outline_rounded),
                     onPressed: canDelete
                         ? () => _confirmDelete(context, ref, p.id, p.name)
@@ -83,8 +88,19 @@ class ProfileManageSheet extends ConsumerWidget {
             padding: const EdgeInsets.symmetric(horizontal: 8),
             child: FilledButton.icon(
               icon: const Icon(Icons.add_rounded),
-              label: const Text('Neues Profil'),
+              label: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Text(l.newProfile),
+                  if (!isPro) ...[const SizedBox(width: 8), const ProBadge()],
+                ],
+              ),
               onPressed: () async {
+                // Mehrere Profile sind eine Pro-Funktion.
+                if (!isPro) {
+                  PaywallSheet.show(context);
+                  return;
+                }
                 final name = await _promptName(context, initial: '');
                 if (name != null && name.isNotEmpty) {
                   controller.addProfile(name);
@@ -107,16 +123,16 @@ class ProfileManageSheet extends ConsumerWidget {
     final ok = await showDialog<bool>(
       context: context,
       builder: (context) => AlertDialog(
-        title: Text('„$name" löschen?'),
-        content: const Text('Das Profil wird dauerhaft entfernt.'),
+        title: Text(context.l10n.deleteProfileTitle(name)),
+        content: Text(context.l10n.deleteProfileBody),
         actions: [
           TextButton(
             onPressed: () => Navigator.of(context).pop(false),
-            child: const Text('Abbrechen'),
+            child: Text(context.l10n.cancel),
           ),
           FilledButton(
             onPressed: () => Navigator.of(context).pop(true),
-            child: const Text('Löschen'),
+            child: Text(context.l10n.delete),
           ),
         ],
       ),
@@ -133,24 +149,26 @@ Future<String?> _promptName(BuildContext context, {required String initial}) {
   return showDialog<String>(
     context: context,
     builder: (context) => AlertDialog(
-      title: Text(initial.isEmpty ? 'Neues Profil' : 'Profil umbenennen'),
+      title: Text(initial.isEmpty
+          ? context.l10n.newProfile
+          : context.l10n.renameProfile),
       content: TextField(
         controller: controller,
         autofocus: true,
         textCapitalization: TextCapitalization.sentences,
-        decoration: const InputDecoration(
-          hintText: 'z. B. Mo–Do, Freitag, Nachtschicht',
+        decoration: InputDecoration(
+          hintText: context.l10n.profileNameHint,
         ),
         onSubmitted: (v) => Navigator.of(context).pop(v.trim()),
       ),
       actions: [
         TextButton(
           onPressed: () => Navigator.of(context).pop(),
-          child: const Text('Abbrechen'),
+          child: Text(context.l10n.cancel),
         ),
         FilledButton(
           onPressed: () => Navigator.of(context).pop(controller.text.trim()),
-          child: const Text('Speichern'),
+          child: Text(context.l10n.save),
         ),
       ],
     ),
