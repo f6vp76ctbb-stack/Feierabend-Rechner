@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/formatting.dart';
 import '../../design/app_colors.dart';
+import '../../design/app_icon.dart';
 import '../../l10n/l10n_ext.dart';
 import '../pro/banner_ad_view.dart';
 import '../pro/paywall_sheet.dart';
@@ -77,7 +78,9 @@ class HomeScreen extends ConsumerWidget {
                           l.presenceSummary(
                             Formatting.durationHm(result.presence),
                             Formatting.durationLong(
-                                result.breakUsed, context.units),
+                              result.breakUsed,
+                              context.units,
+                            ),
                           ),
                           textAlign: TextAlign.center,
                           style: theme.textTheme.bodyMedium,
@@ -103,20 +106,7 @@ class _Header extends StatelessWidget {
     final theme = Theme.of(context);
     return Row(
       children: [
-        Container(
-          width: 40,
-          height: 40,
-          decoration: BoxDecoration(
-            gradient: const LinearGradient(
-              colors: [AppColors.primary, AppColors.accentWarm],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-            ),
-            borderRadius: BorderRadius.circular(12),
-          ),
-          child: const Icon(Icons.wb_twilight_rounded,
-              color: Colors.white, size: 24),
-        ),
+        const AppIconMark(size: 40),
         const SizedBox(width: 12),
         Text(context.l10n.brandName, style: theme.textTheme.headlineMedium),
         const Spacer(),
@@ -252,10 +242,7 @@ class _InputCard extends ConsumerWidget {
               title: Row(
                 children: [
                   Flexible(child: Text(l.arbzgTitle)),
-                  if (!isPro) ...[
-                    const SizedBox(width: 8),
-                    const ProBadge(),
-                  ],
+                  if (!isPro) ...[const SizedBox(width: 8), const ProBadge()],
                 ],
               ),
               subtitle: Text(l.arbzgSubtitle),
@@ -277,8 +264,10 @@ class _InputCard extends ConsumerWidget {
   }
 
   Future<void> _pickStart(BuildContext context, WidgetRef ref) async {
-    final picked =
-        await StartTimeSheet.show(context, ref.read(startTimeProvider));
+    final picked = await StartTimeSheet.show(
+      context,
+      ref.read(startTimeProvider),
+    );
     if (picked != null) {
       ref.read(startTimeProvider.notifier).set(picked);
     }
@@ -344,38 +333,39 @@ class _QuickPresets extends ConsumerWidget {
       ctrl.setBreak(pause);
     }
 
-    final isSixNoBreak = config.work == const Duration(hours: 6) &&
+    final isSixNoBreak =
+        config.work == const Duration(hours: 6) &&
         config.breakTime == Duration.zero &&
         !config.arbzgAutoBreak;
 
-    return Align(
-      alignment: Alignment.centerLeft,
-      child: Wrap(
-        spacing: 8,
-        runSpacing: 8,
-        children: [
-          Padding(
-            padding: const EdgeInsets.only(right: 2, top: 6),
-            child: Text(l.quickSelect, style: theme.textTheme.labelLarge),
-          ),
-          ActionChip(
-            avatar: Icon(
-              isSixNoBreak ? Icons.check_rounded : Icons.bolt_rounded,
-              size: 18,
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Padding(
+          padding: const EdgeInsets.only(left: 4, bottom: 6),
+          child: Text(l.quickSelect, style: theme.textTheme.labelLarge),
+        ),
+        Wrap(
+          spacing: 8,
+          runSpacing: 8,
+          children: [
+            ActionChip(
+              avatar: Icon(
+                isSixNoBreak ? Icons.check_rounded : Icons.bolt_rounded,
+                size: 18,
+              ),
+              label: Text(l.presetSixNoBreak),
+              onPressed: () => apply(const Duration(hours: 6), Duration.zero),
             ),
-            label: Text(l.presetSixNoBreak),
-            onPressed: () => apply(const Duration(hours: 6), Duration.zero),
-          ),
-          ActionChip(
-            avatar: const Icon(Icons.work_history_rounded, size: 18),
-            label: Text(l.presetEightStandard),
-            onPressed: () => apply(
-              const Duration(hours: 8),
-              const Duration(minutes: 45),
+            ActionChip(
+              avatar: const Icon(Icons.work_history_rounded, size: 18),
+              label: Text(l.presetEightStandard),
+              onPressed: () =>
+                  apply(const Duration(hours: 8), const Duration(minutes: 45)),
             ),
-          ),
-        ],
-      ),
+          ],
+        ),
+      ],
     );
   }
 }

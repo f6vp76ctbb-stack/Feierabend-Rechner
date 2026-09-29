@@ -51,39 +51,39 @@ Legende: `[ ]` offen · `[x]` erledigt · 👤 = du · 🤖 = Claude · 🤝 = z
 - [ ] 🤖 Später: Hive für strukturierte Daten (Profile/Überstunden) in Phase 5
 
 ## Phase 5 — Pro-Features 🤖
-- [x] 🤖 Mehrere Profile (Mo–Do/Fr, Schichten) + Umschalter + Verwaltung (anlegen/umbenennen/löschen), persistiert
-- [ ] 🤖 TODO: In Phase 6 hinter Pro gaten (Free = 1 Profil)
-- [x] 🤖 Überstunden-Konto + Wochenübersicht (Tageseinträge, Wochen-/Gesamtsaldo, persistiert)
-- [ ] 🤖 Home-Screen-Widget (Countdown) via `home_widget`
-- [ ] 🤖 Lokale Benachrichtigungen („noch 30 Min", „Feierabend!")
-- [ ] 🤖 Premium-Themes / Farbwelten
+- [x] 🤖 Mehrere Profile (Mo–Do/Fr, Schichten) + Umschalter + Verwaltung, persistiert
+- [x] 🤖 Überstunden-Konto + Wochenübersicht + „Heute buchen", Soll pro Tag
+- [ ] 🤖 Home-Screen-Widget (Countdown) via `home_widget` (nativ, v1.1)
+- [ ] 🤖 Lokale Benachrichtigungen („noch 30 Min", „Feierabend!") (v1.1)
+- [ ] 🤖 Premium-Themes / Farbwelten (v1.1)
 
-## Phase 6 — Monetarisierung 🤝
-- [ ] 👤 RevenueCat-Konto anlegen, Produkte in Play Console anlegen (Pro-Kauf)
-- [ ] 👤 In-App-Produkt-ID(s) & Preise in Play Console eintragen
-- [ ] 🤖 RevenueCat integrieren, Kaufstatus verwalten
-- [ ] 🤖 Feature-Gating (Free/Pro) einbauen
-- [ ] 🤖 Paywall-Overlay (kontextuell, elegant) + „Kauf wiederherstellen"
-- [ ] 🤖 Optionaler 7-Tage-Trial
+## Phase 6 — Monetarisierung ✅ (Code) / 🤝 (Konsole)
+- [x] 🤖 In-App-Kauf `feierabend_pro` (einmalig) über `in_app_purchase` (statt RevenueCat – kein Fremdkonto nötig)
+- [x] 🤖 Feature-Gating: Pro = mehrere Profile, Überstunden-Konto, ArbZG-Automatik, keine Werbung
+- [x] 🤖 Paywall-Overlay (kontextuell) + „Käufe wiederherstellen" + stille Wiederherstellung beim Start
+- [x] 🤖 24-Std-Pro-Test per Belohnungsvideo (statt 7-Tage-Trial)
+- [x] 🤖 AdMob: adaptives Banner (Free), Rewarded, UMP-Einwilligung + Datenschutz-Optionen
+- [ ] 👤 In-App-Produkt in Play Console anlegen → `store/IN_APP_KAUF_UND_WERBUNG.md` Teil A
+- [ ] 👤 AdMob-Konto, App + 2 Anzeigenblöcke, DSGVO-Mitteilung → Teil B; IDs an Claude → AAB mit echten Anzeigen
 
 ## Phase 7 — Politur & Store-Reife 🤝
-- [ ] 🤖 Onboarding (2–3 Screens, überspringbar)
-- [ ] 🤖 App-Icon & Splash (👤 liefert Idee/Freigabe)
+- [ ] 🤖 Onboarding (2–3 Screens, überspringbar) (v1.1)
+- [x] 🤖 App-Icon (adaptiv + Themed Icon) – `lib/design/app_icon.dart`, generiert via `tool/store_assets_test.dart`
 - [ ] 🤖 Feinschliff Animationen, Leerzustände, Fehlerfälle
 - [ ] 🤖 Barrierefreiheit (Kontraste, Screenreader-Labels, große Schrift)
-- [ ] 🤖 Lokalisierung: Deutsch fertig, Englisch vorbereitet
-- [ ] 👤 App auf eigenem Gerät testen, Bugs melden
+- [x] 🤖 Lokalisierung Deutsch + Englisch (gen-l10n, inkl. Sprüche)
+- [ ] 👤 App auf eigenem Android-Gerät testen (interner Test), Bugs melden
 
-## Phase 8 — Release-Vorbereitung 🤝
-- [ ] 🤖 Datenschutzerklärung erstellen (offline-first, minimale Daten)
-- [ ] 👤 Datenschutzerklärung hosten (z. B. GitHub Pages) + Link
-- [ ] 👤 Play Console: „Data Safety"-Formular ausfüllen
-- [ ] 🤖 Crashlytics + anonyme Analytics einbauen
-- [ ] 🤖 Release-Signierung (Keystore) einrichten (👤 verwahrt Keystore sicher!)
-- [ ] 🤝 Store-Listing: Titel, Kurz-/Langbeschreibung (ASO-optimiert, siehe MARKETING.md)
-- [ ] 🤝 Screenshots + Feature-Grafik erstellen
-- [ ] 👤 App-Bundle (`.aab`) bauen & in internes Testing hochladen
-- [ ] 👤 Geschlossenes Testing mit 5–20 Testern (Play verlangt das oft vor Produktion)
+## Phase 8 — Release-Vorbereitung ✅ (vorbereitet) / 👤 (hochladen)
+- [x] 🤖 Datenschutzerklärung DE/EN → `web/privacy.html`, live auf GitHub Pages
+- [ ] 👤 Kontakt-E-Mail für Datenschutzerklärung an Claude geben
+- [x] 🤖 Antworten Data Safety / Inhaltseinstufung / Zielgruppe → `store/APP_INHALTE.md`
+- [x] 🤖 Upload-Schlüssel erzeugt (liegt NICHT im Repo) → `store/SCHLUESSEL.md`
+- [x] 🤖 Store-Listing DE/EN → `store/STORE_EINTRAG.md`
+- [x] 🤖 Screenshots (7 × DE/EN), Feature-Grafik, Icon 512 → `store/graphics/`
+- [x] 🤖 AAB-Build (CI, unsigniert) + lokale Signatur per jarsigner
+- [ ] 👤 AAB in internen Test hochladen → `store/ANLEITUNG.md`
+- [ ] 👤 Ggf. geschlossener Test (12 Tester / 14 Tage) → Produktion
 
 ## Phase 9 — Launch & Wachstum 🤝
 - [ ] 👤 Produktions-Release beantragen

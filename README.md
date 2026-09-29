@@ -31,6 +31,14 @@ Auf dem iPhone in Safari öffnen → Teilen → **Zum Home-Bildschirm** → star
 > „GitHub Actions"-Pages-Quelle), weil letztere nur vom Default-Branch deployt —
 > die Branch-Methode funktioniert auch vom Feature-Branch.
 
+## Veröffentlichung (Google Play)
+Alles für den Store liegt in **[`store/`](store/ANLEITUNG.md)** — Start: **[`store/ANLEITUNG.md`](store/ANLEITUNG.md)**
+(Store-Texte DE/EN, Screenshots, Feature-Grafik, Datensicherheit, In-App-Kauf & AdMob, Schlüssel).
+
+- Paketname: `com.thinkube.feierabendrechner`
+- Android-Bundle: GitHub Actions → „Android App Bundle (AAB)" (unsigniert) → Signatur mit Upload-Schlüssel
+- Store-Grafiken neu erzeugen: `flutter test tool/store_assets_test.dart` und `dart run flutter_launcher_icons`
+
 ## Lokal entwickeln
 ```bash
 flutter pub get

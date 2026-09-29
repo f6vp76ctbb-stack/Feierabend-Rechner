@@ -41,13 +41,13 @@ Ziel: **Play-Store-Release** (später optional App Store). Bezahlmodell, das zum
 | Framework          | **Flutter (Dart)**            | Ein Codebase, native Performance, top UI, Play + App Store |
 | Min. Android SDK   | 24 (Android 7.0)              | ~99 % Geräteabdeckung |
 | State Management   | **Riverpod**                  | Einfach, testbar, wenig Boilerplate |
-| Lokale Daten       | **Hive** (+ shared_preferences für Settings) | Schnell, offline, kein SQL nötig |
-| Monetarisierung    | **RevenueCat** (über in_app_purchase) | Vereinfacht IAP/Abos, Analytics, A/B-Paywall |
+| Lokale Daten       | **shared_preferences** (JSON-Blobs) | Offline, reicht für Settings/Profile/Überstunden |
+| Monetarisierung    | **in_app_purchase** (direkt, Produkt `feierabend_pro`) + **google_mobile_ads** (AdMob, UMP) | Kein Fremdkonto nötig |
 | Benachrichtigungen | **flutter_local_notifications** | Countdown/„Feierabend erreicht" ohne Server |
 | Home-Widget        | **home_widget**               | Android-Widget mit Countdown (starker Marketing-Hebel) |
 | Design-System      | **Material 3** + eigenes Theme | Modern, anpassbar |
-| Analytics          | Firebase Analytics (anonym) + RevenueCat | Conversion messen |
-| Crash-Reporting    | Firebase Crashlytics          | Stabilität vor Release |
+| Analytics/Crashes  | **keine eigenen** (Play-Console-Statistik reicht) | Datenschutz, schlanke Data-Safety-Angaben |
+| Übersetzung        | **gen-l10n** (`lib/l10n/*.arb`, DE + EN) | Offizieller Flutter-Weg |
 
 > Wenn ein Paket Probleme macht: erst in TODO.md dokumentieren, dann Alternative wählen.
 > Nichts Serverseitiges bauen, solange nicht zwingend nötig — die App bleibt offline-first.
@@ -77,19 +77,20 @@ Diese Logik lebt **isoliert und voll unit-getestet** in `lib/domain/` — UI hä
 ## 5. Feature-Umfang (Free vs. Pro)
 
 **Free (Köder, muss für sich schon nützlich sein):**
-- Feierabend-Berechnung mit Startzeit, Arbeitszeit, Pause
-- Live-Countdown
-- Dark Mode
+- Feierabend-Berechnung mit Startzeit, Arbeitszeit, Pause, Schnellwahl
+- Live-Countdown, Sprüche (alle Berufsgruppen), Dark Mode
 - 1 Profil
+- dezentes AdMob-Banner unten; 24 Std. Pro per Belohnungsvideo
 
-**Pro (einmaliger Kauf, ~3,99 €):**
+**Pro (einmaliger Kauf `feierabend_pro`, 3,99 €) — umgesetzt:**
+- Keine Werbung
 - Mehrere Profile (z. B. Mo–Do / Fr, Schichten)
 - Überstunden-Konto / Wochenübersicht
-- Home-Screen-Widget
-- Benachrichtigungen („Noch 30 Min", „Feierabend!")
 - ArbZG-Auto-Pausenmodus
-- Premium-Themes / Farbwelten
-- Keine (sehr dezenten) Hinweise
+
+**Pro — geplant (v1.1):** Home-Screen-Widget, Benachrichtigungen, Premium-Themes.
+
+Gating über `isProProvider` (`lib/features/pro/pro_providers.dart`); Web-Vorschau = immer Pro.
 
 Details & Begründung in `MARKETING.md`.
 
@@ -144,38 +145,26 @@ test/                      # Unit- + Widget-Tests (domain/ = 100 % Ziel)
 
 ## 9. Aktueller Stand
 
-- **Phasen 0–3 erledigt.** Flutter-Projekt initialisiert (`de.feierabendrechner`,
-  Plattformen web/android/ios). Riverpod, Material-3-Theme (hell/dunkel), Inter als
-  gebündelte Variable Font.
-- **Domain** (`lib/domain/`): `FeierabendCalculator` + Modelle, voll unit-getestet
-  (18 Domain-, 7 Format-, 2 Widget-Tests → grün). `flutter analyze` sauber.
-- **UI** (`lib/features/home/`): Hauptbildschirm mit Startzeit-Picker, Arbeitszeit-/
-  Pausen-Overlays (Bottom-Sheet), großem Ergebnis, Countdown-Ring, ArbZG-Toggle.
-- **Testen/Deploy**: GitHub-Actions-Workflow (`.github/workflows/deploy.yml`) prüft +
-  baut Web + deployt auf GitHub Pages. iPhone-Test via PWA („Zum Home-Bildschirm").
-- **Wichtig für Web/Font**: Gewichte über `fontVariations` (Variable Font), nicht `fontWeight`.
-- **Phase 4 erledigt**: Persistenz via `shared_preferences` (`lib/data/settings_repository.dart`).
-  `sharedPreferencesProvider` wird in `main()` (async) und in Tests via
-  `SharedPreferences.setMockInitialValues` überschrieben. Gespeichert: Arbeitszeit,
-  Pause, ArbZG, letzte Startzeit, Berufsgruppe, Theme. Einstellungs-Overlay
-  (`lib/features/settings/`) mit Theme-Wahl.
-- **Sprüche**: `lib/data/sprueche.dart` — großer Katalog nach Berufsgruppe, in der UI
-  wählbar. `SpruchController.next()` wiederholt nie den direkt vorherigen Spruch.
-- **ArbZG-Auto**: setzt die Pause aufs gesetzliche Minimum (überschreibt manuelle Pause).
-- **Schnellwahl** (Home): „6 Std ohne Pause" / „8 Std + 45 min" setzen Arbeitszeit+Pause.
-- **Soll pro Tag** (`dailyTargetProvider`, Einstellungen, Default 8 h): Vergleichswert fürs
-  Überstunden-Konto — unabhängig von der heute geplanten Arbeitszeit. „Heute buchen" im
-  Überstunden-Screen bucht heute (gearbeitet = Arbeitszeit des Profils, Soll = Soll pro Tag).
-- **Deploy**: über `gh-pages`-Branch (peaceiris), Pages-Quelle = „Deploy from a branch".
-- **Phase 5 (läuft)**: Mehrere **Profile** (`lib/domain/models/profile.dart`,
-  `ProfilesController` in `home_providers.dart`). Aktives Profil speist `workConfigProvider`.
-  Persistenz als JSON-Blob (`profiles_v1`) via `SettingsRepository`. UI: `ProfileBar`
-  (Schnell-Umschalten) + `ProfileManageSheet` (anlegen/umbenennen/löschen). Migration:
-  altes Einzel-Config → „Standard"-Profil.
-- **Überstunden-Konto** (`lib/domain/overtime_calculator.dart` + `models/overtime_entry.dart`,
-  `OvertimeController` in `home_providers.dart`, `lib/features/overtime/`): Tageseinträge
-  (gearbeitet vs. Soll), Wochen-/Gesamtsaldo, persistiert als JSON-Blob (`overtime_v1`).
-  Einstieg via `OvertimeCard` auf dem Hauptschirm → `OvertimeScreen`.
-- Nächste Schritte in Phase 5: Home-Widget + Notifications (nativ Android, nicht per Web-PWA
-  testbar), Premium-Themes. In Phase 6 Pro-Features gaten (Free = 1 Profil, kein Überstunden-
-  Konto o. Ä.). Offen: echte Zeitzonen-/DST-Behandlung.
+**Release-Kandidat 1.0.0 (Android)** — Paket `com.thinkube.feierabendrechner`, Entwickler „Thinkube".
+
+- **Fertig:** Phasen 0–6 + Store-Vorbereitung (Phase 8). Kern-Logik (`lib/domain/`), Home mit
+  Countdown-Ring, Startzeit-Pfeile, Schnellwahl „6 Std ohne Pause", Profile, Überstunden-Konto
+  („Heute buchen", Soll pro Tag), Sprüche nach Berufsgruppe (DE+EN, keine Direktwiederholung),
+  Einstellungen (Theme, Soll, Pro, Rechtliches), Persistenz (`SettingsRepository`).
+- **Monetarisierung:** `lib/config/monetization_config.dart` (IDs), `lib/services/purchase_backend.dart`
+  + `ads_backend.dart` (abstrahiert, in Tests/Screenshots per Override ersetzt),
+  `lib/features/pro/` (ProController, Paywall, Banner). AdMob-Anzeigenblöcke per
+  `--dart-define=ADMOB_BANNER_ANDROID/ADMOB_REWARDED_ANDROID`, App-ID per Env `ADMOB_APP_ID`
+  (Default: Google-Test-IDs).
+- **Übersetzung:** `lib/l10n/app_{de,en}.arb` → `flutter gen-l10n`; `context.l10n`, `context.units`.
+- **Store-Assets:** `flutter test tool/store_assets_test.dart` rendert Icon-Quellen (`assets/icon/`),
+  Screenshots/Feature-Grafik (`store/graphics/`); danach `dart run flutter_launcher_icons`.
+- **Android-Build:** `.github/workflows/android-bundle.yml` baut **unsigniert** (dl.google.com ist in der
+  Claude-Sandbox gesperrt) und legt das AAB im Branch `aab-build` ab; Signatur lokal per `jarsigner`
+  mit dem Upload-Schlüssel (**nie ins Repo**, siehe `store/SCHLUESSEL.md`). versionCode = run_number.
+- **Web-Vorschau:** `deploy.yml` → `gh-pages` (Pages: „Deploy from a branch"); `web/privacy.html` ist
+  die Datenschutz-URL.
+- **Store-Doku für den Nutzer:** `store/ANLEITUNG.md` (Start hier), `STORE_EINTRAG.md`,
+  `APP_INHALTE.md`, `IN_APP_KAUF_UND_WERBUNG.md`, `SCHLUESSEL.md`.
+- **Offen:** Kontakt-E-Mail in `web/privacy.html` (Platzhalter), echte AdMob-IDs, Widget,
+  Benachrichtigungen, Onboarding, Zeitzonen-/DST-Behandlung.

@@ -27,8 +27,8 @@ Marketing endet nicht im Store — die stärksten Kauf-Anreize sitzen **in der A
    man ein Pro-Feature antippt — mit klarem Nutzen und „**einmal zahlen, für immer**".
 3. **Emotionaler Moment nutzen.** Upgrade-Hinweis erscheint z. B. beim „Feierabend erreicht!"-
    Glücksmoment — beste Laune, höchste Kaufbereitschaft.
-4. **Fairness kommuniziert.** „Kein Abo, keine Werbung, keine Datensammelei" ist selbst ein
-   Verkaufsargument — besonders in Deutschland.
+4. **Fairness kommuniziert.** „Einmal zahlen, kein Abo – und Pro ist werbefrei" ist selbst ein
+   Verkaufsargument — besonders in Deutschland. (Free finanziert sich über ein dezentes Banner.)
 5. **Preis-Anker.** Pro (3,99 €) neben „= 1 Kaffee, aber jeden Feierabend pünktlich".
 6. **Trial (7 Tage).** Menschen behalten, was sie schon nutzen (Endowment-Effekt).
 7. **In-App-Review zur richtigen Zeit** (nach 3. positivem Nutzungstag) → bessere Bewertungen
@@ -40,7 +40,7 @@ Marketing endet nicht im Store — die stärksten Kauf-Anreize sitzen **in der A
 
 Kostenlos, dauerhaft, skalierbar. **Vor Launch sauber aufsetzen.**
 
-- **Titel (30 Z.):** `Feierabend Rechner – Arbeitszeit` (Keyword direkt im Titel)
+- **Titel (max. 30 Z.):** `Feierabend Rechner` (DE) · `Feierabend: Clock-Out Timer` (EN) – finale Texte in `store/STORE_EINTRAG.md`
 - **Kurzbeschreibung (80 Z.):** Nutzen + Emotion, z. B.
   „Berechne in Sekunden, wann du Feierabend hast. Arbeitszeit, Pause, Überstunden."
 - **Keywords im Langtext natürlich unterbringen:** Feierabend, Arbeitszeit Rechner,

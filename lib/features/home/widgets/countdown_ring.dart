@@ -37,9 +37,10 @@ class CountdownRing extends StatelessWidget {
                 progress: value,
                 stroke: stroke,
                 track: scheme.primary.withValues(alpha: 0.12),
+                // Start oben (12 Uhr), Grün erst gegen Feierabend.
                 gradient: SweepGradient(
-                  startAngle: -math.pi / 2,
-                  endAngle: 3 * math.pi / 2,
+                  // Leicht vorgedreht, damit die runde Startkappe nicht ins Verlaufsende greift.
+                  transform: const GradientRotation(-math.pi / 2 - 0.12),
                   colors: [
                     scheme.primary,
                     const Color(0xFF8B7EF0),
