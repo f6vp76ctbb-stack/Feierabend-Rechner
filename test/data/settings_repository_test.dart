@@ -51,4 +51,14 @@ void main() {
     await repo.saveDailyTargetMinutes(480);
     expect(repo.loadDailyTargetMinutes(), 480);
   });
+
+  test('Erinnerungen Round-Trip (Default aus, 30 Min)', () async {
+    final repo = await makeRepo();
+    expect(repo.loadRemindersEnabled(), isFalse);
+    expect(repo.loadReminderLeadMinutes(), 30);
+    await repo.saveRemindersEnabled(true);
+    await repo.saveReminderLeadMinutes(15);
+    expect(repo.loadRemindersEnabled(), isTrue);
+    expect(repo.loadReminderLeadMinutes(), 15);
+  });
 }

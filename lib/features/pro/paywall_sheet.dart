@@ -132,6 +132,7 @@ class _PaywallSheetState extends ConsumerState<PaywallSheet> {
               l.paywallBenefitProfiles,
               l.paywallBenefitOvertime,
               l.paywallBenefitArbzg,
+              l.paywallBenefitReminders,
               l.paywallBenefitSupport,
             ])
               Padding(

@@ -48,6 +48,7 @@ FEIERABEND PRO – EINMALIG, KEIN ABO
 • Unbegrenzt Profile, z. B. Mo–Do, Freitag, Nachtschicht
 • Überstunden-Konto mit Wochenübersicht und „Heute buchen" per Fingertipp
 • Automatische Pause nach Arbeitszeitgesetz (über 6 Std → 30 Min, über 9 Std → 45 Min)
+• Erinnerung kurz vor und pünktlich zum Feierabend
 • Keine Werbung
 • Vorher 24 Stunden gratis testen – per kurzem Video
 
@@ -67,7 +68,7 @@ Feierabend. Auf einen Blick.
 
 **Versionshinweise 1.0.0**
 ```
-Die erste Version ist da: Feierabend-Uhrzeit mit Live-Countdown, Schnellwahl „6 Std ohne Pause", Profile, Überstunden-Konto, Pause nach Arbeitszeitgesetz, lustige Sprüche für deinen Beruf und Dark Mode.
+Die erste Version ist da: Feierabend-Uhrzeit mit Live-Countdown, Schnellwahl „6 Std ohne Pause", Profile, Überstunden-Konto, Erinnerungen, Pause nach Arbeitszeitgesetz, lustige Sprüche für deinen Beruf und Dark Mode.
 ```
 
 ---
@@ -104,6 +105,7 @@ FEIERABEND PRO – ONE-TIME, NO SUBSCRIPTION
 • Unlimited profiles, e.g. Mon–Thu, Friday, Night shift
 • Overtime account with weekly overview and one-tap “Book today”
 • Automatic legal break calculation based on the German Working Hours Act (over 6 h → 30 min, over 9 h → 45 min)
+• Reminders shortly before and right at clock-out
 • No ads
 • Try it free for 24 hours first – with a short video
 
@@ -123,7 +125,7 @@ Feierabend. At a glance.
 
 **Release notes 1.0.0**
 ```
-The first version is here: clock-out time with live countdown, quick pick “6 h, no break”, profiles, overtime account, legal break calculation, fun quotes for your job and dark mode.
+The first version is here: clock-out time with live countdown, quick pick “6 h, no break”, profiles, overtime account, reminders, legal break calculation, fun quotes for your job and dark mode.
 ```
 
 ---

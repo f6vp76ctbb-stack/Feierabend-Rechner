@@ -9,6 +9,7 @@ Das Geschäftsmodell der App:
 | Mehrere Profile | nur 1 | unbegrenzt |
 | Überstunden-Konto + „Heute buchen" | – | ✅ |
 | Pause nach Arbeitszeitgesetz (Automatik) | – | ✅ |
+| Erinnerungen („Gleich Feierabend", „Feierabend!") | – | ✅ |
 | 24 Std. Pro gratis per Belohnungsvideo | ✅ | – |
 
 ---

@@ -23,6 +23,8 @@ class SettingsRepository {
   static const _kDailyTarget = 'daily_target_minutes';
   static const _kProPurchased = 'pro_purchased';
   static const _kProTrialUntil = 'pro_trial_until_ms';
+  static const _kRemindersEnabled = 'reminders_enabled';
+  static const _kReminderLead = 'reminder_lead_minutes';
 
   // --- Arbeitszeit-/Pausen-Konfiguration ---
 
@@ -99,4 +101,16 @@ class SettingsRepository {
 
   Future<void> saveProTrialUntil(DateTime until) =>
       _prefs.setInt(_kProTrialUntil, until.millisecondsSinceEpoch);
+
+  // --- Erinnerungen (Benachrichtigungen) ---
+
+  bool loadRemindersEnabled() => _prefs.getBool(_kRemindersEnabled) ?? false;
+
+  Future<void> saveRemindersEnabled(bool value) =>
+      _prefs.setBool(_kRemindersEnabled, value);
+
+  int loadReminderLeadMinutes() => _prefs.getInt(_kReminderLead) ?? 30;
+
+  Future<void> saveReminderLeadMinutes(int minutes) =>
+      _prefs.setInt(_kReminderLead, minutes);
 }

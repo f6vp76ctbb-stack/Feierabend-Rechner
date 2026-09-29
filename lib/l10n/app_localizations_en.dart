@@ -294,4 +294,43 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get adNotReady =>
       'No video available right now. Please try again shortly.';
+
+  @override
+  String get remindersTitle => 'Reminders';
+
+  @override
+  String get remindersSwitch => 'Notifications';
+
+  @override
+  String get remindersHint => 'Shortly before and right at clock-out.';
+
+  @override
+  String get reminderLead => 'Heads-up';
+
+  @override
+  String get notifChannelName => 'Clock-out reminders';
+
+  @override
+  String get notifChannelDesc => 'Alerts shortly before and at clock-out';
+
+  @override
+  String get notifBeforeTitle => 'Almost clock-out time';
+
+  @override
+  String notifBeforeBody(String duration) {
+    return '$duration to go – then you’re free.';
+  }
+
+  @override
+  String get notifEndTitle => 'Time to go! 🎉';
+
+  @override
+  String get notifEndBody => 'You made it. Head home!';
+
+  @override
+  String get notificationsDenied =>
+      'Notifications are blocked in system settings.';
+
+  @override
+  String get paywallBenefitReminders => 'Reminders before and at clock-out';
 }

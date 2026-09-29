@@ -87,8 +87,9 @@ Diese Logik lebt **isoliert und voll unit-getestet** in `lib/domain/` — UI hä
 - Mehrere Profile (z. B. Mo–Do / Fr, Schichten)
 - Überstunden-Konto / Wochenübersicht
 - ArbZG-Auto-Pausenmodus
+- Erinnerungen (Vorwarnung 15/30/60 Min + „Feierabend!")
 
-**Pro — geplant (v1.1):** Home-Screen-Widget, Benachrichtigungen, Premium-Themes.
+**Pro — geplant (v1.1):** Home-Screen-Widget, Premium-Themes.
 
 Gating über `isProProvider` (`lib/features/pro/pro_providers.dart`); Web-Vorschau = immer Pro.
 
@@ -156,6 +157,10 @@ test/                      # Unit- + Widget-Tests (domain/ = 100 % Ziel)
   `lib/features/pro/` (ProController, Paywall, Banner). AdMob-Anzeigenblöcke per
   `--dart-define=ADMOB_BANNER_ANDROID/ADMOB_REWARDED_ANDROID`, App-ID per Env `ADMOB_APP_ID`
   (Default: Google-Test-IDs).
+- **Erinnerungen:** `lib/domain/reminder_planner.dart` (rein, getestet) → `lib/features/reminders/`
+  (Einstellungen persistiert, `reminderPlanProvider` nur mit Pro) → Sync in `app.dart` via
+  `NotificationBackend` (`flutter_local_notifications`, `inexactAllowWhileIdle`, UTC-Zeitpunkte).
+  Android: Desugaring + Boot-Receiver im Manifest.
 - **Übersetzung:** `lib/l10n/app_{de,en}.arb` → `flutter gen-l10n`; `context.l10n`, `context.units`.
 - **Store-Assets:** `flutter test tool/store_assets_test.dart` rendert Icon-Quellen (`assets/icon/`),
   Screenshots/Feature-Grafik (`store/graphics/`); danach `dart run flutter_launcher_icons`.
@@ -167,4 +172,4 @@ test/                      # Unit- + Widget-Tests (domain/ = 100 % Ziel)
 - **Store-Doku für den Nutzer:** `store/ANLEITUNG.md` (Start hier), `STORE_EINTRAG.md`,
   `APP_INHALTE.md`, `IN_APP_KAUF_UND_WERBUNG.md`, `SCHLUESSEL.md`.
 - **Offen:** Kontakt-E-Mail in `web/privacy.html` (Platzhalter), echte AdMob-IDs, Widget,
-  Benachrichtigungen, Onboarding, Zeitzonen-/DST-Behandlung.
+  Onboarding, Zeitzonen-/DST-Behandlung.

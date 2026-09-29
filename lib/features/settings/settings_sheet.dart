@@ -11,6 +11,7 @@ import '../home/state/home_providers.dart';
 import '../home/widgets/duration_adjust_sheet.dart';
 import '../pro/paywall_sheet.dart';
 import '../pro/pro_providers.dart';
+import '../reminders/reminder_providers.dart';
 
 /// Einstellungs-Overlay: Soll pro Tag, Erscheinungsbild, Pro, Rechtliches.
 class SettingsSheet extends ConsumerWidget {
@@ -87,6 +88,12 @@ class SettingsSheet extends ConsumerWidget {
                 child: Text(l.restorePurchases),
               ),
             const SizedBox(height: 16),
+
+            // --- Erinnerungen (nur in den mobilen Apps) ---
+            if (ref.watch(notificationBackendProvider).isSupported) ...[
+              const _RemindersSection(),
+              const SizedBox(height: 16),
+            ],
 
             // --- Soll pro Tag ---
             Text(l.dailyTarget, style: theme.textTheme.labelLarge),
@@ -173,6 +180,73 @@ class SettingsSheet extends ConsumerWidget {
           ],
         ),
       ),
+    );
+  }
+}
+
+class _RemindersSection extends ConsumerWidget {
+  const _RemindersSection();
+
+  static const _leads = [15, 30, 60];
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final theme = Theme.of(context);
+    final l = context.l10n;
+    final settings = ref.watch(reminderSettingsProvider);
+    final isPro = ref.watch(isProProvider);
+    final active = settings.enabled && isPro;
+
+    Future<void> toggle(bool on) async {
+      HapticFeedback.selectionClick();
+      final ctrl = ref.read(reminderSettingsProvider.notifier);
+      if (!on) return ctrl.setEnabled(false);
+      if (!isPro) return PaywallSheet.show(context);
+      final messenger = ScaffoldMessenger.of(context);
+      final granted =
+          await ref.read(notificationBackendProvider).requestPermission();
+      if (granted) {
+        ctrl.setEnabled(true);
+      } else {
+        messenger.showSnackBar(SnackBar(content: Text(l.notificationsDenied)));
+      }
+    }
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Text(l.remindersTitle, style: theme.textTheme.labelLarge),
+        SwitchListTile(
+          contentPadding: EdgeInsets.zero,
+          secondary: const Icon(Icons.notifications_active_outlined),
+          title: Row(
+            children: [
+              Flexible(child: Text(l.remindersSwitch)),
+              if (!isPro) ...[const SizedBox(width: 8), const ProBadge()],
+            ],
+          ),
+          subtitle: Text(l.remindersHint),
+          value: active,
+          onChanged: toggle,
+        ),
+        if (active)
+          Wrap(
+            spacing: 8,
+            crossAxisAlignment: WrapCrossAlignment.center,
+            children: [
+              Text(l.reminderLead, style: theme.textTheme.bodyMedium),
+              for (final m in _leads)
+                ChoiceChip(
+                  label: Text(Formatting.durationLong(
+                      Duration(minutes: m), context.units)),
+                  selected: settings.lead.inMinutes == m,
+                  onSelected: (_) => ref
+                      .read(reminderSettingsProvider.notifier)
+                      .setLead(Duration(minutes: m)),
+                ),
+            ],
+          ),
+      ],
     );
   }
 }

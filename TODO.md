@@ -54,7 +54,7 @@ Legende: `[ ]` offen · `[x]` erledigt · 👤 = du · 🤖 = Claude · 🤝 = z
 - [x] 🤖 Mehrere Profile (Mo–Do/Fr, Schichten) + Umschalter + Verwaltung, persistiert
 - [x] 🤖 Überstunden-Konto + Wochenübersicht + „Heute buchen", Soll pro Tag
 - [ ] 🤖 Home-Screen-Widget (Countdown) via `home_widget` (nativ, v1.1)
-- [ ] 🤖 Lokale Benachrichtigungen („noch 30 Min", „Feierabend!") (v1.1)
+- [x] 🤖 Lokale Benachrichtigungen („Gleich Feierabend" mit 15/30/60 Min Vorwarnung, „Feierabend!"), Pro, nicht-exakte Alarme
 - [ ] 🤖 Premium-Themes / Farbwelten (v1.1)
 
 ## Phase 6 — Monetarisierung ✅ (Code) / 🤝 (Konsole)

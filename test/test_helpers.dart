@@ -2,8 +2,11 @@ import 'dart:async';
 
 import 'package:feierabend_rechner/app.dart';
 import 'package:feierabend_rechner/features/home/state/home_providers.dart';
+import 'package:feierabend_rechner/domain/reminder_planner.dart';
 import 'package:feierabend_rechner/features/pro/pro_providers.dart';
+import 'package:feierabend_rechner/features/reminders/reminder_providers.dart';
 import 'package:feierabend_rechner/services/ads_backend.dart';
+import 'package:feierabend_rechner/services/notification_backend.dart';
 import 'package:feierabend_rechner/services/purchase_backend.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -40,12 +43,39 @@ class FakePurchaseBackend implements PurchaseBackend {
   void dispose() => _events.close();
 }
 
+/// Test-Benachrichtigungen: merkt sich jeden geplanten Stand.
+class FakeNotificationBackend implements NotificationBackend {
+  FakeNotificationBackend({this.grant = true});
+
+  final bool grant;
+  final List<List<PlannedReminder>> applied = [];
+  ReminderTexts? lastTexts;
+  int permissionRequests = 0;
+
+  List<PlannedReminder> get current => applied.isEmpty ? const [] : applied.last;
+
+  @override
+  bool get isSupported => true;
+  @override
+  Future<bool> requestPermission() async {
+    permissionRequests++;
+    return grant;
+  }
+
+  @override
+  Future<void> apply(List<PlannedReminder> plan, ReminderTexts texts) async {
+    applied.add(plan);
+    lastTexts = texts;
+  }
+}
+
 /// Baut die App mit gemockter Persistenz und ohne echten Store/Werbung.
 Future<Widget> buildApp({
   Map<String, Object> initial = const {},
   bool pro = true,
   Locale locale = const Locale('de'),
   PurchaseBackend? purchases,
+  NotificationBackend? notifications,
 }) async {
   SharedPreferences.setMockInitialValues({
     if (pro) 'pro_purchased': true,
@@ -58,6 +88,8 @@ Future<Widget> buildApp({
       purchaseBackendProvider
           .overrideWithValue(purchases ?? NoopPurchaseBackend()),
       adsBackendProvider.overrideWithValue(NoopAdsBackend()),
+      notificationBackendProvider
+          .overrideWithValue(notifications ?? NoopNotificationBackend()),
     ],
     child: FeierabendApp(locale: locale),
   );

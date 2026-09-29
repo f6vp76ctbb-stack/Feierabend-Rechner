@@ -296,4 +296,44 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get adNotReady =>
       'Gerade kein Video verfügbar. Versuch es gleich nochmal.';
+
+  @override
+  String get remindersTitle => 'Erinnerungen';
+
+  @override
+  String get remindersSwitch => 'Benachrichtigungen';
+
+  @override
+  String get remindersHint => 'Kurz vor und pünktlich zum Feierabend.';
+
+  @override
+  String get reminderLead => 'Vorwarnung';
+
+  @override
+  String get notifChannelName => 'Feierabend-Erinnerungen';
+
+  @override
+  String get notifChannelDesc => 'Hinweise kurz vor und zum Feierabend';
+
+  @override
+  String get notifBeforeTitle => 'Gleich Feierabend';
+
+  @override
+  String notifBeforeBody(String duration) {
+    return 'Noch $duration – dann bist du frei.';
+  }
+
+  @override
+  String get notifEndTitle => 'Feierabend! 🎉';
+
+  @override
+  String get notifEndBody => 'Geschafft. Ab nach Hause!';
+
+  @override
+  String get notificationsDenied =>
+      'Benachrichtigungen sind in den Systemeinstellungen blockiert.';
+
+  @override
+  String get paywallBenefitReminders =>
+      'Erinnerung kurz vor und zum Feierabend';
 }

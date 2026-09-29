@@ -619,6 +619,78 @@ abstract class AppLocalizations {
   /// In de, this message translates to:
   /// **'Gerade kein Video verfügbar. Versuch es gleich nochmal.'**
   String get adNotReady;
+
+  /// No description provided for @remindersTitle.
+  ///
+  /// In de, this message translates to:
+  /// **'Erinnerungen'**
+  String get remindersTitle;
+
+  /// No description provided for @remindersSwitch.
+  ///
+  /// In de, this message translates to:
+  /// **'Benachrichtigungen'**
+  String get remindersSwitch;
+
+  /// No description provided for @remindersHint.
+  ///
+  /// In de, this message translates to:
+  /// **'Kurz vor und pünktlich zum Feierabend.'**
+  String get remindersHint;
+
+  /// No description provided for @reminderLead.
+  ///
+  /// In de, this message translates to:
+  /// **'Vorwarnung'**
+  String get reminderLead;
+
+  /// No description provided for @notifChannelName.
+  ///
+  /// In de, this message translates to:
+  /// **'Feierabend-Erinnerungen'**
+  String get notifChannelName;
+
+  /// No description provided for @notifChannelDesc.
+  ///
+  /// In de, this message translates to:
+  /// **'Hinweise kurz vor und zum Feierabend'**
+  String get notifChannelDesc;
+
+  /// No description provided for @notifBeforeTitle.
+  ///
+  /// In de, this message translates to:
+  /// **'Gleich Feierabend'**
+  String get notifBeforeTitle;
+
+  /// No description provided for @notifBeforeBody.
+  ///
+  /// In de, this message translates to:
+  /// **'Noch {duration} – dann bist du frei.'**
+  String notifBeforeBody(String duration);
+
+  /// No description provided for @notifEndTitle.
+  ///
+  /// In de, this message translates to:
+  /// **'Feierabend! 🎉'**
+  String get notifEndTitle;
+
+  /// No description provided for @notifEndBody.
+  ///
+  /// In de, this message translates to:
+  /// **'Geschafft. Ab nach Hause!'**
+  String get notifEndBody;
+
+  /// No description provided for @notificationsDenied.
+  ///
+  /// In de, this message translates to:
+  /// **'Benachrichtigungen sind in den Systemeinstellungen blockiert.'**
+  String get notificationsDenied;
+
+  /// No description provided for @paywallBenefitReminders.
+  ///
+  /// In de, this message translates to:
+  /// **'Erinnerung kurz vor und zum Feierabend'**
+  String get paywallBenefitReminders;
 }
 
 class _AppLocalizationsDelegate

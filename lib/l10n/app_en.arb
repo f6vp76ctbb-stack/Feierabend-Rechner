@@ -4,7 +4,6 @@
   "brandName": "Feierabend",
   "unitHours": "h",
   "unitMinutes": "min",
-
   "clockOutAt": "CLOCK-OUT AT",
   "reached": "Time to go!",
   "remainingLabel": "time left",
@@ -19,18 +18,15 @@
   "quickSelect": "Quick pick",
   "presetSixNoBreak": "6 h, no break",
   "presetEightStandard": "8 h + 45 min",
-
   "startTimeTitle": "Start time",
   "hour": "Hour",
   "minute": "Minute",
   "now": "Now",
   "startTimeHint": "Clock-out is calculated from {time}.",
   "apply": "Apply",
-
   "newQuote": "new quote",
   "chooseJobTitle": "Choose your job",
   "chooseJobSubtitle": "Sets your quote collection.",
-
   "profiles": "Profiles",
   "rename": "Rename",
   "delete": "Delete",
@@ -42,7 +38,6 @@
   "cancel": "Cancel",
   "save": "Save",
   "profileNameHint": "e.g. Mon–Thu, Friday, Night shift",
-
   "overtimeAccount": "Overtime account",
   "overtimeThisWeek": "This week {value}",
   "overtimeThisWeekColon": "This week: {value}",
@@ -58,7 +53,6 @@
   "worked": "Worked",
   "target": "Target",
   "balance": "Balance: {value}",
-
   "settings": "Settings",
   "dailyTarget": "Daily target",
   "dailyTargetHint": "Used for your overtime account. Work less and you go negative – work more and you go positive.",
@@ -75,7 +69,6 @@
   "privacySettings": "Privacy settings (ads)",
   "privacyPolicy": "Privacy policy",
   "legalSection": "Legal",
-
   "proBadge": "PRO",
   "paywallTitle": "Feierabend Pro",
   "paywallSubtitle": "Pay once. Free forever.",
@@ -93,5 +86,17 @@
   "purchaseError": "Purchase not completed. Please try again.",
   "restoreDone": "Purchases checked.",
   "trialGranted": "Pro unlocked for 24 hours – enjoy!",
-  "adNotReady": "No video available right now. Please try again shortly."
+  "adNotReady": "No video available right now. Please try again shortly.",
+  "remindersTitle": "Reminders",
+  "remindersSwitch": "Notifications",
+  "remindersHint": "Shortly before and right at clock-out.",
+  "reminderLead": "Heads-up",
+  "notifChannelName": "Clock-out reminders",
+  "notifChannelDesc": "Alerts shortly before and at clock-out",
+  "notifBeforeTitle": "Almost clock-out time",
+  "notifBeforeBody": "{duration} to go – then you’re free.",
+  "notifEndTitle": "Time to go! 🎉",
+  "notifEndBody": "You made it. Head home!",
+  "notificationsDenied": "Notifications are blocked in system settings.",
+  "paywallBenefitReminders": "Reminders before and at clock-out"
 }
