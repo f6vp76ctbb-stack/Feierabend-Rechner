@@ -98,5 +98,10 @@
   "notifEndTitle": "Time to go! 🎉",
   "notifEndBody": "You made it. Head home!",
   "notificationsDenied": "Notifications are blocked in system settings.",
-  "paywallBenefitReminders": "Reminders before and at clock-out"
+  "paywallBenefitReminders": "Reminders before and at clock-out",
+  "paywallBenefitWidget": "Live countdown as a home screen widget",
+  "widgetTitle": "Home screen widget",
+  "widgetHint": "Your clock-out time on the home screen – a live countdown with Pro.",
+  "widgetAdd": "Add widget",
+  "widgetManual": "Long-press your home screen → Widgets → Feierabend."
 }

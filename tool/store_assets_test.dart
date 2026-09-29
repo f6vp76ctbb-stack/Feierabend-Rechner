@@ -22,9 +22,11 @@ import 'package:feierabend_rechner/features/pro/paywall_sheet.dart';
 import 'package:feierabend_rechner/features/pro/pro_providers.dart';
 import 'package:feierabend_rechner/features/profiles/profile_manage_sheet.dart';
 import 'package:feierabend_rechner/features/reminders/reminder_providers.dart';
+import 'package:feierabend_rechner/features/widget/widget_providers.dart';
 import 'package:feierabend_rechner/services/ads_backend.dart';
 import 'package:feierabend_rechner/services/notification_backend.dart';
 import 'package:feierabend_rechner/services/purchase_backend.dart';
+import 'package:feierabend_rechner/services/widget_backend.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
@@ -178,6 +180,7 @@ Future<Widget> _app(String lang, {bool dark = false, bool paywall = false}) asyn
       adsBackendProvider
           .overrideWithValue(paywall ? _ShowcaseAds() : NoopAdsBackend()),
       notificationBackendProvider.overrideWithValue(NoopNotificationBackend()),
+      widgetBackendProvider.overrideWithValue(NoopWidgetBackend()),
     ],
     child: FeierabendApp(locale: Locale(lang)),
   );

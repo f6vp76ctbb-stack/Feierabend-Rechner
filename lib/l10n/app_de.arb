@@ -175,6 +175,11 @@
   "notifEndBody": "Geschafft. Ab nach Hause!",
   "notificationsDenied": "Benachrichtigungen sind in den Systemeinstellungen blockiert.",
   "paywallBenefitReminders": "Erinnerung kurz vor und zum Feierabend",
+  "paywallBenefitWidget": "Live-Countdown als Home-Screen-Widget",
+  "widgetTitle": "Home-Screen-Widget",
+  "widgetHint": "Feierabend-Zeit auf dem Startbildschirm – mit Pro als Live-Countdown.",
+  "widgetAdd": "Widget hinzufügen",
+  "widgetManual": "Lange auf den Startbildschirm tippen → Widgets → Feierabend.",
   "@notifBeforeBody": {
     "placeholders": {
       "duration": {

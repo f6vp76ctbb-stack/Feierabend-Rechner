@@ -45,6 +45,19 @@
                 <action android:name="com.htc.intent.action.QUICKBOOT_POWERON"/>
             </intent-filter>
         </receiver>
+        <!-- Home-Screen-Widget (FeierabendWidget.kt). -->
+        <receiver android:name=".FeierabendWidgetProvider" android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/feierabend_widget_info"/>
+        </receiver>
         <!-- AdMob-App-ID; wird beim Build aus ADMOB_APP_ID gesetzt (Default: Google-Test-ID). -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"

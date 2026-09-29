@@ -691,6 +691,36 @@ abstract class AppLocalizations {
   /// In de, this message translates to:
   /// **'Erinnerung kurz vor und zum Feierabend'**
   String get paywallBenefitReminders;
+
+  /// No description provided for @paywallBenefitWidget.
+  ///
+  /// In de, this message translates to:
+  /// **'Live-Countdown als Home-Screen-Widget'**
+  String get paywallBenefitWidget;
+
+  /// No description provided for @widgetTitle.
+  ///
+  /// In de, this message translates to:
+  /// **'Home-Screen-Widget'**
+  String get widgetTitle;
+
+  /// No description provided for @widgetHint.
+  ///
+  /// In de, this message translates to:
+  /// **'Feierabend-Zeit auf dem Startbildschirm – mit Pro als Live-Countdown.'**
+  String get widgetHint;
+
+  /// No description provided for @widgetAdd.
+  ///
+  /// In de, this message translates to:
+  /// **'Widget hinzufügen'**
+  String get widgetAdd;
+
+  /// No description provided for @widgetManual.
+  ///
+  /// In de, this message translates to:
+  /// **'Lange auf den Startbildschirm tippen → Widgets → Feierabend.'**
+  String get widgetManual;
 }
 
 class _AppLocalizationsDelegate

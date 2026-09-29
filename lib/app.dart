@@ -7,6 +7,7 @@ import 'features/home/home_screen.dart';
 import 'features/home/state/home_providers.dart';
 import 'features/pro/pro_providers.dart';
 import 'features/reminders/reminder_providers.dart';
+import 'features/widget/widget_providers.dart';
 import 'domain/reminder_planner.dart';
 import 'l10n/app_localizations.dart';
 import 'services/notification_backend.dart';
@@ -36,6 +37,12 @@ class _FeierabendAppState extends ConsumerState<FeierabendApp> {
       if (samePlan(prev, plan)) return;
       final lead = ref.read(reminderSettingsProvider).lead;
       ref.read(notificationBackendProvider).apply(plan, _texts(lead));
+    }, fireImmediately: true);
+
+    // Home-Screen-Widget mit Feierabend-Zeit und Pro-Status versorgen.
+    ref.listenManual(widgetSnapshotProvider, (prev, snapshot) {
+      if (prev == snapshot) return;
+      ref.read(widgetBackendProvider).update(snapshot);
     }, fireImmediately: true);
   }
 

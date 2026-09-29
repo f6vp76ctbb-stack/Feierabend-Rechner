@@ -135,6 +135,8 @@ void main() {
 
     final buy = find.text('Pro freischalten – 3,99 €');
     expect(buy, findsOneWidget);
+    await tester.ensureVisible(buy);
+    await tester.pumpAndSettle();
     await tester.tap(buy);
     await tester.pumpAndSettle();
     expect(store.buyCalls, 1);

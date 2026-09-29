@@ -12,6 +12,7 @@ import '../home/widgets/duration_adjust_sheet.dart';
 import '../pro/paywall_sheet.dart';
 import '../pro/pro_providers.dart';
 import '../reminders/reminder_providers.dart';
+import '../widget/widget_providers.dart';
 
 /// Einstellungs-Overlay: Soll pro Tag, Erscheinungsbild, Pro, Rechtliches.
 class SettingsSheet extends ConsumerWidget {
@@ -92,6 +93,12 @@ class SettingsSheet extends ConsumerWidget {
             // --- Erinnerungen (nur in den mobilen Apps) ---
             if (ref.watch(notificationBackendProvider).isSupported) ...[
               const _RemindersSection(),
+              const SizedBox(height: 16),
+            ],
+
+            // --- Home-Screen-Widget (nur Android) ---
+            if (ref.watch(widgetBackendProvider).isSupported) ...[
+              const _WidgetSection(),
               const SizedBox(height: 16),
             ],
 
@@ -246,6 +253,41 @@ class _RemindersSection extends ConsumerWidget {
                 ),
             ],
           ),
+      ],
+    );
+  }
+}
+
+class _WidgetSection extends ConsumerWidget {
+  const _WidgetSection();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final theme = Theme.of(context);
+    final l = context.l10n;
+
+    Future<void> add() async {
+      HapticFeedback.selectionClick();
+      final messenger = ScaffoldMessenger.of(context);
+      final pinned = await ref.read(widgetBackendProvider).requestPin();
+      // Launcher ohne „Anheften"-Dialog: Weg von Hand erklären.
+      if (!pinned) {
+        messenger.showSnackBar(SnackBar(content: Text(l.widgetManual)));
+      }
+    }
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Text(l.widgetTitle, style: theme.textTheme.labelLarge),
+        const SizedBox(height: 4),
+        Text(l.widgetHint, style: theme.textTheme.bodyMedium),
+        const SizedBox(height: 8),
+        OutlinedButton.icon(
+          onPressed: add,
+          icon: const Icon(Icons.widgets_outlined),
+          label: Text(l.widgetAdd),
+        ),
       ],
     );
   }

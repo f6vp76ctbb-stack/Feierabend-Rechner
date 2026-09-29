@@ -5,9 +5,12 @@ import 'package:feierabend_rechner/features/home/state/home_providers.dart';
 import 'package:feierabend_rechner/domain/reminder_planner.dart';
 import 'package:feierabend_rechner/features/pro/pro_providers.dart';
 import 'package:feierabend_rechner/features/reminders/reminder_providers.dart';
+import 'package:feierabend_rechner/features/widget/widget_providers.dart';
+import 'package:feierabend_rechner/domain/models/widget_snapshot.dart';
 import 'package:feierabend_rechner/services/ads_backend.dart';
 import 'package:feierabend_rechner/services/notification_backend.dart';
 import 'package:feierabend_rechner/services/purchase_backend.dart';
+import 'package:feierabend_rechner/services/widget_backend.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -69,6 +72,26 @@ class FakeNotificationBackend implements NotificationBackend {
   }
 }
 
+/// Test-Widget: merkt sich jeden übertragenen Stand.
+class FakeWidgetBackend implements WidgetBackend {
+  FakeWidgetBackend({this.supported = true, this.pinSupported = true});
+
+  final bool supported;
+  final bool pinSupported;
+  final List<WidgetSnapshot> updates = [];
+  int pinRequests = 0;
+
+  @override
+  bool get isSupported => supported;
+  @override
+  Future<void> update(WidgetSnapshot snapshot) async => updates.add(snapshot);
+  @override
+  Future<bool> requestPin() async {
+    pinRequests++;
+    return pinSupported;
+  }
+}
+
 /// Baut die App mit gemockter Persistenz und ohne echten Store/Werbung.
 Future<Widget> buildApp({
   Map<String, Object> initial = const {},
@@ -76,6 +99,7 @@ Future<Widget> buildApp({
   Locale locale = const Locale('de'),
   PurchaseBackend? purchases,
   NotificationBackend? notifications,
+  WidgetBackend? widgets,
 }) async {
   SharedPreferences.setMockInitialValues({
     if (pro) 'pro_purchased': true,
@@ -90,6 +114,7 @@ Future<Widget> buildApp({
       adsBackendProvider.overrideWithValue(NoopAdsBackend()),
       notificationBackendProvider
           .overrideWithValue(notifications ?? NoopNotificationBackend()),
+      widgetBackendProvider.overrideWithValue(widgets ?? NoopWidgetBackend()),
     ],
     child: FeierabendApp(locale: locale),
   );

@@ -10,6 +10,7 @@ Das Geschäftsmodell der App:
 | Überstunden-Konto + „Heute buchen" | – | ✅ |
 | Pause nach Arbeitszeitgesetz (Automatik) | – | ✅ |
 | Erinnerungen („Gleich Feierabend", „Feierabend!") | – | ✅ |
+| Home-Screen-Widget | Feierabend-Uhrzeit | + Live-Countdown |
 | 24 Std. Pro gratis per Belohnungsvideo | ✅ | – |
 
 ---
@@ -31,14 +32,14 @@ Play Console → deine App → **Monetarisieren → Produkte → In-App-Produkte
 |---|---|
 | **Produkt-ID** | `feierabend_pro` ← **exakt so**, sonst findet die App das Produkt nicht (nicht mehr änderbar!) |
 | Name | Feierabend Pro |
-| Beschreibung | Einmal zahlen, für immer frei: keine Werbung, unbegrenzt Profile, Überstunden-Konto und Pause nach Arbeitszeitgesetz. |
+| Beschreibung | Einmal zahlen, für immer frei: keine Werbung, unbegrenzt Profile, Überstunden-Konto, Erinnerungen, Widget-Countdown und Pause nach Arbeitszeitgesetz. |
 | Preis | **3,99 €** → „Preis festlegen" → Google rechnet andere Länder automatisch um |
 
 → **Speichern** → **Aktivieren**.
 
 Englische Übersetzung des Produkts (optional, empfohlen):
 - Name: `Feierabend Pro`
-- Beschreibung: `Pay once, free forever: no ads, unlimited profiles, overtime account and automatic legal breaks.`
+- Beschreibung: `Pay once, free forever: no ads, unlimited profiles, overtime account, reminders, widget countdown and automatic legal breaks.`
 
 > Typ: Das ist ein **einmaliges, nicht verbrauchbares** Produkt (kein Abo). Die App bestätigt den Kauf automatisch (sonst würde Google ihn nach 3 Tagen erstatten).
 

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Texte des Home-Screen-Widgets (Englisch = Standard, Deutsch in values-de). -->
+<resources>
+    <string name="widget_title">Clock-out at</string>
+    <string name="widget_left_format">%s left</string>
+    <string name="widget_reached">Time to go! 🎉</string>
+    <string name="widget_locked">🔒 Live countdown with Pro</string>
+    <string name="widget_open">Tap to set your start time</string>
+    <string name="widget_description">Your clock-out time with a live countdown</string>
+</resources>

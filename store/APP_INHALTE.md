@@ -74,5 +74,6 @@ Nicht ankreuzen: Persönliche Infos, Finanzinfos (Käufe laufen über Google Pla
 ## Berechtigungen im AAB (zur Info)
 `INTERNET`, `ACCESS_NETWORK_STATE`, `com.google.android.gms.permission.AD_ID` (Werbung), `com.android.vending.BILLING` (Kauf),
 `POST_NOTIFICATIONS` + `RECEIVE_BOOT_COMPLETED` (Feierabend-Erinnerungen, rein lokal – keine Datensicherheits-Angabe nötig).
+Das Home-Screen-Widget braucht keine Berechtigung (Aktualisierung per nicht-exaktem `setWindow`-Alarm).
 Keine exakten Alarme (`SCHEDULE_EXACT_ALARM`/`USE_EXACT_ALARM`) → keine Sonder-Erklärung.
 Keine Standort-, Kamera-, Kontakt- oder Speicher-Berechtigungen.

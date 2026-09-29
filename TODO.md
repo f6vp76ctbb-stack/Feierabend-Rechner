@@ -53,7 +53,7 @@ Legende: `[ ]` offen · `[x]` erledigt · 👤 = du · 🤖 = Claude · 🤝 = z
 ## Phase 5 — Pro-Features 🤖
 - [x] 🤖 Mehrere Profile (Mo–Do/Fr, Schichten) + Umschalter + Verwaltung, persistiert
 - [x] 🤖 Überstunden-Konto + Wochenübersicht + „Heute buchen", Soll pro Tag
-- [ ] 🤖 Home-Screen-Widget (Countdown) via `home_widget` (nativ, v1.1)
+- [x] 🤖 Home-Screen-Widget: natives Android-Widget (`FeierabendWidget.kt`, ohne Zusatz-Paket) – Feierabend-Zeit gratis, Live-Countdown mit Pro, „Widget hinzufügen" in Einstellungen
 - [x] 🤖 Lokale Benachrichtigungen („Gleich Feierabend" mit 15/30/60 Min Vorwarnung, „Feierabend!"), Pro, nicht-exakte Alarme
 - [ ] 🤖 Premium-Themes / Farbwelten (v1.1)
 

@@ -333,4 +333,21 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get paywallBenefitReminders => 'Reminders before and at clock-out';
+
+  @override
+  String get paywallBenefitWidget => 'Live countdown as a home screen widget';
+
+  @override
+  String get widgetTitle => 'Home screen widget';
+
+  @override
+  String get widgetHint =>
+      'Your clock-out time on the home screen – a live countdown with Pro.';
+
+  @override
+  String get widgetAdd => 'Add widget';
+
+  @override
+  String get widgetManual =>
+      'Long-press your home screen → Widgets → Feierabend.';
 }

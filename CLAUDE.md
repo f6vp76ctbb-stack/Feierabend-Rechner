@@ -44,7 +44,7 @@ Ziel: **Play-Store-Release** (später optional App Store). Bezahlmodell, das zum
 | Lokale Daten       | **shared_preferences** (JSON-Blobs) | Offline, reicht für Settings/Profile/Überstunden |
 | Monetarisierung    | **in_app_purchase** (direkt, Produkt `feierabend_pro`) + **google_mobile_ads** (AdMob, UMP) | Kein Fremdkonto nötig |
 | Benachrichtigungen | **flutter_local_notifications** | Countdown/„Feierabend erreicht" ohne Server |
-| Home-Widget        | **home_widget**               | Android-Widget mit Countdown (starker Marketing-Hebel) |
+| Home-Widget        | **nativ** (RemoteViews + Chronometer, MethodChannel) | Kein Glance/Compose-Ballast; Countdown tickt ohne App |
 | Design-System      | **Material 3** + eigenes Theme | Modern, anpassbar |
 | Analytics/Crashes  | **keine eigenen** (Play-Console-Statistik reicht) | Datenschutz, schlanke Data-Safety-Angaben |
 | Übersetzung        | **gen-l10n** (`lib/l10n/*.arb`, DE + EN) | Offizieller Flutter-Weg |
@@ -88,8 +88,9 @@ Diese Logik lebt **isoliert und voll unit-getestet** in `lib/domain/` — UI hä
 - Überstunden-Konto / Wochenübersicht
 - ArbZG-Auto-Pausenmodus
 - Erinnerungen (Vorwarnung 15/30/60 Min + „Feierabend!")
+- Live-Countdown im Android-Home-Screen-Widget (die Uhrzeit darin ist gratis → Werbehebel)
 
-**Pro — geplant (v1.1):** Home-Screen-Widget, Premium-Themes.
+**Pro — geplant (v1.1):** Premium-Themes.
 
 Gating über `isProProvider` (`lib/features/pro/pro_providers.dart`); Web-Vorschau = immer Pro.
 
@@ -161,6 +162,10 @@ test/                      # Unit- + Widget-Tests (domain/ = 100 % Ziel)
   (Einstellungen persistiert, `reminderPlanProvider` nur mit Pro) → Sync in `app.dart` via
   `NotificationBackend` (`flutter_local_notifications`, `inexactAllowWhileIdle`, UTC-Zeitpunkte).
   Android: Desugaring + Boot-Receiver im Manifest.
+- **Home-Widget (Android):** `lib/features/widget/` + `lib/services/widget_backend.dart` schicken einen
+  `WidgetSnapshot` (Start/Ende/Label/Pro-Ablauf) über den Channel `com.thinkube.feierabendrechner/widget`
+  an `android/.../FeierabendWidget.kt` (Provider + `setWindow`-Alarm zum Umschalten auf „erreicht").
+  Texte in `res/values(-de)/strings.xml`. Kotlin lässt sich nur in CI bauen.
 - **Übersetzung:** `lib/l10n/app_{de,en}.arb` → `flutter gen-l10n`; `context.l10n`, `context.units`.
 - **Store-Assets:** `flutter test tool/store_assets_test.dart` rendert Icon-Quellen (`assets/icon/`),
   Screenshots/Feature-Grafik (`store/graphics/`); danach `dart run flutter_launcher_icons`.
@@ -171,5 +176,5 @@ test/                      # Unit- + Widget-Tests (domain/ = 100 % Ziel)
   die Datenschutz-URL.
 - **Store-Doku für den Nutzer:** `store/ANLEITUNG.md` (Start hier), `STORE_EINTRAG.md`,
   `APP_INHALTE.md`, `IN_APP_KAUF_UND_WERBUNG.md`, `SCHLUESSEL.md`.
-- **Offen:** Kontakt-E-Mail in `web/privacy.html` (Platzhalter), echte AdMob-IDs, Widget,
-  Onboarding, Zeitzonen-/DST-Behandlung.
+- **Offen:** Kontakt-E-Mail in `web/privacy.html` (Platzhalter), echte AdMob-IDs,
+  Onboarding, Zeitzonen-/DST-Behandlung, iOS-Widget.

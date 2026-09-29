@@ -336,4 +336,21 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get paywallBenefitReminders =>
       'Erinnerung kurz vor und zum Feierabend';
+
+  @override
+  String get paywallBenefitWidget => 'Live-Countdown als Home-Screen-Widget';
+
+  @override
+  String get widgetTitle => 'Home-Screen-Widget';
+
+  @override
+  String get widgetHint =>
+      'Feierabend-Zeit auf dem Startbildschirm – mit Pro als Live-Countdown.';
+
+  @override
+  String get widgetAdd => 'Widget hinzufügen';
+
+  @override
+  String get widgetManual =>
+      'Lange auf den Startbildschirm tippen → Widgets → Feierabend.';
 }
