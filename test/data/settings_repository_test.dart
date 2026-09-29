@@ -61,4 +61,12 @@ void main() {
     expect(repo.loadRemindersEnabled(), isTrue);
     expect(repo.loadReminderLeadMinutes(), 15);
   });
+
+  test('Einführung: neu = offen, Bestandsnutzer = erledigt, Round-Trip', () async {
+    expect((await makeRepo()).loadOnboardingDone(), isFalse);
+    expect((await makeRepo({'start_minutes': 404})).loadOnboardingDone(), isTrue);
+    final repo = await makeRepo();
+    await repo.saveOnboardingDone(true);
+    expect(repo.loadOnboardingDone(), isTrue);
+  });
 }

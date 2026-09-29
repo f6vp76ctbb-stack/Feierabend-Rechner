@@ -166,6 +166,9 @@ test/                      # Unit- + Widget-Tests (domain/ = 100 % Ziel)
   `WidgetSnapshot` (Start/Ende/Label/Pro-Ablauf) über den Channel `com.thinkube.feierabendrechner/widget`
   an `android/.../FeierabendWidget.kt` (Provider + `setWindow`-Alarm zum Umschalten auf „erreicht").
   Texte in `res/values(-de)/strings.xml`. Kotlin lässt sich nur in CI bauen.
+- **Onboarding:** `lib/features/onboarding/onboarding_screen.dart` (`onboardingDoneProvider`, Key
+  `onboarding_done`; Bestandsnutzer mit gespeicherten Eingaben überspringen es). `_Root` in `app.dart`
+  blendet zum Home über; Werbe-Einwilligung/SDK startet erst danach. Tests: `buildApp(onboarding: true)`.
 - **Übersetzung:** `lib/l10n/app_{de,en}.arb` → `flutter gen-l10n`; `context.l10n`, `context.units`.
 - **Store-Assets:** `flutter test tool/store_assets_test.dart` rendert Icon-Quellen (`assets/icon/`),
   Screenshots/Feature-Grafik (`store/graphics/`); danach `dart run flutter_launcher_icons`.
@@ -177,4 +180,4 @@ test/                      # Unit- + Widget-Tests (domain/ = 100 % Ziel)
 - **Store-Doku für den Nutzer:** `store/ANLEITUNG.md` (Start hier), `STORE_EINTRAG.md`,
   `APP_INHALTE.md`, `IN_APP_KAUF_UND_WERBUNG.md`, `SCHLUESSEL.md`.
 - **Offen:** Kontakt-E-Mail in `web/privacy.html` (Platzhalter), echte AdMob-IDs,
-  Onboarding, Zeitzonen-/DST-Behandlung, iOS-Widget.
+  Zeitzonen-/DST-Behandlung, iOS-Widget.

@@ -39,6 +39,9 @@ abstract final class AppTheme {
       brightness: brightness,
     ).copyWith(
       primary: AppColors.primary,
+      // Primär ist in beiden Modi dasselbe Indigo → Schrift darauf immer weiß
+      // (fromSeed(dark) würde sonst dunkles Lila auf Indigo liefern).
+      onPrimary: Colors.white,
       secondary: AppColors.success,
       surface: surface,
       onSurface: onSurface,

@@ -350,4 +350,46 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get widgetManual =>
       'Long-press your home screen → Widgets → Feierabend.';
+
+  @override
+  String get onbSkip => 'Skip';
+
+  @override
+  String get onbNext => 'Next';
+
+  @override
+  String get onbStart => 'Let\'s go';
+
+  @override
+  String get onb1Title => 'When can you clock out?';
+
+  @override
+  String get onb1Body =>
+      'Tap your start time – the app adds work time and break and instantly shows when you’re free.';
+
+  @override
+  String get onbExampleEnd => 'Clock-out';
+
+  @override
+  String get onb2Title => 'Your workday';
+
+  @override
+  String get onb2Body =>
+      'Quickly set how long you work. You can change everything any time.';
+
+  @override
+  String get onbJob => 'Quotes for';
+
+  @override
+  String get onb3Title => 'Even more with Pro';
+
+  @override
+  String get onb3Body =>
+      'Pay once, no subscription – or try it free for 24 hours first.';
+
+  @override
+  String get onb3ProActive => 'Pro is active – everything unlocked.';
+
+  @override
+  String get onbSeePro => 'See Pro';
 }

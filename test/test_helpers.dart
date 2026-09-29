@@ -100,9 +100,11 @@ Future<Widget> buildApp({
   PurchaseBackend? purchases,
   NotificationBackend? notifications,
   WidgetBackend? widgets,
+  bool onboarding = false,
 }) async {
   SharedPreferences.setMockInitialValues({
     if (pro) 'pro_purchased': true,
+    if (!onboarding) 'onboarding_done': true,
     ...initial,
   });
   final prefs = await SharedPreferences.getInstance();

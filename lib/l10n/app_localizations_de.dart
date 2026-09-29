@@ -353,4 +353,46 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get widgetManual =>
       'Lange auf den Startbildschirm tippen → Widgets → Feierabend.';
+
+  @override
+  String get onbSkip => 'Überspringen';
+
+  @override
+  String get onbNext => 'Weiter';
+
+  @override
+  String get onbStart => 'Los geht\'s';
+
+  @override
+  String get onb1Title => 'Wann ist Feierabend?';
+
+  @override
+  String get onb1Body =>
+      'Startzeit antippen – die App rechnet Arbeitszeit und Pause dazu und zeigt dir sofort, wann du frei hast.';
+
+  @override
+  String get onbExampleEnd => 'Feierabend';
+
+  @override
+  String get onb2Title => 'Dein Arbeitstag';
+
+  @override
+  String get onb2Body =>
+      'Kurz einstellen, wie lange du arbeitest. Du kannst alles jederzeit ändern.';
+
+  @override
+  String get onbJob => 'Sprüche für';
+
+  @override
+  String get onb3Title => 'Noch mehr mit Pro';
+
+  @override
+  String get onb3Body =>
+      'Einmal zahlen, kein Abo – oder erst 24 Std. gratis testen.';
+
+  @override
+  String get onb3ProActive => 'Pro ist aktiv – alles freigeschaltet.';
+
+  @override
+  String get onbSeePro => 'Pro ansehen';
 }

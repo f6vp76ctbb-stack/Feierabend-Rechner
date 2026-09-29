@@ -721,6 +721,84 @@ abstract class AppLocalizations {
   /// In de, this message translates to:
   /// **'Lange auf den Startbildschirm tippen → Widgets → Feierabend.'**
   String get widgetManual;
+
+  /// No description provided for @onbSkip.
+  ///
+  /// In de, this message translates to:
+  /// **'Überspringen'**
+  String get onbSkip;
+
+  /// No description provided for @onbNext.
+  ///
+  /// In de, this message translates to:
+  /// **'Weiter'**
+  String get onbNext;
+
+  /// No description provided for @onbStart.
+  ///
+  /// In de, this message translates to:
+  /// **'Los geht\'s'**
+  String get onbStart;
+
+  /// No description provided for @onb1Title.
+  ///
+  /// In de, this message translates to:
+  /// **'Wann ist Feierabend?'**
+  String get onb1Title;
+
+  /// No description provided for @onb1Body.
+  ///
+  /// In de, this message translates to:
+  /// **'Startzeit antippen – die App rechnet Arbeitszeit und Pause dazu und zeigt dir sofort, wann du frei hast.'**
+  String get onb1Body;
+
+  /// No description provided for @onbExampleEnd.
+  ///
+  /// In de, this message translates to:
+  /// **'Feierabend'**
+  String get onbExampleEnd;
+
+  /// No description provided for @onb2Title.
+  ///
+  /// In de, this message translates to:
+  /// **'Dein Arbeitstag'**
+  String get onb2Title;
+
+  /// No description provided for @onb2Body.
+  ///
+  /// In de, this message translates to:
+  /// **'Kurz einstellen, wie lange du arbeitest. Du kannst alles jederzeit ändern.'**
+  String get onb2Body;
+
+  /// No description provided for @onbJob.
+  ///
+  /// In de, this message translates to:
+  /// **'Sprüche für'**
+  String get onbJob;
+
+  /// No description provided for @onb3Title.
+  ///
+  /// In de, this message translates to:
+  /// **'Noch mehr mit Pro'**
+  String get onb3Title;
+
+  /// No description provided for @onb3Body.
+  ///
+  /// In de, this message translates to:
+  /// **'Einmal zahlen, kein Abo – oder erst 24 Std. gratis testen.'**
+  String get onb3Body;
+
+  /// No description provided for @onb3ProActive.
+  ///
+  /// In de, this message translates to:
+  /// **'Pro ist aktiv – alles freigeschaltet.'**
+  String get onb3ProActive;
+
+  /// No description provided for @onbSeePro.
+  ///
+  /// In de, this message translates to:
+  /// **'Pro ansehen'**
+  String get onbSeePro;
 }
 
 class _AppLocalizationsDelegate

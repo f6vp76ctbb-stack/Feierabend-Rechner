@@ -156,6 +156,7 @@ Map<String, Object> _sampleData(String lang, {required bool dark}) {
   ];
   return {
     'pro_purchased': true,
+    'onboarding_done': true,
     'start_minutes': 6 * 60 + 44,
     'berufsgruppe': 'Büro',
     'theme_name': dark ? 'dark' : 'light',

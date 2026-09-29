@@ -103,5 +103,18 @@
   "widgetTitle": "Home screen widget",
   "widgetHint": "Your clock-out time on the home screen – a live countdown with Pro.",
   "widgetAdd": "Add widget",
-  "widgetManual": "Long-press your home screen → Widgets → Feierabend."
+  "widgetManual": "Long-press your home screen → Widgets → Feierabend.",
+  "onbSkip": "Skip",
+  "onbNext": "Next",
+  "onbStart": "Let's go",
+  "onb1Title": "When can you clock out?",
+  "onb1Body": "Tap your start time – the app adds work time and break and instantly shows when you’re free.",
+  "onbExampleEnd": "Clock-out",
+  "onb2Title": "Your workday",
+  "onb2Body": "Quickly set how long you work. You can change everything any time.",
+  "onbJob": "Quotes for",
+  "onb3Title": "Even more with Pro",
+  "onb3Body": "Pay once, no subscription – or try it free for 24 hours first.",
+  "onb3ProActive": "Pro is active – everything unlocked.",
+  "onbSeePro": "See Pro"
 }

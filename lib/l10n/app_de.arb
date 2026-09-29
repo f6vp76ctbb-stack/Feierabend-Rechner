@@ -180,6 +180,19 @@
   "widgetHint": "Feierabend-Zeit auf dem Startbildschirm – mit Pro als Live-Countdown.",
   "widgetAdd": "Widget hinzufügen",
   "widgetManual": "Lange auf den Startbildschirm tippen → Widgets → Feierabend.",
+  "onbSkip": "Überspringen",
+  "onbNext": "Weiter",
+  "onbStart": "Los geht's",
+  "onb1Title": "Wann ist Feierabend?",
+  "onb1Body": "Startzeit antippen – die App rechnet Arbeitszeit und Pause dazu und zeigt dir sofort, wann du frei hast.",
+  "onbExampleEnd": "Feierabend",
+  "onb2Title": "Dein Arbeitstag",
+  "onb2Body": "Kurz einstellen, wie lange du arbeitest. Du kannst alles jederzeit ändern.",
+  "onbJob": "Sprüche für",
+  "onb3Title": "Noch mehr mit Pro",
+  "onb3Body": "Einmal zahlen, kein Abo – oder erst 24 Std. gratis testen.",
+  "onb3ProActive": "Pro ist aktiv – alles freigeschaltet.",
+  "onbSeePro": "Pro ansehen",
   "@notifBeforeBody": {
     "placeholders": {
       "duration": {

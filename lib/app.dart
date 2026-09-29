@@ -5,6 +5,7 @@ import 'core/formatting.dart';
 import 'design/app_theme.dart';
 import 'features/home/home_screen.dart';
 import 'features/home/state/home_providers.dart';
+import 'features/onboarding/onboarding_screen.dart';
 import 'features/pro/pro_providers.dart';
 import 'features/reminders/reminder_providers.dart';
 import 'features/widget/widget_providers.dart';
@@ -27,9 +28,10 @@ class _FeierabendAppState extends ConsumerState<FeierabendApp> {
   @override
   void initState() {
     super.initState();
-    // Free-Nutzer: Einwilligung abfragen + Werbe-SDK starten (einmal pro Start).
-    ref.listenManual<bool>(isProProvider, (_, isPro) {
-      if (!isPro) ref.read(adsReadyProvider.notifier).ensureStarted();
+    // Free-Nutzer: Einwilligung abfragen + Werbe-SDK starten (einmal pro Start),
+    // aber erst nach der Einführung – der erste Eindruck gehört der App.
+    ref.listenManual<bool>(_adsWantedProvider, (_, wanted) {
+      if (wanted) ref.read(adsReadyProvider.notifier).ensureStarted();
     }, fireImmediately: true);
 
     // Feierabend-Erinnerungen immer mit dem aktuellen Plan synchron halten.
@@ -81,7 +83,28 @@ class _FeierabendAppState extends ConsumerState<FeierabendApp> {
           deviceLocale?.languageCode == 'de'
               ? const Locale('de')
               : const Locale('en'),
-      home: const HomeScreen(),
+      home: const _Root(),
+    );
+  }
+}
+
+final _adsWantedProvider = Provider<bool>(
+  (ref) => !ref.watch(isProProvider) && ref.watch(onboardingDoneProvider),
+);
+
+/// Erster Start → Einführung, danach sanft zum Hauptbildschirm überblenden.
+class _Root extends ConsumerWidget {
+  const _Root();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final done = ref.watch(onboardingDoneProvider);
+    return AnimatedSwitcher(
+      duration: const Duration(milliseconds: 300),
+      switchInCurve: Curves.easeOut,
+      child: done
+          ? const HomeScreen(key: ValueKey('home'))
+          : const OnboardingScreen(key: ValueKey('onboarding')),
     );
   }
 }

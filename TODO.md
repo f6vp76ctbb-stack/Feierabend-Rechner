@@ -67,7 +67,7 @@ Legende: `[ ]` offen · `[x]` erledigt · 👤 = du · 🤖 = Claude · 🤝 = z
 - [ ] 👤 AdMob-Konto, App + 2 Anzeigenblöcke, DSGVO-Mitteilung → Teil B; IDs an Claude → AAB mit echten Anzeigen
 
 ## Phase 7 — Politur & Store-Reife 🤝
-- [ ] 🤖 Onboarding (2–3 Screens, überspringbar) (v1.1)
+- [x] 🤖 Onboarding (3 Seiten, überspringbar): Erklärung, Arbeitszeit/Pause/Berufsgruppe einrichten, Pro vorstellen
 - [x] 🤖 App-Icon (adaptiv + Themed Icon) – `lib/design/app_icon.dart`, generiert via `tool/store_assets_test.dart`
 - [ ] 🤖 Feinschliff Animationen, Leerzustände, Fehlerfälle
 - [ ] 🤖 Barrierefreiheit (Kontraste, Screenreader-Labels, große Schrift)

@@ -25,6 +25,7 @@ class SettingsRepository {
   static const _kProTrialUntil = 'pro_trial_until_ms';
   static const _kRemindersEnabled = 'reminders_enabled';
   static const _kReminderLead = 'reminder_lead_minutes';
+  static const _kOnboardingDone = 'onboarding_done';
 
   // --- Arbeitszeit-/Pausen-Konfiguration ---
 
@@ -113,4 +114,14 @@ class SettingsRepository {
 
   Future<void> saveReminderLeadMinutes(int minutes) =>
       _prefs.setInt(_kReminderLead, minutes);
+
+  // --- Einführung beim ersten Start ---
+
+  /// Wer die App schon benutzt hat (gespeicherte Eingaben), sieht sie nicht mehr.
+  bool loadOnboardingDone() =>
+      _prefs.getBool(_kOnboardingDone) ??
+      (_prefs.containsKey(_kStartMinutes) || _prefs.containsKey(_kProfiles));
+
+  Future<void> saveOnboardingDone(bool value) =>
+      _prefs.setBool(_kOnboardingDone, value);
 }
