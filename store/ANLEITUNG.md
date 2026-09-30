@@ -48,7 +48,7 @@ Dann **Übersetzungen verwalten → Eigene Übersetzung hinzufügen → Englisch
 **Test und Release → Testen → Interner Test → Neuen Release erstellen**
 1. Play App-Signatur: **„Google Play generiert und verwaltet"** bestätigen (Standard)
 2. **App-Bundle hochladen:** `feierabend-release-1.0.0-vc5.aab`
-   – Hinweis „Keine Symboldatei für nativen Code hochgeladen" kannst du ignorieren (optionale Absturz-Symbole, zur Dateigröße entfernt).
+   – Warnung „keine Symbole zum Debuggen" ist harmlos (wegen der Dateigröße abgetrennt). Nachreichen: *Neueste Versionen und App-Bundles* → Version → *Details ansehen* → „Symbole zum Debuggen von nativem Code" → `native-debug-symbols-vc<N>.zip` (von mir geschickt, passt nur zum gleichen versionCode).
 3. Release-Name: `1.0.0`
 4. Versionshinweise DE + EN aus `STORE_EINTRAG.md`
 5. **Weiter → Speichern → Release veröffentlichen**
