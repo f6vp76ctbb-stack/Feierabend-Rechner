@@ -141,6 +141,6 @@ The first version is here: clock-out time with live countdown, quick pick “6 h
 | App oder Spiel | App |
 | Kategorie | **Produktivität** |
 | Tags (bis zu 5) | Produktivität, Zeitmanagement, Arbeit – was die Console anbietet |
-| E-Mail-Adresse | deine Support-Adresse (Pflicht, öffentlich sichtbar) |
+| E-Mail-Adresse | `thinkube@outlook.de` (Pflicht, öffentlich sichtbar) |
 | Website | optional |
 | Datenschutzerklärung | `https://f6vp76ctbb-stack.github.io/Feierabend-Rechner/privacy.html` |

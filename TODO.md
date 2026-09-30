@@ -76,7 +76,7 @@ Legende: `[ ]` offen · `[x]` erledigt · 👤 = du · 🤖 = Claude · 🤝 = z
 
 ## Phase 8 — Release-Vorbereitung ✅ (vorbereitet) / 👤 (hochladen)
 - [x] 🤖 Datenschutzerklärung DE/EN → `web/privacy.html`, live auf GitHub Pages
-- [ ] 👤 Kontakt-E-Mail für Datenschutzerklärung an Claude geben
+- [x] 👤 Kontakt-E-Mail für Datenschutzerklärung (thinkube@outlook.de) – eingetragen
 - [x] 🤖 Antworten Data Safety / Inhaltseinstufung / Zielgruppe → `store/APP_INHALTE.md`
 - [x] 🤖 Upload-Schlüssel erzeugt (liegt NICHT im Repo) → `store/SCHLUESSEL.md`
 - [x] 🤖 Store-Listing DE/EN → `store/STORE_EINTRAG.md`

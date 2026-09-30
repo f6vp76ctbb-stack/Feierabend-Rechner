@@ -42,7 +42,7 @@ Datenschutzerklärung · App-Zugriff · Anzeigen · Einstufung · Zielgruppe · 
 
 Dann **Übersetzungen verwalten → Eigene Übersetzung hinzufügen → Englisch (Vereinigte Staaten) – en-US** → englische Texte + `graphics/en/…` hochladen.
 
-**Store-Einstellungen:** Kategorie **Produktivität**, Kontakt-E-Mail eintragen.
+**Store-Einstellungen:** Kategorie **Produktivität**, Kontakt-E-Mail `thinkube@outlook.de`.
 
 ## Schritt 5 – AAB hochladen (Interner Test)
 **Test und Release → Testen → Interner Test → Neuen Release erstellen**
@@ -70,7 +70,7 @@ Siehe **`IN_APP_KAUF_UND_WERBUNG.md`, Teil B** (~15 Minuten). Schick mir danach 
 ---
 
 ## Checkliste vor dem Absenden
-- [ ] Kontakt-E-Mail in der Datenschutzerklärung eingetragen (sag mir die Adresse, ich trage sie ein)
+- [x] Kontakt-E-Mail in der Datenschutzerklärung eingetragen (thinkube@outlook.de)
 - [ ] Datenschutz-URL öffnet sich im Browser
 - [ ] App-Inhalte alle grün
 - [ ] Store-Eintrag DE + EN inkl. Grafiken

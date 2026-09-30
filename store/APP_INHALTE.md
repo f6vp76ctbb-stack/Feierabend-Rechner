@@ -9,7 +9,7 @@ Die Antworten passen genau zu dem, was die App tut (lokale Speicherung, AdMob, G
 ```
 https://f6vp76ctbb-stack.github.io/Feierabend-Rechner/privacy.html
 ```
-> Vorher die Kontakt-E-Mail in der Erklärung eintragen lassen (Platzhalter ist gelb markiert).
+> Kontakt in der Erklärung: thinkube@outlook.de
 
 ## App-Zugriff
 **„Alle Funktionen sind ohne besondere Zugriffsrechte verfügbar."**
