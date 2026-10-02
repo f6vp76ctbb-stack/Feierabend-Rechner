@@ -1,0 +1,96 @@
+==============================
+Language: German (Germany) – de-DE
+==============================
+
+App name:
+Feierabend Rechner
+
+Short description:
+Wann ist Feierabend? Startzeit tippen – Pause, Profile & Überstunden im Blick.
+
+Full description:
+Wann ist endlich Feierabend?
+Feierabend Rechner beantwortet genau diese Frage – in zwei Sekunden, schön und ohne Schnickschnack.
+
+SO EINFACH GEHT'S
+• Startzeit antippen (z. B. 06:44)
+• Arbeitszeit und Pause sind schon eingestellt (Standard: 8 Std + 45 Min)
+• Sofort siehst du deine Feierabend-Uhrzeit – mit Live-Countdown im Ring
+
+ALLES INDIVIDUELL
+• Arbeitszeit und Pause frei einstellbar
+• Schnellwahl „6 Std ohne Pause" – unter 6 Stunden ist keine Pause Pflicht
+• Nachtschicht? Kein Problem – die App rechnet über Mitternacht hinweg
+• Soll pro Tag für dein Überstunden-Konto
+• Home-Screen-Widget: deine Feierabend-Zeit immer im Blick
+
+FEIERABEND PRO – EINMALIG, KEIN ABO
+• Unbegrenzt Profile, z. B. Mo–Do, Freitag, Nachtschicht
+• Überstunden-Konto mit Wochenübersicht und „Heute buchen" per Fingertipp
+• Automatische Pause nach Arbeitszeitgesetz (über 6 Std → 30 Min, über 9 Std → 45 Min)
+• Erinnerung kurz vor und pünktlich zum Feierabend
+• Live-Countdown direkt im Widget auf dem Startbildschirm
+• Keine Werbung
+• Vorher 24 Stunden gratis testen – per kurzem Video
+
+MACHT EINFACH GUTE LAUNE
+• Lustige Sprüche für deinen Beruf: Büro, Handwerk, IT, Pflege, Lehrkraft, Gastro, Einzelhandel, Schicht und mehr
+• Modernes Design, angenehme Farben und ein schöner Dark Mode
+
+DEINE DATEN BLEIBEN BEI DIR
+• Kein Konto, keine Anmeldung
+• Alle Eingaben werden nur auf deinem Gerät gespeichert
+• Funktioniert auch offline
+
+Hinweis: Feierabend Rechner ist ein Rechenhelfer und ersetzt nicht die offizielle Zeiterfassung deines Arbeitgebers.
+
+Feierabend. Auf einen Blick.
+
+
+==============================
+Language: English (United States) – en-US
+==============================
+
+App name:
+Clock-Out Calculator
+
+Short description:
+When can you go home? Tap your start time – breaks, profiles & overtime sorted.
+
+Full description:
+When can you finally clock out?
+Clock-Out Calculator answers exactly that question. In two seconds, beautifully and without clutter.
+
+HOW IT WORKS
+• Tap your start time (e.g. 06:44)
+• Work time and break are already set (default: 8 h + 45 min)
+• Instantly see your clock-out time – with a live countdown ring
+
+MAKE IT YOURS
+• Freely adjustable work time and break
+• Quick pick “6 h, no break”
+• Night shift? No problem – the app calculates across midnight
+• Daily target for your overtime account
+• Home screen widget: your clock-out time always in view
+
+CLOCK-OUT PRO – ONE-TIME, NO SUBSCRIPTION
+• Unlimited profiles, e.g. Mon–Thu, Friday, Night shift
+• Overtime account with weekly overview and one-tap “Book today”
+• Automatic legal break calculation based on the German Working Hours Act (over 6 h → 30 min, over 9 h → 45 min)
+• Reminders shortly before and right at clock-out
+• Live countdown right in the home screen widget
+• No ads
+• Try it free for 24 hours first – with a short video
+
+PURE GOOD MOOD
+• Fun quotes for your job: office, trades, IT, care & health, teaching, hospitality, retail, shift work and more
+• Modern design, pleasant colors and a beautiful dark mode
+
+YOUR DATA STAYS WITH YOU
+• No account, no sign-up
+• All inputs are stored only on your device
+• Works offline
+
+Note: Clock-Out Calculator is a calculation helper and does not replace your employer’s official time tracking.
+
+Clock-out. At a glance.

@@ -1,0 +1,447 @@
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import '../../core/formatting.dart';
+import '../../design/app_colors.dart';
+import '../../design/app_icon.dart';
+import '../../l10n/l10n_ext.dart';
+import '../pro/banner_ad_view.dart';
+import '../pro/paywall_sheet.dart';
+import '../pro/pro_providers.dart';
+import '../settings/settings_sheet.dart';
+import 'state/home_providers.dart';
+import 'widgets/countdown_ring.dart';
+import 'widgets/duration_adjust_sheet.dart';
+import 'widgets/overtime_card.dart';
+import 'widgets/profile_bar.dart';
+import 'widgets/spruch_card.dart';
+import 'widgets/start_time_sheet.dart';
+
+/// Hauptbildschirm — beantwortet EINE Frage: „Wann habe ich frei?"
+class HomeScreen extends ConsumerWidget {
+  const HomeScreen({super.key});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final theme = Theme.of(context);
+    final l = context.l10n;
+    final result = ref.watch(resultProvider);
+    final remaining = ref.watch(remainingProvider);
+    final progress = ref.watch(progressProvider);
+    final reached = remaining <= Duration.zero;
+
+    return Scaffold(
+      bottomNavigationBar: const BottomBannerAd(),
+      body: Stack(
+        children: [
+          const _BackgroundGlow(),
+          SafeArea(
+            child: LayoutBuilder(
+              builder: (context, constraints) => SingleChildScrollView(
+                child: ConstrainedBox(
+                  constraints: BoxConstraints(minHeight: constraints.maxHeight),
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(24, 12, 24, 24),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        const _Header(),
+                        const SizedBox(height: 12),
+                        const ProfileBar(),
+                        const SizedBox(height: 16),
+                        Center(
+                          child: CountdownRing(
+                            progress: progress,
+                            size: 300,
+                            child: _RingContent(
+                              reached: reached,
+                              endLabel: Formatting.clock(
+                                result.endHour,
+                                result.endMinute,
+                              ),
+                              crossesMidnight: result.crossesMidnight,
+                              remaining: remaining,
+                            ),
+                          ),
+                        ),
+                        const SizedBox(height: 24),
+                        const _InputCard(),
+                        const SizedBox(height: 12),
+                        const _QuickPresets(),
+                        const SizedBox(height: 16),
+                        const SpruchCard(),
+                        const SizedBox(height: 12),
+                        const OvertimeCard(),
+                        const SizedBox(height: 16),
+                        Text(
+                          l.presenceSummary(
+                            Formatting.durationHm(result.presence),
+                            Formatting.durationLong(
+                              result.breakUsed,
+                              context.units,
+                            ),
+                          ),
+                          textAlign: TextAlign.center,
+                          style: theme.textTheme.bodyMedium,
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _Header extends StatelessWidget {
+  const _Header();
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    return Row(
+      children: [
+        const AppIconMark(size: 40),
+        const SizedBox(width: 12),
+        Text(context.l10n.brandName, style: theme.textTheme.headlineMedium),
+        const Spacer(),
+        IconButton(
+          tooltip: context.l10n.settingsTooltip,
+          icon: const Icon(Icons.settings_rounded),
+          onPressed: () => SettingsSheet.show(context),
+        ),
+      ],
+    );
+  }
+}
+
+class _RingContent extends StatelessWidget {
+  const _RingContent({
+    required this.reached,
+    required this.endLabel,
+    required this.crossesMidnight,
+    required this.remaining,
+  });
+
+  final bool reached;
+  final String endLabel;
+  final bool crossesMidnight;
+  final Duration remaining;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final l = context.l10n;
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Text(l.clockOutAt, style: theme.textTheme.labelLarge),
+        const SizedBox(height: 4),
+        FittedBox(
+          fit: BoxFit.scaleDown,
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                endLabel,
+                style: theme.textTheme.displayLarge?.copyWith(fontSize: 60),
+              ),
+              if (crossesMidnight)
+                Padding(
+                  padding: const EdgeInsets.only(top: 6, left: 4),
+                  child: Text(
+                    '+1',
+                    style: theme.textTheme.labelLarge?.copyWith(
+                      color: AppColors.accentWarm,
+                    ),
+                  ),
+                ),
+            ],
+          ),
+        ),
+        const SizedBox(height: 8),
+        if (reached)
+          Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const Text('🎉', style: TextStyle(fontSize: 18)),
+              const SizedBox(width: 6),
+              Text(
+                l.reached,
+                style: theme.textTheme.titleMedium?.copyWith(
+                  color: AppColors.success,
+                ),
+              ),
+            ],
+          )
+        else
+          Column(
+            children: [
+              Text(l.remainingLabel, style: theme.textTheme.bodyMedium),
+              Text(
+                Formatting.durationLong(remaining, context.units),
+                style: theme.textTheme.titleMedium,
+              ),
+            ],
+          ),
+      ],
+    );
+  }
+}
+
+class _InputCard extends ConsumerWidget {
+  const _InputCard();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l = context.l10n;
+    final start = ref.watch(startTimeProvider);
+    final config = ref.watch(workConfigProvider);
+    final calc = ref.watch(calculatorProvider);
+    final isPro = ref.watch(isProProvider);
+    final effectiveBreak = calc.effectiveBreak(config);
+    final auto = config.arbzgAutoBreak;
+
+    return Card(
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+        child: Column(
+          children: [
+            _Tile(
+              icon: Icons.login_rounded,
+              label: l.startLabel,
+              value: Formatting.clock(start.hour, start.minute),
+              onTap: () => _pickStart(context, ref),
+            ),
+            const Divider(height: 1, indent: 16, endIndent: 16),
+            _Tile(
+              icon: Icons.work_outline_rounded,
+              label: l.workLabel,
+              value: Formatting.durationHm(config.work),
+              onTap: () => _pickWork(context, ref),
+            ),
+            const Divider(height: 1, indent: 16, endIndent: 16),
+            _Tile(
+              icon: Icons.coffee_rounded,
+              label: l.breakLabel,
+              value: Formatting.durationHm(effectiveBreak),
+              subtitle: auto ? l.breakAuto : null,
+              enabled: !auto,
+              onTap: () => _pickBreak(context, ref),
+            ),
+            const Divider(height: 1, indent: 16, endIndent: 16),
+            SwitchListTile(
+              contentPadding: const EdgeInsets.symmetric(horizontal: 16),
+              secondary: const Icon(Icons.gavel_rounded),
+              title: Row(
+                children: [
+                  Flexible(child: Text(l.arbzgTitle)),
+                  if (!isPro) ...[const SizedBox(width: 8), const ProBadge()],
+                ],
+              ),
+              subtitle: Text(l.arbzgSubtitle),
+              value: auto,
+              onChanged: (v) {
+                HapticFeedback.selectionClick();
+                // Ausschalten geht immer, Einschalten ist eine Pro-Funktion.
+                if (v && !isPro) {
+                  PaywallSheet.show(context);
+                  return;
+                }
+                ref.read(profilesControllerProvider.notifier).setArbzgAuto(v);
+              },
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Future<void> _pickStart(BuildContext context, WidgetRef ref) async {
+    final picked = await StartTimeSheet.show(
+      context,
+      ref.read(startTimeProvider),
+    );
+    if (picked != null) {
+      ref.read(startTimeProvider.notifier).set(picked);
+    }
+  }
+
+  Future<void> _pickWork(BuildContext context, WidgetRef ref) async {
+    final picked = await DurationAdjustSheet.show(
+      context,
+      title: context.l10n.workLabel,
+      initial: ref.read(workConfigProvider).work,
+      step: const Duration(minutes: 15),
+      min: Duration.zero,
+      max: const Duration(hours: 16),
+      presets: const [
+        Duration(hours: 4),
+        Duration(hours: 6),
+        Duration(hours: 7),
+        Duration(hours: 8),
+      ],
+    );
+    if (picked != null) {
+      ref.read(profilesControllerProvider.notifier).setWork(picked);
+    }
+  }
+
+  Future<void> _pickBreak(BuildContext context, WidgetRef ref) async {
+    final picked = await DurationAdjustSheet.show(
+      context,
+      title: context.l10n.breakLabel,
+      initial: ref.read(workConfigProvider).breakTime,
+      step: const Duration(minutes: 5),
+      min: Duration.zero,
+      max: const Duration(hours: 3),
+      presets: const [
+        Duration.zero,
+        Duration(minutes: 30),
+        Duration(minutes: 45),
+        Duration(minutes: 60),
+      ],
+    );
+    if (picked != null) {
+      ref.read(profilesControllerProvider.notifier).setBreak(picked);
+    }
+  }
+}
+
+/// Schnellwahl für typische Tage (setzt Arbeitszeit + Pause auf einmal).
+class _QuickPresets extends ConsumerWidget {
+  const _QuickPresets();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final theme = Theme.of(context);
+    final l = context.l10n;
+    final config = ref.watch(workConfigProvider);
+    final ctrl = ref.read(profilesControllerProvider.notifier);
+
+    void apply(Duration work, Duration pause) {
+      HapticFeedback.selectionClick();
+      // ArbZG-Auto ggf. deaktivieren, damit die gewählte Pause exakt greift.
+      if (config.arbzgAutoBreak) ctrl.setArbzgAuto(false);
+      ctrl.setWork(work);
+      ctrl.setBreak(pause);
+    }
+
+    final isSixNoBreak =
+        config.work == const Duration(hours: 6) &&
+        config.breakTime == Duration.zero &&
+        !config.arbzgAutoBreak;
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Padding(
+          padding: const EdgeInsets.only(left: 4, bottom: 6),
+          child: Text(l.quickSelect, style: theme.textTheme.labelLarge),
+        ),
+        Wrap(
+          spacing: 8,
+          runSpacing: 8,
+          children: [
+            ActionChip(
+              avatar: Icon(
+                isSixNoBreak ? Icons.check_rounded : Icons.bolt_rounded,
+                size: 18,
+              ),
+              label: Text(l.presetSixNoBreak),
+              onPressed: () => apply(const Duration(hours: 6), Duration.zero),
+            ),
+            ActionChip(
+              avatar: const Icon(Icons.work_history_rounded, size: 18),
+              label: Text(l.presetEightStandard),
+              onPressed: () =>
+                  apply(const Duration(hours: 8), const Duration(minutes: 45)),
+            ),
+          ],
+        ),
+      ],
+    );
+  }
+}
+
+class _Tile extends StatelessWidget {
+  const _Tile({
+    required this.icon,
+    required this.label,
+    required this.value,
+    required this.onTap,
+    this.subtitle,
+    this.enabled = true,
+  });
+
+  final IconData icon;
+  final String label;
+  final String value;
+  final VoidCallback onTap;
+  final String? subtitle;
+  final bool enabled;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final scheme = theme.colorScheme;
+    final dim = enabled ? 1.0 : 0.5;
+    return ListTile(
+      enabled: enabled,
+      contentPadding: const EdgeInsets.symmetric(horizontal: 16),
+      leading: Icon(icon, color: scheme.primary.withValues(alpha: dim)),
+      title: Text(label, style: theme.textTheme.bodyLarge),
+      subtitle: subtitle == null
+          ? null
+          : Text(subtitle!, style: theme.textTheme.bodyMedium),
+      trailing: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Text(value, style: theme.textTheme.titleMedium),
+          const SizedBox(width: 4),
+          Icon(
+            enabled ? Icons.chevron_right_rounded : Icons.lock_outline_rounded,
+            size: enabled ? 24 : 18,
+            color: scheme.onSurface.withValues(alpha: 0.3),
+          ),
+        ],
+      ),
+      onTap: enabled
+          ? () {
+              HapticFeedback.selectionClick();
+              onTap();
+            }
+          : null,
+    );
+  }
+}
+
+/// Sanfter, warmer Farbverlauf im Hintergrund.
+class _BackgroundGlow extends StatelessWidget {
+  const _BackgroundGlow();
+
+  @override
+  Widget build(BuildContext context) {
+    final dark = Theme.of(context).brightness == Brightness.dark;
+    return Positioned.fill(
+      child: DecoratedBox(
+        decoration: BoxDecoration(
+          gradient: RadialGradient(
+            center: const Alignment(0, -0.8),
+            radius: 1.2,
+            colors: [
+              AppColors.primary.withValues(alpha: dark ? 0.18 : 0.10),
+              Colors.transparent,
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}

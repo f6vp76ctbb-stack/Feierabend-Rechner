@@ -1,0 +1,203 @@
+{
+  "@@locale": "de",
+  "appTitle": "Feierabend Rechner",
+  "brandName": "Feierabend",
+  "unitHours": "Std",
+  "unitMinutes": "Min",
+  "clockOutAt": "FEIERABEND UM",
+  "reached": "Feierabend!",
+  "remainingLabel": "noch",
+  "settingsTooltip": "Einstellungen",
+  "startLabel": "Start",
+  "workLabel": "Arbeitszeit",
+  "breakLabel": "Pause",
+  "breakAuto": "automatisch nach ArbZG",
+  "arbzgTitle": "Pause nach Gesetz (ArbZG)",
+  "arbzgSubtitle": "> 6 h → 30 min · > 9 h → 45 min",
+  "presenceSummary": "Anwesenheit {presence} · inkl. {breakDuration} Pause",
+  "@presenceSummary": {
+    "placeholders": {
+      "presence": {
+        "type": "String"
+      },
+      "breakDuration": {
+        "type": "String"
+      }
+    }
+  },
+  "quickSelect": "Schnellwahl",
+  "presetSixNoBreak": "6 Std ohne Pause",
+  "presetEightStandard": "8 Std + 45 min",
+  "startTimeTitle": "Startzeit",
+  "hour": "Stunde",
+  "minute": "Minute",
+  "now": "Jetzt",
+  "startTimeHint": "Feierabend wird ab {time} berechnet.",
+  "@startTimeHint": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "apply": "Übernehmen",
+  "newQuote": "neuer Spruch",
+  "chooseJobTitle": "Berufsgruppe wählen",
+  "chooseJobSubtitle": "Bestimmt den Sprüche-Katalog.",
+  "profiles": "Profile",
+  "rename": "Umbenennen",
+  "delete": "Löschen",
+  "atLeastOneProfile": "Mindestens ein Profil",
+  "newProfile": "Neues Profil",
+  "renameProfile": "Profil umbenennen",
+  "deleteProfileTitle": "„{name}“ löschen?",
+  "@deleteProfileTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "deleteProfileBody": "Das Profil wird dauerhaft entfernt.",
+  "cancel": "Abbrechen",
+  "save": "Speichern",
+  "profileNameHint": "z. B. Mo–Do, Freitag, Nachtschicht",
+  "overtimeAccount": "Überstunden-Konto",
+  "overtimeThisWeek": "Diese Woche {value}",
+  "@overtimeThisWeek": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "overtimeThisWeekColon": "Diese Woche: {value}",
+  "@overtimeThisWeekColon": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "totalBalance": "GESAMTSALDO",
+  "addDay": "Tag",
+  "bookToday": "Heute buchen",
+  "bookedToday": "Heute gebucht: {value}",
+  "@bookedToday": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "noEntries": "Noch keine Einträge",
+  "noEntriesHint": "Tippe auf „Heute buchen“ oder „Tag“, um deinen ersten Arbeitstag zu erfassen.",
+  "workedOf": "{worked} von {target}",
+  "@workedOf": {
+    "placeholders": {
+      "worked": {
+        "type": "String"
+      },
+      "target": {
+        "type": "String"
+      }
+    }
+  },
+  "addDayTitle": "Tag hinzufügen",
+  "editDayTitle": "Tag bearbeiten",
+  "worked": "Gearbeitet",
+  "target": "Soll",
+  "balance": "Saldo: {value}",
+  "@balance": {
+    "placeholders": {
+      "value": {
+        "type": "String"
+      }
+    }
+  },
+  "settings": "Einstellungen",
+  "dailyTarget": "Soll pro Tag",
+  "dailyTargetHint": "Vergleichswert fürs Überstunden-Konto. Arbeitest du weniger, gibt es Minus – arbeitest du mehr, Plus.",
+  "appearance": "Erscheinungsbild",
+  "themeSystem": "System",
+  "themeLight": "Hell",
+  "themeDark": "Dunkel",
+  "autosaveHint": "Deine Eingaben werden automatisch auf dem Gerät gespeichert.",
+  "proSection": "Feierabend Pro",
+  "proActive": "Pro ist aktiv – danke!",
+  "proTrialActive": "Pro-Test aktiv bis {time}",
+  "@proTrialActive": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "unlockPro": "Pro freischalten",
+  "restorePurchases": "Käufe wiederherstellen",
+  "privacySettings": "Datenschutz-Einstellungen (Werbung)",
+  "privacyPolicy": "Datenschutzerklärung",
+  "legalSection": "Rechtliches",
+  "proBadge": "PRO",
+  "paywallTitle": "Feierabend Pro",
+  "paywallSubtitle": "Einmal zahlen. Für immer frei.",
+  "paywallBenefitNoAds": "Keine Werbung",
+  "paywallBenefitProfiles": "Unbegrenzt Profile (Mo–Do, Freitag, Schicht …)",
+  "paywallBenefitOvertime": "Überstunden-Konto mit Wochenübersicht",
+  "paywallBenefitArbzg": "Automatische Pause nach Arbeitszeitgesetz",
+  "paywallBenefitSupport": "Unterstützt einen unabhängigen Entwickler",
+  "paywallBuy": "Pro freischalten – {price}",
+  "@paywallBuy": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "paywallOneTime": "Einmalig · kein Abo · keine Werbung",
+  "paywallTrialAd": "24 Std. gratis testen (kurzes Video)",
+  "paywallUnavailable": "Der Store ist gerade nicht erreichbar. Bitte später erneut versuchen.",
+  "purchaseSuccess": "Danke! Pro ist freigeschaltet.",
+  "purchasePending": "Kauf wird bearbeitet …",
+  "purchaseError": "Kauf nicht abgeschlossen. Bitte erneut versuchen.",
+  "restoreDone": "Käufe wurden geprüft.",
+  "trialGranted": "Pro ist 24 Stunden freigeschaltet – viel Spaß!",
+  "adNotReady": "Gerade kein Video verfügbar. Versuch es gleich nochmal.",
+  "remindersTitle": "Erinnerungen",
+  "remindersSwitch": "Benachrichtigungen",
+  "remindersHint": "Kurz vor und pünktlich zum Feierabend.",
+  "reminderLead": "Vorwarnung",
+  "notifChannelName": "Feierabend-Erinnerungen",
+  "notifChannelDesc": "Hinweise kurz vor und zum Feierabend",
+  "notifBeforeTitle": "Gleich Feierabend",
+  "notifBeforeBody": "Noch {duration} – dann bist du frei.",
+  "notifEndTitle": "Feierabend! 🎉",
+  "notifEndBody": "Geschafft. Ab nach Hause!",
+  "notificationsDenied": "Benachrichtigungen sind in den Systemeinstellungen blockiert.",
+  "paywallBenefitReminders": "Erinnerung kurz vor und zum Feierabend",
+  "paywallBenefitWidget": "Live-Countdown als Home-Screen-Widget",
+  "widgetTitle": "Home-Screen-Widget",
+  "widgetHint": "Feierabend-Zeit auf dem Startbildschirm – mit Pro als Live-Countdown.",
+  "widgetAdd": "Widget hinzufügen",
+  "widgetManual": "Lange auf den Startbildschirm tippen → Widgets → Feierabend.",
+  "onbSkip": "Überspringen",
+  "onbNext": "Weiter",
+  "onbStart": "Los geht's",
+  "onb1Title": "Wann ist Feierabend?",
+  "onb1Body": "Startzeit antippen – die App rechnet Arbeitszeit und Pause dazu und zeigt dir sofort, wann du frei hast.",
+  "onbExampleEnd": "Feierabend",
+  "onb2Title": "Dein Arbeitstag",
+  "onb2Body": "Kurz einstellen, wie lange du arbeitest. Du kannst alles jederzeit ändern.",
+  "onbJob": "Sprüche für",
+  "onb3Title": "Noch mehr mit Pro",
+  "onb3Body": "Einmal zahlen, kein Abo – oder erst 24 Std. gratis testen.",
+  "onb3ProActive": "Pro ist aktiv – alles freigeschaltet.",
+  "onbSeePro": "Pro ansehen",
+  "@notifBeforeBody": {
+    "placeholders": {
+      "duration": {
+        "type": "String"
+      }
+    }
+  }
+}

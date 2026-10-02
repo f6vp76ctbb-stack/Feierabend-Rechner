@@ -1,0 +1,115 @@
+# TODO — Feierabend Rechner
+
+Gemeinsame Aufgabenliste für **dich (Mensch)** und **Claude (KI)**.
+Legende: `[ ]` offen · `[x]` erledigt · 👤 = du · 🤖 = Claude · 🤝 = zusammen
+
+> Reihenfolge einhalten. Erst wenn eine Phase „Definition of Done" (siehe MASTERPLAN.md)
+> erfüllt ist, zur nächsten. Claude hakt ab und aktualisiert diese Datei.
+
+---
+
+## Phase 0 — Fundament ✅
+- [x] 🤖 CLAUDE.md, MASTERPLAN.md, TODO.md, MARKETING.md anlegen
+- [x] 👤 **GitHub Pages aktiviert** (iPhone-Test): Source = „Deploy from a branch" →
+      `gh-pages`. Live & bestätigt. Jeder Push deployt automatisch.
+      URL: `https://f6vp76ctbb-stack.github.io/Feierabend-Rechner/`
+- [ ] 👤 App-Name & Verfügbarkeit prüfen (Play Store Suche + ggf. Markenrecherche DPMA)
+- [x] 👤 Google-Play-Entwicklerkonto (vorhanden, bestätigt)
+- [x] 👤 Preis: 3,99 € einmalig
+
+## Phase 1 — Gerüst ✅
+- [x] 🤖 `flutter create` mit Package-ID (`de.feierabendrechner`)
+- [x] 🤖 Ordnerstruktur laut CLAUDE.md §6 anlegen
+- [x] 🤖 Riverpod einbinden, App-Skelett + Routing
+- [x] 🤖 Design-System: Theme (hell/dunkel), Farben, Typografie (Inter gebündelt)
+- [x] 🤖 GitHub-Actions-CI (`flutter analyze` + `flutter test`) + Web-Deploy auf Pages
+- [ ] 👤 Flutter lokal installieren (falls du selbst bauen/testen willst) — optional
+
+## Phase 2 — Kern-Logik ✅
+- [x] 🤖 Modelle: `WorkConfig`, `FeierabendResult`
+- [x] 🤖 `FeierabendCalculator` implementieren (start + arbeit + pause)
+- [x] 🤖 ArbZG-Auto-Pausenlogik (>6 h→30, >9 h→45) als optionalen Modus
+- [x] 🤖 Edge Cases: Mitternachts-Überlauf, 0-Pause, Teilzeit, Rundung auf Minute
+- [x] 🤖 Unit-Tests für alle Fälle (18 Domain- + 7 Format-Tests, grün)
+- [ ] 🤖 TODO: echte Zeitzonen-/DST-Behandlung (aktuell bewusst simpel)
+
+## Phase 3 — Hauptbildschirm (MVP-UI) ✅
+- [x] 🤖 Startzeit-Picker (24 h, „jetzt" als Default)
+- [x] 🤖 Arbeitszeit- & Pausen-Eingabe (Bottom-Sheet mit Stepper + Presets)
+- [x] 🤖 Großes Ergebnis: „Feierabend um **15:29**" (+1-Tag-Badge bei Nachtschicht)
+- [x] 🤖 Live-Countdown im Fortschritts-Ring („noch 6 Std 12 Min")
+- [x] 🤖 Dark Mode gleichwertig (folgt System)
+- [x] 🤖 Sanfte Overlays/Animationen + Haptik
+- [ ] 👤 Erstes Feedback: Fühlt sich „ein-Blick-klar" an? Farben angenehm?
+- [ ] 🤖 TODO: gebündelte Schrift ist schon offline; Font-Datei ist Variable Inter
+
+## Phase 4 — Persistenz & Settings ✅
+- [x] 🤖 Persistenz via `shared_preferences` (SettingsRepository)
+- [x] 🤖 Gespeichert: Arbeitszeit, Pause, ArbZG, letzte Startzeit, Berufsgruppe, Theme
+- [x] 🤖 Einstellungs-Overlay mit Theme-Wahl (System/Hell/Dunkel)
+- [x] 🤖 App merkt sich Zustand über Neustarts (38 Tests grün)
+- [ ] 🤖 Später: Hive für strukturierte Daten (Profile/Überstunden) in Phase 5
+
+## Phase 5 — Pro-Features 🤖
+- [x] 🤖 Mehrere Profile (Mo–Do/Fr, Schichten) + Umschalter + Verwaltung, persistiert
+- [x] 🤖 Überstunden-Konto + Wochenübersicht + „Heute buchen", Soll pro Tag
+- [x] 🤖 Home-Screen-Widget: natives Android-Widget (`FeierabendWidget.kt`, ohne Zusatz-Paket) – Feierabend-Zeit gratis, Live-Countdown mit Pro, „Widget hinzufügen" in Einstellungen
+- [x] 🤖 Lokale Benachrichtigungen („Gleich Feierabend" mit 15/30/60 Min Vorwarnung, „Feierabend!"), Pro, nicht-exakte Alarme
+- [ ] 🤖 Premium-Themes / Farbwelten (v1.1)
+
+## Phase 6 — Monetarisierung ✅ (Code) / 🤝 (Konsole)
+- [x] 🤖 In-App-Kauf `feierabend_pro` (einmalig) über `in_app_purchase` (statt RevenueCat – kein Fremdkonto nötig)
+- [x] 🤖 Feature-Gating: Pro = mehrere Profile, Überstunden-Konto, ArbZG-Automatik, keine Werbung
+- [x] 🤖 Paywall-Overlay (kontextuell) + „Käufe wiederherstellen" + stille Wiederherstellung beim Start
+- [x] 🤖 24-Std-Pro-Test per Belohnungsvideo (statt 7-Tage-Trial)
+- [x] 🤖 AdMob: adaptives Banner (Free), Rewarded, UMP-Einwilligung + Datenschutz-Optionen
+- [ ] 👤 In-App-Produkt in Play Console anlegen → `store/IN_APP_KAUF_UND_WERBUNG.md` Teil A
+- [x] 👤 AdMob-Konto, App + 2 Anzeigenblöcke; IDs an Claude → Release-Builds mit echten Anzeigen (ab versionCode 7)
+- [ ] 👤 AdMob: DSGVO-Mitteilung veröffentlichen, eigenes Handy als Testgerät eintragen, App nach Livegang mit Play verknüpfen
+
+## Phase 7 — Politur & Store-Reife 🤝
+- [x] 🤖 Onboarding (3 Seiten, überspringbar): Erklärung, Arbeitszeit/Pause/Berufsgruppe einrichten, Pro vorstellen
+- [x] 🤖 App-Icon (adaptiv + Themed Icon) – `lib/design/app_icon.dart`, generiert via `tool/store_assets_test.dart`
+- [ ] 🤖 Feinschliff Animationen, Leerzustände, Fehlerfälle
+- [ ] 🤖 Barrierefreiheit (Kontraste, Screenreader-Labels, große Schrift)
+- [x] 🤖 Lokalisierung Deutsch + Englisch (gen-l10n, inkl. Sprüche)
+- [ ] 👤 App auf eigenem Android-Gerät testen (interner Test), Bugs melden
+
+## Phase 8 — Release-Vorbereitung ✅ (vorbereitet) / 👤 (hochladen)
+- [x] 🤖 Datenschutzerklärung DE/EN → `web/privacy.html`, live auf GitHub Pages
+- [x] 👤 Kontakt-E-Mail für Datenschutzerklärung (thinkube@outlook.de) – eingetragen
+- [x] 🤖 Antworten Data Safety / Inhaltseinstufung / Zielgruppe → `store/APP_INHALTE.md`
+- [x] 🤖 Upload-Schlüssel erzeugt (liegt NICHT im Repo) → `store/SCHLUESSEL.md`
+- [x] 🤖 Store-Listing DE/EN → `store/STORE_EINTRAG.md`
+- [x] 🤖 Screenshots (7 × DE/EN), Feature-Grafik, Icon 512 → `store/graphics/`
+- [x] 🤖 AAB-Build (CI, unsigniert) + lokale Signatur per jarsigner
+- [x] 👤 App angelegt, App-Inhalte + Store-Eintrag ausgefüllt, AAB hochgeladen → in Google-Prüfung (02.10.2026)
+- [ ] 👤 Ggf. geschlossener Test (12 Tester / 14 Tage) → Produktion
+
+## Phase 9 — Launch & Wachstum 🤝
+- [ ] 👤 Produktions-Release beantragen
+- [ ] 🤝 ASO: Keywords & Listing nach Daten optimieren
+- [ ] 👤 Marketing-Aktionen starten (siehe MARKETING.md)
+- [ ] 🤝 Bewertungen einsammeln (In-App-Review-Prompt zur richtigen Zeit)
+- [ ] 🤝 Conversion/Retention auswerten, Preis-A/B-Test
+
+## Phase 10 — Danach 🤝
+- [ ] iOS-Port (App Store)
+- [ ] Cloud-Sync / Teams (optionales Abo)
+- [ ] Kalender-Integration, weitere Sprachen/Länder
+
+---
+
+## Was NUR du (👤) tun kannst — Sammelübersicht
+1. Play-Entwicklerkonto (25 $) anlegen
+2. RevenueCat-Konto + In-App-Produkte in Play Console anlegen
+3. Keystore sicher verwahren
+4. Datenschutzerklärung hosten
+5. Data-Safety-Formular ausfüllen
+6. App auf echtem Gerät testen & Feedback geben
+7. Tester für geschlossenes Testing organisieren
+8. Marketing-Kanäle bespielen (oder Claude Texte/Ideen liefern lassen)
+
+## Was Claude (🤖) übernimmt
+Der komplette Code, Tests, Architektur, Store-Texte, Datenschutz-Entwurf, Icon-Konzept,
+Marketing-Content-Vorlagen — alles Digitale bis zur Abgabe an dich.

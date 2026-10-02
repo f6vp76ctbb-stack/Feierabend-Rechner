@@ -1,0 +1,45 @@
+Language: English (United States) – en-US
+
+App name:
+Clock-Out Calculator
+
+Short description:
+When can you go home? Tap your start time – breaks, profiles & overtime sorted.
+
+Full description:
+When can you finally clock out?
+Clock-Out Calculator answers exactly that question. In two seconds, beautifully and without clutter.
+
+HOW IT WORKS
+• Tap your start time (e.g. 06:44)
+• Work time and break are already set (default: 8 h + 45 min)
+• Instantly see your clock-out time – with a live countdown ring
+
+MAKE IT YOURS
+• Freely adjustable work time and break
+• Quick pick “6 h, no break”
+• Night shift? No problem – the app calculates across midnight
+• Daily target for your overtime account
+• Home screen widget: your clock-out time always in view
+
+CLOCK-OUT PRO – ONE-TIME, NO SUBSCRIPTION
+• Unlimited profiles, e.g. Mon–Thu, Friday, Night shift
+• Overtime account with weekly overview and one-tap “Book today”
+• Automatic legal break calculation based on the German Working Hours Act (over 6 h → 30 min, over 9 h → 45 min)
+• Reminders shortly before and right at clock-out
+• Live countdown right in the home screen widget
+• No ads
+• Try it free for 24 hours first – with a short video
+
+PURE GOOD MOOD
+• Fun quotes for your job: office, trades, IT, care & health, teaching, hospitality, retail, shift work and more
+• Modern design, pleasant colors and a beautiful dark mode
+
+YOUR DATA STAYS WITH YOU
+• No account, no sign-up
+• All inputs are stored only on your device
+• Works offline
+
+Note: Clock-Out Calculator is a calculation helper and does not replace your employer’s official time tracking.
+
+Clock-out. At a glance.

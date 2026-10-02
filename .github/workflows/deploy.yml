@@ -1,0 +1,61 @@
+name: CI & Deploy (GitHub Pages)
+
+# Baut die App bei jedem Push: prüft (analyze + test), baut die Web-Version
+# und veröffentlicht sie in den gh-pages-Branch (zum Testen z. B. auf dem iPhone).
+#
+# Diese Methode (Push in gh-pages) funktioniert von JEDEM Branch aus — anders als
+# die "GitHub Actions"-Pages-Quelle, die nur vom Default-Branch deployt.
+on:
+  push:
+    branches:
+      - main
+      - claude/feierabend-rechner-app-joa1y4
+  workflow_dispatch:
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+# Schreibrecht, um den gh-pages-Branch zu aktualisieren.
+permissions:
+  contents: write
+
+env:
+  FLUTTER_VERSION: "3.44.8"
+  # Muss zum Repo-Namen passen (GitHub Pages liegt unter /<repo>/).
+  BASE_HREF: "/Feierabend-Rechner/"
+
+jobs:
+  build-and-deploy:
+    name: Prüfen, bauen & veröffentlichen
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+
+      - name: Dependencies
+        run: flutter pub get
+
+      - name: Analyze
+        run: flutter analyze
+
+      - name: Test
+        run: flutter test
+
+      - name: Web bauen
+        # --no-web-resources-cdn: CanvasKit lokal bündeln (kein gstatic-CDN),
+        # damit die App auch in restriktiven Netzen und offline lädt.
+        run: flutter build web --release --no-web-resources-cdn --base-href "$BASE_HREF"
+
+      - name: In gh-pages veröffentlichen
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build/web
+          publish_branch: gh-pages
+          # .nojekyll wird automatisch gesetzt (Flutter-Assets nicht von Jekyll anfassen).

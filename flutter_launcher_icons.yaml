@@ -1,0 +1,16 @@
+# Quelle: assets/icon/*.png (erzeugt von tool/store_assets_test.dart)
+# Neu generieren: dart run flutter_launcher_icons
+flutter_launcher_icons:
+  android: "ic_launcher"
+  image_path: "assets/icon/icon_full.png"
+  adaptive_icon_background: "assets/icon/icon_background.png"
+  adaptive_icon_foreground: "assets/icon/icon_foreground.png"
+  adaptive_icon_monochrome: "assets/icon/icon_monochrome.png"
+  min_sdk_android: 24
+  ios: true
+  remove_alpha_ios: true
+  web:
+    generate: true
+    image_path: "assets/icon/icon_full.png"
+    background_color: "#15151E"
+    theme_color: "#6C5CE7"
