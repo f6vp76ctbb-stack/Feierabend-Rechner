@@ -42,7 +42,7 @@ Datenschutzerklärung · App-Zugriff · Anzeigen · Einstufung · Zielgruppe · 
 
 Dann **Übersetzungen verwalten → Eigene Übersetzung hinzufügen → Englisch (Vereinigte Staaten) – en-US** → englische Texte + `graphics/en/…` hochladen.
 
-**Store-Einstellungen:** Kategorie **Produktivität**, Kontakt-E-Mail `thinkube@outlook.de`.
+**Store-Einstellungen:** Kategorie **Effizienz**, Tags Arbeit · Effizienz · Rechner · Uhr, Wecker & Timer · Humor, Kontakt-E-Mail `thinkube@outlook.de`.
 
 ## Schritt 5 – AAB hochladen (Interner Test)
 **Test und Release → Testen → Interner Test → Neuen Release erstellen**
