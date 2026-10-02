@@ -3,7 +3,8 @@ name: Android App Bundle (AAB)
 # Baut das Release-App-Bundle für Google Play.
 # Das AAB wird UNSIGNIERT gebaut und im Branch `aab-build` abgelegt; signiert wird
 # anschließend lokal mit dem Upload-Schlüssel (der nie in dieses öffentliche Repo gehört).
-# Echte AdMob-IDs beim manuellen Start eintragen (Actions → Run workflow).
+# Release-Builds nutzen die echten AdMob-IDs (unten unter env); beim manuellen Start
+# lassen sie sich überschreiben. Lokale/Debug-Builds behalten Googles Test-IDs.
 on:
   push:
     branches:
@@ -18,15 +19,15 @@ on:
   workflow_dispatch:
     inputs:
       admob_app_id:
-        description: 'AdMob-App-ID (ca-app-pub-…~…), leer = Test-ID'
+        description: 'AdMob-App-ID (ca-app-pub-…~…), leer = Release-ID'
         required: false
         default: ''
       admob_banner_android:
-        description: 'AdMob-Banner-ID (ca-app-pub-…/…), leer = Test-ID'
+        description: 'AdMob-Banner-ID (ca-app-pub-…/…), leer = Release-ID'
         required: false
         default: ''
       admob_rewarded_android:
-        description: 'AdMob-Belohnungsvideo-ID (ca-app-pub-…/…), leer = Test-ID'
+        description: 'AdMob-Belohnungsvideo-ID (ca-app-pub-…/…), leer = Release-ID'
         required: false
         default: ''
 
@@ -39,6 +40,10 @@ permissions:
 
 env:
   FLUTTER_VERSION: "3.44.8"
+  # Echte AdMob-IDs (Thinkube, App „Feierabend Rechner“) – nicht geheim, stehen ohnehin in der App.
+  RELEASE_ADMOB_APP_ID: "ca-app-pub-8596176219181991~3672450377"
+  RELEASE_ADMOB_BANNER_ANDROID: "ca-app-pub-8596176219181991/4877720835"
+  RELEASE_ADMOB_REWARDED_ANDROID: "ca-app-pub-8596176219181991/6079121863"
 
 jobs:
   bundle:
@@ -66,9 +71,9 @@ jobs:
 
       - name: App Bundle bauen (unsigniert)
         env:
-          ADMOB_APP_ID: ${{ inputs.admob_app_id }}
-          BANNER: ${{ inputs.admob_banner_android }}
-          REWARDED: ${{ inputs.admob_rewarded_android }}
+          ADMOB_APP_ID: ${{ inputs.admob_app_id || env.RELEASE_ADMOB_APP_ID }}
+          BANNER: ${{ inputs.admob_banner_android || env.RELEASE_ADMOB_BANNER_ANDROID }}
+          REWARDED: ${{ inputs.admob_rewarded_android || env.RELEASE_ADMOB_REWARDED_ANDROID }}
         run: |
           DEFINES=""
           [ -n "$BANNER" ] && DEFINES="$DEFINES --dart-define=ADMOB_BANNER_ANDROID=$BANNER"
@@ -89,7 +94,7 @@ jobs:
           cd out
           echo "${GITHUB_SHA}" > SOURCE_COMMIT
           echo "${{ github.run_number }}" > VERSION_CODE
-          [ -n "${{ inputs.admob_app_id }}" ] && echo "real" > ADS || echo "test" > ADS
+          echo "real" > ADS
           git init -q
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

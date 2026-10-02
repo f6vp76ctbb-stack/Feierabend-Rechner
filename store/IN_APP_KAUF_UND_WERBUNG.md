@@ -89,6 +89,8 @@ In der App: **Anzeigenblöcke → Anzeigenblock hinzufügen**
 Die App zeigt diesen Dialog dann automatisch beim Start (nur in der EU/UK) und bietet in den Einstellungen „Datenschutz-Einstellungen (Werbung)" an – das verlangt Google.
 
 ### B5. IDs an mich geben → echtes AAB
+✅ Erledigt: App-ID `ca-app-pub-8596176219181991~3672450377`, Banner `…/4877720835`, Belohnungsvideo `…/6079121863` – stehen fest im Release-Build (`.github/workflows/android-bundle.yml`), ab versionCode 7.
+
 Schick mir die **3 Werte** (App-ID, Banner-ID, Rewarded-ID) – ich baue dir das AAB damit neu und signiere es.
 Alternativ selbst: GitHub → Actions → **„Android App Bundle (AAB)" → Run workflow** → IDs eintragen → danach muss das Ergebnis noch mit deinem Upload-Schlüssel signiert werden (siehe `SCHLUESSEL.md`).
 

@@ -64,7 +64,8 @@ Legende: `[ ]` offen · `[x]` erledigt · 👤 = du · 🤖 = Claude · 🤝 = z
 - [x] 🤖 24-Std-Pro-Test per Belohnungsvideo (statt 7-Tage-Trial)
 - [x] 🤖 AdMob: adaptives Banner (Free), Rewarded, UMP-Einwilligung + Datenschutz-Optionen
 - [ ] 👤 In-App-Produkt in Play Console anlegen → `store/IN_APP_KAUF_UND_WERBUNG.md` Teil A
-- [ ] 👤 AdMob-Konto, App + 2 Anzeigenblöcke, DSGVO-Mitteilung → Teil B; IDs an Claude → AAB mit echten Anzeigen
+- [x] 👤 AdMob-Konto, App + 2 Anzeigenblöcke; IDs an Claude → Release-Builds mit echten Anzeigen (ab versionCode 7)
+- [ ] 👤 AdMob: DSGVO-Mitteilung veröffentlichen, eigenes Handy als Testgerät eintragen, App nach Livegang mit Play verknüpfen
 
 ## Phase 7 — Politur & Store-Reife 🤝
 - [x] 🤖 Onboarding (3 Seiten, überspringbar): Erklärung, Arbeitszeit/Pause/Berufsgruppe einrichten, Pro vorstellen

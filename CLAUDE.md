@@ -157,7 +157,7 @@ test/                      # Unit- + Widget-Tests (domain/ = 100 % Ziel)
   + `ads_backend.dart` (abstrahiert, in Tests/Screenshots per Override ersetzt),
   `lib/features/pro/` (ProController, Paywall, Banner). AdMob-Anzeigenblöcke per
   `--dart-define=ADMOB_BANNER_ANDROID/ADMOB_REWARDED_ANDROID`, App-ID per Env `ADMOB_APP_ID`
-  (Default: Google-Test-IDs).
+  (Default im Code: Google-Test-IDs; CI-Release-Builds setzen die echten IDs aus `android-bundle.yml` → `RELEASE_ADMOB_*`).
 - **Erinnerungen:** `lib/domain/reminder_planner.dart` (rein, getestet) → `lib/features/reminders/`
   (Einstellungen persistiert, `reminderPlanProvider` nur mit Pro) → Sync in `app.dart` via
   `NotificationBackend` (`flutter_local_notifications`, `inexactAllowWhileIdle`, UTC-Zeitpunkte).
@@ -182,5 +182,5 @@ test/                      # Unit- + Widget-Tests (domain/ = 100 % Ziel)
 - **Name:** DE „Feierabend Rechner“ (Icon: „Feierabend“), EN „Clock-Out Calculator“ (Icon: „Clock-Out“, Pro: „Clock-Out Pro“);
   Android-Label über `res/values(-de)/strings.xml` `app_name`.
 - **Kontakt:** thinkube@outlook.de (Datenschutzerklärung, Store-Eintrag, IARC).
-- **Offen:** echte AdMob-IDs,
+- **Offen:**
   Zeitzonen-/DST-Behandlung, iOS-Widget.
