@@ -6,7 +6,7 @@ Alles ist vorbereitet. Du brauchst nur die Play Console (am besten am Computer o
 
 | Was | Wo |
 |---|---|
-| **Signiertes App-Bundle** | `feierabend-release-1.0.0-vc6.aab` (von mir geschickt, Test-Anzeigen, mit Widget, Einführung und englischem Namen) |
+| **Signiertes App-Bundle** | `feierabend-release-1.0.0-vc7.aab` (von mir geschickt, **echte Werbung** – für die Produktion) |
 | **Upload-Schlüssel + Passwort** | geschickt → sicher aufbewahren, siehe `SCHLUESSEL.md` |
 | Store-Texte DE + EN | `STORE_EINTRAG.md` |
 | Icon, Feature-Grafik, 7 Screenshots je Sprache | `graphics/` |
@@ -47,7 +47,7 @@ Dann **Übersetzungen verwalten → Eigene Übersetzung hinzufügen → Englisch
 ## Schritt 5 – AAB hochladen (Interner Test)
 **Test und Release → Testen → Interner Test → Neuen Release erstellen**
 1. Play App-Signatur: **„Google Play generiert und verwaltet"** bestätigen (Standard)
-2. **App-Bundle hochladen:** `feierabend-release-1.0.0-vc6.aab`
+2. **App-Bundle hochladen:** `feierabend-release-1.0.0-vc7.aab`
    – Warnung „keine Symbole zum Debuggen" ist harmlos (wegen der Dateigröße abgetrennt). Nachreichen: *Neueste Versionen und App-Bundles* → Version → *Details ansehen* → „Symbole zum Debuggen von nativem Code" → `native-debug-symbols-vc<N>.zip` (von mir geschickt, passt nur zum gleichen versionCode).
 3. Release-Name: `1.0.0`
 4. Versionshinweise DE + EN aus `STORE_EINTRAG.md`
