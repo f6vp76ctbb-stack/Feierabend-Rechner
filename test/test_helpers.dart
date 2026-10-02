@@ -2,7 +2,6 @@ import 'dart:async';
 
 import 'package:feierabend_rechner/app.dart';
 import 'package:feierabend_rechner/features/home/state/home_providers.dart';
-import 'package:feierabend_rechner/domain/reminder_planner.dart';
 import 'package:feierabend_rechner/features/pro/pro_providers.dart';
 import 'package:feierabend_rechner/features/reminders/reminder_providers.dart';
 import 'package:feierabend_rechner/features/widget/widget_providers.dart';
@@ -51,11 +50,11 @@ class FakeNotificationBackend implements NotificationBackend {
   FakeNotificationBackend({this.grant = true});
 
   final bool grant;
-  final List<List<PlannedReminder>> applied = [];
-  ReminderTexts? lastTexts;
+  final List<List<ReminderNotification>> applied = [];
   int permissionRequests = 0;
 
-  List<PlannedReminder> get current => applied.isEmpty ? const [] : applied.last;
+  List<ReminderNotification> get current =>
+      applied.isEmpty ? const [] : applied.last;
 
   @override
   bool get isSupported => true;
@@ -66,9 +65,9 @@ class FakeNotificationBackend implements NotificationBackend {
   }
 
   @override
-  Future<void> apply(List<PlannedReminder> plan, ReminderTexts texts) async {
-    applied.add(plan);
-    lastTexts = texts;
+  Future<void> apply(
+      List<ReminderNotification> notifications, ReminderChannel channel) async {
+    applied.add(notifications);
   }
 }
 

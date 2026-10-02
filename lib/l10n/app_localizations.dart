@@ -635,14 +635,8 @@ abstract class AppLocalizations {
   /// No description provided for @remindersHint.
   ///
   /// In de, this message translates to:
-  /// **'Kurz vor und pünktlich zum Feierabend.'**
+  /// **'Vorwarnungen, Halbzeit und Feierabend – auf Wunsch mit Spruch.'**
   String get remindersHint;
-
-  /// No description provided for @reminderLead.
-  ///
-  /// In de, this message translates to:
-  /// **'Vorwarnung'**
-  String get reminderLead;
 
   /// No description provided for @notifChannelName.
   ///
@@ -655,18 +649,6 @@ abstract class AppLocalizations {
   /// In de, this message translates to:
   /// **'Hinweise kurz vor und zum Feierabend'**
   String get notifChannelDesc;
-
-  /// No description provided for @notifBeforeTitle.
-  ///
-  /// In de, this message translates to:
-  /// **'Gleich Feierabend'**
-  String get notifBeforeTitle;
-
-  /// No description provided for @notifBeforeBody.
-  ///
-  /// In de, this message translates to:
-  /// **'Noch {duration} – dann bist du frei.'**
-  String notifBeforeBody(String duration);
 
   /// No description provided for @notifEndTitle.
   ///
@@ -689,7 +671,7 @@ abstract class AppLocalizations {
   /// No description provided for @paywallBenefitReminders.
   ///
   /// In de, this message translates to:
-  /// **'Erinnerung kurz vor und zum Feierabend'**
+  /// **'Eigene Erinnerungen vor Feierabend – mit Spruch'**
   String get paywallBenefitReminders;
 
   /// No description provided for @paywallBenefitWidget.
@@ -799,6 +781,78 @@ abstract class AppLocalizations {
   /// In de, this message translates to:
   /// **'Pro ansehen'**
   String get onbSeePro;
+
+  /// No description provided for @notifLeadTitle.
+  ///
+  /// In de, this message translates to:
+  /// **'Noch {duration} bis Feierabend'**
+  String notifLeadTitle(String duration);
+
+  /// No description provided for @notifLeadBody.
+  ///
+  /// In de, this message translates to:
+  /// **'Feierabend um {time}.'**
+  String notifLeadBody(String time);
+
+  /// No description provided for @notifHalfTitle.
+  ///
+  /// In de, this message translates to:
+  /// **'Halbzeit! ☕'**
+  String get notifHalfTitle;
+
+  /// No description provided for @notifHalfBody.
+  ///
+  /// In de, this message translates to:
+  /// **'Die Hälfte ist geschafft – Feierabend um {time}.'**
+  String notifHalfBody(String time);
+
+  /// No description provided for @reminderLeads.
+  ///
+  /// In de, this message translates to:
+  /// **'Vorwarnungen'**
+  String get reminderLeads;
+
+  /// No description provided for @reminderCustom.
+  ///
+  /// In de, this message translates to:
+  /// **'Eigene'**
+  String get reminderCustom;
+
+  /// No description provided for @reminderCustomTitle.
+  ///
+  /// In de, this message translates to:
+  /// **'Eigene Vorwarnung'**
+  String get reminderCustomTitle;
+
+  /// No description provided for @reminderMaxLeads.
+  ///
+  /// In de, this message translates to:
+  /// **'Höchstens 6 Vorwarnungen – erst eine abwählen.'**
+  String get reminderMaxLeads;
+
+  /// No description provided for @reminderHalf.
+  ///
+  /// In de, this message translates to:
+  /// **'Zur Halbzeit'**
+  String get reminderHalf;
+
+  /// No description provided for @reminderEnd.
+  ///
+  /// In de, this message translates to:
+  /// **'Pünktlich zum Feierabend'**
+  String get reminderEnd;
+
+  /// No description provided for @reminderQuote.
+  ///
+  /// In de, this message translates to:
+  /// **'Mit Spruch'**
+  String get reminderQuote;
+
+  /// No description provided for @reminderQuoteHint.
+  ///
+  /// In de, this message translates to:
+  /// **'Ein Spruch aus deiner Berufsgruppe kommt mit.'**
+  String get reminderQuoteHint;
 }
 
 class _AppLocalizationsDelegate

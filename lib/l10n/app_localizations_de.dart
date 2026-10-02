@@ -304,24 +304,14 @@ class AppLocalizationsDe extends AppLocalizations {
   String get remindersSwitch => 'Benachrichtigungen';
 
   @override
-  String get remindersHint => 'Kurz vor und pünktlich zum Feierabend.';
-
-  @override
-  String get reminderLead => 'Vorwarnung';
+  String get remindersHint =>
+      'Vorwarnungen, Halbzeit und Feierabend – auf Wunsch mit Spruch.';
 
   @override
   String get notifChannelName => 'Feierabend-Erinnerungen';
 
   @override
   String get notifChannelDesc => 'Hinweise kurz vor und zum Feierabend';
-
-  @override
-  String get notifBeforeTitle => 'Gleich Feierabend';
-
-  @override
-  String notifBeforeBody(String duration) {
-    return 'Noch $duration – dann bist du frei.';
-  }
 
   @override
   String get notifEndTitle => 'Feierabend! 🎉';
@@ -335,7 +325,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get paywallBenefitReminders =>
-      'Erinnerung kurz vor und zum Feierabend';
+      'Eigene Erinnerungen vor Feierabend – mit Spruch';
 
   @override
   String get paywallBenefitWidget => 'Live-Countdown als Home-Screen-Widget';
@@ -395,4 +385,48 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get onbSeePro => 'Pro ansehen';
+
+  @override
+  String notifLeadTitle(String duration) {
+    return 'Noch $duration bis Feierabend';
+  }
+
+  @override
+  String notifLeadBody(String time) {
+    return 'Feierabend um $time.';
+  }
+
+  @override
+  String get notifHalfTitle => 'Halbzeit! ☕';
+
+  @override
+  String notifHalfBody(String time) {
+    return 'Die Hälfte ist geschafft – Feierabend um $time.';
+  }
+
+  @override
+  String get reminderLeads => 'Vorwarnungen';
+
+  @override
+  String get reminderCustom => 'Eigene';
+
+  @override
+  String get reminderCustomTitle => 'Eigene Vorwarnung';
+
+  @override
+  String get reminderMaxLeads =>
+      'Höchstens 6 Vorwarnungen – erst eine abwählen.';
+
+  @override
+  String get reminderHalf => 'Zur Halbzeit';
+
+  @override
+  String get reminderEnd => 'Pünktlich zum Feierabend';
+
+  @override
+  String get reminderQuote => 'Mit Spruch';
+
+  @override
+  String get reminderQuoteHint =>
+      'Ein Spruch aus deiner Berufsgruppe kommt mit.';
 }

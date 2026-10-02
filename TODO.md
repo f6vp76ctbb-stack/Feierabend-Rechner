@@ -54,7 +54,7 @@ Legende: `[ ]` offen · `[x]` erledigt · 👤 = du · 🤖 = Claude · 🤝 = z
 - [x] 🤖 Mehrere Profile (Mo–Do/Fr, Schichten) + Umschalter + Verwaltung, persistiert
 - [x] 🤖 Überstunden-Konto + Wochenübersicht + „Heute buchen", Soll pro Tag
 - [x] 🤖 Home-Screen-Widget: natives Android-Widget (`FeierabendWidget.kt`, ohne Zusatz-Paket) – Feierabend-Zeit gratis, Live-Countdown mit Pro, „Widget hinzufügen" in Einstellungen
-- [x] 🤖 Lokale Benachrichtigungen („Gleich Feierabend" mit 15/30/60 Min Vorwarnung, „Feierabend!"), Pro, nicht-exakte Alarme
+- [x] 🤖 Lokale Benachrichtigungen, frei einstellbar: mehrere Vorwarnungen (Vorschläge + eigene Zeit, max. 6), Halbzeit, „Feierabend!", optional mit Spruch der Berufsgruppe; Pro, nicht-exakte Alarme
 - [ ] 🤖 Premium-Themes / Farbwelten (v1.1)
 
 ## Phase 6 — Monetarisierung ✅ (Code) / 🤝 (Konsole)

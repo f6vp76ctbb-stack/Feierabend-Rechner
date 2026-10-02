@@ -6,6 +6,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../../config/monetization_config.dart';
 import '../../core/formatting.dart';
+import '../../domain/reminder_planner.dart';
 import '../../l10n/l10n_ext.dart';
 import '../home/state/home_providers.dart';
 import '../home/widgets/duration_adjust_sheet.dart';
@@ -194,8 +195,6 @@ class SettingsSheet extends ConsumerWidget {
 class _RemindersSection extends ConsumerWidget {
   const _RemindersSection();
 
-  static const _leads = [15, 30, 60];
-
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
@@ -203,10 +202,10 @@ class _RemindersSection extends ConsumerWidget {
     final settings = ref.watch(reminderSettingsProvider);
     final isPro = ref.watch(isProProvider);
     final active = settings.enabled && isPro;
+    final ctrl = ref.read(reminderSettingsProvider.notifier);
 
     Future<void> toggle(bool on) async {
       HapticFeedback.selectionClick();
-      final ctrl = ref.read(reminderSettingsProvider.notifier);
       if (!on) return ctrl.setEnabled(false);
       if (!isPro) return PaywallSheet.show(context);
       final messenger = ScaffoldMessenger.of(context);
@@ -217,6 +216,39 @@ class _RemindersSection extends ConsumerWidget {
       } else {
         messenger.showSnackBar(SnackBar(content: Text(l.notificationsDenied)));
       }
+    }
+
+    // Vorschläge + eigene Zeiten, kürzeste zuerst.
+    final chips = {...ReminderOptions.presetLeads, ...settings.leads}.toList()
+      ..sort();
+
+    void toggleLead(Duration lead) {
+      HapticFeedback.selectionClick();
+      if (!settings.hasLead(lead) &&
+          settings.leads.length >= ReminderOptions.maxLeads) {
+        ScaffoldMessenger.of(context)
+            .showSnackBar(SnackBar(content: Text(l.reminderMaxLeads)));
+        return;
+      }
+      ctrl.toggleLead(lead);
+    }
+
+    Future<void> addCustom() async {
+      final picked = await DurationAdjustSheet.show(
+        context,
+        title: l.reminderCustomTitle,
+        initial: const Duration(minutes: 45),
+        step: const Duration(minutes: 5),
+        min: const Duration(minutes: 5),
+        max: ReminderOptions.maxLead,
+        presets: const [
+          Duration(minutes: 10),
+          Duration(minutes: 45),
+          Duration(minutes: 90),
+          Duration(hours: 3),
+        ],
+      );
+      if (picked != null && !settings.hasLead(picked)) toggleLead(picked);
     }
 
     return Column(
@@ -236,23 +268,49 @@ class _RemindersSection extends ConsumerWidget {
           value: active,
           onChanged: toggle,
         ),
-        if (active)
+        if (active) ...[
+          Text(l.reminderLeads, style: theme.textTheme.bodyMedium),
+          const SizedBox(height: 6),
           Wrap(
             spacing: 8,
-            crossAxisAlignment: WrapCrossAlignment.center,
+            runSpacing: 8,
             children: [
-              Text(l.reminderLead, style: theme.textTheme.bodyMedium),
-              for (final m in _leads)
-                ChoiceChip(
-                  label: Text(Formatting.durationLong(
-                      Duration(minutes: m), context.units)),
-                  selected: settings.lead.inMinutes == m,
-                  onSelected: (_) => ref
-                      .read(reminderSettingsProvider.notifier)
-                      .setLead(Duration(minutes: m)),
+              for (final lead in chips)
+                FilterChip(
+                  label: Text(Formatting.durationLong(lead, context.units)),
+                  selected: settings.hasLead(lead),
+                  onSelected: (_) => toggleLead(lead),
                 ),
+              ActionChip(
+                avatar: const Icon(Icons.add_rounded, size: 18),
+                label: Text(l.reminderCustom),
+                onPressed: addCustom,
+              ),
             ],
           ),
+          SwitchListTile(
+            contentPadding: EdgeInsets.zero,
+            secondary: const Icon(Icons.coffee_outlined),
+            title: Text(l.reminderHalf),
+            value: settings.halfTime,
+            onChanged: ctrl.setHalfTime,
+          ),
+          SwitchListTile(
+            contentPadding: EdgeInsets.zero,
+            secondary: const Icon(Icons.celebration_outlined),
+            title: Text(l.reminderEnd),
+            value: settings.atEnd,
+            onChanged: ctrl.setAtEnd,
+          ),
+          SwitchListTile(
+            contentPadding: EdgeInsets.zero,
+            secondary: const Icon(Icons.format_quote_rounded),
+            title: Text(l.reminderQuote),
+            subtitle: Text(l.reminderQuoteHint),
+            value: settings.withQuote,
+            onChanged: ctrl.setWithQuote,
+          ),
+        ],
       ],
     );
   }

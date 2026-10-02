@@ -302,24 +302,14 @@ class AppLocalizationsEn extends AppLocalizations {
   String get remindersSwitch => 'Notifications';
 
   @override
-  String get remindersHint => 'Shortly before and right at clock-out.';
-
-  @override
-  String get reminderLead => 'Heads-up';
+  String get remindersHint =>
+      'Heads-ups, halftime and clock-out – with a quote if you like.';
 
   @override
   String get notifChannelName => 'Clock-out reminders';
 
   @override
   String get notifChannelDesc => 'Alerts shortly before and at clock-out';
-
-  @override
-  String get notifBeforeTitle => 'Almost clock-out time';
-
-  @override
-  String notifBeforeBody(String duration) {
-    return '$duration to go – then you’re free.';
-  }
 
   @override
   String get notifEndTitle => 'Time to go! 🎉';
@@ -332,7 +322,8 @@ class AppLocalizationsEn extends AppLocalizations {
       'Notifications are blocked in system settings.';
 
   @override
-  String get paywallBenefitReminders => 'Reminders before and at clock-out';
+  String get paywallBenefitReminders =>
+      'Your own clock-out reminders – with a quote';
 
   @override
   String get paywallBenefitWidget => 'Live countdown as a home screen widget';
@@ -392,4 +383,46 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get onbSeePro => 'See Pro';
+
+  @override
+  String notifLeadTitle(String duration) {
+    return '$duration until clock-out';
+  }
+
+  @override
+  String notifLeadBody(String time) {
+    return 'Clock-out at $time.';
+  }
+
+  @override
+  String get notifHalfTitle => 'Halfway there! ☕';
+
+  @override
+  String notifHalfBody(String time) {
+    return 'Half done – clock-out at $time.';
+  }
+
+  @override
+  String get reminderLeads => 'Heads-ups';
+
+  @override
+  String get reminderCustom => 'Custom';
+
+  @override
+  String get reminderCustomTitle => 'Custom heads-up';
+
+  @override
+  String get reminderMaxLeads => '6 heads-ups max – deselect one first.';
+
+  @override
+  String get reminderHalf => 'At halftime';
+
+  @override
+  String get reminderEnd => 'Right at clock-out';
+
+  @override
+  String get reminderQuote => 'With a quote';
+
+  @override
+  String get reminderQuoteHint => 'Adds a quote for your job.';
 }

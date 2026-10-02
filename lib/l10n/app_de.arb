@@ -165,16 +165,13 @@
   "adNotReady": "Gerade kein Video verfügbar. Versuch es gleich nochmal.",
   "remindersTitle": "Erinnerungen",
   "remindersSwitch": "Benachrichtigungen",
-  "remindersHint": "Kurz vor und pünktlich zum Feierabend.",
-  "reminderLead": "Vorwarnung",
+  "remindersHint": "Vorwarnungen, Halbzeit und Feierabend – auf Wunsch mit Spruch.",
   "notifChannelName": "Feierabend-Erinnerungen",
   "notifChannelDesc": "Hinweise kurz vor und zum Feierabend",
-  "notifBeforeTitle": "Gleich Feierabend",
-  "notifBeforeBody": "Noch {duration} – dann bist du frei.",
   "notifEndTitle": "Feierabend! 🎉",
   "notifEndBody": "Geschafft. Ab nach Hause!",
   "notificationsDenied": "Benachrichtigungen sind in den Systemeinstellungen blockiert.",
-  "paywallBenefitReminders": "Erinnerung kurz vor und zum Feierabend",
+  "paywallBenefitReminders": "Eigene Erinnerungen vor Feierabend – mit Spruch",
   "paywallBenefitWidget": "Live-Countdown als Home-Screen-Widget",
   "widgetTitle": "Home-Screen-Widget",
   "widgetHint": "Feierabend-Zeit auf dem Startbildschirm – mit Pro als Live-Countdown.",
@@ -193,11 +190,37 @@
   "onb3Body": "Einmal zahlen, kein Abo – oder erst 24 Std. gratis testen.",
   "onb3ProActive": "Pro ist aktiv – alles freigeschaltet.",
   "onbSeePro": "Pro ansehen",
-  "@notifBeforeBody": {
+  "notifLeadTitle": "Noch {duration} bis Feierabend",
+  "@notifLeadTitle": {
     "placeholders": {
       "duration": {
         "type": "String"
       }
     }
-  }
+  },
+  "notifLeadBody": "Feierabend um {time}.",
+  "@notifLeadBody": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "notifHalfTitle": "Halbzeit! ☕",
+  "notifHalfBody": "Die Hälfte ist geschafft – Feierabend um {time}.",
+  "@notifHalfBody": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "reminderLeads": "Vorwarnungen",
+  "reminderCustom": "Eigene",
+  "reminderCustomTitle": "Eigene Vorwarnung",
+  "reminderMaxLeads": "Höchstens 6 Vorwarnungen – erst eine abwählen.",
+  "reminderHalf": "Zur Halbzeit",
+  "reminderEnd": "Pünktlich zum Feierabend",
+  "reminderQuote": "Mit Spruch",
+  "reminderQuoteHint": "Ein Spruch aus deiner Berufsgruppe kommt mit."
 }

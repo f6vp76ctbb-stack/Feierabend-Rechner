@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'core/formatting.dart';
 import 'design/app_theme.dart';
 import 'features/home/home_screen.dart';
 import 'features/home/state/home_providers.dart';
@@ -9,7 +8,6 @@ import 'features/onboarding/onboarding_screen.dart';
 import 'features/pro/pro_providers.dart';
 import 'features/reminders/reminder_providers.dart';
 import 'features/widget/widget_providers.dart';
-import 'domain/reminder_planner.dart';
 import 'l10n/app_localizations.dart';
 import 'services/notification_backend.dart';
 
@@ -35,10 +33,15 @@ class _FeierabendAppState extends ConsumerState<FeierabendApp> {
     }, fireImmediately: true);
 
     // Feierabend-Erinnerungen immer mit dem aktuellen Plan synchron halten.
-    ref.listenManual<List<PlannedReminder>>(reminderPlanProvider, (prev, plan) {
-      if (samePlan(prev, plan)) return;
-      final lead = ref.read(reminderSettingsProvider).lead;
-      ref.read(notificationBackendProvider).apply(plan, _texts(lead));
+    ref.listenManual<ReminderSchedule>(reminderScheduleProvider, (prev, schedule) {
+      if (prev == schedule) return;
+      final lang = _lang;
+      final l = lookupAppLocalizations(Locale(lang));
+      ref.read(notificationBackendProvider).apply(
+            buildReminderNotifications(schedule, l, lang: lang),
+            ReminderChannel(
+                name: l.notifChannelName, description: l.notifChannelDesc),
+          );
     }, fireImmediately: true);
 
     // Home-Screen-Widget mit Feierabend-Zeit und Pro-Status versorgen.
@@ -48,21 +51,11 @@ class _FeierabendAppState extends ConsumerState<FeierabendApp> {
     }, fireImmediately: true);
   }
 
-  /// Lokalisierte Benachrichtigungstexte (ohne BuildContext, gleiche Regel wie die UI).
-  ReminderTexts _texts(Duration lead) {
+  /// Sprache ohne BuildContext – gleiche Regel wie die UI (Deutsch, sonst Englisch).
+  String get _lang {
     final device = WidgetsBinding.instance.platformDispatcher.locale;
-    final lang = widget.locale?.languageCode ??
+    return widget.locale?.languageCode ??
         (device.languageCode == 'de' ? 'de' : 'en');
-    final l = lookupAppLocalizations(Locale(lang));
-    final units = Units(hour: l.unitHours, minute: l.unitMinutes);
-    return ReminderTexts(
-      channelName: l.notifChannelName,
-      channelDescription: l.notifChannelDesc,
-      beforeTitle: l.notifBeforeTitle,
-      beforeBody: l.notifBeforeBody(Formatting.durationLong(lead, units)),
-      endTitle: l.notifEndTitle,
-      endBody: l.notifEndBody,
-    );
   }
 
   @override

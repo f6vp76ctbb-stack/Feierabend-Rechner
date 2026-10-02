@@ -87,7 +87,7 @@ Diese Logik lebt **isoliert und voll unit-getestet** in `lib/domain/` — UI hä
 - Mehrere Profile (z. B. Mo–Do / Fr, Schichten)
 - Überstunden-Konto / Wochenübersicht
 - ArbZG-Auto-Pausenmodus
-- Erinnerungen (Vorwarnung 15/30/60 Min + „Feierabend!")
+- Erinnerungen, frei einstellbar: mehrere Vorwarnungen (z. B. 2 Std/1 Std/15 Min + eigene), Halbzeit, „Feierabend!", optional mit Spruch
 - Live-Countdown im Android-Home-Screen-Widget (die Uhrzeit darin ist gratis → Werbehebel)
 
 **Pro — geplant (v1.1):** Premium-Themes.
@@ -158,9 +158,10 @@ test/                      # Unit- + Widget-Tests (domain/ = 100 % Ziel)
   `lib/features/pro/` (ProController, Paywall, Banner). AdMob-Anzeigenblöcke per
   `--dart-define=ADMOB_BANNER_ANDROID/ADMOB_REWARDED_ANDROID`, App-ID per Env `ADMOB_APP_ID`
   (Default im Code: Google-Test-IDs; CI-Release-Builds setzen die echten IDs aus `android-bundle.yml` → `RELEASE_ADMOB_*`).
-- **Erinnerungen:** `lib/domain/reminder_planner.dart` (rein, getestet) → `lib/features/reminders/`
-  (Einstellungen persistiert, `reminderPlanProvider` nur mit Pro) → Sync in `app.dart` via
-  `NotificationBackend` (`flutter_local_notifications`, `inexactAllowWhileIdle`, UTC-Zeitpunkte).
+- **Erinnerungen:** `lib/domain/reminder_planner.dart` (`ReminderOptions` + Planer, rein, getestet) →
+  `lib/features/reminders/` (Optionen persistiert, `reminderScheduleProvider` nur mit Pro,
+  `buildReminderNotifications` formuliert Texte + Spruch) → Sync in `app.dart` via `NotificationBackend`
+  (`flutter_local_notifications`, `inexactAllowWhileIdle`, UTC; IDs: Ende 1002, Halbzeit 1003, Vorwarnung 1100+Min).
   Android: Desugaring + Boot-Receiver im Manifest.
 - **Home-Widget (Android):** `lib/features/widget/` + `lib/services/widget_backend.dart` schicken einen
   `WidgetSnapshot` (Start/Ende/Label/Pro-Ablauf) über den Channel `com.thinkube.feierabendrechner/widget`
