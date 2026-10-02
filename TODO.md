@@ -14,8 +14,8 @@ Legende: `[ ]` offen · `[x]` erledigt · 👤 = du · 🤖 = Claude · 🤝 = z
       `gh-pages`. Live & bestätigt. Jeder Push deployt automatisch.
       URL: `https://f6vp76ctbb-stack.github.io/Feierabend-Rechner/`
 - [ ] 👤 App-Name & Verfügbarkeit prüfen (Play Store Suche + ggf. Markenrecherche DPMA)
-- [ ] 👤 Google-Play-Entwicklerkonto anlegen (einmalig 25 $) — kann parallel laufen
-- [ ] 👤 Entscheiden: finaler Preis-Startwert (Empfehlung: 3,99 € einmalig)
+- [x] 👤 Google-Play-Entwicklerkonto (vorhanden, bestätigt)
+- [x] 👤 Preis: 3,99 € einmalig
 
 ## Phase 1 — Gerüst ✅
 - [x] 🤖 `flutter create` mit Package-ID (`de.feierabendrechner`)
@@ -82,7 +82,7 @@ Legende: `[ ]` offen · `[x]` erledigt · 👤 = du · 🤖 = Claude · 🤝 = z
 - [x] 🤖 Store-Listing DE/EN → `store/STORE_EINTRAG.md`
 - [x] 🤖 Screenshots (7 × DE/EN), Feature-Grafik, Icon 512 → `store/graphics/`
 - [x] 🤖 AAB-Build (CI, unsigniert) + lokale Signatur per jarsigner
-- [ ] 👤 AAB in internen Test hochladen → `store/ANLEITUNG.md`
+- [x] 👤 App angelegt, App-Inhalte + Store-Eintrag ausgefüllt, AAB hochgeladen → in Google-Prüfung (02.10.2026)
 - [ ] 👤 Ggf. geschlossener Test (12 Tester / 14 Tage) → Produktion
 
 ## Phase 9 — Launch & Wachstum 🤝
