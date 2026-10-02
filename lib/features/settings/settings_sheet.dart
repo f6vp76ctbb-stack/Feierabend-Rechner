@@ -8,6 +8,8 @@ import '../../config/monetization_config.dart';
 import '../../core/formatting.dart';
 import '../../domain/reminder_planner.dart';
 import '../../l10n/l10n_ext.dart';
+import '../designs/design_providers.dart';
+import '../designs/design_shop_sheet.dart';
 import '../home/state/home_providers.dart';
 import '../home/widgets/duration_adjust_sheet.dart';
 import '../pro/paywall_sheet.dart';
@@ -132,6 +134,11 @@ class SettingsSheet extends ConsumerWidget {
             const SizedBox(height: 6),
             Text(l.dailyTargetHint, style: theme.textTheme.bodyMedium),
             const SizedBox(height: 20),
+
+            // --- Designs (einzeln kaufbar) ---
+            Text(l.designsTitle, style: theme.textTheme.labelLarge),
+            const _DesignsTile(),
+            const SizedBox(height: 16),
 
             // --- Erscheinungsbild ---
             Text(l.appearance, style: theme.textTheme.labelLarge),
@@ -347,6 +354,39 @@ class _WidgetSection extends ConsumerWidget {
           label: Text(l.widgetAdd),
         ),
       ],
+    );
+  }
+}
+
+class _DesignsTile extends ConsumerWidget {
+  const _DesignsTile();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l = context.l10n;
+    final design = ref.watch(activeDesignProvider);
+    final colors = design.ring;
+    return ListTile(
+      contentPadding: EdgeInsets.zero,
+      leading: Container(
+        width: 36,
+        height: 36,
+        decoration: BoxDecoration(
+          shape: BoxShape.circle,
+          gradient: LinearGradient(
+            colors: colors,
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+          ),
+        ),
+        child: design.hearts
+            ? const Icon(Icons.favorite_rounded, size: 18, color: Colors.white)
+            : null,
+      ),
+      title: Text(l.designsOpen),
+      subtitle: Text(l.designCurrent(designName(l, design))),
+      trailing: const Icon(Icons.chevron_right_rounded),
+      onTap: () => DesignShopSheet.show(context),
     );
   }
 }

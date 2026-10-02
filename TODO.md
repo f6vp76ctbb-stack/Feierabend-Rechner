@@ -55,7 +55,8 @@ Legende: `[ ]` offen · `[x]` erledigt · 👤 = du · 🤖 = Claude · 🤝 = z
 - [x] 🤖 Überstunden-Konto + Wochenübersicht + „Heute buchen", Soll pro Tag
 - [x] 🤖 Home-Screen-Widget: natives Android-Widget (`FeierabendWidget.kt`, ohne Zusatz-Paket) – Feierabend-Zeit gratis, Live-Countdown mit Pro, „Widget hinzufügen" in Einstellungen
 - [x] 🤖 Lokale Benachrichtigungen, frei einstellbar: mehrere Vorwarnungen (Vorschläge + eigene Zeit, max. 6), Halbzeit, „Feierabend!", optional mit Spruch der Berufsgruppe; Pro, nicht-exakte Alarme
-- [ ] 🤖 Premium-Themes / Farbwelten (v1.1)
+- [x] 🤖 5 Designs als Einzelkäufe (Supporter ❤ 4,99 €, Mitternacht, Sonnenuntergang, Ozean, Wald), Design-Shop in den Einstellungen
+- [ ] 👤 5 Design-Produkte in der Play Console anlegen → `store/IN_APP_KAUF_UND_WERBUNG.md` Teil A2
 
 ## Phase 6 — Monetarisierung ✅ (Code) / 🤝 (Konsole)
 - [x] 🤖 In-App-Kauf `feierabend_pro` (einmalig) über `in_app_purchase` (statt RevenueCat – kein Fremdkonto nötig)

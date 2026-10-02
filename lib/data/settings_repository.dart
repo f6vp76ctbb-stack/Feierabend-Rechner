@@ -31,6 +31,8 @@ class SettingsRepository {
   static const _kReminderAtEnd = 'reminder_at_end';
   static const _kReminderQuote = 'reminder_quote';
   static const _kOnboardingDone = 'onboarding_done';
+  static const _kDesignsOwned = 'designs_owned';
+  static const _kDesignSelected = 'design_selected';
 
   // --- Arbeitszeit-/Pausen-Konfiguration ---
 
@@ -146,4 +148,17 @@ class SettingsRepository {
 
   Future<void> saveOnboardingDone(bool value) =>
       _prefs.setBool(_kOnboardingDone, value);
+
+  // --- Designs (gekaufte + gewähltes) ---
+
+  Set<String> loadOwnedDesigns() =>
+      (_prefs.getStringList(_kDesignsOwned) ?? const []).toSet();
+
+  Future<void> saveOwnedDesigns(Set<String> ids) =>
+      _prefs.setStringList(_kDesignsOwned, ids.toList()..sort());
+
+  String? loadSelectedDesign() => _prefs.getString(_kDesignSelected);
+
+  Future<void> saveSelectedDesign(String id) =>
+      _prefs.setString(_kDesignSelected, id);
 }

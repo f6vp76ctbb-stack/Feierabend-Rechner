@@ -10,9 +10,9 @@ Grafiken liegen in `store/graphics/`:
 |---|---|
 | App-Symbol (512 × 512) | `graphics/icon-512.png` |
 | Vorstellungsgrafik (1024 × 500) | `graphics/de/feature-graphic.png` · `graphics/en/feature-graphic.png` |
-| Screenshots Smartphone (1080 × 1920, 7 Stück) | `graphics/de/screenshots/*.png` · `graphics/en/screenshots/*.png` |
+| Screenshots Smartphone (1080 × 1920, 8 Stück) | `graphics/de/screenshots/*.png` · `graphics/en/screenshots/*.png` |
 
-Reihenfolge der Screenshots = Dateinamen (01 → 07).
+Reihenfolge der Screenshots = Dateinamen (01 → 08).
 
 ---
 
@@ -53,6 +53,9 @@ FEIERABEND PRO – EINMALIG, KEIN ABO
 • Live-Countdown direkt im Widget auf dem Startbildschirm
 • Keine Werbung
 • Vorher 24 Stunden gratis testen – per kurzem Video
+
+DESIGNS ZUM VERLIEBEN
+• 5 Farbwelten einzeln erhältlich: Supporter mit Herzen, Mitternacht, Sonnenuntergang, Ozean und Wald
 
 MACHT EINFACH GUTE LAUNE
 • Lustige Sprüche für deinen Beruf: Büro, Handwerk, IT, Pflege, Lehrkraft, Gastro, Einzelhandel, Schicht und mehr
@@ -112,6 +115,9 @@ CLOCK-OUT PRO – ONE-TIME, NO SUBSCRIPTION
 • Live countdown right in the home screen widget
 • No ads
 • Try it free for 24 hours first – with a short video
+
+DESIGNS YOU'LL LOVE
+• 5 color themes available individually: Supporter with hearts, Midnight, Sunset, Ocean and Forest
 
 PURE GOOD MOOD
 • Fun quotes for your job: office, trades, IT, care & health, teaching, hospitality, retail, shift work and more

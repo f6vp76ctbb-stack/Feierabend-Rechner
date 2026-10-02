@@ -90,7 +90,10 @@ Diese Logik lebt **isoliert und voll unit-getestet** in `lib/domain/` — UI hä
 - Erinnerungen, frei einstellbar: mehrere Vorwarnungen (z. B. 2 Std/1 Std/15 Min + eigene), Halbzeit, „Feierabend!", optional mit Spruch
 - Live-Countdown im Android-Home-Screen-Widget (die Uhrzeit darin ist gratis → Werbehebel)
 
-**Pro — geplant (v1.1):** Premium-Themes.
+**Designs (einzeln kaufbar, nicht in Pro):** Standard gratis; `design_supporter` (Herzen, teuerstes),
+`design_midnight`, `design_sunset`, `design_ocean`, `design_forest`. Katalog `lib/design/app_designs.dart`,
+Kauf/Auswahl `lib/features/designs/` (`designsProvider`, `activeDesignProvider`), Farben per
+`ThemeExtension` `DesignColors` (`context.design`). Web-Vorschau: alle frei.
 
 Gating über `isProProvider` (`lib/features/pro/pro_providers.dart`); Web-Vorschau = immer Pro.
 

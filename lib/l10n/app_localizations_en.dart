@@ -425,4 +425,56 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get reminderQuoteHint => 'Adds a quote for your job.';
+
+  @override
+  String get designsTitle => 'Designs';
+
+  @override
+  String get designsSubtitle =>
+      'Buy once, yours forever – and you support development.';
+
+  @override
+  String get designsOpen => 'Browse designs';
+
+  @override
+  String designCurrent(String name) {
+    return 'Active: $name';
+  }
+
+  @override
+  String get designOwned => 'Owned';
+
+  @override
+  String get designActive => 'Active';
+
+  @override
+  String get designFree => 'Free';
+
+  @override
+  String get designThanks => 'Thank you! Your new design is active.';
+
+  @override
+  String get designSupporterBadge => 'Biggest thank-you';
+
+  @override
+  String get designSupporterHint =>
+      'With hearts – for everyone who wants to support the app the most.';
+
+  @override
+  String get designNameStandard => 'Classic';
+
+  @override
+  String get designNameSupporter => 'Supporter';
+
+  @override
+  String get designNameMidnight => 'Midnight';
+
+  @override
+  String get designNameSunset => 'Sunset';
+
+  @override
+  String get designNameOcean => 'Ocean';
+
+  @override
+  String get designNameForest => 'Forest';
 }

@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'design/app_theme.dart';
 import 'features/home/home_screen.dart';
+import 'features/designs/design_providers.dart';
 import 'features/home/state/home_providers.dart';
 import 'features/onboarding/onboarding_screen.dart';
 import 'features/pro/pro_providers.dart';
@@ -61,12 +62,13 @@ class _FeierabendAppState extends ConsumerState<FeierabendApp> {
   @override
   Widget build(BuildContext context) {
     final themeMode = ref.watch(themeModeProvider);
+    final design = ref.watch(activeDesignProvider);
 
     return MaterialApp(
       onGenerateTitle: (context) => AppLocalizations.of(context).appTitle,
       debugShowCheckedModeBanner: false,
-      theme: AppTheme.light(),
-      darkTheme: AppTheme.dark(),
+      theme: AppTheme.light(design),
+      darkTheme: AppTheme.dark(design),
       themeMode: themeMode,
       locale: widget.locale,
       localizationsDelegates: AppLocalizations.localizationsDelegates,

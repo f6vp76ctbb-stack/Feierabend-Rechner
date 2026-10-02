@@ -222,5 +222,28 @@
   "reminderHalf": "Zur Halbzeit",
   "reminderEnd": "Pünktlich zum Feierabend",
   "reminderQuote": "Mit Spruch",
-  "reminderQuoteHint": "Ein Spruch aus deiner Berufsgruppe kommt mit."
+  "reminderQuoteHint": "Ein Spruch aus deiner Berufsgruppe kommt mit.",
+  "designsTitle": "Designs",
+  "designsSubtitle": "Einmal kaufen, für immer deins – und du unterstützt die Entwicklung.",
+  "designsOpen": "Designs ansehen",
+  "designCurrent": "Aktiv: {name}",
+  "@designCurrent": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "designOwned": "Gekauft",
+  "designActive": "Aktiv",
+  "designFree": "Gratis",
+  "designThanks": "Danke! Dein neues Design ist aktiv.",
+  "designSupporterBadge": "Größtes Dankeschön",
+  "designSupporterHint": "Mit Herzen – für alle, die die App am meisten unterstützen wollen.",
+  "designNameStandard": "Standard",
+  "designNameSupporter": "Supporter",
+  "designNameMidnight": "Mitternacht",
+  "designNameSunset": "Sonnenuntergang",
+  "designNameOcean": "Ozean",
+  "designNameForest": "Wald"
 }

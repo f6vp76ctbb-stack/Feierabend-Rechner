@@ -853,6 +853,102 @@ abstract class AppLocalizations {
   /// In de, this message translates to:
   /// **'Ein Spruch aus deiner Berufsgruppe kommt mit.'**
   String get reminderQuoteHint;
+
+  /// No description provided for @designsTitle.
+  ///
+  /// In de, this message translates to:
+  /// **'Designs'**
+  String get designsTitle;
+
+  /// No description provided for @designsSubtitle.
+  ///
+  /// In de, this message translates to:
+  /// **'Einmal kaufen, für immer deins – und du unterstützt die Entwicklung.'**
+  String get designsSubtitle;
+
+  /// No description provided for @designsOpen.
+  ///
+  /// In de, this message translates to:
+  /// **'Designs ansehen'**
+  String get designsOpen;
+
+  /// No description provided for @designCurrent.
+  ///
+  /// In de, this message translates to:
+  /// **'Aktiv: {name}'**
+  String designCurrent(String name);
+
+  /// No description provided for @designOwned.
+  ///
+  /// In de, this message translates to:
+  /// **'Gekauft'**
+  String get designOwned;
+
+  /// No description provided for @designActive.
+  ///
+  /// In de, this message translates to:
+  /// **'Aktiv'**
+  String get designActive;
+
+  /// No description provided for @designFree.
+  ///
+  /// In de, this message translates to:
+  /// **'Gratis'**
+  String get designFree;
+
+  /// No description provided for @designThanks.
+  ///
+  /// In de, this message translates to:
+  /// **'Danke! Dein neues Design ist aktiv.'**
+  String get designThanks;
+
+  /// No description provided for @designSupporterBadge.
+  ///
+  /// In de, this message translates to:
+  /// **'Größtes Dankeschön'**
+  String get designSupporterBadge;
+
+  /// No description provided for @designSupporterHint.
+  ///
+  /// In de, this message translates to:
+  /// **'Mit Herzen – für alle, die die App am meisten unterstützen wollen.'**
+  String get designSupporterHint;
+
+  /// No description provided for @designNameStandard.
+  ///
+  /// In de, this message translates to:
+  /// **'Standard'**
+  String get designNameStandard;
+
+  /// No description provided for @designNameSupporter.
+  ///
+  /// In de, this message translates to:
+  /// **'Supporter'**
+  String get designNameSupporter;
+
+  /// No description provided for @designNameMidnight.
+  ///
+  /// In de, this message translates to:
+  /// **'Mitternacht'**
+  String get designNameMidnight;
+
+  /// No description provided for @designNameSunset.
+  ///
+  /// In de, this message translates to:
+  /// **'Sonnenuntergang'**
+  String get designNameSunset;
+
+  /// No description provided for @designNameOcean.
+  ///
+  /// In de, this message translates to:
+  /// **'Ozean'**
+  String get designNameOcean;
+
+  /// No description provided for @designNameForest.
+  ///
+  /// In de, this message translates to:
+  /// **'Wald'**
+  String get designNameForest;
 }
 
 class _AppLocalizationsDelegate

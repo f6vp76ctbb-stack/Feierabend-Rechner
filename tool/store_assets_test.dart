@@ -12,6 +12,7 @@ import 'package:feierabend_rechner/app.dart';
 import 'package:feierabend_rechner/design/app_icon.dart';
 import 'package:feierabend_rechner/design/app_theme.dart';
 import 'package:feierabend_rechner/domain/overtime_calculator.dart';
+import 'package:feierabend_rechner/features/designs/design_shop_sheet.dart';
 import 'package:feierabend_rechner/features/home/home_screen.dart';
 import 'package:feierabend_rechner/features/home/state/home_providers.dart';
 import 'package:feierabend_rechner/features/home/widgets/countdown_ring.dart';
@@ -101,15 +102,31 @@ class _FixedSpruch extends SpruchController {
 }
 
 class _ShowcaseStore implements PurchaseBackend {
-  _ShowcaseStore(this.price);
-  final String price;
+  _ShowcaseStore(this.lang);
+  final String lang;
+
+  /// Preisvorschläge wie in `store/IN_APP_KAUF_UND_WERBUNG.md`.
+  static const _cents = {
+    'design_supporter': 499,
+    'design_midnight': 199,
+    'design_sunset': 199,
+    'design_ocean': 149,
+    'design_forest': 99,
+  };
+
+  String _price(String id) {
+    final c = _cents[id] ?? 399;
+    final euros = '${c ~/ 100}', cents = (c % 100).toString().padLeft(2, '0');
+    return lang == 'de' ? '$euros,$cents €' : '€$euros.$cents';
+  }
+
   @override
   bool get isSupported => true;
   @override
   Stream<PurchaseEvent> get events => const Stream.empty();
   @override
   Future<StoreProduct?> loadProduct(String id) async =>
-      StoreProduct(id: id, price: price);
+      StoreProduct(id: id, price: _price(id));
   @override
   Future<bool> buy(String id) async => false;
   @override
@@ -166,8 +183,13 @@ Map<String, Object> _sampleData(String lang, {required bool dark}) {
   };
 }
 
-Future<Widget> _app(String lang, {bool dark = false, bool paywall = false}) async {
-  SharedPreferences.setMockInitialValues(_sampleData(lang, dark: dark));
+Future<Widget> _app(String lang,
+    {bool dark = false, bool paywall = false, String? design}) async {
+  SharedPreferences.setMockInitialValues({
+    ..._sampleData(lang, dark: dark),
+    if (design != null) 'designs_owned': [design],
+    'design_selected': ?design,
+  });
   final prefs = await SharedPreferences.getInstance();
   final now = _today.add(const Duration(hours: 12, minutes: 17));
   return ProviderScope(
@@ -176,7 +198,7 @@ Future<Widget> _app(String lang, {bool dark = false, bool paywall = false}) asyn
       nowProvider.overrideWith((ref) => Stream.value(now)),
       spruchControllerProvider.overrideWith(() => _FixedSpruch(2)),
       purchaseBackendProvider.overrideWithValue(paywall
-          ? _ShowcaseStore(lang == 'de' ? '3,99 €' : '€3.99')
+          ? _ShowcaseStore(lang)
           : NoopPurchaseBackend()),
       adsBackendProvider
           .overrideWithValue(paywall ? _ShowcaseAds() : NoopAdsBackend()),
@@ -305,12 +327,13 @@ typedef _Prepare = Future<void> Function(WidgetTester tester);
 
 class _Scene {
   const _Scene(this.file, this.de, this.en,
-      {this.dark = false, this.paywall = false, this.prepare});
+      {this.dark = false, this.paywall = false, this.design, this.prepare});
   final String file;
   final String de;
   final String en;
   final bool dark;
   final bool paywall;
+  final String? design;
   final _Prepare? prepare;
 }
 
@@ -340,6 +363,10 @@ final _scenes = <_Scene>[
   _Scene('07-pro', 'Einmal zahlen.\nKein Abo.', 'Pay once.\nNo subscription.',
       paywall: true, prepare: (t) async {
     PaywallSheet.show(_homeCtx(t));
+  }),
+  _Scene('08-designs', 'Designs\nzum Verlieben', 'Designs\nyou\'ll love',
+      paywall: true, design: 'supporter', prepare: (t) async {
+    DesignShopSheet.show(_homeCtx(t));
   }),
 ];
 
@@ -472,7 +499,8 @@ void main() {
     for (final scene in _scenes) {
       testWidgets('Screenshot $lang ${scene.file}', (tester) async {
         addTearDown(tester.view.reset);
-        final app = await _app(lang, dark: scene.dark, paywall: scene.paywall);
+        final app = await _app(lang,
+            dark: scene.dark, paywall: scene.paywall, design: scene.design);
         await _render(
           tester,
           child: _frame(

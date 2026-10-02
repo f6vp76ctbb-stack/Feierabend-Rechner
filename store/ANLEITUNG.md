@@ -9,7 +9,7 @@ Alles ist vorbereitet. Du brauchst nur die Play Console (am besten am Computer o
 | **Signiertes App-Bundle** | `feierabend-release-1.0.0-vc7.aab` (von mir geschickt, **echte Werbung** – für die Produktion) |
 | **Upload-Schlüssel + Passwort** | geschickt → sicher aufbewahren, siehe `SCHLUESSEL.md` |
 | Store-Texte DE + EN | `STORE_EINTRAG.md` |
-| Icon, Feature-Grafik, 7 Screenshots je Sprache | `graphics/` |
+| Icon, Feature-Grafik, 8 Screenshots je Sprache | `graphics/` |
 | Datenschutzerklärung (online) | https://f6vp76ctbb-stack.github.io/Feierabend-Rechner/privacy.html |
 | Antworten für „App-Inhalte" & Datensicherheit | `APP_INHALTE.md` |
 | In-App-Kauf & AdMob einrichten | `IN_APP_KAUF_UND_WERBUNG.md` |
@@ -38,7 +38,7 @@ Datenschutzerklärung · App-Zugriff · Anzeigen · Einstufung · Zielgruppe · 
 **Store-Präsenz → Haupteintrag im Store** → Texte aus **`STORE_EINTRAG.md`** (Deutsch) einfügen, Grafiken hochladen:
 - App-Symbol: `graphics/icon-512.png`
 - Vorstellungsgrafik: `graphics/de/feature-graphic.png`
-- Smartphone-Screenshots: alle 7 aus `graphics/de/screenshots/` (in Reihenfolge 01 → 07)
+- Smartphone-Screenshots: alle 8 aus `graphics/de/screenshots/` (in Reihenfolge 01 → 08)
 
 Dann **Übersetzungen verwalten → Eigene Übersetzung hinzufügen → Englisch (Vereinigte Staaten) – en-US** → englische Texte + `graphics/en/…` hochladen.
 

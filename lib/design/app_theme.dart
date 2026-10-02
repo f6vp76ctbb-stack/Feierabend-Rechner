@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'app_colors.dart';
+import 'app_designs.dart';
 
 /// Zentrales Theme (Material 3, hell + dunkel gleichwertig).
 ///
@@ -11,38 +12,42 @@ abstract final class AppTheme {
   /// Standard-Eckenradius für Karten/Overlays (weiche Ecken, 20–24 px).
   static const double radius = 24;
 
-  static ThemeData light() => _base(
+  static ThemeData light([AppDesign design = AppDesigns.standard]) => _base(
+        design: design,
         brightness: Brightness.light,
-        background: AppColors.bgLight,
+        background: design.bgLight,
         surface: AppColors.surfaceLight,
         onSurface: AppColors.textLight,
         muted: AppColors.mutedLight,
       );
 
-  static ThemeData dark() => _base(
+  static ThemeData dark([AppDesign design = AppDesigns.standard]) => _base(
+        design: design,
         brightness: Brightness.dark,
-        background: AppColors.bgDark,
-        surface: AppColors.surfaceDark,
+        background: design.bgDark,
+        surface: design.surfaceDark,
         onSurface: AppColors.textDark,
         muted: AppColors.mutedDark,
       );
 
   static ThemeData _base({
+    required AppDesign design,
     required Brightness brightness,
     required Color background,
     required Color surface,
     required Color onSurface,
     required Color muted,
   }) {
+    final primary = design.primaryFor(brightness);
     final scheme = ColorScheme.fromSeed(
-      seedColor: AppColors.primary,
+      seedColor: design.primary,
       brightness: brightness,
     ).copyWith(
-      primary: AppColors.primary,
-      // Primär ist in beiden Modi dasselbe Indigo → Schrift darauf immer weiß
-      // (fromSeed(dark) würde sonst dunkles Lila auf Indigo liefern).
+      primary: primary,
+      // Primär ist ein kräftiger Ton → Schrift darauf immer weiß
+      // (fromSeed(dark) würde sonst dunkle Schrift auf Primär liefern).
       onPrimary: Colors.white,
-      secondary: AppColors.success,
+      secondary: design.free,
       surface: surface,
       onSurface: onSurface,
     );
@@ -52,6 +57,7 @@ abstract final class AppTheme {
     return ThemeData(
       useMaterial3: true,
       brightness: brightness,
+      extensions: [DesignColors.of(design)],
       colorScheme: scheme,
       scaffoldBackgroundColor: background,
       fontFamily: fontFamily,

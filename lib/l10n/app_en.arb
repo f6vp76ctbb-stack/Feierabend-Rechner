@@ -125,5 +125,21 @@
   "reminderHalf": "At halftime",
   "reminderEnd": "Right at clock-out",
   "reminderQuote": "With a quote",
-  "reminderQuoteHint": "Adds a quote for your job."
+  "reminderQuoteHint": "Adds a quote for your job.",
+  "designsTitle": "Designs",
+  "designsSubtitle": "Buy once, yours forever – and you support development.",
+  "designsOpen": "Browse designs",
+  "designCurrent": "Active: {name}",
+  "designOwned": "Owned",
+  "designActive": "Active",
+  "designFree": "Free",
+  "designThanks": "Thank you! Your new design is active.",
+  "designSupporterBadge": "Biggest thank-you",
+  "designSupporterHint": "With hearts – for everyone who wants to support the app the most.",
+  "designNameStandard": "Classic",
+  "designNameSupporter": "Supporter",
+  "designNameMidnight": "Midnight",
+  "designNameSunset": "Sunset",
+  "designNameOcean": "Ocean",
+  "designNameForest": "Forest"
 }
