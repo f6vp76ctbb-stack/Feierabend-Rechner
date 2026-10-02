@@ -9,10 +9,10 @@ class AppLocalizationsEn extends AppLocalizations {
   AppLocalizationsEn([String locale = 'en']) : super(locale);
 
   @override
-  String get appTitle => 'Feierabend – Clock-Out Timer';
+  String get appTitle => 'Clock-Out Calculator';
 
   @override
-  String get brandName => 'Feierabend';
+  String get brandName => 'Clock-Out';
 
   @override
   String get unitHours => 'h';
@@ -211,7 +211,7 @@ class AppLocalizationsEn extends AppLocalizations {
       'Your inputs are saved automatically on your device.';
 
   @override
-  String get proSection => 'Feierabend Pro';
+  String get proSection => 'Clock-Out Pro';
 
   @override
   String get proActive => 'Pro is active – thank you!';
@@ -240,7 +240,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get proBadge => 'PRO';
 
   @override
-  String get paywallTitle => 'Feierabend Pro';
+  String get paywallTitle => 'Clock-Out Pro';
 
   @override
   String get paywallSubtitle => 'Pay once. Free forever.';
@@ -349,7 +349,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get widgetManual =>
-      'Long-press your home screen → Widgets → Feierabend.';
+      'Long-press your home screen → Widgets → Clock-Out.';
 
   @override
   String get onbSkip => 'Skip';

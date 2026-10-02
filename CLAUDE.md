@@ -179,6 +179,8 @@ test/                      # Unit- + Widget-Tests (domain/ = 100 % Ziel)
   die Datenschutz-URL.
 - **Store-Doku für den Nutzer:** `store/ANLEITUNG.md` (Start hier), `STORE_EINTRAG.md`,
   `APP_INHALTE.md`, `IN_APP_KAUF_UND_WERBUNG.md`, `SCHLUESSEL.md`.
+- **Name:** DE „Feierabend Rechner“ (Icon: „Feierabend“), EN „Clock-Out Calculator“ (Icon: „Clock-Out“, Pro: „Clock-Out Pro“);
+  Android-Label über `res/values(-de)/strings.xml` `app_name`.
 - **Kontakt:** thinkube@outlook.de (Datenschutzerklärung, Store-Eintrag, IARC).
 - **Offen:** echte AdMob-IDs,
   Zeitzonen-/DST-Behandlung, iOS-Widget.

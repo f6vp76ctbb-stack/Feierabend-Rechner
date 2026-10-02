@@ -38,7 +38,7 @@ Play Console → deine App → **Monetarisieren → Produkte → In-App-Produkte
 → **Speichern** → **Aktivieren**.
 
 Englische Übersetzung des Produkts (optional, empfohlen):
-- Name: `Feierabend Pro`
+- Name: `Clock-Out Pro`
 - Beschreibung: `Pay once, free forever: no ads, unlimited profiles, overtime account, reminders, widget countdown and automatic legal breaks.`
 
 > Typ: Das ist ein **einmaliges, nicht verbrauchbares** Produkt (kein Abo). Die App bestätigt den Kauf automatisch (sonst würde Google ihn nach 3 Tagen erstatten).

@@ -79,7 +79,7 @@ Die erste Version ist da: Feierabend-Uhrzeit mit Live-Countdown, Schnellwahl „
 
 **App name** (max. 30)
 ```
-Feierabend: Clock-Out Timer
+Clock-Out Calculator
 ```
 
 **Short description** (max. 80)
@@ -90,7 +90,7 @@ When can you go home? Tap your start time – breaks, profiles & overtime sorted
 **Full description** (max. 4000)
 ```
 When can you finally clock out?
-Feierabend – German for “the end of the workday” – answers exactly that question. In two seconds, beautifully and without clutter.
+Clock-Out Calculator answers exactly that question. In two seconds, beautifully and without clutter.
 
 HOW IT WORKS
 • Tap your start time (e.g. 06:44)
@@ -104,7 +104,7 @@ MAKE IT YOURS
 • Daily target for your overtime account
 • Home screen widget: your clock-out time always in view
 
-FEIERABEND PRO – ONE-TIME, NO SUBSCRIPTION
+CLOCK-OUT PRO – ONE-TIME, NO SUBSCRIPTION
 • Unlimited profiles, e.g. Mon–Thu, Friday, Night shift
 • Overtime account with weekly overview and one-tap “Book today”
 • Automatic legal break calculation based on the German Working Hours Act (over 6 h → 30 min, over 9 h → 45 min)
@@ -122,9 +122,9 @@ YOUR DATA STAYS WITH YOU
 • All inputs are stored only on your device
 • Works offline
 
-Note: Feierabend is a calculation helper and does not replace your employer’s official time tracking.
+Note: Clock-Out Calculator is a calculation helper and does not replace your employer’s official time tracking.
 
-Feierabend. At a glance.
+Clock-out. At a glance.
 ```
 
 **Release notes 1.0.0**

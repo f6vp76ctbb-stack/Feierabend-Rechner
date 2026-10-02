@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">Feierabend</string>
     <string name="widget_title">Feierabend um</string>
     <string name="widget_left_format">noch %s</string>
     <string name="widget_reached">Feierabend! 🎉</string>

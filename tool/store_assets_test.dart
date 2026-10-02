@@ -370,7 +370,7 @@ Widget _featureGraphic(String lang) {
               children: [
                 const AppIconMark(size: 92),
                 const SizedBox(height: 26),
-                Text(de ? 'Feierabend Rechner' : 'Feierabend',
+                Text(de ? 'Feierabend Rechner' : 'Clock-Out Calculator',
                     style: _inter(46, 800, Colors.white, height: 1.05)),
                 const SizedBox(height: 12),
                 Text(

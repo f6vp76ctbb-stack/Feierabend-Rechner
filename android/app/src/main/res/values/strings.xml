@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Texte des Home-Screen-Widgets (Englisch = Standard, Deutsch in values-de). -->
 <resources>
+    <!-- Name unter dem App-Symbol (Deutsch: values-de). -->
+    <string name="app_name">Clock-Out</string>
     <string name="widget_title">Clock-out at</string>
     <string name="widget_left_format">%s left</string>
     <string name="widget_reached">Time to go! 🎉</string>
