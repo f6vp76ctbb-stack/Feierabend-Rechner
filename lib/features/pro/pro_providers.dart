@@ -85,9 +85,13 @@ class ProController extends Notifier<ProState> {
 final proControllerProvider =
     NotifierProvider<ProController, ProState>(ProController.new);
 
-/// Ist Pro gerade aktiv? In der Web-Vorschau immer (dort gibt es keinen Store).
+/// Tester-Version (siehe [MonetizationConfig.testerBuild]). In Tests überschreibbar.
+final testerBuildProvider =
+    Provider<bool>((ref) => MonetizationConfig.testerBuild);
+
+/// Ist Pro gerade aktiv? In der Web-Vorschau und der Tester-Version immer.
 final isProProvider = Provider<bool>((ref) {
-  if (kIsWeb || MonetizationConfig.e2eUnlockPro) return true;
+  if (kIsWeb || ref.watch(testerBuildProvider)) return true;
   final state = ref.watch(proControllerProvider);
   if (state.purchased) return true;
   final now = ref.watch(nowProvider).valueOrNull ?? DateTime.now();

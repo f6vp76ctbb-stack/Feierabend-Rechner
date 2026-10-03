@@ -13,7 +13,7 @@ class DesignsState {
   /// Gewähltes Design.
   final String selected;
 
-  /// Web-Vorschau: alles zum Ausprobieren freigeschaltet.
+  /// Web-Vorschau / Tester-Version: alles zum Ausprobieren freigeschaltet.
   final bool unlockAll;
 
   const DesignsState({
@@ -50,7 +50,7 @@ class DesignsController extends Notifier<DesignsState> {
     return DesignsState(
       owned: repo.loadOwnedDesigns(),
       selected: repo.loadSelectedDesign() ?? AppDesigns.standard.id,
-      unlockAll: kIsWeb,
+      unlockAll: kIsWeb || ref.watch(testerBuildProvider),
     );
   }
 

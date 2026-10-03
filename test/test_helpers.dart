@@ -100,6 +100,7 @@ Future<Widget> buildApp({
   NotificationBackend? notifications,
   WidgetBackend? widgets,
   bool onboarding = false,
+  bool tester = false,
 }) async {
   SharedPreferences.setMockInitialValues({
     if (pro) 'pro_purchased': true,
@@ -116,6 +117,7 @@ Future<Widget> buildApp({
       notificationBackendProvider
           .overrideWithValue(notifications ?? NoopNotificationBackend()),
       widgetBackendProvider.overrideWithValue(widgets ?? NoopWidgetBackend()),
+      testerBuildProvider.overrideWithValue(tester),
     ],
     child: FeierabendApp(locale: locale),
   );

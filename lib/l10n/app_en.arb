@@ -64,6 +64,7 @@
   "proSection": "Clock-Out Pro",
   "proActive": "Pro is active – thank you!",
   "proTrialActive": "Pro trial active until {time}",
+  "testerBuildActive": "Tester version: Pro and all designs are unlocked – thanks for testing!",
   "unlockPro": "Unlock Pro",
   "restorePurchases": "Restore purchases",
   "privacySettings": "Privacy settings (ads)",

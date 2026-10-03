@@ -69,7 +69,11 @@ jobs:
       - name: Tests
         run: flutter test
 
-      - name: App Bundle bauen (unsigniert)
+      # Zwei Bundles pro Lauf, jeder versionCode ist bei Google Play nur einmal erlaubt:
+      #   Store  (Produktion):          versionCode = 2 × run_number
+      #   Tester (geschlossener Test):  versionCode = 2 × run_number + 1, TESTER_BUILD=true
+      #                                 (Pro + alle Designs frei, keine Werbung) – NIE in Produktion!
+      - name: App Bundles bauen (unsigniert)
         env:
           ADMOB_APP_ID: ${{ inputs.admob_app_id || env.RELEASE_ADMOB_APP_ID }}
           BANNER: ${{ inputs.admob_banner_android || env.RELEASE_ADMOB_BANNER_ANDROID }}
@@ -78,27 +82,31 @@ jobs:
           DEFINES=""
           [ -n "$BANNER" ] && DEFINES="$DEFINES --dart-define=ADMOB_BANNER_ANDROID=$BANNER"
           [ -n "$REWARDED" ] && DEFINES="$DEFINES --dart-define=ADMOB_REWARDED_ANDROID=$REWARDED"
-          flutter build appbundle --release --build-number=${{ github.run_number }} $DEFINES
-          ls -la build/app/outputs/bundle/release/
+          VC=$(( ${{ github.run_number }} * 2 ))
+          mkdir out
+          flutter build appbundle --release --build-number=$VC $DEFINES
+          cp build/app/outputs/bundle/release/app-release.aab out/feierabend-unsigned.aab
+          echo "$VC" > out/VERSION_CODE
+          flutter build appbundle --release --build-number=$((VC + 1)) $DEFINES --dart-define=TESTER_BUILD=true
+          cp build/app/outputs/bundle/release/app-release.aab out/feierabend-tester-unsigned.aab
+          echo "$((VC + 1))" > out/VERSION_CODE_TESTER
+          ls -la out/
 
       - name: Artefakt hochladen
         uses: actions/upload-artifact@v4
         with:
           name: app-release-unsigned
-          path: build/app/outputs/bundle/release/app-release.aab
+          path: out/*.aab
 
-      - name: AAB im Branch aab-build ablegen
+      - name: AABs im Branch aab-build ablegen
         run: |
-          mkdir out
-          cp build/app/outputs/bundle/release/app-release.aab out/feierabend-unsigned.aab
           cd out
           echo "${GITHUB_SHA}" > SOURCE_COMMIT
-          echo "${{ github.run_number }}" > VERSION_CODE
           echo "real" > ADS
           git init -q
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -q -b aab-build
           git add .
-          git commit -q -m "Unsigniertes AAB aus ${GITHUB_SHA} (versionCode ${{ github.run_number }})"
+          git commit -q -m "Unsignierte AABs aus ${GITHUB_SHA} (Store $(cat VERSION_CODE), Tester $(cat VERSION_CODE_TESTER))"
           git push -q -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" aab-build

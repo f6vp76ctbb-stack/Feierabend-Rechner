@@ -223,6 +223,10 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get testerBuildActive =>
+      'Tester version: Pro and all designs are unlocked – thanks for testing!';
+
+  @override
   String get unlockPro => 'Unlock Pro';
 
   @override

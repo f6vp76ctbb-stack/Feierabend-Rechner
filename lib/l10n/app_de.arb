@@ -133,6 +133,10 @@
       }
     }
   },
+  "testerBuildActive": "Testversion: Pro und alle Designs sind freigeschaltet – danke fürs Testen!",
+  "@testerBuildActive": {
+    "description": "Nur in der Tester-Version für den geschlossenen Test"
+  },
   "unlockPro": "Pro freischalten",
   "restorePurchases": "Käufe wiederherstellen",
   "privacySettings": "Datenschutz-Einstellungen (Werbung)",

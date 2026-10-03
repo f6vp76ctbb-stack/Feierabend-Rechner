@@ -37,7 +37,9 @@ class SettingsSheet extends ConsumerWidget {
     final dailyTarget = ref.watch(dailyTargetProvider);
     final isPro = ref.watch(isProProvider);
     final pro = ref.watch(proControllerProvider);
-    final storeAvailable = ref.watch(purchaseBackendProvider).isSupported;
+    final tester = ref.watch(testerBuildProvider);
+    final storeAvailable =
+        !tester && ref.watch(purchaseBackendProvider).isSupported;
     final privacyOptions =
         ref.watch(privacyOptionsRequiredProvider).valueOrNull ?? false;
 
@@ -62,17 +64,22 @@ class SettingsSheet extends ConsumerWidget {
                   const SizedBox(width: 10),
                   Expanded(
                     child: Text(
-                      pro.purchased || !MonetizationConfig.isMobile
-                          ? l.proActive
-                          : l.proTrialActive(DateFormat.Md(context.lang)
-                              .add_Hm()
-                              .format(pro.trialUntil!)),
+                      tester
+                          ? l.testerBuildActive
+                          : pro.purchased ||
+                                  !MonetizationConfig.isMobile ||
+                                  pro.trialUntil == null
+                              ? l.proActive
+                              : l.proTrialActive(DateFormat.Md(context.lang)
+                                  .add_Hm()
+                                  .format(pro.trialUntil!)),
                       style: theme.textTheme.bodyLarge,
                     ),
                   ),
                 ],
               ),
-            if (!isPro || (!pro.purchased && MonetizationConfig.isMobile))
+            if (!tester &&
+                (!isPro || (!pro.purchased && MonetizationConfig.isMobile)))
               Padding(
                 padding: const EdgeInsets.only(top: 8),
                 child: FilledButton.icon(

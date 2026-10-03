@@ -482,6 +482,12 @@ abstract class AppLocalizations {
   /// **'Pro-Test aktiv bis {time}'**
   String proTrialActive(String time);
 
+  /// Nur in der Tester-Version für den geschlossenen Test
+  ///
+  /// In de, this message translates to:
+  /// **'Testversion: Pro und alle Designs sind freigeschaltet – danke fürs Testen!'**
+  String get testerBuildActive;
+
   /// No description provided for @unlockPro.
   ///
   /// In de, this message translates to:

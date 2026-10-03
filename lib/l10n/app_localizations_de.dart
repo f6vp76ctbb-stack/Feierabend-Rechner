@@ -223,6 +223,10 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
+  String get testerBuildActive =>
+      'Testversion: Pro und alle Designs sind freigeschaltet – danke fürs Testen!';
+
+  @override
   String get unlockPro => 'Pro freischalten';
 
   @override

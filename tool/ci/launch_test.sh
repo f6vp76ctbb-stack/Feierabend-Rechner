@@ -1,13 +1,15 @@
 #!/usr/bin/env bash
 # Emulator-Test des Release-Builds (R8, echte AdMob-IDs) – zwei Durchgänge:
-#   free: Einführung → Hauptbildschirm (Werbung/Einwilligung) → Kaufseite → Belohnungsvideo
-#   pro:  Erinnerungen planen → Widget ablegen → Design-Shop/Kauf → Überstunden → Neustart
+#   free:   Store-Version: Einführung → Hauptbildschirm (Werbung/Einwilligung) → Kaufseite
+#           → Belohnungsvideo → Design-Kauf
+#   tester: Tester-Version (TESTER_BUILD, wie im geschlossenen Test): Überstunden → Erinnerungen
+#           → Widget ablegen → Design wählen → Neustart
 # Sammelt Logcat + Screenshots. Exit 1, sobald die App irgendwo abstürzt.
-# Aufruf: bash tool/ci/launch_test.sh <api> <free.apk> <pro.apk>
+# Aufruf: bash tool/ci/launch_test.sh <api> <free.apk> <tester.apk>
 set -u
 API="$1"
 FREE_APK="$2"
-PRO_APK="$3"
+TESTER_APK="$3"
 PKG=com.thinkube.feierabendrechner
 OUT="launch-results/api$API"
 mkdir -p "$OUT"
@@ -117,54 +119,70 @@ back; back; back
 sleep 3
 check "2-free-kaufseite-video"
 
+scroll_top
+tap "Settings" "Einstellungen"
+tap 'Browse designs[^"]*' 'Designs ansehen[^"]*'
+tap 'Forest[^"]*' 'Wald[^"]*'
+sleep 8
+shot "free-design-kauf"
+back; back; back
+check "2b-free-design-kauf"
+
 adb shell am force-stop "$PKG"
 start_app 20
 shot "free-zweiter-start"
 check "3-free-zweiter-start"
 
-# ---------------------------------------------------------------- pro
+# ---------------------------------------------------------------- tester
 adb shell am force-stop "$PKG"
-adb install -r "$PRO_APK" 2>&1 | tee "$OUT/install-pro.txt"
+adb install -r "$TESTER_APK" 2>&1 | tee "$OUT/install-tester.txt"
 adb shell pm grant "$PKG" android.permission.POST_NOTIFICATIONS 2>/dev/null
 adb logcat -c
 start_app 20
-shot "pro-home"
+shot "tester-home"
 tap 'Overtime account[^"]*' 'Überstunden-Konto[^"]*'
 tap 'Book today[^"]*' 'Heute buchen[^"]*'
-shot "pro-ueberstunden-gebucht"
+shot "tester-ueberstunden-gebucht"
 back
 scroll_top
-check "4a-pro-ueberstunden"
+check "4a-tester-ueberstunden"
 
 tap "Settings" "Einstellungen"
+dump_ui
+grep -qE 'Tester version|Testversion' "$OUT/ui.xml" && log "Tester-Hinweis sichtbar" || log "Tester-Hinweis FEHLT"
 tap 'Notifications[^"]*' 'Benachrichtigungen[^"]*'
 tap '1 h' '1 Std'
 tap 'At halftime[^"]*' 'Zur Halbzeit[^"]*'
-shot "pro-erinnerungen"
+shot "tester-erinnerungen"
 adb shell dumpsys alarm | grep -c "$PKG" | sed 's/^/Alarme der App: /' | tee -a "$OUT/status.txt"
-check "4-pro-erinnerungen"
+check "4-tester-erinnerungen"
 
 tap 'Add widget' 'Widget hinzufügen'
-shot "pro-widget-dialog"
+shot "tester-widget-dialog"
 tap 'Add to home screen' 'ADD TO HOME SCREEN' 'Add automatically' 'ADD AUTOMATICALLY' \
   'Zum Startbildschirm hinzufügen' 'Automatisch hinzufügen' 'Add' 'ADD' 'Hinzufügen'
-check "5-pro-widget"
+check "5-tester-widget"
 
 tap 'Browse designs[^"]*' 'Designs ansehen[^"]*'
-shot "pro-designs"
+shot "tester-designs"
 tap 'Forest[^"]*' 'Wald[^"]*'
 sleep 5
-shot "pro-design-kauf"
+shot "tester-design-gewaehlt"
 back; back; back
-check "6-pro-designs"
+check "6-tester-designs"
 
 adb shell input keyevent KEYCODE_HOME
 sleep 5
-shot "pro-startbildschirm-widget"
+shot "tester-startbildschirm-widget"
 adb shell am force-stop "$PKG"
 start_app 20
-shot "pro-neustart"
-check "7-pro-neustart"
+shot "tester-neustart"
+check "7-tester-neustart"
+
+# Tester-Version darf keine Werbung laden (SDK startet gar nicht erst).
+ADS_LINES=$(cat "$OUT"/logcat-*-tester-*.txt 2>/dev/null |
+  grep -cE " [VDIWE] (Ads|UserMessagingPlatform) *:|Ad failed to load|onAdLoaded")
+log "Werbe-Logzeilen in der Tester-Version: $ADS_LINES"
 
 log "Ergebnis API $API: $([ $CRASHED -eq 0 ] && echo 'KEIN ABSTURZ' || echo 'ABSTURZ')"
 exit $CRASHED
