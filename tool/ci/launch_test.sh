@@ -195,5 +195,13 @@ ADS_LINES=0
   grep -cE " [VDIWE] (Ads|UserMessagingPlatform) *:|Ad failed to load|onAdLoaded")
 log "Werbe-Logzeilen in der Tester-Version: $ADS_LINES"
 
+# Nutzungsstatistik: nach „Ja“ (zweiter Start) muss Firebase im App-Prozess laufen.
+ALL_PIDS=$(cat "$OUT"/logcat-*.txt 2>/dev/null |
+  grep -oE "Start proc [0-9]+:$PKG" | grep -oE '[0-9]+' | sort -u | paste -sd'|')
+FA_LINES=0
+[ -n "$ALL_PIDS" ] && FA_LINES=$(cat "$OUT"/logcat-*.txt |
+  grep -E "^[0-9-]+ [0-9:.]+ +($ALL_PIDS) " | grep -cE " [VDIWE] (FA|FirebaseApp|FirebaseInitProvider) *:")
+log "Firebase-Logzeilen (Statistik): $FA_LINES"
+
 log "Ergebnis API $API: $([ $CRASHED -eq 0 ] && echo 'KEIN ABSTURZ' || echo 'ABSTURZ')"
 exit $CRASHED

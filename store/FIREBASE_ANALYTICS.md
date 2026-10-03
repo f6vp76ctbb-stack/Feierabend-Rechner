@@ -1,7 +1,7 @@
 # Google Analytics (GA4 über Firebase) einrichten
 
-Die App ist fertig vorbereitet. Es fehlt nur die Verbindung zu **deinem** Firebase-Projekt:
-eine Datei `google-services.json`. Ohne sie bleibt die Statistik komplett aus.
+**Eingerichtet** mit dem Firebase-Projekt `feierabendrechner` (Werte aus `google-services.json` stehen
+als `FIREBASE_*` in `android-bundle.yml` und `launch-test.yml`). Fehlen sie, bleibt die Statistik komplett aus.
 
 ## Was die App macht
 - Beim **zweiten Start** (nicht direkt nach der Einführung) fragt sie einmal: „Darf die App mitzählen?"
