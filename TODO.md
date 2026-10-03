@@ -76,6 +76,11 @@ Legende: `[ ]` offen · `[x]` erledigt · 👤 = du · 🤖 = Claude · 🤝 = z
 - [x] 🤖 Lokalisierung Deutsch + Englisch (gen-l10n, inkl. Sprüche)
 - [ ] 👤 App auf eigenem Android-Gerät testen (interner Test), Bugs melden
 
+## Phase 8b — Stabilität 🤖
+- [x] 🤖 Start-Absturz behoben (R8 entfernte WorkManager-Datenbank-Konstruktor; AGP-9-Strict-Mode aus + eigene Keep-Regeln)
+- [x] 🤖 Emulator-Start-Test in CI (API 24/30/35, Release-Build, Einführung durchklicken)
+- [ ] 🤝 Optional: Firebase Crashlytics für Absturzberichte aus dem Feld
+
 ## Phase 8 — Release-Vorbereitung ✅ (vorbereitet) / 👤 (hochladen)
 - [x] 🤖 Datenschutzerklärung DE/EN → `web/privacy.html`, live auf GitHub Pages
 - [x] 👤 Kontakt-E-Mail für Datenschutzerklärung (thinkube@outlook.de) – eingetragen

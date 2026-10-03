@@ -179,6 +179,12 @@ test/                      # Unit- + Widget-Tests (domain/ = 100 % Ziel)
 - **Android-Build:** `.github/workflows/android-bundle.yml` baut **unsigniert** (dl.google.com ist in der
   Claude-Sandbox gesperrt) und legt das AAB im Branch `aab-build` ab; Signatur lokal per `jarsigner`
   mit dem Upload-Schlüssel (**nie ins Repo**, siehe `store/SCHLUESSEL.md`). versionCode = run_number.
+- **Start-Test (Pflicht vor jeder Auslieferung!):** `.github/workflows/launch-test.yml` baut das
+  Release-APK wie im Store (R8, echte AdMob-IDs) und startet es im Emulator (API 24/30/35), klickt durch
+  die Einführung und schlägt bei jedem Absturz fehl. Logcat + Screenshots je API im Branch
+  `launch-test-api<N>`. Unit-/Widget-Tests sehen R8-Probleme nicht!
+- **R8/AGP 9:** `android.r8.strictFullModeForKeepRules=false` (gradle.properties) + `android/app/proguard-rules.pro`.
+  Ohne das stürzte jede Version bis vc9 beim Start ab (WorkManager-`WorkDatabase_Impl` ohne Konstruktor).
 - **Web-Vorschau:** `deploy.yml` → `gh-pages` (Pages: „Deploy from a branch"); `web/privacy.html` ist
   die Datenschutz-URL.
 - **Store-Doku für den Nutzer:** `store/ANLEITUNG.md` (Start hier), `STORE_EINTRAG.md`,
