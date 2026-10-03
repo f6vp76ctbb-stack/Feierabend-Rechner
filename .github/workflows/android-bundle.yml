@@ -81,6 +81,7 @@ jobs:
       #                                 (Pro + alle Designs frei, keine Werbung) – NIE in Produktion!
       - name: App Bundles bauen (unsigniert)
         env:
+          ARM_ONLY: "true" # siehe android/app/build.gradle.kts (abiFilters)
           ADMOB_APP_ID: ${{ inputs.admob_app_id || env.RELEASE_ADMOB_APP_ID }}
           BANNER: ${{ inputs.admob_banner_android || env.RELEASE_ADMOB_BANNER_ANDROID }}
           REWARDED: ${{ inputs.admob_rewarded_android || env.RELEASE_ADMOB_REWARDED_ANDROID }}

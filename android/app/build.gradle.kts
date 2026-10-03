@@ -39,6 +39,12 @@ android {
         versionCode = flutter.versionCode
         versionName = flutter.versionName
         manifestPlaceholders["admobAppId"] = admobAppId
+        // Store-Bundle nur für ARM (Env ARM_ONLY=true, gesetzt in android-bundle.yml).
+        // Wichtig: ALLE nativen Bibliotheken filtern – sonst bekäme ein x86_64-Gerät eine
+        // Variante ohne Flutter-Engine (nur Plugin-Bibliotheken) und stürzte beim Start ab.
+        if (System.getenv("ARM_ONLY") == "true") {
+            ndk { abiFilters += listOf("armeabi-v7a", "arm64-v8a") }
+        }
     }
 
     signingConfigs {
