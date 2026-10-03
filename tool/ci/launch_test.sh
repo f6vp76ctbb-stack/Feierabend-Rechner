@@ -123,6 +123,9 @@ sleep 3
 check "2-free-kaufseite-video"
 
 start_app 10 # „Zurück“ nach dem Video kann die App schon verlassen haben
+# Neue Flutter-Sitzung → die App fragt nach der Nutzungsstatistik: zustimmen, damit
+# Firebase im Release-Build mitgetestet wird.
+tap 'Sure' 'Ja, gern' && log "Statistik: zugestimmt"
 scroll_top
 tap "Settings" "Einstellungen"
 tap 'Browse designs[^"]*' 'Designs ansehen[^"]*'
@@ -134,8 +137,6 @@ check "2b-free-design-kauf"
 
 adbt shell am force-stop "$PKG"
 start_app 20
-# Ab dem zweiten Start fragt die App (falls Firebase konfiguriert) nach der Statistik.
-tap 'Sure' 'Ja, gern'
 shot "free-zweiter-start"
 check "3-free-zweiter-start"
 
@@ -202,6 +203,10 @@ FA_LINES=0
 [ -n "$ALL_PIDS" ] && FA_LINES=$(cat "$OUT"/logcat-*.txt |
   grep -E "^[0-9-]+ [0-9:.]+ +($ALL_PIDS) " | grep -cE " [VDIWE] (FA|FirebaseApp|FirebaseInitProvider) *:")
 log "Firebase-Logzeilen (Statistik): $FA_LINES"
+grep -hE " (FA|FirebaseApp) *:.*(Missing google_app_id|failed to initialize)" "$OUT"/logcat-*.txt | head -3 |
+  sed 's/^/Firebase-Problem: /' | tee -a "$OUT/status.txt"
+grep -hcE " FA +: .*(Logging event|Upload|Tagging)" "$OUT"/logcat-*.txt | paste -sd+ | bc |
+  sed 's/^/Firebase-Ereignis-Logzeilen: /' | tee -a "$OUT/status.txt"
 
 log "Ergebnis API $API: $([ $CRASHED -eq 0 ] && echo 'KEIN ABSTURZ' || echo 'ABSTURZ')"
 exit $CRASHED

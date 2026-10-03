@@ -5,7 +5,7 @@ als `FIREBASE_*` in `android-bundle.yml` und `launch-test.yml`). Fehlen sie, ble
 
 ## Was die App macht
 - Beim **zweiten Start** (nicht direkt nach der Einführung) fragt sie einmal: „Darf die App mitzählen?"
-  → „Ja, gern" / „Nein danke". Ohne „Ja" wird Firebase gar nicht gestartet (DSGVO/TDDDG: Einwilligung nötig).
+  → „Ja, gern" / „Nein danke". Ohne „Ja" bleibt die Erfassung aus – nichts wird erfasst oder gesendet (DSGVO/TDDDG: Einwilligung nötig).
 - Jederzeit änderbar: **Einstellungen → Nutzungsstatistik teilen**.
 - Keine Werbe-ID über Analytics, keine Personalisierungssignale, keine Arbeitszeiten/Profile.
 - Automatisch erfasst Firebase u. a. `first_open`, `session_start`, `app_update`, `in_app_purchase`.

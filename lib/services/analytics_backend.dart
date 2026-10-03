@@ -4,8 +4,8 @@ import 'package:flutter/foundation.dart';
 
 import '../config/firebase_config.dart';
 
-/// Nutzungsstatistik. Ohne Einwilligung wird nichts erfasst – Firebase wird dann
-/// nicht einmal gestartet. In Tests/Web per Override bzw. Noop ersetzt.
+/// Nutzungsstatistik. Ohne Einwilligung wird nichts erfasst oder gesendet (Erfassung
+/// per Manifest aus, die App schaltet sie erst nach „Ja“ ein). In Tests/Web: Noop/Fake.
 abstract class AnalyticsBackend {
   /// Gibt es überhaupt eine Statistik (Firebase konfiguriert, mobile App)?
   bool get isSupported;
@@ -37,7 +37,12 @@ class FirebaseAnalyticsBackend implements AnalyticsBackend {
 
   Future<FirebaseAnalytics?> _start() async {
     try {
-      await Firebase.initializeApp(options: FirebaseConfig.options);
+      try {
+        await Firebase.initializeApp(options: FirebaseConfig.options);
+      } on FirebaseException catch (e) {
+        // Android startet die Standard-App schon selbst (Ressourcen im Build).
+        if (e.code != 'duplicate-app') rethrow;
+      }
       return FirebaseAnalytics.instance;
     } catch (e) {
       debugPrint('Analytics nicht verfügbar: $e');
@@ -48,9 +53,8 @@ class FirebaseAnalyticsBackend implements AnalyticsBackend {
   @override
   Future<void> setEnabled(bool enabled) async {
     _enabled = enabled;
-    // Ohne Einwilligung Firebase gar nicht erst starten. War es schon an,
-    // schaltet das die (vom SDK gemerkte) Erfassung wieder ab.
-    if (!enabled && _instance == null) return;
+    // Immer ans SDK weitergeben – es merkt sich die Einstellung über Neustarts
+    // hinweg, ein „Aus“ muss es also auch in einer späteren Sitzung erreichen.
     try {
       await (await _get())?.setAnalyticsCollectionEnabled(enabled);
     } catch (e) {

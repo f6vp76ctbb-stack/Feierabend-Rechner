@@ -25,6 +25,10 @@ android {
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
+    buildFeatures {
+        resValues = true // für die Firebase-Ressourcen unten
+    }
+
     compileOptions {
         // Für flutter_local_notifications (geplante Benachrichtigungen).
         isCoreLibraryDesugaringEnabled = true
@@ -39,6 +43,16 @@ android {
         versionCode = flutter.versionCode
         versionName = flutter.versionName
         manifestPlaceholders["admobAppId"] = admobAppId
+
+        // Firebase/GA4: Werte als Ressourcen (wie das google-services-Plugin), sonst findet
+        // das Analytics-SDK keine App-ID („Missing google_app_id"). Die Erfassung bleibt per
+        // Manifest aus, bis der Nutzer in der App zustimmt. Ohne FIREBASE_APP_ID: nichts.
+        System.getenv("FIREBASE_APP_ID")?.takeIf { it.isNotBlank() }?.let { appId ->
+            resValue("string", "google_app_id", appId)
+            resValue("string", "google_api_key", System.getenv("FIREBASE_API_KEY") ?: "")
+            resValue("string", "gcm_defaultSenderId", System.getenv("FIREBASE_SENDER_ID") ?: "")
+            resValue("string", "project_id", System.getenv("FIREBASE_PROJECT_ID") ?: "")
+        }
     }
 
     // Store-Bundle nur für ARM (Env ARM_ONLY=true, gesetzt in android-bundle.yml).

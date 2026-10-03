@@ -46,7 +46,7 @@ Ziel: **Play-Store-Release** (später optional App Store). Bezahlmodell, das zum
 | Benachrichtigungen | **flutter_local_notifications** | Countdown/„Feierabend erreicht" ohne Server |
 | Home-Widget        | **nativ** (RemoteViews + Chronometer, MethodChannel) | Kein Glance/Compose-Ballast; Countdown tickt ohne App |
 | Design-System      | **Material 3** + eigenes Theme | Modern, anpassbar |
-| Analytics          | **Google Analytics 4 über Firebase** (`firebase_analytics`), nur nach Einwilligung | Nutzung verstehen; ohne Ja startet Firebase nicht |
+| Analytics          | **Google Analytics 4 über Firebase** (`firebase_analytics`), nur nach Einwilligung | Nutzung verstehen; ohne Ja wird nichts erfasst/gesendet |
 | Übersetzung        | **gen-l10n** (`lib/l10n/*.arb`, DE + EN) | Offizieller Flutter-Weg |
 
 > Wenn ein Paket Probleme macht: erst in TODO.md dokumentieren, dann Alternative wählen.
@@ -195,7 +195,8 @@ test/                      # Unit- + Widget-Tests (domain/ = 100 % Ziel)
   in den Workflows als `env`; leer = komplett aus) → `lib/services/analytics_backend.dart` →
   `lib/features/analytics/` (`analyticsConsentProvider` = Einwilligung `analytics_consent`, `analyticsProvider.log`,
   `track(context, …)`, `AnalyticsConsentGate` fragt einmal ab dem 2. Start, Schalter in den Einstellungen).
-  Manifest: Erfassung standardmäßig aus, keine Werbe-ID. Ereignisliste + Einrichtung: `store/FIREBASE_ANALYTICS.md`.
+  Manifest: Erfassung standardmäßig aus, keine Werbe-ID. Firebase-Werte zusätzlich als Android-Ressourcen
+  (`resValue` in `build.gradle.kts`, sonst „Missing google_app_id“). Ereignisliste + Einrichtung: `store/FIREBASE_ANALYTICS.md`.
 - **Web-Vorschau:** `deploy.yml` → `gh-pages` (Pages: „Deploy from a branch"); `web/privacy.html` ist
   die Datenschutz-URL.
 - **Store-Doku für den Nutzer:** `store/ANLEITUNG.md` (Start hier), `STORE_EINTRAG.md`,

@@ -20,8 +20,9 @@ class AnalyticsConsentController extends Notifier<bool?> {
   @override
   bool? build() {
     final consent = ref.read(settingsRepositoryProvider).loadAnalyticsConsent();
-    if (consent == true) {
-      unawaited(ref.read(analyticsBackendProvider).setEnabled(true));
+    // Gespeicherte Antwort beim Start ans SDK geben (auch „Nein“, falls es noch „an“ ist).
+    if (consent != null) {
+      unawaited(ref.read(analyticsBackendProvider).setEnabled(consent));
     }
     return consent;
   }

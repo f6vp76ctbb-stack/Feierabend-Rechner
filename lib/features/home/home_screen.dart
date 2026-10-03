@@ -246,21 +246,44 @@ class _InputCard extends ConsumerWidget {
             SwitchListTile(
               contentPadding: const EdgeInsets.symmetric(horizontal: 16),
               secondary: const Icon(Icons.auto_awesome_rounded),
-              title: Row(
-                children: [
-                  Flexible(child: Text(l.arbzgTitle)),
-                  // Details zum Gesetz nur auf Wunsch – der Schalter bleibt schlicht.
-                  IconButton(
-                    tooltip: l.autoBreakInfoTooltip,
-                    visualDensity: VisualDensity.compact,
-                    iconSize: 18,
-                    icon: const Icon(Icons.info_outline_rounded),
-                    onPressed: () => AutoBreakInfoSheet.show(context),
-                  ),
-                  if (!isPro) const ProBadge(),
-                ],
+              // Als Fließtext: auf schmalen Geräten bricht der Titel normal um und PRO
+              // läuft mit (in einer Row wurde er buchstabenweise gequetscht).
+              title: Text.rich(
+                TextSpan(
+                  children: [
+                    TextSpan(text: l.arbzgTitle),
+                    if (!isPro)
+                      const WidgetSpan(
+                        alignment: PlaceholderAlignment.middle,
+                        child: Padding(
+                          padding: EdgeInsets.only(left: 8),
+                          child: ProBadge(),
+                        ),
+                      ),
+                  ],
+                ),
               ),
-              subtitle: Text(l.arbzgSubtitle),
+              // Details zum Gesetz nur auf Wunsch (ⓘ am Ende der Erklärung) –
+              // der Schalter selbst bleibt schlicht.
+              subtitle: Text.rich(
+                TextSpan(
+                  children: [
+                    TextSpan(text: l.arbzgSubtitle),
+                    WidgetSpan(
+                      alignment: PlaceholderAlignment.middle,
+                      child: IconButton(
+                        tooltip: l.autoBreakInfoTooltip,
+                        padding: EdgeInsets.zero,
+                        constraints:
+                            const BoxConstraints.tightFor(width: 32, height: 28),
+                        iconSize: 18,
+                        icon: const Icon(Icons.info_outline_rounded),
+                        onPressed: () => AutoBreakInfoSheet.show(context),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
               value: auto,
               onChanged: (v) {
                 HapticFeedback.selectionClick();
