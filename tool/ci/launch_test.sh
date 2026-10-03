@@ -119,10 +119,11 @@ back; back; back
 sleep 3
 check "2-free-kaufseite-video"
 
+start_app 10 # „Zurück“ nach dem Video kann die App schon verlassen haben
 scroll_top
 tap "Settings" "Einstellungen"
 tap 'Browse designs[^"]*' 'Designs ansehen[^"]*'
-tap 'Forest[^"]*' 'Wald[^"]*'
+tap '[^"]*Forest[^"]*' '[^"]*Wald[^"]*' # Karten-Label: „15:29\nForest\n…“
 sleep 8
 shot "free-design-kauf"
 back; back; back
@@ -165,7 +166,7 @@ check "5-tester-widget"
 
 tap 'Browse designs[^"]*' 'Designs ansehen[^"]*'
 shot "tester-designs"
-tap 'Forest[^"]*' 'Wald[^"]*'
+tap '[^"]*Forest[^"]*' '[^"]*Wald[^"]*'
 sleep 5
 shot "tester-design-gewaehlt"
 back; back; back
@@ -180,7 +181,12 @@ shot "tester-neustart"
 check "7-tester-neustart"
 
 # Tester-Version darf keine Werbung laden (SDK startet gar nicht erst).
-ADS_LINES=$(cat "$OUT"/logcat-*-tester-*.txt 2>/dev/null |
+# Nur Zeilen aus App-Prozessen zählen (Play-Dienste loggen selbst unter „Ads“).
+PIDS=$(cat "$OUT"/logcat-*-tester-*.txt 2>/dev/null |
+  grep -oE "Start proc [0-9]+:$PKG" | grep -oE '[0-9]+' | sort -u | paste -sd'|')
+ADS_LINES=0
+[ -n "$PIDS" ] && ADS_LINES=$(cat "$OUT"/logcat-*-tester-*.txt |
+  grep -E "^[0-9-]+ [0-9:.]+ +($PIDS) " |
   grep -cE " [VDIWE] (Ads|UserMessagingPlatform) *:|Ad failed to load|onAdLoaded")
 log "Werbe-Logzeilen in der Tester-Version: $ADS_LINES"
 
