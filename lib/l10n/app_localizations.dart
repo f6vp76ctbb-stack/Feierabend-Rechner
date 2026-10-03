@@ -167,19 +167,19 @@ abstract class AppLocalizations {
   /// No description provided for @breakAuto.
   ///
   /// In de, this message translates to:
-  /// **'automatisch nach ArbZG'**
+  /// **'automatisch angepasst'**
   String get breakAuto;
 
   /// No description provided for @arbzgTitle.
   ///
   /// In de, this message translates to:
-  /// **'Pause nach Gesetz (ArbZG)'**
+  /// **'Pause automatisch'**
   String get arbzgTitle;
 
   /// No description provided for @arbzgSubtitle.
   ///
   /// In de, this message translates to:
-  /// **'> 6 h → 30 min · > 9 h → 45 min'**
+  /// **'Bis 6 Std keine Pause nötig – darüber passt sie sich an.'**
   String get arbzgSubtitle;
 
   /// No description provided for @presenceSummary.
@@ -551,7 +551,7 @@ abstract class AppLocalizations {
   /// No description provided for @paywallBenefitArbzg.
   ///
   /// In de, this message translates to:
-  /// **'Automatische Pause nach Arbeitszeitgesetz'**
+  /// **'Pause passt sich automatisch an'**
   String get paywallBenefitArbzg;
 
   /// No description provided for @paywallBenefitSupport.
@@ -949,6 +949,54 @@ abstract class AppLocalizations {
   /// In de, this message translates to:
   /// **'Wald'**
   String get designNameForest;
+
+  /// No description provided for @autoBreakInfoTooltip.
+  ///
+  /// In de, this message translates to:
+  /// **'Mehr Infos'**
+  String get autoBreakInfoTooltip;
+
+  /// No description provided for @autoBreakInfoTitle.
+  ///
+  /// In de, this message translates to:
+  /// **'So funktioniert die automatische Pause'**
+  String get autoBreakInfoTitle;
+
+  /// No description provided for @autoBreakInfoBody.
+  ///
+  /// In de, this message translates to:
+  /// **'Die App wählt die Pause passend zu deiner Arbeitszeit:'**
+  String get autoBreakInfoBody;
+
+  /// No description provided for @autoBreakUpTo6.
+  ///
+  /// In de, this message translates to:
+  /// **'Bis 6 Std Arbeit'**
+  String get autoBreakUpTo6;
+
+  /// No description provided for @autoBreakOver6.
+  ///
+  /// In de, this message translates to:
+  /// **'Mehr als 6 Std'**
+  String get autoBreakOver6;
+
+  /// No description provided for @autoBreakOver9.
+  ///
+  /// In de, this message translates to:
+  /// **'Mehr als 9 Std'**
+  String get autoBreakOver9;
+
+  /// No description provided for @autoBreakNone.
+  ///
+  /// In de, this message translates to:
+  /// **'keine Pause'**
+  String get autoBreakNone;
+
+  /// No description provided for @autoBreakLegal.
+  ///
+  /// In de, this message translates to:
+  /// **'Grundlage sind die Mindestpausen des deutschen Arbeitszeitgesetzes (§ 4 ArbZG). Die Pausenregel in deinem Betrieb kann abweichen.'**
+  String get autoBreakLegal;
 }
 
 class _AppLocalizationsDelegate

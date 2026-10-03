@@ -12,6 +12,7 @@ import '../pro/paywall_sheet.dart';
 import '../pro/pro_providers.dart';
 import '../settings/settings_sheet.dart';
 import 'state/home_providers.dart';
+import 'widgets/auto_break_info_sheet.dart';
 import 'widgets/countdown_ring.dart';
 import 'widgets/duration_adjust_sheet.dart';
 import 'widgets/overtime_card.dart';
@@ -243,11 +244,19 @@ class _InputCard extends ConsumerWidget {
             const Divider(height: 1, indent: 16, endIndent: 16),
             SwitchListTile(
               contentPadding: const EdgeInsets.symmetric(horizontal: 16),
-              secondary: const Icon(Icons.gavel_rounded),
+              secondary: const Icon(Icons.auto_awesome_rounded),
               title: Row(
                 children: [
                   Flexible(child: Text(l.arbzgTitle)),
-                  if (!isPro) ...[const SizedBox(width: 8), const ProBadge()],
+                  // Details zum Gesetz nur auf Wunsch – der Schalter bleibt schlicht.
+                  IconButton(
+                    tooltip: l.autoBreakInfoTooltip,
+                    visualDensity: VisualDensity.compact,
+                    iconSize: 18,
+                    icon: const Icon(Icons.info_outline_rounded),
+                    onPressed: () => AutoBreakInfoSheet.show(context),
+                  ),
+                  if (!isPro) const ProBadge(),
                 ],
               ),
               subtitle: Text(l.arbzgSubtitle),

@@ -48,7 +48,7 @@ ALLES INDIVIDUELL
 FEIERABEND PRO – EINMALIG, KEIN ABO
 • Unbegrenzt Profile, z. B. Mo–Do, Freitag, Nachtschicht
 • Überstunden-Konto mit Wochenübersicht und „Heute buchen" per Fingertipp
-• Automatische Pause nach Arbeitszeitgesetz (über 6 Std → 30 Min, über 9 Std → 45 Min)
+• Pause passt sich automatisch an: bis 6 Std keine Pause nötig, darüber genau passend
 • Eigene Erinnerungen: z. B. 1 Std vorher, zur Halbzeit und pünktlich zum Feierabend – mit lustigem Spruch
 • Live-Countdown direkt im Widget auf dem Startbildschirm
 • Keine Werbung
@@ -73,7 +73,7 @@ Feierabend. Auf einen Blick.
 
 **Versionshinweise 1.0.0**
 ```
-Die erste Version ist da: Feierabend-Uhrzeit mit Live-Countdown, Schnellwahl „6 Std ohne Pause", Profile, Überstunden-Konto, Erinnerungen, Home-Screen-Widget, Pause nach Arbeitszeitgesetz, lustige Sprüche für deinen Beruf und Dark Mode.
+Die erste Version ist da: Feierabend-Uhrzeit mit Live-Countdown, Schnellwahl „6 Std ohne Pause", Profile, Überstunden-Konto, Erinnerungen, Home-Screen-Widget, automatische Pause, lustige Sprüche für deinen Beruf und Dark Mode.
 ```
 
 ---
@@ -110,7 +110,7 @@ MAKE IT YOURS
 CLOCK-OUT PRO – ONE-TIME, NO SUBSCRIPTION
 • Unlimited profiles, e.g. Mon–Thu, Friday, Night shift
 • Overtime account with weekly overview and one-tap “Book today”
-• Automatic legal break calculation based on the German Working Hours Act (over 6 h → 30 min, over 9 h → 45 min)
+• Break adjusts automatically: no break needed up to 6 h, just the right one above that
 • Your own reminders: e.g. 1 h before, at halftime and right at clock-out – with a fun quote
 • Live countdown right in the home screen widget
 • No ads

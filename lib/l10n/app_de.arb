@@ -11,9 +11,9 @@
   "startLabel": "Start",
   "workLabel": "Arbeitszeit",
   "breakLabel": "Pause",
-  "breakAuto": "automatisch nach ArbZG",
-  "arbzgTitle": "Pause nach Gesetz (ArbZG)",
-  "arbzgSubtitle": "> 6 h → 30 min · > 9 h → 45 min",
+  "breakAuto": "automatisch angepasst",
+  "arbzgTitle": "Pause automatisch",
+  "arbzgSubtitle": "Bis 6 Std keine Pause nötig – darüber passt sie sich an.",
   "presenceSummary": "Anwesenheit {presence} · inkl. {breakDuration} Pause",
   "@presenceSummary": {
     "placeholders": {
@@ -144,7 +144,7 @@
   "paywallBenefitNoAds": "Keine Werbung",
   "paywallBenefitProfiles": "Unbegrenzt Profile (Mo–Do, Freitag, Schicht …)",
   "paywallBenefitOvertime": "Überstunden-Konto mit Wochenübersicht",
-  "paywallBenefitArbzg": "Automatische Pause nach Arbeitszeitgesetz",
+  "paywallBenefitArbzg": "Pause passt sich automatisch an",
   "paywallBenefitSupport": "Unterstützt einen unabhängigen Entwickler",
   "paywallBuy": "Pro freischalten – {price}",
   "@paywallBuy": {
@@ -245,5 +245,13 @@
   "designNameMidnight": "Mitternacht",
   "designNameSunset": "Sonnenuntergang",
   "designNameOcean": "Ozean",
-  "designNameForest": "Wald"
+  "designNameForest": "Wald",
+  "autoBreakInfoTooltip": "Mehr Infos",
+  "autoBreakInfoTitle": "So funktioniert die automatische Pause",
+  "autoBreakInfoBody": "Die App wählt die Pause passend zu deiner Arbeitszeit:",
+  "autoBreakUpTo6": "Bis 6 Std Arbeit",
+  "autoBreakOver6": "Mehr als 6 Std",
+  "autoBreakOver9": "Mehr als 9 Std",
+  "autoBreakNone": "keine Pause",
+  "autoBreakLegal": "Grundlage sind die Mindestpausen des deutschen Arbeitszeitgesetzes (§ 4 ArbZG). Die Pausenregel in deinem Betrieb kann abweichen."
 }

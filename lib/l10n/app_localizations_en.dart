@@ -42,13 +42,14 @@ class AppLocalizationsEn extends AppLocalizations {
   String get breakLabel => 'Break';
 
   @override
-  String get breakAuto => 'automatic (legal minimum)';
+  String get breakAuto => 'adjusted automatically';
 
   @override
-  String get arbzgTitle => 'Legal break (German law)';
+  String get arbzgTitle => 'Automatic break';
 
   @override
-  String get arbzgSubtitle => '> 6 h → 30 min · > 9 h → 45 min';
+  String get arbzgSubtitle =>
+      'Up to 6 h no break needed – above that it adapts.';
 
   @override
   String presenceSummary(String presence, String breakDuration) {
@@ -256,7 +257,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get paywallBenefitOvertime => 'Overtime account with weekly overview';
 
   @override
-  String get paywallBenefitArbzg => 'Automatic legal break calculation';
+  String get paywallBenefitArbzg => 'Break adjusts automatically';
 
   @override
   String get paywallBenefitSupport => 'Supports an independent developer';
@@ -477,4 +478,30 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get designNameForest => 'Forest';
+
+  @override
+  String get autoBreakInfoTooltip => 'More info';
+
+  @override
+  String get autoBreakInfoTitle => 'How the automatic break works';
+
+  @override
+  String get autoBreakInfoBody =>
+      'The app picks the break to match your work time:';
+
+  @override
+  String get autoBreakUpTo6 => 'Up to 6 h of work';
+
+  @override
+  String get autoBreakOver6 => 'More than 6 h';
+
+  @override
+  String get autoBreakOver9 => 'More than 9 h';
+
+  @override
+  String get autoBreakNone => 'no break';
+
+  @override
+  String get autoBreakLegal =>
+      'Based on the minimum breaks of the German Working Hours Act (§ 4 ArbZG). Your workplace rules may differ.';
 }

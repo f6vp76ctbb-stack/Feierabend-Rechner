@@ -42,13 +42,14 @@ class AppLocalizationsDe extends AppLocalizations {
   String get breakLabel => 'Pause';
 
   @override
-  String get breakAuto => 'automatisch nach ArbZG';
+  String get breakAuto => 'automatisch angepasst';
 
   @override
-  String get arbzgTitle => 'Pause nach Gesetz (ArbZG)';
+  String get arbzgTitle => 'Pause automatisch';
 
   @override
-  String get arbzgSubtitle => '> 6 h → 30 min · > 9 h → 45 min';
+  String get arbzgSubtitle =>
+      'Bis 6 Std keine Pause nötig – darüber passt sie sich an.';
 
   @override
   String presenceSummary(String presence, String breakDuration) {
@@ -256,7 +257,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get paywallBenefitOvertime => 'Überstunden-Konto mit Wochenübersicht';
 
   @override
-  String get paywallBenefitArbzg => 'Automatische Pause nach Arbeitszeitgesetz';
+  String get paywallBenefitArbzg => 'Pause passt sich automatisch an';
 
   @override
   String get paywallBenefitSupport =>
@@ -481,4 +482,30 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get designNameForest => 'Wald';
+
+  @override
+  String get autoBreakInfoTooltip => 'Mehr Infos';
+
+  @override
+  String get autoBreakInfoTitle => 'So funktioniert die automatische Pause';
+
+  @override
+  String get autoBreakInfoBody =>
+      'Die App wählt die Pause passend zu deiner Arbeitszeit:';
+
+  @override
+  String get autoBreakUpTo6 => 'Bis 6 Std Arbeit';
+
+  @override
+  String get autoBreakOver6 => 'Mehr als 6 Std';
+
+  @override
+  String get autoBreakOver9 => 'Mehr als 9 Std';
+
+  @override
+  String get autoBreakNone => 'keine Pause';
+
+  @override
+  String get autoBreakLegal =>
+      'Grundlage sind die Mindestpausen des deutschen Arbeitszeitgesetzes (§ 4 ArbZG). Die Pausenregel in deinem Betrieb kann abweichen.';
 }
