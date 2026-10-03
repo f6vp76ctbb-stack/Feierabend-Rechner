@@ -2,6 +2,8 @@ import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 
+import '../../../design/app_designs.dart';
+
 /// Kreisförmiger Fortschritts-Ring mit frei platzierbarem Inhalt in der Mitte.
 class CountdownRing extends StatelessWidget {
   const CountdownRing({
@@ -41,11 +43,7 @@ class CountdownRing extends StatelessWidget {
                 gradient: SweepGradient(
                   // Leicht vorgedreht, damit die runde Startkappe nicht ins Verlaufsende greift.
                   transform: const GradientRotation(-math.pi / 2 - 0.12),
-                  colors: [
-                    scheme.primary,
-                    const Color(0xFF8B7EF0),
-                    scheme.secondary,
-                  ],
+                  colors: context.design.ring,
                 ),
               ),
             ),

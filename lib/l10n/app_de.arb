@@ -11,9 +11,9 @@
   "startLabel": "Start",
   "workLabel": "Arbeitszeit",
   "breakLabel": "Pause",
-  "breakAuto": "automatisch nach ArbZG",
-  "arbzgTitle": "Pause nach Gesetz (ArbZG)",
-  "arbzgSubtitle": "> 6 h → 30 min · > 9 h → 45 min",
+  "breakAuto": "automatisch angepasst",
+  "arbzgTitle": "Pause automatisch",
+  "arbzgSubtitle": "Bis 6 Std keine Pause nötig – darüber passt sie sich an.",
   "presenceSummary": "Anwesenheit {presence} · inkl. {breakDuration} Pause",
   "@presenceSummary": {
     "placeholders": {
@@ -133,6 +133,10 @@
       }
     }
   },
+  "testerBuildActive": "Testversion: Pro und alle Designs sind freigeschaltet – danke fürs Testen!",
+  "@testerBuildActive": {
+    "description": "Nur in der Tester-Version für den geschlossenen Test"
+  },
   "unlockPro": "Pro freischalten",
   "restorePurchases": "Käufe wiederherstellen",
   "privacySettings": "Datenschutz-Einstellungen (Werbung)",
@@ -144,7 +148,7 @@
   "paywallBenefitNoAds": "Keine Werbung",
   "paywallBenefitProfiles": "Unbegrenzt Profile (Mo–Do, Freitag, Schicht …)",
   "paywallBenefitOvertime": "Überstunden-Konto mit Wochenübersicht",
-  "paywallBenefitArbzg": "Automatische Pause nach Arbeitszeitgesetz",
+  "paywallBenefitArbzg": "Pause passt sich automatisch an",
   "paywallBenefitSupport": "Unterstützt einen unabhängigen Entwickler",
   "paywallBuy": "Pro freischalten – {price}",
   "@paywallBuy": {
@@ -165,16 +169,13 @@
   "adNotReady": "Gerade kein Video verfügbar. Versuch es gleich nochmal.",
   "remindersTitle": "Erinnerungen",
   "remindersSwitch": "Benachrichtigungen",
-  "remindersHint": "Kurz vor und pünktlich zum Feierabend.",
-  "reminderLead": "Vorwarnung",
+  "remindersHint": "Vorwarnungen, Halbzeit und Feierabend – auf Wunsch mit Spruch.",
   "notifChannelName": "Feierabend-Erinnerungen",
   "notifChannelDesc": "Hinweise kurz vor und zum Feierabend",
-  "notifBeforeTitle": "Gleich Feierabend",
-  "notifBeforeBody": "Noch {duration} – dann bist du frei.",
   "notifEndTitle": "Feierabend! 🎉",
   "notifEndBody": "Geschafft. Ab nach Hause!",
   "notificationsDenied": "Benachrichtigungen sind in den Systemeinstellungen blockiert.",
-  "paywallBenefitReminders": "Erinnerung kurz vor und zum Feierabend",
+  "paywallBenefitReminders": "Eigene Erinnerungen vor Feierabend – mit Spruch",
   "paywallBenefitWidget": "Live-Countdown als Home-Screen-Widget",
   "widgetTitle": "Home-Screen-Widget",
   "widgetHint": "Feierabend-Zeit auf dem Startbildschirm – mit Pro als Live-Countdown.",
@@ -193,11 +194,68 @@
   "onb3Body": "Einmal zahlen, kein Abo – oder erst 24 Std. gratis testen.",
   "onb3ProActive": "Pro ist aktiv – alles freigeschaltet.",
   "onbSeePro": "Pro ansehen",
-  "@notifBeforeBody": {
+  "notifLeadTitle": "Noch {duration} bis Feierabend",
+  "@notifLeadTitle": {
     "placeholders": {
       "duration": {
         "type": "String"
       }
     }
-  }
+  },
+  "notifLeadBody": "Feierabend um {time}.",
+  "@notifLeadBody": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "notifHalfTitle": "Halbzeit! ☕",
+  "notifHalfBody": "Die Hälfte ist geschafft – Feierabend um {time}.",
+  "@notifHalfBody": {
+    "placeholders": {
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "reminderLeads": "Vorwarnungen",
+  "reminderCustom": "Eigene",
+  "reminderCustomTitle": "Eigene Vorwarnung",
+  "reminderMaxLeads": "Höchstens 6 Vorwarnungen – erst eine abwählen.",
+  "reminderHalf": "Zur Halbzeit",
+  "reminderEnd": "Pünktlich zum Feierabend",
+  "reminderQuote": "Mit Spruch",
+  "reminderQuoteHint": "Ein Spruch aus deiner Berufsgruppe kommt mit.",
+  "designsTitle": "Designs",
+  "designsSubtitle": "Einmal kaufen, für immer deins – und du unterstützt die Entwicklung.",
+  "designsOpen": "Designs ansehen",
+  "designCurrent": "Aktiv: {name}",
+  "@designCurrent": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "designOwned": "Gekauft",
+  "designActive": "Aktiv",
+  "designFree": "Gratis",
+  "designThanks": "Danke! Dein neues Design ist aktiv.",
+  "designSupporterBadge": "Größtes Dankeschön",
+  "designSupporterHint": "Mit Herzen – für alle, die die App am meisten unterstützen wollen.",
+  "designNameStandard": "Standard",
+  "designNameSupporter": "Supporter",
+  "designNameMidnight": "Mitternacht",
+  "designNameSunset": "Sonnenuntergang",
+  "designNameOcean": "Ozean",
+  "designNameForest": "Wald",
+  "autoBreakInfoTooltip": "Mehr Infos",
+  "autoBreakInfoTitle": "So funktioniert die automatische Pause",
+  "autoBreakInfoBody": "Die App wählt die Pause passend zu deiner Arbeitszeit:",
+  "autoBreakUpTo6": "Bis 6 Std Arbeit",
+  "autoBreakOver6": "Mehr als 6 Std",
+  "autoBreakOver9": "Mehr als 9 Std",
+  "autoBreakNone": "keine Pause",
+  "autoBreakLegal": "Grundlage sind die Mindestpausen des deutschen Arbeitszeitgesetzes (§ 4 ArbZG). Die Pausenregel in deinem Betrieb kann abweichen."
 }

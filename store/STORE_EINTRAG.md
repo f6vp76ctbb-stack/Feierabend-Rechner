@@ -10,9 +10,9 @@ Grafiken liegen in `store/graphics/`:
 |---|---|
 | App-Symbol (512 × 512) | `graphics/icon-512.png` |
 | Vorstellungsgrafik (1024 × 500) | `graphics/de/feature-graphic.png` · `graphics/en/feature-graphic.png` |
-| Screenshots Smartphone (1080 × 1920, 7 Stück) | `graphics/de/screenshots/*.png` · `graphics/en/screenshots/*.png` |
+| Screenshots Smartphone (1080 × 1920, 8 Stück) | `graphics/de/screenshots/*.png` · `graphics/en/screenshots/*.png` |
 
-Reihenfolge der Screenshots = Dateinamen (01 → 07).
+Reihenfolge der Screenshots = Dateinamen (01 → 08).
 
 ---
 
@@ -48,11 +48,14 @@ ALLES INDIVIDUELL
 FEIERABEND PRO – EINMALIG, KEIN ABO
 • Unbegrenzt Profile, z. B. Mo–Do, Freitag, Nachtschicht
 • Überstunden-Konto mit Wochenübersicht und „Heute buchen" per Fingertipp
-• Automatische Pause nach Arbeitszeitgesetz (über 6 Std → 30 Min, über 9 Std → 45 Min)
-• Erinnerung kurz vor und pünktlich zum Feierabend
+• Pause passt sich automatisch an: bis 6 Std keine Pause nötig, darüber genau passend
+• Eigene Erinnerungen: z. B. 1 Std vorher, zur Halbzeit und pünktlich zum Feierabend – mit lustigem Spruch
 • Live-Countdown direkt im Widget auf dem Startbildschirm
 • Keine Werbung
 • Vorher 24 Stunden gratis testen – per kurzem Video
+
+DESIGNS ZUM VERLIEBEN
+• 5 Farbwelten einzeln erhältlich: Supporter mit Herzen, Mitternacht, Sonnenuntergang, Ozean und Wald
 
 MACHT EINFACH GUTE LAUNE
 • Lustige Sprüche für deinen Beruf: Büro, Handwerk, IT, Pflege, Lehrkraft, Gastro, Einzelhandel, Schicht und mehr
@@ -70,7 +73,7 @@ Feierabend. Auf einen Blick.
 
 **Versionshinweise 1.0.0**
 ```
-Die erste Version ist da: Feierabend-Uhrzeit mit Live-Countdown, Schnellwahl „6 Std ohne Pause", Profile, Überstunden-Konto, Erinnerungen, Home-Screen-Widget, Pause nach Arbeitszeitgesetz, lustige Sprüche für deinen Beruf und Dark Mode.
+Die erste Version ist da: Feierabend-Uhrzeit mit Live-Countdown, Schnellwahl „6 Std ohne Pause", Profile, Überstunden-Konto, Erinnerungen, Home-Screen-Widget, automatische Pause, lustige Sprüche für deinen Beruf und Dark Mode.
 ```
 
 ---
@@ -107,11 +110,14 @@ MAKE IT YOURS
 CLOCK-OUT PRO – ONE-TIME, NO SUBSCRIPTION
 • Unlimited profiles, e.g. Mon–Thu, Friday, Night shift
 • Overtime account with weekly overview and one-tap “Book today”
-• Automatic legal break calculation based on the German Working Hours Act (over 6 h → 30 min, over 9 h → 45 min)
-• Reminders shortly before and right at clock-out
+• Break adjusts automatically: no break needed up to 6 h, just the right one above that
+• Your own reminders: e.g. 1 h before, at halftime and right at clock-out – with a fun quote
 • Live countdown right in the home screen widget
 • No ads
 • Try it free for 24 hours first – with a short video
+
+DESIGNS YOU'LL LOVE
+• 5 color themes available individually: Supporter with hearts, Midnight, Sunset, Ocean and Forest
 
 PURE GOOD MOOD
 • Fun quotes for your job: office, trades, IT, care & health, teaching, hospitality, retail, shift work and more

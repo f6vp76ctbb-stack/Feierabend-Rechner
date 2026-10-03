@@ -42,13 +42,14 @@ class AppLocalizationsEn extends AppLocalizations {
   String get breakLabel => 'Break';
 
   @override
-  String get breakAuto => 'automatic (legal minimum)';
+  String get breakAuto => 'adjusted automatically';
 
   @override
-  String get arbzgTitle => 'Legal break (German law)';
+  String get arbzgTitle => 'Automatic break';
 
   @override
-  String get arbzgSubtitle => '> 6 h → 30 min · > 9 h → 45 min';
+  String get arbzgSubtitle =>
+      'Up to 6 h no break needed – above that it adapts.';
 
   @override
   String presenceSummary(String presence, String breakDuration) {
@@ -222,6 +223,10 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get testerBuildActive =>
+      'Tester version: Pro and all designs are unlocked – thanks for testing!';
+
+  @override
   String get unlockPro => 'Unlock Pro';
 
   @override
@@ -256,7 +261,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get paywallBenefitOvertime => 'Overtime account with weekly overview';
 
   @override
-  String get paywallBenefitArbzg => 'Automatic legal break calculation';
+  String get paywallBenefitArbzg => 'Break adjusts automatically';
 
   @override
   String get paywallBenefitSupport => 'Supports an independent developer';
@@ -302,24 +307,14 @@ class AppLocalizationsEn extends AppLocalizations {
   String get remindersSwitch => 'Notifications';
 
   @override
-  String get remindersHint => 'Shortly before and right at clock-out.';
-
-  @override
-  String get reminderLead => 'Heads-up';
+  String get remindersHint =>
+      'Heads-ups, halftime and clock-out – with a quote if you like.';
 
   @override
   String get notifChannelName => 'Clock-out reminders';
 
   @override
   String get notifChannelDesc => 'Alerts shortly before and at clock-out';
-
-  @override
-  String get notifBeforeTitle => 'Almost clock-out time';
-
-  @override
-  String notifBeforeBody(String duration) {
-    return '$duration to go – then you’re free.';
-  }
 
   @override
   String get notifEndTitle => 'Time to go! 🎉';
@@ -332,7 +327,8 @@ class AppLocalizationsEn extends AppLocalizations {
       'Notifications are blocked in system settings.';
 
   @override
-  String get paywallBenefitReminders => 'Reminders before and at clock-out';
+  String get paywallBenefitReminders =>
+      'Your own clock-out reminders – with a quote';
 
   @override
   String get paywallBenefitWidget => 'Live countdown as a home screen widget';
@@ -392,4 +388,124 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get onbSeePro => 'See Pro';
+
+  @override
+  String notifLeadTitle(String duration) {
+    return '$duration until clock-out';
+  }
+
+  @override
+  String notifLeadBody(String time) {
+    return 'Clock-out at $time.';
+  }
+
+  @override
+  String get notifHalfTitle => 'Halfway there! ☕';
+
+  @override
+  String notifHalfBody(String time) {
+    return 'Half done – clock-out at $time.';
+  }
+
+  @override
+  String get reminderLeads => 'Heads-ups';
+
+  @override
+  String get reminderCustom => 'Custom';
+
+  @override
+  String get reminderCustomTitle => 'Custom heads-up';
+
+  @override
+  String get reminderMaxLeads => '6 heads-ups max – deselect one first.';
+
+  @override
+  String get reminderHalf => 'At halftime';
+
+  @override
+  String get reminderEnd => 'Right at clock-out';
+
+  @override
+  String get reminderQuote => 'With a quote';
+
+  @override
+  String get reminderQuoteHint => 'Adds a quote for your job.';
+
+  @override
+  String get designsTitle => 'Designs';
+
+  @override
+  String get designsSubtitle =>
+      'Buy once, yours forever – and you support development.';
+
+  @override
+  String get designsOpen => 'Browse designs';
+
+  @override
+  String designCurrent(String name) {
+    return 'Active: $name';
+  }
+
+  @override
+  String get designOwned => 'Owned';
+
+  @override
+  String get designActive => 'Active';
+
+  @override
+  String get designFree => 'Free';
+
+  @override
+  String get designThanks => 'Thank you! Your new design is active.';
+
+  @override
+  String get designSupporterBadge => 'Biggest thank-you';
+
+  @override
+  String get designSupporterHint =>
+      'With hearts – for everyone who wants to support the app the most.';
+
+  @override
+  String get designNameStandard => 'Classic';
+
+  @override
+  String get designNameSupporter => 'Supporter';
+
+  @override
+  String get designNameMidnight => 'Midnight';
+
+  @override
+  String get designNameSunset => 'Sunset';
+
+  @override
+  String get designNameOcean => 'Ocean';
+
+  @override
+  String get designNameForest => 'Forest';
+
+  @override
+  String get autoBreakInfoTooltip => 'More info';
+
+  @override
+  String get autoBreakInfoTitle => 'How the automatic break works';
+
+  @override
+  String get autoBreakInfoBody =>
+      'The app picks the break to match your work time:';
+
+  @override
+  String get autoBreakUpTo6 => 'Up to 6 h of work';
+
+  @override
+  String get autoBreakOver6 => 'More than 6 h';
+
+  @override
+  String get autoBreakOver9 => 'More than 9 h';
+
+  @override
+  String get autoBreakNone => 'no break';
+
+  @override
+  String get autoBreakLegal =>
+      'Based on the minimum breaks of the German Working Hours Act (§ 4 ArbZG). Your workplace rules may differ.';
 }

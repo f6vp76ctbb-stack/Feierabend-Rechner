@@ -13,6 +13,8 @@ Das Geschäftsmodell der App:
 | Home-Screen-Widget | Feierabend-Uhrzeit | + Live-Countdown |
 | 24 Std. Pro gratis per Belohnungsvideo | ✅ | – |
 
+Zusätzlich gibt es **5 Designs** als eigene Einmalkäufe (für Free und Pro, nicht in Pro enthalten) – siehe Teil A2.
+
 ---
 
 ## Teil A – In-App-Kauf „Feierabend Pro"
@@ -54,6 +56,24 @@ Diese Konten sehen beim Kauf „Testbestellung – es wird nichts berechnet".
 - **„Käufe wiederherstellen"** in Einstellungen und im Kauf-Fenster
 
 ---
+
+## Teil A2 – Designs (5 einzelne Käufe)
+
+Jedes Design ist ein eigenes **In-App-Produkt** – genau wie `feierabend_pro` anlegen:
+**Monetarisieren → Produkte → In-App-Produkte → Produkt erstellen** → Speichern → **Aktivieren**.
+Die **Produkt-IDs müssen exakt so heißen** (nicht änderbar); Preise sind Vorschläge – die App zeigt immer den Preis aus der Play Console.
+
+| Produkt-ID | Name (DE) | Name (EN) | Preis | Beschreibung (DE) | Beschreibung (EN) |
+|---|---|---|---|---|---|
+| `design_supporter` | Design „Supporter“ ❤ | Supporter design ❤ | **4,99 €** | Mit Herzen – das größte Dankeschön an den Entwickler. | With hearts – the biggest thank-you to the developer. |
+| `design_midnight` | Design „Mitternacht“ | Midnight design | 1,99 € | Tiefes Nachtblau mit goldenem Feierabend. | Deep night blue with a golden clock-out. |
+| `design_sunset` | Design „Sonnenuntergang“ | Sunset design | 1,99 € | Warme Orangetöne wie ein Sommerabend. | Warm orange tones like a summer evening. |
+| `design_ocean` | Design „Ozean“ | Ocean design | 1,49 € | Frisches Blau und Türkis. | Fresh blue and turquoise. |
+| `design_forest` | Design „Wald“ | Forest design | 0,99 € | Ruhiges Grün zum Durchatmen. | Calm green to breathe. |
+
+- Gekaufte Designs bleiben für immer, auch nach Neuinstallation („Käufe wiederherstellen“).
+- Nach dem Kauf wird das Design sofort aktiv; wechseln: **Einstellungen → Designs ansehen**.
+- Testen wie bei Pro über **Lizenztests** (keine Abbuchung).
 
 ## Teil B – Werbung mit Google AdMob
 

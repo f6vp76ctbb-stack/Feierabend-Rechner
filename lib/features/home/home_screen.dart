@@ -3,7 +3,8 @@ import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/formatting.dart';
-import '../../design/app_colors.dart';
+import '../../design/app_designs.dart';
+import '../../design/hearts_painter.dart';
 import '../../design/app_icon.dart';
 import '../../l10n/l10n_ext.dart';
 import '../pro/banner_ad_view.dart';
@@ -11,6 +12,7 @@ import '../pro/paywall_sheet.dart';
 import '../pro/pro_providers.dart';
 import '../settings/settings_sheet.dart';
 import 'state/home_providers.dart';
+import 'widgets/auto_break_info_sheet.dart';
 import 'widgets/countdown_ring.dart';
 import 'widgets/duration_adjust_sheet.dart';
 import 'widgets/overtime_card.dart';
@@ -109,6 +111,10 @@ class _Header extends StatelessWidget {
         const AppIconMark(size: 40),
         const SizedBox(width: 12),
         Text(context.l10n.brandName, style: theme.textTheme.headlineMedium),
+        if (context.design.hearts) ...[
+          const SizedBox(width: 6),
+          Icon(Icons.favorite_rounded, size: 20, color: context.design.glow),
+        ],
         const Spacer(),
         IconButton(
           tooltip: context.l10n.settingsTooltip,
@@ -158,7 +164,7 @@ class _RingContent extends StatelessWidget {
                   child: Text(
                     '+1',
                     style: theme.textTheme.labelLarge?.copyWith(
-                      color: AppColors.accentWarm,
+                      color: context.design.warm,
                     ),
                   ),
                 ),
@@ -175,7 +181,7 @@ class _RingContent extends StatelessWidget {
               Text(
                 l.reached,
                 style: theme.textTheme.titleMedium?.copyWith(
-                  color: AppColors.success,
+                  color: context.design.free,
                 ),
               ),
             ],
@@ -238,11 +244,19 @@ class _InputCard extends ConsumerWidget {
             const Divider(height: 1, indent: 16, endIndent: 16),
             SwitchListTile(
               contentPadding: const EdgeInsets.symmetric(horizontal: 16),
-              secondary: const Icon(Icons.gavel_rounded),
+              secondary: const Icon(Icons.auto_awesome_rounded),
               title: Row(
                 children: [
                   Flexible(child: Text(l.arbzgTitle)),
-                  if (!isPro) ...[const SizedBox(width: 8), const ProBadge()],
+                  // Details zum Gesetz nur auf Wunsch – der Schalter bleibt schlicht.
+                  IconButton(
+                    tooltip: l.autoBreakInfoTooltip,
+                    visualDensity: VisualDensity.compact,
+                    iconSize: 18,
+                    icon: const Icon(Icons.info_outline_rounded),
+                    onPressed: () => AutoBreakInfoSheet.show(context),
+                  ),
+                  if (!isPro) const ProBadge(),
                 ],
               ),
               subtitle: Text(l.arbzgSubtitle),
@@ -422,13 +436,14 @@ class _Tile extends StatelessWidget {
   }
 }
 
-/// Sanfter, warmer Farbverlauf im Hintergrund.
+/// Sanfter Farbverlauf im Hintergrund – beim Supporter-Design mit zarten Herzen.
 class _BackgroundGlow extends StatelessWidget {
   const _BackgroundGlow();
 
   @override
   Widget build(BuildContext context) {
     final dark = Theme.of(context).brightness == Brightness.dark;
+    final design = context.design;
     return Positioned.fill(
       child: DecoratedBox(
         decoration: BoxDecoration(
@@ -436,11 +451,17 @@ class _BackgroundGlow extends StatelessWidget {
             center: const Alignment(0, -0.8),
             radius: 1.2,
             colors: [
-              AppColors.primary.withValues(alpha: dark ? 0.18 : 0.10),
+              design.glow.withValues(alpha: dark ? 0.18 : 0.10),
               Colors.transparent,
             ],
           ),
         ),
+        child: design.hearts
+            ? CustomPaint(
+                painter: HeartsPainter(
+                    color: design.glow.withValues(alpha: dark ? 0.16 : 0.11)),
+              )
+            : null,
       ),
     );
   }

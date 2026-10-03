@@ -1,6 +1,7 @@
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../domain/models/work_config.dart';
+import '../domain/reminder_planner.dart';
 
 /// Persistenz für Einstellungen & letzte Eingaben (offline, lokal).
 ///
@@ -24,8 +25,14 @@ class SettingsRepository {
   static const _kProPurchased = 'pro_purchased';
   static const _kProTrialUntil = 'pro_trial_until_ms';
   static const _kRemindersEnabled = 'reminders_enabled';
-  static const _kReminderLead = 'reminder_lead_minutes';
+  static const _kReminderLead = 'reminder_lead_minutes'; // v1.0: eine Vorwarnung
+  static const _kReminderLeads = 'reminder_leads'; // Minuten, kommagetrennt
+  static const _kReminderHalf = 'reminder_half';
+  static const _kReminderAtEnd = 'reminder_at_end';
+  static const _kReminderQuote = 'reminder_quote';
   static const _kOnboardingDone = 'onboarding_done';
+  static const _kDesignsOwned = 'designs_owned';
+  static const _kDesignSelected = 'design_selected';
 
   // --- Arbeitszeit-/Pausen-Konfiguration ---
 
@@ -105,15 +112,32 @@ class SettingsRepository {
 
   // --- Erinnerungen (Benachrichtigungen) ---
 
-  bool loadRemindersEnabled() => _prefs.getBool(_kRemindersEnabled) ?? false;
+  /// Gespeicherte Erinnerungs-Optionen; übernimmt die einzelne Vorwarnung aus v1.0.
+  ReminderOptions loadReminderOptions() {
+    final raw = _prefs.getString(_kReminderLeads);
+    final leads = raw == null
+        ? [Duration(minutes: _prefs.getInt(_kReminderLead) ?? 30)]
+        : [
+            for (final part in raw.split(','))
+              if (int.tryParse(part) case final m?) Duration(minutes: m),
+          ];
+    return ReminderOptions(
+      enabled: _prefs.getBool(_kRemindersEnabled) ?? false,
+      leads: leads,
+      halfTime: _prefs.getBool(_kReminderHalf) ?? false,
+      atEnd: _prefs.getBool(_kReminderAtEnd) ?? true,
+      withQuote: _prefs.getBool(_kReminderQuote) ?? true,
+    );
+  }
 
-  Future<void> saveRemindersEnabled(bool value) =>
-      _prefs.setBool(_kRemindersEnabled, value);
-
-  int loadReminderLeadMinutes() => _prefs.getInt(_kReminderLead) ?? 30;
-
-  Future<void> saveReminderLeadMinutes(int minutes) =>
-      _prefs.setInt(_kReminderLead, minutes);
+  Future<void> saveReminderOptions(ReminderOptions o) async {
+    await _prefs.setBool(_kRemindersEnabled, o.enabled);
+    await _prefs.setString(
+        _kReminderLeads, o.leads.map((l) => l.inMinutes).join(','));
+    await _prefs.setBool(_kReminderHalf, o.halfTime);
+    await _prefs.setBool(_kReminderAtEnd, o.atEnd);
+    await _prefs.setBool(_kReminderQuote, o.withQuote);
+  }
 
   // --- Einführung beim ersten Start ---
 
@@ -124,4 +148,17 @@ class SettingsRepository {
 
   Future<void> saveOnboardingDone(bool value) =>
       _prefs.setBool(_kOnboardingDone, value);
+
+  // --- Designs (gekaufte + gewähltes) ---
+
+  Set<String> loadOwnedDesigns() =>
+      (_prefs.getStringList(_kDesignsOwned) ?? const []).toSet();
+
+  Future<void> saveOwnedDesigns(Set<String> ids) =>
+      _prefs.setStringList(_kDesignsOwned, ids.toList()..sort());
+
+  String? loadSelectedDesign() => _prefs.getString(_kDesignSelected);
+
+  Future<void> saveSelectedDesign(String id) =>
+      _prefs.setString(_kDesignSelected, id);
 }

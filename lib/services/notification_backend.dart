@@ -4,23 +4,30 @@ import 'package:timezone/timezone.dart' as tz;
 
 import '../domain/reminder_planner.dart';
 
-/// Texte für die Benachrichtigungen (lokalisiert von der App übergeben).
-class ReminderTexts {
-  final String channelName;
-  final String channelDescription;
-  final String beforeTitle;
-  final String beforeBody;
-  final String endTitle;
-  final String endBody;
+/// Benachrichtigungskanal (Android), lokalisiert von der App übergeben.
+class ReminderChannel {
+  final String name;
+  final String description;
 
-  const ReminderTexts({
-    required this.channelName,
-    required this.channelDescription,
-    required this.beforeTitle,
-    required this.beforeBody,
-    required this.endTitle,
-    required this.endBody,
+  const ReminderChannel({required this.name, required this.description});
+}
+
+/// Eine fertig formulierte, geplante Benachrichtigung.
+class ReminderNotification {
+  final int id;
+  final DateTime at;
+  final String title;
+  final String body;
+
+  const ReminderNotification({
+    required this.id,
+    required this.at,
+    required this.title,
+    required this.body,
   });
+
+  @override
+  String toString() => 'ReminderNotification($id @ $at: $title / $body)';
 }
 
 /// Abstraktion über lokale Benachrichtigungen (Tests/Web: Noop).
@@ -30,8 +37,9 @@ abstract class NotificationBackend {
   /// Fragt die Benachrichtigungs-Berechtigung an (Android 13+ / iOS).
   Future<bool> requestPermission();
 
-  /// Ersetzt alle geplanten Erinnerungen durch [plan].
-  Future<void> apply(List<PlannedReminder> plan, ReminderTexts texts);
+  /// Ersetzt alle geplanten Erinnerungen der App durch [notifications].
+  Future<void> apply(
+      List<ReminderNotification> notifications, ReminderChannel channel);
 }
 
 class NoopNotificationBackend implements NotificationBackend {
@@ -40,7 +48,8 @@ class NoopNotificationBackend implements NotificationBackend {
   @override
   Future<bool> requestPermission() async => false;
   @override
-  Future<void> apply(List<PlannedReminder> plan, ReminderTexts texts) async {}
+  Future<void> apply(
+      List<ReminderNotification> notifications, ReminderChannel channel) async {}
 }
 
 /// Lokale Benachrichtigungen über `flutter_local_notifications`.
@@ -86,32 +95,35 @@ class LocalNotificationBackend implements NotificationBackend {
   }
 
   @override
-  Future<void> apply(List<PlannedReminder> plan, ReminderTexts texts) async {
+  Future<void> apply(
+      List<ReminderNotification> notifications, ReminderChannel channel) async {
     try {
       await _ensureInitialized();
-      for (final id in ReminderPlanner.allIds) {
-        await _plugin.cancel(id: id);
+      // Nur eigene, noch ausstehende Erinnerungen abräumen (angezeigte bleiben stehen).
+      final pending = await _plugin.pendingNotificationRequests();
+      for (final p in pending) {
+        if (ReminderPlanner.isOwnId(p.id)) await _plugin.cancel(id: p.id);
       }
-      final details = NotificationDetails(
-        android: AndroidNotificationDetails(
-          'feierabend_reminders',
-          texts.channelName,
-          channelDescription: texts.channelDescription,
-          importance: Importance.high,
-          priority: Priority.high,
-        ),
-        iOS: const DarwinNotificationDetails(),
-      );
-      for (final r in plan) {
-        final before = r.kind == ReminderKind.before;
+      for (final n in notifications) {
         await _plugin.zonedSchedule(
-          id: r.id,
+          id: n.id,
           // Absoluter Zeitpunkt in UTC – unabhängig von Zeitzonen-Daten.
-          scheduledDate: tz.TZDateTime.from(r.at.toUtc(), tz.UTC),
-          notificationDetails: details,
+          scheduledDate: tz.TZDateTime.from(n.at.toUtc(), tz.UTC),
+          notificationDetails: NotificationDetails(
+            android: AndroidNotificationDetails(
+              'feierabend_reminders',
+              channel.name,
+              channelDescription: channel.description,
+              importance: Importance.high,
+              priority: Priority.high,
+              // Mehrzeilig, damit der Spruch ganz zu lesen ist.
+              styleInformation: BigTextStyleInformation(n.body),
+            ),
+            iOS: const DarwinNotificationDetails(),
+          ),
           androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
-          title: before ? texts.beforeTitle : texts.endTitle,
-          body: before ? texts.beforeBody : texts.endBody,
+          title: n.title,
+          body: n.body,
         );
       }
     } catch (_) {

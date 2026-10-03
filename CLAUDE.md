@@ -87,10 +87,13 @@ Diese Logik lebt **isoliert und voll unit-getestet** in `lib/domain/` — UI hä
 - Mehrere Profile (z. B. Mo–Do / Fr, Schichten)
 - Überstunden-Konto / Wochenübersicht
 - ArbZG-Auto-Pausenmodus
-- Erinnerungen (Vorwarnung 15/30/60 Min + „Feierabend!")
+- Erinnerungen, frei einstellbar: mehrere Vorwarnungen (z. B. 2 Std/1 Std/15 Min + eigene), Halbzeit, „Feierabend!", optional mit Spruch
 - Live-Countdown im Android-Home-Screen-Widget (die Uhrzeit darin ist gratis → Werbehebel)
 
-**Pro — geplant (v1.1):** Premium-Themes.
+**Designs (einzeln kaufbar, nicht in Pro):** Standard gratis; `design_supporter` (Herzen, teuerstes),
+`design_midnight`, `design_sunset`, `design_ocean`, `design_forest`. Katalog `lib/design/app_designs.dart`,
+Kauf/Auswahl `lib/features/designs/` (`designsProvider`, `activeDesignProvider`), Farben per
+`ThemeExtension` `DesignColors` (`context.design`). Web-Vorschau: alle frei.
 
 Gating über `isProProvider` (`lib/features/pro/pro_providers.dart`); Web-Vorschau = immer Pro.
 
@@ -158,9 +161,10 @@ test/                      # Unit- + Widget-Tests (domain/ = 100 % Ziel)
   `lib/features/pro/` (ProController, Paywall, Banner). AdMob-Anzeigenblöcke per
   `--dart-define=ADMOB_BANNER_ANDROID/ADMOB_REWARDED_ANDROID`, App-ID per Env `ADMOB_APP_ID`
   (Default im Code: Google-Test-IDs; CI-Release-Builds setzen die echten IDs aus `android-bundle.yml` → `RELEASE_ADMOB_*`).
-- **Erinnerungen:** `lib/domain/reminder_planner.dart` (rein, getestet) → `lib/features/reminders/`
-  (Einstellungen persistiert, `reminderPlanProvider` nur mit Pro) → Sync in `app.dart` via
-  `NotificationBackend` (`flutter_local_notifications`, `inexactAllowWhileIdle`, UTC-Zeitpunkte).
+- **Erinnerungen:** `lib/domain/reminder_planner.dart` (`ReminderOptions` + Planer, rein, getestet) →
+  `lib/features/reminders/` (Optionen persistiert, `reminderScheduleProvider` nur mit Pro,
+  `buildReminderNotifications` formuliert Texte + Spruch) → Sync in `app.dart` via `NotificationBackend`
+  (`flutter_local_notifications`, `inexactAllowWhileIdle`, UTC; IDs: Ende 1002, Halbzeit 1003, Vorwarnung 1100+Min).
   Android: Desugaring + Boot-Receiver im Manifest.
 - **Home-Widget (Android):** `lib/features/widget/` + `lib/services/widget_backend.dart` schicken einen
   `WidgetSnapshot` (Start/Ende/Label/Pro-Ablauf) über den Channel `com.thinkube.feierabendrechner/widget`
@@ -174,7 +178,19 @@ test/                      # Unit- + Widget-Tests (domain/ = 100 % Ziel)
   Screenshots/Feature-Grafik (`store/graphics/`); danach `dart run flutter_launcher_icons`.
 - **Android-Build:** `.github/workflows/android-bundle.yml` baut **unsigniert** (dl.google.com ist in der
   Claude-Sandbox gesperrt) und legt das AAB im Branch `aab-build` ab; Signatur lokal per `jarsigner`
-  mit dem Upload-Schlüssel (**nie ins Repo**, siehe `store/SCHLUESSEL.md`). versionCode = run_number.
+  mit dem Upload-Schlüssel (**nie ins Repo**, siehe `store/SCHLUESSEL.md`). Pro Lauf zwei Bundles:
+  **Store** (`feierabend-unsigned.aab`, versionCode = 2 × run_number) und **Tester**
+  (`feierabend-tester-unsigned.aab`, 2 × run_number + 1, `--dart-define=TESTER_BUILD=true`).
+- **Tester-Version** (`MonetizationConfig.testerBuild` → `testerBuildProvider`): Pro + alle Designs frei,
+  Werbe-SDK startet nie (weil Pro), Hinweis in den Einstellungen. Nur für den geschlossenen Test,
+  **nie in Produktion** – dort immer das Store-Bundle.
+- **Start-Test (Pflicht vor jeder Auslieferung!):** `.github/workflows/launch-test.yml` baut die
+  Release-APKs (R8, echte AdMob-IDs) als Store- und Tester-Version und startet sie im Emulator
+  (API 24/30/35): Store = Einführung, Werbung, Kaufseite, Belohnungsvideo, Design-Kauf; Tester =
+  Überstunden, Erinnerungen, Widget, Designs, Neustart. Schlägt bei jedem Absturz fehl. Logcat +
+  Screenshots je API im Branch `launch-test-api<N>`. Unit-/Widget-Tests sehen R8-Probleme nicht!
+- **R8/AGP 9:** `android.r8.strictFullModeForKeepRules=false` (gradle.properties) + `android/app/proguard-rules.pro`.
+  Ohne das stürzte jede Version bis vc9 beim Start ab (WorkManager-`WorkDatabase_Impl` ohne Konstruktor).
 - **Web-Vorschau:** `deploy.yml` → `gh-pages` (Pages: „Deploy from a branch"); `web/privacy.html` ist
   die Datenschutz-URL.
 - **Store-Doku für den Nutzer:** `store/ANLEITUNG.md` (Start hier), `STORE_EINTRAG.md`,

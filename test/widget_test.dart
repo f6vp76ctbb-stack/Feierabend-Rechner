@@ -108,7 +108,7 @@ void main() {
     expect(find.text('GESAMTSALDO'), findsNothing);
   });
 
-  testWidgets('Free: ArbZG-Schalter öffnet die Paywall statt einzuschalten',
+  testWidgets('Free: Auto-Pause-Schalter öffnet die Paywall statt einzuschalten',
       (tester) async {
     await tester.pumpWidget(await buildApp(pro: false));
     await tester.pump();
@@ -120,7 +120,29 @@ void main() {
     await tester.pumpAndSettle();
 
     expect(find.text('Feierabend Pro'), findsOneWidget);
-    expect(find.text('automatisch nach ArbZG'), findsNothing);
+    expect(find.text('automatisch angepasst'), findsNothing);
+  });
+
+  testWidgets('Auto-Pause: ⓘ erklärt die Regeln, ohne umzuschalten', (tester) async {
+    await tester.pumpWidget(await buildApp());
+    await tester.pump();
+
+    expect(find.text('Pause automatisch'), findsOneWidget);
+    final info = find.byTooltip('Mehr Infos');
+    await tester.ensureVisible(info);
+    await tester.pumpAndSettle();
+    await tester.tap(info);
+    await tester.pumpAndSettle();
+
+    expect(find.text('So funktioniert die automatische Pause'), findsOneWidget);
+    expect(find.text('Bis 6 Std Arbeit'), findsOneWidget);
+    expect(find.text('keine Pause'), findsOneWidget);
+    expect(find.text('30 Min'), findsOneWidget);
+    expect(find.text('45 Min'), findsOneWidget);
+    // Schalter unverändert aus.
+    final toggle =
+        tester.widget<SwitchListTile>(find.byType(SwitchListTile).first);
+    expect(toggle.value, isFalse);
   });
 
   testWidgets('Paywall zeigt Store-Preis und startet den Kauf', (tester) async {

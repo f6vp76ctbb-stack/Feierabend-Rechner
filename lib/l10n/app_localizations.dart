@@ -167,19 +167,19 @@ abstract class AppLocalizations {
   /// No description provided for @breakAuto.
   ///
   /// In de, this message translates to:
-  /// **'automatisch nach ArbZG'**
+  /// **'automatisch angepasst'**
   String get breakAuto;
 
   /// No description provided for @arbzgTitle.
   ///
   /// In de, this message translates to:
-  /// **'Pause nach Gesetz (ArbZG)'**
+  /// **'Pause automatisch'**
   String get arbzgTitle;
 
   /// No description provided for @arbzgSubtitle.
   ///
   /// In de, this message translates to:
-  /// **'> 6 h → 30 min · > 9 h → 45 min'**
+  /// **'Bis 6 Std keine Pause nötig – darüber passt sie sich an.'**
   String get arbzgSubtitle;
 
   /// No description provided for @presenceSummary.
@@ -482,6 +482,12 @@ abstract class AppLocalizations {
   /// **'Pro-Test aktiv bis {time}'**
   String proTrialActive(String time);
 
+  /// Nur in der Tester-Version für den geschlossenen Test
+  ///
+  /// In de, this message translates to:
+  /// **'Testversion: Pro und alle Designs sind freigeschaltet – danke fürs Testen!'**
+  String get testerBuildActive;
+
   /// No description provided for @unlockPro.
   ///
   /// In de, this message translates to:
@@ -551,7 +557,7 @@ abstract class AppLocalizations {
   /// No description provided for @paywallBenefitArbzg.
   ///
   /// In de, this message translates to:
-  /// **'Automatische Pause nach Arbeitszeitgesetz'**
+  /// **'Pause passt sich automatisch an'**
   String get paywallBenefitArbzg;
 
   /// No description provided for @paywallBenefitSupport.
@@ -635,14 +641,8 @@ abstract class AppLocalizations {
   /// No description provided for @remindersHint.
   ///
   /// In de, this message translates to:
-  /// **'Kurz vor und pünktlich zum Feierabend.'**
+  /// **'Vorwarnungen, Halbzeit und Feierabend – auf Wunsch mit Spruch.'**
   String get remindersHint;
-
-  /// No description provided for @reminderLead.
-  ///
-  /// In de, this message translates to:
-  /// **'Vorwarnung'**
-  String get reminderLead;
 
   /// No description provided for @notifChannelName.
   ///
@@ -655,18 +655,6 @@ abstract class AppLocalizations {
   /// In de, this message translates to:
   /// **'Hinweise kurz vor und zum Feierabend'**
   String get notifChannelDesc;
-
-  /// No description provided for @notifBeforeTitle.
-  ///
-  /// In de, this message translates to:
-  /// **'Gleich Feierabend'**
-  String get notifBeforeTitle;
-
-  /// No description provided for @notifBeforeBody.
-  ///
-  /// In de, this message translates to:
-  /// **'Noch {duration} – dann bist du frei.'**
-  String notifBeforeBody(String duration);
 
   /// No description provided for @notifEndTitle.
   ///
@@ -689,7 +677,7 @@ abstract class AppLocalizations {
   /// No description provided for @paywallBenefitReminders.
   ///
   /// In de, this message translates to:
-  /// **'Erinnerung kurz vor und zum Feierabend'**
+  /// **'Eigene Erinnerungen vor Feierabend – mit Spruch'**
   String get paywallBenefitReminders;
 
   /// No description provided for @paywallBenefitWidget.
@@ -799,6 +787,222 @@ abstract class AppLocalizations {
   /// In de, this message translates to:
   /// **'Pro ansehen'**
   String get onbSeePro;
+
+  /// No description provided for @notifLeadTitle.
+  ///
+  /// In de, this message translates to:
+  /// **'Noch {duration} bis Feierabend'**
+  String notifLeadTitle(String duration);
+
+  /// No description provided for @notifLeadBody.
+  ///
+  /// In de, this message translates to:
+  /// **'Feierabend um {time}.'**
+  String notifLeadBody(String time);
+
+  /// No description provided for @notifHalfTitle.
+  ///
+  /// In de, this message translates to:
+  /// **'Halbzeit! ☕'**
+  String get notifHalfTitle;
+
+  /// No description provided for @notifHalfBody.
+  ///
+  /// In de, this message translates to:
+  /// **'Die Hälfte ist geschafft – Feierabend um {time}.'**
+  String notifHalfBody(String time);
+
+  /// No description provided for @reminderLeads.
+  ///
+  /// In de, this message translates to:
+  /// **'Vorwarnungen'**
+  String get reminderLeads;
+
+  /// No description provided for @reminderCustom.
+  ///
+  /// In de, this message translates to:
+  /// **'Eigene'**
+  String get reminderCustom;
+
+  /// No description provided for @reminderCustomTitle.
+  ///
+  /// In de, this message translates to:
+  /// **'Eigene Vorwarnung'**
+  String get reminderCustomTitle;
+
+  /// No description provided for @reminderMaxLeads.
+  ///
+  /// In de, this message translates to:
+  /// **'Höchstens 6 Vorwarnungen – erst eine abwählen.'**
+  String get reminderMaxLeads;
+
+  /// No description provided for @reminderHalf.
+  ///
+  /// In de, this message translates to:
+  /// **'Zur Halbzeit'**
+  String get reminderHalf;
+
+  /// No description provided for @reminderEnd.
+  ///
+  /// In de, this message translates to:
+  /// **'Pünktlich zum Feierabend'**
+  String get reminderEnd;
+
+  /// No description provided for @reminderQuote.
+  ///
+  /// In de, this message translates to:
+  /// **'Mit Spruch'**
+  String get reminderQuote;
+
+  /// No description provided for @reminderQuoteHint.
+  ///
+  /// In de, this message translates to:
+  /// **'Ein Spruch aus deiner Berufsgruppe kommt mit.'**
+  String get reminderQuoteHint;
+
+  /// No description provided for @designsTitle.
+  ///
+  /// In de, this message translates to:
+  /// **'Designs'**
+  String get designsTitle;
+
+  /// No description provided for @designsSubtitle.
+  ///
+  /// In de, this message translates to:
+  /// **'Einmal kaufen, für immer deins – und du unterstützt die Entwicklung.'**
+  String get designsSubtitle;
+
+  /// No description provided for @designsOpen.
+  ///
+  /// In de, this message translates to:
+  /// **'Designs ansehen'**
+  String get designsOpen;
+
+  /// No description provided for @designCurrent.
+  ///
+  /// In de, this message translates to:
+  /// **'Aktiv: {name}'**
+  String designCurrent(String name);
+
+  /// No description provided for @designOwned.
+  ///
+  /// In de, this message translates to:
+  /// **'Gekauft'**
+  String get designOwned;
+
+  /// No description provided for @designActive.
+  ///
+  /// In de, this message translates to:
+  /// **'Aktiv'**
+  String get designActive;
+
+  /// No description provided for @designFree.
+  ///
+  /// In de, this message translates to:
+  /// **'Gratis'**
+  String get designFree;
+
+  /// No description provided for @designThanks.
+  ///
+  /// In de, this message translates to:
+  /// **'Danke! Dein neues Design ist aktiv.'**
+  String get designThanks;
+
+  /// No description provided for @designSupporterBadge.
+  ///
+  /// In de, this message translates to:
+  /// **'Größtes Dankeschön'**
+  String get designSupporterBadge;
+
+  /// No description provided for @designSupporterHint.
+  ///
+  /// In de, this message translates to:
+  /// **'Mit Herzen – für alle, die die App am meisten unterstützen wollen.'**
+  String get designSupporterHint;
+
+  /// No description provided for @designNameStandard.
+  ///
+  /// In de, this message translates to:
+  /// **'Standard'**
+  String get designNameStandard;
+
+  /// No description provided for @designNameSupporter.
+  ///
+  /// In de, this message translates to:
+  /// **'Supporter'**
+  String get designNameSupporter;
+
+  /// No description provided for @designNameMidnight.
+  ///
+  /// In de, this message translates to:
+  /// **'Mitternacht'**
+  String get designNameMidnight;
+
+  /// No description provided for @designNameSunset.
+  ///
+  /// In de, this message translates to:
+  /// **'Sonnenuntergang'**
+  String get designNameSunset;
+
+  /// No description provided for @designNameOcean.
+  ///
+  /// In de, this message translates to:
+  /// **'Ozean'**
+  String get designNameOcean;
+
+  /// No description provided for @designNameForest.
+  ///
+  /// In de, this message translates to:
+  /// **'Wald'**
+  String get designNameForest;
+
+  /// No description provided for @autoBreakInfoTooltip.
+  ///
+  /// In de, this message translates to:
+  /// **'Mehr Infos'**
+  String get autoBreakInfoTooltip;
+
+  /// No description provided for @autoBreakInfoTitle.
+  ///
+  /// In de, this message translates to:
+  /// **'So funktioniert die automatische Pause'**
+  String get autoBreakInfoTitle;
+
+  /// No description provided for @autoBreakInfoBody.
+  ///
+  /// In de, this message translates to:
+  /// **'Die App wählt die Pause passend zu deiner Arbeitszeit:'**
+  String get autoBreakInfoBody;
+
+  /// No description provided for @autoBreakUpTo6.
+  ///
+  /// In de, this message translates to:
+  /// **'Bis 6 Std Arbeit'**
+  String get autoBreakUpTo6;
+
+  /// No description provided for @autoBreakOver6.
+  ///
+  /// In de, this message translates to:
+  /// **'Mehr als 6 Std'**
+  String get autoBreakOver6;
+
+  /// No description provided for @autoBreakOver9.
+  ///
+  /// In de, this message translates to:
+  /// **'Mehr als 9 Std'**
+  String get autoBreakOver9;
+
+  /// No description provided for @autoBreakNone.
+  ///
+  /// In de, this message translates to:
+  /// **'keine Pause'**
+  String get autoBreakNone;
+
+  /// No description provided for @autoBreakLegal.
+  ///
+  /// In de, this message translates to:
+  /// **'Grundlage sind die Mindestpausen des deutschen Arbeitszeitgesetzes (§ 4 ArbZG). Die Pausenregel in deinem Betrieb kann abweichen.'**
+  String get autoBreakLegal;
 }
 
 class _AppLocalizationsDelegate

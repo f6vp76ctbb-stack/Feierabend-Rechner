@@ -1,5 +1,6 @@
 import 'package:feierabend_rechner/data/settings_repository.dart';
 import 'package:feierabend_rechner/domain/models/work_config.dart';
+import 'package:feierabend_rechner/domain/reminder_planner.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -52,14 +53,36 @@ void main() {
     expect(repo.loadDailyTargetMinutes(), 480);
   });
 
-  test('Erinnerungen Round-Trip (Default aus, 30 Min)', () async {
+  test('Erinnerungen: Standard aus, 30 Min, Feierabend + Spruch an', () async {
+    final o = (await makeRepo()).loadReminderOptions();
+    expect(o.enabled, isFalse);
+    expect(o.leads, [const Duration(minutes: 30)]);
+    expect(o.atEnd, isTrue);
+    expect(o.halfTime, isFalse);
+    expect(o.withQuote, isTrue);
+  });
+
+  test('Erinnerungen: Round-Trip mit mehreren Vorwarnungen', () async {
     final repo = await makeRepo();
-    expect(repo.loadRemindersEnabled(), isFalse);
-    expect(repo.loadReminderLeadMinutes(), 30);
-    await repo.saveRemindersEnabled(true);
-    await repo.saveReminderLeadMinutes(15);
-    expect(repo.loadRemindersEnabled(), isTrue);
-    expect(repo.loadReminderLeadMinutes(), 15);
+    final o = ReminderOptions(
+      enabled: true,
+      leads: const [Duration(hours: 1), Duration(minutes: 15)],
+      halfTime: true,
+      atEnd: false,
+      withQuote: false,
+    );
+    await repo.saveReminderOptions(o);
+    expect(repo.loadReminderOptions(), o);
+  });
+
+  test('Erinnerungen: alte Einzel-Vorwarnung (v1.0) wird übernommen', () async {
+    final repo = await makeRepo({
+      'reminders_enabled': true,
+      'reminder_lead_minutes': 15,
+    });
+    final o = repo.loadReminderOptions();
+    expect(o.enabled, isTrue);
+    expect(o.leads, [const Duration(minutes: 15)]);
   });
 
   test('Einführung: neu = offen, Bestandsnutzer = erledigt, Round-Trip', () async {

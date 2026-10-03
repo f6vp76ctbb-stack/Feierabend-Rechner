@@ -42,13 +42,14 @@ class AppLocalizationsDe extends AppLocalizations {
   String get breakLabel => 'Pause';
 
   @override
-  String get breakAuto => 'automatisch nach ArbZG';
+  String get breakAuto => 'automatisch angepasst';
 
   @override
-  String get arbzgTitle => 'Pause nach Gesetz (ArbZG)';
+  String get arbzgTitle => 'Pause automatisch';
 
   @override
-  String get arbzgSubtitle => '> 6 h → 30 min · > 9 h → 45 min';
+  String get arbzgSubtitle =>
+      'Bis 6 Std keine Pause nötig – darüber passt sie sich an.';
 
   @override
   String presenceSummary(String presence, String breakDuration) {
@@ -222,6 +223,10 @@ class AppLocalizationsDe extends AppLocalizations {
   }
 
   @override
+  String get testerBuildActive =>
+      'Testversion: Pro und alle Designs sind freigeschaltet – danke fürs Testen!';
+
+  @override
   String get unlockPro => 'Pro freischalten';
 
   @override
@@ -256,7 +261,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get paywallBenefitOvertime => 'Überstunden-Konto mit Wochenübersicht';
 
   @override
-  String get paywallBenefitArbzg => 'Automatische Pause nach Arbeitszeitgesetz';
+  String get paywallBenefitArbzg => 'Pause passt sich automatisch an';
 
   @override
   String get paywallBenefitSupport =>
@@ -304,24 +309,14 @@ class AppLocalizationsDe extends AppLocalizations {
   String get remindersSwitch => 'Benachrichtigungen';
 
   @override
-  String get remindersHint => 'Kurz vor und pünktlich zum Feierabend.';
-
-  @override
-  String get reminderLead => 'Vorwarnung';
+  String get remindersHint =>
+      'Vorwarnungen, Halbzeit und Feierabend – auf Wunsch mit Spruch.';
 
   @override
   String get notifChannelName => 'Feierabend-Erinnerungen';
 
   @override
   String get notifChannelDesc => 'Hinweise kurz vor und zum Feierabend';
-
-  @override
-  String get notifBeforeTitle => 'Gleich Feierabend';
-
-  @override
-  String notifBeforeBody(String duration) {
-    return 'Noch $duration – dann bist du frei.';
-  }
 
   @override
   String get notifEndTitle => 'Feierabend! 🎉';
@@ -335,7 +330,7 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get paywallBenefitReminders =>
-      'Erinnerung kurz vor und zum Feierabend';
+      'Eigene Erinnerungen vor Feierabend – mit Spruch';
 
   @override
   String get paywallBenefitWidget => 'Live-Countdown als Home-Screen-Widget';
@@ -395,4 +390,126 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get onbSeePro => 'Pro ansehen';
+
+  @override
+  String notifLeadTitle(String duration) {
+    return 'Noch $duration bis Feierabend';
+  }
+
+  @override
+  String notifLeadBody(String time) {
+    return 'Feierabend um $time.';
+  }
+
+  @override
+  String get notifHalfTitle => 'Halbzeit! ☕';
+
+  @override
+  String notifHalfBody(String time) {
+    return 'Die Hälfte ist geschafft – Feierabend um $time.';
+  }
+
+  @override
+  String get reminderLeads => 'Vorwarnungen';
+
+  @override
+  String get reminderCustom => 'Eigene';
+
+  @override
+  String get reminderCustomTitle => 'Eigene Vorwarnung';
+
+  @override
+  String get reminderMaxLeads =>
+      'Höchstens 6 Vorwarnungen – erst eine abwählen.';
+
+  @override
+  String get reminderHalf => 'Zur Halbzeit';
+
+  @override
+  String get reminderEnd => 'Pünktlich zum Feierabend';
+
+  @override
+  String get reminderQuote => 'Mit Spruch';
+
+  @override
+  String get reminderQuoteHint =>
+      'Ein Spruch aus deiner Berufsgruppe kommt mit.';
+
+  @override
+  String get designsTitle => 'Designs';
+
+  @override
+  String get designsSubtitle =>
+      'Einmal kaufen, für immer deins – und du unterstützt die Entwicklung.';
+
+  @override
+  String get designsOpen => 'Designs ansehen';
+
+  @override
+  String designCurrent(String name) {
+    return 'Aktiv: $name';
+  }
+
+  @override
+  String get designOwned => 'Gekauft';
+
+  @override
+  String get designActive => 'Aktiv';
+
+  @override
+  String get designFree => 'Gratis';
+
+  @override
+  String get designThanks => 'Danke! Dein neues Design ist aktiv.';
+
+  @override
+  String get designSupporterBadge => 'Größtes Dankeschön';
+
+  @override
+  String get designSupporterHint =>
+      'Mit Herzen – für alle, die die App am meisten unterstützen wollen.';
+
+  @override
+  String get designNameStandard => 'Standard';
+
+  @override
+  String get designNameSupporter => 'Supporter';
+
+  @override
+  String get designNameMidnight => 'Mitternacht';
+
+  @override
+  String get designNameSunset => 'Sonnenuntergang';
+
+  @override
+  String get designNameOcean => 'Ozean';
+
+  @override
+  String get designNameForest => 'Wald';
+
+  @override
+  String get autoBreakInfoTooltip => 'Mehr Infos';
+
+  @override
+  String get autoBreakInfoTitle => 'So funktioniert die automatische Pause';
+
+  @override
+  String get autoBreakInfoBody =>
+      'Die App wählt die Pause passend zu deiner Arbeitszeit:';
+
+  @override
+  String get autoBreakUpTo6 => 'Bis 6 Std Arbeit';
+
+  @override
+  String get autoBreakOver6 => 'Mehr als 6 Std';
+
+  @override
+  String get autoBreakOver9 => 'Mehr als 9 Std';
+
+  @override
+  String get autoBreakNone => 'keine Pause';
+
+  @override
+  String get autoBreakLegal =>
+      'Grundlage sind die Mindestpausen des deutschen Arbeitszeitgesetzes (§ 4 ArbZG). Die Pausenregel in deinem Betrieb kann abweichen.';
 }

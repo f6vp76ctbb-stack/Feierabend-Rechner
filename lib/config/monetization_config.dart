@@ -44,6 +44,11 @@ abstract final class MonetizationConfig {
       (defaultTargetPlatform == TargetPlatform.android ||
           defaultTargetPlatform == TargetPlatform.iOS);
 
+  /// Tester-Version für den geschlossenen Test (`--dart-define=TESTER_BUILD=true`):
+  /// Pro und alle Designs sind freigeschaltet, Werbung startet gar nicht erst.
+  /// Gehört NUR in den Test-Track – der Store-Build setzt das nie → `false`.
+  static const testerBuild = bool.fromEnvironment('TESTER_BUILD');
+
   /// Dauer des Gratis-Tests nach einem Belohnungsvideo.
   static const rewardedTrial = Duration(hours: 24);
 
