@@ -33,6 +33,7 @@ class SettingsRepository {
   static const _kOnboardingDone = 'onboarding_done';
   static const _kDesignsOwned = 'designs_owned';
   static const _kDesignSelected = 'design_selected';
+  static const _kAnalyticsConsent = 'analytics_consent';
 
   // --- Arbeitszeit-/Pausen-Konfiguration ---
 
@@ -161,4 +162,12 @@ class SettingsRepository {
 
   Future<void> saveSelectedDesign(String id) =>
       _prefs.setString(_kDesignSelected, id);
+
+  // --- Nutzungsstatistik (Einwilligung) ---
+
+  /// `null` = noch nicht gefragt.
+  bool? loadAnalyticsConsent() => _prefs.getBool(_kAnalyticsConsent);
+
+  Future<void> saveAnalyticsConsent(bool value) =>
+      _prefs.setBool(_kAnalyticsConsent, value);
 }

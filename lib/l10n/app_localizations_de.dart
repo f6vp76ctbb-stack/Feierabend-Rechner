@@ -512,4 +512,24 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get autoBreakLegal =>
       'Grundlage sind die Mindestpausen des deutschen Arbeitszeitgesetzes (§ 4 ArbZG). Die Pausenregel in deinem Betrieb kann abweichen.';
+
+  @override
+  String get analyticsAskTitle => 'Darf die App mitzählen?';
+
+  @override
+  String get analyticsAskBody =>
+      'Mit einer Nutzungsstatistik (Google Analytics) sehe ich, welche Funktionen genutzt werden, und kann die App gezielt verbessern. Ohne Namen, ohne genauen Standort, ohne Werbe-ID – deine Arbeitszeiten bleiben auf dem Gerät. Jederzeit in den Einstellungen änderbar.';
+
+  @override
+  String get analyticsYes => 'Ja, gern';
+
+  @override
+  String get analyticsNo => 'Nein danke';
+
+  @override
+  String get analyticsSetting => 'Nutzungsstatistik teilen';
+
+  @override
+  String get analyticsSettingHint =>
+      'Hilft, die App zu verbessern (Google Analytics).';
 }

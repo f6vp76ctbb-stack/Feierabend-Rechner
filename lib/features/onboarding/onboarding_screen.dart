@@ -18,7 +18,11 @@ class OnboardingController extends Notifier<bool> {
   @override
   bool build() => ref.read(settingsRepositoryProvider).loadOnboardingDone();
 
+  /// In dieser Sitzung abgeschlossen? (Dann kommen keine weiteren Fragen mehr.)
+  bool finishedThisSession = false;
+
   void finish() {
+    finishedThisSession = true;
     state = true;
     ref.read(settingsRepositoryProvider).saveOnboardingDone(true);
   }

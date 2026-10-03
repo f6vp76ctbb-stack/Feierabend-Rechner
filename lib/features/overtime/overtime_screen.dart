@@ -8,6 +8,7 @@ import '../../domain/overtime_calculator.dart';
 import '../../l10n/l10n_ext.dart';
 import '../home/state/home_providers.dart';
 import 'overtime_entry_sheet.dart';
+import '../analytics/analytics_providers.dart';
 
 /// Überstunden-Konto: Gesamtsaldo oben, darunter die Wochen mit Tageseinträgen.
 class OvertimeScreen extends ConsumerWidget {
@@ -55,6 +56,7 @@ class OvertimeScreen extends ConsumerWidget {
   /// Bucht den heutigen Tag mit einem Tipp: gearbeitet = heutige Arbeitszeit
   /// des aktiven Profils, Soll = „Soll pro Tag".
   void _bookToday(BuildContext context, WidgetRef ref) {
+    ref.read(analyticsProvider).log('overtime_book');
     final worked = ref.read(workConfigProvider).work.inMinutes;
     final target = ref.read(dailyTargetProvider).inMinutes;
     final entry = OvertimeEntry(

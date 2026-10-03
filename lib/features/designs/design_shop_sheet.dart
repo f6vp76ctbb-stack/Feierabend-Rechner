@@ -11,6 +11,7 @@ import '../../l10n/l10n_ext.dart';
 import '../../services/purchase_backend.dart';
 import '../pro/pro_providers.dart';
 import 'design_providers.dart';
+import '../analytics/analytics_providers.dart';
 
 /// Lokalisierter Name eines Designs.
 String designName(AppLocalizations l, AppDesign d) => switch (d.id) {
@@ -26,11 +27,14 @@ String designName(AppLocalizations l, AppDesign d) => switch (d.id) {
 class DesignShopSheet extends ConsumerWidget {
   const DesignShopSheet({super.key});
 
-  static Future<void> show(BuildContext context) => showModalBottomSheet<void>(
-        context: context,
-        isScrollControlled: true,
-        builder: (_) => const DesignShopSheet(),
-      );
+  static Future<void> show(BuildContext context) {
+    track(context, 'design_shop_view');
+    return showModalBottomSheet<void>(
+      context: context,
+      isScrollControlled: true,
+      builder: (_) => const DesignShopSheet(),
+    );
+  }
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -110,10 +114,13 @@ class _DesignCard extends ConsumerWidget {
     Future<void> onTap() async {
       HapticFeedback.selectionClick();
       final ctrl = ref.read(designsProvider.notifier);
+      final analytics = ref.read(analyticsProvider);
       if (owned) {
         ctrl.select(design);
+        analytics.log('design_select', {'design': design.id});
         return;
       }
+      analytics.log('purchase_start', {'item': 'design_${design.id}'});
       final messenger = ScaffoldMessenger.of(context);
       final started = await ctrl.buy(design);
       if (!started) {

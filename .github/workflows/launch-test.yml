@@ -25,6 +25,11 @@ permissions:
 
 env:
   FLUTTER_VERSION: "3.44.8"
+  # Gleiche Firebase-Werte wie in android-bundle.yml (leer = Statistik aus).
+  FIREBASE_API_KEY: "AIzaSyA3Wpv_DGVc_C3C7a_8PPzNlNqSzQ4VwV4"
+  FIREBASE_APP_ID: "1:993621307089:android:3231d6e29a58e8be8ddff0"
+  FIREBASE_SENDER_ID: "993621307089"
+  FIREBASE_PROJECT_ID: "feierabendrechner"
 
 jobs:
   build:
@@ -58,6 +63,10 @@ jobs:
           ADMOB_APP_ID: "ca-app-pub-8596176219181991~3672450377"
         run: |
           ADS="--dart-define=ADMOB_BANNER_ANDROID=ca-app-pub-8596176219181991/4877720835 --dart-define=ADMOB_REWARDED_ANDROID=ca-app-pub-8596176219181991/6079121863"
+          if [ -n "$FIREBASE_APP_ID" ]; then
+            ADS="$ADS --dart-define=FIREBASE_API_KEY=$FIREBASE_API_KEY --dart-define=FIREBASE_APP_ID=$FIREBASE_APP_ID"
+            ADS="$ADS --dart-define=FIREBASE_SENDER_ID=$FIREBASE_SENDER_ID --dart-define=FIREBASE_PROJECT_ID=$FIREBASE_PROJECT_ID"
+          fi
           flutter build apk --release $ADS
           cp build/app/outputs/flutter-apk/app-release.apk app-free.apk
           flutter build apk --release $ADS --dart-define=TESTER_BUILD=true

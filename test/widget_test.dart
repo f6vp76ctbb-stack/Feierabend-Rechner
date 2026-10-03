@@ -127,7 +127,8 @@ void main() {
     await tester.pumpWidget(await buildApp());
     await tester.pump();
 
-    expect(find.text('Pause automatisch'), findsOneWidget);
+    expect(find.textContaining('Pause automatisch', findRichText: true),
+        findsOneWidget);
     final info = find.byTooltip('Mehr Infos');
     await tester.ensureVisible(info);
     await tester.pumpAndSettle();

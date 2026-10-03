@@ -1003,6 +1003,42 @@ abstract class AppLocalizations {
   /// In de, this message translates to:
   /// **'Grundlage sind die Mindestpausen des deutschen Arbeitszeitgesetzes (§ 4 ArbZG). Die Pausenregel in deinem Betrieb kann abweichen.'**
   String get autoBreakLegal;
+
+  /// No description provided for @analyticsAskTitle.
+  ///
+  /// In de, this message translates to:
+  /// **'Darf die App mitzählen?'**
+  String get analyticsAskTitle;
+
+  /// No description provided for @analyticsAskBody.
+  ///
+  /// In de, this message translates to:
+  /// **'Mit einer Nutzungsstatistik (Google Analytics) sehe ich, welche Funktionen genutzt werden, und kann die App gezielt verbessern. Ohne Namen, ohne genauen Standort, ohne Werbe-ID – deine Arbeitszeiten bleiben auf dem Gerät. Jederzeit in den Einstellungen änderbar.'**
+  String get analyticsAskBody;
+
+  /// No description provided for @analyticsYes.
+  ///
+  /// In de, this message translates to:
+  /// **'Ja, gern'**
+  String get analyticsYes;
+
+  /// No description provided for @analyticsNo.
+  ///
+  /// In de, this message translates to:
+  /// **'Nein danke'**
+  String get analyticsNo;
+
+  /// No description provided for @analyticsSetting.
+  ///
+  /// In de, this message translates to:
+  /// **'Nutzungsstatistik teilen'**
+  String get analyticsSetting;
+
+  /// No description provided for @analyticsSettingHint.
+  ///
+  /// In de, this message translates to:
+  /// **'Hilft, die App zu verbessern (Google Analytics).'**
+  String get analyticsSettingHint;
 }
 
 class _AppLocalizationsDelegate

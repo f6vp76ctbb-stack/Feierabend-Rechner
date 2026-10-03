@@ -150,5 +150,11 @@
   "autoBreakOver6": "More than 6 h",
   "autoBreakOver9": "More than 9 h",
   "autoBreakNone": "no break",
-  "autoBreakLegal": "Based on the minimum breaks of the German Working Hours Act (§ 4 ArbZG). Your workplace rules may differ."
+  "autoBreakLegal": "Based on the minimum breaks of the German Working Hours Act (§ 4 ArbZG). Your workplace rules may differ.",
+  "analyticsAskTitle": "Can the app count along?",
+  "analyticsAskBody": "Usage statistics (Google Analytics) show me which features are used, so I can improve the app where it matters. No names, no precise location, no advertising ID – your work times stay on your device. You can change this anytime in Settings.",
+  "analyticsYes": "Sure",
+  "analyticsNo": "No thanks",
+  "analyticsSetting": "Share usage statistics",
+  "analyticsSettingHint": "Helps improve the app (Google Analytics)."
 }

@@ -6,6 +6,7 @@ import '../../l10n/l10n_ext.dart';
 import '../home/state/home_providers.dart';
 import '../pro/paywall_sheet.dart';
 import '../pro/pro_providers.dart';
+import '../analytics/analytics_providers.dart';
 
 /// Overlay zur Profil-Verwaltung: umschalten, anlegen, umbenennen, löschen.
 class ProfileManageSheet extends ConsumerWidget {
@@ -101,9 +102,11 @@ class ProfileManageSheet extends ConsumerWidget {
                   PaywallSheet.show(context);
                   return;
                 }
+                final analytics = ref.read(analyticsProvider);
                 final name = await _promptName(context, initial: '');
                 if (name != null && name.isNotEmpty) {
                   controller.addProfile(name);
+                  analytics.log('profile_add');
                   if (context.mounted) Navigator.of(context).pop();
                 }
               },

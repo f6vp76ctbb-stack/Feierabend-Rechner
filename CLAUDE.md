@@ -46,7 +46,7 @@ Ziel: **Play-Store-Release** (später optional App Store). Bezahlmodell, das zum
 | Benachrichtigungen | **flutter_local_notifications** | Countdown/„Feierabend erreicht" ohne Server |
 | Home-Widget        | **nativ** (RemoteViews + Chronometer, MethodChannel) | Kein Glance/Compose-Ballast; Countdown tickt ohne App |
 | Design-System      | **Material 3** + eigenes Theme | Modern, anpassbar |
-| Analytics/Crashes  | **keine eigenen** (Play-Console-Statistik reicht) | Datenschutz, schlanke Data-Safety-Angaben |
+| Analytics          | **Google Analytics 4 über Firebase** (`firebase_analytics`), nur nach Einwilligung | Nutzung verstehen; ohne Ja wird nichts erfasst/gesendet |
 | Übersetzung        | **gen-l10n** (`lib/l10n/*.arb`, DE + EN) | Offizieller Flutter-Weg |
 
 > Wenn ein Paket Probleme macht: erst in TODO.md dokumentieren, dann Alternative wählen.
@@ -191,10 +191,16 @@ test/                      # Unit- + Widget-Tests (domain/ = 100 % Ziel)
   Screenshots je API im Branch `launch-test-api<N>`. Unit-/Widget-Tests sehen R8-Probleme nicht!
 - **R8/AGP 9:** `android.r8.strictFullModeForKeepRules=false` (gradle.properties) + `android/app/proguard-rules.pro`.
   Ohne das stürzte jede Version bis vc9 beim Start ab (WorkManager-`WorkDatabase_Impl` ohne Konstruktor).
+- **Nutzungsstatistik (GA4/Firebase):** `lib/config/firebase_config.dart` (Werte per `--dart-define=FIREBASE_*`,
+  in den Workflows als `env`; leer = komplett aus) → `lib/services/analytics_backend.dart` →
+  `lib/features/analytics/` (`analyticsConsentProvider` = Einwilligung `analytics_consent`, `analyticsProvider.log`,
+  `track(context, …)`, `AnalyticsConsentGate` fragt einmal ab dem 2. Start, Schalter in den Einstellungen).
+  Manifest: Erfassung standardmäßig aus, keine Werbe-ID. Firebase-Werte zusätzlich als Android-Ressourcen
+  (`resValue` in `build.gradle.kts`, sonst „Missing google_app_id“). Ereignisliste + Einrichtung: `store/FIREBASE_ANALYTICS.md`.
 - **Web-Vorschau:** `deploy.yml` → `gh-pages` (Pages: „Deploy from a branch"); `web/privacy.html` ist
   die Datenschutz-URL.
 - **Store-Doku für den Nutzer:** `store/ANLEITUNG.md` (Start hier), `STORE_EINTRAG.md`,
-  `APP_INHALTE.md`, `IN_APP_KAUF_UND_WERBUNG.md`, `SCHLUESSEL.md`.
+  `APP_INHALTE.md`, `IN_APP_KAUF_UND_WERBUNG.md`, `FIREBASE_ANALYTICS.md`, `SCHLUESSEL.md`.
 - **Name:** DE „Feierabend Rechner“ (Icon: „Feierabend“), EN „Clock-Out Calculator“ (Icon: „Clock-Out“, Pro: „Clock-Out Pro“);
   Android-Label über `res/values(-de)/strings.xml` `app_name`.
 - **Kontakt:** thinkube@outlook.de (Datenschutzerklärung, Store-Eintrag, IARC).
