@@ -19,6 +19,7 @@ import 'widgets/overtime_card.dart';
 import 'widgets/profile_bar.dart';
 import 'widgets/spruch_card.dart';
 import 'widgets/start_time_sheet.dart';
+import '../analytics/analytics_providers.dart';
 
 /// Hauptbildschirm — beantwortet EINE Frage: „Wann habe ich frei?"
 class HomeScreen extends ConsumerWidget {
@@ -269,6 +270,7 @@ class _InputCard extends ConsumerWidget {
                   return;
                 }
                 ref.read(profilesControllerProvider.notifier).setArbzgAuto(v);
+                ref.read(analyticsProvider).log('auto_break', {'on': v ? 1 : 0});
               },
             ),
           ],

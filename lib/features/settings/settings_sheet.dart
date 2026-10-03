@@ -8,6 +8,7 @@ import '../../config/monetization_config.dart';
 import '../../core/formatting.dart';
 import '../../domain/reminder_planner.dart';
 import '../../l10n/l10n_ext.dart';
+import '../analytics/analytics_providers.dart';
 import '../designs/design_providers.dart';
 import '../designs/design_shop_sheet.dart';
 import '../home/state/home_providers.dart';
@@ -191,6 +192,18 @@ class SettingsSheet extends ConsumerWidget {
                 mode: LaunchMode.externalApplication,
               ),
             ),
+            if (ref.watch(analyticsBackendProvider).isSupported)
+              SwitchListTile(
+                contentPadding: EdgeInsets.zero,
+                secondary: const Icon(Icons.insights_rounded),
+                title: Text(l.analyticsSetting),
+                subtitle: Text(l.analyticsSettingHint),
+                value: ref.watch(analyticsConsentProvider) ?? false,
+                onChanged: (v) {
+                  HapticFeedback.selectionClick();
+                  ref.read(analyticsConsentProvider.notifier).set(v);
+                },
+              ),
             if (privacyOptions && !isPro)
               ListTile(
                 contentPadding: EdgeInsets.zero,
@@ -223,10 +236,12 @@ class _RemindersSection extends ConsumerWidget {
       if (!on) return ctrl.setEnabled(false);
       if (!isPro) return PaywallSheet.show(context);
       final messenger = ScaffoldMessenger.of(context);
+      final analytics = ref.read(analyticsProvider);
       final granted =
           await ref.read(notificationBackendProvider).requestPermission();
       if (granted) {
         ctrl.setEnabled(true);
+        analytics.log('reminders_on');
       } else {
         messenger.showSnackBar(SnackBar(content: Text(l.notificationsDenied)));
       }
@@ -341,7 +356,9 @@ class _WidgetSection extends ConsumerWidget {
     Future<void> add() async {
       HapticFeedback.selectionClick();
       final messenger = ScaffoldMessenger.of(context);
+      final analytics = ref.read(analyticsProvider);
       final pinned = await ref.read(widgetBackendProvider).requestPin();
+      analytics.log('widget_pin', {'ok': pinned ? 1 : 0});
       // Launcher ohne „Anheften"-Dialog: Weg von Hand erklären.
       if (!pinned) {
         messenger.showSnackBar(SnackBar(content: Text(l.widgetManual)));

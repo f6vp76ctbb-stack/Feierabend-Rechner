@@ -5,17 +5,20 @@ import 'package:flutter_test/flutter_test.dart';
 import '../test_helpers.dart';
 
 /// Startzeit = jetzt → Feierabend (8 Std + 45 Min) liegt sicher in der Zukunft.
+/// Start = jetzt; die Feierabend-Zeit wird aus DIESEM Start berechnet
+/// (sonst schlägt der Test fehl, wenn dazwischen die Minute wechselt).
+var _startMinutes = 0;
+
 Map<String, Object> _startNow() {
   final n = DateTime.now();
-  return {'start_minutes': n.hour * 60 + n.minute};
+  _startMinutes = n.hour * 60 + n.minute;
+  return {'start_minutes': _startMinutes};
 }
 
 String _feierabendLabel() {
-  final n = DateTime.now();
-  final end = DateTime(n.year, n.month, n.day, n.hour, n.minute)
-      .add(const Duration(hours: 8, minutes: 45));
+  final end = (_startMinutes + 8 * 60 + 45) % (24 * 60);
   String two(int v) => v.toString().padLeft(2, '0');
-  return '${two(end.hour)}:${two(end.minute)}';
+  return '${two(end ~/ 60)}:${two(end % 60)}';
 }
 
 Future<void> _openSettings(WidgetTester tester) async {

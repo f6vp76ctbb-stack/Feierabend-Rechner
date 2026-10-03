@@ -134,6 +134,8 @@ check "2b-free-design-kauf"
 
 adbt shell am force-stop "$PKG"
 start_app 20
+# Ab dem zweiten Start fragt die App (falls Firebase konfiguriert) nach der Statistik.
+tap 'Sure' 'Ja, gern'
 shot "free-zweiter-start"
 check "3-free-zweiter-start"
 

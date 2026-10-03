@@ -508,4 +508,24 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get autoBreakLegal =>
       'Based on the minimum breaks of the German Working Hours Act (§ 4 ArbZG). Your workplace rules may differ.';
+
+  @override
+  String get analyticsAskTitle => 'Can the app count along?';
+
+  @override
+  String get analyticsAskBody =>
+      'Usage statistics (Google Analytics) show me which features are used, so I can improve the app where it matters. No names, no precise location, no advertising ID – your work times stay on your device. You can change this anytime in Settings.';
+
+  @override
+  String get analyticsYes => 'Sure';
+
+  @override
+  String get analyticsNo => 'No thanks';
+
+  @override
+  String get analyticsSetting => 'Share usage statistics';
+
+  @override
+  String get analyticsSettingHint =>
+      'Helps improve the app (Google Analytics).';
 }

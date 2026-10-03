@@ -1,18 +1,35 @@
 import 'dart:async';
 
 import 'package:feierabend_rechner/app.dart';
+import 'package:feierabend_rechner/features/analytics/analytics_providers.dart';
 import 'package:feierabend_rechner/features/home/state/home_providers.dart';
 import 'package:feierabend_rechner/features/pro/pro_providers.dart';
 import 'package:feierabend_rechner/features/reminders/reminder_providers.dart';
 import 'package:feierabend_rechner/features/widget/widget_providers.dart';
 import 'package:feierabend_rechner/domain/models/widget_snapshot.dart';
 import 'package:feierabend_rechner/services/ads_backend.dart';
+import 'package:feierabend_rechner/services/analytics_backend.dart';
 import 'package:feierabend_rechner/services/notification_backend.dart';
 import 'package:feierabend_rechner/services/purchase_backend.dart';
 import 'package:feierabend_rechner/services/widget_backend.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+
+/// Test-Statistik: merkt sich Ereignisse – wie die echte nur, wenn eingeschaltet.
+class FakeAnalyticsBackend implements AnalyticsBackend {
+  bool enabled = false;
+  final events = <String>[];
+
+  @override
+  bool get isSupported => true;
+  @override
+  Future<void> setEnabled(bool value) async => enabled = value;
+  @override
+  Future<void> log(String name, [Map<String, Object>? params]) async {
+    if (enabled) events.add(name);
+  }
+}
 
 /// Test-Store: steuerbare Ereignisse, kein echter Play-Store.
 class FakePurchaseBackend implements PurchaseBackend {
@@ -101,6 +118,7 @@ Future<Widget> buildApp({
   WidgetBackend? widgets,
   bool onboarding = false,
   bool tester = false,
+  AnalyticsBackend? analytics,
 }) async {
   SharedPreferences.setMockInitialValues({
     if (pro) 'pro_purchased': true,
@@ -118,6 +136,8 @@ Future<Widget> buildApp({
           .overrideWithValue(notifications ?? NoopNotificationBackend()),
       widgetBackendProvider.overrideWithValue(widgets ?? NoopWidgetBackend()),
       testerBuildProvider.overrideWithValue(tester),
+      analyticsBackendProvider
+          .overrideWithValue(analytics ?? NoopAnalyticsBackend()),
     ],
     child: FeierabendApp(locale: locale),
   );

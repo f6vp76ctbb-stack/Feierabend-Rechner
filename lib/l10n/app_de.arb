@@ -257,5 +257,11 @@
   "autoBreakOver6": "Mehr als 6 Std",
   "autoBreakOver9": "Mehr als 9 Std",
   "autoBreakNone": "keine Pause",
-  "autoBreakLegal": "Grundlage sind die Mindestpausen des deutschen Arbeitszeitgesetzes (§ 4 ArbZG). Die Pausenregel in deinem Betrieb kann abweichen."
+  "autoBreakLegal": "Grundlage sind die Mindestpausen des deutschen Arbeitszeitgesetzes (§ 4 ArbZG). Die Pausenregel in deinem Betrieb kann abweichen.",
+  "analyticsAskTitle": "Darf die App mitzählen?",
+  "analyticsAskBody": "Mit einer Nutzungsstatistik (Google Analytics) sehe ich, welche Funktionen genutzt werden, und kann die App gezielt verbessern. Ohne Namen, ohne genauen Standort, ohne Werbe-ID – deine Arbeitszeiten bleiben auf dem Gerät. Jederzeit in den Einstellungen änderbar.",
+  "analyticsYes": "Ja, gern",
+  "analyticsNo": "Nein danke",
+  "analyticsSetting": "Nutzungsstatistik teilen",
+  "analyticsSettingHint": "Hilft, die App zu verbessern (Google Analytics)."
 }

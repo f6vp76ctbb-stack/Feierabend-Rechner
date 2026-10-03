@@ -48,6 +48,9 @@ dependencies:
     sdk: flutter
   flutter_local_notifications: ^22.3.1
   timezone: ^0.11.1
+  # Nutzungsstatistik (Google Analytics 4 über Firebase) – nur nach Einwilligung
+  firebase_core: ^4.15.0
+  firebase_analytics: ^12.6.0
 
 dev_dependencies:
   flutter_test:

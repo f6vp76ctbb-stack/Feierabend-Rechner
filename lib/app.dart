@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'design/app_theme.dart';
+import 'features/analytics/analytics_consent.dart';
 import 'features/home/home_screen.dart';
 import 'features/designs/design_providers.dart';
 import 'features/home/state/home_providers.dart';
@@ -98,7 +99,10 @@ class _Root extends ConsumerWidget {
       duration: const Duration(milliseconds: 300),
       switchInCurve: Curves.easeOut,
       child: done
-          ? const HomeScreen(key: ValueKey('home'))
+          ? const AnalyticsConsentGate(
+              key: ValueKey('home'),
+              child: HomeScreen(),
+            )
           : const OnboardingScreen(key: ValueKey('onboarding')),
     );
   }

@@ -7,6 +7,7 @@ import '../../design/app_colors.dart';
 import '../../l10n/l10n_ext.dart';
 import '../../services/purchase_backend.dart';
 import 'pro_providers.dart';
+import '../analytics/analytics_providers.dart';
 
 /// Elegantes Kauf-Overlay: erscheint kontextuell, wenn eine Pro-Funktion
 /// angetippt wird (nie ungefragt beim Start).
@@ -14,6 +15,7 @@ class PaywallSheet extends ConsumerStatefulWidget {
   const PaywallSheet({super.key});
 
   static Future<void> show(BuildContext context) {
+    track(context, 'paywall_view');
     return showModalBottomSheet<void>(
       context: context,
       isScrollControlled: true,
@@ -33,6 +35,7 @@ class _PaywallSheetState extends ConsumerState<PaywallSheet> {
     final l = context.l10n;
     HapticFeedback.selectionClick();
     setState(() => _busy = true);
+    ref.read(analyticsProvider).log('purchase_start', {'item': 'pro'});
     final started = await ref.read(proControllerProvider.notifier).buy();
     if (!mounted) return;
     setState(() {
@@ -48,6 +51,7 @@ class _PaywallSheetState extends ConsumerState<PaywallSheet> {
     if (!mounted) return;
     setState(() => _busy = false);
     if (earned) {
+      ref.read(analyticsProvider).log('trial_reward');
       ref
           .read(proControllerProvider.notifier)
           .grantTrial(MonetizationConfig.rewardedTrial);

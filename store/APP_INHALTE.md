@@ -55,6 +55,7 @@ https://f6vp76ctbb-stack.github.io/Feierabend-Rechner/privacy.html
 
 > Die Arbeitszeiten, Profile und Überstunden verlassen das Gerät **nie** – sie gelten laut Google **nicht** als „erfasst".
 > Anzugeben ist nur, was das **Google Mobile Ads SDK (AdMob)** überträgt. Quelle: Googles offizielle Anleitung „Google Mobile Ads SDK – Play Data Disclosure".
+> **Google Analytics for Firebase** (nur nach Einwilligung, ohne Werbe-ID) überträgt dieselben Datentypen wie unten (App-Interaktionen, Diagnosedaten, Geräte-IDs, ungefährer Standort) zum Zweck **Analysen** – die Tabelle deckt das schon ab, es muss nichts zusätzlich angekreuzt werden.
 
 ### Datentypen (jeweils **erfasst ✔** und **geteilt ✔**, **nicht** vorübergehend, **erforderlich**)
 

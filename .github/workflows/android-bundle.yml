@@ -44,6 +44,12 @@ env:
   RELEASE_ADMOB_APP_ID: "ca-app-pub-8596176219181991~3672450377"
   RELEASE_ADMOB_BANNER_ANDROID: "ca-app-pub-8596176219181991/4877720835"
   RELEASE_ADMOB_REWARDED_ANDROID: "ca-app-pub-8596176219181991/6079121863"
+  # Firebase / Google Analytics 4 – Werte aus google-services.json (nicht geheim).
+  # Leer = Nutzungsstatistik ist im Build komplett aus.
+  FIREBASE_API_KEY: ""
+  FIREBASE_APP_ID: ""
+  FIREBASE_SENDER_ID: ""
+  FIREBASE_PROJECT_ID: ""
 
 jobs:
   bundle:
@@ -82,6 +88,10 @@ jobs:
           DEFINES=""
           [ -n "$BANNER" ] && DEFINES="$DEFINES --dart-define=ADMOB_BANNER_ANDROID=$BANNER"
           [ -n "$REWARDED" ] && DEFINES="$DEFINES --dart-define=ADMOB_REWARDED_ANDROID=$REWARDED"
+          if [ -n "$FIREBASE_APP_ID" ]; then
+            DEFINES="$DEFINES --dart-define=FIREBASE_API_KEY=$FIREBASE_API_KEY --dart-define=FIREBASE_APP_ID=$FIREBASE_APP_ID"
+            DEFINES="$DEFINES --dart-define=FIREBASE_SENDER_ID=$FIREBASE_SENDER_ID --dart-define=FIREBASE_PROJECT_ID=$FIREBASE_PROJECT_ID"
+          fi
           VC=$(( ${{ github.run_number }} * 2 ))
           mkdir out
           flutter build appbundle --release --build-number=$VC $DEFINES
