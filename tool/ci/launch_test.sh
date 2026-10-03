@@ -16,22 +16,25 @@ mkdir -p "$OUT"
 CRASHED=0
 SHOT=0
 
-adb wait-for-device
-adb shell getprop ro.build.version.release | tee "$OUT/android-version.txt"
-read -r W H <<<"$(adb shell wm size | grep -o '[0-9]*x[0-9]*' | tail -1 | tr 'x' ' ')"
+# adb mit Zeitlimit: ein hängender Aufruf darf den Test nicht stundenlang blockieren.
+adbt() { timeout "${ADB_TIMEOUT:-60}" adb "$@"; }
+
+ADB_TIMEOUT=300 adbt wait-for-device
+adbt shell getprop ro.build.version.release | tee "$OUT/android-version.txt"
+read -r W H <<<"$(adbt shell wm size | grep -o '[0-9]*x[0-9]*' | tail -1 | tr 'x' ' ')"
 echo "Bildschirm: ${W}x${H}" | tee -a "$OUT/status.txt"
 
 log() { echo "$*" | tee -a "$OUT/status.txt"; }
 
 shot() {
   SHOT=$((SHOT + 1))
-  adb exec-out screencap -p > "$OUT/$(printf '%02d' $SHOT)-$1.png"
+  adbt exec-out screencap -p > "$OUT/$(printf '%02d' $SHOT)-$1.png"
 }
 
 dump_ui() {
   for _ in 1 2 3; do
-    if adb shell uiautomator dump /sdcard/ui.xml 2>&1 | grep -q "dumped"; then
-      adb shell cat /sdcard/ui.xml > "$OUT/ui.xml" 2>/dev/null
+    if adbt shell uiautomator dump /sdcard/ui.xml 2>&1 | grep -q "dumped"; then
+      adbt shell cat /sdcard/ui.xml > "$OUT/ui.xml" 2>/dev/null
       return 0
     fi
     sleep 2
@@ -55,30 +58,30 @@ tap() {
     done
     if [ -n "$bounds" ]; then
       read -r x1 y1 x2 y2 <<<"$(echo "$bounds" | grep -o '[0-9]*' | tr '\n' ' ')"
-      adb shell input tap $(((x1 + x2) / 2)) $(((y1 + y2) / 2))
+      adbt shell input tap $(((x1 + x2) / 2)) $(((y1 + y2) / 2))
       log "tap '$1' bei $bounds"
       sleep 3
       return 0
     fi
-    [ "$tries" -lt 4 ] && adb shell input swipe $((W / 2)) $((H * 3 / 4)) $((W / 2)) $((H / 3)) 300 && sleep 1
+    [ "$tries" -lt 4 ] && adbt shell input swipe $((W / 2)) $((H * 3 / 4)) $((W / 2)) $((H / 3)) 300 && sleep 1
   done
   log "tap '$1': nicht gefunden"
   return 1
 }
 
-back() { adb shell input keyevent KEYCODE_BACK; sleep 2; }
+back() { adbt shell input keyevent KEYCODE_BACK; sleep 2; }
 
 # Ganz nach oben scrollen (Kopfzeile mit dem Einstellungs-Symbol sichtbar).
 scroll_top() {
   for _ in 1 2 3 4; do
-    adb shell input swipe $((W / 2)) $((H / 3)) $((W / 2)) $((H * 3 / 4)) 200
+    adbt shell input swipe $((W / 2)) $((H / 3)) $((W / 2)) $((H * 3 / 4)) 200
   done
   sleep 1
 }
 
 check() {
   local n="$1"
-  adb logcat -d -v threadtime > "$OUT/logcat-$n.txt"
+  adbt logcat -d -v threadtime > "$OUT/logcat-$n.txt"
   grep -E "AndroidRuntime|FATAL|F DEBUG|F libc|E flutter|I flutter|$PKG|Abort message|backtrace|#[0-9]{2} pc" \
     "$OUT/logcat-$n.txt" | tail -400 > "$OUT/relevant-$n.txt"
   echo "=================== API $API · $n · relevant logcat ==================="
@@ -91,17 +94,17 @@ check() {
   else
     log "OK API $API · $n: kein Absturz"
   fi
-  adb logcat -c
+  adbt logcat -c
 }
 
 start_app() {
-  adb shell am start -W -n "$PKG/.MainActivity" >/dev/null 2>&1
+  adbt shell am start -W -n "$PKG/.MainActivity" >/dev/null 2>&1
   sleep "${1:-20}"
 }
 
 # ---------------------------------------------------------------- free
-adb install -r "$FREE_APK" 2>&1 | tee "$OUT/install-free.txt"
-adb logcat -c
+timeout 300 adb install -r "$FREE_APK" 2>&1 | tee "$OUT/install-free.txt"
+adbt logcat -c
 start_app 25
 shot "free-einfuehrung"
 tap "Skip" "Überspringen"
@@ -129,16 +132,16 @@ shot "free-design-kauf"
 back; back; back
 check "2b-free-design-kauf"
 
-adb shell am force-stop "$PKG"
+adbt shell am force-stop "$PKG"
 start_app 20
 shot "free-zweiter-start"
 check "3-free-zweiter-start"
 
 # ---------------------------------------------------------------- tester
-adb shell am force-stop "$PKG"
-adb install -r "$TESTER_APK" 2>&1 | tee "$OUT/install-tester.txt"
-adb shell pm grant "$PKG" android.permission.POST_NOTIFICATIONS 2>/dev/null
-adb logcat -c
+adbt shell am force-stop "$PKG"
+timeout 300 adb install -r "$TESTER_APK" 2>&1 | tee "$OUT/install-tester.txt"
+adbt shell pm grant "$PKG" android.permission.POST_NOTIFICATIONS 2>/dev/null
+adbt logcat -c
 start_app 20
 shot "tester-home"
 tap 'Overtime account[^"]*' 'Überstunden-Konto[^"]*'
@@ -155,7 +158,7 @@ tap 'Notifications[^"]*' 'Benachrichtigungen[^"]*'
 tap '1 h' '1 Std'
 tap 'At halftime[^"]*' 'Zur Halbzeit[^"]*'
 shot "tester-erinnerungen"
-adb shell dumpsys alarm | grep -c "$PKG" | sed 's/^/Alarme der App: /' | tee -a "$OUT/status.txt"
+adbt shell dumpsys alarm | grep -c "$PKG" | sed 's/^/Alarme der App: /' | tee -a "$OUT/status.txt"
 check "4-tester-erinnerungen"
 
 tap 'Add widget' 'Widget hinzufügen'
@@ -172,10 +175,10 @@ shot "tester-design-gewaehlt"
 back; back; back
 check "6-tester-designs"
 
-adb shell input keyevent KEYCODE_HOME
+adbt shell input keyevent KEYCODE_HOME
 sleep 5
 shot "tester-startbildschirm-widget"
-adb shell am force-stop "$PKG"
+adbt shell am force-stop "$PKG"
 start_app 20
 shot "tester-neustart"
 check "7-tester-neustart"
