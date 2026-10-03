@@ -92,6 +92,9 @@ jobs:
             DEFINES="$DEFINES --dart-define=FIREBASE_API_KEY=$FIREBASE_API_KEY --dart-define=FIREBASE_APP_ID=$FIREBASE_APP_ID"
             DEFINES="$DEFINES --dart-define=FIREBASE_SENDER_ID=$FIREBASE_SENDER_ID --dart-define=FIREBASE_PROJECT_ID=$FIREBASE_PROJECT_ID"
           fi
+          # Nur ARM (≈ alle Handys; Intel-Chromebooks übersetzen ARM). Ohne x86_64 bleibt das
+          # signierte AAB unter 30 MiB (Grenze für die Übergabe aus der Claude-Sitzung).
+          DEFINES="$DEFINES --target-platform android-arm,android-arm64"
           VC=$(( ${{ github.run_number }} * 2 ))
           mkdir out
           flutter build appbundle --release --build-number=$VC $DEFINES
