@@ -1,0 +1,35 @@
+Bildschirm: 320x640
+tap 'Skip' bei bounds="[248,28][312,76]"
+OK API 30 · 1-free-start: kein Absturz
+tap 'Settings' bei bounds="[248,36][296,84]"
+tap 'Unlock Pro[^"]*' bei bounds="[24,127][296,183]"
+tap 'Try free for 24 h[^"]*' bei bounds="[24,520][296,568]"
+OK API 30 · 2-free-kaufseite-video: kein Absturz
+tap 'Sure' bei bounds="[166,560][296,616]"
+Statistik: zugestimmt
+tap 'Settings' bei bounds="[248,36][296,84]"
+tap 'Browse designs[^"]*' bei bounds="[24,438][296,510]"
+tap '[^"]*Forest[^"]*' bei bounds="[20,469][154,632]"
+OK API 30 · 2b-free-design-kauf: kein Absturz
+OK API 30 · 3-free-zweiter-start: kein Absturz
+tap 'Overtime account[^"]*' bei bounds="[24,630][296,640]"
+tap 'Book today[^"]*' bei bounds="[16,257][304,313]"
+OK API 30 · 4a-tester-ueberstunden: kein Absturz
+tap 'Settings' bei bounds="[248,36][296,84]"
+Tester-Hinweis sichtbar
+tap 'Notifications[^"]*' bei bounds="[24,226][296,326]"
+tap '1 h' bei bounds="[24,408][76,456]"
+tap 'At halftime[^"]*' bei bounds="[24,456][296,512]"
+Alarme der App: 12
+OK API 30 · 4-tester-erinnerungen: kein Absturz
+tap 'Add widget' bei bounds="[24,476][296,524]"
+tap 'Add to home screen' bei bounds="[155,433][292,481]"
+OK API 30 · 5-tester-widget: kein Absturz
+tap 'Browse designs[^"]*' bei bounds="[24,459][296,531]"
+tap '[^"]*Forest[^"]*' bei bounds="[20,468][154,631]"
+OK API 30 · 6-tester-designs: kein Absturz
+OK API 30 · 7-tester-neustart: kein Absturz
+Werbe-Logzeilen in der Tester-Version: 0
+Firebase-Logzeilen (Statistik): 35
+Firebase-Ereignis-Logzeilen: 0
+Ergebnis API 30: KEIN ABSTURZ

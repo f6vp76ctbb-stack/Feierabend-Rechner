@@ -1,0 +1,28 @@
+10-03 05:33:21.565  8388  8388 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-03 05:33:21.566  8388  8388 I AndroidRuntime: Using default boot image
+10-03 05:33:21.566  8388  8388 I AndroidRuntime: Leaving lock profiling enabled
+10-03 05:33:21.607  8388  8388 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-03 05:33:21.609  8388  8388 D AndroidRuntime: Shutting down VM
+10-03 05:33:24.095  8417  8417 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-03 05:33:24.096  8417  8417 I AndroidRuntime: Using default boot image
+10-03 05:33:24.096  8417  8417 I AndroidRuntime: Leaving lock profiling enabled
+10-03 05:33:24.143  8417  8417 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-03 05:33:24.146  8417  8417 D AndroidRuntime: Shutting down VM
+10-03 05:33:29.701   487  1639 I ActivityManager: Force stopping com.thinkube.feierabendrechner appid=10154 user=0: from pid 8441
+10-03 05:33:29.701   487  1639 I ActivityManager: Killing 7616:com.thinkube.feierabendrechner/u0a154 (adj 900): stop com.thinkube.feierabendrechner due to from pid 8441
+10-03 05:33:29.721   487  1628 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.thinkube.feierabendrechner/.MainActivity} from uid 2000
+10-03 05:33:29.729   487   525 I ActivityManager: Start proc 8454:com.thinkube.feierabendrechner/u0a154 for pre-top-activity {com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity}
+10-03 05:33:29.766  8454  8454 I TetheringManager: registerTetheringEventCallback:com.thinkube.feierabendrechner
+10-03 05:33:29.803  8454  8482 I FA      :   adb shell setprop debug.firebase.analytics.app com.thinkube.feierabendrechner
+10-03 05:33:29.824  8454  8454 W ierabendrechner: type=1400 audit(0.0:561): avc: denied { read } for name="max_map_count" dev="proc" ino=176360 scontext=u:r:untrusted_app:s0:c154,c256,c512,c768 tcontext=u:object_r:proc_max_map_count:s0 tclass=file permissive=0 app=com.thinkube.feierabendrechner
+10-03 05:33:29.843  8454  8496 E flutter : [ERROR:flutter/impeller/toolkit/egl/egl.cc(56)] EGL Error: Success (12288) in ../../../flutter/impeller/toolkit/egl/display.cc:161
+10-03 05:33:29.843  8454  8496 E flutter : [ERROR:flutter/impeller/toolkit/egl/egl.cc(56)] EGL Error: Success (12288) in ../../../flutter/impeller/toolkit/egl/display.cc:161
+10-03 05:33:29.850  8454  8496 I flutter : [IMPORTANT:flutter/shell/platform/android/android_context_gl_impeller.cc(104)] Using the Impeller rendering backend (OpenGLES).
+10-03 05:33:30.279  2461  5901 W Finsky  : [377] ges.d(21): com.thinkube.feierabendrechner: No account found.
+10-03 05:33:30.286  2461  5901 W Finsky  : [377] ges.d(21): com.thinkube.feierabendrechner: No account found.
+10-03 05:33:30.471  8454  8481 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 203400000 but found 201817023
+10-03 05:33:30.484  8454  8481 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 203400000 but found 201817023
+10-03 05:33:30.847   487   523 D ArtManagerInternalImpl: /data/misc/iorapd/com.thinkube.feierabendrechner/1/com.thinkube.feierabendrechner.MainActivity/compiled_traces/compiled_trace.pb doesn't exist
+10-03 05:33:30.848   487   523 I ActivityTaskManager: Displayed com.thinkube.feierabendrechner/.MainActivity: +1s123ms
+10-03 05:33:30.848   487   523 I ActivityTaskManager: Fully drawn com.thinkube.feierabendrechner/.MainActivity: +1s123ms
+10-03 05:33:35.211  8454  8521 D ProfileInstaller: Skipping profile installation for com.thinkube.feierabendrechner

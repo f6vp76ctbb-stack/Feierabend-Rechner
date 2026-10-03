@@ -1,0 +1,140 @@
+10-03 05:31:32.906   487  1642 I ActivityManager: Force stopping com.thinkube.feierabendrechner appid=10154 user=0: from pid 7468
+10-03 05:31:32.906   487  1642 I ActivityManager: Killing 7230:com.thinkube.feierabendrechner/u0a154 (adj 0): stop com.thinkube.feierabendrechner due to from pid 7468
+10-03 05:31:32.907   487  1642 W ActivityTaskManager: Force removing ActivityRecord{b6dea98 u0 com.thinkube.feierabendrechner/.MainActivity t11 f}}: app died, no saved state
+10-03 05:31:33.030   487  1274 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(NetworkRequest [ TRACK_DEFAULT id=57, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10154 AdministratorUids: [] RequestorUid: 10154 RequestorPackageName: com.thinkube.feierabendrechner] ], android.os.BinderProxy@5ec4223)
+10-03 05:31:33.030   487  1274 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(NetworkRequest [ LISTEN id=59, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&FOREGROUND Uid: 10154 AdministratorUids: [] RequestorUid: 10154 RequestorPackageName: com.thinkube.feierabendrechner] ], android.os.BinderProxy@bd10320)
+10-03 05:31:33.030   487  1274 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(NetworkRequest [ TRACK_DEFAULT id=58, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10154 AdministratorUids: [] RequestorUid: 10154 RequestorPackageName: com.thinkube.feierabendrechner] ], android.os.BinderProxy@1b244d9)
+10-03 05:31:33.030   487  1274 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(NetworkRequest [ TRACK_DEFAULT id=61, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10154 AdministratorUids: [] RequestorUid: 10154 RequestorPackageName: com.thinkube.feierabendrechner] ], android.os.BinderProxy@2b79e9e)
+10-03 05:31:33.030   487  1274 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(NetworkRequest [ TRACK_DEFAULT id=60, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10154 AdministratorUids: [] RequestorUid: 10154 RequestorPackageName: com.thinkube.feierabendrechner] ], android.os.BinderProxy@6b6dd7f)
+10-03 05:31:33.032   487   628 D ConnectivityService: releasing NetworkRequest [ TRACK_DEFAULT id=57, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10154 AdministratorUids: [] RequestorUid: 10154 RequestorPackageName: com.thinkube.feierabendrechner] ] (release request)
+10-03 05:31:33.039   487   628 D ConnectivityService: releasing NetworkRequest [ TRACK_DEFAULT id=58, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10154 AdministratorUids: [] RequestorUid: 10154 RequestorPackageName: com.thinkube.feierabendrechner] ] (release request)
+10-03 05:31:33.039   487   628 D ConnectivityService: releasing NetworkRequest [ TRACK_DEFAULT id=61, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10154 AdministratorUids: [] RequestorUid: 10154 RequestorPackageName: com.thinkube.feierabendrechner] ] (release request)
+10-03 05:31:33.039   487   628 D ConnectivityService: releasing NetworkRequest [ TRACK_DEFAULT id=60, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10154 AdministratorUids: [] RequestorUid: 10154 RequestorPackageName: com.thinkube.feierabendrechner] ] (release request)
+10-03 05:31:33.315   487   524 I ActivityManager: Force stopping com.thinkube.feierabendrechner appid=10154 user=-1: installPackageLI
+10-03 05:31:33.316   487   541 I PackageManager: Update package com.thinkube.feierabendrechner code path from /data/app/~~0zBizlm5hCduA8qbRCt2_g==/com.thinkube.feierabendrechner-IH5CxRQxRZL4DmcyLV1cUg== to /data/app/~~vag2Qz3b4kf45Z8qYE9G1g==/com.thinkube.feierabendrechner-xQvkhGFUfJo1ZnIT9tzJNw==; Retain data and using new
+10-03 05:31:33.316   487   541 I PackageManager: Update package com.thinkube.feierabendrechner resource path from /data/app/~~0zBizlm5hCduA8qbRCt2_g==/com.thinkube.feierabendrechner-IH5CxRQxRZL4DmcyLV1cUg== to /data/app/~~vag2Qz3b4kf45Z8qYE9G1g==/com.thinkube.feierabendrechner-xQvkhGFUfJo1ZnIT9tzJNw==; Retain data and using new
+10-03 05:31:33.338   487   541 I PackageDexOptimizer: Running dexopt (dexoptNeeded=1) on: /data/app/~~vag2Qz3b4kf45Z8qYE9G1g==/com.thinkube.feierabendrechner-xQvkhGFUfJo1ZnIT9tzJNw==/base.apk pkg=com.thinkube.feierabendrechner isa=x86_64 dexoptFlags=boot_complete,profile_guided,public,enable_hidden_api_checks targetFilter=speed-profile oatDir=/data/app/~~vag2Qz3b4kf45Z8qYE9G1g==/com.thinkube.feierabendrechner-xQvkhGFUfJo1ZnIT9tzJNw==/oat classLoaderContext=PCL[]{PCL[/system_ext/framework/androidx.window.sidecar.jar]}
+10-03 05:31:33.338   414   559 V installd: DexInv: --- BEGIN '/data/app/~~vag2Qz3b4kf45Z8qYE9G1g==/com.thinkube.feierabendrechner-xQvkhGFUfJo1ZnIT9tzJNw==/base.apk' ---
+10-03 05:31:33.361  7478  7478 I dex2oat32: /apex/com.android.art/bin/dex2oat32 --input-vdex-fd=-1 --output-vdex-fd=9 --updatable-bcp-packages-file=/system/etc/updatable-bcp-packages.txt --resolve-startup-const-strings=true --max-image-block-size=524288 --compiler-filter=speed-profile --classpath-dir=/data/app/~~vag2Qz3b4kf45Z8qYE9G1g==/com.thinkube.feierabendrechner-xQvkhGFUfJo1ZnIT9tzJNw== --class-loader-context=PCL[]{PCL[/system_ext/framework/androidx.window.sidecar.jar]} --generate-mini-debug-info --compact-dex-level=none --compilation-reason=install
+10-03 05:31:33.816   414   559 V installd: DexInv: --- END '/data/app/~~vag2Qz3b4kf45Z8qYE9G1g==/com.thinkube.feierabendrechner-xQvkhGFUfJo1ZnIT9tzJNw==/base.apk' (success) ---
+10-03 05:31:33.826   487   541 I ActivityManager: Force stopping com.thinkube.feierabendrechner appid=10154 user=0: pkg removed
+10-03 05:31:33.842  1479  1479 I GsaVoiceInteractionSrv: O received Intent { act=android.intent.action.PACKAGE_REMOVED dat=package:com.thinkube.feierabendrechner flg=0x4000010 (has extras) }
+10-03 05:31:33.843  1479  1479 I GsaVoiceInteractionSrv: O received Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.thinkube.feierabendrechner flg=0x4000010 (has extras) }
+10-03 05:31:33.847  1686  1686 I MediaProvider: Invalidating LocalCallingIdentity cache for package com.thinkube.feierabendrechner. Reason: package android.intent.action.PACKAGE_REMOVED
+10-03 05:31:33.847  1686  1686 I MediaProvider: Invalidating LocalCallingIdentity cache for package com.thinkube.feierabendrechner. Reason: package android.intent.action.PACKAGE_ADDED
+10-03 05:31:33.848   487   524 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REMOVED dat=package:com.thinkube.feierabendrechner flg=0x4000010 (has extras) } to com.android.vending/com.google.android.finsky.packagemanager.impl.PackageMonitorReceiverImpl$RegisteredReceiver
+10-03 05:31:33.848   487   524 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REMOVED dat=package:com.thinkube.feierabendrechner flg=0x4000010 (has extras) } to com.android.vending/com.google.android.finsky.instantapps.appmanagement.InstantAppRemoveMonitor
+10-03 05:31:33.848   487   524 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REMOVED dat=package:com.thinkube.feierabendrechner flg=0x4000010 (has extras) } to com.google.android.gms/.games.chimera.GamesSystemBroadcastReceiverProxy
+10-03 05:31:33.848   487   524 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REMOVED dat=package:com.thinkube.feierabendrechner flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+10-03 05:31:33.848   487   524 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REMOVED dat=package:com.thinkube.feierabendrechner flg=0x4000010 (has extras) } to com.google.android.googlequicksearchbox/com.google.android.apps.gsa.googlequicksearchbox.GelStubAppWatcher
+10-03 05:31:33.848   487   524 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.thinkube.feierabendrechner flg=0x4000010 (has extras) } to com.google.android.packageinstaller/com.android.packageinstaller.PackageInstalledReceiver
+10-03 05:31:33.848   487   524 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.thinkube.feierabendrechner flg=0x4000010 (has extras) } to com.android.vending/com.google.android.finsky.packagemanager.impl.PackageMonitorReceiverImpl$RegisteredReceiver
+10-03 05:31:33.848   487   524 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.thinkube.feierabendrechner flg=0x4000010 (has extras) } to com.google.android.gms/.games.chimera.GamesSystemBroadcastReceiverProxy
+10-03 05:31:33.849   487   524 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.thinkube.feierabendrechner flg=0x4000010 (has extras) } to com.google.android.gms/.gass.chimera.PackageChangeBroadcastReceiver
+10-03 05:31:33.849   487   524 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.thinkube.feierabendrechner flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+10-03 05:31:33.849   487   524 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.thinkube.feierabendrechner flg=0x4000010 (has extras) } to com.google.android.googlequicksearchbox/com.google.android.apps.gsa.googlequicksearchbox.GelStubAppWatcher
+10-03 05:31:33.849   487   524 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.thinkube.feierabendrechner flg=0x4000010 (has extras) } to com.google.android.ims/.receivers.RcsAutoStartReceiver
+10-03 05:31:33.853  2461  2461 I Finsky  : [2] ste.d(9): Invalidating cached PackageState for com.thinkube.feierabendrechner
+10-03 05:31:33.873  1479  1479 I GsaVoiceInteractionSrv: O received Intent { act=android.intent.action.PACKAGE_REPLACED dat=package:com.thinkube.feierabendrechner flg=0x4000010 (has extras) }
+10-03 05:31:33.875   672   672 D AvrcpMediaPlayerList: Name of package changed: com.thinkube.feierabendrechner
+10-03 05:31:33.909  2461  2461 I Finsky  : [2] nnj.b(5): Installer: package com.thinkube.feierabendrechner was removed. replacing: true
+10-03 05:31:33.923  2461  2461 I Finsky  : [2] nnj.a(217): Installer: Notifying status update. package=com.thinkube.feierabendrechner, status=UNINSTALLED
+10-03 05:31:33.923  2461  2461 I Finsky  : [2] ste.d(9): Invalidating cached PackageState for com.thinkube.feierabendrechner
+10-03 05:31:33.941  2461  2461 I Finsky  : [2] ste.d(9): Invalidating cached PackageState for com.thinkube.feierabendrechner
+10-03 05:31:33.949  2461  2461 I Finsky  : [2] ste.d(9): Invalidating cached PackageState for com.thinkube.feierabendrechner
+10-03 05:31:33.951   487  1639 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REPLACED dat=package:com.thinkube.feierabendrechner flg=0x4000010 (has extras) } to com.google.android.gms/.gass.chimera.PackageChangeBroadcastReceiver
+10-03 05:31:33.952   487   524 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REPLACED dat=package:com.thinkube.feierabendrechner flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+10-03 05:31:33.952   487   524 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REPLACED dat=package:com.thinkube.feierabendrechner flg=0x4000010 (has extras) } to com.google.android.googlequicksearchbox/com.google.android.apps.gsa.googlequicksearchbox.GelStubAppWatcher
+10-03 05:31:33.952   487   524 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REPLACED dat=package:com.thinkube.feierabendrechner flg=0x4000010 (has extras) } to com.google.android.ims/.receivers.RcsAutoStartReceiver
+10-03 05:31:33.958  2461  7497 I Finsky  : [385] eqp.a(3): Cancelled 0 ongoing asset module downloads for package com.thinkube.feierabendrechner due to a concurrent app update.
+10-03 05:31:33.958  2461  7497 I Finsky  : [385] eqm.a(15): Asset module broadcast after update successful for package com.thinkube.feierabendrechner. 0 sessions broadcast.
+10-03 05:31:33.965  2461  3165 I Finsky  : [265] oai.b(41): IQ: Notifying installation update. package=com.thinkube.feierabendrechner, status=UNINSTALLED
+10-03 05:31:33.992  1377  7541 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.thinkube.feierabendrechner flg=0x4000010 cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-03 05:31:34.004  1377  7541 I ChromeSync: [Persistence,AffiliationManager] One of affiliation or grouping data for android://VFC_w9VXHT8HQ9cBpudVXeOaCZahOU7oS9Dxn50B9vkP_Yau37gLuJN2EsgOcLoFB3IFteNZO_5iOr5FLol7DQ==@com.thinkube.feierabendrechner/ was not found. Marking affiliation data as stale...
+10-03 05:31:34.030  1377  7537 W SQLiteLog: (28) double-quoted string literal: "com.thinkube.feierabendrechner"
+10-03 05:31:34.200   487  1639 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.thinkube.feierabendrechner/.MainActivity} from uid 2000
+10-03 05:31:34.245   487   525 I ActivityManager: Start proc 7616:com.thinkube.feierabendrechner/u0a154 for pre-top-activity {com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity}
+10-03 05:31:34.328  7616  7616 I TetheringManager: registerTetheringEventCallback:com.thinkube.feierabendrechner
+10-03 05:31:34.384  7616  7616 W ierabendrechner: type=1400 audit(0.0:398): avc: denied { read } for name="max_map_count" dev="proc" ino=162086 scontext=u:r:untrusted_app:s0:c154,c256,c512,c768 tcontext=u:object_r:proc_max_map_count:s0 tclass=file permissive=0 app=com.thinkube.feierabendrechner
+10-03 05:31:34.408  7616  7651 E flutter : [ERROR:flutter/impeller/toolkit/egl/egl.cc(56)] EGL Error: Success (12288) in ../../../flutter/impeller/toolkit/egl/display.cc:161
+10-03 05:31:34.408  7616  7651 E flutter : [ERROR:flutter/impeller/toolkit/egl/egl.cc(56)] EGL Error: Success (12288) in ../../../flutter/impeller/toolkit/egl/display.cc:161
+10-03 05:31:34.415  7616  7651 I flutter : [IMPORTANT:flutter/shell/platform/android/android_context_gl_impeller.cc(104)] Using the Impeller rendering backend (OpenGLES).
+10-03 05:31:34.468  7616  7658 I FA      :   adb shell setprop debug.firebase.analytics.app com.thinkube.feierabendrechner
+10-03 05:31:34.963  2461  2497 W Finsky  : [209] ges.d(21): com.thinkube.feierabendrechner: No account found.
+10-03 05:31:34.966  2461  2497 W Finsky  : [209] ges.d(21): com.thinkube.feierabendrechner: No account found.
+10-03 05:31:35.120  2461  2497 W Finsky  : [209] ges.d(21): com.thinkube.feierabendrechner: No account found.
+10-03 05:31:35.139  2461  5901 W Finsky  : [377] ges.d(21): com.thinkube.feierabendrechner: No account found.
+10-03 05:31:35.146  2461  5901 W Finsky  : [377] ges.d(21): com.thinkube.feierabendrechner: No account found.
+10-03 05:31:35.146  2461  2497 W Finsky  : [209] ges.d(21): com.thinkube.feierabendrechner: No account found.
+10-03 05:31:35.148  2461  2497 W Finsky  : [209] ges.d(21): com.thinkube.feierabendrechner: No account found.
+10-03 05:31:35.175  7616  7653 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 203400000 but found 201817023
+10-03 05:31:35.175  7616  7653 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 203400000 but found 201817023
+10-03 05:31:35.585   487   523 D ArtManagerInternalImpl: /data/misc/iorapd/com.thinkube.feierabendrechner/1/com.thinkube.feierabendrechner.MainActivity/compiled_traces/compiled_trace.pb doesn't exist
+10-03 05:31:35.585   487   523 I ActivityTaskManager: Displayed com.thinkube.feierabendrechner/.MainActivity: +1s381ms
+10-03 05:31:35.585   487   523 I ActivityTaskManager: Fully drawn com.thinkube.feierabendrechner/.MainActivity: +1s381ms
+10-03 05:31:40.156  7616  7686 D ProfileInstaller: Installing profile for com.thinkube.feierabendrechner
+10-03 05:31:55.694  7701  7701 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-03 05:31:55.695  7701  7701 I AndroidRuntime: Using default boot image
+10-03 05:31:55.695  7701  7701 I AndroidRuntime: Leaving lock profiling enabled
+10-03 05:31:55.736  7701  7701 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-03 05:31:56.767  7701  7701 D AndroidRuntime: Shutting down VM
+10-03 05:31:57.242  7720  7720 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-03 05:31:57.243  7720  7720 I AndroidRuntime: Using default boot image
+10-03 05:31:57.243  7720  7720 I AndroidRuntime: Leaving lock profiling enabled
+10-03 05:31:57.289  7720  7720 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-03 05:31:57.590  7720  7720 D AndroidRuntime: Shutting down VM
+10-03 05:31:59.045  7733  7733 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-03 05:31:59.046  7733  7733 I AndroidRuntime: Using default boot image
+10-03 05:31:59.046  7733  7733 I AndroidRuntime: Leaving lock profiling enabled
+10-03 05:31:59.087  7733  7733 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-03 05:32:00.111  7733  7733 D AndroidRuntime: Shutting down VM
+10-03 05:32:00.571  7751  7751 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-03 05:32:00.572  7751  7751 I AndroidRuntime: Using default boot image
+10-03 05:32:00.572  7751  7751 I AndroidRuntime: Leaving lock profiling enabled
+10-03 05:32:00.613  7751  7751 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-03 05:32:00.913  7751  7751 D AndroidRuntime: Shutting down VM
+10-03 05:32:02.371  7764  7764 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-03 05:32:02.373  7764  7764 I AndroidRuntime: Using default boot image
+10-03 05:32:02.373  7764  7764 I AndroidRuntime: Leaving lock profiling enabled
+10-03 05:32:02.419  7764  7764 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-03 05:32:03.449  7764  7764 D AndroidRuntime: Shutting down VM
+10-03 05:32:03.922  7782  7782 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-03 05:32:03.935  7782  7782 I AndroidRuntime: Using default boot image
+10-03 05:32:03.936  7782  7782 I AndroidRuntime: Leaving lock profiling enabled
+10-03 05:32:04.007  7782  7782 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-03 05:32:04.013  7782  7782 D AndroidRuntime: Shutting down VM
+10-03 05:32:07.470  7799  7799 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-03 05:32:07.472  7799  7799 I AndroidRuntime: Using default boot image
+10-03 05:32:07.472  7799  7799 I AndroidRuntime: Leaving lock profiling enabled
+10-03 05:32:07.514  7799  7799 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-03 05:32:08.547  7799  7799 D AndroidRuntime: Shutting down VM
+10-03 05:32:09.007  7818  7818 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-03 05:32:09.008  7818  7818 I AndroidRuntime: Using default boot image
+10-03 05:32:09.008  7818  7818 I AndroidRuntime: Leaving lock profiling enabled
+10-03 05:32:09.050  7818  7818 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-03 05:32:09.055  7818  7818 D AndroidRuntime: Shutting down VM
+10-03 05:32:12.568  7837  7837 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-03 05:32:12.569  7837  7837 I AndroidRuntime: Using default boot image
+10-03 05:32:12.569  7837  7837 I AndroidRuntime: Leaving lock profiling enabled
+10-03 05:32:12.611  7837  7837 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-03 05:32:12.614  7837  7837 D AndroidRuntime: Shutting down VM
+10-03 05:32:15.067  7850  7850 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-03 05:32:15.068  7850  7850 I AndroidRuntime: Using default boot image
+10-03 05:32:15.068  7850  7850 I AndroidRuntime: Leaving lock profiling enabled
+10-03 05:32:15.110  7850  7850 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-03 05:32:15.311  7850  7850 D AndroidRuntime: Shutting down VM
+10-03 05:32:15.757  7864  7864 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-03 05:32:15.758  7864  7864 I AndroidRuntime: Using default boot image
+10-03 05:32:15.758  7864  7864 I AndroidRuntime: Leaving lock profiling enabled
+10-03 05:32:15.799  7864  7864 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-03 05:32:15.999  7864  7864 D AndroidRuntime: Shutting down VM
+10-03 05:32:16.453  7877  7877 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-03 05:32:16.455  7877  7877 I AndroidRuntime: Using default boot image
+10-03 05:32:16.455  7877  7877 I AndroidRuntime: Leaving lock profiling enabled
+10-03 05:32:16.501  7877  7877 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-03 05:32:16.702  7877  7877 D AndroidRuntime: Shutting down VM
+10-03 05:32:17.178  7890  7890 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-03 05:32:17.197  7890  7890 I AndroidRuntime: Using default boot image
+10-03 05:32:17.197  7890  7890 I AndroidRuntime: Leaving lock profiling enabled
+10-03 05:32:17.255  7890  7890 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-03 05:32:17.455  7890  7890 D AndroidRuntime: Shutting down VM
