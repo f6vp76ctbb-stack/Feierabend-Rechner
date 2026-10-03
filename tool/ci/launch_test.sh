@@ -66,6 +66,14 @@ tap() {
 
 back() { adb shell input keyevent KEYCODE_BACK; sleep 2; }
 
+# Ganz nach oben scrollen (Kopfzeile mit dem Einstellungs-Symbol sichtbar).
+scroll_top() {
+  for _ in 1 2 3 4; do
+    adb shell input swipe $((W / 2)) $((H / 3)) $((W / 2)) $((H * 3 / 4)) 200
+  done
+  sleep 1
+}
+
 check() {
   local n="$1"
   adb logcat -d -v threadtime > "$OUT/logcat-$n.txt"
@@ -121,8 +129,12 @@ adb shell pm grant "$PKG" android.permission.POST_NOTIFICATIONS 2>/dev/null
 adb logcat -c
 start_app 20
 shot "pro-home"
+tap 'Overtime account[^"]*' 'Überstunden-Konto[^"]*'
 tap 'Book today[^"]*' 'Heute buchen[^"]*'
-shot "pro-gebucht"
+shot "pro-ueberstunden-gebucht"
+back
+scroll_top
+check "4a-pro-ueberstunden"
 
 tap "Settings" "Einstellungen"
 tap 'Notifications[^"]*' 'Benachrichtigungen[^"]*'
