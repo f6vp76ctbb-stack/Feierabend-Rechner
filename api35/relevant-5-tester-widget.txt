@@ -1,0 +1,26 @@
+10-03 12:32:40.432  6207  6207 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-03 12:32:40.435  6207  6207 I AndroidRuntime: Using default boot image
+10-03 12:32:40.435  6207  6207 I AndroidRuntime: Leaving lock profiling enabled
+10-03 12:32:40.508  6207  6207 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-03 12:32:41.534  6207  6207 D AndroidRuntime: Shutting down VM
+10-03 12:32:43.763  6228  6228 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-03 12:32:43.765  6228  6228 I AndroidRuntime: Using default boot image
+10-03 12:32:43.765  6228  6228 I AndroidRuntime: Leaving lock profiling enabled
+10-03 12:32:43.839  6228  6228 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-03 12:32:44.392  1394  1404 W gle.android.gms: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~m-_yOL1oHAutWbIg2ha0Ng==/com.thinkube.feierabendrechner-28MoQBF-ZVxsj7sMmJHUXQ==/base.apk' with 1 weak references
+10-03 12:32:44.878  6228  6228 D AndroidRuntime: Shutting down VM
+10-03 12:32:45.801  1162  1162 D b/267448330: provider: ComponentInfo{com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.FeierabendWidgetProvider}, paddedSizes: [112.0x150.0, 112.0x150.0, 196.0x104.0, 196.0x104.0], getMinMaxSizes: Rect(112, 104 - 196, 150)
+10-03 12:32:45.816  1162  1162 D nativeloader: Configuring clns-8 for other apk . target_sdk_version=36, uses_libraries=, library_path=/data/app/~~m-_yOL1oHAutWbIg2ha0Ng==/com.thinkube.feierabendrechner-28MoQBF-ZVxsj7sMmJHUXQ==/lib/x86_64:/data/app/~~m-_yOL1oHAutWbIg2ha0Ng==/com.thinkube.feierabendrechner-28MoQBF-ZVxsj7sMmJHUXQ==/base.apk!/lib/x86_64, permitted_path=/data:/mnt/expand
+10-03 12:32:48.913  6256  6256 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-03 12:32:48.916  6256  6256 I AndroidRuntime: Using default boot image
+10-03 12:32:48.916  6256  6256 I AndroidRuntime: Leaving lock profiling enabled
+10-03 12:32:48.991  6256  6256 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-03 12:32:50.008  6256  6256 D AndroidRuntime: Shutting down VM
+10-03 12:32:50.876   543  2444 I AppWidgetServiceImpl: Bound widget 2 to provider ProviderId{user:0, app:10209, cmp:ComponentInfo{com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.FeierabendWidgetProvider}}
+10-03 12:32:50.878  1162  1185 D ItemInstallQueue: Adding PendingInstallShortcutInfo to queue. Attached info: ItemInfo(id=-1 type=WIDGET container=# com.android.launcher3.logger.LauncherAtom$ContainerInfo@7bc6f targetComponent=ComponentInfo{com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.FeierabendWidgetProvider} screen=-1 cell(-1,-1) span(2,2) minSpan(2,2) rank=0 user=UserHandle{0} title=null providerName=ComponentInfo{com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.FeierabendWidgetProvider} appWidgetId=2)
+10-03 12:32:50.884   543   833 D AppWidgetServiceImpl: Trying to notify widget update for package com.thinkube.feierabendrechner with widget id: 2
+10-03 12:32:51.064  1162  1162 I TopTaskTracker: onTaskMovedToFront: (moved taskInfo to front) taskId=11, baseIntent=Intent { flg=0x10000000 cmp=com.thinkube.feierabendrechner/.MainActivity }
+10-03 12:32:51.080   543   660 I ImeTracker: com.thinkube.feierabendrechner:88937f26: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false
+10-03 12:32:51.080   543   660 I ImeTracker: com.thinkube.feierabendrechner:88937f26: onCancelled at PHASE_SERVER_SHOULD_HIDE
+10-03 12:32:51.083  1335  1335 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1986 onStartInput(EditorInfo{EditorInfo{packageName=com.thinkube.feierabendrechner, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+10-03 12:32:51.083   543  2444 W PackageConfigPersister: App-specific configuration not found for packageName: com.thinkube.feierabendrechner and userId: 0

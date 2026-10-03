@@ -1,0 +1,61 @@
+10-03 12:29:31.798  4670  4670 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-03 12:29:31.813  4670  4670 I AndroidRuntime: Using default boot image
+10-03 12:29:31.813  4670  4670 I AndroidRuntime: Leaving lock profiling enabled
+10-03 12:29:32.220  4670  4670 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-03 12:29:33.431  4670  4689 E AndroidRuntime: FATAL EXCEPTION: UiAutomation
+10-03 12:29:33.431  4670  4689 E AndroidRuntime: PID: 4670
+10-03 12:29:33.431  4670  4689 E AndroidRuntime: java.lang.RuntimeException: Bad file descriptor
+10-03 12:29:33.431  4670  4689 E AndroidRuntime: 	at android.os.BinderProxy.transactNative(Native Method)
+10-03 12:29:33.431  4670  4689 E AndroidRuntime: 	at android.os.BinderProxy.transact(BinderProxy.java:586)
+10-03 12:29:33.431  4670  4689 E AndroidRuntime: 	at android.accessibilityservice.IAccessibilityServiceConnection$Stub$Proxy.findAccessibilityNodeInfoByAccessibilityId(IAccessibilityServiceConnection.java:1229)
+10-03 12:29:33.431  4670  4689 E AndroidRuntime: 	at android.view.accessibility.AccessibilityInteractionClient.findAccessibilityNodeInfoByAccessibilityId(AccessibilityInteractionClient.java:671)
+10-03 12:29:33.431  4670  4689 E AndroidRuntime: 	at android.view.accessibility.AccessibilityNodeInfo.refresh(AccessibilityNodeInfo.java:1202)
+10-03 12:29:33.431  4670  4689 E AndroidRuntime: 	at android.view.accessibility.AccessibilityCache$AccessibilityNodeRefresher.refreshNode(AccessibilityCache.java:914)
+10-03 12:29:33.431  4670  4689 E AndroidRuntime: 	at android.view.accessibility.AccessibilityCache.onAccessibilityEvent(AccessibilityCache.java:296)
+10-03 12:29:33.431  4670  4689 E AndroidRuntime: 	at android.view.accessibility.AccessibilityInteractionClient.onAccessibilityEvent(AccessibilityInteractionClient.java:1173)
+10-03 12:29:33.431  4670  4689 E AndroidRuntime: 	at android.accessibilityservice.AccessibilityService$IAccessibilityServiceClientWrapper.lambda$onAccessibilityEvent$2(AccessibilityService.java:2980)
+10-03 12:29:33.431  4670  4689 E AndroidRuntime: 	at android.accessibilityservice.AccessibilityService$IAccessibilityServiceClientWrapper.$r8$lambda$BK9U4O9uTvtOrxe1k6nU74w4nWg(Unknown Source:0)
+10-03 12:29:33.431  4670  4689 E AndroidRuntime: 	at android.accessibilityservice.AccessibilityService$IAccessibilityServiceClientWrapper$$ExternalSyntheticLambda8.run(D8$$SyntheticClass:0)
+10-03 12:29:33.431  4670  4689 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:959)
+10-03 12:29:33.431  4670  4689 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+10-03 12:29:33.431  4670  4689 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:232)
+10-03 12:29:33.431  4670  4689 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:317)
+10-03 12:29:33.431  4670  4689 E AndroidRuntime: 	at android.os.HandlerThread.run(HandlerThread.java:85)
+10-03 12:29:33.431  4670  4689 E AndroidRuntime: Error reporting crash
+10-03 12:29:33.431  4670  4689 E AndroidRuntime: java.lang.RuntimeException: Bad file descriptor
+10-03 12:29:33.431  4670  4689 E AndroidRuntime: 	at android.os.BinderProxy.transactNative(Native Method)
+10-03 12:29:33.431  4670  4689 E AndroidRuntime: 	at android.os.BinderProxy.transact(BinderProxy.java:586)
+10-03 12:29:33.431  4670  4689 E AndroidRuntime: 	at android.os.IServiceManager$Stub$Proxy.checkService(IServiceManager.java:441)
+10-03 12:29:33.431  4670  4689 E AndroidRuntime: 	at android.os.ServiceManagerProxy.getService(ServiceManagerNative.java:63)
+10-03 12:29:33.431  4670  4689 E AndroidRuntime: 	at android.os.ServiceManager.rawGetService(ServiceManager.java:428)
+10-03 12:29:33.431  4670  4689 E AndroidRuntime: 	at android.os.ServiceManager.getService(ServiceManager.java:175)
+10-03 12:29:33.431  4670  4689 E AndroidRuntime: 	at android.app.ActivityManager$3.create(ActivityManager.java:5692)
+10-03 12:29:33.431  4670  4689 E AndroidRuntime: 	at android.app.ActivityManager$3.create(ActivityManager.java:5689)
+10-03 12:29:33.431  4670  4689 E AndroidRuntime: 	at android.util.Singleton.get(Singleton.java:44)
+10-03 12:29:33.431  4670  4689 E AndroidRuntime: 	at android.app.ActivityManager.getService(ActivityManager.java:5680)
+10-03 12:29:33.431  4670  4689 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$KillApplicationHandler.uncaughtException(RuntimeInit.java:170)
+10-03 12:29:33.431  4670  4689 E AndroidRuntime: 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:1071)
+10-03 12:29:33.431  4670  4689 E AndroidRuntime: 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:1066)
+10-03 12:29:33.431  4670  4689 E AndroidRuntime: 	at java.lang.Thread.dispatchUncaughtException(Thread.java:2306)
+10-03 12:29:36.933  4792  4792 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-03 12:29:36.960  4792  4792 I AndroidRuntime: Using default boot image
+10-03 12:29:36.961  4792  4792 I AndroidRuntime: Leaving lock profiling enabled
+10-03 12:29:37.267  4792  4792 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-03 12:29:38.361  4792  4792 D AndroidRuntime: Shutting down VM
+10-03 12:29:42.472  1394  1404 W gle.android.gms: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~IfrKU4PA3B_Px7l80XkCOg==/com.thinkube.feierabendrechner-gdQCB_HeHWtDtK0nJOJ81g==/base.apk' with 1 weak references
+10-03 12:29:42.878  4877  4877 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-03 12:29:42.884  4877  4877 I AndroidRuntime: Using default boot image
+10-03 12:29:42.884  4877  4877 I AndroidRuntime: Leaving lock profiling enabled
+10-03 12:29:43.059  4877  4877 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-03 12:29:44.109  4877  4877 D AndroidRuntime: Shutting down VM
+10-03 12:29:46.375  4948  4948 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-03 12:29:46.378  4948  4948 I AndroidRuntime: Using default boot image
+10-03 12:29:46.378  4948  4948 I AndroidRuntime: Leaving lock profiling enabled
+10-03 12:29:46.453  4948  4948 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-03 12:29:47.487  4948  4948 D AndroidRuntime: Shutting down VM
+10-03 12:29:48.460  2906  4976 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 254730000 but found 242335041
+10-03 12:30:10.547   884   921 V WindowManagerShell: Transition requested (#23): android.os.BinderProxy@c5b0771 TransitionRequestInfo { type = CLOSE, triggerTask = TaskInfo{userId=0 taskId=8 displayId=0 isRunning=false baseIntent=Intent { flg=0x10000000 cmp=com.thinkube.feierabendrechner/.MainActivity } baseActivity=null topActivity=null origActivity=null realActivity=ComponentInfo{com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity} numActivities=0 lastActiveTime=49916 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@16cc956} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=null launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= falseisLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false topActivityEligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatControlState=hidden freeformCameraCompatMode=inactive}}}, pipTask = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 23 }
+10-03 12:30:10.716   543   565 V WindowManager: Sent Transition (#23) createdAt=10-03 12:30:10.546 via request=TransitionRequestInfo { type = CLOSE, triggerTask = TaskInfo{userId=0 taskId=8 displayId=0 isRunning=false baseIntent=Intent { flg=0x10000000 cmp=com.thinkube.feierabendrechner/.MainActivity } baseActivity=null topActivity=null origActivity=null realActivity=ComponentInfo{com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity} numActivities=0 lastActiveTime=49916 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{7e0e8c8 Task{25cdb06 #8 type=standard I=com.thinkube.feierabendrechner/.MainActivity}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=null launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= falseisLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false topActivityEligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatControlState=hidden freeformCameraCompatMode=inactive}}}, pipTask = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 23 }
+10-03 12:30:10.717   543   565 V WindowManager:         {WCT{RemoteToken{7e0e8c8 Task{25cdb06 #8 type=standard I=com.thinkube.feierabendrechner/.MainActivity}}} m=CLOSE f=NONE leash=Surface(name=Task=8)/@0x9853af3 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0 taskParent=-1},
+10-03 12:30:11.240   543  1573 D CoreBackPreview: Window{37d3766 u0 com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity}: Setting back callback null
+10-03 12:30:11.253   543  1573 W InputManager-JNI: Input channel object '37d3766 com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity (client)' was disposed without first being removed with the input manager!
