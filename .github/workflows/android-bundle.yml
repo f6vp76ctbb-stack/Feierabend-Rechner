@@ -105,6 +105,11 @@ jobs:
           cp build/app/outputs/bundle/release/app-release.aab out/feierabend-tester-unsigned.aab
           echo "$((VC + 1))" > out/VERSION_CODE_TESTER
           ls -la out/
+          # Sicherung: keine x86-Reste (ein halbes ABI-Paket ohne libflutter.so stürzt ab).
+          for f in out/*.aab; do
+            if unzip -l "$f" | grep -q 'base/lib/x86'; then echo "::error::x86-Bibliothek in $f"; exit 1; fi
+            unzip -l "$f" | grep -q 'base/lib/arm64-v8a/libflutter.so' || { echo "::error::libflutter.so fehlt in $f"; exit 1; }
+          done
 
       - name: Artefakt hochladen
         uses: actions/upload-artifact@v4
