@@ -1,0 +1,54 @@
+10-03 12:30:59.009  1646  1978 I ActivityManager: START u0 {flg=0x10000000 cmp=com.thinkube.feierabendrechner/.MainActivity} from uid 2000 on display 0
+10-03 12:30:59.049  4105  4105 I flutter : [IMPORTANT:flutter/shell/common/shell.cc(528)] [Action Required]: Impeller opt-out deprecated.
+10-03 12:30:59.049  4105  4105 I flutter :     The application opted out of Impeller by either using the
+10-03 12:30:59.049  4105  4105 I flutter :     `--no-enable-impeller` flag or the
+10-03 12:30:59.049  4105  4105 I flutter :     `io.flutter.embedding.android.EnableImpeller` `AndroidManifest.xml` entry.
+10-03 12:30:59.049  4105  4105 I flutter :     These options are going to go away in an upcoming Flutter release. Remove
+10-03 12:30:59.049  4105  4105 I flutter :     the explicit opt-out. If you need to opt-out, please report a bug describing
+10-03 12:30:59.049  4105  4105 I flutter :     the issue.
+10-03 12:30:59.049  4105  4105 I flutter : 
+10-03 12:30:59.049  4105  4105 I flutter :     https://github.com/flutter/flutter/issues/new?template=02_bug.yml
+10-03 12:30:59.049  4105  4105 I flutter : 
+10-03 12:30:59.936  1646  1667 I ActivityManager: Displayed com.thinkube.feierabendrechner/.MainActivity: +920ms
+10-03 12:30:59.964  1646  1667 I WindowManager: Destroying surface Surface(name=Starting com.thinkube.feierabendrechner) called by com.android.server.wm.WindowStateAnimator.destroySurface:2016 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:882 com.android.server.wm.WindowState.destroyOrSaveSurface:2100 com.android.server.wm.AppWindowToken.destroySurfaces:363 com.android.server.wm.WindowStateAnimator.finishExit:565 com.android.server.wm.WindowStateAnimator.stepAnimationLocked:491 com.android.server.wm.WindowAnimator.updateWindowsLocked:303 com.android.server.wm.WindowAnimator.animateLocked:704 
+10-03 12:31:00.048  4105  5096 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 254730000 but found 202414023
+10-03 12:31:11.602  4105  4124 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 203400000 but found 202414023
+10-03 12:31:11.603  4105  4124 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 203400000 but found 202414023
+10-03 12:31:37.263  5425  5425 D AndroidRuntime: Shutting down VM
+10-03 12:31:38.385  5436  5436 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-03 12:31:38.386  5436  5436 D AndroidRuntime: CheckJNI is OFF
+10-03 12:31:38.418  5436  5436 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-03 12:31:39.459  5436  5436 I AccessibilityNodeInfoDumper: Null child 0/1, parent: android.view.accessibility.AccessibilityNodeInfo@c274; boundsInParent: Rect(0, 540 - 320, 640); boundsInScreen: Rect(0, 540 - 320, 640); packageName: com.thinkube.feierabendrechner; className: android.view.View; text: null; error: null; maxTextLength: -1; contentDescription: null; viewIdResName: ; checkable: false; checked: false; focusable: true; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; actions: [AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null]
+10-03 12:31:39.465  5436  5436 D AndroidRuntime: Shutting down VM
+10-03 12:31:39.612  5449  5449 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-03 12:31:39.612  5449  5449 D AndroidRuntime: CheckJNI is OFF
+10-03 12:31:39.640  5449  5449 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-03 12:31:39.945  5449  5449 D AndroidRuntime: Shutting down VM
+10-03 12:31:41.066  5459  5459 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-03 12:31:41.067  5459  5459 D AndroidRuntime: CheckJNI is OFF
+10-03 12:31:41.099  5459  5459 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-03 12:31:42.124  5459  5459 I AccessibilityNodeInfoDumper: Null child 0/1, parent: android.view.accessibility.AccessibilityNodeInfo@c65a; boundsInParent: Rect(0, 540 - 320, 640); boundsInScreen: Rect(0, 540 - 320, 640); packageName: com.thinkube.feierabendrechner; className: android.view.View; text: null; error: null; maxTextLength: -1; contentDescription: null; viewIdResName: ; checkable: false; checked: false; focusable: true; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; actions: [AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null]
+10-03 12:31:42.129  5459  5459 D AndroidRuntime: Shutting down VM
+10-03 12:31:42.284  5475  5475 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-03 12:31:42.285  5475  5475 D AndroidRuntime: CheckJNI is OFF
+10-03 12:31:42.314  5475  5475 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-03 12:31:42.620  5475  5475 D AndroidRuntime: Shutting down VM
+10-03 12:31:43.744  5485  5485 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-03 12:31:43.745  5485  5485 D AndroidRuntime: CheckJNI is OFF
+10-03 12:31:43.779  5485  5485 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-03 12:31:44.809  5485  5485 I AccessibilityNodeInfoDumper: Null child 0/1, parent: android.view.accessibility.AccessibilityNodeInfo@ca3d; boundsInParent: Rect(0, 540 - 320, 640); boundsInScreen: Rect(0, 540 - 320, 640); packageName: com.thinkube.feierabendrechner; className: android.view.View; text: null; error: null; maxTextLength: -1; contentDescription: null; viewIdResName: ; checkable: false; checked: false; focusable: true; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; actions: [AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null]
+10-03 12:31:44.812  5485  5485 D AndroidRuntime: Shutting down VM
+10-03 12:31:53.004  5505  5505 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-03 12:31:53.005  5505  5505 D AndroidRuntime: CheckJNI is OFF
+10-03 12:31:53.032  5505  5505 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-03 12:31:53.037  5505  5505 D AndroidRuntime: Shutting down VM
+10-03 12:31:53.163  1646  2068 I WindowManager: Destroying surface Surface(name=SurfaceView - com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity) called by com.android.server.wm.WindowStateAnimator.destroySurface:2016 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:882 com.android.server.wm.WindowState.removeLocked:1456 com.android.server.wm.WindowManagerService.removeWindowInnerLocked:2484 com.android.server.wm.WindowManagerService.removeWindowLocked:2442 com.android.server.wm.WindowManagerService.removeWindowLocked:2311 com.android.server.wm.WindowManagerService.removeWindow:2306 com.android.server.wm.Session.remove:202 
+10-03 12:31:53.165  1646  2154 I WindowManager: Destroying surface Surface(name=com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity) called by com.android.server.wm.WindowStateAnimator.destroySurface:2016 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:882 com.android.server.wm.WindowState.removeLocked:1456 com.android.server.wm.WindowManagerService.removeWindowInnerLocked:2484 com.android.server.wm.WindowManagerService.removeWindowLocked:2442 com.android.server.wm.WindowManagerService.removeWindowLocked:2311 com.android.server.wm.WindowManagerService.removeWindow:2306 com.android.server.wm.Session.remove:202 
+10-03 12:31:55.164  5528  5528 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-03 12:31:55.165  5528  5528 D AndroidRuntime: CheckJNI is OFF
+10-03 12:31:55.193  5528  5528 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-03 12:31:55.198  5528  5528 D AndroidRuntime: Shutting down VM
+10-03 12:31:57.318  5539  5539 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-03 12:31:57.319  5539  5539 D AndroidRuntime: CheckJNI is OFF
+10-03 12:31:57.347  5539  5539 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-03 12:31:57.351  5539  5539 D AndroidRuntime: Shutting down VM

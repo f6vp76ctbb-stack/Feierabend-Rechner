@@ -1,0 +1,43 @@
+10-03 12:29:13.654  4078  4078 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-03 12:29:13.670  4078  4078 D AndroidRuntime: CheckJNI is OFF
+10-03 12:29:13.919  4078  4078 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+10-03 12:29:13.950  1646  1658 I ActivityManager: START u0 {flg=0x10000000 cmp=com.thinkube.feierabendrechner/.MainActivity} from uid 2000 on display 0
+10-03 12:29:14.005  1646  2154 I ActivityManager: Start proc 4105:com.thinkube.feierabendrechner/u0a78 for activity com.thinkube.feierabendrechner/.MainActivity
+10-03 12:29:14.506  4105  4105 I flutter : [IMPORTANT:flutter/shell/common/shell.cc(528)] [Action Required]: Impeller opt-out deprecated.
+10-03 12:29:14.506  4105  4105 I flutter :     The application opted out of Impeller by either using the
+10-03 12:29:14.506  4105  4105 I flutter :     `--no-enable-impeller` flag or the
+10-03 12:29:14.506  4105  4105 I flutter :     `io.flutter.embedding.android.EnableImpeller` `AndroidManifest.xml` entry.
+10-03 12:29:14.506  4105  4105 I flutter :     These options are going to go away in an upcoming Flutter release. Remove
+10-03 12:29:14.506  4105  4105 I flutter :     the explicit opt-out. If you need to opt-out, please report a bug describing
+10-03 12:29:14.506  4105  4105 I flutter :     the issue.
+10-03 12:29:14.506  4105  4105 I flutter : 
+10-03 12:29:14.506  4105  4105 I flutter :     https://github.com/flutter/flutter/issues/new?template=02_bug.yml
+10-03 12:29:14.506  4105  4105 I flutter : 
+10-03 12:29:14.543  4105  4132 I Phlogger: Unable to retrieve flag snapshot for com.google.android.gms.measurement#com.thinkube.feierabendrechner, using defaults.
+10-03 12:29:14.711  4105  4125 I FA      :   adb shell setprop debug.firebase.analytics.app com.thinkube.feierabendrechner
+10-03 12:29:15.052  1758  2659 I aopq    : Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.gms.measurement#com.thinkube.feierabendrechner) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+10-03 12:29:15.838  1646  1667 I ActivityManager: Displayed com.thinkube.feierabendrechner/.MainActivity: +1s835ms
+10-03 12:29:15.842  4078  4078 D AndroidRuntime: Shutting down VM
+10-03 12:29:15.910  1646  1667 I WindowManager: Destroying surface Surface(name=Starting com.thinkube.feierabendrechner) called by com.android.server.wm.WindowStateAnimator.destroySurface:2016 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:882 com.android.server.wm.WindowState.destroyOrSaveSurface:2100 com.android.server.wm.AppWindowToken.destroySurfaces:363 com.android.server.wm.WindowStateAnimator.finishExit:565 com.android.server.wm.WindowStateAnimator.stepAnimationLocked:491 com.android.server.wm.WindowAnimator.updateWindowsLocked:303 com.android.server.wm.WindowAnimator.animateLocked:704 
+10-03 12:29:16.930  2109  2892 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.thinkube.feierabendrechner flg=0x4000010 cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-03 12:29:16.940  1758  4230 W GCM     : Unexpected forwarded intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.thinkube.feierabendrechner flg=0x4000010 cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) }
+10-03 12:29:16.941  1758  4231 W GCM     : Unexpected forwarded intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.thinkube.feierabendrechner flg=0x4000010 cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) }
+10-03 12:29:17.009  2109  2892 I ChromeSync: [Persistence,AffiliationManager] One of affiliation or grouping data for android://VFC_w9VXHT8HQ9cBpudVXeOaCZahOU7oS9Dxn50B9vkP_Yau37gLuJN2EsgOcLoFB3IFteNZO_5iOr5FLol7DQ==@com.thinkube.feierabendrechner/ was not found. Marking affiliation data as stale...
+10-03 12:29:17.132  2306  4237 I UpdateIcingCorporaServi: Updating corpora: APPS=com.thinkube.feierabendrechner, CONTACTS=MAYBE
+10-03 12:29:20.011  4105  4320 D ProfileInstaller: Installing profile for com.thinkube.feierabendrechner
+10-03 12:29:41.128  4449  4449 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-03 12:29:41.130  4449  4449 D AndroidRuntime: CheckJNI is OFF
+10-03 12:29:41.340  4449  4449 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-03 12:29:42.478  4449  4449 D AndroidRuntime: Shutting down VM
+10-03 12:29:42.624  4465  4465 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-03 12:29:42.625  4465  4465 D AndroidRuntime: CheckJNI is OFF
+10-03 12:29:42.656  4465  4465 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-03 12:29:42.700  4465  4465 D AndroidRuntime: Shutting down VM
+10-03 12:29:42.950  4105  4481 E cr_VariationsUtils: Failed reading seed file "/data/user/0/com.thinkube.feierabendrechner/app_webview/variations_seed_new": /data/user/0/com.thinkube.feierabendrechner/app_webview/variations_seed_new (No such file or directory)
+10-03 12:29:42.950  4105  4481 E cr_VariationsUtils: Failed reading seed file "/data/user/0/com.thinkube.feierabendrechner/app_webview/variations_seed": /data/user/0/com.thinkube.feierabendrechner/app_webview/variations_seed (No such file or directory)
+10-03 12:29:43.215  4105  4479 W cr_CrashFileManager: /data/user/0/com.thinkube.feierabendrechner/cache/WebView/Crash Reports does not exist or is not a directory
+10-03 12:29:43.488  4105  4534 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 212800000 but found 202414023
+10-03 12:29:43.492  4105  4124 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 212800000 but found 202414023
+10-03 12:29:44.208  4570  4570 I dex2oat : /system/bin/dex2oat --dex-file=/data/user/0/com.thinkube.feierabendrechner/cache/1762298034389.jar --oat-fd=151 --oat-location=/data/user/0/com.thinkube.feierabendrechner/cache/1762298034389.dex --compiler-filter=speed
+10-03 12:29:44.306  4105  4578 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 254730000 but found 202414023
+10-03 12:29:44.325  4105  4531 D ig      : File /data/user/0/com.thinkube.feierabendrechner/cache/1762298034389.dex not found. No need for deletion

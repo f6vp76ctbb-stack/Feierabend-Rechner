@@ -1,0 +1,64 @@
+10-03 12:32:24.919  2306  5865 I UpdateIcingCorporaServi: Updating corpora: APPS=com.thinkube.feierabendrechner, CONTACTS=MAYBE
+10-03 12:32:25.004  2109  5878 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.thinkube.feierabendrechner flg=0x4000010 cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-03 12:32:25.115  2109  5878 I ChromeSync: [Persistence,AffiliationManager] One of affiliation or grouping data for android://VFC_w9VXHT8HQ9cBpudVXeOaCZahOU7oS9Dxn50B9vkP_Yau37gLuJN2EsgOcLoFB3IFteNZO_5iOr5FLol7DQ==@com.thinkube.feierabendrechner/ was not found. Marking affiliation data as stale...
+10-03 12:32:25.142  1646  2272 I ActivityManager: START u0 {flg=0x10000000 cmp=com.thinkube.feierabendrechner/.MainActivity} from uid 2000 on display 0
+10-03 12:32:25.159  1646  4048 I ActivityManager: Start proc 5889:com.thinkube.feierabendrechner/u0a78 for activity com.thinkube.feierabendrechner/.MainActivity
+10-03 12:32:25.266  1826  1826 W asset   : Asset path /data/app/com.thinkube.feierabendrechner-1/base.apk is neither a directory nor file (type=1).
+10-03 12:32:25.269  1826  1826 W PackageManager: Failure retrieving resources for com.thinkube.feierabendrechner
+10-03 12:32:25.269  1826  1826 W asset   : Asset path /data/app/com.thinkube.feierabendrechner-1/base.apk is neither a directory nor file (type=1).
+10-03 12:32:25.269  1826  1826 W PackageManager: Failure retrieving resources for com.thinkube.feierabendrechner
+10-03 12:32:25.269  1826  1826 W asset   : Asset path /data/app/com.thinkube.feierabendrechner-1/base.apk is neither a directory nor file (type=1).
+10-03 12:32:25.269  1826  1826 W PackageManager: Failure retrieving resources for com.thinkube.feierabendrechner
+10-03 12:32:25.456  5889  5910 I FA      :   adb shell setprop debug.firebase.analytics.app com.thinkube.feierabendrechner
+10-03 12:32:25.499  5889  5889 I flutter : [IMPORTANT:flutter/shell/common/shell.cc(528)] [Action Required]: Impeller opt-out deprecated.
+10-03 12:32:25.499  5889  5889 I flutter :     The application opted out of Impeller by either using the
+10-03 12:32:25.499  5889  5889 I flutter :     `--no-enable-impeller` flag or the
+10-03 12:32:25.499  5889  5889 I flutter :     `io.flutter.embedding.android.EnableImpeller` `AndroidManifest.xml` entry.
+10-03 12:32:25.499  5889  5889 I flutter :     These options are going to go away in an upcoming Flutter release. Remove
+10-03 12:32:25.499  5889  5889 I flutter :     the explicit opt-out. If you need to opt-out, please report a bug describing
+10-03 12:32:25.499  5889  5889 I flutter :     the issue.
+10-03 12:32:25.499  5889  5889 I flutter : 
+10-03 12:32:25.499  5889  5889 I flutter :     https://github.com/flutter/flutter/issues/new?template=02_bug.yml
+10-03 12:32:25.499  5889  5889 I flutter : 
+10-03 12:32:25.866  5889  5909 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 203400000 but found 202414023
+10-03 12:32:25.867  5889  5909 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 203400000 but found 202414023
+10-03 12:32:26.645  1646  1667 I ActivityManager: Displayed com.thinkube.feierabendrechner/.MainActivity: +1s497ms
+10-03 12:32:26.677  1646  1667 I WindowManager: Destroying surface Surface(name=Starting com.thinkube.feierabendrechner) called by com.android.server.wm.WindowStateAnimator.destroySurface:2016 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:882 com.android.server.wm.WindowState.destroyOrSaveSurface:2100 com.android.server.wm.AppWindowToken.destroySurfaces:363 com.android.server.wm.WindowStateAnimator.finishExit:565 com.android.server.wm.WindowStateAnimator.stepAnimationLocked:491 com.android.server.wm.WindowAnimator.updateWindowsLocked:303 com.android.server.wm.WindowAnimator.animateLocked:704 
+10-03 12:32:30.939  5889  5950 D ProfileInstaller: Installing profile for com.thinkube.feierabendrechner
+10-03 12:32:53.814  6027  6027 D AndroidRuntime: Shutting down VM
+10-03 12:32:54.936  6037  6037 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-03 12:32:54.937  6037  6037 D AndroidRuntime: CheckJNI is OFF
+10-03 12:32:54.969  6037  6037 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-03 12:32:56.009  6037  6037 D AndroidRuntime: Shutting down VM
+10-03 12:32:56.149  6050  6050 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-03 12:32:56.150  6050  6050 D AndroidRuntime: CheckJNI is OFF
+10-03 12:32:56.178  6050  6050 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-03 12:32:56.183  6050  6050 D AndroidRuntime: Shutting down VM
+10-03 12:32:59.314  6060  6060 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-03 12:32:59.315  6060  6060 D AndroidRuntime: CheckJNI is OFF
+10-03 12:32:59.349  6060  6060 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-03 12:33:00.373  6060  6060 D AndroidRuntime: Shutting down VM
+10-03 12:33:00.515  6073  6073 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-03 12:33:00.516  6073  6073 D AndroidRuntime: CheckJNI is OFF
+10-03 12:33:00.545  6073  6073 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-03 12:33:00.551  6073  6073 D AndroidRuntime: Shutting down VM
+10-03 12:33:03.742  6090  6090 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-03 12:33:03.744  6090  6090 D AndroidRuntime: CheckJNI is OFF
+10-03 12:33:03.772  6090  6090 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-03 12:33:03.779  6090  6090 D AndroidRuntime: Shutting down VM
+10-03 12:33:05.980  6129  6129 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-03 12:33:05.981  6129  6129 D AndroidRuntime: CheckJNI is OFF
+10-03 12:33:06.014  6129  6129 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-03 12:33:06.217  6129  6129 D AndroidRuntime: Shutting down VM
+10-03 12:33:06.454  6188  6188 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-03 12:33:06.455  6188  6188 D AndroidRuntime: CheckJNI is OFF
+10-03 12:33:06.574  6188  6188 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-03 12:33:06.775  6188  6188 D AndroidRuntime: Shutting down VM
+10-03 12:33:07.014  6226  6226 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-03 12:33:07.016  6226  6226 D AndroidRuntime: CheckJNI is OFF
+10-03 12:33:07.087  6226  6226 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-03 12:33:07.288  6226  6226 D AndroidRuntime: Shutting down VM
+10-03 12:33:07.450  6245  6245 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-03 12:33:07.451  6245  6245 D AndroidRuntime: CheckJNI is OFF
+10-03 12:33:07.490  6245  6245 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-03 12:33:07.691  6245  6245 D AndroidRuntime: Shutting down VM

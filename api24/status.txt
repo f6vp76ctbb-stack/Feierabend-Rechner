@@ -1,0 +1,35 @@
+Bildschirm: 320x640
+tap 'Skip' bei bounds="[248,28][312,76]"
+OK API 24 · 1-free-start: kein Absturz
+tap 'Settings': nicht gefunden
+tap 'Unlock Pro[^"]*': nicht gefunden
+tap 'Try free for 24 h[^"]*': nicht gefunden
+OK API 24 · 2-free-kaufseite-video: kein Absturz
+tap 'Sure' bei bounds="[166,560][296,616]"
+Statistik: zugestimmt
+tap 'Settings': nicht gefunden
+tap 'Browse designs[^"]*': nicht gefunden
+tap '[^"]*Forest[^"]*': nicht gefunden
+OK API 24 · 2b-free-design-kauf: kein Absturz
+OK API 24 · 3-free-zweiter-start: kein Absturz
+tap 'Overtime account[^"]*' bei bounds="[24,452][296,580]"
+tap 'Book today[^"]*' bei bounds="[16,257][304,313]"
+OK API 24 · 4a-tester-ueberstunden: kein Absturz
+tap 'Settings': nicht gefunden
+Tester-Hinweis FEHLT
+tap 'Notifications[^"]*': nicht gefunden
+tap '1 h': nicht gefunden
+tap 'At halftime[^"]*': nicht gefunden
+Alarme der App: 2
+OK API 24 · 4-tester-erinnerungen: kein Absturz
+tap 'Add widget': nicht gefunden
+tap 'Add to home screen': nicht gefunden
+OK API 24 · 5-tester-widget: kein Absturz
+tap 'Browse designs[^"]*': nicht gefunden
+tap '[^"]*Forest[^"]*': nicht gefunden
+OK API 24 · 6-tester-designs: kein Absturz
+OK API 24 · 7-tester-neustart: kein Absturz
+Werbe-Logzeilen in der Tester-Version: 0
+Firebase-Logzeilen (Statistik): 32
+Firebase-Ereignis-Logzeilen: 0
+Ergebnis API 24: KEIN ABSTURZ
