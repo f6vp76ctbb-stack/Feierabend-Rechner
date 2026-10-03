@@ -87,7 +87,7 @@ final proControllerProvider =
 
 /// Ist Pro gerade aktiv? In der Web-Vorschau immer (dort gibt es keinen Store).
 final isProProvider = Provider<bool>((ref) {
-  if (kIsWeb) return true;
+  if (kIsWeb || MonetizationConfig.e2eUnlockPro) return true;
   final state = ref.watch(proControllerProvider);
   if (state.purchased) return true;
   final now = ref.watch(nowProvider).valueOrNull ?? DateTime.now();

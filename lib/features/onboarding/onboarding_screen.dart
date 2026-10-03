@@ -111,7 +111,9 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
               ],
             ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(24, 20, 24, 20),
+              padding: _compact(context)
+                  ? const EdgeInsets.fromLTRB(24, 12, 24, 12)
+                  : const EdgeInsets.fromLTRB(24, 20, 24, 20),
               child: SizedBox(
                 width: double.infinity,
                 height: 56,
@@ -127,6 +129,9 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
     );
   }
 }
+
+/// Kleine Bildschirme (z. B. 320 × 640): kleinere Symbole und Abstände.
+bool _compact(BuildContext context) => MediaQuery.sizeOf(context).height < 700;
 
 /// Gemeinsamer Rahmen: zentriert, max. Breite, scrollbar bei wenig Platz.
 class _Page extends StatelessWidget {
@@ -183,6 +188,7 @@ class _WelcomePage extends StatelessWidget {
     final theme = Theme.of(context);
     final l = context.l10n;
     final u = context.units;
+    final compact = _compact(context);
 
     Widget time(String label, String value, Color color) => Column(
           children: [
@@ -200,10 +206,10 @@ class _WelcomePage extends StatelessWidget {
 
     return _Page(
       children: [
-        const Center(child: AppIconMark(size: 96)),
-        const SizedBox(height: 28),
+        Center(child: AppIconMark(size: compact ? 64 : 96)),
+        SizedBox(height: compact ? 16 : 28),
         _Title(l.onb1Title, l.onb1Body),
-        const SizedBox(height: 28),
+        SizedBox(height: compact ? 16 : 28),
         Card(
           child: Padding(
             padding: const EdgeInsets.all(20),
@@ -325,6 +331,7 @@ class _ProPage extends ConsumerWidget {
     final theme = Theme.of(context);
     final l = context.l10n;
     final isPro = ref.watch(isProProvider);
+    final compact = _compact(context);
 
     final benefits = [
       if (ref.watch(widgetBackendProvider).isSupported)
@@ -340,8 +347,8 @@ class _ProPage extends ConsumerWidget {
       children: [
         Center(
           child: Container(
-            width: 88,
-            height: 88,
+            width: compact ? 64 : 88,
+            height: compact ? 64 : 88,
             decoration: BoxDecoration(
               gradient: const LinearGradient(
                 colors: [AppColors.primary, AppColors.accentWarm],
@@ -350,11 +357,11 @@ class _ProPage extends ConsumerWidget {
               ),
               borderRadius: BorderRadius.circular(26),
             ),
-            child: const Icon(Icons.workspace_premium_rounded,
-                color: Colors.white, size: 48),
+            child: Icon(Icons.workspace_premium_rounded,
+                color: Colors.white, size: compact ? 36 : 48),
           ),
         ),
-        const SizedBox(height: 28),
+        SizedBox(height: compact ? 16 : 28),
         _Title(l.onb3Title, isPro ? l.onb3ProActive : l.onb3Body),
         const SizedBox(height: 20),
         for (final (icon, text) in benefits)

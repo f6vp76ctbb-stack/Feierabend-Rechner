@@ -44,6 +44,11 @@ abstract final class MonetizationConfig {
       (defaultTargetPlatform == TargetPlatform.android ||
           defaultTargetPlatform == TargetPlatform.iOS);
 
+  /// Nur für den automatischen Emulator-Test in der CI (`--dart-define=E2E_UNLOCK_PRO=true`):
+  /// schaltet Pro frei, damit Pro-Funktionen im echten Release-Build geprüft werden.
+  /// Der Store-Build setzt das nie → immer `false`.
+  static const e2eUnlockPro = bool.fromEnvironment('E2E_UNLOCK_PRO');
+
   /// Dauer des Gratis-Tests nach einem Belohnungsvideo.
   static const rewardedTrial = Duration(hours: 24);
 

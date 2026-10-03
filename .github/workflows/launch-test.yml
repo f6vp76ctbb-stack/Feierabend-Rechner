@@ -53,18 +53,22 @@ jobs:
             -alias test -keyalg RSA -keysize 2048 -validity 1000 -dname "CN=Launch Test"
           printf 'storePassword=testtest\nkeyPassword=testtest\nkeyAlias=test\nstoreFile=app/launch-test.jks\n' > android/key.properties
 
-      - name: Release-APK (R8, echte AdMob-IDs)
+      - name: Release-APKs (R8, echte AdMob-IDs) – Free wie im Store + Pro für den Test
         env:
           ADMOB_APP_ID: "ca-app-pub-8596176219181991~3672450377"
         run: |
-          flutter build apk --release \
-            --dart-define=ADMOB_BANNER_ANDROID=ca-app-pub-8596176219181991/4877720835 \
-            --dart-define=ADMOB_REWARDED_ANDROID=ca-app-pub-8596176219181991/6079121863
+          ADS="--dart-define=ADMOB_BANNER_ANDROID=ca-app-pub-8596176219181991/4877720835 --dart-define=ADMOB_REWARDED_ANDROID=ca-app-pub-8596176219181991/6079121863"
+          flutter build apk --release $ADS
+          cp build/app/outputs/flutter-apk/app-release.apk app-free.apk
+          flutter build apk --release $ADS --dart-define=E2E_UNLOCK_PRO=true
+          cp build/app/outputs/flutter-apk/app-release.apk app-pro.apk
 
       - uses: actions/upload-artifact@v4
         with:
           name: release-apk
-          path: build/app/outputs/flutter-apk/app-release.apk
+          path: |
+            app-free.apk
+            app-pro.apk
 
   emulator:
     name: Start auf API ${{ matrix.api }}
@@ -101,7 +105,7 @@ jobs:
           arch: x86_64
           disable-animations: true
           emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none
-          script: bash tool/ci/launch_test.sh ${{ matrix.api }} app-release.apk
+          script: bash tool/ci/launch_test.sh ${{ matrix.api }} app-free.apk app-pro.apk
 
       - name: Ergebnisse in Branch launch-test-api${{ matrix.api }} ablegen
         if: always()
