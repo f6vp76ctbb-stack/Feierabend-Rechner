@@ -106,6 +106,7 @@ jobs:
       - name: Ergebnisse in Branch launch-test-api${{ matrix.api }} ablegen
         if: always()
         run: |
+          mkdir -p launch-results
           cd launch-results
           echo "${GITHUB_SHA}" > SOURCE_COMMIT
           git init -q

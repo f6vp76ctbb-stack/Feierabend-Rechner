@@ -56,6 +56,11 @@ android {
         release {
             signingConfig =
                 if (keystorePropertiesFile.exists()) signingConfigs.getByName("release") else null
+            // Eigene R8-Regeln (u. a. gegen den Start-Absturz durch WorkManager, siehe Datei).
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro",
+            )
         }
     }
 }
