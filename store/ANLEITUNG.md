@@ -50,7 +50,7 @@ Dann **Übersetzungen verwalten → Eigene Übersetzung hinzufügen → Englisch
 **Test und Release → Testen → Interner Test → Neuen Release erstellen**
 1. Play App-Signatur: **„Google Play generiert und verwaltet"** bestätigen (Standard)
 2. **App-Bundle hochladen:** Store-App-Bundle (`feierabend-release-…`) – nur für dich zum Kauf-Test; die Tester bekommen das Tester-Bundle (Schritt 8)
-   – Warnung „keine Symbole zum Debuggen" ist harmlos → einfach ignorieren.
+   – Warnungen „keine Symbole zum Debuggen" und „keine Deobfuskierungsdatei" sind harmlos → ignorieren. „Geräte werden nicht mehr unterstützt" dagegen nicht → Bescheid geben.
 3. Release-Name: `1.0.0`
 4. Versionshinweise DE + EN aus `STORE_EINTRAG.md`
 5. **Weiter → Speichern → Release veröffentlichen**
