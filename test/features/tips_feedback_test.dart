@@ -51,6 +51,9 @@ void main() {
       await tester.pumpAndSettle();
 
       expect(find.text('Noch mehr drin'), findsNothing);
+      // Danach wieder oben: Kopfzeile mit Einstellungen sichtbar.
+      expect(tester.getTopLeft(find.byIcon(Icons.settings_rounded)).dy,
+          lessThan(100));
       final prefs = await SharedPreferences.getInstance();
       expect(prefs.getBool('tips_done'), isTrue);
     });
@@ -60,9 +63,13 @@ void main() {
       await tester.pumpWidget(await buildApp(tips: true, analytics: analytics));
       await tester.pumpAndSettle();
 
+      await tester.tap(find.text('Weiter'));
+      await tester.pumpAndSettle();
       await tester.tap(find.text('Überspringen'));
       await tester.pumpAndSettle();
-      expect(find.text('Dein Feierabend auf einen Blick'), findsNothing);
+      expect(find.text('Alles anpassbar'), findsNothing);
+      expect(tester.getTopLeft(find.byIcon(Icons.settings_rounded)).dy,
+          lessThan(100));
       final prefs = await SharedPreferences.getInstance();
       expect(prefs.getBool('tips_done'), isTrue);
     });

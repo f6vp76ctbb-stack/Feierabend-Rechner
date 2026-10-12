@@ -67,6 +67,12 @@ Future<void> showTips(BuildContext context, WidgetRef ref) async {
       steps: steps,
       onClose: ({required bool skipped, required int step}) {
         entry.remove();
+        // Zurück nach oben – der Ring (die Antwort) ist wieder im Blick.
+        final ring = TipTargets.ring.currentContext;
+        if (ring != null && ring.mounted) {
+          Scrollable.maybeOf(ring)?.position.animateTo(0,
+              duration: const Duration(milliseconds: 300), curve: Curves.easeOut);
+        }
         analytics.log('tips_done', {'skipped': skipped ? 1 : 0, 'step': step});
         ctrl.finish();
         done.complete();

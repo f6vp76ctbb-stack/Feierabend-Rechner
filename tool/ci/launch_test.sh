@@ -117,6 +117,9 @@ tap 'Next' 'Weiter'
 shot "free-tipps-2"
 tap "Skip" "Überspringen"
 sleep 20
+dump_ui
+grep -qE '1 of 4|2 of 4|1 von 4|2 von 4' "$OUT/ui.xml" && log "Tipps nach Überspringen noch offen!" || log "Tipps geschlossen"
+grep -qE 'content-desc="Settings"|content-desc="Einstellungen"' "$OUT/ui.xml" && log "Kopfzeile sichtbar (nach oben gescrollt)" || log "Kopfzeile NICHT sichtbar"
 shot "free-home-werbung"
 check "1-free-start"
 
@@ -178,10 +181,15 @@ tap 'Add to home screen' 'ADD TO HOME SCREEN' 'Add automatically' 'ADD AUTOMATIC
   'Zum Startbildschirm hinzufügen' 'Automatisch hinzufügen' 'Add' 'ADD' 'Hinzufügen'
 check "5-tester-widget"
 
-dump_ui
-grep -qE 'Rate the app|App bewerten' "$OUT/ui.xml" && log "Feedback-Bereich sichtbar" || \
-  { adbt shell input swipe $((W / 2)) $((H * 3 / 4)) $((W / 2)) $((H / 4)) 300; sleep 1; dump_ui
-    grep -qE 'Rate the app|App bewerten' "$OUT/ui.xml" && log "Feedback-Bereich sichtbar" || log "Feedback-Bereich FEHLT"; }
+FEEDBACK="FEHLT"
+for _ in 1 2 3 4 5 6; do
+  dump_ui
+  if grep -qE 'Rate the app|App bewerten' "$OUT/ui.xml"; then FEEDBACK="sichtbar"; break; fi
+  adbt shell input swipe $((W / 2)) $((H * 3 / 4)) $((W / 2)) $((H / 4)) 300
+  sleep 1
+done
+log "Feedback-Bereich $FEEDBACK"
+shot "tester-feedback-bereich"
 tap 'Browse designs[^"]*' 'Designs ansehen[^"]*'
 shot "tester-designs"
 tap '[^"]*Forest[^"]*' '[^"]*Wald[^"]*'
@@ -215,7 +223,8 @@ FA_LINES=0
 [ -n "$ALL_PIDS" ] && FA_LINES=$(cat "$OUT"/logcat-*.txt |
   grep -E "^[0-9-]+ [0-9:.]+ +($ALL_PIDS) " | grep -cE " [VDIWE] (FA|FirebaseApp|FirebaseInitProvider) *:")
 log "Firebase-Logzeilen (Statistik): $FA_LINES"
-grep -hE " (FA|FirebaseApp) *:.*(Missing google_app_id|failed to initialize)" "$OUT"/logcat-*.txt | head -3 |
+[ -n "$ALL_PIDS" ] && cat "$OUT"/logcat-*.txt | grep -E "^[0-9-]+ [0-9:.]+ +($ALL_PIDS) " |
+  grep -E " (FA|FirebaseApp) *:.*(Missing google_app_id|failed to initialize)" | head -3 |
   sed 's/^/Firebase-Problem: /' | tee -a "$OUT/status.txt"
 grep -hcE " FA +: .*(Logging event|Upload|Tagging)" "$OUT"/logcat-*.txt | paste -sd+ | bc |
   sed 's/^/Firebase-Ereignis-Logzeilen: /' | tee -a "$OUT/status.txt"
