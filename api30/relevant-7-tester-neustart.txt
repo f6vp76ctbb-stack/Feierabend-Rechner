@@ -1,0 +1,32 @@
+10-12 07:45:29.128  8886  8886 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-12 07:45:29.129  8886  8886 I AndroidRuntime: Using default boot image
+10-12 07:45:29.129  8886  8886 I AndroidRuntime: Leaving lock profiling enabled
+10-12 07:45:29.177  8886  8886 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-12 07:45:29.179  8886  8886 D AndroidRuntime: Shutting down VM
+10-12 07:45:31.694  8906  8906 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-12 07:45:31.695  8906  8906 I AndroidRuntime: Using default boot image
+10-12 07:45:31.695  8906  8906 I AndroidRuntime: Leaving lock profiling enabled
+10-12 07:45:31.743  8906  8906 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-12 07:45:31.745  8906  8906 D AndroidRuntime: Shutting down VM
+10-12 07:45:37.325   488  1705 I ActivityManager: Force stopping com.thinkube.feierabendrechner appid=10154 user=0: from pid 8930
+10-12 07:45:37.325   488  1705 I ActivityManager: Killing 8029:com.thinkube.feierabendrechner/u0a154 (adj 900): stop com.thinkube.feierabendrechner due to from pid 8930
+10-12 07:45:37.354   488  1083 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.thinkube.feierabendrechner/.MainActivity} from uid 2000
+10-12 07:45:37.374   488   527 I ActivityManager: Start proc 8943:com.thinkube.feierabendrechner/u0a154 for pre-top-activity {com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity}
+10-12 07:45:37.405  8943  8943 I TetheringManager: registerTetheringEventCallback:com.thinkube.feierabendrechner
+10-12 07:45:37.463  8943  8972 I FA      :   adb shell setprop debug.firebase.analytics.app com.thinkube.feierabendrechner
+10-12 07:45:37.468  8943  8943 W ierabendrechner: type=1400 audit(0.0:606): avc: denied { read } for name="max_map_count" dev="proc" ino=191336 scontext=u:r:untrusted_app:s0:c154,c256,c512,c768 tcontext=u:object_r:proc_max_map_count:s0 tclass=file permissive=0 app=com.thinkube.feierabendrechner
+10-12 07:45:37.485  8943  8981 E flutter : [ERROR:flutter/impeller/toolkit/egl/egl.cc(56)] EGL Error: Success (12288) in ../../../flutter/impeller/toolkit/egl/display.cc:161
+10-12 07:45:37.485  8943  8981 E flutter : [ERROR:flutter/impeller/toolkit/egl/egl.cc(56)] EGL Error: Success (12288) in ../../../flutter/impeller/toolkit/egl/display.cc:161
+10-12 07:45:37.494  8943  8981 I flutter : [IMPORTANT:flutter/shell/platform/android/android_context_gl_impeller.cc(104)] Using the Impeller rendering backend (OpenGLES).
+10-12 07:45:38.028  2694  5817 W Finsky  : [367] ges.d(21): com.thinkube.feierabendrechner: No account found.
+10-12 07:45:38.032  2694  5817 W Finsky  : [367] ges.d(21): com.thinkube.feierabendrechner: No account found.
+10-12 07:45:38.088  2694  3241 W Finsky  : [266] ges.d(21): com.thinkube.feierabendrechner: No account found.
+10-12 07:45:38.237  2694  3241 W Finsky  : [266] ges.d(21): com.thinkube.feierabendrechner: No account found.
+10-12 07:45:38.237  2694  5817 W Finsky  : [367] ges.d(21): com.thinkube.feierabendrechner: No account found.
+10-12 07:45:38.243  2694  5817 W Finsky  : [367] ges.d(21): com.thinkube.feierabendrechner: No account found.
+10-12 07:45:38.248  8943  8969 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 203400000 but found 201817023
+10-12 07:45:38.252  8943  8969 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 203400000 but found 201817023
+10-12 07:45:38.761   488   525 D ArtManagerInternalImpl: /data/misc/iorapd/com.thinkube.feierabendrechner/1/com.thinkube.feierabendrechner.MainActivity/compiled_traces/compiled_trace.pb doesn't exist
+10-12 07:45:38.761   488   525 I ActivityTaskManager: Displayed com.thinkube.feierabendrechner/.MainActivity: +1s406ms
+10-12 07:45:38.761   488   525 I ActivityTaskManager: Fully drawn com.thinkube.feierabendrechner/.MainActivity: +1s406ms
+10-12 07:45:43.447  8943  9006 D ProfileInstaller: Skipping profile installation for com.thinkube.feierabendrechner

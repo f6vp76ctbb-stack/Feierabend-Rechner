@@ -1,0 +1,232 @@
+--------- beginning of main
+10-12 07:45:29.128  8886  8886 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-12 07:45:29.129  8886  8886 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
+10-12 07:45:29.129  8886  8886 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
+10-12 07:45:29.129  8886  8886 I AndroidRuntime: Using default boot image
+10-12 07:45:29.129  8886  8886 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
+10-12 07:45:29.129  8886  8886 I AndroidRuntime: Leaving lock profiling enabled
+10-12 07:45:29.129  8886  8886 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
+10-12 07:45:29.124  8886  8886 W app_process: type=1400 audit(0.0:598): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8329 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+10-12 07:45:29.124  8886  8886 I chatty  : uid=2000(shell) app_process identical 2 lines
+10-12 07:45:29.124  8886  8886 W app_process: type=1400 audit(0.0:601): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8329 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+10-12 07:45:29.165  8886  8886 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+10-12 07:45:29.165  8886  8886 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+10-12 07:45:29.168  8886  8886 W app_process: Unexpected CPU variant for X86 using defaults: x86_64
+10-12 07:45:29.168  8886  8886 I app_process: The ClassLoaderContext is a special shared library.
+10-12 07:45:29.174  8886  8886 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+10-12 07:45:29.177  8886  8886 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-12 07:45:29.179  8886  8886 D AndroidRuntime: Shutting down VM
+10-12 07:45:29.181   297  4460 D goldfish-address-space: claimShared: Ask to claim region [0x3ff3f3000 0x3ff473000]
+10-12 07:45:29.189   488  2379 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+10-12 07:45:29.189   488  2379 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+10-12 07:45:29.189   488  2379 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+10-12 07:45:29.189   488  2379 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+10-12 07:45:29.189   488  2379 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+10-12 07:45:29.189   488  2379 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+10-12 07:45:29.189   488  2379 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+10-12 07:45:29.189   488  2379 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+10-12 07:45:29.189   488  2379 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+10-12 07:45:29.189   488  2379 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+10-12 07:45:29.190   488  2379 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+10-12 07:45:29.190   488  2379 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+10-12 07:45:29.190   488  2379 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+10-12 07:45:29.190   488  2379 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+10-12 07:45:29.190   488  2379 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+10-12 07:45:29.190   488  2379 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+10-12 07:45:29.190   488  2379 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+10-12 07:45:29.190   488  2379 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+10-12 07:45:29.190   488  2379 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+10-12 07:45:29.190   488  2379 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+10-12 07:45:29.223   297  4460 D goldfish-address-space: claimShared: Ask to claim region [0x3ff473000 0x3ff53b000]
+10-12 07:45:29.225   297  4460 D goldfish-address-space: claimShared: Ask to claim region [0x3ff53b000 0x3ff603000]
+10-12 07:45:29.226   297   297 D goldfish-address-space: claimShared: Ask to claim region [0x3ff603000 0x3ff6cb000]
+10-12 07:45:29.227   297   297 D goldfish-address-space: claimShared: Ask to claim region [0x3ff6cb000 0x3ff793000]
+10-12 07:45:29.228   297  4460 D goldfish-address-space: claimShared: Ask to claim region [0x3ff793000 0x3ff85b000]
+10-12 07:45:29.229   297  4460 D goldfish-address-space: claimShared: Ask to claim region [0x3ff85b000 0x3ff923000]
+10-12 07:45:29.259  1616  2060 W ThreadPoolDumper: Queue length for executor EventBus is now 11. Perhaps some tasks are too long, or the pool is too small.
+10-12 07:45:29.263  1616  1976 W LocationOracle: No location history returned by ContextManager
+10-12 07:45:29.280   354   354 E Layer   : [Surface(name=Task=1)/@0x3a39e94 - animation-leash#0] No local sync point found
+10-12 07:45:29.280   354   354 E Layer   : [Surface(name=Task=1)/@0x3a39e94 - animation-leash#0] No local sync point found
+10-12 07:45:29.280   354   354 E Layer   : [Surface(name=Task=12)/@0xb1c38ec - animation-leash#0] No local sync point found
+10-12 07:45:29.280   354   354 E Layer   : [Surface(name=Task=12)/@0xb1c38ec - animation-leash#0] No local sync point found
+10-12 07:45:29.294  1616  1616 I BgTaskExecutorImpl: Starting EXCLUSIVE background task TNG_MINUS_ONE_SYNC.
+10-12 07:45:29.301  8029  8029 W BillingBroadcastManager: Receiver is not registered.
+10-12 07:45:29.301  8029  8029 W BillingBroadcastManager: Receiver is not registered.
+10-12 07:45:29.303  1616  1939 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/sharedminusonemodule/shared/SharedMinusOneData.pb.tmp
+10-12 07:45:29.307  1616  2060 I TngMinusOneSync: Syncing TNG:-1
+10-12 07:45:29.308  8029  8029 D HostConnection: HostConnection::get() New Host Connection established 0x729100ce1e90, tid 8029
+10-12 07:45:29.318  1116  2700 W GCoreFlp: No location to return for getLastLocation()
+10-12 07:45:29.320  8029  8029 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+10-12 07:45:29.819   695   695 V ShadeControllerImpl: NotificationShadeWindow: com.android.systemui.statusbar.phone.NotificationShadeWindowView{5a0c320 I.E...... ......ID 0,0-320,640} canPanelBeCollapsed(): false
+10-12 07:45:30.128   488  2373 D WifiNl80211Manager: Scan result ready event
+10-12 07:45:30.128   488  2373 D WifiNative: Scan result ready event
+10-12 07:45:31.316  8029  8271 I FA      : Application backgrounded at: timestamp_millis: 1791805529278
+10-12 07:45:31.694  8906  8906 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-12 07:45:31.695  8906  8906 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
+10-12 07:45:31.695  8906  8906 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
+10-12 07:45:31.695  8906  8906 I AndroidRuntime: Using default boot image
+10-12 07:45:31.695  8906  8906 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
+10-12 07:45:31.695  8906  8906 I AndroidRuntime: Leaving lock profiling enabled
+10-12 07:45:31.695  8906  8906 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
+10-12 07:45:31.688  8906  8906 W app_process: type=1400 audit(0.0:602): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8329 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+10-12 07:45:31.688  8906  8906 I chatty  : uid=2000(shell) app_process identical 2 lines
+10-12 07:45:31.688  8906  8906 W app_process: type=1400 audit(0.0:605): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8329 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+10-12 07:45:31.731  8906  8906 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+10-12 07:45:31.731  8906  8906 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+10-12 07:45:31.734  8906  8906 W app_process: Unexpected CPU variant for X86 using defaults: x86_64
+10-12 07:45:31.735  8906  8906 I app_process: The ClassLoaderContext is a special shared library.
+10-12 07:45:31.741  8906  8906 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+10-12 07:45:31.743  8906  8906 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-12 07:45:31.745   695   695 V ShadeControllerImpl: NotificationShadeWindow: com.android.systemui.statusbar.phone.NotificationShadeWindowView{5a0c320 I.E...... ......ID 0,0-320,640} canPanelBeCollapsed(): false
+10-12 07:45:31.745  8906  8906 D AndroidRuntime: Shutting down VM
+--------- beginning of system
+10-12 07:45:26.673   488   518 I chatty  : uid=1000(system) android.ui expire 1 line
+10-12 07:45:29.178   488   518 E RemoteAugmentedAutofillService: Bad service name for flags 1048704: com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiAugmentedAutofillService
+10-12 07:45:31.747   488   518 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000100 cmp=com.google.android.apps.nexuslauncher/.NexusLauncherActivity (has extras)} from uid 0
+10-12 07:45:31.748   488   520 D EventSequenceValidator: Transition from ACTIVITY_FINISHED to INTENT_STARTED
+10-12 07:45:31.752   398   398 I perfetto: ing_service_impl.cc:758 Configured tracing session 9, #sources:1, duration:5000 ms, #buffers:1, total buffer size:4096 KB, total sessions:1, uid:1071 session name: ""
+10-12 07:45:31.752   394   394 I perfetto: probes_producer.cc:230  Ftrace setup (target_buf=9)
+10-12 07:45:31.755   695   695 V ShadeControllerImpl: NotificationShadeWindow: com.android.systemui.statusbar.phone.NotificationShadeWindowView{5a0c320 I.E...... ......ID 0,0-320,640} canPanelBeCollapsed(): false
+10-12 07:45:31.756   488   520 D EventSequenceValidator: Transition from INTENT_STARTED to INTENT_FAILED
+10-12 07:45:31.767   394   394 I perfetto: ftrace_procfs.cc:176    enabled ftrace
+10-12 07:45:34.313  1332  1370 I PeriodicStatsRunner: PeriodicStatsRunner.call():180 call()
+10-12 07:45:34.313  1332  1370 I PeriodicStatsRunner: PeriodicStatsRunner.call():184 No submit PeriodicStats since input started.
+10-12 07:45:36.757   394   394 I perfetto: probes_producer.cc:329  Producer stop (id=9)
+10-12 07:45:36.758   398   398 I perfetto: ng_service_impl.cc:1948 Tracing session 9 ended, total sessions:0
+10-12 07:45:36.759   394   394 I perfetto: ftrace_procfs.cc:183    disabled ftrace
+10-12 07:45:37.203   297  4460 D goldfish-address-space: claimShared: Ask to claim region [0x3fd5b1000 0x3fd679000]
+10-12 07:45:37.244   156   156 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+10-12 07:45:37.244  8926  8926 I Gralloc4: mapper 4.x is not supported
+10-12 07:45:37.248  8926  8926 D HostConnection: createUnique: call
+10-12 07:45:37.250  8926  8926 D HostConnection: HostConnection::get() New Host Connection established 0x77addc4cd450, tid 8926
+10-12 07:45:37.250  8926  8926 D goldfish-address-space: allocate: Ask for block of size 0x100
+10-12 07:45:37.250  8926  8926 D goldfish-address-space: allocate: ioctl allocate returned offset 0x3fbffe000 size 0x2000
+10-12 07:45:37.260  8926  8926 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+10-12 07:45:37.325   488  1705 I ActivityManager: Force stopping com.thinkube.feierabendrechner appid=10154 user=0: from pid 8930
+10-12 07:45:37.325   488  1705 I ActivityManager: Killing 8029:com.thinkube.feierabendrechner/u0a154 (adj 900): stop com.thinkube.feierabendrechner due to from pid 8930
+10-12 07:45:37.336  1003  1003 D CarrierSvcBindHelper: No carrier app for: 0
+10-12 07:45:37.339  8930  8932 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+10-12 07:45:37.344   488   520 W ActivityManager: setHasOverlayUi called on unknown pid: 8029
+10-12 07:45:37.345   276   276 I Zygote  : Process 8029 exited due to signal 9 (Killed)
+10-12 07:45:37.353   488   520 D EventSequenceValidator: Transition from INTENT_FAILED to INTENT_STARTED
+10-12 07:45:37.354   488  1083 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.thinkube.feierabendrechner/.MainActivity} from uid 2000
+10-12 07:45:37.354   398   398 I perfetto: ing_service_impl.cc:758 Configured tracing session 10, #sources:1, duration:5000 ms, #buffers:1, total buffer size:4096 KB, total sessions:1, uid:1071 session name: ""
+10-12 07:45:37.355   394   394 I perfetto: probes_producer.cc:230  Ftrace setup (target_buf=10)
+10-12 07:45:37.356   488   520 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10154; state: DISABLED
+10-12 07:45:37.357   488   527 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10154; state: ENABLED
+10-12 07:45:37.357   488   520 D EventSequenceValidator: Transition from INTENT_STARTED to ACTIVITY_LAUNCHED
+10-12 07:45:37.365   297  4460 D goldfish-address-space: claimShared: Ask to claim region [0x3fd5b1000 0x3fd679000]
+10-12 07:45:37.368   394   394 I perfetto: ftrace_procfs.cc:176    enabled ftrace
+10-12 07:45:37.373   488   528 I libprocessgroup: Successfully killed process cgroup uid 10154 pid 8029 in 45ms
+10-12 07:45:37.373   276   276 D Zygote  : Forked child process 8943
+10-12 07:45:37.374   488   527 I ActivityManager: Start proc 8943:com.thinkube.feierabendrechner/u0a154 for pre-top-activity {com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity}
+10-12 07:45:37.376  8943  8943 W ierabendrechne: Unexpected CPU variant for X86 using defaults: x86_64
+10-12 07:45:37.377  8943  8943 E ierabendrechne: Not starting debugger since process cannot load the jdwp agent.
+10-12 07:45:37.380   488  2373 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+10-12 07:45:37.380   488  2373 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+10-12 07:45:37.380   488  2373 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+10-12 07:45:37.380   488  2373 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+10-12 07:45:37.380   488  2373 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+10-12 07:45:37.380   488  2373 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+10-12 07:45:37.380   488  2373 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+10-12 07:45:37.380   488  2373 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+10-12 07:45:37.380   488  2373 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+10-12 07:45:37.380   488  2373 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+10-12 07:45:37.384   488  2373 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+10-12 07:45:37.384   488  2373 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+10-12 07:45:37.384   488  2373 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+10-12 07:45:37.384   488  2373 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+10-12 07:45:37.384   488  2373 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+10-12 07:45:37.384   488  2373 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+10-12 07:45:37.384   488  2373 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+10-12 07:45:37.384   488  2373 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+10-12 07:45:37.384   488  2373 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+10-12 07:45:37.384   488  2373 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+10-12 07:45:37.388  8943  8943 I ierabendrechne: The ClassLoaderContext is a special shared library.
+10-12 07:45:37.391  8943  8943 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-12 07:45:37.392  8943  8943 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-12 07:45:37.394  8943  8943 I FirebaseApp: Device unlocked: initializing all Firebase APIs for app [DEFAULT]
+10-12 07:45:37.397  8943  8943 I FirebaseInitProvider: FirebaseApp initialization successful
+10-12 07:45:37.402  8943  8943 D WM-WrkMgrInitializer: Initializing WorkManager with default configuration.
+10-12 07:45:37.405  8943  8943 I TetheringManager: registerTetheringEventCallback:com.thinkube.feierabendrechner
+10-12 07:45:37.409  8943  8962 I DynamiteModule: Considering local module com.google.android.gms.measurement.dynamite:185 and remote module com.google.android.gms.measurement.dynamite:13
+10-12 07:45:37.409  8943  8962 I DynamiteModule: Selected local version of com.google.android.gms.measurement.dynamite
+10-12 07:45:37.416  8943  8968 D libEGL  : loaded /vendor/lib64/egl/libEGL_emulation.so
+10-12 07:45:37.417  8943  8968 D libEGL  : loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+10-12 07:45:37.418  8943  8968 D libEGL  : loaded /vendor/lib64/egl/libGLESv2_emulation.so
+10-12 07:45:37.439   488  2381 D CompatibilityChangeReporter: Compat change id reported: 136274596; UID 10154; state: ENABLED
+10-12 07:45:37.453  8943  8978 D Phlogger: Application doesn't implement PhenotypeApplication interface, falling back to globally set context. See go/phenotype-flag#process-stable-init for more info.
+10-12 07:45:37.455  8943  8980 D skia    : [SkFontMgr Android Parser] '/product/etc/fonts_customization.xml' could not be opened
+10-12 07:45:37.456  8943  8943 W ierabendrechne: Accessing hidden method Landroid/view/SurfaceControl$Builder;->setHidden(Z)Landroid/view/SurfaceControl$Builder; (blacklist, linking, denied)
+10-12 07:45:37.463  8943  8972 I FA      : App measurement initialized, version: 161000
+10-12 07:45:37.463  8943  8972 I FA      : To enable debug logging run: adb shell setprop log.tag.FA VERBOSE
+10-12 07:45:37.463  8943  8972 I FA      : To enable faster debug mode event logging run:
+10-12 07:45:37.463  8943  8972 I FA      :   adb shell setprop debug.firebase.analytics.app com.thinkube.feierabendrechner
+10-12 07:45:37.468  8943  8943 W ierabendrechner: type=1400 audit(0.0:606): avc: denied { read } for name="max_map_count" dev="proc" ino=191336 scontext=u:r:untrusted_app:s0:c154,c256,c512,c768 tcontext=u:object_r:proc_max_map_count:s0 tclass=file permissive=0 app=com.thinkube.feierabendrechner
+10-12 07:45:37.481  8943  8981 D HostConnection: HostConnection::get() New Host Connection established 0x729100ccfad0, tid 8981
+10-12 07:45:37.484  8943  8981 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+10-12 07:45:37.485   156   156 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device manifest.
+10-12 07:45:37.485  8943  8981 E flutter : [ERROR:flutter/impeller/toolkit/egl/egl.cc(56)] EGL Error: Success (12288) in ../../../flutter/impeller/toolkit/egl/display.cc:161
+10-12 07:45:37.485  8943  8981 E flutter : [ERROR:flutter/impeller/toolkit/egl/egl.cc(56)] EGL Error: Success (12288) in ../../../flutter/impeller/toolkit/egl/display.cc:161
+10-12 07:45:37.486  8943  8981 D EGL_emulation: eglCreateContext: 0x7290f0cf6df0: maj 3 min 0 rcv 3
+10-12 07:45:37.487  8943  8981 D EGL_emulation: eglCreateContext: 0x7290f0cf7210: maj 3 min 0 rcv 3
+10-12 07:45:37.488  8943  8981 D EGL_emulation: eglMakeCurrent: 0x7290f0cf7210: ver 3 0 (tinfo 0x729090d26fa0) (first time)
+10-12 07:45:37.494  8943  8981 I flutter : [IMPORTANT:flutter/shell/platform/android/android_context_gl_impeller.cc(104)] Using the Impeller rendering backend (OpenGLES).
+10-12 07:45:37.495  8943  8982 D HostConnection: HostConnection::get() New Host Connection established 0x729100cdbad0, tid 8982
+10-12 07:45:37.497  8943  8982 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+10-12 07:45:37.498  8943  8982 D EGL_emulation: eglMakeCurrent: 0x7290f0cf7210: ver 3 0 (tinfo 0x729090d29df0) (first time)
+10-12 07:45:37.521  8943  8966 D HostConnection: HostConnection::get() New Host Connection established 0x729100cd1510, tid 8966
+10-12 07:45:37.523  8943  8966 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+10-12 07:45:37.524  8943  8966 D EGL_emulation: eglCreateContext: 0x7290f0d1f7a0: maj 3 min 0 rcv 3
+10-12 07:45:37.525  8943  8966 D EGL_emulation: eglMakeCurrent: 0x7290f0d1f7a0: ver 3 0 (tinfo 0x729090d3ab60) (first time)
+10-12 07:45:37.533   297  4460 D goldfish-address-space: claimShared: Ask to claim region [0x3fd689000 0x3fd751000]
+10-12 07:45:37.534   156   156 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+10-12 07:45:37.534  8943  8981 I Gralloc4: mapper 4.x is not supported
+10-12 07:45:37.535  8943  8981 D HostConnection: createUnique: call
+10-12 07:45:37.535  8943  8981 D HostConnection: HostConnection::get() New Host Connection established 0x729100ccf590, tid 8981
+10-12 07:45:37.535  8943  8981 D goldfish-address-space: allocate: Ask for block of size 0x100
+10-12 07:45:37.535  8943  8981 D goldfish-address-space: allocate: ioctl allocate returned offset 0x3fbffe000 size 0x2000
+10-12 07:45:37.537   297  4460 D goldfish-address-space: claimShared: Ask to claim region [0x3ff473000 0x3ff53b000]
+10-12 07:45:37.543  8943  8972 I FA      : Tag Manager is not found and thus will not be used
+10-12 07:45:37.543  8943  8981 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+10-12 07:45:37.906   297  4460 D goldfish-address-space: claimShared: Ask to claim region [0x3fd689000 0x3fd751000]
+10-12 07:45:38.028  2694  5817 W Finsky  : [367] ges.d(21): com.thinkube.feierabendrechner: No account found.
+10-12 07:45:38.032  2694  5817 I chatty  : uid=10108(com.android.vending) Binder:2694_9 identical 14 lines
+10-12 07:45:38.032  2694  5817 W Finsky  : [367] ges.d(21): com.thinkube.feierabendrechner: No account found.
+10-12 07:45:38.088  2694  3241 W Finsky  : [266] ges.d(21): com.thinkube.feierabendrechner: No account found.
+10-12 07:45:38.236  2694  3241 I chatty  : uid=10108(com.android.vending) Binder:2694_5 identical 16 lines
+10-12 07:45:38.237  2694  3241 W Finsky  : [266] ges.d(21): com.thinkube.feierabendrechner: No account found.
+10-12 07:45:38.237  2694  5817 W Finsky  : [367] ges.d(21): com.thinkube.feierabendrechner: No account found.
+10-12 07:45:38.242  2694  5817 I chatty  : uid=10108(com.android.vending) Binder:2694_9 identical 10 lines
+10-12 07:45:38.243  2694  5817 W Finsky  : [367] ges.d(21): com.thinkube.feierabendrechner: No account found.
+10-12 07:45:38.243  8943  9002 W BillingClient: In-app billing API version 3 is not supported on this device.
+10-12 07:45:38.248  8943  8969 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 203400000 but found 201817023
+10-12 07:45:38.248  8943  8969 W GoogleApiManager: The service for u4.c is not available: b{statusCode=SERVICE_VERSION_UPDATE_REQUIRED, resolution=null, message=null, clientMethodKey=null}
+10-12 07:45:38.252  8943  8969 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 203400000 but found 201817023
+10-12 07:45:38.252  8943  8969 W GoogleApiManager: The service for u4.c is not available: b{statusCode=SERVICE_VERSION_UPDATE_REQUIRED, resolution=null, message=null, clientMethodKey=null}
+10-12 07:45:38.566   297  4460 D goldfish-address-space: claimShared: Ask to claim region [0x3ff6cb000 0x3ff793000]
+10-12 07:45:38.757   297  4460 D goldfish-address-space: claimShared: Ask to claim region [0x3ff793000 0x3ff85b000]
+10-12 07:45:38.761   488   525 D ArtManagerInternalImpl: /data/misc/iorapd/com.thinkube.feierabendrechner/1/com.thinkube.feierabendrechner.MainActivity/compiled_traces/compiled_trace.pb doesn't exist
+10-12 07:45:38.761  8935  8937 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+10-12 07:45:38.761   488   525 I ActivityTaskManager: Displayed com.thinkube.feierabendrechner/.MainActivity: +1s406ms
+10-12 07:45:38.761   488   525 I ActivityTaskManager: Fully drawn com.thinkube.feierabendrechner/.MainActivity: +1s406ms
+10-12 07:45:38.762   488   520 D EventSequenceValidator: Transition from ACTIVITY_LAUNCHED to ACTIVITY_FINISHED
+10-12 07:45:38.762   488   520 D EventSequenceValidator: Transition from ACTIVITY_FINISHED to REPORT_FULLY_DRAWN
+10-12 07:45:38.780  1616  2132 I PBSessionCacheImpl: Deleted sessionId[7109034967114792] from persistence.
+10-12 07:45:38.789  1616  2060 W SearchServiceCore: Abort, client detached.
+10-12 07:45:38.795   297  4460 D goldfish-address-space: claimShared: Ask to claim region [0x3ff85b000 0x3ff923000]
+10-12 07:45:42.356   394   394 I perfetto: probes_producer.cc:329  Producer stop (id=10)
+10-12 07:45:42.357   398   398 I perfetto: ng_service_impl.cc:1948 Tracing session 10 ended, total sessions:0
+10-12 07:45:42.358   394   394 I perfetto: ftrace_procfs.cc:183    disabled ftrace
+10-12 07:45:43.447  8943  9006 D ProfileInstaller: Skipping profile installation for com.thinkube.feierabendrechner
+10-12 07:45:43.813  1332  1370 I PeriodicStatsRunner: PeriodicStatsRunner.call():180 call()
+10-12 07:45:43.813  1332  1370 I PeriodicStatsRunner: PeriodicStatsRunner.call():184 No submit PeriodicStats since input started.
+10-12 07:45:47.454  8943  8969 W GoogleApiManager: com.google.android.gms.internal.measurement.ca could not execute call because it requires feature (get_storage_info_api, 1).
+10-12 07:45:58.802   297  4460 D goldfish-address-space: claimShared: Ask to claim region [0x3fd5b1000 0x3fd679000]
+10-12 07:45:58.806   156   156 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+10-12 07:45:58.806  9014  9014 I Gralloc4: mapper 4.x is not supported
+10-12 07:45:58.809  9014  9014 D HostConnection: createUnique: call
+10-12 07:45:58.810  9014  9014 D HostConnection: HostConnection::get() New Host Connection established 0x741245dd44d0, tid 9014
+10-12 07:45:58.810  9014  9014 D goldfish-address-space: allocate: Ask for block of size 0x100
+10-12 07:45:58.810  9014  9014 D goldfish-address-space: allocate: ioctl allocate returned offset 0x3fbffe000 size 0x2000
+10-12 07:45:58.820  9014  9014 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
