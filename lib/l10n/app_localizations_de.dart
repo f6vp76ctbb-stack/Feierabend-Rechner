@@ -532,4 +532,83 @@ class AppLocalizationsDe extends AppLocalizations {
   @override
   String get analyticsSettingHint =>
       'Hilft, die App zu verbessern (Google Analytics).';
+
+  @override
+  String tipStep(int n, int total) {
+    return '$n von $total';
+  }
+
+  @override
+  String get tipRingTitle => 'Dein Feierabend auf einen Blick';
+
+  @override
+  String get tipRingBody =>
+      'Die große Uhrzeit ist dein Feierabend. Der Ring füllt sich, bis es so weit ist.';
+
+  @override
+  String get tipInputsTitle => 'Alles anpassbar';
+
+  @override
+  String get tipInputsBody =>
+      'Tippe auf Start, Arbeitszeit oder Pause, um sie zu ändern. Die App merkt sich alles.';
+
+  @override
+  String get tipPresetsTitle => 'Schnellwahl';
+
+  @override
+  String get tipPresetsBody =>
+      'Ein Tipp für typische Tage – z. B. „6 Std ohne Pause“.';
+
+  @override
+  String get tipSettingsTitle => 'Noch mehr drin';
+
+  @override
+  String get tipSettingsBody =>
+      'Erinnerungen, Home-Screen-Widget, Designs und mehr findest du in den Einstellungen.';
+
+  @override
+  String get tipDone => 'Alles klar';
+
+  @override
+  String get tipsReplay => 'Tipps erneut zeigen';
+
+  @override
+  String get feedbackSection => 'Feedback & Weiterempfehlen';
+
+  @override
+  String get rateApp => 'App bewerten';
+
+  @override
+  String get rateAppHint => 'Dauert 10 Sekunden und hilft enorm.';
+
+  @override
+  String get shareApp => 'App weiterempfehlen';
+
+  @override
+  String get shareAppHint => 'Für alle, die auch auf den Feierabend warten.';
+
+  @override
+  String shareText(String url) {
+    return 'Wann ist Feierabend? Diese App rechnet es dir in 2 Sekunden aus – mit Live-Countdown: $url';
+  }
+
+  @override
+  String get sendFeedback => 'Feedback senden';
+
+  @override
+  String get sendFeedbackHint =>
+      'Ideen, Wünsche oder Fehler – direkt per E-Mail.';
+
+  @override
+  String get feedbackSubject => 'Feedback zu Feierabend Rechner';
+
+  @override
+  String feedbackBody(String version) {
+    return 'Hallo Thinkube,\n\n\n\n—\nApp-Version: $version';
+  }
+
+  @override
+  String feedbackNoMail(String email) {
+    return 'Keine E-Mail-App gefunden – schreib uns an $email.';
+  }
 }

@@ -2,13 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'design/app_theme.dart';
-import 'features/analytics/analytics_consent.dart';
 import 'features/home/home_screen.dart';
 import 'features/designs/design_providers.dart';
 import 'features/home/state/home_providers.dart';
 import 'features/onboarding/onboarding_screen.dart';
 import 'features/pro/pro_providers.dart';
 import 'features/reminders/reminder_providers.dart';
+import 'features/startup/startup_prompts.dart';
+import 'features/tips/tips.dart';
 import 'features/widget/widget_providers.dart';
 import 'l10n/app_localizations.dart';
 import 'services/notification_backend.dart';
@@ -84,8 +85,13 @@ class _FeierabendAppState extends ConsumerState<FeierabendApp> {
   }
 }
 
+/// Werbung (inkl. Einwilligungsdialog) erst nach Einführung und Tipps –
+/// der erste Eindruck gehört der App, und nichts stapelt sich.
 final _adsWantedProvider = Provider<bool>(
-  (ref) => !ref.watch(isProProvider) && ref.watch(onboardingDoneProvider),
+  (ref) =>
+      !ref.watch(isProProvider) &&
+      ref.watch(onboardingDoneProvider) &&
+      ref.watch(tipsDoneProvider),
 );
 
 /// Erster Start → Einführung, danach sanft zum Hauptbildschirm überblenden.
@@ -99,7 +105,7 @@ class _Root extends ConsumerWidget {
       duration: const Duration(milliseconds: 300),
       switchInCurve: Curves.easeOut,
       child: done
-          ? const AnalyticsConsentGate(
+          ? const StartupPrompts(
               key: ValueKey('home'),
               child: HomeScreen(),
             )

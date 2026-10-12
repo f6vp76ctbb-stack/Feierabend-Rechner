@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:feierabend_rechner/app.dart';
 import 'package:feierabend_rechner/features/analytics/analytics_providers.dart';
+import 'package:feierabend_rechner/features/feedback/feedback_section.dart';
 import 'package:feierabend_rechner/features/home/state/home_providers.dart';
 import 'package:feierabend_rechner/features/pro/pro_providers.dart';
 import 'package:feierabend_rechner/features/reminders/reminder_providers.dart';
@@ -9,6 +10,7 @@ import 'package:feierabend_rechner/features/widget/widget_providers.dart';
 import 'package:feierabend_rechner/domain/models/widget_snapshot.dart';
 import 'package:feierabend_rechner/services/ads_backend.dart';
 import 'package:feierabend_rechner/services/analytics_backend.dart';
+import 'package:feierabend_rechner/services/feedback_backend.dart';
 import 'package:feierabend_rechner/services/notification_backend.dart';
 import 'package:feierabend_rechner/services/purchase_backend.dart';
 import 'package:feierabend_rechner/services/widget_backend.dart';
@@ -28,6 +30,31 @@ class FakeAnalyticsBackend implements AnalyticsBackend {
   @override
   Future<void> log(String name, [Map<String, Object>? params]) async {
     if (enabled) events.add(name);
+  }
+}
+
+/// Test-Feedback: merkt sich Aufrufe statt Play/Teilen/E-Mail zu öffnen.
+class FakeFeedbackBackend implements FeedbackBackend {
+  FakeFeedbackBackend({this.mailApp = true});
+
+  final bool mailApp;
+  int reviewRequests = 0;
+  int storeOpens = 0;
+  final shared = <String>[];
+  final mails = <String>[];
+
+  @override
+  bool get isSupported => true;
+  @override
+  Future<void> requestReview() async => reviewRequests++;
+  @override
+  Future<void> openStoreListing() async => storeOpens++;
+  @override
+  Future<void> share(String text, {String? subject}) async => shared.add(text);
+  @override
+  Future<bool> email({required String subject, required String body}) async {
+    mails.add('$subject\n$body');
+    return mailApp;
   }
 }
 
@@ -119,10 +146,14 @@ Future<Widget> buildApp({
   bool onboarding = false,
   bool tester = false,
   AnalyticsBackend? analytics,
+  FeedbackBackend? feedback,
+  bool tips = false,
 }) async {
   SharedPreferences.setMockInitialValues({
     if (pro) 'pro_purchased': true,
     if (!onboarding) 'onboarding_done': true,
+    // Neue Nutzer (Einführung) sehen danach die Tipps; sonst gelten sie als gesehen.
+    if (!onboarding && !tips) 'tips_done': true,
     ...initial,
   });
   final prefs = await SharedPreferences.getInstance();
@@ -138,6 +169,8 @@ Future<Widget> buildApp({
       testerBuildProvider.overrideWithValue(tester),
       analyticsBackendProvider
           .overrideWithValue(analytics ?? NoopAnalyticsBackend()),
+      feedbackBackendProvider
+          .overrideWithValue(feedback ?? NoopFeedbackBackend()),
     ],
     child: FeierabendApp(locale: locale),
   );

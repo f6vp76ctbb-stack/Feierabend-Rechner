@@ -51,6 +51,8 @@ dependencies:
   # Nutzungsstatistik (Google Analytics 4 über Firebase) – nur nach Einwilligung
   firebase_core: ^4.15.0
   firebase_analytics: ^12.6.0
+  in_app_review: ^2.0.12
+  share_plus: ^13.3.1
 
 dev_dependencies:
   flutter_test:

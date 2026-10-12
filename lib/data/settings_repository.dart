@@ -2,6 +2,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import '../domain/models/work_config.dart';
 import '../domain/reminder_planner.dart';
+import '../domain/review_policy.dart';
 
 /// Persistenz für Einstellungen & letzte Eingaben (offline, lokal).
 ///
@@ -34,6 +35,10 @@ class SettingsRepository {
   static const _kDesignsOwned = 'designs_owned';
   static const _kDesignSelected = 'design_selected';
   static const _kAnalyticsConsent = 'analytics_consent';
+  static const _kTipsDone = 'tips_done';
+  static const _kUsageDays = 'usage_days';
+  static const _kUsageLastDay = 'usage_last_day';
+  static const _kReviewAsked = 'review_asked';
 
   // --- Arbeitszeit-/Pausen-Konfiguration ---
 
@@ -170,4 +175,28 @@ class SettingsRepository {
 
   Future<void> saveAnalyticsConsent(bool value) =>
       _prefs.setBool(_kAnalyticsConsent, value);
+
+  // --- Tipps auf dem Hauptbildschirm ---
+
+  bool loadTipsDone() => _prefs.getBool(_kTipsDone) ?? false;
+
+  Future<void> saveTipsDone(bool value) => _prefs.setBool(_kTipsDone, value);
+
+  // --- Nutzungstage (für die Bewertungs-Bitte) ---
+
+  UsageDays loadUsageDays() => UsageDays(
+        count: _prefs.getInt(_kUsageDays) ?? 0,
+        lastDay: _prefs.getString(_kUsageLastDay),
+      );
+
+  Future<void> saveUsageDays(UsageDays days) async {
+    await _prefs.setInt(_kUsageDays, days.count);
+    if (days.lastDay != null) {
+      await _prefs.setString(_kUsageLastDay, days.lastDay!);
+    }
+  }
+
+  bool loadReviewAsked() => _prefs.getBool(_kReviewAsked) ?? false;
+
+  Future<void> saveReviewAsked() => _prefs.setBool(_kReviewAsked, true);
 }

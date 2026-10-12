@@ -90,13 +90,16 @@ Legende: `[ ]` offen · `[x]` erledigt · 👤 = du · 🤖 = Claude · 🤝 = z
 - [x] 🤖 Screenshots (7 × DE/EN), Feature-Grafik, Icon 512 → `store/graphics/`
 - [x] 🤖 AAB-Build (CI, unsigniert) + lokale Signatur per jarsigner
 - [x] 👤 App angelegt, App-Inhalte + Store-Eintrag ausgefüllt, AAB hochgeladen → in Google-Prüfung (02.10.2026)
-- [ ] 👤 Ggf. geschlossener Test (12 Tester / 14 Tage) → Produktion
+- [ ] 👤 Geschlossener Test (12 Tester / 14 Tage) läuft – Tag 10 am 12.10.2026, Feedback umgesetzt → danach Produktion
 
 ## Phase 9 — Launch & Wachstum 🤝
 - [ ] 👤 Produktions-Release beantragen
-- [ ] 🤝 ASO: Keywords & Listing nach Daten optimieren
+- [x] 🤖 ASO: Beschreibung DE/EN mit Suchbegriffen + Stichpunkten (Tester-Feedback, 12.10.2026)
+- [ ] 🤝 ASO: Keywords & Listing nach echten Daten (Play Console/GA4) nachschärfen
 - [ ] 👤 Marketing-Aktionen starten (siehe MARKETING.md)
-- [ ] 🤝 Bewertungen einsammeln (In-App-Review-Prompt zur richtigen Zeit)
+- [x] 🤖 Bewertungen einsammeln: „App bewerten“ + In-App-Review einmal ab dem 4. Nutzungstag
+- [x] 🤖 „App weiterempfehlen“ (Teilen mit Play-Link) + „Feedback senden“ (E-Mail)
+- [x] 🤖 Interaktive Tipps nach der Einführung (überspringbar, „Tipps erneut zeigen“)
 - [ ] 🤝 Conversion/Retention auswerten, Preis-A/B-Test
 
 ## Phase 10 — Danach 🤝
