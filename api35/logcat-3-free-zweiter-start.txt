@@ -1,0 +1,917 @@
+--------- beginning of main
+10-12 11:43:16.219   356  4993 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+10-12 11:43:16.219   356  4993 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+10-12 11:43:16.254  2891  2891 E Ads     : JS: Refused to get unsafe header "X-Afma-Gcache-IsGcacheHit" (https://imasdk.googleapis.com/admob/sdkloader/gma_vast_video_player_20261007_00.0/simid_player_core.js:554)
+10-12 11:43:16.319   356  4993 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+10-12 11:43:16.321   356  4993 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+--------- beginning of system
+10-12 11:43:16.364   538  2933 I ActivityManager: Force stopping com.thinkube.feierabendrechner appid=10209 user=0: from pid 5624
+10-12 11:43:16.372   538   558 D DisplayManagerService: Drop pending events for gone uid 10209
+10-12 11:43:16.375   538   803 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:16.374   478  3279 I ResourceManagerMetrics: pushConcurrentUsageReport: Concurrent Codec Usage Report for the Process[pid(2891): uid(10209)] is Peak { VideoDec[ HW: 1 ] } Peak Pixels: 230400
+10-12 11:43:16.375   538   803 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:16.375   538  2933 I ActivityManager: Killing 2891:com.thinkube.feierabendrechner/u0a209 (adj 0): stop com.thinkube.feierabendrechner due to from pid 5624
+10-12 11:43:16.375   538   803 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:16.375   538   803 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:16.376   538   803 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:16.376   538   803 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:16.381   538  2933 W ActivityTaskManager: Force removing ActivityRecord{835d598 u0 com.thinkube.feierabendrechner/com.google.android.gms.ads.AdActivity t8 f}}: app died, no saved state
+10-12 11:43:16.382   538   803 D InetDiagMessage: Destroyed 11 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-12 11:43:16.383   367  5069 W hw-IPCThreadState: Transaction failed because process frozen.
+10-12 11:43:16.384   367  5069 D C2BqBuffer: cannot dequeue buffer 0
+10-12 11:43:16.384   367  5069 E C2GoldfishVpxDec: fetchGraphicBlock for Output failed with status 22
+10-12 11:43:16.384   367  5069 D C2GoldfishVpxDec: Error while getting the output frame out
+10-12 11:43:16.384   538   803 D InetDiagMessage: Destroyed 4 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-12 11:43:16.384   367  5069 W hw-IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:16.384   538   803 D InetDiagMessage: Destroyed live tcp sockets for uids={10209} in 8ms
+10-12 11:43:16.384   538  2933 W ActivityTaskManager: Force removing ActivityRecord{d2c14de u0 com.thinkube.feierabendrechner/.MainActivity t8 f}}: app died, no saved state
+10-12 11:43:16.386   538   803 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-12 11:43:16.386   538   803 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-12 11:43:16.386   538   803 D InetDiagMessage: Destroyed live tcp sockets for uids={20209} in 2ms
+10-12 11:43:16.386   367  5069 W hw-IPCThreadState: Transaction failed because process frozen.
+10-12 11:43:16.386   367  5069 D C2BqBuffer: cannot dequeue buffer 0
+10-12 11:43:16.386   367  5069 E C2GoldfishVpxDec: fetchGraphicBlock for Output failed with status 22
+10-12 11:43:16.386   367  5069 D C2GoldfishVpxDec: Error while getting the output frame out
+10-12 11:43:16.386   367  5069 W hw-IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:16.389  4526  4526 I cr_ChildProcessService: Destroying ChildProcessService pid=4526
+10-12 11:43:16.390   881   932 V WindowManagerShell: Transition requested (#28): android.os.BinderProxy@63b8018 TransitionRequestInfo { type = CLOSE, triggerTask = null, pipTask = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 28 }
+10-12 11:43:16.390   538  2933 I ActivityManager: Killing 4526:com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0/u0a209i1 (adj 0): isolated not needed
+10-12 11:43:16.395   538  2933 I AppsFilter: interaction: PackageSetting{4db189a com.android.microdroid.empty_payload/10198} -> PackageSetting{a8d29a7 com.thinkube.feierabendrechner/10209} BLOCKED
+10-12 11:43:16.396   881   932 D WindowManagerShell: setLauncherKeepClearAreaHeight: visible=false, height=175
+10-12 11:43:16.399   418   418 I BpBinder: onLastStrongRef automatically unlinking death recipients: 
+10-12 11:43:16.400  1129  1129 D NexusLauncherModelDelegate: notifySmartspaceEvent: SmartspaceTargetEvent{mSmartspaceTarget=null, mSmartspaceActionId='null', mEventType=6}
+10-12 11:43:16.401  1436  1436 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.appset.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+10-12 11:43:16.422  1129  1129 I SsCardPagerAdapter: [rmv] Rendering flag - enabled: false 
+10-12 11:43:16.422  1738  1738 I Finsky  : [2] vto.onTrimMemory(11): Memory trim requested to level 40
+10-12 11:43:16.423  1738  1738 I Finsky  : [2] zsw.accept(118): Flushing in-memory image cache
+10-12 11:43:16.423   356  4993 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+10-12 11:43:16.423   356  4993 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+10-12 11:43:16.424  1129  1129 I SsCardPagerAdapter: Use UI template for the feature: 1
+10-12 11:43:16.455   944   944 I Zygote  : Process 4526 exited due to signal 9 (Killed)
+10-12 11:43:16.456  1058  1058 D CarrierSvcBindHelper: onHandleForceStop: [com.thinkube.feierabendrechner]
+10-12 11:43:16.457   538   558 D DisplayManagerService: Drop pending events for gone uid 99001
+10-12 11:43:16.466  1129  1129 D SsBaseTemplateCard: No text view can be set up
+10-12 11:43:16.466  1129  1129 D SsBaseTemplateCard: Passed-in item info is null
+10-12 11:43:16.466  1129  1129 D SsBaseTemplateCard: Passed-in item info is null
+10-12 11:43:16.466  1129  1129 D SsBaseTemplateCard: Passed-in item info is null
+10-12 11:43:16.466  1129  1129 I SsBaseTemplateCard: Secondary card pane is null
+10-12 11:43:16.477   881   932 D WindowManagerShell: setLauncherKeepClearAreaHeight: visible=true, height=175
+10-12 11:43:16.478  1058  1058 D CarrierSvcBindHelper: No carrier app for: 0
+10-12 11:43:16.481   367   921 I Codec2-Component: Client died ! notify and release the component !!
+10-12 11:43:16.482   367  5069 I C2GoldfishVpxDec: calling destroying GoldfishVPX ctx 0x71dafd4e12d0
+10-12 11:43:16.485   367   921 I GoldfishComponentStore: in ~ComponentModule
+10-12 11:43:16.485   367   921 I GoldfishComponentStore: unloading dll
+10-12 11:43:16.485  1129  1129 D BaseDepthController: setSurface:
+10-12 11:43:16.485  1129  1129 D BaseDepthController: 	mWaitingOnSurfaceValidity: false
+10-12 11:43:16.485  1129  1129 D BaseDepthController: 	mSurface: Surface(name=com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity)/@0x9ede363
+10-12 11:43:16.486   538  2954 V ActivityManager: Got obituary of 2891:com.thinkube.feierabendrechner
+10-12 11:43:16.486   538   790 I WindowManager: WIN DEATH: Window{c72d6f3 u0 com.thinkube.feierabendrechner/com.google.android.gms.ads.AdActivity}
+10-12 11:43:16.487   538   790 W InputManager-JNI: Input channel object 'c72d6f3 com.thinkube.feierabendrechner/com.google.android.gms.ads.AdActivity (client)' was disposed without first being removed with the input manager!
+10-12 11:43:16.489   538   803 D ConnectivityService: releasing NetworkRequest [ REQUEST id=144, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 10209 RequestorPkg: com.thinkube.feierabendrechner UnderlyingNetworks: Null] ] (release request)
+10-12 11:43:16.489   538   790 I WindowManager: WIN DEATH: Window{b8e7996 u0 com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity}
+10-12 11:43:16.489   538   790 W InputManager-JNI: Input channel object 'b8e7996 com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity (client)' was disposed without first being removed with the input manager!
+10-12 11:43:16.490   538   560 W ActivityManager: setHasOverlayUi called on unknown pid: 2891
+10-12 11:43:16.490   538  2038 I MediaFocusControl: AudioFocus  removeFocusStackEntryOnDeath(): removing entry for android.os.BinderProxy@483583e
+10-12 11:43:16.495   478  3279 E mediaserver: unlinkToDeath: removed reference to death recipient but unlink failed: DEAD_OBJECT
+10-12 11:43:16.495   478  3279 E IPCThreadState: attemptIncStrongHandle(3): Not supported
+10-12 11:43:16.496   538   803 D ConnectivityService: releasing NetworkRequest [ REQUEST id=142, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 10209 RequestorPkg: com.thinkube.feierabendrechner UnderlyingNetworks: Null] ] (release request)
+10-12 11:43:16.496   538   803 D ConnectivityService: releasing NetworkRequest [ REQUEST id=147, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 10209 RequestorPkg: com.thinkube.feierabendrechner UnderlyingNetworks: Null] ] (release request)
+10-12 11:43:16.496   538   803 D ConnectivityService: releasing NetworkRequest [ REQUEST id=149, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 10209 RequestorPkg: com.thinkube.feierabendrechner UnderlyingNetworks: Null] ] (release request)
+10-12 11:43:16.496   538   571 I libprocessgroup: Removed cgroup /sys/fs/cgroup/uid_10209/pid_2891
+10-12 11:43:16.496   538   571 I libprocessgroup: Removed cgroup /sys/fs/cgroup/uid_99001/pid_4526
+10-12 11:43:16.511   538   790 W ActivityTaskManager: callingPackage for (uid=2000, pid=5634) has no WPC
+10-12 11:43:16.515  1363  1500 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+10-12 11:43:16.516  1363  1500 I AiAiEcho: EchoTargets: 
+10-12 11:43:16.516  1363  1500 I AiAiEcho: Filtered by AiAi flag check: 
+10-12 11:43:16.516  1363  1500 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+10-12 11:43:16.516  1363  1500 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+10-12 11:43:16.516  1363  1500 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+10-12 11:43:16.516   538   790 W OptProp : Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_USER_ASPECT_RATIO_OVERRIDE
+10-12 11:43:16.516   538   790 W OptProp : Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_USER_ASPECT_RATIO_FULLSCREEN_OVERRIDE
+10-12 11:43:16.516   538   790 W OptProp : Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_ORIENTATION_OVERRIDE
+10-12 11:43:16.516   538   790 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@d6839017 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+10-12 11:43:16.516   538   790 W OptProp : Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_RESIZEABLE_ACTIVITY_OVERRIDES
+10-12 11:43:16.517   538   790 W OptProp : Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_MIN_ASPECT_RATIO_OVERRIDE
+10-12 11:43:16.518   348   348 I Zygote  : Process 2891 exited due to signal 9 (Killed)
+10-12 11:43:16.521  1363  1500 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+10-12 11:43:16.525  1129  1129 I TopTaskTracker: onTaskMovedToFront: (moved taskInfo to front) taskId=7, baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000100 cmp=com.google.android.apps.nexuslauncher/.NexusLauncherActivity }
+10-12 11:43:16.526  1363  1556 I AiAiStatsd: Successfully logged feature enablement for ECHO_ALL_APPS.
+10-12 11:43:16.527   356  4993 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+10-12 11:43:16.527   356  4993 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+10-12 11:43:16.529  1129  1129 D StatsLog: LAUNCHER_ALLAPPS_COUNT
+10-12 11:43:16.530   538  1418 W AppSearchIcing: icing-search-engine.cc:321: Error: 5, Message: Document (com.google.android.googlequicksearchbox$OneSearchZeroStateGoogleSuggestions/default, zp) not found.
+10-12 11:43:16.531  1129  1129 D SsBaseTemplateCard: No text view can be set up
+10-12 11:43:16.531  1129  1129 D SsBaseTemplateCard: Passed-in item info is null
+10-12 11:43:16.531  1129  1129 D SsBaseTemplateCard: Passed-in item info is null
+10-12 11:43:16.531  1129  1129 D SsBaseTemplateCard: Passed-in item info is null
+10-12 11:43:16.531  1129  1129 I SsBaseTemplateCard: Secondary card pane is null
+10-12 11:43:16.531   538   577 W KernelCpuProcStringReader: File not found. It's normal if not implemented: /proc/uid_concurrent_policy_time
+10-12 11:43:16.544   538   790 I ActivityTaskManager: Add Task{bd4b6bf #8 type=standard I=com.thinkube.feierabendrechner/.MainActivity} to hidden list because adding Task{a534622 #9 type=standard I=com.thinkube.feierabendrechner/.MainActivity}
+10-12 11:43:16.549   538   790 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.thinkube.feierabendrechner/.MainActivity} with LAUNCH_SINGLE_TOP from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+10-12 11:43:16.559  1129  1129 W SplitSelectStateCtor: Missing session instanceIds
+10-12 11:43:16.559  1129  1129 D StatsLog: LAUNCHER_SPLIT_SELECTION_EXIT_INTERRUPTED
+10-12 11:43:16.561   538   560 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@d6839017 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+10-12 11:43:16.561   538  1038 I AppsFilter: interaction: PackageSetting{4db189a com.android.microdroid.empty_payload/10198} -> PackageSetting{54b777a com.thinkube.feierabendrechner/10209} BLOCKED
+10-12 11:43:16.565  1129  1129 I TopTaskTracker: onTaskMovedToFront: (moved taskInfo to front) taskId=9, baseIntent=Intent { flg=0x10000000 cmp=com.thinkube.feierabendrechner/.MainActivity }
+10-12 11:43:16.577   881   932 D WindowManagerShell: setLauncherKeepClearAreaHeight: visible=false, height=175
+10-12 11:43:16.583   348   348 D Zygote  : Forked child process 5637
+10-12 11:43:16.589   538   570 I ActivityManager: Start proc 5637:com.thinkube.feierabendrechner/u0a209 for next-top-activity {com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity}
+10-12 11:43:16.594   414   517 D audioserver: logFgsApiEnd: FGS Logger Transaction failed, -129
+10-12 11:43:16.602  5637  5637 I ierabendrechner: Using CollectorTypeCMC GC.
+10-12 11:43:16.602  5637  5637 W ierabendrechner: Unexpected CPU variant for x86: x86_64.
+10-12 11:43:16.602  5637  5637 W ierabendrechner: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, default
+10-12 11:43:16.606   414   517 D audioserver: logFgsApiEnd: FGS Logger Transaction failed, -129
+10-12 11:43:16.608  5637  5637 E ierabendrechner: Not starting debugger since process cannot load the jdwp agent.
+10-12 11:43:16.620  5637  5637 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+10-12 11:43:16.634   356  4993 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+10-12 11:43:16.634   356  4993 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+10-12 11:43:16.635   463   514 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:16.637  1129  1961 D OneSearchSuggestProvider: AppSearch 0-state cache not available, fallback to AGA
+10-12 11:43:16.637  1129  1961 D OneSearchSuggestProvider: java.util.concurrent.CompletionException: java.util.NoSuchElementException: No value present
+10-12 11:43:16.637  1129  1961 D OneSearchSuggestProvider: 	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:308)
+10-12 11:43:16.637  1129  1961 D OneSearchSuggestProvider: 	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:323)
+10-12 11:43:16.637  1129  1961 D OneSearchSuggestProvider: 	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:684)
+10-12 11:43:16.637  1129  1961 D OneSearchSuggestProvider: 	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:486)
+10-12 11:43:16.637  1129  1961 D OneSearchSuggestProvider: 	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2138)
+10-12 11:43:16.637  1129  1961 D OneSearchSuggestProvider: 	at com.google.android.apps.nexuslauncher.allapps.E0.onResult(go/retraceme 2855a437b73635ce9cad76b9289087e631bbb67fc90008a0da13d343a00e5041:67)
+10-12 11:43:16.637  1129  1961 D OneSearchSuggestProvider: 	at android.app.appsearch.SearchSessionUtil$1.lambda$onResult$0(go/retraceme 64eee9e9f568ff45978879ad2ff83146f2618ee8a88278736fbdf5fae931976e:144)
+10-12 11:43:16.637  1129  1961 D OneSearchSuggestProvider: 	at android.app.appsearch.SearchSessionUtil$1.$r8$lambda$CEk3q8sDAQVhU3rQwVueB8FAj_M(go/retraceme 64eee9e9f568ff45978879ad2ff83146f2618ee8a88278736fbdf5fae931976e:1)
+10-12 11:43:16.637  1129  1961 D OneSearchSuggestProvider: 	at android.app.appsearch.SearchSessionUtil$1$$ExternalSyntheticLambda0.run(go/retraceme 64eee9e9f568ff45978879ad2ff83146f2618ee8a88278736fbdf5fae931976e:22)
+10-12 11:43:16.637  1129  1961 D OneSearchSuggestProvider: 	at android.os.Handler.handleCallback(Handler.java:959)
+10-12 11:43:16.637  1129  1961 D OneSearchSuggestProvider: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+10-12 11:43:16.637  1129  1961 D OneSearchSuggestProvider: 	at android.os.Looper.loopOnce(Looper.java:232)
+10-12 11:43:16.637  1129  1961 D OneSearchSuggestProvider: 	at android.os.Looper.loop(Looper.java:317)
+10-12 11:43:16.637  1129  1961 D OneSearchSuggestProvider: 	at android.os.HandlerThread.run(HandlerThread.java:85)
+10-12 11:43:16.637  1129  1961 D OneSearchSuggestProvider: Caused by: java.util.NoSuchElementException: No value present
+10-12 11:43:16.637  1129  1961 D OneSearchSuggestProvider: 	at java.util.Optional.get(Optional.java:143)
+10-12 11:43:16.637  1129  1961 D OneSearchSuggestProvider: 	at com.google.android.apps.nexuslauncher.allapps.E0.onResult(go/retraceme 2855a437b73635ce9cad76b9289087e631bbb67fc90008a0da13d343a00e5041:28)
+10-12 11:43:16.637  1129  1961 D OneSearchSuggestProvider: 	... 8 more
+10-12 11:43:16.644  1129  1961 D OneSearchSuggestProvider: Created the binder channel successfully for end point service =com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService , mChannel=i1{delegate=f{logId=5, target=directaddress:///AndroidComponentAddress%5BIntent%20%7B%20act=grpc.io.action.BIND%20cmp=com.google.android.googlequicksearchbox/com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService%20%7D%5D}} , mOneSearchConnection=l2.Z@4682f42
+10-12 11:43:16.649  5637  5637 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+10-12 11:43:16.649  5637  5637 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+10-12 11:43:16.652   538  2096 D CoreBackPreview: Window{52be19c u0 Splash Screen com.thinkube.feierabendrechner}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@930b32a, mPriority=0, mIsAnimationCallback=false}
+10-12 11:43:16.663   538  1038 D ActivityManager: sync unfroze 1468 com.google.android.googlequicksearchbox:search for 6
+10-12 11:43:16.664   538  1038 D ActivityManager: sync unfroze 3903 com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0 for 6
+10-12 11:43:16.681  5637  5637 D nativeloader: Configuring clns-7 for other apk /data/app/~~lwm5mI9KiTlZHQ3oe6XC8g==/com.thinkube.feierabendrechner-G6UeEF2D605gtBpQCItdDA==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~lwm5mI9KiTlZHQ3oe6XC8g==/com.thinkube.feierabendrechner-G6UeEF2D605gtBpQCItdDA==/lib/x86_64:/data/app/~~lwm5mI9KiTlZHQ3oe6XC8g==/com.thinkube.feierabendrechner-G6UeEF2D605gtBpQCItdDA==/base.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.thinkube.feierabendrechner
+10-12 11:43:16.691  5637  5637 V GraphicsEnvironment: Currently set values for:
+10-12 11:43:16.691  5637  5637 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+10-12 11:43:16.691  5637  5637 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+10-12 11:43:16.691  5637  5637 V GraphicsEnvironment: Global.Settings values are invalid: number of packages: 0, number of values: 0
+10-12 11:43:16.691  5637  5637 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+10-12 11:43:16.691  1468  1468 I A       : (REDACTED) Created gRPC endpoint for service %s
+10-12 11:43:16.693   538  1038 W ProcessStats: Tracking association SourceState{93d2888 com.google.android.googlequicksearchbox:search/10144 BTop #6473} whose proc state 2 is better than process ProcessState{b21ef58 com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0/10144 pkg=com.google.android.googlequicksearchbox} proc state 14 (1 skipped)
+10-12 11:43:16.694  5637  5637 I FirebaseApp: Device unlocked: initializing all Firebase APIs for app [DEFAULT]
+10-12 11:43:16.696  5637  5637 I FirebaseInitProvider: FirebaseApp initialization successful
+10-12 11:43:16.700  5637  5637 D WM-WrkMgrInitializer: Initializing WorkManager with default configuration.
+10-12 11:43:16.706   538  2096 W OptProp : Cannot read opt property android.window.PROPERTY_COMPAT_ENABLE_FAKE_FOCUS
+10-12 11:43:16.711   538  1052 I BroadcastQueue: BOOT_COMPLETED_BROADCAST_COMPLETION_LATENCY_REPORTED action:android.intent.action.BOOT_COMPLETED dispatchLatency:2 completeLatency:70 dispatchRealLatency:2 completeRealLatency:70 receiversSize:1 userId:0 userType:android.os.usertype.full.SYSTEM
+10-12 11:43:16.721   881   909 V WindowManagerShell: onTransitionReady(transaction=2310692406510)
+10-12 11:43:16.731   881   932 V WindowManagerShell: onTransitionReady (#28) android.os.BinderProxy@63b8018: {id=28 t=CLOSE f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{android.window.IWindowContainerToken$Stub$Proxy@fe07c19} m=OPEN f=MOVE_TO_TOP leash=Surface(name=Task=9)/@0xd354b1d sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0 taskParent=-1},{WCT{android.window.IWindowContainerToken$Stub$Proxy@cbaa4de} m=TO_BACK f=NONE leash=Surface(name=Task=8)/@0x2020192 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0 taskParent=-1},{null m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{b2adfb5 token=android.os.Binder@7496cf9})/@0x415763 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0}]}
+10-12 11:43:16.731   881   932 V WindowManagerShell: Playing animation for (#28) android.os.BinderProxy@63b8018@0
+10-12 11:43:16.732   881   932 V WindowManagerShell:  try handler com.android.wm.shell.transition.DefaultMixedHandler@15435b0
+10-12 11:43:16.732   881   932 V WindowManagerShell:  try handler com.android.wm.shell.keyguard.KeyguardTransitionHandler@f56ac29
+10-12 11:43:16.732   881   932 V WindowManagerShell:  try handler com.android.wm.shell.pip.PipTransition@111fbae
+10-12 11:43:16.732   881   932 V WindowManagerShell:  try handler com.android.wm.shell.activityembedding.ActivityEmbeddingController@5eb5d4f
+10-12 11:43:16.732   881   932 V WindowManagerShell:  try handler com.android.wm.shell.recents.RecentsTransitionHandler@5befcdc
+10-12 11:43:16.732   881   932 V ShellRecents: RecentsTransitionHandler.startAnimation: no controller found
+10-12 11:43:16.732   881   932 V WindowManagerShell:  try handler com.android.wm.shell.splitscreen.StageCoordinator@184e1e5
+10-12 11:43:16.732   881   932 V WindowManagerShell:  try handler com.android.wm.shell.transition.RemoteTransitionHandler@e8624ba
+10-12 11:43:16.732   881   932 V WindowManagerShell: Transition doesn't have explicit remote, search filters for match for {id=28 t=CLOSE f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{android.window.IWindowContainerToken$Stub$Proxy@fe07c19} m=OPEN f=MOVE_TO_TOP leash=Surface(name=Task=9)/@0xd354b1d sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0 taskParent=-1},{WCT{android.window.IWindowContainerToken$Stub$Proxy@cbaa4de} m=TO_BACK f=NONE leash=Surface(name=Task=8)/@0x2020192 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0 taskParent=-1},{null m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{b2adfb5 token=android.os.Binder@7496cf9})/@0x415763 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0}]}
+10-12 11:43:16.732   881   932 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x0 checks=[{atype=undefined independent=true modes=[OPEN,TO_FRONT] flags=IN_TASK_WITH_EMBEDDED_ACTIVITY mustBeTask=false order=ANY topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null},{atype=undefined independent=true modes=[CLOSE,TO_BACK] flags=IN_TASK_WITH_EMBEDDED_ACTIVITY mustBeTask=false order=ANY topActivity=null launchCookie=null}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@632720d, appThread = android.app.IApplicationThread$Stub$Proxy@548b5c2, debugName = OverlaySwipeBack }}
+10-12 11:43:16.732   881   932 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x0 checks=[{atype=dream independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null},{atype=home independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@d62afd3, appThread = android.app.IApplicationThread$Stub$Proxy@4c95710, debugName = LauncherToDream }}
+10-12 11:43:16.732   881   932 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=TOP topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@8a12209, appThread = android.app.IApplicationThread$Stub$Proxy@f06c0e, debugName = QuickstepLaunchHome }}
+10-12 11:43:16.732   881   932 V WindowManagerShell:  Delegate animation for (#28) to null
+10-12 11:43:16.732   881   932 V WindowManagerShell:  try handler com.android.wm.shell.transition.DefaultTransitionHandler@db6689d
+10-12 11:43:16.732   881   932 V WindowManagerShell: start default transition animation, info = {id=28 t=CLOSE f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{android.window.IWindowContainerToken$Stub$Proxy@fe07c19} m=OPEN f=MOVE_TO_TOP leash=Surface(name=Task=9)/@0xd354b1d sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0 taskParent=-1},{WCT{android.window.IWindowContainerToken$Stub$Proxy@cbaa4de} m=TO_BACK f=NONE leash=Surface(name=Task=8)/@0x2020192 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0 taskParent=-1},{null m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{b2adfb5 token=android.os.Binder@7496cf9})/@0x415763 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0}]}
+10-12 11:43:16.787   356  4993 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+10-12 11:43:16.787   356  4993 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+10-12 11:43:16.787   538   557 V WindowManager: Sent Transition (#28) createdAt=10-12 11:43:16.381 via request=TransitionRequestInfo { type = CLOSE, triggerTask = null, pipTask = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 28 }
+10-12 11:43:16.788   538   557 V WindowManager:     startWCT=WindowContainerTransaction { changes = {} hops = [] errorCallbackToken=null taskFragmentOrganizer=null }
+10-12 11:43:16.789   538   557 V WindowManager:     info={id=28 t=CLOSE f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+10-12 11:43:16.789   538   557 V WindowManager:         {WCT{RemoteToken{2dbdc01 Task{a534622 #9 type=standard I=com.thinkube.feierabendrechner/.MainActivity}}} m=OPEN f=MOVE_TO_TOP leash=Surface(name=Task=9)/@0xc07ab0b sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0 taskParent=-1},
+10-12 11:43:16.789   538   557 V WindowManager:         {WCT{RemoteToken{dfeba7f Task{bd4b6bf #8 type=standard I=com.thinkube.feierabendrechner/.MainActivity}}} m=TO_BACK f=NONE leash=Surface(name=Task=8)/@0x3804f23 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0 taskParent=-1},
+10-12 11:43:16.789   538   557 V WindowManager:         {null m=TO_FRONT f=IS_WALLPAPER leash=Surface(name=WallpaperWindowToken{b2adfb5 token=android.os.Binder@7496cf9})/@0xa743ada sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0}
+10-12 11:43:16.789   538   557 V WindowManager:     ]}
+10-12 11:43:16.789   881   932 V WindowManagerShell: loadAnimation: anim=android.view.animation.AnimationSet@873c0d5 animAttr=0xb type=CLOSE isEntrance=false
+10-12 11:43:16.791  5637  5655 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000002/DynamiteLoader.uncompressed.dm': No such file or directory
+10-12 11:43:16.791  5637  5655 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000002/DynamiteLoader.uncompressed.dm': No such file or directory
+10-12 11:43:16.796   881   932 V WindowManagerShell: loadAnimation: anim=android.view.animation.AnimationSet@c7071b6 animAttr=0xa type=CLOSE isEntrance=true
+10-12 11:43:16.804   538  2096 W UserManagerService: Requested status bar icon for non-badged user 0
+10-12 11:43:16.808  1129  1129 D SearchTargetUtil: queryLength=0 size=15
+10-12 11:43:16.808  1129  1129 D SearchTargetUtil: layoutType=short_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=false,is_personal=false,suggest_raw_text=gene watson country music career,input_query=android.app.search.Query@4a03066,group_id=web237836,response_id=e71eaf6c-d738-4b06-a2f9-ec17724772ba,support_query_builder=false,} searchAction=gene watson country music career searchActionExtras=Bundle{learn_more_url=https://support.google.com/websearch/answer/106230?hl=106230,suggestion_action_text=Report this,should_start_for_result=true,allow_pinning=true,skip_logging_in_target_handler=true,suggestion_action_rpc=2,}ParentID: null targetID: 5dcb5d39-861b-41d5-9ec5-65b0e62fed7e
+10-12 11:43:16.808  1129  1129 D SearchTargetUtil: layoutType=short_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=false,is_personal=false,suggest_raw_text=premier league liverpool manchester city,input_query=android.app.search.Query@4a03066,group_id=web237836,response_id=e71eaf6c-d738-4b06-a2f9-ec17724772ba,support_query_builder=false,} searchAction=premier league liverpool manchester city searchActionExtras=Bundle{learn_more_url=https://support.google.com/websearch/answer/106230?hl=106230,suggestion_action_text=Report this,should_start_for_result=true,allow_pinning=true,skip_logging_in_target_handler=true,suggestion_action_rpc=2,}ParentID: null targetID: 9e68a7ba-2801-4a5e-89fc-5cc4bf68049d
+10-12 11:43:16.808  1129  1129 D SearchTargetUtil: layoutType=short_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=false,is_personal=false,suggest_raw_text=great smoky mountains national park,input_query=android.app.search.Query@4a03066,group_id=web237836,response_id=e71eaf6c-d738-4b06-a2f9-ec17724772ba,support_query_builder=false,} searchAction=great smoky mountains national park searchActionExtras=Bundle{learn_more_url=https://support.google.com/websearch/answer/106230?hl=106230,suggestion_action_text=Report this,should_start_for_result=true,allow_pinning=true,skip_logging_in_target_handler=true,suggestion_action_rpc=2,}ParentID: null targetID: 350ec998-613d-4534-b6d4-703b99a862b8
+10-12 11:43:16.808  1129  1129 D SearchTargetUtil: layoutType=short_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=false,is_personal=false,suggest_raw_text=easy fox steam demo ai costs,input_query=android.app.search.Query@4a03066,group_id=web237836,response_id=e71eaf6c-d738-4b06-a2f9-ec17724772ba,support_query_builder=false,} searchAction=easy fox steam demo ai costs searchActionExtras=Bundle{learn_more_url=https://support.google.com/websearch/answer/106230?hl=106230,suggestion_action_text=Report this,should_start_for_result=true,allow_pinning=true,skip_logging_in_target_handler=true,suggestion_action_rpc=2,}ParentID: null targetID: bf88a04e-d6e8-49e9-9cc9-3b4c04e1d11e
+10-12 11:43:16.808  1129  1129 D SearchTargetUtil: layoutType=short_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=false,is_personal=false,suggest_raw_text=air jordan 41 ruby release date,input_query=android.app.search.Query@4a03066,group_id=web237836,response_id=e71eaf6c-d738-4b06-a2f9-ec17724772ba,support_query_builder=false,} searchAction=air jordan 41 ruby release date searchActionExtras=Bundle{learn_more_url=https://support.google.com/websearch/answer/106230?hl=106230,suggestion_action_text=Report this,should_start_for_result=true,allow_pinning=true,skip_logging_in_target_handler=true,suggestion_action_rpc=2,}ParentID: null targetID: 1763a0de-65cf-41de-9ca5-929a4e9ffa2c
+10-12 11:43:16.808  1129  1129 D SearchTargetUtil: layoutType=short_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=false,is_personal=false,suggest_raw_text=westjet pilot seattle tarmac delay,input_query=android.app.search.Query@4a03066,group_id=web237836,response_id=e71eaf6c-d738-4b06-a2f9-ec17724772ba,support_query_builder=false,} searchAction=westjet pilot seattle tarmac delay searchActionExtras=Bundle{learn_more_url=https://support.google.com/websearch/answer/106230?hl=106230,suggestion_action_text=Report this,should_start_for_result=true,allow_pinning=true,skip_logging_in_target_handler=true,suggestion_action_rpc=2,}ParentID: null targetID: ebe6e096-4bbb-41d4-a29d-d48090508d12
+10-12 11:43:16.808  1129  1129 D SearchTargetUtil: layoutType=short_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=false,is_personal=false,suggest_raw_text=panamá earthquakes,input_query=android.app.search.Query@4a03066,group_id=web237836,response_id=e71eaf6c-d738-4b06-a2f9-ec17724772ba,support_query_builder=false,} searchAction=panamá earthquakes searchActionExtras=Bundle{learn_more_url=https://support.google.com/websearch/answer/106230?hl=106230,suggestion_action_text=Report this,should_start_for_result=true,allow_pinning=true,skip_logging_in_target_handler=true,suggestion_action_rpc=2,}ParentID: null targetID: 147f21df-4965-4d9c-a175-205521870e97
+10-12 11:43:16.808  1129  1129 D SearchTargetUtil: layoutType=short_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=false,is_personal=false,suggest_raw_text=zheng qinwen mirra andreeva china open,input_query=android.app.search.Query@4a03066,group_id=web237836,response_id=e71eaf6c-d738-4b06-a2f9-ec17724772ba,support_query_builder=false,} searchAction=zheng qinwen mirra andreeva china open searchActionExtras=Bundle{learn_more_url=https://support.google.com/websearch/answer/106230?hl=106230,suggestion_action_text=Report this,should_start_for_result=true,allow_pinning=true,skip_logging_in_target_handler=true,suggestion_action_rpc=2,}ParentID: null targetID: 77c18059-bbc7-4410-8fe2-f5c28af3a019
+10-12 11:43:16.808  1129  1129 D SearchTargetUtil: layoutType=short_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=false,is_personal=false,suggest_raw_text=south carolina senate debate,input_query=android.app.search.Query@4a03066,group_id=web237836,response_id=e71eaf6c-d738-4b06-a2f9-ec17724772ba,support_query_builder=false,} searchAction=south carolina senate debate searchActionExtras=Bundle{learn_more_url=https://support.google.com/websearch/answer/106230?hl=106230,suggestion_action_text=Report this,should_start_for_result=true,allow_pinning=true,skip_logging_in_target_handler=true,suggestion_action_rpc=2,}ParentID: null targetID: 65a39de5-c170-4411-9f48-4fc54a12c6aa
+10-12 11:43:16.808  1129  1129 D SearchTargetUtil: layoutType=short_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=false,is_personal=false,suggest_raw_text=aldi glass lid luxury candles,input_query=android.app.search.Query@4a03066,group_id=web237836,response_id=e71eaf6c-d738-4b06-a2f9-ec17724772ba,support_query_builder=false,} searchAction=aldi glass lid luxury candles searchActionExtras=Bundle{learn_more_url=https://support.google.com/websearch/answer/106230?hl=106230,suggestion_action_text=Report this,should_start_for_result=true,allow_pinning=true,skip_logging_in_target_handler=true,suggestion_action_rpc=2,}ParentID: null targetID: e1c5b7c3-e0db-4dd8-bfed-8aa132bc1f1d
+10-12 11:43:16.808  1129  1129 D SearchTargetUtil: layoutType=short_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=false,is_personal=false,suggest_raw_text=new balance 480 gore tex,input_query=android.app.search.Query@4a03066,group_id=web237836,response_id=e71eaf6c-d738-4b06-a2f9-ec17724772ba,support_query_builder=false,} searchAction=new balance 480 gore tex searchActionExtras=Bundle{learn_more_url=https://support.google.com/websearch/answer/106230?hl=106230,suggestion_action_text=Report this,should_start_for_result=true,allow_pinning=true,skip_logging_in_target_handler=true,suggestion_action_rpc=2,}ParentID: null targetID: abcd967b-a81a-4d00-b6d0-a7f09fc41510
+10-12 11:43:16.808  1129  1129 D SearchTargetUtil: layoutType=short_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=false,is_personal=false,suggest_raw_text=hurricane tropical storm,input_query=android.app.search.Query@4a03066,group_id=web237836,response_id=e71eaf6c-d738-4b06-a2f9-ec17724772ba,support_query_builder=false,} searchAction=hurricane tropical storm searchActionExtras=Bundle{learn_more_url=https://support.google.com/websearch/answer/106230?hl=106230,suggestion_action_text=Report this,should_start_for_result=true,allow_pinning=true,skip_logging_in_target_handler=true,suggestion_action_rpc=2,}ParentID: null targetID: 40732c65-c873-4f47-91fc-dc218d58c4ad
+10-12 11:43:16.808  1129  1129 D SearchTargetUtil: layoutType=short_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=false,is_personal=false,suggest_raw_text=nfl weather report,input_query=android.app.search.Query@4a03066,group_id=web237836,response_id=e71eaf6c-d738-4b06-a2f9-ec17724772ba,support_query_builder=false,} searchAction=nfl weather report searchActionExtras=Bundle{learn_more_url=https://support.google.com/websearch/answer/106230?hl=106230,suggestion_action_text=Report this,should_start_for_result=true,allow_pinning=true,skip_logging_in_target_handler=true,suggestion_action_rpc=2,}ParentID: null targetID: b22802ca-56b9-4bc4-a2a3-a83403e3d7d4
+10-12 11:43:16.808  1129  1129 D SearchTargetUtil: layoutType=extra_tall_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{bitmap_url=data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIADAAMAMBIgACEQEDEQH/xAAaAAADAQEBAQAAAAAAAAAAAAAEBQYDBwIA/8QALRAAAgEDAwIDBwUAAAAAAAAAAQIDAAQRBRJBITETcaEGIkJRUpHRFDIzYYH/xAAXAQEBAQEAAAAAAAAAAAAAAAAEAwUC/8QAIBEAAQQCAgMBAAAAAAAAAAAAAQACAxESIQQxExQiBf/aAAwDAQACEQMRAD8A6grbeKWXcD2d62r2sTAbNt4iDPiIPix9S+oyPlTe4Lx7RbouS2MuK+EqWsbSzTPKeSxwo8hRwK7SSbGgtrSGW5iSVJAYnUMjqchgexFGRWjIc+K33rnWnXntNpbS29rBCmm+M7W8c4JZELEgLg9v664p2dc1KaDFvbkXHxK7e6B8+4zXYxulB8pq1ZOqOuHwRS+6mkimzlWj4A4pDbw6ze4/V3LQoeEG31702SzjtdPlRHdjgHLMT1zVyzW0UTFx0NLzq9xItxbJbR5YyDpjpWt5bso2wqA3Lnjy+VYTa9Z+MsUR8WTcP4xu29ecdqPuD4zBlPTH2o01sblSWx4ecQekuQmGKOG56qowh4r2kcPjI4C9/SimRWXa4BB4oFtNiZyRLIq5/ard6AZCCLVqFICe8NpevA4aIbyEk7o44zRGoanbWmnpPMioJHEZP0t+KJvrOO4tzFsz0wBUj7ZSLFp9rp6sJHRjJMw6jdjAFO4b3vcQekTm4xxZDtUsdta2yhYY1RRwM1rHdx7hHvCt2Xr6Ulur3GQuc+dKp5ZJjnJHlWmY8hRWN7XjPwFaG4mQghlbHDLn8Vj+qlRSNqMSc5bNTEWt3MCbZAJcdi3Q/eg7z2mvT7lraRhz0DO5bH+YFEPDaTtqaP0o8byVc81xPlS+F5CjApHqmkx3DFvCUnk4onQZbl4s3T7nbqeKcGPPYKc0prBHoI73+w21/9k=,suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=true,is_personal=false,suggest_raw_text=condensed milk,input_query=android.app.search.Query@4a03066,group_id=web237836,response_id=e71eaf6c-d738-4b06-a2f9-ec17724772ba,support_query_builder=false,} searchAction=Condensed milk searchActionExtras=Bundle{learn_more_url=https://support.google.com/websearch/answer/106230?hl=106230,suggestion_action_text=Report this,should_start_for_result=true,allow_pinning=true,skip_logging_in_target_handler=true,suggestion_action_rpc=2,}ParentID: null targetID: 2aeae716-ce08-42af-8dbc-86c261d25f8b
+10-12 11:43:16.808  1129  1129 D SearchTargetUtil: layoutType=short_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=false,is_personal=false,suggest_raw_text=practical magic 2 streaming,input_query=android.app.search.Query@4a03066,group_id=web237836,response_id=e71eaf6c-d738-4b06-a2f9-ec17724772ba,support_query_builder=false,} searchAction=practical magic 2 streaming searchActionExtras=Bundle{learn_more_url=https://support.google.com/websearch/answer/106230?hl=106230,suggestion_action_text=Report this,should_start_for_result=true,allow_pinning=true,skip_logging_in_target_handler=true,suggestion_action_rpc=2,}ParentID: null targetID: 90fd5715-ac3e-4322-9b2b-9513fcf45262
+10-12 11:43:16.809   881   932 V WindowManagerShell:  animated by com.android.wm.shell.transition.DefaultTransitionHandler@db6689d
+10-12 11:43:16.813  5637  5655 I DynamiteModule: Considering local module com.google.android.gms.measurement.dynamite:185 and remote module com.google.android.gms.measurement.dynamite:115
+10-12 11:43:16.813  5637  5655 I DynamiteModule: Selected local version of com.google.android.gms.measurement.dynamite
+10-12 11:43:16.823   881   932 V WindowManagerShell: Transition animation finished (aborted=false), notifying core (#28) android.os.BinderProxy@63b8018@0
+10-12 11:43:16.826   538   557 V WindowManager: Finish Transition (#28): created at 10-12 11:43:16.381 collect-started=0.049ms request-sent=0.097ms started=10.523ms ready=327.291ms sent=338.848ms finished=444.478ms
+10-12 11:43:16.828  5637  5669 D Phlogger: Application doesn't implement PhenotypeApplication interface, falling back to globally set context. See go/phenotype-flag#process-stable-init for more info.
+10-12 11:43:16.828   538  2096 E IPCThreadState: Binder transaction failure. id: 496466, BR_*: 29189, error: -22 (Invalid argument)
+10-12 11:43:16.828   538  2096 W ActivityManager: pid 538 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-12 11:43:16.829   538  2096 W WindowManager: Exception thrown during dispatchAppVisibility Window{c72d6f3 u0 com.thinkube.feierabendrechner/com.google.android.gms.ads.AdActivity EXITING}
+10-12 11:43:16.829   538  2096 W WindowManager: android.os.DeadObjectException
+10-12 11:43:16.829   538  2096 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+10-12 11:43:16.829   538  2096 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:586)
+10-12 11:43:16.829   538  2096 W WindowManager: 	at android.view.IWindow$Stub$Proxy.dispatchAppVisibility(IWindow.java:553)
+10-12 11:43:16.829   538  2096 W WindowManager: 	at com.android.server.wm.WindowState.sendAppVisibilityToClients(WindowState.java:3253)
+10-12 11:43:16.829   538  2096 W WindowManager: 	at com.android.server.wm.WindowContainer.sendAppVisibilityToClients(WindowContainer.java:1289)
+10-12 11:43:16.829   538  2096 W WindowManager: 	at com.android.server.wm.WindowToken.setClientVisible(WindowToken.java:403)
+10-12 11:43:16.829   538  2096 W WindowManager: 	at com.android.server.wm.ActivityRecord.setClientVisible(ActivityRecord.java:7166)
+10-12 11:43:16.829   538  2096 W WindowManager: 	at com.android.server.wm.ActivityRecord.postApplyAnimation(ActivityRecord.java:5881)
+10-12 11:43:16.829   538  2096 W WindowManager: 	at com.android.server.wm.ActivityRecord.commitVisibility(ActivityRecord.java:5823)
+10-12 11:43:16.829   538  2096 W WindowManager: 	at com.android.server.wm.Transition.finishTransition(Transition.java:1286)
+10-12 11:43:16.829   538  2096 W WindowManager: 	at com.android.server.wm.TransitionController.finishTransition(TransitionController.java:937)
+10-12 11:43:16.829   538  2096 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.finishTransition(WindowOrganizerController.java:494)
+10-12 11:43:16.829   538  2096 W WindowManager: 	at android.window.IWindowOrganizerController$Stub.onTransact(IWindowOrganizerController.java:289)
+10-12 11:43:16.829   538  2096 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.onTransact(WindowOrganizerController.java:204)
+10-12 11:43:16.829   538  2096 W WindowManager: 	at android.os.Binder.execTransactInternal(Binder.java:1500)
+10-12 11:43:16.829   538  2096 W WindowManager: 	at android.os.Binder.execTransact(Binder.java:1444)
+10-12 11:43:16.829   538  2096 W Process : Unable to open /proc/2891/status
+10-12 11:43:16.829   538  2096 E IPCThreadState: Binder transaction failure. id: 496467, BR_*: 29189, error: -22 (Invalid argument)
+10-12 11:43:16.830   538  2096 W ActivityManager: pid 538 system sent binder code 7 with flags 1 to frozen apps and got error -32
+10-12 11:43:16.830   538  2096 D ActivityManager: Too many transaction errors, throttling freezer binder callback.
+10-12 11:43:16.830   538  2096 W WindowManager: Exception thrown during dispatchAppVisibility Window{b8e7996 u0 com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity EXITING}
+10-12 11:43:16.830   538  2096 W WindowManager: android.os.DeadObjectException
+10-12 11:43:16.830   538  2096 W WindowManager: 	at android.os.BinderProxy.transactNative(Native Method)
+10-12 11:43:16.830   538  2096 W WindowManager: 	at android.os.BinderProxy.transact(BinderProxy.java:586)
+10-12 11:43:16.830   538  2096 W WindowManager: 	at android.view.IWindow$Stub$Proxy.dispatchAppVisibility(IWindow.java:553)
+10-12 11:43:16.830   538  2096 W WindowManager: 	at com.android.server.wm.WindowState.sendAppVisibilityToClients(WindowState.java:3253)
+10-12 11:43:16.830   538  2096 W WindowManager: 	at com.android.server.wm.WindowContainer.sendAppVisibilityToClients(WindowContainer.java:1289)
+10-12 11:43:16.830   538  2096 W WindowManager: 	at com.android.server.wm.WindowToken.setClientVisible(WindowToken.java:403)
+10-12 11:43:16.830   538  2096 W WindowManager: 	at com.android.server.wm.ActivityRecord.setClientVisible(ActivityRecord.java:7166)
+10-12 11:43:16.830   538  2096 W WindowManager: 	at com.android.server.wm.ActivityRecord.postApplyAnimation(ActivityRecord.java:5881)
+10-12 11:43:16.830   538  2096 W WindowManager: 	at com.android.server.wm.ActivityRecord.commitVisibility(ActivityRecord.java:5823)
+10-12 11:43:16.830   538  2096 W WindowManager: 	at com.android.server.wm.Transition.finishTransition(Transition.java:1286)
+10-12 11:43:16.830   538  2096 W WindowManager: 	at com.android.server.wm.TransitionController.finishTransition(TransitionController.java:937)
+10-12 11:43:16.830   538  2096 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.finishTransition(WindowOrganizerController.java:494)
+10-12 11:43:16.830   538  2096 W WindowManager: 	at android.window.IWindowOrganizerController$Stub.onTransact(IWindowOrganizerController.java:289)
+10-12 11:43:16.830   538  2096 W WindowManager: 	at com.android.server.wm.WindowOrganizerController.onTransact(WindowOrganizerController.java:204)
+10-12 11:43:16.830   538  2096 W WindowManager: 	at android.os.Binder.execTransactInternal(Binder.java:1500)
+10-12 11:43:16.830   538  2096 W WindowManager: 	at android.os.Binder.execTransact(Binder.java:1444)
+10-12 11:43:16.830   538  2096 W Process : Unable to open /proc/2891/status
+10-12 11:43:16.833  5637  5666 D nativeloader: Load /data/app/~~lwm5mI9KiTlZHQ3oe6XC8g==/com.thinkube.feierabendrechner-G6UeEF2D605gtBpQCItdDA==/base.apk!/lib/x86_64/libflutter.so using ns clns-7 from class loader (caller=/data/app/~~lwm5mI9KiTlZHQ3oe6XC8g==/com.thinkube.feierabendrechner-G6UeEF2D605gtBpQCItdDA==/base.apk): ok
+10-12 11:43:16.836   538  1038 D FileUtils: Rounded bytes from 2593685504 to 4000000000
+10-12 11:43:16.848   538  2096 W UserManagerService: Requested status bar icon for non-badged user 0
+10-12 11:43:16.848   881   932 V WindowManagerShell: Track 0 became idle
+10-12 11:43:16.848   881   932 V WindowManagerShell: All active transition animations finished
+10-12 11:43:16.849   538  2096 W UserManagerService: Requested status bar icon for non-badged user 0
+10-12 11:43:16.857  5637  5670 D skia    : [SkFontMgr Android Parser] '/product/etc/fonts_customization.xml' could not be opened
+10-12 11:43:16.860   538  2096 W UserManagerService: Requested status bar icon for non-badged user 0
+10-12 11:43:16.860   538  2096 W UserManagerService: Requested status bar icon for non-badged user 0
+10-12 11:43:16.862   538   558 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda11@f2f21
+10-12 11:43:16.862   538   558 D CoreBackPreview: Window{235e5ca u0 ImmersiveModeConfirmation}: Setting back callback null
+10-12 11:43:16.862   538   558 W InputManager-JNI: Input channel object '235e5ca ImmersiveModeConfirmation (client)' was disposed without first being removed with the input manager!
+10-12 11:43:16.866   418   418 E BpTransactionCompletedListener: Failed to transact (-32)
+10-12 11:43:16.867   418   418 E BpTransactionCompletedListener: Failed to transact (-32)
+10-12 11:43:16.867   418   418 E BpTransactionCompletedListener: Failed to transact (-32)
+10-12 11:43:16.869  1129  1129 I TopTaskTracker: onTaskRemoved: taskId=8
+10-12 11:43:16.873  1129  1129 I TopTaskTracker: onTaskRemoved: taskId=8
+10-12 11:43:16.877   538   560 V WindowManager: Unknown focus tokens, dropping reportFocusChanged
+10-12 11:43:16.879   881  1003 D EGL_emulation: app_time_stats: avg=16853.46ms min=16853.46ms max=16853.46ms count=1
+10-12 11:43:16.874  5637  5637 W ierabendrechner: type=1400 audit(0.0:65): avc:  denied  { read } for  name="max_map_count" dev="proc" ino=47924 scontext=u:r:untrusted_app:s0:c209,c256,c512,c768 tcontext=u:object_r:proc_max_map_count:s0 tclass=file permissive=0 app=com.thinkube.feierabendrechner
+10-12 11:43:16.891   356  4993 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+10-12 11:43:16.891   356  4993 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+10-12 11:43:16.904  1129  1546 D EGL_emulation: app_time_stats: avg=95671.29ms min=95671.29ms max=95671.29ms count=1
+10-12 11:43:16.908  5637  5671 I EGL_emulation: Opening libGLESv1_CM_emulation.so
+10-12 11:43:16.909  5637  5671 I EGL_emulation: Opening libGLESv2_emulation.so
+10-12 11:43:16.917  5637  5668 I FA      : App measurement disabled via the manifest
+10-12 11:43:16.923  5637  5668 I FA      : App measurement initialized, version: 161000
+10-12 11:43:16.924  5637  5668 I FA      : To enable debug logging run: adb shell setprop log.tag.FA VERBOSE
+10-12 11:43:16.924  5637  5668 I FA      : To enable faster debug mode event logging run:
+10-12 11:43:16.924  5637  5668 I FA      :   adb shell setprop debug.firebase.analytics.app com.thinkube.feierabendrechner
+10-12 11:43:16.941  1436  1436 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+10-12 11:43:16.941  1436  1436 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+10-12 11:43:16.958  5637  5671 I flutter : [IMPORTANT:flutter/shell/platform/android/android_context_gl_impeller.cc(104)] Using the Impeller rendering backend (OpenGLES).
+10-12 11:43:16.995   356  4993 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+10-12 11:43:16.995   356  4993 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+10-12 11:43:17.037  5637  5637 D nativeloader: Load /data/app/~~lwm5mI9KiTlZHQ3oe6XC8g==/com.thinkube.feierabendrechner-G6UeEF2D605gtBpQCItdDA==/base.apk!/lib/x86_64/libdartjni.so using ns clns-7 from class loader (caller=/data/app/~~lwm5mI9KiTlZHQ3oe6XC8g==/com.thinkube.feierabendrechner-G6UeEF2D605gtBpQCItdDA==/base.apk): ok
+10-12 11:43:17.051  5637  5637 W HWUI    : Unknown dataspace 0
+10-12 11:43:17.075  5637  5637 I WindowExtensionsImpl: Initializing Window Extensions, vendor API level=6, activity embedding enabled=true
+10-12 11:43:17.087   538  1052 D CoreBackPreview: Window{2b266bc u0 com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@f4df1c1, mPriority=0, mIsAnimationCallback=false}
+10-12 11:43:17.095  5637  5658 W HWUI    : Failed to initialize 101010-2 format, error = EGL_SUCCESS
+10-12 11:43:17.099   138   138 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+10-12 11:43:17.099  5637  5671 I Gralloc4: mapper 4.x is not supported
+10-12 11:43:17.108   356  4993 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+10-12 11:43:17.108   356  4993 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+10-12 11:43:17.150  3604  3604 W JobService: onNetworkChanged() not implemented in androidx.work.impl.background.systemjob.SystemJobService. Must override in a subclass.
+10-12 11:43:17.151   538   803 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:17.151   538   803 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:17.151   538   803 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:17.153  3840  3969 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[a56943fd-92c6]>Handler" thread_id=67 ]
+10-12 11:43:17.154  3840  3884 I BugleRcsEngine: Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=61 ]
+10-12 11:43:17.159  1224  1234 I ChimeraSrvcProxy: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl
+10-12 11:43:17.159  1224  1234 W .gms.persistent: Large reply transaction of 1056768 bytes, interface descriptor , code 1
+10-12 11:43:17.211   356  4993 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+10-12 11:43:17.211   356  4993 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+10-12 11:43:17.315   356  4993 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+10-12 11:43:17.315   356  4993 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+10-12 11:43:17.419   356  4993 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+10-12 11:43:17.419   356  4993 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+10-12 11:43:17.523   356  4993 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+10-12 11:43:17.523   356  4993 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+10-12 11:43:17.582   538  1038 D OomAdjuster: Not killing cached processes
+10-12 11:43:17.587  1224  1971 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.thinkube.feierabendrechner
+10-12 11:43:17.590  5637  5680 I UserMessagingPlatform: Use new ConsentDebugSettings.Builder().addTestDeviceHashedId("B3EEABB8EE11C2BE770B684D95219ECB") to set this as a debug device.
+10-12 11:43:17.591  5637  5680 D UserMessagingPlatform: Stored info not exists: IDFA_freqCapNumViews
+10-12 11:43:17.592  1738  2008 W Finsky  : [52] mgn.a(97): Failed to look up device certification status for in-app billing service: com.google.common.util.concurrent.TimeoutFuture$TimeoutFutureException: Timed out (timeout delayed by 102 ms after scheduled time): atyb@8f9a203[status=PENDING, setFuture=[gpx@2f91580[status=PENDING, info=[tag=[ankx@99b57b9]]]]]
+10-12 11:43:17.593  5637  5680 D UserMessagingPlatform: Stored info not exists: UMP_CoMoAdStoragePurposeConsentStatus
+10-12 11:43:17.594  5637  5680 D UserMessagingPlatform: Stored info not exists: IABTCF_TCString
+10-12 11:43:17.595  5637  5680 D UserMessagingPlatform: Stored info not exists: UMP_CoMoAnalyticsStoragePurposeConsentStatus
+10-12 11:43:17.595  5637  5680 D UserMessagingPlatform: Stored info not exists: UMP_CoMoAdPersonalizationPurposeConsentStatus
+10-12 11:43:17.596  5637  5680 D UserMessagingPlatform: Stored info not exists: UMP_CoMoAdUserDataPurposeConsentStatus
+10-12 11:43:17.597  5637  5680 D UserMessagingPlatform: Stored info not exists: IABTCF_AddtlConsent
+10-12 11:43:17.597  5637  5680 D UserMessagingPlatform: Stored info not exists: IABTCF_idfaFlowControl
+10-12 11:43:17.614  5637  5680 I WebViewFactory: Loading com.google.android.webview version 124.0.6367.219 (code 636771938)
+10-12 11:43:17.620  5637  5680 V ResourcesManager: The following library key has been added: ResourcesKey{ mHash=9ab70568 mResDir=null mSplitDirs=[] mOverlayDirs=[/product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk,/data/resource-cache/com.android.systemui-neutral-6mJk.frro,/data/resource-cache/com.android.systemui-accent-FxA6.frro,/data/resource-cache/com.android.systemui-dynamic-gIZE.frro] mLibDirs=[/data/app/~~HhFZ1MVIn4TZxngyd8fQ2w==/com.google.android.webview-M9M1esnoG8HMSmnGpPvjGQ==/WebViewGoogle.apk,/data/app/~~C-dMxWlvG3xNHBbbrvmQxQ==/com.google.android.trichromelibrary_636771938-4Qj8sq5a7wJgFh1OfeI_-A==/TrichromeLibrary.apk,/system_ext/framework/androidx.window.extensions.jar] mDisplayId=0 mOverrideConfig=v35 mCompatInfo={160dpi always-compat} mLoaders=[]}
+10-12 11:43:17.622  5637  5680 W ziparchive: Unable to open '/data/app/~~C-dMxWlvG3xNHBbbrvmQxQ==/com.google.android.trichromelibrary_636771938-4Qj8sq5a7wJgFh1OfeI_-A==/TrichromeLibrary.dm': No such file or directory
+10-12 11:43:17.622  5637  5680 W ziparchive: Unable to open '/data/app/~~C-dMxWlvG3xNHBbbrvmQxQ==/com.google.android.trichromelibrary_636771938-4Qj8sq5a7wJgFh1OfeI_-A==/TrichromeLibrary.dm': No such file or directory
+10-12 11:43:17.622  5637  5680 W ierabendrechner: Entry not found
+10-12 11:43:17.623  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.623  5637  5680 D nativeloader: Configuring clns-8 for other apk /data/app/~~C-dMxWlvG3xNHBbbrvmQxQ==/com.google.android.trichromelibrary_636771938-4Qj8sq5a7wJgFh1OfeI_-A==/TrichromeLibrary.apk. target_sdk_version=34, uses_libraries=ALL, library_path=/data/app/~~HhFZ1MVIn4TZxngyd8fQ2w==/com.google.android.webview-M9M1esnoG8HMSmnGpPvjGQ==/lib/x86_64:/data/app/~~HhFZ1MVIn4TZxngyd8fQ2w==/com.google.android.webview-M9M1esnoG8HMSmnGpPvjGQ==/WebViewGoogle.apk!/lib/x86_64:/data/app/~~C-dMxWlvG3xNHBbbrvmQxQ==/com.google.android.trichromelibrary_636771938-4Qj8sq5a7wJgFh1OfeI_-A==/TrichromeLibrary.apk!/lib/x86_64, permitted_path=/data:/mnt/expand
+10-12 11:43:17.624  5637  5680 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+10-12 11:43:17.624  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.627   356  4993 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+10-12 11:43:17.627   356  4993 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+10-12 11:43:17.630  5637  5680 D nativeloader: Configuring clns-9 for other apk /data/app/~~HhFZ1MVIn4TZxngyd8fQ2w==/com.google.android.webview-M9M1esnoG8HMSmnGpPvjGQ==/WebViewGoogle.apk. target_sdk_version=34, uses_libraries=, library_path=/data/app/~~HhFZ1MVIn4TZxngyd8fQ2w==/com.google.android.webview-M9M1esnoG8HMSmnGpPvjGQ==/lib/x86_64:/data/app/~~HhFZ1MVIn4TZxngyd8fQ2w==/com.google.android.webview-M9M1esnoG8HMSmnGpPvjGQ==/WebViewGoogle.apk!/lib/x86_64:/data/app/~~C-dMxWlvG3xNHBbbrvmQxQ==/com.google.android.trichromelibrary_636771938-4Qj8sq5a7wJgFh1OfeI_-A==/TrichromeLibrary.apk!/lib/x86_64, permitted_path=/data:/mnt/expand
+10-12 11:43:17.632  1738  2460 W Finsky  : [119] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.633  1738  2460 I Finsky  : [119] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.637  1738  2460 W Finsky  : [119] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.640  1738  2460 I Finsky  : [119] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.654  1738  2460 W Finsky  : [119] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.654  1738  2460 I Finsky  : [119] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.662  1738  2460 W Finsky  : [119] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.662  1738  2460 I Finsky  : [119] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.663  1738  2460 W Finsky  : [119] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.663  1738  2460 I Finsky  : [119] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.667  1738  2460 W Finsky  : [119] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.667  1738  2460 I Finsky  : [119] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.667  1738  2460 W Finsky  : [119] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.668  1738  2460 I Finsky  : [119] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.674  1738  2460 W Finsky  : [119] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.674  1738  2460 I Finsky  : [119] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.676  1738  2460 W Finsky  : [119] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.676  1738  2460 I Finsky  : [119] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.677  1738  2460 W Finsky  : [119] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.677  1738  2460 I Finsky  : [119] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.678  1738  2460 W Finsky  : [119] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.678  1738  2460 I Finsky  : [119] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.678  1738  2460 W Finsky  : [119] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.679  1738  2460 I Finsky  : [119] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.680  1738  2460 W Finsky  : [119] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.680  1738  2460 I Finsky  : [119] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.683  1738  2460 W Finsky  : [119] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.683  1738  2460 I Finsky  : [119] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.687  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.688  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.689  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.689  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.692  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.692  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.694  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.694  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.694  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.695  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.697  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.697  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.698  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.698  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.699  1738  2460 W Finsky  : [119] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.700  1738  2460 I Finsky  : [119] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.702  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.703  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.705  5637  5680 I cr_WVCFactoryProvider: Loaded version=124.0.6367.219 minSdkVersion=29 isBundle=false multiprocess=true packageId=2
+10-12 11:43:17.707  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.708  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.708  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.708  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.709  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.709  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.709  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.709  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.709  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.710  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.710  5637  5680 D nativeloader: Load /data/app/~~C-dMxWlvG3xNHBbbrvmQxQ==/com.google.android.trichromelibrary_636771938-4Qj8sq5a7wJgFh1OfeI_-A==/TrichromeLibrary.apk!/lib/x86_64/libmonochrome_64.so using ns clns-9 from class loader (caller=/data/app/~~HhFZ1MVIn4TZxngyd8fQ2w==/com.google.android.webview-M9M1esnoG8HMSmnGpPvjGQ==/WebViewGoogle.apk): ok
+10-12 11:43:17.712  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.712  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.712  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.712  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.712  5637  5680 D nativeloader: Load /system/lib64/libwebviewchromium_plat_support.so using ns clns-9 from class loader (caller=/data/app/~~HhFZ1MVIn4TZxngyd8fQ2w==/com.google.android.webview-M9M1esnoG8HMSmnGpPvjGQ==/WebViewGoogle.apk): ok
+10-12 11:43:17.712  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.713  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.715  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.715  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.717  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.718  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.718  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.718  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.719  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.719  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.719  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.720  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.720  1738  2460 W Finsky  : [119] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.720  1738  2460 I Finsky  : [119] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.722  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.722  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.723  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.724  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.724  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.724  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.725  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.725  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.727  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.727  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.728  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.728  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.728  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.728  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.731   356  4993 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+10-12 11:43:17.731   356  4993 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+10-12 11:43:17.732  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:43:17.732  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:43:17.732  5637  5683 W BillingClient: In-app billing API version 3 is not supported on this device.
+10-12 11:43:17.737  5637  5637 I cr_LibraryLoader: Successfully loaded native library
+10-12 11:43:17.737  5637  5637 I cr_CachingUmaRecorder: Flushed 6 samples from 6 histograms, 0 samples were dropped.
+10-12 11:43:17.738  5637  5637 I cr_CombinedPProvider: #registerProvider() provider:WV.V7@bbc25e8 isPolicyCacheEnabled:false policyProvidersSize:0
+10-12 11:43:17.739  5637  5637 I cr_PolicyProvider: #setManagerAndSource() 0
+10-12 11:43:17.751   538  1509 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@b59614de does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+10-12 11:43:17.752  5637  5637 I cr_CombinedPProvider: #linkNativeInternal() 1
+10-12 11:43:17.752  5637  5637 I cr_AppResProvider: #getApplicationRestrictionsFromUserManager() Bundle[EMPTY_PARCEL]
+10-12 11:43:17.752  5637  5637 I cr_PolicyProvider: #notifySettingsAvailable() 0
+10-12 11:43:17.752  5637  5637 I cr_CombinedPProvider: #onSettingsAvailable() 0
+10-12 11:43:17.752  5637  5637 I cr_CombinedPProvider: #flushPolicies()
+10-12 11:43:17.760   944   944 D Zygote  : Forked child process 5691
+10-12 11:43:17.764  5691  5691 I ocessService0:0: Using CollectorTypeCMC GC.
+10-12 11:43:17.765  5691  5691 W ocessService0:0: Unexpected CPU variant for x86: x86_64.
+10-12 11:43:17.765  5691  5691 W ocessService0:0: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, default
+10-12 11:43:17.772  5691  5691 E ocessService0:0: Not starting debugger since process cannot load the jdwp agent.
+10-12 11:43:17.774  5691  5691 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+10-12 11:43:17.777   538   570 I ActivityManager: Start proc 5691:com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0/u0i2 for  {com.thinkube.feierabendrechner/org.chromium.content.app.SandboxedProcessService0:0}
+10-12 11:43:17.786  5691  5691 D CompatChangeReporter: Compat change id reported: 242716250; UID 99002; state: ENABLED
+10-12 11:43:17.795  5691  5691 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+10-12 11:43:17.803  5691  5691 I LoadedApk: No resource references to update in package com.google.android.trichromelibrary
+10-12 11:43:17.803  5691  5691 I cr_WebViewApkApp: Launched version=124.0.6367.219 minSdkVersion=29 isBundle=false processName=com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0
+10-12 11:43:17.810  5691  5691 I cr_ChildProcessService: Creating new ChildProcessService pid=5691
+10-12 11:43:17.816  5637  5700 E chromium: [ERROR:simple_file_enumerator.cc(21)] opendir /data/user/0/com.thinkube.feierabendrechner/cache/WebView/Default/HTTP Cache/Code Cache/js: No such file or directory (2)
+10-12 11:43:17.819  5637  5700 E chromium: [ERROR:simple_index_file.cc(614)] Could not reconstruct index from disk
+10-12 11:43:17.820  5637  5700 E chromium: [ERROR:simple_file_enumerator.cc(21)] opendir /data/user/0/com.thinkube.feierabendrechner/cache/WebView/Default/HTTP Cache/Code Cache/wasm: No such file or directory (2)
+10-12 11:43:17.820  5637  5700 E chromium: [ERROR:simple_index_file.cc(614)] Could not reconstruct index from disk
+10-12 11:43:17.821   538  1038 D ActivityManager: sync unfroze 3891 com.google.android.webview:webview_service for 6
+10-12 11:43:17.821   538  1038 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:17.839   356  4993 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+10-12 11:43:17.839   356  4993 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+10-12 11:43:17.839  5637  5680 D TrafficStats: tagSocket(192) with statsTag=0xffffffff, statsUid=-1
+10-12 11:43:17.865   538  2545 D CompatChangeReporter: Compat change id reported: 151861875; UID 10201; state: ENABLED
+10-12 11:43:17.865   538  2545 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@c8dccb1f does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+10-12 11:43:17.874   348   348 D Zygote  : Forked child process 5727
+10-12 11:43:17.875   538   570 I ActivityManager: Start proc 5727:com.google.android.adservices.api/u0a201 for service {com.google.android.adservices.api/com.android.adservices.measurement.MeasurementService}
+10-12 11:43:17.887  5727  5727 I .adservices.api: Using CollectorTypeCMC GC.
+10-12 11:43:17.888  5727  5727 W .adservices.api: Unexpected CPU variant for x86: x86_64.
+10-12 11:43:17.888  5727  5727 W .adservices.api: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, default
+10-12 11:43:17.890  5727  5727 E .adservices.api: Not starting debugger since process cannot load the jdwp agent.
+10-12 11:43:17.892  5727  5727 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+10-12 11:43:17.902  5727  5727 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+10-12 11:43:17.902  5727  5727 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+10-12 11:43:17.912  5727  5727 D nativeloader: Configuring clns-shared-7 for other apk /apex/com.android.adservices/priv-app/AdServicesApkGoogle@350820260/AdServicesApkGoogle.apk. target_sdk_version=35, uses_libraries=, library_path=/apex/com.android.adservices/priv-app/AdServicesApkGoogle@350820260/lib/x86_64:/system/lib64:/system_ext/lib64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.adservices.api:/apex/com.android.adservices/priv-app/AdServicesApkGoogle@350820260:/system/lib64:/system_ext/lib64
+10-12 11:43:17.913  5727  5727 D nativeloader: InitApexLibraries:
+10-12 11:43:17.913  5727  5727 D nativeloader:   com_android_adservices: libhpke_jni.so:libtflite_support_classifiers_native.so
+10-12 11:43:17.913  5727  5727 D nativeloader:   com_android_appsearch: libicing.so
+10-12 11:43:17.913  5727  5727 D nativeloader:   com_android_art: libartservice.so
+10-12 11:43:17.913  5727  5727 D nativeloader:   com_android_btservices: libbluetooth_jni.so
+10-12 11:43:17.913  5727  5727 D nativeloader:   com_android_conscrypt: libjavacrypto.so
+10-12 11:43:17.913  5727  5727 D nativeloader:   com_android_mediaprovider: libpdfclient.so
+10-12 11:43:17.913  5727  5727 D nativeloader:   com_android_nfcservices: libnfc_nci_jni.so
+10-12 11:43:17.913  5727  5727 D nativeloader:   com_android_ondevicepersonalization: libfcp_cpp_dep_jni.so:libfcp_hpke_jni.so
+10-12 11:43:17.913  5727  5727 D nativeloader:   com_android_os_statsd: libstats_jni.so
+10-12 11:43:17.913  5727  5727 D nativeloader:   com_android_tethering: libandroid_net_connectivity_com_android_net_module_util_jni.so:libcrypto.so:libframework-connectivity-jni.so:libframework-connectivity-tiramisu-jni.so:libmainlinecronet.121.0.6167.71.so:libservice-connectivity.so:libservice-thread-jni.so:libssl.so
+10-12 11:43:17.913  5727  5727 D nativeloader:   com_android_uwb: libuwb_uci_jni_rust.so
+10-12 11:43:17.913  5727  5727 D nativeloader:   com_android_virt: libvirtualizationservice_jni.so:libvirtualmachine_jni.so
+10-12 11:43:17.928  5727  5727 D CompatChangeReporter: Compat change id reported: 202956589; UID 10201; state: ENABLED
+10-12 11:43:17.947   356  4993 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+10-12 11:43:17.947   356  4993 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+10-12 11:43:18.051   356  4993 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+10-12 11:43:18.051   356  4993 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+10-12 11:43:18.052  5727  5727 V GraphicsEnvironment: Currently set values for:
+10-12 11:43:18.052  5727  5727 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+10-12 11:43:18.052  5727  5727 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+10-12 11:43:18.052  5727  5727 V GraphicsEnvironment: Global.Settings values are invalid: number of packages: 0, number of values: 0
+10-12 11:43:18.052  5727  5727 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+10-12 11:43:18.082  5727  5727 I adservices-shared: Set singleton context as android.app.Application@4e63009
+10-12 11:43:18.141  5727  5727 E adservices: Measurement API is disabled
+10-12 11:43:18.141  5727  5727 E adservices: Measurement API is disabled
+10-12 11:43:18.163   356  4993 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+10-12 11:43:18.163   356  4993 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+10-12 11:43:18.171  5637  5647 E adservices: onNullBinding android.adservices.MEASUREMENT_SERVICE
+10-12 11:43:18.172   538  2545 D CompatChangeReporter: Compat change id reported: 311208629; UID 10201; state: ENABLED
+10-12 11:43:18.173  5637  5724 E adservices: Failed to bind to measurement service: com.android.adservices.shared.common.exception.ServiceUnavailableException: Service is not available.
+10-12 11:43:18.265   538   557 I ActivityTaskManager: Displayed com.thinkube.feierabendrechner/.MainActivity for user 0: +1s766ms
+10-12 11:43:18.265   538   557 I ActivityTaskManager: Fully drawn com.thinkube.feierabendrechner/.MainActivity: +1s766ms
+10-12 11:43:18.275   356  4993 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+10-12 11:43:18.275   356  4993 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+10-12 11:43:18.279  1129  1129 D BaseDepthController: setSurface:
+10-12 11:43:18.279  1129  1129 D BaseDepthController: 	mWaitingOnSurfaceValidity: false
+10-12 11:43:18.279  1129  1129 D BaseDepthController: 	mSurface: null
+10-12 11:43:18.280  1129  1129 D BaseDepthController: mSurface is null and mCurrentBlur is: 0
+10-12 11:43:18.281  1129  1129 D StateManager: goToState - fromState: Normal, toState: Normal, partial trace:
+10-12 11:43:18.281  1129  1129 D StateManager: 	at com.android.launcher3.statemanager.StateManager.moveToRestState(go/retraceme 2855a437b73635ce9cad76b9289087e631bbb67fc90008a0da13d343a00e5041:4)
+10-12 11:43:18.281  1129  1129 D StateManager: 	at com.android.launcher3.statemanager.StateManager.moveToRestState(go/retraceme 2855a437b73635ce9cad76b9289087e631bbb67fc90008a0da13d343a00e5041:1)
+10-12 11:43:18.281  1129  1129 D StateManager: 	at com.android.launcher3.statemanager.StatefulActivity.onStop(go/retraceme 2855a437b73635ce9cad76b9289087e631bbb67fc90008a0da13d343a00e5041:34)
+10-12 11:43:18.281  1129  1129 D StatsLog: LAUNCHER_ONSTOP
+10-12 11:43:18.287  1129  1961 D OneSearchSuggestProvider: Shut down the binder channel
+10-12 11:43:18.289  1129  3991 I IPCThreadState: oneway function results for code 2 on binder at 0x753b90ea39d0 will be dropped but finished with status UNKNOWN_TRANSACTION
+10-12 11:43:18.291  1129  1129 D StatsLog: LAUNCHER_GOOGLE_SEARCH_RESTORE_LIST_SIZE_AFTER_ACTIVITY_RESTART
+10-12 11:43:18.293   881   976 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda11@41b1f48
+10-12 11:43:18.293   538  2545 D CoreBackPreview: Window{52be19c u0 Splash Screen com.thinkube.feierabendrechner EXITING}: Setting back callback null
+10-12 11:43:18.293   538  1038 W InputManager-JNI: Input channel object '52be19c Splash Screen com.thinkube.feierabendrechner (client)' was disposed without first being removed with the input manager!
+10-12 11:43:18.295   463   514 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:18.296  1129  1129 D NexusLauncherModelDelegate: notifySmartspaceEvent: SmartspaceTargetEvent{mSmartspaceTarget=null, mSmartspaceActionId='null', mEventType=7}
+10-12 11:43:18.297   538   655 I ImeTracker: com.thinkube.feierabendrechner:14bdb4b0: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false
+10-12 11:43:18.297   538   655 I ImeTracker: com.thinkube.feierabendrechner:14bdb4b0: onCancelled at PHASE_SERVER_SHOULD_HIDE
+10-12 11:43:18.299  1297  1297 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3157 
+10-12 11:43:18.301  1297  1297 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2248 repeatCheckTimes = 0, locked = false
+10-12 11:43:18.301  1297  1297 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1986 onStartInput(EditorInfo{EditorInfo{packageName=com.thinkube.feierabendrechner, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+10-12 11:43:18.302  1129  1129 D NexusLauncherModelDelegate: notifySmartspaceEvent: SmartspaceTargetEvent{mSmartspaceTarget=null, mSmartspaceActionId='null', mEventType=7}
+10-12 11:43:18.303  1297  1297 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2248 repeatCheckTimes = 1, locked = false
+10-12 11:43:18.303  1297  1297 I AndroidIME: InputBundleManager.loadActiveInputBundleId():450 loadActiveInputBundleId: und-Latn-x-password, password
+10-12 11:43:18.304   538  2545 W PackageConfigPersister: App-specific configuration not found for packageName: com.thinkube.feierabendrechner and userId: 0
+10-12 11:43:18.345  1297  1307 I putmethod.latin: JIT allocated 54KB for compiled code of boolean fjt.a(kwp, java.lang.Object[])
+10-12 11:43:18.345  1297  1307 I putmethod.latin: Compiler allocated 4801KB to compile boolean fjt.a(kwp, java.lang.Object[])
+10-12 11:43:18.379   356  4993 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+10-12 11:43:18.379   356  4993 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+10-12 11:43:18.403  5637  5680 D UserMessagingPlatform: Action[clear]: {"keys":["UMP_eids"]}
+10-12 11:43:18.403  5637  5680 D UserMessagingPlatform: Action[write]: {"UMP_consentModeValues":"4444","IABTCF_CmpSdkID":300,"IABTCF_gdprApplies":0}
+10-12 11:43:18.403  5637  5680 D UserMessagingPlatform: Writing to storage: [UMP_consentModeValues] 4444
+10-12 11:43:18.403  5637  5680 D UserMessagingPlatform: Writing to storage: [IABTCF_CmpSdkID] 300
+10-12 11:43:18.403  5637  5680 D UserMessagingPlatform: Writing to storage: [IABTCF_gdprApplies] 0
+10-12 11:43:18.445   538  2545 D ConnectivityService: requestNetwork for uid/pid:10209/5637 activeRequest: null callbackRequest: 156 [NetworkRequest [ REQUEST id=157, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 10209 RequestorPkg: com.thinkube.feierabendrechner UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false
+10-12 11:43:18.448   538   803 D ConnectivityService: NetReassign [157 : null → 101] [c 0] [a 1] [i 2]
+10-12 11:43:18.448   538   796 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=157, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 10209 RequestorPkg: com.thinkube.feierabendrechner UnderlyingNetworks: Null] ]
+10-12 11:43:18.448   538   796 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=157, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 10209 RequestorPkg: com.thinkube.feierabendrechner UnderlyingNetworks: Null] ]
+10-12 11:43:18.448   538   796 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=157, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 10209 RequestorPkg: com.thinkube.feierabendrechner UnderlyingNetworks: Null] ]
+10-12 11:43:18.450   538   796 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=157, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 10209 RequestorPkg: com.thinkube.feierabendrechner UnderlyingNetworks: Null] ]
+10-12 11:43:18.461  1436  1436 D BoundBrokerSvc: onRebind: Intent { act=com.google.android.gms.appset.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+10-12 11:43:18.468   538  1509 D ConnectivityService: requestNetwork for uid/pid:10209/5637 activeRequest: null callbackRequest: 158 [NetworkRequest [ REQUEST id=159, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 10209 RequestorPkg: com.thinkube.feierabendrechner UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false
+10-12 11:43:18.469   538   803 D ConnectivityService: NetReassign [159 : null → 101] [c 0] [a 0] [i 0]
+10-12 11:43:18.470   538   796 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=159, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 10209 RequestorPkg: com.thinkube.feierabendrechner UnderlyingNetworks: Null] ]
+10-12 11:43:18.470   538   796 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=159, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 10209 RequestorPkg: com.thinkube.feierabendrechner UnderlyingNetworks: Null] ]
+10-12 11:43:18.470   538   796 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=159, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 10209 RequestorPkg: com.thinkube.feierabendrechner UnderlyingNetworks: Null] ]
+10-12 11:43:18.470   538   796 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=159, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 10209 RequestorPkg: com.thinkube.feierabendrechner UnderlyingNetworks: Null] ]
+10-12 11:43:18.473   538   803 D ConnectivityService: NetReassign [no changes] [c 0] [a 0] [i 1]
+10-12 11:43:18.483   356  4993 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+10-12 11:43:18.483   356  4993 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+10-12 11:43:18.499  5637  5708 W cr_media: BLUETOOTH_CONNECT permission is missing.
+10-12 11:43:18.501  5691  5716 I cr_LibraryLoader: Successfully loaded native library
+10-12 11:43:18.501  5691  5716 I cr_CachingUmaRecorder: Flushed 2 samples from 2 histograms, 0 samples were dropped.
+10-12 11:43:18.509  5637  5708 W cr_media: registerBluetoothIntentsIfNeeded: Requires BLUETOOTH permission
+10-12 11:43:18.512  5691  5716 W SystemServiceRegistry: No service published for: uimode
+10-12 11:43:18.520  5691  5716 W chromium: [WARNING:runtime_features.cc(694)] SharedStorage for M118+ cannot be enabled in this configuration. Use --enable-features=SharedStorageAPI,SharedStorageAPIM118 in addition.
+10-12 11:43:18.526  5637  5770 I Ads     : This request is sent from a test device.
+10-12 11:43:18.531  1224  3014 I FontLog : (REDACTED) Received query %s, URI %s
+10-12 11:43:18.531  1224  3014 I FontLog : (REDACTED) Query [%s] resolved to %s
+10-12 11:43:18.540  1224  3014 I FontLog : (REDACTED) Font PFD returned from cache for %s
+10-12 11:43:18.540  1224  3014 I FontLog : (REDACTED) Fetch %s end status %s
+10-12 11:43:18.540  1436  1436 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.safebrowsing.SafeBrowsingService.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+10-12 11:43:18.540  1436  1436 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.safebrowsing.SafeBrowsingService.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+10-12 11:43:18.541  1224  3014 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+10-12 11:43:18.544  1224  3014 I FontLog : (REDACTED) Received query %s, URI %s
+10-12 11:43:18.544  1224  3014 I FontLog : (REDACTED) Query [%s] resolved to %s
+10-12 11:43:18.547  1224  3014 I FontLog : (REDACTED) Fetch %s end status %s
+10-12 11:43:18.551  1224  3014 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+10-12 11:43:18.556  5637  5777 D GASS    : Clearcut logging disabled
+10-12 11:43:18.557  1224  3014 I FontLog : (REDACTED) Received query %s, URI %s
+10-12 11:43:18.557  1224  3014 I FontLog : (REDACTED) Query [%s] resolved to %s
+10-12 11:43:18.557  1224  3014 I FontLog : (REDACTED) Font PFD returned from cache for %s
+10-12 11:43:18.557  1224  3014 I FontLog : (REDACTED) Fetch %s end status %s
+10-12 11:43:18.558  1224  3014 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+10-12 11:43:18.559  1224  3014 I FontLog : (REDACTED) Received query %s, URI %s
+10-12 11:43:18.559  1224  3014 I FontLog : (REDACTED) Query [%s] resolved to %s
+10-12 11:43:18.560  1224  3014 I FontLog : (REDACTED) Font PFD returned from cache for %s
+10-12 11:43:18.560  1224  3014 I FontLog : (REDACTED) Fetch %s end status %s
+10-12 11:43:18.562  1224  1234 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+10-12 11:43:18.564   538  1038 D ConnectivityService: requestNetwork for uid/pid:10209/5637 activeRequest: null callbackRequest: 161 [NetworkRequest [ REQUEST id=162, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 10209 RequestorPkg: com.thinkube.feierabendrechner UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false
+10-12 11:43:18.566   538   803 D ConnectivityService: NetReassign [162 : null → 101] [c 0] [a 1] [i 0]
+10-12 11:43:18.567   538   796 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=162, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 10209 RequestorPkg: com.thinkube.feierabendrechner UnderlyingNetworks: Null] ]
+10-12 11:43:18.567   538   796 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=162, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 10209 RequestorPkg: com.thinkube.feierabendrechner UnderlyingNetworks: Null] ]
+10-12 11:43:18.567   538   796 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=162, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 10209 RequestorPkg: com.thinkube.feierabendrechner UnderlyingNetworks: Null] ]
+10-12 11:43:18.567   538   796 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=162, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 10209 RequestorPkg: com.thinkube.feierabendrechner UnderlyingNetworks: Null] ]
+10-12 11:43:18.578  5637  5784 D GASS    : Clearcut logging disabled
+10-12 11:43:18.587   356  4993 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+10-12 11:43:18.587   356  4993 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+10-12 11:43:18.607  1436  2608 W SQLiteLog: (28) double-quoted string literal: "1791632598607"
+10-12 11:43:18.607  1436  2608 W SQLiteLog: (28) double-quoted string literal: "1"
+10-12 11:43:18.613  5637  5778 D nativeloader: Configuring clns-10 for other apk . target_sdk_version=36, uses_libraries=ALL, library_path=, permitted_path=/data:/mnt/expand
+10-12 11:43:18.625  5637  5778 D nativeloader: Load /data/user/0/com.thinkube.feierabendrechner/app_pccache/6/09CB3651361702CAA758CA516CD972AA21DFDDAA/pcam.jar!/libdE640570AD1BD.so using isolated ns clns-10 (caller=/data/user/0/com.thinkube.feierabendrechner/app_pccache/6/09CB3651361702CAA758CA516CD972AA21DFDDAA/pcam.jar): ok
+10-12 11:43:18.610  5637  5637 W AdWorker(Defaul: type=1400 audit(0.0:66): avc:  granted  { execute } for  path="/data/data/com.thinkube.feierabendrechner/app_pccache/6/09CB3651361702CAA758CA516CD972AA21DFDDAA/pcam.jar" dev="dm-46" ino=385120 scontext=u:r:untrusted_app:s0:c209,c256,c512,c768 tcontext=u:object_r:app_data_file:s0:c209,c256,c512,c768 tclass=file app=com.thinkube.feierabendrechner
+10-12 11:43:18.661  5637  5786 W Ads     : Not retrying to fetch app settings
+10-12 11:43:18.663  5637  5793 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 254730000 but found 242335041
+10-12 11:43:18.691   356  4993 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+10-12 11:43:18.691   356  4993 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+10-12 11:43:18.795   356  4993 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+10-12 11:43:18.795   356  4993 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+10-12 11:43:18.806  5637  5637 I Ads     : JS: The jsLoaded GMSG has been sent (https://googleads.g.doubleclick.net/mads/static/sdk/native/sdk-core-v40.html:1108)
+10-12 11:43:18.866  5637  5637 I Ads     : JS: The jsLoaded GMSG has been sent (https://googleads.g.doubleclick.net/mads/static/mad/sdk/native/production/sdk-core-v40-impl.js?n=true&lv=sdk_20190107_RC02:1101)
+10-12 11:43:18.887  5637  5749 I Ads     : SDK version: afma-sdk-a-v262180000.262180000.0
+10-12 11:43:18.887  5637  5749 I Ads     : HTTP timeout: 60000 milliseconds.
+10-12 11:43:18.888  5637  5749 D TrafficStats: tagSocket(281) with statsTag=0xffffffff, statsUid=-1
+10-12 11:43:18.899   356  4993 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+10-12 11:43:18.899   356  4993 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+10-12 11:43:19.003   356  4993 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+10-12 11:43:19.003   356  4993 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+10-12 11:43:19.107   356  4993 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+10-12 11:43:19.107   356  4993 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+10-12 11:43:19.211   356  4993 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+10-12 11:43:19.211   356  4993 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+10-12 11:43:19.315   356  4993 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+10-12 11:43:19.315   356  4993 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+10-12 11:43:19.419   356  4993 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+10-12 11:43:19.419   356  4993 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+10-12 11:43:19.497   356  4160 D android.hardware.audio@7.1-impl.ranchu: threadLoop: entering standby, frames: 5602112
+10-12 11:43:19.523   356  4993 W android.hardware.audio@7.1-impl.ranchu: pcmWrite:259 pcm_writei failed with 'cannot read/write stream data: I/O error' (-1)
+10-12 11:43:19.523   356  4993 E android.hardware.audio@7.1-impl.ranchu: pcmWrite:260 failure: -1
+10-12 11:43:19.573  5637  5671 D EGL_emulation: app_time_stats: avg=188.13ms min=7.18ms max=948.25ms count=8
+10-12 11:43:19.948  5637  5637 I Ads     : JS: The jsLoaded GMSG has been sent (https://googleads.g.doubleclick.net/mads/static/sdk/native/sdk-core-v40.html:1108)
+10-12 11:43:20.147  5637  5803 D TrafficStats: tagSocket(310) with statsTag=0xffffffff, statsUid=-1
+10-12 11:43:20.155   538   803 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:20.155   538   803 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:20.155   538   803 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:20.159  3604  3604 W JobService: onNetworkChanged() not implemented in androidx.work.impl.background.systemjob.SystemJobService. Must override in a subclass.
+10-12 11:43:20.160  3840  3884 I BugleRcsEngine: Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=61 ]
+10-12 11:43:20.160  3840  3969 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[a56943fd-92c6]>Handler" thread_id=67 ]
+10-12 11:43:20.162  1224  1234 I ChimeraSrvcProxy: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl
+10-12 11:43:20.164  1224  1234 W .gms.persistent: Large reply transaction of 1056768 bytes, interface descriptor , code 1
+10-12 11:43:20.548   538  3168 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+10-12 11:43:20.925  5637  5637 I Choreographer: Skipped 46 frames!  The application may be doing too much work on its main thread.
+10-12 11:43:20.937  5637  5637 W WindowOnBackDispatcher: OnBackInvokedCallback is not enabled for the application.
+10-12 11:43:20.937  5637  5637 W WindowOnBackDispatcher: Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+10-12 11:43:21.043  5637  5671 D EGL_emulation: app_time_stats: avg=293.98ms min=15.39ms max=923.40ms count=5
+10-12 11:43:21.469  5637  5658 D EGL_emulation: app_time_stats: avg=454.10ms min=20.80ms max=784.69ms count=3
+10-12 11:43:21.472  5637  5658 D EGL_emulation: app_time_stats: avg=800.06ms min=7.63ms max=1850.55ms count=4
+10-12 11:43:22.424  5637  5813 D ProfileInstaller: Skipping profile installation for com.thinkube.feierabendrechner
+10-12 11:43:22.573  5637  5671 D EGL_emulation: app_time_stats: avg=66.51ms min=6.22ms max=704.18ms count=22
+10-12 11:43:22.832   538   568 D OomAdjuster: Not killing cached processes
+10-12 11:43:22.877   538   803 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-12 11:43:22.878   538   803 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-12 11:43:22.878   538   803 D InetDiagMessage: Destroyed live tcp sockets for uids={10162} in 1ms
+10-12 11:43:22.878   538   803 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-12 11:43:22.878   538   803 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-12 11:43:22.878   538   803 D InetDiagMessage: Destroyed live tcp sockets for uids={20162} in 0ms
+10-12 11:43:23.160   538   803 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:23.160   538   803 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:23.160   538   803 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:23.162  3604  3604 W JobService: onNetworkChanged() not implemented in androidx.work.impl.background.systemjob.SystemJobService. Must override in a subclass.
+10-12 11:43:23.164  3840  3969 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[a56943fd-92c6]>Handler" thread_id=67 ]
+10-12 11:43:23.165  3840  3884 I BugleRcsEngine: Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=61 ]
+10-12 11:43:23.165  1224  3014 I ChimeraSrvcProxy: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl
+10-12 11:43:23.165  1224  3014 W .gms.persistent: Large reply transaction of 1056768 bytes, interface descriptor , code 1
+10-12 11:43:23.175   538   803 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-12 11:43:23.175   538   803 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-12 11:43:23.175   538   803 D InetDiagMessage: Destroyed live tcp sockets for uids={10201} in 0ms
+10-12 11:43:23.175   538   803 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-12 11:43:23.175   538   803 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-12 11:43:23.175   538   803 D InetDiagMessage: Destroyed live tcp sockets for uids={20201} in 1ms
+10-12 11:43:23.594  5637  5671 D EGL_emulation: app_time_stats: avg=255.27ms min=17.92ms max=960.82ms count=4
+10-12 11:43:24.595  5637  5671 D EGL_emulation: app_time_stats: avg=333.54ms min=15.60ms max=962.42ms count=3
+10-12 11:43:25.610  5637  5671 D EGL_emulation: app_time_stats: avg=253.69ms min=15.05ms max=963.28ms count=4
+10-12 11:43:26.165  3604  3604 W JobService: onNetworkChanged() not implemented in androidx.work.impl.background.systemjob.SystemJobService. Must override in a subclass.
+10-12 11:43:26.168   538   803 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:26.168   538   803 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:26.168  1224  3014 I ChimeraSrvcProxy: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl
+10-12 11:43:26.168   538   803 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:26.168  1224  3014 W .gms.persistent: Large reply transaction of 1056768 bytes, interface descriptor , code 1
+10-12 11:43:26.170  3840  3884 I BugleRcsEngine: Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=61 ]
+10-12 11:43:26.171  3840  3969 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[a56943fd-92c6]>Handler" thread_id=67 ]
+10-12 11:43:26.432   538   637 D ActivityManager: freezing 1586 android.process.acore
+10-12 11:43:26.433   538   803 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-12 11:43:26.434   538   803 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-12 11:43:26.434   538   803 D InetDiagMessage: Destroyed live tcp sockets for uids={10093} in 1ms
+10-12 11:43:26.610  5637  5671 D EGL_emulation: app_time_stats: avg=333.31ms min=17.04ms max=963.19ms count=3
+10-12 11:43:26.783  5637  5643 W ierabendrechner: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~HhFZ1MVIn4TZxngyd8fQ2w==/com.google.android.webview-M9M1esnoG8HMSmnGpPvjGQ==/WebViewGoogle.apk' with 2 weak references
+10-12 11:43:26.783  5637  5643 W ierabendrechner: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk' with 1 weak references
+10-12 11:43:26.887  3604  3604 W JobService: onNetworkChanged() not implemented in androidx.work.impl.background.systemjob.SystemJobService. Must override in a subclass.
+10-12 11:43:26.902   881  1003 D EGL_emulation: app_time_stats: avg=5010.43ms min=4.21ms max=10016.66ms count=2
+10-12 11:43:27.676  1436  1436 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+10-12 11:43:27.874   538   637 D ActivityManager: freezing 3891 com.google.android.webview:webview_service
+10-12 11:43:27.875   538   803 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-12 11:43:27.876   538   803 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-12 11:43:27.876   538   803 D InetDiagMessage: Destroyed live tcp sockets for uids={10162} in 1ms
+10-12 11:43:28.004   960  2484 D ApfFilter: (wlan0): Ignoring RA RA fe80::2 -> ff02::1 1800s fec0::/64 86400s/14400s  which matches RA fe80::2 -> ff02::1 1800s fec0::/64 86400s/14400s 
+10-12 11:43:28.174   538   637 D ActivityManager: freezing 5727 com.google.android.adservices.api
+10-12 11:43:28.175   538   803 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-12 11:43:28.176   538   803 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-12 11:43:28.176   538   803 D InetDiagMessage: Destroyed live tcp sockets for uids={10201} in 1ms
+10-12 11:43:28.295   538   637 D ActivityManager: freezing 1468 com.google.android.googlequicksearchbox:search
+10-12 11:43:28.297   538   637 D ActivityManager: freezing 3903 com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0
+10-12 11:43:28.333   538   803 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-12 11:43:28.333   538   803 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-12 11:43:28.333   538   803 D InetDiagMessage: Destroyed live tcp sockets for uids={99000} in 1ms
+10-12 11:43:28.572  5637  5671 D EGL_emulation: app_time_stats: avg=490.55ms min=10.90ms max=963.58ms count=4
+10-12 11:43:29.179   538   568 D OomAdjuster: Not killing cached processes
+10-12 11:43:29.574  5637  5671 D EGL_emulation: app_time_stats: avg=333.86ms min=15.05ms max=962.80ms count=3
+10-12 11:43:30.596  5637  5671 D EGL_emulation: app_time_stats: avg=255.44ms min=14.20ms max=964.24ms count=4
+10-12 11:43:31.610  5637  5671 D EGL_emulation: app_time_stats: avg=253.43ms min=13.35ms max=964.51ms count=4
+10-12 11:43:33.179  1224  2762 I NearbyDiscovery: FastPair: isDestroyable: Scanner is alive. [CONTEXT service_id=265 ]
+10-12 11:43:33.179  1224  2762 I NearbyDiscovery: DiscoveryService: Skip stopSelf(), fast pair controller is not destroyable. [CONTEXT service_id=265 ]
+10-12 11:43:33.573  5637  5671 D EGL_emulation: app_time_stats: avg=490.73ms min=16.17ms max=963.35ms count=4
+10-12 11:43:34.573  5637  5671 D EGL_emulation: app_time_stats: avg=333.40ms min=14.83ms max=963.33ms count=3
+10-12 11:43:34.766   538  1509 D OomAdjuster: Not killing cached processes
+10-12 11:43:34.767  1436  1436 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.safebrowsing.SafeBrowsingService.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+10-12 11:43:35.574  5637  5671 D EGL_emulation: app_time_stats: avg=333.46ms min=14.48ms max=963.78ms count=3
+10-12 11:43:36.595  5637  5671 D EGL_emulation: app_time_stats: avg=255.25ms min=16.69ms max=963.06ms count=4
+10-12 11:43:37.595  5637  5671 D EGL_emulation: app_time_stats: avg=333.53ms min=13.57ms max=964.59ms count=3
+10-12 11:43:38.596  5637  5671 D EGL_emulation: app_time_stats: avg=333.36ms min=14.91ms max=962.89ms count=3
+10-12 11:43:39.611  5637  5671 D EGL_emulation: app_time_stats: avg=253.71ms min=16.86ms max=961.10ms count=4
+10-12 11:43:40.611  5637  5671 D EGL_emulation: app_time_stats: avg=333.47ms min=17.48ms max=962.87ms count=3
+10-12 11:43:42.361  5818  5818 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-12 11:43:42.365  5818  5818 I AndroidRuntime: Using default boot image
+10-12 11:43:42.365  5818  5818 I AndroidRuntime: Leaving lock profiling enabled
+10-12 11:43:42.368  5818  5818 I app_process: Using CollectorTypeCMC GC.
+10-12 11:43:42.440  5818  5818 D nativeloader: InitDefaultPublicLibraries for_preload=1: libandroid.so:libaaudio.so:libamidi.so:libbinder_ndk.so:libc.so:libcamera2ndk.so:libdl.so:libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libicu.so:libicui18n.so:libicuuc.so:libjnigraphics.so:liblog.so:libmediandk.so:libm.so:libnativehelper.so:libnativewindow.so:libOpenMAXAL.so:libOpenSLES.so:libRS.so:libstdc++.so:libsync.so:libvulkan.so:libwebviewchromium_plat_support.so:libz.so
+10-12 11:43:42.451  5818  5818 D nativeloader: Load libicu_jni.so using APEX ns com_android_art for caller /apex/com.android.art/javalib/core-oj.jar: ok
+10-12 11:43:42.451  5818  5818 D app_process: u_setTimeZoneFilesDirectory("/apex/com.android.tzdata/etc/tz/versioned/8/icu") succeeded. 
+10-12 11:43:42.451  5818  5818 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt75l.dat
+10-12 11:43:42.452  5818  5818 D nativeloader: Load libjavacore.so using APEX ns com_android_art for caller /apex/com.android.art/javalib/core-oj.jar: ok
+10-12 11:43:42.452  5818  5818 D nativeloader: Load libopenjdk.so using APEX ns com_android_art for caller /apex/com.android.art/javalib/core-oj.jar: ok
+10-12 11:43:42.454  5818  5818 W app_process: Unexpected CPU variant for x86: x86_64.
+10-12 11:43:42.454  5818  5818 W app_process: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, default
+10-12 11:43:42.455  5818  5818 W app_process: ClassLoaderContext shared library size mismatch. Expected=2, found=0 (PCL[]{PCL[/system/framework/android.test.base.jar*724373495]#PCL[/system/framework/android.test.mock.jar*1452759902]} | PCL[])
+10-12 11:43:42.455  5818  5818 W app_process: ClassLoaderContext classpath size mismatch. expected=0, found=1 (PCL[]{PCL[/system/framework/android.test.runner.jar*2496447986]#PCL[/system/framework/android.test.base.jar*724373495]} | PCL[/system/framework/android.test.runner.jar*2496447986])
+10-12 11:43:42.470  5818  5818 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+10-12 11:43:42.471  5818  5818 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-12 11:43:42.473  5818  5818 D UiAutomationConnection: Created on user UserHandle{0}
+10-12 11:43:42.473  5818  5818 I UiAutomation: Initialized for user 0 on display 0
+10-12 11:43:42.473  5818  5818 W UiAutomation: Created with deprecatead constructor, assumes DEFAULT_DISPLAY
+10-12 11:43:42.474   538  1509 D AccessibilityManagerService: changeCurrentUserForTestAutomationIfNeededLocked(0): ignoring because device doesn't support visible background users
+10-12 11:43:42.474   538  1509 I UiAutomationManager: Registering UiTestAutomationService (id=com.android.server.accessibility/UiAutomation, flags=0x0) when called by user 0
+10-12 11:43:42.475   538  1509 W MagnificationConnectionManager: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+10-12 11:43:42.476  1363  2123 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+10-12 11:43:42.476   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:42.476   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:42.476   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:42.476   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:42.476  1363  1500 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+10-12 11:43:42.476  1363  1500 I AiAiEcho: EchoTargets: 
+10-12 11:43:42.476  1363  1500 I AiAiEcho: Filtered by AiAi flag check: 
+10-12 11:43:42.476  1363  1500 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+10-12 11:43:42.476  1363  1500 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+10-12 11:43:42.476  1363  1500 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+10-12 11:43:42.476  1363  1500 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+10-12 11:43:42.476   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:42.476   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:42.477   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:42.477   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:42.477  1363  1500 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+10-12 11:43:42.477  1363  1500 I AiAiEcho: EchoTargets: 
+10-12 11:43:42.477  1363  1500 I AiAiEcho: Filtered by AiAi flag check: 
+10-12 11:43:42.477  1363  1500 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+10-12 11:43:42.477  1363  1500 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+10-12 11:43:42.477   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:42.477  1363  1500 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+10-12 11:43:42.477   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:42.477   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:42.477  1363  1500 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+10-12 11:43:42.477   881   881 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+10-12 11:43:42.478  1129  1129 D SsBaseTemplateCard: No text view can be set up
+10-12 11:43:42.478   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:42.478   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:42.478  1129  1129 D SsBaseTemplateCard: Passed-in item info is null
+10-12 11:43:42.478  1129  1129 D SsBaseTemplateCard: Passed-in item info is null
+10-12 11:43:42.478  1129  1129 D SsBaseTemplateCard: Passed-in item info is null
+10-12 11:43:42.478  1129  1129 I SsBaseTemplateCard: Secondary card pane is null
+10-12 11:43:42.478   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:42.479   538   790 W MagnificationConnectionManager: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+10-12 11:43:42.479  1363  2123 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+10-12 11:43:42.479   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:42.479   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:42.479   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:42.480   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:42.480   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:42.480   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:42.480   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:42.480   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:42.480   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:42.480   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:42.480   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:42.481   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:42.481   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:42.481   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:42.481  1363  1500 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+10-12 11:43:42.481   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:42.481   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:42.481   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:42.481   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:42.481  1363  1500 I AiAiEcho: EchoTargets: 
+10-12 11:43:42.481  1363  1500 I AiAiEcho: Filtered by AiAi flag check: 
+10-12 11:43:42.481  1363  1500 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+10-12 11:43:42.481   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:42.481   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:42.481  1363  1500 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+10-12 11:43:42.481  1363  1500 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+10-12 11:43:42.481   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:42.481   538   538 D BatterySaverPolicy: accessibility changed to true, updating policy.
+10-12 11:43:42.482  1363  1500 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+10-12 11:43:42.482  1363  1500 I AiAiEcho: EchoTargets: 
+10-12 11:43:42.482  1363  1500 I AiAiEcho: Filtered by AiAi flag check: 
+10-12 11:43:42.482  1363  1500 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+10-12 11:43:42.482  1363  1500 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+10-12 11:43:42.482  1363  1500 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+10-12 11:43:42.482  1363  1500 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+10-12 11:43:42.483  1363  1500 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+10-12 11:43:42.484   881   881 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+10-12 11:43:42.485  1129  1129 D SsBaseTemplateCard: No text view can be set up
+10-12 11:43:42.485  1129  1129 D SsBaseTemplateCard: Passed-in item info is null
+10-12 11:43:42.485  1129  1129 D SsBaseTemplateCard: Passed-in item info is null
+10-12 11:43:42.485  1129  1129 D SsBaseTemplateCard: Passed-in item info is null
+10-12 11:43:42.485  1129  1129 I SsBaseTemplateCard: Secondary card pane is null
+10-12 11:43:42.495  5637  5658 D EGL_emulation: app_time_stats: avg=1167.96ms min=14.36ms max=20655.05ms count=18
+10-12 11:43:42.504  5637  5671 D EGL_emulation: app_time_stats: avg=473.16ms min=15.01ms max=961.88ms count=4
+10-12 11:43:43.501  5818  5818 W AccessibilityNodeInfoDumper: Fetch time: 2ms
+10-12 11:43:43.505   538  2545 W MagnificationConnectionManager: requestConnection duplicated request: connect=false, mConnectionState=DISCONNECTED
+10-12 11:43:43.505   538  2545 D AccessibilityManagerService: restoreCurrentUserForTestAutomationIfNeededLocked(): ignoring because device doesn't support visible background users
+10-12 11:43:43.505   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:43.505   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:43.505   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:43.505   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:43.505   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:43.505   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:43.506   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:43.506   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:43.506   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:43.506   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:43.506   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:43.506   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:43.506   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:43.507  5818  5818 D AndroidRuntime: Shutting down VM
+10-12 11:43:43.509   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:43.509   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:43.509   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:43.509   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:43.509   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:43.509   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:43.509   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:43.509   538   538 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:43.509   538   538 D BatterySaverPolicy: accessibility changed to false, updating policy.
+10-12 11:43:43.513  1363  2134 I AiAiEcho: Settings changed for uri: content://settings/secure/accessibility_enabled
+10-12 11:43:43.514  1363  1500 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+10-12 11:43:43.515  1363  1500 I AiAiEcho: EchoTargets: 
+10-12 11:43:43.515  1363  1500 I AiAiEcho: Filtered by AiAi flag check: 
+10-12 11:43:43.515  1363  1500 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+10-12 11:43:43.515  1363  1500 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+10-12 11:43:43.515  1363  1500 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+10-12 11:43:43.521  1363  1500 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+10-12 11:43:43.521  1363  1500 I AiAiEcho: EchoTargets: 
+10-12 11:43:43.521  1363  1500 I AiAiEcho: Filtered by AiAi flag check: 
+10-12 11:43:43.521  1363  1500 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+10-12 11:43:43.521  1363  1500 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+10-12 11:43:43.521  1363  1500 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+10-12 11:43:43.521  1363  1500 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+10-12 11:43:43.522  5637  5671 D EGL_emulation: app_time_stats: avg=254.35ms min=17.27ms max=910.86ms count=4
+10-12 11:43:43.524  1363  1500 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+10-12 11:43:43.524   881   881 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+10-12 11:43:43.524  1129  1129 D SsBaseTemplateCard: No text view can be set up
+10-12 11:43:43.524  1129  1129 D SsBaseTemplateCard: Passed-in item info is null
+10-12 11:43:43.524  1129  1129 D SsBaseTemplateCard: Passed-in item info is null
+10-12 11:43:43.524  1129  1129 D SsBaseTemplateCard: Passed-in item info is null
+10-12 11:43:43.524  1129  1129 I SsBaseTemplateCard: Secondary card pane is null
+10-12 11:43:43.525  5637  5658 D EGL_emulation: app_time_stats: avg=1029.69ms min=1029.69ms max=1029.69ms count=1
+10-12 11:43:44.385   414   917 D audioserver: logFgsApiBegin: FGS Logger Transaction failed, -129
+10-12 11:43:44.385   538  1038 W AS.PlaybackActivityMon: No piid assigned for invalid/internal port id 15
+10-12 11:43:44.425  1436  1436 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+10-12 11:43:44.427  1436  1436 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+10-12 11:43:44.428   538  1038 D OomAdjuster: Not killing cached processes
+10-12 11:43:44.430  5637  5668 I FA      : Tag Manager is not found and thus will not be used
+10-12 11:43:44.432  5637  5857 D TrafficStats: tagSocket(287) with statsTag=0x8001, statsUid=-1
+10-12 11:43:44.434   414   517 D AudioFlinger: mixer(0x7a3c573a38e0) throttle end: throttle time(33)
+10-12 11:43:44.492  1738  2763 I Finsky  : [135] alrq.x(231): Package com.google.android.gms is verified.
+10-12 11:43:44.496  1436  5684 W FA-SVC  : Service response is missing Install Referrer install timestamp
+10-12 11:43:44.548   414   517 D audioserver: logFgsApiEnd: FGS Logger Transaction failed, -129
+10-12 11:43:44.572  5637  5671 D EGL_emulation: app_time_stats: avg=128.75ms min=9.17ms max=862.76ms count=8
+10-12 11:43:45.573  5637  5671 D EGL_emulation: app_time_stats: avg=333.33ms min=17.33ms max=963.77ms count=3
+10-12 11:43:46.593  5637  5671 D EGL_emulation: app_time_stats: avg=255.01ms min=16.39ms max=963.61ms count=4
+10-12 11:43:47.196  3604  3604 W JobService: onNetworkChanged() not implemented in androidx.work.impl.background.systemjob.SystemJobService. Must override in a subclass.
+10-12 11:43:47.197   538   803 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:47.198   538   803 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:47.198   538   803 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:47.198   538   803 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:47.198   538   803 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:47.198   538   803 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:43:47.199  1224  3014 I ChimeraSrvcProxy: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl
+10-12 11:43:47.200  1224  3014 W .gms.persistent: Large reply transaction of 1056768 bytes, interface descriptor , code 1
+10-12 11:43:47.201  3840  3884 I BugleRcsEngine: Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=61 ]
+10-12 11:43:47.201  3840  3969 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[a56943fd-92c6]>Handler" thread_id=67 ]
+10-12 11:43:47.426   356  4160 D android.hardware.audio@7.1-impl.ranchu: threadLoop: entering standby, frames: 5751168
+10-12 11:43:47.452  5867  5867 W BpBinder: Linking to death on android.gui.ISurfaceComposer but there are no threads (yet?) listening to incoming transactions. See ProcessState::startThreadPool and ProcessState::setThreadPoolMaxThreadCount. Generally you should setup the binder threadpool before other initialization steps.
+10-12 11:43:47.452  5867  5867 W ProcessState: Extra binder thread started, but 0 threads requested. Do not use *startThreadPool when zero threads are requested.
+10-12 11:43:47.460   138   138 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+10-12 11:43:47.460  5867  5868 I Gralloc4: mapper 4.x is not supported

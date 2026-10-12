@@ -1,0 +1,439 @@
+--------- beginning of main
+10-12 11:45:49.135   881   881 I vol.VolumeDialogImpl: mDialog.dismiss() reason: volume_controller from: com.android.systemui.volume.VolumeDialogImpl$7.onDismissRequested:3
+--------- beginning of system
+10-12 11:45:49.138   538   558 W ActivityTaskManager: callingPackage for (uid=-1, pid=0) has no WPC
+10-12 11:45:49.139   538   558 W OptProp : Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_USER_ASPECT_RATIO_OVERRIDE
+10-12 11:45:49.139   538   558 W OptProp : Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_USER_ASPECT_RATIO_FULLSCREEN_OVERRIDE
+10-12 11:45:49.139   538   558 W OptProp : Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_ORIENTATION_OVERRIDE
+10-12 11:45:49.139   538   558 W OptProp : Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_RESIZEABLE_ACTIVITY_OVERRIDES
+10-12 11:45:49.140   538   558 W OptProp : Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_MIN_ASPECT_RATIO_OVERRIDE
+10-12 11:45:49.140   538   558 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@9e33a398 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+10-12 11:45:49.141   881  3545 D KeyguardService: setOccluded(false)
+10-12 11:45:49.141   881  3545 D KeyguardViewMediator: setOccluded(false)
+10-12 11:45:49.141   881   881 D KeyguardViewMediator: handleSetOccluded(false)
+10-12 11:45:49.141   881   881 D KeyguardViewMediator: KeyguardViewMediator queue processing message: SET_OCCLUDED
+10-12 11:45:49.141   538   558 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000100 cmp=com.google.android.apps.nexuslauncher/.NexusLauncherActivity (has extras)} with LAUNCH_SINGLE_TASK from uid 0 (BAL_ALLOW_ALLOWLISTED_UID) result code=3
+10-12 11:45:49.142  1129  1129 W SplitSelectStateCtor: Missing session instanceIds
+10-12 11:45:49.142  1129  1129 D StatsLog: LAUNCHER_SPLIT_SELECTION_EXIT_INTERRUPTED
+10-12 11:45:49.142  1129  1129 D OverviewCommandHelper: clearing pending commands - size: 0
+10-12 11:45:49.143   881   932 D WindowManagerShell: onActivityRestartAttempt: ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity}
+10-12 11:45:49.143  1129  1129 D StatsLog: LAUNCHER_ONRESUME
+10-12 11:45:49.144   538  1418 W AppSearchIcing: icing-search-engine.cc:321: Error: 5, Message: Document (com.google.android.googlequicksearchbox$OneSearchZeroStateGoogleSuggestions/default, zp) not found.
+10-12 11:45:49.145  1129  1961 D OneSearchSuggestProvider: AppSearch 0-state cache not available, fallback to AGA
+10-12 11:45:49.145  1129  1961 D OneSearchSuggestProvider: java.util.concurrent.CompletionException: java.util.NoSuchElementException: No value present
+10-12 11:45:49.145  1129  1961 D OneSearchSuggestProvider: 	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:308)
+10-12 11:45:49.145  1129  1961 D OneSearchSuggestProvider: 	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:323)
+10-12 11:45:49.145  1129  1961 D OneSearchSuggestProvider: 	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:684)
+10-12 11:45:49.145  1129  1961 D OneSearchSuggestProvider: 	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:486)
+10-12 11:45:49.145  1129  1961 D OneSearchSuggestProvider: 	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2138)
+10-12 11:45:49.145  1129  1961 D OneSearchSuggestProvider: 	at com.google.android.apps.nexuslauncher.allapps.E0.onResult(go/retraceme 2855a437b73635ce9cad76b9289087e631bbb67fc90008a0da13d343a00e5041:67)
+10-12 11:45:49.145  1129  1961 D OneSearchSuggestProvider: 	at android.app.appsearch.SearchSessionUtil$1.lambda$onResult$0(go/retraceme 64eee9e9f568ff45978879ad2ff83146f2618ee8a88278736fbdf5fae931976e:144)
+10-12 11:45:49.145  1129  1961 D OneSearchSuggestProvider: 	at android.app.appsearch.SearchSessionUtil$1.$r8$lambda$CEk3q8sDAQVhU3rQwVueB8FAj_M(go/retraceme 64eee9e9f568ff45978879ad2ff83146f2618ee8a88278736fbdf5fae931976e:1)
+10-12 11:45:49.145  1129  1961 D OneSearchSuggestProvider: 	at android.app.appsearch.SearchSessionUtil$1$$ExternalSyntheticLambda0.run(go/retraceme 64eee9e9f568ff45978879ad2ff83146f2618ee8a88278736fbdf5fae931976e:22)
+10-12 11:45:49.145  1129  1961 D OneSearchSuggestProvider: 	at android.os.Handler.handleCallback(Handler.java:959)
+10-12 11:45:49.145  1129  1961 D OneSearchSuggestProvider: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+10-12 11:45:49.145  1129  1961 D OneSearchSuggestProvider: 	at android.os.Looper.loopOnce(Looper.java:232)
+10-12 11:45:49.145  1129  1961 D OneSearchSuggestProvider: 	at android.os.Looper.loop(Looper.java:317)
+10-12 11:45:49.145  1129  1961 D OneSearchSuggestProvider: 	at android.os.HandlerThread.run(HandlerThread.java:85)
+10-12 11:45:49.145  1129  1961 D OneSearchSuggestProvider: Caused by: java.util.NoSuchElementException: No value present
+10-12 11:45:49.145  1129  1961 D OneSearchSuggestProvider: 	at java.util.Optional.get(Optional.java:143)
+10-12 11:45:49.145  1129  1961 D OneSearchSuggestProvider: 	at com.google.android.apps.nexuslauncher.allapps.E0.onResult(go/retraceme 2855a437b73635ce9cad76b9289087e631bbb67fc90008a0da13d343a00e5041:28)
+10-12 11:45:49.145  1129  1961 D OneSearchSuggestProvider: 	... 8 more
+10-12 11:45:49.145  1129  1961 D OneSearchSuggestProvider: Established or reuse existing binder channel authority=com.google.android.googlequicksearchbox
+10-12 11:45:49.145  1129  1155 D QuickstepModelDelegate: notifyAppTargetEvent action=1 launchLocation=workspace/1/[-1,-1]/[1,1]
+10-12 11:45:49.156  1129  1546 D EGL_emulation: app_time_stats: avg=117.14ms min=2.18ms max=536.82ms count=9
+10-12 11:45:49.156  1363  1500 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+10-12 11:45:49.156  1363  1500 I AiAiEcho: EchoTargets: 
+10-12 11:45:49.156  1363  1500 I AiAiEcho: Filtered by AiAi flag check: 
+10-12 11:45:49.156  1363  1500 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+10-12 11:45:49.156  1363  1500 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+10-12 11:45:49.156  1363  1500 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+10-12 11:45:49.156  1363  1500 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+10-12 11:45:49.170  1129  1129 D SsBaseTemplateCard: No text view can be set up
+10-12 11:45:49.170  1129  1129 D SsBaseTemplateCard: Passed-in item info is null
+10-12 11:45:49.170  1129  1129 D SsBaseTemplateCard: Passed-in item info is null
+10-12 11:45:49.170  1129  1129 D SsBaseTemplateCard: Passed-in item info is null
+10-12 11:45:49.170  1129  1129 I SsBaseTemplateCard: Secondary card pane is null
+10-12 11:45:49.170  1129  1129 D SearchTargetUtil: queryLength=0 size=15
+10-12 11:45:49.170  1129  1129 D SearchTargetUtil: layoutType=short_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=false,is_personal=false,suggest_raw_text=gene watson country music career,input_query=android.app.search.Query@ae73f40,group_id=web390587,response_id=3eeca952-21b2-441c-a629-625c9f510b04,support_query_builder=false,} searchAction=gene watson country music career searchActionExtras=Bundle{learn_more_url=https://support.google.com/websearch/answer/106230?hl=106230,suggestion_action_text=Report this,should_start_for_result=true,allow_pinning=true,skip_logging_in_target_handler=true,suggestion_action_rpc=2,}ParentID: null targetID: 1695606d-49da-44c0-a99e-a5ec22802132
+10-12 11:45:49.170  1129  1129 D SearchTargetUtil: layoutType=short_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=false,is_personal=false,suggest_raw_text=premier league liverpool manchester city,input_query=android.app.search.Query@ae73f40,group_id=web390587,response_id=3eeca952-21b2-441c-a629-625c9f510b04,support_query_builder=false,} searchAction=premier league liverpool manchester city searchActionExtras=Bundle{learn_more_url=https://support.google.com/websearch/answer/106230?hl=106230,suggestion_action_text=Report this,should_start_for_result=true,allow_pinning=true,skip_logging_in_target_handler=true,suggestion_action_rpc=2,}ParentID: null targetID: f847d536-a881-41ed-80a3-1e3b0af9c57f
+10-12 11:45:49.171  1129  1129 D SearchTargetUtil: layoutType=short_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=false,is_personal=false,suggest_raw_text=great smoky mountains national park,input_query=android.app.search.Query@ae73f40,group_id=web390587,response_id=3eeca952-21b2-441c-a629-625c9f510b04,support_query_builder=false,} searchAction=great smoky mountains national park searchActionExtras=Bundle{learn_more_url=https://support.google.com/websearch/answer/106230?hl=106230,suggestion_action_text=Report this,should_start_for_result=true,allow_pinning=true,skip_logging_in_target_handler=true,suggestion_action_rpc=2,}ParentID: null targetID: 9c882835-7957-4658-8d49-38f8850bb870
+10-12 11:45:49.171  1129  1129 D SearchTargetUtil: layoutType=short_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=false,is_personal=false,suggest_raw_text=easy fox steam demo ai costs,input_query=android.app.search.Query@ae73f40,group_id=web390587,response_id=3eeca952-21b2-441c-a629-625c9f510b04,support_query_builder=false,} searchAction=easy fox steam demo ai costs searchActionExtras=Bundle{learn_more_url=https://support.google.com/websearch/answer/106230?hl=106230,suggestion_action_text=Report this,should_start_for_result=true,allow_pinning=true,skip_logging_in_target_handler=true,suggestion_action_rpc=2,}ParentID: null targetID: fb30dc64-9273-4fb0-bbac-f36e8a937c86
+10-12 11:45:49.171  1129  1129 D SearchTargetUtil: layoutType=short_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=false,is_personal=false,suggest_raw_text=air jordan 41 ruby release date,input_query=android.app.search.Query@ae73f40,group_id=web390587,response_id=3eeca952-21b2-441c-a629-625c9f510b04,support_query_builder=false,} searchAction=air jordan 41 ruby release date searchActionExtras=Bundle{learn_more_url=https://support.google.com/websearch/answer/106230?hl=106230,suggestion_action_text=Report this,should_start_for_result=true,allow_pinning=true,skip_logging_in_target_handler=true,suggestion_action_rpc=2,}ParentID: null targetID: 18ce82f1-aa94-4d96-8920-9d5d06158241
+10-12 11:45:49.171  1129  1129 D SearchTargetUtil: layoutType=short_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=false,is_personal=false,suggest_raw_text=westjet pilot seattle tarmac delay,input_query=android.app.search.Query@ae73f40,group_id=web390587,response_id=3eeca952-21b2-441c-a629-625c9f510b04,support_query_builder=false,} searchAction=westjet pilot seattle tarmac delay searchActionExtras=Bundle{learn_more_url=https://support.google.com/websearch/answer/106230?hl=106230,suggestion_action_text=Report this,should_start_for_result=true,allow_pinning=true,skip_logging_in_target_handler=true,suggestion_action_rpc=2,}ParentID: null targetID: 22d4672c-24c8-46de-8d36-bd11774adf40
+10-12 11:45:49.171  1129  1129 D SearchTargetUtil: layoutType=short_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=false,is_personal=false,suggest_raw_text=panamá earthquakes,input_query=android.app.search.Query@ae73f40,group_id=web390587,response_id=3eeca952-21b2-441c-a629-625c9f510b04,support_query_builder=false,} searchAction=panamá earthquakes searchActionExtras=Bundle{learn_more_url=https://support.google.com/websearch/answer/106230?hl=106230,suggestion_action_text=Report this,should_start_for_result=true,allow_pinning=true,skip_logging_in_target_handler=true,suggestion_action_rpc=2,}ParentID: null targetID: 36c79858-1fb0-4a8b-bf7c-fef7b0a8d162
+10-12 11:45:49.171  1129  1129 D SearchTargetUtil: layoutType=short_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=false,is_personal=false,suggest_raw_text=zheng qinwen mirra andreeva china open,input_query=android.app.search.Query@ae73f40,group_id=web390587,response_id=3eeca952-21b2-441c-a629-625c9f510b04,support_query_builder=false,} searchAction=zheng qinwen mirra andreeva china open searchActionExtras=Bundle{learn_more_url=https://support.google.com/websearch/answer/106230?hl=106230,suggestion_action_text=Report this,should_start_for_result=true,allow_pinning=true,skip_logging_in_target_handler=true,suggestion_action_rpc=2,}ParentID: null targetID: a7988a3f-42b1-4a10-b934-2e90814acfc7
+10-12 11:45:49.171  1129  1129 D SearchTargetUtil: layoutType=short_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=false,is_personal=false,suggest_raw_text=south carolina senate debate,input_query=android.app.search.Query@ae73f40,group_id=web390587,response_id=3eeca952-21b2-441c-a629-625c9f510b04,support_query_builder=false,} searchAction=south carolina senate debate searchActionExtras=Bundle{learn_more_url=https://support.google.com/websearch/answer/106230?hl=106230,suggestion_action_text=Report this,should_start_for_result=true,allow_pinning=true,skip_logging_in_target_handler=true,suggestion_action_rpc=2,}ParentID: null targetID: 05295ff6-ec05-4c6e-9400-485fa0fac938
+10-12 11:45:49.171  1129  1129 D SearchTargetUtil: layoutType=short_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=false,is_personal=false,suggest_raw_text=aldi glass lid luxury candles,input_query=android.app.search.Query@ae73f40,group_id=web390587,response_id=3eeca952-21b2-441c-a629-625c9f510b04,support_query_builder=false,} searchAction=aldi glass lid luxury candles searchActionExtras=Bundle{learn_more_url=https://support.google.com/websearch/answer/106230?hl=106230,suggestion_action_text=Report this,should_start_for_result=true,allow_pinning=true,skip_logging_in_target_handler=true,suggestion_action_rpc=2,}ParentID: null targetID: 2355eee9-6805-4a57-9824-d89f30b12919
+10-12 11:45:49.171  1129  1129 D SearchTargetUtil: layoutType=short_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=false,is_personal=false,suggest_raw_text=new balance 480 gore tex,input_query=android.app.search.Query@ae73f40,group_id=web390587,response_id=3eeca952-21b2-441c-a629-625c9f510b04,support_query_builder=false,} searchAction=new balance 480 gore tex searchActionExtras=Bundle{learn_more_url=https://support.google.com/websearch/answer/106230?hl=106230,suggestion_action_text=Report this,should_start_for_result=true,allow_pinning=true,skip_logging_in_target_handler=true,suggestion_action_rpc=2,}ParentID: null targetID: 8bbc663a-fa40-4590-89e6-41838423209c
+10-12 11:45:49.171  1129  1129 D SearchTargetUtil: layoutType=short_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=false,is_personal=false,suggest_raw_text=hurricane tropical storm,input_query=android.app.search.Query@ae73f40,group_id=web390587,response_id=3eeca952-21b2-441c-a629-625c9f510b04,support_query_builder=false,} searchAction=hurricane tropical storm searchActionExtras=Bundle{learn_more_url=https://support.google.com/websearch/answer/106230?hl=106230,suggestion_action_text=Report this,should_start_for_result=true,allow_pinning=true,skip_logging_in_target_handler=true,suggestion_action_rpc=2,}ParentID: null targetID: 36601cb7-5425-420e-822b-9b492298b7f0
+10-12 11:45:49.171  1129  1129 D SearchTargetUtil: layoutType=short_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=false,is_personal=false,suggest_raw_text=nfl weather report,input_query=android.app.search.Query@ae73f40,group_id=web390587,response_id=3eeca952-21b2-441c-a629-625c9f510b04,support_query_builder=false,} searchAction=nfl weather report searchActionExtras=Bundle{learn_more_url=https://support.google.com/websearch/answer/106230?hl=106230,suggestion_action_text=Report this,should_start_for_result=true,allow_pinning=true,skip_logging_in_target_handler=true,suggestion_action_rpc=2,}ParentID: null targetID: 59332781-c72b-416e-a55c-5b69917d3b30
+10-12 11:45:49.171  1129  1129 D SearchTargetUtil: layoutType=extra_tall_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{bitmap_url=data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIADAAMAMBIgACEQEDEQH/xAAaAAADAQEBAQAAAAAAAAAAAAAEBQYDBwIA/8QALRAAAgEDAwIDBwUAAAAAAAAAAQIDAAQRBRJBITETcaEGIkJRUpHRFDIzYYH/xAAXAQEBAQEAAAAAAAAAAAAAAAAEAwUC/8QAIBEAAQQCAgMBAAAAAAAAAAAAAQACAxESIQQxExQiBf/aAAwDAQACEQMRAD8A6grbeKWXcD2d62r2sTAbNt4iDPiIPix9S+oyPlTe4Lx7RbouS2MuK+EqWsbSzTPKeSxwo8hRwK7SSbGgtrSGW5iSVJAYnUMjqchgexFGRWjIc+K33rnWnXntNpbS29rBCmm+M7W8c4JZELEgLg9v664p2dc1KaDFvbkXHxK7e6B8+4zXYxulB8pq1ZOqOuHwRS+6mkimzlWj4A4pDbw6ze4/V3LQoeEG31702SzjtdPlRHdjgHLMT1zVyzW0UTFx0NLzq9xItxbJbR5YyDpjpWt5bso2wqA3Lnjy+VYTa9Z+MsUR8WTcP4xu29ecdqPuD4zBlPTH2o01sblSWx4ecQekuQmGKOG56qowh4r2kcPjI4C9/SimRWXa4BB4oFtNiZyRLIq5/ard6AZCCLVqFICe8NpevA4aIbyEk7o44zRGoanbWmnpPMioJHEZP0t+KJvrOO4tzFsz0wBUj7ZSLFp9rp6sJHRjJMw6jdjAFO4b3vcQekTm4xxZDtUsdta2yhYY1RRwM1rHdx7hHvCt2Xr6Ulur3GQuc+dKp5ZJjnJHlWmY8hRWN7XjPwFaG4mQghlbHDLn8Vj+qlRSNqMSc5bNTEWt3MCbZAJcdi3Q/eg7z2mvT7lraRhz0DO5bH+YFEPDaTtqaP0o8byVc81xPlS+F5CjApHqmkx3DFvCUnk4onQZbl4s3T7nbqeKcGPPYKc0prBHoI73+w21/9k=,suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=true,is_personal=false,suggest_raw_text=condensed milk,input_query=android.app.search.Query@ae73f40,group_id=web390587,response_id=3eeca952-21b2-441c-a629-625c9f510b04,support_query_builder=false,} searchAction=Condensed milk searchActionExtras=Bundle{learn_more_url=https://support.google.com/websearch/answer/106230?hl=106230,suggestion_action_text=Report this,should_start_for_result=true,allow_pinning=true,skip_logging_in_target_handler=true,suggestion_action_rpc=2,}ParentID: null targetID: cb32e5ef-e053-4b88-9a78-19d55baca879
+10-12 11:45:49.171  1129  1129 D SearchTargetUtil: layoutType=short_icon_row resultType=131072 packageName=com.google.android.googlequicksearchbox extras=Bundle{suggestion_type=33,suggest_truncate_start=false,is_answer=false,is_entity=false,is_personal=false,suggest_raw_text=practical magic 2 streaming,input_query=android.app.search.Query@ae73f40,group_id=web390587,response_id=3eeca952-21b2-441c-a629-625c9f510b04,support_query_builder=false,} searchAction=practical magic 2 streaming searchActionExtras=Bundle{learn_more_url=https://support.google.com/websearch/answer/106230?hl=106230,suggestion_action_text=Report this,should_start_for_result=true,allow_pinning=true,skip_logging_in_target_handler=true,suggestion_action_rpc=2,}ParentID: null targetID: 4f57170f-78a5-4a5a-bae1-43b0cc0126a9
+10-12 11:45:49.198  1129  1135 W System  : A resource failed to call release. 
+10-12 11:45:49.199  1129  1135 W s.nexuslauncher: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/SystemUIGoogle/SystemUIGoogle.apk' with 1 weak references
+10-12 11:45:49.199  1129  1135 W s.nexuslauncher: ApkAssets: Deleting an ApkAssets object '/vendor/overlay/SystemUIGoogle__sdk_gphone64_x86_64__auto_generated_rro_vendor.apk' with 1 weak references
+10-12 11:45:49.199  1129  1135 W s.nexuslauncher: ApkAssets: Deleting an ApkAssets object '/product/overlay/SystemUIGoogle__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+10-12 11:45:49.199  1129  1135 W s.nexuslauncher: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/Maps/Maps.apk' with 1 weak references
+10-12 11:45:49.199  1129  1135 W s.nexuslauncher: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/WellbeingPrebuilt/WellbeingPrebuilt.apk' with 1 weak references
+10-12 11:45:49.204  1129  1135 W s.nexuslauncher: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/Velvet/Velvet.apk' with 1 weak references
+10-12 11:45:49.205  1129  1135 W s.nexuslauncher: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/SettingsIntelligenceGooglePrebuilt/SettingsIntelligenceGooglePrebuilt.apk' with 1 weak references
+10-12 11:45:49.207  1129  1135 W s.nexuslauncher: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/YouTube/YouTube.apk' with 1 weak references
+10-12 11:45:49.207  1129  1135 W s.nexuslauncher: ApkAssets: Deleting an ApkAssets object '<empty> and /system_ext/priv-app/SettingsGoogle/SettingsGoogle.apk' with 1 weak references
+10-12 11:45:49.208  1129  1135 W s.nexuslauncher: ApkAssets: Deleting an ApkAssets object '/product/overlay/SettingsGoogle__sdk_gphone64_x86_64__auto_generated_rro_product.apk' with 1 weak references
+10-12 11:45:49.208  1129  1135 W s.nexuslauncher: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16/DevicePersonalizationPrebuiltPixel2021-aiai_20240329.00_RC16.apk' with 1 weak references
+10-12 11:45:49.209  1129  1135 W System  : A resource failed to call release. 
+10-12 11:45:49.209  1129  1135 W System  : A resource failed to call release. 
+10-12 11:45:49.209  1129  1135 W System  : A resource failed to call release. 
+10-12 11:45:49.716  1129  1129 D StatsLog: LAUNCHER_SWIPELEFT
+10-12 11:45:50.200   538  3168 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+10-12 11:45:50.375  1406  1682 I BistoHotwordHelper: (REDACTED) getHotwordActive::active query: %s, watch: %s, devices connected: %s
+10-12 11:45:51.998   538   803 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-12 11:45:51.998   538   803 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-12 11:45:51.998   538   803 D InetDiagMessage: Destroyed live tcp sockets for uids={10209} in 0ms
+10-12 11:45:51.998   538   803 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-12 11:45:51.998   538   803 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-12 11:45:51.998   538   803 D InetDiagMessage: Destroyed live tcp sockets for uids={20209} in 1ms
+10-12 11:45:52.042   538  1140 D OomAdjuster: Not killing cached processes
+10-12 11:45:53.843   538   637 D ActivityManager: freezing 2456 com.google.android.gms.unstable
+10-12 11:45:53.844   538   637 D ActivityManager: freezing 3623 com.google.android.gms.ui
+10-12 11:45:54.207  6677  6677 W BpBinder: Linking to death on android.gui.ISurfaceComposer but there are no threads (yet?) listening to incoming transactions. See ProcessState::startThreadPool and ProcessState::setThreadPoolMaxThreadCount. Generally you should setup the binder threadpool before other initialization steps.
+10-12 11:45:54.207  6677  6677 W ProcessState: Extra binder thread started, but 0 threads requested. Do not use *startThreadPool when zero threads are requested.
+10-12 11:45:54.214   138   138 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+10-12 11:45:54.214  6677  6678 I Gralloc4: mapper 4.x is not supported
+10-12 11:45:54.232  3604  4444 I BugleRcsEngine: ConfiguredState: event Timeout [null] [CONTEXT log_prefix="(PEv2-SM2161616-DefaultCallSmsData-1-7ab)" thread_id=122 ]
+10-12 11:45:54.380   538  1140 I ActivityManager: Force stopping com.thinkube.feierabendrechner appid=10209 user=0: from pid 6681
+10-12 11:45:54.381   538   558 D DisplayManagerService: Drop pending events for gone uid 10209
+10-12 11:45:54.381   538  1140 I ActivityManager: Killing 5934:com.thinkube.feierabendrechner/u0a209 (adj 900): stop com.thinkube.feierabendrechner due to from pid 6681
+10-12 11:45:54.382  1436  1436 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+10-12 11:45:54.383   538  1140 I AppsFilter: interaction: PackageSetting{4db189a com.android.microdroid.empty_payload/10198} -> PackageSetting{8ec6653 com.thinkube.feierabendrechner/10209} BLOCKED
+10-12 11:45:54.389   538   828 D AppWidgetServiceImpl: Trying to notify widget update for package android with widget id: 2
+10-12 11:45:54.396  1058  1058 D CarrierSvcBindHelper: onHandleForceStop: [com.thinkube.feierabendrechner]
+10-12 11:45:54.399   538  2095 V ActivityManager: Got obituary of 5934:com.thinkube.feierabendrechner
+10-12 11:45:54.400   538   560 W ActivityManager: setHasOverlayUi called on unknown pid: 5934
+10-12 11:45:54.400   348   348 I Zygote  : Process 5934 exited due to signal 9 (Killed)
+10-12 11:45:54.401  1058  1058 D CarrierSvcBindHelper: No carrier app for: 0
+10-12 11:45:54.412   538   571 I libprocessgroup: Removed cgroup /sys/fs/cgroup/uid_10209/pid_5934
+10-12 11:45:54.414   538  1140 W ActivityTaskManager: callingPackage for (uid=2000, pid=6686) has no WPC
+10-12 11:45:54.415   538  1140 W OptProp : Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_USER_ASPECT_RATIO_OVERRIDE
+10-12 11:45:54.415   538  1140 W OptProp : Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_USER_ASPECT_RATIO_FULLSCREEN_OVERRIDE
+10-12 11:45:54.415   538  1140 W OptProp : Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_ORIENTATION_OVERRIDE
+10-12 11:45:54.415   538  1140 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@d6839017 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+10-12 11:45:54.416   538  1140 W OptProp : Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_RESIZEABLE_ACTIVITY_OVERRIDES
+10-12 11:45:54.416   538  1140 W OptProp : Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_MIN_ASPECT_RATIO_OVERRIDE
+10-12 11:45:54.418  1129  1546 D EGL_emulation: app_time_stats: avg=146.07ms min=14.70ms max=4399.65ms count=36
+10-12 11:45:54.421   538  1140 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.thinkube.feierabendrechner/.MainActivity} with LAUNCH_SINGLE_TOP from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+10-12 11:45:54.422  1129  1129 W SplitSelectStateCtor: Missing session instanceIds
+10-12 11:45:54.422  1129  1129 D StatsLog: LAUNCHER_SPLIT_SELECTION_EXIT_INTERRUPTED
+10-12 11:45:54.422   538   560 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@d6839017 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+10-12 11:45:54.423   881   932 V WindowManagerShell: Transition requested (#39): android.os.BinderProxy@4075984 TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=12 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.thinkube.feierabendrechner/.MainActivity } baseActivity=ComponentInfo{com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity} topActivity=ComponentInfo{com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity} origActivity=null realActivity=ComponentInfo{com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity} numActivities=1 lastActiveTime=395865 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@47f856d} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=ActivityInfo{44135a2 com.thinkube.feierabendrechner.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= falseisLetterboxEducationEnabled= true isLetterboxDoubleTapEnabled= false topActivityEligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=320 topActivityLetterboxHeight=640 isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatControlState=hidden freeformCameraCompatMode=inactive}}}, pipTask = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 39 }
+10-12 11:45:54.424   881   932 D WindowManagerShell: setLauncherKeepClearAreaHeight: visible=false, height=175
+10-12 11:45:54.424   538   790 I AppsFilter: interaction: PackageSetting{4db189a com.android.microdroid.empty_payload/10198} -> PackageSetting{1f2879f com.thinkube.feierabendrechner/10209} BLOCKED
+10-12 11:45:54.425  1129  1129 I TopTaskTracker: onTaskMovedToFront: (moved taskInfo to front) taskId=12, baseIntent=Intent { flg=0x10000000 cmp=com.thinkube.feierabendrechner/.MainActivity }
+10-12 11:45:54.432   348   348 D Zygote  : Forked child process 6689
+10-12 11:45:54.433   538   570 I ActivityManager: Start proc 6689:com.thinkube.feierabendrechner/u0a209 for next-top-activity {com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity}
+10-12 11:45:54.433   418   418 I BpBinder: onLastStrongRef automatically unlinking death recipients: 
+10-12 11:45:54.438   463   514 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:45:54.441   538   828 W BroadcastLoopers: Found previously unknown looper Thread[AppWidgetServiceImpl,5,main]
+10-12 11:45:54.446   538   828 D AppWidgetServiceImpl: Trying to notify widget update for package com.thinkube.feierabendrechner with widget id: 2
+10-12 11:45:54.446   538  2097 D CoreBackPreview: Window{34d9616 u0 Splash Screen com.thinkube.feierabendrechner}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@f338a33, mPriority=0, mIsAnimationCallback=false}
+10-12 11:45:54.456  6689  6689 I ierabendrechner: Using CollectorTypeCMC GC.
+10-12 11:45:54.457  6689  6689 W ierabendrechner: Unexpected CPU variant for x86: x86_64.
+10-12 11:45:54.457  6689  6689 W ierabendrechner: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, default
+10-12 11:45:54.459  6689  6689 E ierabendrechner: Not starting debugger since process cannot load the jdwp agent.
+10-12 11:45:54.461  6689  6689 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+10-12 11:45:54.466   881  3545 V WindowManagerShell: onTransitionReady(transaction=2310692407275)
+10-12 11:45:54.466   538   557 V WindowManager: Sent Transition (#39) createdAt=10-12 11:45:54.416 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=12 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.thinkube.feierabendrechner/.MainActivity } baseActivity=ComponentInfo{com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity} topActivity=ComponentInfo{com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity} origActivity=null realActivity=ComponentInfo{com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity} numActivities=1 lastActiveTime=395865 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{192968f Task{fab8a43 #12 type=standard I=com.thinkube.feierabendrechner/.MainActivity}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=ActivityInfo{6e3dd1c com.thinkube.feierabendrechner.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= falseisLetterboxEducationEnabled= true isLetterboxDoubleTapEnabled= false topActivityEligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=320 topActivityLetterboxHeight=640 isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatControlState=hidden freeformCameraCompatMode=inactive}}}, pipTask = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 39 }
+10-12 11:45:54.470   538   557 V WindowManager:     startWCT=WindowContainerTransaction { changes = {} hops = [] errorCallbackToken=null taskFragmentOrganizer=null }
+10-12 11:45:54.471   538   557 V WindowManager:     info={id=39 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+10-12 11:45:54.471   538   557 V WindowManager:         {WCT{RemoteToken{192968f Task{fab8a43 #12 type=standard I=com.thinkube.feierabendrechner/.MainActivity}}} m=OPEN f=NONE leash=Surface(name=Task=12)/@0xb687369 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0 taskParent=-1},
+10-12 11:45:54.471   538   557 V WindowManager:         {WCT{RemoteToken{3ce7f9b Task{345274f #1 type=home}}} m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0x5630f1d sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0 taskParent=-1}
+10-12 11:45:54.471   538   557 V WindowManager:     ]}
+10-12 11:45:54.472   881   932 V WindowManagerShell: onTransitionReady (#39) android.os.BinderProxy@4075984: {id=39 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{android.window.IWindowContainerToken$Stub$Proxy@c59ca9e} m=OPEN f=NONE leash=Surface(name=Task=12)/@0x64d3e23 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0 taskParent=-1},{WCT{android.window.IWindowContainerToken$Stub$Proxy@22b997f} m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0x9e44f20 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0 taskParent=-1}]}
+10-12 11:45:54.472   881   932 V WindowManagerShell: Playing animation for (#39) android.os.BinderProxy@4075984@0
+10-12 11:45:54.472   881   932 V WindowManagerShell:  try handler com.android.wm.shell.transition.DefaultMixedHandler@15435b0
+10-12 11:45:54.473   881   932 V WindowManagerShell:  try handler com.android.wm.shell.keyguard.KeyguardTransitionHandler@f56ac29
+10-12 11:45:54.473   881   932 V WindowManagerShell:  try handler com.android.wm.shell.pip.PipTransition@111fbae
+10-12 11:45:54.473   881   932 V WindowManagerShell:  try handler com.android.wm.shell.activityembedding.ActivityEmbeddingController@5eb5d4f
+10-12 11:45:54.473   881   932 V WindowManagerShell:  try handler com.android.wm.shell.recents.RecentsTransitionHandler@5befcdc
+10-12 11:45:54.473   881   932 V ShellRecents: RecentsTransitionHandler.startAnimation: no controller found
+10-12 11:45:54.473   881   932 V WindowManagerShell:  try handler com.android.wm.shell.splitscreen.StageCoordinator@184e1e5
+10-12 11:45:54.473   881   932 V WindowManagerShell:  try handler com.android.wm.shell.transition.RemoteTransitionHandler@e8624ba
+10-12 11:45:54.473   881   932 V WindowManagerShell: Transition doesn't have explicit remote, search filters for match for {id=39 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{android.window.IWindowContainerToken$Stub$Proxy@c59ca9e} m=OPEN f=NONE leash=Surface(name=Task=12)/@0x64d3e23 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0 taskParent=-1},{WCT{android.window.IWindowContainerToken$Stub$Proxy@22b997f} m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0x9e44f20 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0 taskParent=-1}]}
+10-12 11:45:54.473   881   932 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x0 checks=[{atype=undefined independent=true modes=[OPEN,TO_FRONT] flags=IN_TASK_WITH_EMBEDDED_ACTIVITY mustBeTask=false order=ANY topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null},{atype=undefined independent=true modes=[CLOSE,TO_BACK] flags=IN_TASK_WITH_EMBEDDED_ACTIVITY mustBeTask=false order=ANY topActivity=null launchCookie=null}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@f39ebf2, appThread = android.app.IApplicationThread$Stub$Proxy@b96243, debugName = OverlaySwipeBack }}
+10-12 11:45:54.473   881   932 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x0 checks=[{atype=dream independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null},{atype=home independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@db170c0, appThread = android.app.IApplicationThread$Stub$Proxy@967b1f9, debugName = LauncherToDream }}
+10-12 11:45:54.473   881   932 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=TOP topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@8f6d53e, appThread = android.app.IApplicationThread$Stub$Proxy@205df9f, debugName = QuickstepLaunchHome }}
+10-12 11:45:54.473   881   932 V WindowManagerShell:  Delegate animation for (#39) to null
+10-12 11:45:54.473   881   932 V WindowManagerShell:  try handler com.android.wm.shell.transition.DefaultTransitionHandler@db6689d
+10-12 11:45:54.473   881   932 V WindowManagerShell: start default transition animation, info = {id=39 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{android.window.IWindowContainerToken$Stub$Proxy@c59ca9e} m=OPEN f=NONE leash=Surface(name=Task=12)/@0x64d3e23 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0 taskParent=-1},{WCT{android.window.IWindowContainerToken$Stub$Proxy@22b997f} m=TO_BACK f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0x9e44f20 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0 taskParent=-1}]}
+10-12 11:45:54.473   881   932 V WindowManagerShell: loadAnimation: anim=android.view.animation.AnimationSet@2727195 animAttr=0x13 type=OPEN isEntrance=false
+10-12 11:45:54.475   538  2097 W UserManagerService: Requested status bar icon for non-badged user 0
+10-12 11:45:54.476   881   932 V WindowManagerShell: loadAnimation: anim=android.view.animation.AnimationSet@8968f76 animAttr=0x12 type=OPEN isEntrance=true
+10-12 11:45:54.477   881   932 V WindowManagerShell:  animated by com.android.wm.shell.transition.DefaultTransitionHandler@db6689d
+10-12 11:45:54.494   881   932 V WindowManagerShell: Transition animation finished (aborted=false), notifying core (#39) android.os.BinderProxy@4075984@0
+10-12 11:45:54.494   881  1003 D EGL_emulation: app_time_stats: avg=3682.09ms min=9.90ms max=7354.28ms count=2
+10-12 11:45:54.494   538   557 V WindowManager: Finish Transition (#39): created at 10-12 11:45:54.416 collect-started=0.02ms request-sent=4.472ms started=6.965ms ready=48.14ms sent=49.178ms finished=77.864ms
+10-12 11:45:54.495  6689  6689 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.extensions.jar
+10-12 11:45:54.496   881   932 V WindowManagerShell: Track 0 became idle
+10-12 11:45:54.496   881   932 V WindowManagerShell: All active transition animations finished
+10-12 11:45:54.496  6689  6689 D ApplicationLoaders: Returning zygote-cached class loader: /system_ext/framework/androidx.window.sidecar.jar
+10-12 11:45:54.506  1129  1546 D EGL_emulation: app_time_stats: avg=3707.87ms min=65.68ms max=7350.06ms count=2
+10-12 11:45:54.509  1129  1129 D VRI[NexusLauncherActivity]: visibilityChanged oldVisibility=true newVisibility=false
+10-12 11:45:54.512  6689  6689 D nativeloader: Configuring clns-7 for other apk /data/app/~~89fGHifP30OKwTuai4-oNA==/com.thinkube.feierabendrechner--uiOCf_uywZV_XFMcTn1Cg==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~89fGHifP30OKwTuai4-oNA==/com.thinkube.feierabendrechner--uiOCf_uywZV_XFMcTn1Cg==/lib/x86_64:/data/app/~~89fGHifP30OKwTuai4-oNA==/com.thinkube.feierabendrechner--uiOCf_uywZV_XFMcTn1Cg==/base.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.thinkube.feierabendrechner
+10-12 11:45:54.513   538  2097 W UserManagerService: Requested status bar icon for non-badged user 0
+10-12 11:45:54.514   538  2097 W UserManagerService: Requested status bar icon for non-badged user 0
+10-12 11:45:54.520  1129  1129 D NexusLauncherModelDelegate: notifySmartspaceEvent: SmartspaceTargetEvent{mSmartspaceTarget=null, mSmartspaceActionId='null', mEventType=7}
+10-12 11:45:54.531  6689  6689 V GraphicsEnvironment: Currently set values for:
+10-12 11:45:54.531  6689  6689 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+10-12 11:45:54.531  6689  6689 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+10-12 11:45:54.531  6689  6689 V GraphicsEnvironment: Global.Settings values are invalid: number of packages: 0, number of values: 0
+10-12 11:45:54.531  6689  6689 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+10-12 11:45:54.539  6689  6689 I FirebaseApp: Device unlocked: initializing all Firebase APIs for app [DEFAULT]
+10-12 11:45:54.540  6689  6689 I FirebaseInitProvider: FirebaseApp initialization successful
+10-12 11:45:54.542  6689  6689 D WM-WrkMgrInitializer: Initializing WorkManager with default configuration.
+10-12 11:45:54.552   538  2563 W OptProp : Cannot read opt property android.window.PROPERTY_COMPAT_ENABLE_FAKE_FOCUS
+10-12 11:45:54.570  6689  6704 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000002/DynamiteLoader.uncompressed.dm': No such file or directory
+10-12 11:45:54.571  6689  6704 W ziparchive: Unable to open '/data/user_de/0/com.google.android.gms/app_chimera/m/00000002/DynamiteLoader.uncompressed.dm': No such file or directory
+10-12 11:45:54.580   538   549 I system_server: Background concurrent mark compact GC freed 23MB AllocSpace bytes, 31(644KB) LOS objects, 46% free, 27MB/51MB, paused 711us,4.361ms total 150.014ms
+10-12 11:45:54.583   538   550 I BpBinder: onLastStrongRef automatically unlinking death recipients: 
+10-12 11:45:54.583   538   550 I BpBinder: onLastStrongRef automatically unlinking death recipients: 
+10-12 11:45:54.586  6689  6704 I DynamiteModule: Considering local module com.google.android.gms.measurement.dynamite:185 and remote module com.google.android.gms.measurement.dynamite:115
+10-12 11:45:54.587  6689  6704 I DynamiteModule: Selected local version of com.google.android.gms.measurement.dynamite
+10-12 11:45:54.588  6689  6715 D nativeloader: Load /data/app/~~89fGHifP30OKwTuai4-oNA==/com.thinkube.feierabendrechner--uiOCf_uywZV_XFMcTn1Cg==/base.apk!/lib/x86_64/libflutter.so using ns clns-7 from class loader (caller=/data/app/~~89fGHifP30OKwTuai4-oNA==/com.thinkube.feierabendrechner--uiOCf_uywZV_XFMcTn1Cg==/base.apk): ok
+10-12 11:45:54.591   538   551 W System  : A resource failed to call release. 
+10-12 11:45:54.591   538   551 W System  : A resource failed to call HardwareBuffer.close. 
+10-12 11:45:54.592   538   790 D FileUtils: Rounded bytes from 2593685504 to 4000000000
+10-12 11:45:54.592   538   551 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk' with 1 weak references
+10-12 11:45:54.593   538   551 W System  : A resource failed to call HardwareBuffer.close. 
+10-12 11:45:54.597  6689  6716 D skia    : [SkFontMgr Android Parser] '/product/etc/fonts_customization.xml' could not be opened
+10-12 11:45:54.598   538   551 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/LatinIMEGooglePrebuilt/LatinIMEGooglePrebuilt.apk' with 1 weak references
+10-12 11:45:54.599   538   551 W system_server: ApkAssets: Deleting an ApkAssets object '<empty> and /product/app/GoogleTTS/GoogleTTS.apk' with 1 weak references
+10-12 11:45:54.599   538   551 W System  : A resource failed to call release. 
+10-12 11:45:54.604  6689  6721 D Phlogger: Application doesn't implement PhenotypeApplication interface, falling back to globally set context. See go/phenotype-flag#process-stable-init for more info.
+10-12 11:45:54.614  6689  6718 I FA      : App measurement initialized, version: 161000
+10-12 11:45:54.614  6689  6718 I FA      : To enable debug logging run: adb shell setprop log.tag.FA VERBOSE
+10-12 11:45:54.614  6689  6718 I FA      : To enable faster debug mode event logging run:
+10-12 11:45:54.614  6689  6718 I FA      :   adb shell setprop debug.firebase.analytics.app com.thinkube.feierabendrechner
+10-12 11:45:54.610  6689  6689 W ierabendrechner: type=1400 audit(0.0:77): avc:  denied  { read } for  name="max_map_count" dev="proc" ino=60874 scontext=u:r:untrusted_app:s0:c209,c256,c512,c768 tcontext=u:object_r:proc_max_map_count:s0 tclass=file permissive=0 app=com.thinkube.feierabendrechner
+10-12 11:45:54.620  6689  6719 I EGL_emulation: Opening libGLESv1_CM_emulation.so
+10-12 11:45:54.621  6689  6719 I EGL_emulation: Opening libGLESv2_emulation.so
+10-12 11:45:54.631  6689  6689 D nativeloader: Load /data/app/~~89fGHifP30OKwTuai4-oNA==/com.thinkube.feierabendrechner--uiOCf_uywZV_XFMcTn1Cg==/base.apk!/lib/x86_64/libdartjni.so using ns clns-7 from class loader (caller=/data/app/~~89fGHifP30OKwTuai4-oNA==/com.thinkube.feierabendrechner--uiOCf_uywZV_XFMcTn1Cg==/base.apk): ok
+10-12 11:45:54.639  6689  6719 I flutter : [IMPORTANT:flutter/shell/platform/android/android_context_gl_impeller.cc(104)] Using the Impeller rendering backend (OpenGLES).
+10-12 11:45:54.641  6689  6689 W HWUI    : Unknown dataspace 0
+10-12 11:45:54.663   538   828 D AppWidgetServiceImpl: Trying to notify widget update for package com.thinkube.feierabendrechner with widget id: 2
+10-12 11:45:54.664   538   790 W AlarmManager: Window length 60000ms too short; expanding to 600000ms.
+10-12 11:45:54.666  1436  1436 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+10-12 11:45:54.666  1436  1436 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+10-12 11:45:54.673  1224  3799 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.thinkube.feierabendrechner
+10-12 11:45:54.674  6689  6718 I FA      : Tag Manager is not found and thus will not be used
+10-12 11:45:54.702  6689  6689 I WindowExtensionsImpl: Initializing Window Extensions, vendor API level=6, activity embedding enabled=true
+10-12 11:45:54.707   538  2563 D CoreBackPreview: Window{696b203 u0 com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@e1821f3, mPriority=0, mIsAnimationCallback=false}
+10-12 11:45:54.715  6689  6711 W HWUI    : Failed to initialize 101010-2 format, error = EGL_SUCCESS
+10-12 11:45:54.719   138   138 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+10-12 11:45:54.719  6689  6719 I Gralloc4: mapper 4.x is not supported
+10-12 11:45:55.161   538   790 I BroadcastQueue: BOOT_COMPLETED_BROADCAST_COMPLETION_LATENCY_REPORTED action:android.intent.action.BOOT_COMPLETED dispatchLatency:184 completeLatency:679 dispatchRealLatency:184 completeRealLatency:679 receiversSize:1 userId:0 userType:android.os.usertype.full.SYSTEM
+10-12 11:45:55.167   538  2722 W AlarmManager: Window length 60000ms too short; expanding to 600000ms.
+10-12 11:45:55.168   538   828 D AppWidgetServiceImpl: Trying to notify widget update for package com.thinkube.feierabendrechner with widget id: 2
+10-12 11:45:55.168  1738  2024 W Finsky  : [56] mgn.a(97): Failed to look up device certification status for in-app billing service: com.google.common.util.concurrent.TimeoutFuture$TimeoutFutureException: Timed out (timeout delayed by 102 ms after scheduled time): atyb@8f9a203[status=PENDING, setFuture=[gpx@2f91580[status=PENDING, info=[tag=[ankx@99b57b9]]]]]
+10-12 11:45:55.182  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.182  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.183  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.183  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.184  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.184  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.185  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.185  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.186  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.186  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.187  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.188  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.188  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.188  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.190  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.190  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.192  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.192  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.197  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.197  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.199  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.199  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.201  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.202  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.204  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.204  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.206  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.207  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.209  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.209  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.210  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.210  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.211  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.211  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.213  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.213  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.213  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.213  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.214  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.214  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.214  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.214  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.214  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.214  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.215  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.215  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.215  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.215  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.216  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.216  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.216  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.217  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.217  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.217  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.218  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.218  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.219  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.219  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.219  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.219  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.219  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.219  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.220  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.220  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.220  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.220  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.220  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.220  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.220  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.220  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.220  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.220  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.221  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.221  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.221  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.221  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.221  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.221  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.221  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.221  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.222  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.222  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.222  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.222  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.222  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.222  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.222  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.222  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.223  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.223  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.223  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:45:55.223  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:45:55.223  6689  6738 W BillingClient: In-app billing API version 3 is not supported on this device.
+10-12 11:45:55.861   538   557 I ActivityTaskManager: Displayed com.thinkube.feierabendrechner/.MainActivity for user 0: +1s444ms
+10-12 11:45:55.861   538   557 I ActivityTaskManager: Fully drawn com.thinkube.feierabendrechner/.MainActivity: +1s444ms
+10-12 11:45:55.864  1129  1129 D BaseDepthController: setSurface:
+10-12 11:45:55.864  1129  1129 D BaseDepthController: 	mWaitingOnSurfaceValidity: false
+10-12 11:45:55.864  1129  1129 D BaseDepthController: 	mSurface: null
+10-12 11:45:55.864  1129  1129 D BaseDepthController: mSurface is null and mCurrentBlur is: 0
+10-12 11:45:55.864  1129  1129 D StateManager: goToState - fromState: Normal, toState: Normal, partial trace:
+10-12 11:45:55.864  1129  1129 D StateManager: 	at com.android.launcher3.statemanager.StateManager.moveToRestState(go/retraceme 2855a437b73635ce9cad76b9289087e631bbb67fc90008a0da13d343a00e5041:4)
+10-12 11:45:55.864  1129  1129 D StateManager: 	at com.android.launcher3.statemanager.StateManager.moveToRestState(go/retraceme 2855a437b73635ce9cad76b9289087e631bbb67fc90008a0da13d343a00e5041:1)
+10-12 11:45:55.864  1129  1129 D StateManager: 	at com.android.launcher3.statemanager.StatefulActivity.onStop(go/retraceme 2855a437b73635ce9cad76b9289087e631bbb67fc90008a0da13d343a00e5041:34)
+10-12 11:45:55.865  1129  1129 D StatsLog: LAUNCHER_ONSTOP
+10-12 11:45:55.866  1129  1129 D StatsLog: LAUNCHER_GOOGLE_SEARCH_RESTORE_LIST_SIZE_AFTER_ACTIVITY_RESTART
+10-12 11:45:55.871   881   976 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda11@37c68c6
+10-12 11:45:55.871   538  1140 D CoreBackPreview: Window{34d9616 u0 Splash Screen com.thinkube.feierabendrechner EXITING}: Setting back callback null
+10-12 11:45:55.872   538  2722 W InputManager-JNI: Input channel object '34d9616 Splash Screen com.thinkube.feierabendrechner (client)' was disposed without first being removed with the input manager!
+10-12 11:45:55.877  1129  1961 D OneSearchSuggestProvider: Shut down the binder channel
+10-12 11:45:55.878   463  2790 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:45:55.878  1129  1291 I IPCThreadState: oneway function results for code 2 on binder at 0x753b90ea5e00 will be dropped but finished with status UNKNOWN_TRANSACTION
+10-12 11:45:55.903   538   655 I ImeTracker: com.thinkube.feierabendrechner:76c30cfb: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false
+10-12 11:45:55.903   538   655 I ImeTracker: com.thinkube.feierabendrechner:76c30cfb: onCancelled at PHASE_SERVER_SHOULD_HIDE
+10-12 11:45:55.905  1297  1297 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():3157 
+10-12 11:45:55.905  1297  1297 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2248 repeatCheckTimes = 0, locked = false
+10-12 11:45:55.905  1297  1297 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1986 onStartInput(EditorInfo{EditorInfo{packageName=com.thinkube.feierabendrechner, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+10-12 11:45:55.905  1297  1297 I GoogleInputMethodService: GoogleInputMethodService.updateDeviceLockedStatus():2248 repeatCheckTimes = 1, locked = false
+10-12 11:45:55.906  1297  1297 I AndroidIME: InputBundleManager.loadActiveInputBundleId():450 loadActiveInputBundleId: und-Latn-x-password, password
+10-12 11:45:55.906   538   790 W PackageConfigPersister: App-specific configuration not found for packageName: com.thinkube.feierabendrechner and userId: 0
+10-12 11:45:56.413  3604  3604 W JobService: onNetworkChanged() not implemented in androidx.work.impl.background.systemjob.SystemJobService. Must override in a subclass.
+10-12 11:45:56.414   538   803 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:45:56.415   538   803 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:45:56.415   538   803 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:45:56.416  1224  1242 I ChimeraSrvcProxy: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl
+10-12 11:45:56.417  3840  3884 I BugleRcsEngine: Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=61 ]
+10-12 11:45:56.417  1224  1242 W .gms.persistent: Large reply transaction of 1056768 bytes, interface descriptor , code 1
+10-12 11:45:56.417  3840  3969 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[a56943fd-92c6]>Handler" thread_id=67 ]
+10-12 11:45:56.744  6689  6719 D EGL_emulation: app_time_stats: avg=202.84ms min=10.06ms max=826.34ms count=5
+10-12 11:45:57.745  6689  6719 D EGL_emulation: app_time_stats: avg=333.78ms min=14.94ms max=964.23ms count=3
+10-12 11:45:57.924   538  3168 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+10-12 11:45:58.747  6689  6719 D EGL_emulation: app_time_stats: avg=333.71ms min=13.67ms max=963.37ms count=3
+10-12 11:45:59.417  3604  3604 W JobService: onNetworkChanged() not implemented in androidx.work.impl.background.systemjob.SystemJobService. Must override in a subclass.
+10-12 11:45:59.418   538   803 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:45:59.418   538   803 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:45:59.418   538   803 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:45:59.420  3840  3884 I BugleRcsEngine: Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=61 ]
+10-12 11:45:59.421  1224  1242 I ChimeraSrvcProxy: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl
+10-12 11:45:59.421  1224  1242 W .gms.persistent: Large reply transaction of 1056768 bytes, interface descriptor , code 1
+10-12 11:45:59.421  3840  3969 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[a56943fd-92c6]>Handler" thread_id=67 ]
+10-12 11:45:59.759  6689  6719 D EGL_emulation: app_time_stats: avg=253.18ms min=11.76ms max=963.25ms count=4
+10-12 11:46:00.011   538   790 D OomAdjuster: Not killing cached processes
+10-12 11:46:00.019  1363  1500 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+10-12 11:46:00.019  1363  1500 I AiAiEcho: EchoTargets: 
+10-12 11:46:00.019  1363  1500 I AiAiEcho: Filtered by AiAi flag check: 
+10-12 11:46:00.019  1363  1500 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+10-12 11:46:00.019  1363  1500 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+10-12 11:46:00.019  1363  1500 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+10-12 11:46:00.020  1363  1500 I AiAiEcho: Predicting[0]:  [CONTEXT sampling_count=5 ]
+10-12 11:46:00.020  1363  1500 I AiAiEcho: EchoTargets: 
+10-12 11:46:00.020  1363  1500 I AiAiEcho: Filtered by AiAi flag check: 
+10-12 11:46:00.020  1363  1500 I AiAiEcho: [CONTEXT ratelimit_period="10 SECONDS" ]
+10-12 11:46:00.020  1363  1500 I AiAiEcho: Ranked targets strategy: SORT, count: 0, ranking metadata:  [CONTEXT ratelimit_period="10 SECONDS" ]
+10-12 11:46:00.020  1363  1500 I AiAiEcho: #remoteViewsTwiddler: feature disabled.
+10-12 11:46:00.020  1363  1500 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface lockscreen with targets# 0 (types=[])
+10-12 11:46:00.020  1363  1500 I AiAiEcho: #postPredictionTargets: Sending updates to UISurface home with targets# 0 (types=[])
+10-12 11:46:00.020   881   881 W PageIndicator: Total number of pages invalid: 0. Assuming 1 page.
+10-12 11:46:00.021  1129  1129 D SsBaseTemplateCard: No text view can be set up
+10-12 11:46:00.021  1129  1129 D SsBaseTemplateCard: Passed-in item info is null
+10-12 11:46:00.021  1129  1129 D SsBaseTemplateCard: Passed-in item info is null
+10-12 11:46:00.021  1129  1129 D SsBaseTemplateCard: Passed-in item info is null
+10-12 11:46:00.021  1129  1129 I SsBaseTemplateCard: Secondary card pane is null
+10-12 11:46:00.024   881  1003 D EGL_emulation: app_time_stats: avg=2764.96ms min=19.86ms max=5510.07ms count=2
+10-12 11:46:00.235  6689  6746 D ProfileInstaller: Skipping profile installation for com.thinkube.feierabendrechner
+10-12 11:46:01.722  6689  6719 D EGL_emulation: app_time_stats: avg=490.70ms min=13.64ms max=966.22ms count=4
+10-12 11:46:02.723  6689  6719 D EGL_emulation: app_time_stats: avg=333.37ms min=14.70ms max=964.22ms count=3
+10-12 11:46:03.723  6689  6719 D EGL_emulation: app_time_stats: avg=333.41ms min=14.97ms max=963.52ms count=3
+10-12 11:46:03.947  1468  1468 I A       : (REDACTED) disposing SearchServiceClient after timeout %s
+10-12 11:46:04.743  6689  6719 D EGL_emulation: app_time_stats: avg=255.07ms min=15.03ms max=964.21ms count=4
+10-12 11:46:05.246  1436  1436 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+10-12 11:46:05.246   538   790 D OomAdjuster: Not killing cached processes
+10-12 11:46:05.757  6689  6719 D EGL_emulation: app_time_stats: avg=253.20ms min=13.30ms max=963.37ms count=4
+10-12 11:46:05.898   538   637 D ActivityManager: freezing 1468 com.google.android.googlequicksearchbox:search
+10-12 11:46:05.899   538   637 D ActivityManager: freezing 3903 com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0
+10-12 11:46:05.988   538   803 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+10-12 11:46:05.988   538   803 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+10-12 11:46:05.988   538   803 D InetDiagMessage: Destroyed live tcp sockets for uids={99000} in 1ms
+10-12 11:46:06.760  6689  6719 D EGL_emulation: app_time_stats: avg=334.14ms min=16.03ms max=966.04ms count=3
+10-12 11:46:08.725  6689  6719 D EGL_emulation: app_time_stats: avg=491.32ms min=13.57ms max=965.66ms count=4
+10-12 11:46:09.744  6689  6719 D EGL_emulation: app_time_stats: avg=254.80ms min=14.28ms max=961.86ms count=4
+10-12 11:46:10.416   538  1140 D OomAdjuster: Not killing cached processes
+10-12 11:46:10.416  1224  1224 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.pseudonymous.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-12 11:46:10.761  6689  6719 D EGL_emulation: app_time_stats: avg=253.77ms min=14.47ms max=963.12ms count=4
+10-12 11:46:12.723  6689  6719 D EGL_emulation: app_time_stats: avg=490.42ms min=16.91ms max=962.58ms count=4
+10-12 11:46:13.745  6689  6719 D EGL_emulation: app_time_stats: avg=255.46ms min=16.02ms max=962.31ms count=4
+10-12 11:46:14.442  3604  3604 W JobService: onNetworkChanged() not implemented in androidx.work.impl.background.systemjob.SystemJobService. Must override in a subclass.
+10-12 11:46:14.442   538   803 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:46:14.442   538   803 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:46:14.443   538   803 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:46:14.443   538   803 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:46:14.443   538   803 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:46:14.443   538   803 W IPCThreadState: Sending oneway calls to frozen process.
+10-12 11:46:14.445  3840  3884 I BugleRcsEngine: Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=61 ]
+10-12 11:46:14.445  3840  3969 I BugleRcsEngine: handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[a56943fd-92c6]>Handler" thread_id=67 ]
+10-12 11:46:14.446  1224  1242 I ChimeraSrvcProxy: NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl
+10-12 11:46:14.446  1224  1242 W .gms.persistent: Large reply transaction of 1056768 bytes, interface descriptor , code 1
+10-12 11:46:14.760  6689  6719 D EGL_emulation: app_time_stats: avg=253.85ms min=15.85ms max=962.43ms count=4
+10-12 11:46:15.597   538   790 D OomAdjuster: Not killing cached processes
+10-12 11:46:15.601  1436  1436 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.auth.cryptauth.cryptauthservice.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+10-12 11:46:15.942  6751  6751 W BpBinder: Linking to death on android.gui.ISurfaceComposer but there are no threads (yet?) listening to incoming transactions. See ProcessState::startThreadPool and ProcessState::setThreadPoolMaxThreadCount. Generally you should setup the binder threadpool before other initialization steps.
+10-12 11:46:15.942  6751  6751 W ProcessState: Extra binder thread started, but 0 threads requested. Do not use *startThreadPool when zero threads are requested.
+10-12 11:46:15.950   138   138 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+10-12 11:46:15.950  6751  6752 I Gralloc4: mapper 4.x is not supported

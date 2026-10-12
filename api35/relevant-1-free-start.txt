@@ -1,0 +1,249 @@
+10-12 11:40:05.163   538   790 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.thinkube.feierabendrechner/.MainActivity} with LAUNCH_SINGLE_TOP from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+10-12 11:40:05.169   538   620 I AppsFilter: interaction: PackageSetting{4db189a com.android.microdroid.empty_payload/10198} -> PackageSetting{3e495cb com.thinkube.feierabendrechner/10209} BLOCKED
+10-12 11:40:05.184  1129  1129 I TopTaskTracker: onTaskMovedToFront: (moved taskInfo to front) taskId=8, baseIntent=Intent { flg=0x10000000 cmp=com.thinkube.feierabendrechner/.MainActivity }
+10-12 11:40:05.208   538   570 I ActivityManager: Start proc 2891:com.thinkube.feierabendrechner/u0a209 for next-top-activity {com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity}
+10-12 11:40:05.210   881   932 V WindowManagerShell: Transition requested (#10): android.os.BinderProxy@8bf179a TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=8 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.thinkube.feierabendrechner/.MainActivity } baseActivity=ComponentInfo{com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity} topActivity=ComponentInfo{com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity} origActivity=null realActivity=ComponentInfo{com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity} numActivities=1 lastActiveTime=46607 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@daa28cb} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=ActivityInfo{1e368a8 com.thinkube.feierabendrechner.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= falseisLetterboxEducationEnabled= true isLetterboxDoubleTapEnabled= false topActivityEligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=320 topActivityLetterboxHeight=640 isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatControlState=hidden freeformCameraCompatMode=inactive}}}, pipTask = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 10 }
+10-12 11:40:05.232   538  2545 D CoreBackPreview: Window{ba4c3a7 u0 Splash Screen com.thinkube.feierabendrechner}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@5e7c469, mPriority=0, mIsAnimationCallback=false}
+10-12 11:40:05.293   538   557 V WindowManager: Sent Transition (#10) createdAt=10-12 11:40:05.151 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=8 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.thinkube.feierabendrechner/.MainActivity } baseActivity=ComponentInfo{com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity} topActivity=ComponentInfo{com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity} origActivity=null realActivity=ComponentInfo{com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity} numActivities=1 lastActiveTime=46607 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{dfeba7f Task{bd4b6bf #8 type=standard I=com.thinkube.feierabendrechner/.MainActivity}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=ActivityInfo{f824a4c com.thinkube.feierabendrechner.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= falseisLetterboxEducationEnabled= true isLetterboxDoubleTapEnabled= false topActivityEligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=320 topActivityLetterboxHeight=640 isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatControlState=hidden freeformCameraCompatMode=inactive}}}, pipTask = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 10 }
+10-12 11:40:05.293   538   557 V WindowManager:         {WCT{RemoteToken{dfeba7f Task{bd4b6bf #8 type=standard I=com.thinkube.feierabendrechner/.MainActivity}}} m=OPEN f=NONE leash=Surface(name=Task=8)/@0x3804f23 sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0 taskParent=-1},
+10-12 11:40:05.485  2891  2891 D nativeloader: Configuring clns-7 for other apk /data/app/~~lwm5mI9KiTlZHQ3oe6XC8g==/com.thinkube.feierabendrechner-G6UeEF2D605gtBpQCItdDA==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~lwm5mI9KiTlZHQ3oe6XC8g==/com.thinkube.feierabendrechner-G6UeEF2D605gtBpQCItdDA==/lib/x86_64:/data/app/~~lwm5mI9KiTlZHQ3oe6XC8g==/com.thinkube.feierabendrechner-G6UeEF2D605gtBpQCItdDA==/base.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.thinkube.feierabendrechner
+10-12 11:40:05.607   538   559 E AppHibernationService: Package com.thinkube.feierabendrechner is not installed for user 0
+10-12 11:40:05.607   538   559 E AppHibernationService: Package com.thinkube.feierabendrechner is not installed for any user
+10-12 11:40:05.607   538   559 E AppHibernationService: Package com.thinkube.feierabendrechner is not installed for user 0
+10-12 11:40:05.607   538   559 E AppHibernationService: Package com.thinkube.feierabendrechner is not installed for any user
+10-12 11:40:05.790  2891  2941 D nativeloader: Load /data/app/~~lwm5mI9KiTlZHQ3oe6XC8g==/com.thinkube.feierabendrechner-G6UeEF2D605gtBpQCItdDA==/base.apk!/lib/x86_64/libflutter.so using ns clns-7 from class loader (caller=/data/app/~~lwm5mI9KiTlZHQ3oe6XC8g==/com.thinkube.feierabendrechner-G6UeEF2D605gtBpQCItdDA==/base.apk): ok
+10-12 11:40:05.850  2891  2891 W ierabendrechner: type=1400 audit(0.0:39): avc:  denied  { read } for  name="max_map_count" dev="proc" ino=23057 scontext=u:r:untrusted_app:s0:c209,c256,c512,c768 tcontext=u:object_r:proc_max_map_count:s0 tclass=file permissive=0 app=com.thinkube.feierabendrechner
+10-12 11:40:06.036  2891  2946 I flutter : [IMPORTANT:flutter/shell/platform/android/android_context_gl_impeller.cc(104)] Using the Impeller rendering backend (OpenGLES).
+10-12 11:40:06.064  2891  2952 I Phlogger: Unable to retrieve flag snapshot for com.google.android.gms.measurement#com.thinkube.feierabendrechner, using defaults.
+10-12 11:40:06.073  2891  2938 I FA      :   adb shell setprop debug.firebase.analytics.app com.thinkube.feierabendrechner
+10-12 11:40:06.141  1129  1155 D PackageUpdatedTask: Package updated: mOp=ADD packages=[com.thinkube.feierabendrechner]
+10-12 11:40:06.144  1363  1363 I AiAiEcho: AppFetcherImplV2 updateApps package:[com.thinkube.feierabendrechner], userId:[0], reason:[package is added.].
+10-12 11:40:06.341  2891  2891 D nativeloader: Load /data/app/~~lwm5mI9KiTlZHQ3oe6XC8g==/com.thinkube.feierabendrechner-G6UeEF2D605gtBpQCItdDA==/base.apk!/lib/x86_64/libdartjni.so using ns clns-7 from class loader (caller=/data/app/~~lwm5mI9KiTlZHQ3oe6XC8g==/com.thinkube.feierabendrechner-G6UeEF2D605gtBpQCItdDA==/base.apk): ok
+10-12 11:40:06.404   538   853 I SdkSandboxManager: No SDKs used. Skipping SDK data reconcilation for CallingInfo{mUid=10209, mPackageName='com.thinkube.feierabendrechner, mAppProcessToken='null'}
+10-12 11:40:06.501   538   843 D ShortcutService: adding package: com.thinkube.feierabendrechner userId0
+10-12 11:40:06.501   538   843 D ShortcutService: handlePackageAdded: com.thinkube.feierabendrechner user=0
+10-12 11:40:06.501   538   843 D ShortcutService: rescanPackageIfNeeded 0@com.thinkube.feierabendrechner, forceRescan=true , isNewApp=true
+10-12 11:40:06.502   538   843 D ShortcutService: Package com.thinkube.feierabendrechner has 0 manifest shortcut(s), and 0 share target(s)
+10-12 11:40:06.515   538  2563 D CoreBackPreview: Window{b8e7996 u0 com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@d1fc065, mPriority=0, mIsAnimationCallback=false}
+10-12 11:40:06.828   538   538 I AppsFilter: interaction: PackageSetting{4db189a com.android.microdroid.empty_payload/10198} -> PackageSetting{37d33d5 com.thinkube.feierabendrechner/10209} BLOCKED
+10-12 11:40:07.092  1129  1155 D PackageUpdatedTask: Package updated: mOp=UPDATE packages=[com.thinkube.feierabendrechner]
+10-12 11:40:07.115  1363  1363 I AiAiEcho: AppFetcherImpl onPackageChanged com.thinkube.feierabendrechner.
+10-12 11:40:07.119  1363  1729 I AiAiEcho: AppIndexer Package:[com.thinkube.feierabendrechner] UserProfile:[0] Enabled:[true].
+10-12 11:40:07.121  1363  1729 I AiAiEcho: AppFetcherImplV2 updateApps package:[com.thinkube.feierabendrechner], userId:[0], reason:[package is updated.].
+10-12 11:40:07.325   538   843 D ShortcutService: changing package: com.thinkube.feierabendrechner userId0
+10-12 11:40:07.325   538   843 D ShortcutService: handlePackageChanged: com.thinkube.feierabendrechner user=0
+10-12 11:40:07.325   538   843 D ShortcutService: rescanPackageIfNeeded 0@com.thinkube.feierabendrechner, forceRescan=true , isNewApp=true
+10-12 11:40:07.325   538   843 D ShortcutService: Package com.thinkube.feierabendrechner has 0 manifest shortcut(s), and 0 share target(s)
+10-12 11:40:08.223  1129  1155 D SessionCommitReceiver: Removing PromiseIcon for package: com.thinkube.feierabendrechner, install reason: 0, alreadyAddedPromiseIcon: false
+10-12 11:40:08.493  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:08.493  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:08.597  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:08.597  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:08.606  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:08.707  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:08.726  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:08.726  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:08.776   538   592 I AppsFilter: interaction: PackageSetting{4db189a com.android.microdroid.empty_payload/10198} -> PackageSetting{37d33d5 com.thinkube.feierabendrechner/10209} BLOCKED
+10-12 11:40:08.780   538  2571 W InputManager-JNI: Input channel object 'ba4c3a7 Splash Screen com.thinkube.feierabendrechner (client)' was disposed without first being removed with the input manager!
+10-12 11:40:08.780   538  2959 D CoreBackPreview: Window{ba4c3a7 u0 Splash Screen com.thinkube.feierabendrechner EXITING}: Setting back callback null
+10-12 11:40:08.803   538   557 I ActivityTaskManager: Displayed com.thinkube.feierabendrechner/.MainActivity for user 0: +3s610ms
+10-12 11:40:08.803   538   557 I ActivityTaskManager: Fully drawn com.thinkube.feierabendrechner/.MainActivity: +3s610ms
+10-12 11:40:08.910  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:08.910  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:08.942  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:08.952  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:08.998   885   885 I SafetyLabelChangedBroadcastReceiver: received broadcast packageName: com.thinkube.feierabendrechner, current user: UserHandle{0}, packageChangeEvent: NEW_INSTALL, intent user: UserHandle{0}
+10-12 11:40:09.060  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:09.060  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:09.124   538   843 D ShortcutService: changing package: com.thinkube.feierabendrechner userId0
+10-12 11:40:09.124   538   843 D ShortcutService: handlePackageChanged: com.thinkube.feierabendrechner user=0
+10-12 11:40:09.124   538   843 D ShortcutService: rescanPackageIfNeeded 0@com.thinkube.feierabendrechner, forceRescan=true , isNewApp=true
+10-12 11:40:09.217   538   655 I ImeTracker: com.thinkube.feierabendrechner:a4d9aaa9: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false
+10-12 11:40:09.220   538   655 I ImeTracker: com.thinkube.feierabendrechner:a4d9aaa9: onCancelled at PHASE_SERVER_SHOULD_HIDE
+10-12 11:40:09.234  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:09.239  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:09.264  1297  1297 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1986 onStartInput(EditorInfo{EditorInfo{packageName=com.thinkube.feierabendrechner, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+10-12 11:40:09.271   538  1140 W PackageConfigPersister: App-specific configuration not found for packageName: com.thinkube.feierabendrechner and userId: 0
+10-12 11:40:09.334   538   843 D ShortcutService: Package com.thinkube.feierabendrechner has 0 manifest shortcut(s), and 0 share target(s)
+10-12 11:40:09.361  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:09.361  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:09.622  1363  1363 I AiAiEcho: AppFetcherImpl onPackageChanged com.thinkube.feierabendrechner.
+10-12 11:40:09.646  1363  2507 I AiAiEcho: AppIndexer Package:[com.thinkube.feierabendrechner] UserProfile:[0] Enabled:[true].
+10-12 11:40:09.647  1363  2507 I AiAiEcho: AppFetcherImplV2 updateApps package:[com.thinkube.feierabendrechner], userId:[0], reason:[package is updated.].
+10-12 11:40:09.656  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:09.656  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:10.045  1058  1058 D CarrierSvcBindHelper: onPackageAdded: com.thinkube.feierabendrechner
+10-12 11:40:10.072  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:10.072  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:10.093  1058  1314 D ImsResolver: maybeAddedImsService, packageName: com.thinkube.feierabendrechner
+10-12 11:40:10.298  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:10.306  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:10.364  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:10.364  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:10.388  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:10.390  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:10.441  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:10.444  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:10.459  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:10.460  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:10.470  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:10.475  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:10.507  1058  1058 D CarrierSvcBindHelper: onPackageModified: com.thinkube.feierabendrechner
+10-12 11:40:10.512  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:10.513  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:10.592  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:10.592  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:10.597  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:10.597  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:10.678  1058  1314 D ImsResolver: maybeAddedImsService, packageName: com.thinkube.feierabendrechner
+10-12 11:40:10.731  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:10.731  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:10.792  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:10.794  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:11.162  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:11.176  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:11.222  1129  1155 D PackageUpdatedTask: Package updated: mOp=UPDATE packages=[com.thinkube.feierabendrechner]
+10-12 11:40:11.239  1058  1058 D CarrierSvcBindHelper: onPackageModified: com.thinkube.feierabendrechner
+10-12 11:40:11.273  1129  1135 W s.nexuslauncher: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~lwm5mI9KiTlZHQ3oe6XC8g==/com.thinkube.feierabendrechner-G6UeEF2D605gtBpQCItdDA==/base.apk' with 1 weak references
+10-12 11:40:11.312  1058  1314 D ImsResolver: maybeAddedImsService, packageName: com.thinkube.feierabendrechner
+10-12 11:40:11.433  2891  3157 D ProfileInstaller: Installing profile for com.thinkube.feierabendrechner
+10-12 11:40:11.472  1738  2763 W Finsky  : [135] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:11.473  1738  2763 I Finsky  : [135] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:11.620  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:11.647  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:11.833  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:11.834  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:11.903  1738  2460 W Finsky  : [119] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:11.904  1738  2460 I Finsky  : [119] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:11.908  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:11.908  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:12.012  1738  2460 W Finsky  : [119] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:12.016  1738  2460 I Finsky  : [119] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:12.026  1436  1451 W gle.android.gms: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~lwm5mI9KiTlZHQ3oe6XC8g==/com.thinkube.feierabendrechner-G6UeEF2D605gtBpQCItdDA==/base.apk' with 1 weak references
+10-12 11:40:12.251  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:12.251  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:12.263  1738  2460 W Finsky  : [119] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:12.263  1738  2460 I Finsky  : [119] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:12.396  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:12.400  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:12.418  1738  2460 W Finsky  : [119] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:12.418  1738  2460 I Finsky  : [119] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:12.525  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:12.529  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:12.549  1738  2460 W Finsky  : [119] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:12.555  1738  2460 I Finsky  : [119] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:12.570  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:12.571  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:12.718  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:12.723  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:12.725  1738  2460 W Finsky  : [119] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:12.732  1738  2460 I Finsky  : [119] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:12.758  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:12.758  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:12.813  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:12.813  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:12.838  1738  2460 W Finsky  : [119] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:12.842  1738  2460 I Finsky  : [119] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:12.963  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:12.970  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:13.048  1738  2460 W Finsky  : [119] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:13.048  1738  2460 I Finsky  : [119] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:13.143  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:13.144  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:13.177  1738  2460 W Finsky  : [119] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:13.178  1738  2460 I Finsky  : [119] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:13.206  1738  1889 W Finsky  : [46] miz.i(288): com.thinkube.feierabendrechner: No account found.
+10-12 11:40:13.210  1738  1889 I Finsky  : [46] miz.i(907): Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-12 11:40:15.317  1436  1451 W gle.android.gms: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~lwm5mI9KiTlZHQ3oe6XC8g==/com.thinkube.feierabendrechner-G6UeEF2D605gtBpQCItdDA==/base.apk' with 1 weak references
+10-12 11:40:21.248  1068  1075 W ndroid.settings: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~lwm5mI9KiTlZHQ3oe6XC8g==/com.thinkube.feierabendrechner-G6UeEF2D605gtBpQCItdDA==/base.apk' with 1 weak references
+10-12 11:40:22.090  1436  1451 W gle.android.gms: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~lwm5mI9KiTlZHQ3oe6XC8g==/com.thinkube.feierabendrechner-G6UeEF2D605gtBpQCItdDA==/base.apk' with 1 weak references
+10-12 11:40:26.645  1224  1971 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.thinkube.feierabendrechner
+10-12 11:40:28.661  1738  1746 W android.vending: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~lwm5mI9KiTlZHQ3oe6XC8g==/com.thinkube.feierabendrechner-G6UeEF2D605gtBpQCItdDA==/base.apk' with 1 weak references
+10-12 11:40:29.430  1295  1320 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~lwm5mI9KiTlZHQ3oe6XC8g==/com.thinkube.feierabendrechner-G6UeEF2D605gtBpQCItdDA==/base.apk' with 1 weak references
+10-12 11:40:30.364  1436  1451 W gle.android.gms: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~lwm5mI9KiTlZHQ3oe6XC8g==/com.thinkube.feierabendrechner-G6UeEF2D605gtBpQCItdDA==/base.apk' with 1 weak references
+10-12 11:40:30.885  1129  1135 W s.nexuslauncher: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~lwm5mI9KiTlZHQ3oe6XC8g==/com.thinkube.feierabendrechner-G6UeEF2D605gtBpQCItdDA==/base.apk' with 1 weak references
+10-12 11:40:30.949  1363  1378 W ogle.android.as: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~lwm5mI9KiTlZHQ3oe6XC8g==/com.thinkube.feierabendrechner-G6UeEF2D605gtBpQCItdDA==/base.apk' with 1 weak references
+10-12 11:40:34.356  4096  4096 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-12 11:40:34.373  4096  4096 I AndroidRuntime: Using default boot image
+10-12 11:40:34.373  4096  4096 I AndroidRuntime: Leaving lock profiling enabled
+10-12 11:40:34.432  1295  1320 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~lwm5mI9KiTlZHQ3oe6XC8g==/com.thinkube.feierabendrechner-G6UeEF2D605gtBpQCItdDA==/base.apk' with 1 weak references
+10-12 11:40:34.698  4096  4096 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-12 11:40:35.907  4096  4096 D AndroidRuntime: Shutting down VM
+10-12 11:40:36.851  1295  1320 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~lwm5mI9KiTlZHQ3oe6XC8g==/com.thinkube.feierabendrechner-G6UeEF2D605gtBpQCItdDA==/base.apk' with 1 weak references
+10-12 11:40:40.386  1295  1320 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~lwm5mI9KiTlZHQ3oe6XC8g==/com.thinkube.feierabendrechner-G6UeEF2D605gtBpQCItdDA==/base.apk' with 1 weak references
+10-12 11:40:42.350  1068  1075 W ndroid.settings: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~lwm5mI9KiTlZHQ3oe6XC8g==/com.thinkube.feierabendrechner-G6UeEF2D605gtBpQCItdDA==/base.apk' with 1 weak references
+10-12 11:40:45.612  4346  4346 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-12 11:40:45.632  4346  4346 I AndroidRuntime: Using default boot image
+10-12 11:40:45.632  4346  4346 I AndroidRuntime: Leaving lock profiling enabled
+10-12 11:40:45.778  1295  1320 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~lwm5mI9KiTlZHQ3oe6XC8g==/com.thinkube.feierabendrechner-G6UeEF2D605gtBpQCItdDA==/base.apk' with 1 weak references
+10-12 11:40:46.064  4346  4346 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-12 11:40:47.181  4346  4346 D AndroidRuntime: Shutting down VM
+10-12 11:40:48.363  4399  4399 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-12 11:40:48.370  4399  4399 I AndroidRuntime: Using default boot image
+10-12 11:40:48.370  4399  4399 I AndroidRuntime: Leaving lock profiling enabled
+10-12 11:40:48.615  4399  4399 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-12 11:40:49.746  4399  4399 D AndroidRuntime: Shutting down VM
+10-12 11:40:54.269  4473  4473 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-12 11:40:54.283  4473  4473 I AndroidRuntime: Using default boot image
+10-12 11:40:54.283  4473  4473 I AndroidRuntime: Leaving lock profiling enabled
+10-12 11:40:54.404  4473  4473 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-12 11:40:55.510  4473  4473 D AndroidRuntime: Shutting down VM
+10-12 11:40:56.139  1295  1320 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~lwm5mI9KiTlZHQ3oe6XC8g==/com.thinkube.feierabendrechner-G6UeEF2D605gtBpQCItdDA==/base.apk' with 1 weak references
+10-12 11:40:56.749   538   570 I ActivityManager: Start proc 4526:com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0/u0i1 for  {com.thinkube.feierabendrechner/org.chromium.content.app.SandboxedProcessService0:0}
+10-12 11:40:56.872  2891  4532 E chromium: [ERROR:simple_file_enumerator.cc(21)] opendir /data/user/0/com.thinkube.feierabendrechner/cache/WebView/Default/HTTP Cache/Code Cache/js: No such file or directory (2)
+10-12 11:40:56.874  2891  4553 E chromium: [ERROR:simple_file_enumerator.cc(21)] opendir /data/user/0/com.thinkube.feierabendrechner/cache/WebView/Default/HTTP Cache/Code Cache/wasm: No such file or directory (2)
+10-12 11:40:57.629   538  2933 D ConnectivityService: requestNetwork for uid/pid:10209/2891 activeRequest: null callbackRequest: 141 [NetworkRequest [ REQUEST id=142, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 10209 RequestorPkg: com.thinkube.feierabendrechner UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false
+10-12 11:40:57.634   538   796 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=142, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 10209 RequestorPkg: com.thinkube.feierabendrechner UnderlyingNetworks: Null] ]
+10-12 11:40:57.634   538   796 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=142, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 10209 RequestorPkg: com.thinkube.feierabendrechner UnderlyingNetworks: Null] ]
+10-12 11:40:57.634   538   796 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=142, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 10209 RequestorPkg: com.thinkube.feierabendrechner UnderlyingNetworks: Null] ]
+10-12 11:40:57.634   538   796 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=142, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 10209 RequestorPkg: com.thinkube.feierabendrechner UnderlyingNetworks: Null] ]
+10-12 11:40:57.739   538  2571 D ConnectivityService: requestNetwork for uid/pid:10209/2891 activeRequest: null callbackRequest: 143 [NetworkRequest [ REQUEST id=144, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 10209 RequestorPkg: com.thinkube.feierabendrechner UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false
+10-12 11:40:57.753   538   796 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=144, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 10209 RequestorPkg: com.thinkube.feierabendrechner UnderlyingNetworks: Null] ]
+10-12 11:40:57.753   538   796 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=144, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 10209 RequestorPkg: com.thinkube.feierabendrechner UnderlyingNetworks: Null] ]
+10-12 11:40:57.753   538   796 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=144, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 10209 RequestorPkg: com.thinkube.feierabendrechner UnderlyingNetworks: Null] ]
+10-12 11:40:57.753   538   796 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=144, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 10209 RequestorPkg: com.thinkube.feierabendrechner UnderlyingNetworks: Null] ]
+10-12 11:40:58.664  2891  4567 W ziparchive: Unable to open '/data/user/0/com.thinkube.feierabendrechner/cache/1762298034389.dm': No such file or directory
+10-12 11:40:58.679  2891  4567 D lg      : File /data/user/0/com.thinkube.feierabendrechner/cache/1762298034389.dex not found. No need for deletion
+10-12 11:40:58.697   538  2933 D ConnectivityService: requestNetwork for uid/pid:10209/2891 activeRequest: null callbackRequest: 146 [NetworkRequest [ REQUEST id=147, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 10209 RequestorPkg: com.thinkube.feierabendrechner UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false
+10-12 11:40:58.707   538  2187 D ConnectivityService: requestNetwork for uid/pid:10209/2891 activeRequest: null callbackRequest: 148 [NetworkRequest [ REQUEST id=149, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 10209 RequestorPkg: com.thinkube.feierabendrechner UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false
+10-12 11:40:58.756   538   796 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=147, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 10209 RequestorPkg: com.thinkube.feierabendrechner UnderlyingNetworks: Null] ]
+10-12 11:40:58.778   538   796 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=147, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 10209 RequestorPkg: com.thinkube.feierabendrechner UnderlyingNetworks: Null] ]
+10-12 11:40:58.778   538   796 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=147, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 10209 RequestorPkg: com.thinkube.feierabendrechner UnderlyingNetworks: Null] ]
+10-12 11:40:58.778   538   796 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=147, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 10209 RequestorPkg: com.thinkube.feierabendrechner UnderlyingNetworks: Null] ]
+10-12 11:40:58.778   538   796 D OemPaidWifiNetworkFactory: got request NetworkRequest [ REQUEST id=149, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 10209 RequestorPkg: com.thinkube.feierabendrechner UnderlyingNetworks: Null] ]
+10-12 11:40:58.778   538   796 D MultiInternetWifiNetworkFactory: got request NetworkRequest [ REQUEST id=149, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 10209 RequestorPkg: com.thinkube.feierabendrechner UnderlyingNetworks: Null] ]
+10-12 11:40:58.778   538   796 D WifiNetworkFactory: got request NetworkRequest [ REQUEST id=149, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 10209 RequestorPkg: com.thinkube.feierabendrechner UnderlyingNetworks: Null] ]
+10-12 11:40:58.778   538   796 D UntrustedWifiNetworkFactory: got request NetworkRequest [ REQUEST id=149, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10209 RequestorUid: 10209 RequestorPkg: com.thinkube.feierabendrechner UnderlyingNetworks: Null] ]
+10-12 11:40:58.880  2891  4685 W ziparchive: Unable to open '/data/user/0/com.thinkube.feierabendrechner/app_pccache/6/09CB3651361702CAA758CA516CD972AA21DFDDAA/pcam.dm': No such file or directory
+10-12 11:40:58.896  2891  4685 D nativeloader: Load /data/user/0/com.thinkube.feierabendrechner/app_pccache/6/09CB3651361702CAA758CA516CD972AA21DFDDAA/pcam.jar!/libdE640570AD1BD.so using isolated ns clns-10 (caller=/data/user/0/com.thinkube.feierabendrechner/app_pccache/6/09CB3651361702CAA758CA516CD972AA21DFDDAA/pcam.jar): ok
+10-12 11:40:58.890  2891  2891 W pool-16-thread-: type=1400 audit(0.0:56): avc:  granted  { execute } for  path="/data/data/com.thinkube.feierabendrechner/app_pccache/6/09CB3651361702CAA758CA516CD972AA21DFDDAA/pcam.jar" dev="dm-46" ino=385120 scontext=u:r:untrusted_app:s0:c209,c256,c512,c768 tcontext=u:object_r:app_data_file:s0:c209,c256,c512,c768 tclass=file app=com.thinkube.feierabendrechner
+10-12 11:40:58.948  2891  4688 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 254730000 but found 242335041
+10-12 11:41:02.062  1738  2073 I Finsky  : [63] tup.e(252): ItemStore: Not cached: com.thinkube.feierabendrechner
+10-12 11:41:02.238  4732  4734 I artd    : Dex parent of /data/app/~~lwm5mI9KiTlZHQ3oe6XC8g==/com.thinkube.feierabendrechner-G6UeEF2D605gtBpQCItdDA==/base.apk is not writable: Permission denied
+10-12 11:41:02.238  4732  4734 I artd    : GetBestInfo checking odex in dalvik-cache (/data/dalvik-cache/x86_64/data@app@~~lwm5mI9KiTlZHQ3oe6XC8g==@com.thinkube.feierabendrechner-G6UeEF2D605gtBpQCItdDA==@base.apk@classes.dex)
+10-12 11:41:02.238  4732  4734 I artd    : Loading /data/dalvik-cache/x86_64/data@app@~~lwm5mI9KiTlZHQ3oe6XC8g==@com.thinkube.feierabendrechner-G6UeEF2D605gtBpQCItdDA==@base.apk@classes.dex with executable: 0
+10-12 11:41:02.239  4732  4734 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/x86_64/data@app@~~lwm5mI9KiTlZHQ3oe6XC8g==@com.thinkube.feierabendrechner-G6UeEF2D605gtBpQCItdDA==@base.apk@classes.dex: File /data/dalvik-cache/x86_64/data@app@~~lwm5mI9KiTlZHQ3oe6XC8g==@com.thinkube.feierabendrechner-G6UeEF2D605gtBpQCItdDA==@base.apk@classes.vdex does not exist.
+10-12 11:41:02.239  4732  4734 I artd    : GetBestInfo checking odex next to the dex file (/data/app/~~lwm5mI9KiTlZHQ3oe6XC8g==/com.thinkube.feierabendrechner-G6UeEF2D605gtBpQCItdDA==/oat/x86_64/base.odex)
+10-12 11:41:02.239  4732  4734 I artd    : Loading /data/app/~~lwm5mI9KiTlZHQ3oe6XC8g==/com.thinkube.feierabendrechner-G6UeEF2D605gtBpQCItdDA==/oat/x86_64/base.odex with executable: 0
+10-12 11:41:02.239  4732  4734 I artd    : Successfully loaded /data/app/~~lwm5mI9KiTlZHQ3oe6XC8g==/com.thinkube.feierabendrechner-G6UeEF2D605gtBpQCItdDA==/oat/x86_64/base.odex with executable: 0
+10-12 11:41:02.239  4732  4734 I artd    : /data/app/~~lwm5mI9KiTlZHQ3oe6XC8g==/com.thinkube.feierabendrechner-G6UeEF2D605gtBpQCItdDA==/oat/x86_64/base.odex is kOatUpToDate with filter verify
+10-12 11:41:02.244  4732  4734 I artd    : Dex parent of /data/user/0/com.thinkube.feierabendrechner/app_pccache/6/09CB3651361702CAA758CA516CD972AA21DFDDAA/pcam.jar is not writable: Permission denied
+10-12 11:41:02.244  4732  4734 I artd    : GetBestInfo checking odex in dalvik-cache (/data/dalvik-cache/x86_64/data@user@0@com.thinkube.feierabendrechner@app_pccache@6@09CB3651361702CAA758CA516CD972AA21DFDDAA@pcam.jar@classes.dex)
+10-12 11:41:02.244  4732  4734 I artd    : Loading /data/dalvik-cache/x86_64/data@user@0@com.thinkube.feierabendrechner@app_pccache@6@09CB3651361702CAA758CA516CD972AA21DFDDAA@pcam.jar@classes.dex with executable: 0
+10-12 11:41:02.244  4732  4734 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/x86_64/data@user@0@com.thinkube.feierabendrechner@app_pccache@6@09CB3651361702CAA758CA516CD972AA21DFDDAA@pcam.jar@classes.dex: File /data/dalvik-cache/x86_64/data@user@0@com.thinkube.feierabendrechner@app_pccache@6@09CB3651361702CAA758CA516CD972AA21DFDDAA@pcam.jar@classes.vdex does not exist.
+10-12 11:41:02.244  4732  4734 I artd    : GetBestInfo checking odex next to the dex file (/data/user/0/com.thinkube.feierabendrechner/app_pccache/6/09CB3651361702CAA758CA516CD972AA21DFDDAA/oat/x86_64/pcam.odex)
+10-12 11:41:02.244  4732  4734 I artd    : Loading /data/user/0/com.thinkube.feierabendrechner/app_pccache/6/09CB3651361702CAA758CA516CD972AA21DFDDAA/oat/x86_64/pcam.odex with executable: 0
+10-12 11:41:02.244  4732  4734 I artd    : OatFileAssistant test for existing oat file /data/user/0/com.thinkube.feierabendrechner/app_pccache/6/09CB3651361702CAA758CA516CD972AA21DFDDAA/oat/x86_64/pcam.odex: Failed to open oat filename for reading: No such file or directory
+10-12 11:41:02.244  4732  4734 I artd    : GetBestInfo checking vdex in dalvik-cache (/data/dalvik-cache/x86_64/data@user@0@com.thinkube.feierabendrechner@app_pccache@6@09CB3651361702CAA758CA516CD972AA21DFDDAA@pcam.jar@classes.vdex)
+10-12 11:41:02.244  4732  4734 I artd    : unable to open vdex file /data/dalvik-cache/x86_64/data@user@0@com.thinkube.feierabendrechner@app_pccache@6@09CB3651361702CAA758CA516CD972AA21DFDDAA@pcam.jar@classes.vdex: File /data/dalvik-cache/x86_64/data@user@0@com.thinkube.feierabendrechner@app_pccache@6@09CB3651361702CAA758CA516CD972AA21DFDDAA@pcam.jar@classes.vdex does not exist.
+10-12 11:41:02.244  4732  4734 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/x86_64/data@user@0@com.thinkube.feierabendrechner@app_pccache@6@09CB3651361702CAA758CA516CD972AA21DFDDAA@pcam.jar@classes.vdex: File /data/dalvik-cache/x86_64/data@user@0@com.thinkube.feierabendrechner@app_pccache@6@09CB3651361702CAA758CA516CD972AA21DFDDAA@pcam.jar@classes.vdex does not exist.
+10-12 11:41:02.244  4732  4734 I artd    : GetBestInfo checking vdex next to the dex file (/data/user/0/com.thinkube.feierabendrechner/app_pccache/6/09CB3651361702CAA758CA516CD972AA21DFDDAA/oat/x86_64/pcam.vdex)
+10-12 11:41:02.244  4732  4734 I artd    : Successfully loaded /data/user/0/com.thinkube.feierabendrechner/app_pccache/6/09CB3651361702CAA758CA516CD972AA21DFDDAA/oat/x86_64/pcam.vdex with executable: 0
+10-12 11:41:02.244  4732  4734 I artd    : Image checksum test skipped for vdex file /data/user/0/com.thinkube.feierabendrechner/app_pccache/6/09CB3651361702CAA758CA516CD972AA21DFDDAA/oat/x86_64/pcam.vdex
+10-12 11:41:02.244  4732  4734 I artd    : /data/user/0/com.thinkube.feierabendrechner/app_pccache/6/09CB3651361702CAA758CA516CD972AA21DFDDAA/oat/x86_64/pcam.vdex is kOatUpToDate with filter verify
+10-12 11:41:10.062   881   895 W ndroid.systemui: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~lwm5mI9KiTlZHQ3oe6XC8g==/com.thinkube.feierabendrechner-G6UeEF2D605gtBpQCItdDA==/base.apk' with 1 weak references
+10-12 11:41:19.623  4845  4845 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-12 11:41:19.627  4845  4845 I AndroidRuntime: Using default boot image
+10-12 11:41:19.627  4845  4845 I AndroidRuntime: Leaving lock profiling enabled
+10-12 11:41:19.789  4845  4845 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-12 11:41:20.867  4845  4845 D AndroidRuntime: Shutting down VM
