@@ -1,0 +1,37 @@
+10-12 11:43:21.728  5459  5459 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-12 11:43:21.730  5459  5459 D AndroidRuntime: CheckJNI is OFF
+10-12 11:43:21.760  5459  5459 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+10-12 11:43:21.769  1648  2240 I ActivityManager: Force stopping com.thinkube.feierabendrechner appid=10078 user=0: from pid 5459
+10-12 11:43:21.770  1648  2240 I ActivityManager: Killing 3994:com.thinkube.feierabendrechner/u0a78 (adj 900): stop com.thinkube.feierabendrechner
+10-12 11:43:21.771  5459  5459 D AndroidRuntime: Shutting down VM
+10-12 11:43:21.895  5469  5469 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-12 11:43:21.896  5469  5469 D AndroidRuntime: CheckJNI is OFF
+10-12 11:43:21.926  5469  5469 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+10-12 11:43:21.929  1648  2240 I ActivityManager: START u0 {flg=0x10000000 cmp=com.thinkube.feierabendrechner/.MainActivity} from uid 2000 on display 0
+10-12 11:43:21.944  1648  1905 I ActivityManager: Start proc 5480:com.thinkube.feierabendrechner/u0a78 for activity com.thinkube.feierabendrechner/.MainActivity
+10-12 11:43:22.148  5480  5480 I flutter : [IMPORTANT:flutter/shell/common/shell.cc(528)] [Action Required]: Impeller opt-out deprecated.
+10-12 11:43:22.148  5480  5480 I flutter :     The application opted out of Impeller by either using the
+10-12 11:43:22.148  5480  5480 I flutter :     `--no-enable-impeller` flag or the
+10-12 11:43:22.148  5480  5480 I flutter :     `io.flutter.embedding.android.EnableImpeller` `AndroidManifest.xml` entry.
+10-12 11:43:22.148  5480  5480 I flutter :     These options are going to go away in an upcoming Flutter release. Remove
+10-12 11:43:22.148  5480  5480 I flutter :     the explicit opt-out. If you need to opt-out, please report a bug describing
+10-12 11:43:22.148  5480  5480 I flutter :     the issue.
+10-12 11:43:22.148  5480  5480 I flutter : 
+10-12 11:43:22.148  5480  5480 I flutter :     https://github.com/flutter/flutter/issues/new?template=02_bug.yml
+10-12 11:43:22.148  5480  5480 I flutter : 
+10-12 11:43:22.150  5480  5502 I FA      :   adb shell setprop debug.firebase.analytics.app com.thinkube.feierabendrechner
+10-12 11:43:22.471  5480  5500 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 203400000 but found 202414023
+10-12 11:43:22.472  5480  5500 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 203400000 but found 202414023
+10-12 11:43:22.671  5480  5538 W cr_CrashFileManager: /data/user/0/com.thinkube.feierabendrechner/cache/WebView/Crash Reports does not exist or is not a directory
+10-12 11:43:22.756  5480  5576 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 212800000 but found 202414023
+10-12 11:43:22.756  5480  5500 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 212800000 but found 202414023
+10-12 11:43:23.220  1648  1669 I ActivityManager: Displayed com.thinkube.feierabendrechner/.MainActivity: +1s286ms
+10-12 11:43:23.220  5469  5469 D AndroidRuntime: Shutting down VM
+10-12 11:43:23.252  1648  1669 I WindowManager: Destroying surface Surface(name=Starting com.thinkube.feierabendrechner) called by com.android.server.wm.WindowStateAnimator.destroySurface:2016 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:882 com.android.server.wm.WindowState.destroyOrSaveSurface:2100 com.android.server.wm.AppWindowToken.destroySurfaces:363 com.android.server.wm.WindowStateAnimator.finishExit:565 com.android.server.wm.WindowStateAnimator.stepAnimationLocked:491 com.android.server.wm.WindowAnimator.updateWindowsLocked:303 com.android.server.wm.WindowAnimator.animateLocked:704 
+10-12 11:43:23.363  5480  5635 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 254730000 but found 202414023
+10-12 11:43:27.467  5480  5647 D ProfileInstaller: Skipping profile installation for com.thinkube.feierabendrechner
+10-12 11:43:47.386  5656  5656 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-12 11:43:47.388  5656  5656 D AndroidRuntime: CheckJNI is OFF
+10-12 11:43:47.444  5656  5656 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-12 11:43:48.504  5656  5656 I AccessibilityNodeInfoDumper: Null child 0/1, parent: android.view.accessibility.AccessibilityNodeInfo@7c7b; boundsInParent: Rect(0, 540 - 320, 640); boundsInScreen: Rect(0, 540 - 320, 640); packageName: com.thinkube.feierabendrechner; className: android.view.View; text: null; error: null; maxTextLength: -1; contentDescription: null; viewIdResName: ; checkable: false; checked: false; focusable: true; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; actions: [AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null]
+10-12 11:43:48.509  5656  5656 D AndroidRuntime: Shutting down VM

@@ -1,0 +1,111 @@
+--------- beginning of main
+10-12 11:46:22.036  7005  7005 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-12 11:46:22.037  7005  7005 D AndroidRuntime: CheckJNI is OFF
+10-12 11:46:22.052  7005  7005 W art     : Unexpected CPU variant for X86 using defaults: x86_64
+10-12 11:46:22.054  7005  7005 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+10-12 11:46:22.064  7005  7005 E memtrack: Couldn't load memtrack module (No such file or directory)
+10-12 11:46:22.064  7005  7005 E android.os.Debug: failed to load memtrack module: -2
+10-12 11:46:22.064  7005  7005 I Radio-JNI: register_android_hardware_Radio DONE
+10-12 11:46:22.068  7005  7005 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-12 11:46:22.068  7005  7005 I Input   : injectKeyEvent: KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_HOME, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=426599, downTime=426599, deviceId=-1, source=0x101 }
+10-12 11:46:22.071  7005  7005 I Input   : injectKeyEvent: KeyEvent { action=ACTION_UP, keyCode=KEYCODE_HOME, scanCode=0, metaState=0, flags=0x0, repeatCount=0, eventTime=426599, downTime=426599, deviceId=-1, source=0x101 }
+--------- beginning of system
+10-12 11:46:22.100  1648  1688 I ActivityManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.android.launcher3/.Launcher (has extras)} from uid 1000 on display 0
+10-12 11:46:22.105  7005  7005 D AndroidRuntime: Shutting down VM
+10-12 11:46:27.141  1313  1321 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+10-12 11:46:27.142  1313  2130 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 819200
+10-12 11:46:27.146  7017  7017 D         : HostConnection::get() New Host Connection established 0x7168cc42d4e0, tid 7017
+10-12 11:46:27.289  7020  7020 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-12 11:46:27.290  7020  7020 D AndroidRuntime: CheckJNI is OFF
+10-12 11:46:27.304  7020  7020 W art     : Unexpected CPU variant for X86 using defaults: x86_64
+10-12 11:46:27.306  7020  7020 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+10-12 11:46:27.316  7020  7020 E memtrack: Couldn't load memtrack module (No such file or directory)
+10-12 11:46:27.316  7020  7020 E android.os.Debug: failed to load memtrack module: -2
+10-12 11:46:27.316  7020  7020 I Radio-JNI: register_android_hardware_Radio DONE
+10-12 11:46:27.320  7020  7020 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+10-12 11:46:27.323  1648  3928 I ActivityManager: Force stopping com.thinkube.feierabendrechner appid=10078 user=0: from pid 7020
+10-12 11:46:27.323  1648  3928 I ActivityManager: Killing 5808:com.thinkube.feierabendrechner/u0a78 (adj 900): stop com.thinkube.feierabendrechner
+10-12 11:46:27.324  1648  3928 D ActivityManager: cleanUpApplicationRecord -- 5808
+10-12 11:46:27.326  7020  7020 D AndroidRuntime: Shutting down VM
+10-12 11:46:27.327  1960  1960 D CarrierSvcBindHelper: No carrier app for: 0
+10-12 11:46:27.351  1648  3928 D GraphicsStats: Buffer count: 2
+10-12 11:46:27.451  7030  7030 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-12 11:46:27.453  7030  7030 D AndroidRuntime: CheckJNI is OFF
+10-12 11:46:27.467  7030  7030 W art     : Unexpected CPU variant for X86 using defaults: x86_64
+10-12 11:46:27.469  7030  7030 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+10-12 11:46:27.479  7030  7030 E memtrack: Couldn't load memtrack module (No such file or directory)
+10-12 11:46:27.479  7030  7030 E android.os.Debug: failed to load memtrack module: -2
+10-12 11:46:27.479  7030  7030 I Radio-JNI: register_android_hardware_Radio DONE
+10-12 11:46:27.483  7030  7030 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+10-12 11:46:27.486  1648  2245 I ActivityManager: START u0 {flg=0x10000000 cmp=com.thinkube.feierabendrechner/.MainActivity} from uid 2000 on display 0
+10-12 11:46:27.496  7040  7040 W art     : Unexpected CPU variant for X86 using defaults: x86_64
+10-12 11:46:27.502  1648  1659 I ActivityManager: Start proc 7040:com.thinkube.feierabendrechner/u0a78 for activity com.thinkube.feierabendrechner/.MainActivity
+10-12 11:46:27.520  1313  4060 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 819200
+10-12 11:46:27.531  7040  7040 I FirebaseApp: Device unlocked: initializing all Firebase APIs for app [DEFAULT]
+10-12 11:46:27.537  2323  2399 D EGL_emulation: eglMakeCurrent: 0x739ba6249640: ver 3 0 (tinfo 0x739ba620cc60)
+10-12 11:46:27.540  7040  7040 I FirebaseInitProvider: FirebaseApp initialization successful
+10-12 11:46:27.543  7040  7040 D WM-WrkMgrInitializer: Initializing WorkManager with default configuration.
+10-12 11:46:27.565  7040  7056 I DynamiteModule: Considering local module com.google.android.gms.measurement.dynamite:185 and remote module com.google.android.gms.measurement.dynamite:15
+10-12 11:46:27.565  7040  7056 I DynamiteModule: Selected local version of com.google.android.gms.measurement.dynamite
+10-12 11:46:27.640  7040  7065 D Phlogger: Application doesn't implement PhenotypeApplication interface, falling back to globally set context. See go/phenotype-flag#process-stable-init for more info.
+10-12 11:46:27.649  7040  7066 D skia    : [SkFontMgr Android Parser] '/product/etc/fonts_customization.xml' could not be opened
+10-12 11:46:27.665  7040  7040 W System  : ClassLoader referenced unknown path: 
+10-12 11:46:27.687  7040  7061 I FA      : App measurement initialized, version: 161000
+10-12 11:46:27.687  7040  7061 I FA      : To enable debug logging run: adb shell setprop log.tag.FA VERBOSE
+10-12 11:46:27.687  7040  7061 I FA      : To enable faster debug mode event logging run:
+10-12 11:46:27.687  7040  7061 I FA      :   adb shell setprop debug.firebase.analytics.app com.thinkube.feierabendrechner
+10-12 11:46:27.708  7040  7040 I flutter : [IMPORTANT:flutter/shell/common/shell.cc(528)] [Action Required]: Impeller opt-out deprecated.
+10-12 11:46:27.708  7040  7040 I flutter :     The application opted out of Impeller by either using the
+10-12 11:46:27.708  7040  7040 I flutter :     `--no-enable-impeller` flag or the
+10-12 11:46:27.708  7040  7040 I flutter :     `io.flutter.embedding.android.EnableImpeller` `AndroidManifest.xml` entry.
+10-12 11:46:27.708  7040  7040 I flutter :     These options are going to go away in an upcoming Flutter release. Remove
+10-12 11:46:27.708  7040  7040 I flutter :     the explicit opt-out. If you need to opt-out, please report a bug describing
+10-12 11:46:27.708  7040  7040 I flutter :     the issue.
+10-12 11:46:27.708  7040  7040 I flutter : 
+10-12 11:46:27.708  7040  7040 I flutter :     https://github.com/flutter/flutter/issues/new?template=02_bug.yml
+10-12 11:46:27.708  7040  7040 I flutter : 
+10-12 11:46:27.718  7040  7040 D         : HostConnection::get() New Host Connection established 0x739b95f1c1a0, tid 7040
+10-12 11:46:27.720  7040  7040 D EGL_emulation: eglCreateContext: 0x739bace7d7a0: maj 3 min 0 rcv 3
+10-12 11:46:27.721  7040  7040 D EGL_emulation: eglCreateContext: 0x739bace7d840: maj 3 min 0 rcv 3
+10-12 11:46:27.723  7040  7072 D         : HostConnection::get() New Host Connection established 0x739b95f1c6e0, tid 7072
+10-12 11:46:27.724  7040  7072 D EGL_emulation: eglMakeCurrent: 0x739bace7d840: ver 3 0 (tinfo 0x739ba639f720)
+10-12 11:46:27.724  7040  7072 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008cdf
+10-12 11:46:27.724  7040  7072 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008824
+10-12 11:46:27.727  7040  7072 E eglCodecCommon: glUtilsParamSize: unknow param 0x000087fe
+10-12 11:46:27.774  7040  7045 I art     : Do partial code cache collection, code=22KB, data=30KB
+10-12 11:46:27.774  7040  7045 I art     : After code cache collection, code=22KB, data=30KB
+10-12 11:46:27.774  7040  7045 I art     : Increasing code cache capacity to 128KB
+10-12 11:46:27.776  1313  1321 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+10-12 11:46:27.778  7040  7061 I FA      : Tag Manager is not found and thus will not be used
+10-12 11:46:27.803  7040  7083 I OpenGLRenderer: Initialized EGL, version 1.4
+10-12 11:46:27.803  7040  7083 D OpenGLRenderer: Swap behavior 1
+10-12 11:46:27.804  7040  7083 D         : HostConnection::get() New Host Connection established 0x739ba6212660, tid 7083
+10-12 11:46:27.806  7040  7083 D EGL_emulation: eglCreateContext: 0x739ba624b080: maj 3 min 0 rcv 3
+10-12 11:46:27.807  7040  7083 D EGL_emulation: eglMakeCurrent: 0x739ba624b080: ver 3 0 (tinfo 0x739b90442180)
+10-12 11:46:27.807  7040  7083 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008cdf
+10-12 11:46:27.807  7040  7083 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008824
+10-12 11:46:27.812  7040  7071 D         : HostConnection::get() New Host Connection established 0x739ba39e0ca0, tid 7071
+10-12 11:46:27.813  7040  7071 D EGL_emulation: eglMakeCurrent: 0x739bace7d7a0: ver 3 0 (tinfo 0x739b9240cf80)
+10-12 11:46:27.813  7040  7071 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008cdf
+10-12 11:46:27.813  7040  7071 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008824
+10-12 11:46:27.815  7040  7071 D EGL_emulation: eglCreateContext: 0x739bace7e740: maj 3 min 0 rcv 3
+10-12 11:46:27.815  7040  7071 D EGL_emulation: eglMakeCurrent: 0x739bace7e740: ver 3 0 (tinfo 0x739b9240cf80)
+10-12 11:46:27.816  7040  7071 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008cdf
+10-12 11:46:27.816  7040  7071 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008824
+10-12 11:46:27.816  7040  7071 D EGL_emulation: eglMakeCurrent: 0x739bace7d7a0: ver 3 0 (tinfo 0x739b9240cf80)
+10-12 11:46:27.819  7040  7071 E eglCodecCommon: glUtilsParamSize: unknow param 0x000087fe
+10-12 11:46:27.821  7040  7071 D EGL_emulation: eglMakeCurrent: 0x739bace7d7a0: ver 3 0 (tinfo 0x739b9240cf80)
+10-12 11:46:27.928  7040  7060 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 203400000 but found 202414023
+10-12 11:46:27.928  7040  7060 W GoogleApiManager: The service for u4.c is not available: b{statusCode=SERVICE_VERSION_UPDATE_REQUIRED, resolution=null, message=null, clientMethodKey=null}
+10-12 11:46:27.930  7040  7060 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 203400000 but found 202414023
+10-12 11:46:27.930  7040  7060 W GoogleApiManager: The service for u4.c is not available: b{statusCode=SERVICE_VERSION_UPDATE_REQUIRED, resolution=null, message=null, clientMethodKey=null}
+10-12 11:46:28.471  7040  7083 D EGL_emulation: eglMakeCurrent: 0x739ba624b080: ver 3 0 (tinfo 0x739b90442180)
+10-12 11:46:28.639  1648  1669 I ActivityManager: Displayed com.thinkube.feierabendrechner/.MainActivity: +1s147ms
+10-12 11:46:28.640  7030  7030 D AndroidRuntime: Shutting down VM
+10-12 11:46:28.654  1648  2353 I WindowManager: Destroying surface Surface(name=com.android.launcher3/com.android.launcher3.Launcher) called by com.android.server.wm.WindowStateAnimator.destroySurface:2016 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:882 com.android.server.wm.WindowState.destroyOrSaveSurface:2100 com.android.server.wm.AppWindowToken.destroySurfaces:363 com.android.server.wm.AppWindowToken.notifyAppStopped:389 com.android.server.wm.WindowManagerService.notifyAppStopped:4463 com.android.server.am.ActivityStack.activityStoppedLocked:1252 com.android.server.am.ActivityManagerService.activityStopped:6903 
+10-12 11:46:28.669  1648  1669 I WindowManager: Destroying surface Surface(name=Starting com.thinkube.feierabendrechner) called by com.android.server.wm.WindowStateAnimator.destroySurface:2016 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:882 com.android.server.wm.WindowState.destroyOrSaveSurface:2100 com.android.server.wm.AppWindowToken.destroySurfaces:363 com.android.server.wm.WindowStateAnimator.finishExit:565 com.android.server.wm.WindowStateAnimator.stepAnimationLocked:491 com.android.server.wm.WindowAnimator.updateWindowsLocked:303 com.android.server.wm.WindowAnimator.animateLocked:704 
+10-12 11:46:33.616  7040  7096 D ProfileInstaller: Skipping profile installation for com.thinkube.feierabendrechner
+10-12 11:46:37.666  7040  7060 W GoogleApiManager: com.google.android.gms.internal.measurement.ca could not execute call because it requires feature (get_storage_info_api, 1).
+10-12 11:46:48.675  1313  1319 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+10-12 11:46:48.675  1313  1753 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 819200
+10-12 11:46:48.677  7102  7102 D         : HostConnection::get() New Host Connection established 0x759b0f22d4e0, tid 7102

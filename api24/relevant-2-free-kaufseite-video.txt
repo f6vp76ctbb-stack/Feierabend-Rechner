@@ -1,0 +1,38 @@
+10-12 11:41:44.748  4855  4855 D AndroidRuntime: Shutting down VM
+10-12 11:41:45.880  4866  4866 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-12 11:41:45.881  4866  4866 D AndroidRuntime: CheckJNI is OFF
+10-12 11:41:45.927  4866  4866 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-12 11:41:46.951  4866  4866 I AccessibilityNodeInfoDumper: Null child 0/1, parent: android.view.accessibility.AccessibilityNodeInfo@b1ce; boundsInParent: Rect(0, 540 - 320, 640); boundsInScreen: Rect(0, 540 - 320, 640); packageName: com.thinkube.feierabendrechner; className: android.view.View; text: null; error: null; maxTextLength: -1; contentDescription: null; viewIdResName: ; checkable: false; checked: false; focusable: true; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; actions: [AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null]
+10-12 11:41:46.954  4866  4866 D AndroidRuntime: Shutting down VM
+10-12 11:41:47.101  4879  4879 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-12 11:41:47.102  4879  4879 D AndroidRuntime: CheckJNI is OFF
+10-12 11:41:47.131  4879  4879 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-12 11:41:47.432  4879  4879 D AndroidRuntime: Shutting down VM
+10-12 11:41:48.562  4889  4889 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-12 11:41:48.563  4889  4889 D AndroidRuntime: CheckJNI is OFF
+10-12 11:41:48.595  4889  4889 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-12 11:41:49.639  4889  4889 I AccessibilityNodeInfoDumper: Null child 0/1, parent: android.view.accessibility.AccessibilityNodeInfo@b5b4; boundsInParent: Rect(0, 540 - 320, 640); boundsInScreen: Rect(0, 540 - 320, 640); packageName: com.thinkube.feierabendrechner; className: android.view.View; text: null; error: null; maxTextLength: -1; contentDescription: null; viewIdResName: ; checkable: false; checked: false; focusable: true; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; actions: [AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null]
+10-12 11:41:49.643  4889  4889 D AndroidRuntime: Shutting down VM
+10-12 11:41:49.786  4902  4902 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-12 11:41:49.787  4902  4902 D AndroidRuntime: CheckJNI is OFF
+10-12 11:41:49.817  4902  4902 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-12 11:41:50.118  4902  4902 D AndroidRuntime: Shutting down VM
+10-12 11:41:51.246  4914  4914 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-12 11:41:51.247  4914  4914 D AndroidRuntime: CheckJNI is OFF
+10-12 11:41:51.279  4914  4914 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-12 11:41:52.317  4914  4914 I AccessibilityNodeInfoDumper: Null child 0/1, parent: android.view.accessibility.AccessibilityNodeInfo@b999; boundsInParent: Rect(0, 540 - 320, 640); boundsInScreen: Rect(0, 540 - 320, 640); packageName: com.thinkube.feierabendrechner; className: android.view.View; text: null; error: null; maxTextLength: -1; contentDescription: null; viewIdResName: ; checkable: false; checked: false; focusable: true; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; actions: [AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null]
+10-12 11:41:52.322  4914  4914 D AndroidRuntime: Shutting down VM
+10-12 11:42:07.524  4935  4935 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-12 11:42:07.525  4935  4935 D AndroidRuntime: CheckJNI is OFF
+10-12 11:42:07.554  4935  4935 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-12 11:42:07.572  4935  4935 D AndroidRuntime: Shutting down VM
+10-12 11:42:07.939  1648  2223 I WindowManager: Destroying surface Surface(name=com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity) called by com.android.server.wm.WindowStateAnimator.destroySurface:2016 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:882 com.android.server.wm.WindowState.destroySavedSurface:2112 com.android.server.wm.AppWindowToken.destroySavedSurfaces:506 com.android.server.wm.WindowState.clearHasSavedSurface:2150 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:848 com.android.server.wm.WindowState.removeLocked:1456 com.android.server.wm.WindowManagerService.removeWindowInnerLocked:2484 
+10-12 11:42:07.940  1648  2223 I WindowManager: Destroying surface Surface(name=SurfaceView - com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity) called by com.android.server.wm.WindowStateAnimator.destroySurface:2016 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:882 com.android.server.wm.WindowState.removeLocked:1456 com.android.server.wm.WindowManagerService.removeWindowInnerLocked:2484 com.android.server.wm.WindowManagerService.removeWindowLocked:2442 com.android.server.wm.WindowManagerService.removeWindowLocked:2311 com.android.server.wm.WindowManagerService.removeWindow:2306 com.android.server.wm.Session.remove:202 
+10-12 11:42:09.696  4965  4965 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-12 11:42:09.697  4965  4965 D AndroidRuntime: CheckJNI is OFF
+10-12 11:42:09.727  4965  4965 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-12 11:42:09.734  4965  4965 D AndroidRuntime: Shutting down VM
+10-12 11:42:11.865  4976  4976 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-12 11:42:11.866  4976  4976 D AndroidRuntime: CheckJNI is OFF
+10-12 11:42:11.895  4976  4976 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-12 11:42:11.899  4976  4976 D AndroidRuntime: Shutting down VM
