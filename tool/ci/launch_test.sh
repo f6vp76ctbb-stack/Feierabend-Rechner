@@ -71,6 +71,22 @@ tap() {
 
 back() { adbt shell input keyevent KEYCODE_BACK; sleep 2; }
 
+# Statistik-Frage beantworten, falls sie gerade offen ist (erscheint in der ersten neuen
+# Sitzung nach Einführung/Tipps – je nach Gerät an unterschiedlicher Stelle).
+# Ohne Scrollen, damit der Bildschirm für die nächsten Schritte unverändert bleibt.
+answer_consent() {
+  sleep 4
+  dump_ui
+  local bounds
+  bounds=$(grep -o '<node[^>]*\(text\|content-desc\)="\(Sure\|Ja, gern\)"[^>]*>' "$OUT/ui.xml" \
+    | grep -o 'bounds="\[[0-9]*,[0-9]*\]\[[0-9]*,[0-9]*\]"' | head -1)
+  [ -z "$bounds" ] && return 0
+  read -r x1 y1 x2 y2 <<<"$(echo "$bounds" | grep -o '[0-9]*' | tr '\n' ' ')"
+  adbt shell input tap $(((x1 + x2) / 2)) $(((y1 + y2) / 2))
+  log "Statistik: zugestimmt"
+  sleep 3
+}
+
 # Ganz nach oben scrollen (Kopfzeile mit dem Einstellungs-Symbol sichtbar).
 scroll_top() {
   for _ in 1 2 3 4; do
@@ -134,9 +150,9 @@ sleep 3
 check "2-free-kaufseite-video"
 
 start_app 10 # „Zurück“ nach dem Video kann die App schon verlassen haben
-# Neue Flutter-Sitzung → die App fragt nach der Nutzungsstatistik: zustimmen, damit
-# Firebase im Release-Build mitgetestet wird.
-tap 'Sure' 'Ja, gern' && log "Statistik: zugestimmt"
+# Ggf. neue Flutter-Sitzung → die App fragt nach der Nutzungsstatistik: zustimmen,
+# damit Firebase im Release-Build mitgetestet wird.
+answer_consent
 scroll_top
 tap "Settings" "Einstellungen"
 tap 'Browse designs[^"]*' 'Designs ansehen[^"]*'
@@ -148,6 +164,7 @@ check "2b-free-design-kauf"
 
 adbt shell am force-stop "$PKG"
 start_app 20
+answer_consent
 shot "free-zweiter-start"
 check "3-free-zweiter-start"
 
@@ -157,6 +174,7 @@ timeout 300 adb install -r "$TESTER_APK" 2>&1 | tee "$OUT/install-tester.txt"
 adbt shell pm grant "$PKG" android.permission.POST_NOTIFICATIONS 2>/dev/null
 adbt logcat -c
 start_app 20
+answer_consent
 shot "tester-home"
 tap 'Overtime account[^"]*' 'Überstunden-Konto[^"]*'
 tap 'Book today[^"]*' 'Heute buchen[^"]*'

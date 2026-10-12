@@ -193,6 +193,11 @@ test/                      # Unit- + Widget-Tests (domain/ = 100 % Ziel)
   mit dem Upload-Schlüssel (**nie ins Repo**, siehe `store/SCHLUESSEL.md`). Pro Lauf zwei Bundles:
   **Store** (`feierabend-unsigned.aab`, versionCode = 2 × run_number) und **Tester**
   (`feierabend-tester-unsigned.aab`, 2 × run_number + 1, `--dart-define=TESTER_BUILD=true`).
+  **ABIs:** armeabi-v7a + arm64-v8a + **x86_64** (ohne x86_64 meldet Play „8 Geräte nicht mehr
+  unterstützt“; CI prüft, dass jedes ABI `libflutter.so` hat). **Vor dem Signieren** aus dem AAB entfernen:
+  `BUNDLE-METADATA/com.android.tools.build.debugsymbols/*` und `…/obfuscation/proguard.map`
+  (Übergabe-Grenze 30 MiB; die Play-Warnungen „keine Symbole/Deobfuskierungsdatei“ sind harmlos).
+  Das R8-Mapping hebt die CI 90 Tage als Artefakt `r8-mapping-run<N>` auf.
 - **Tester-Version** (`MonetizationConfig.testerBuild` → `testerBuildProvider`): Pro + alle Designs frei,
   Werbe-SDK startet nie (weil Pro), Hinweis in den Einstellungen. Nur für den geschlossenen Test,
   **nie in Produktion** – dort immer das Store-Bundle.

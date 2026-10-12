@@ -55,14 +55,6 @@ android {
         }
     }
 
-    // Store-Bundle nur für ARM (Env ARM_ONLY=true, gesetzt in android-bundle.yml).
-    // Wichtig: ALLE nativen Bibliotheken entfernen – sonst bekäme ein x86_64-Gerät eine
-    // Variante ohne Flutter-Engine (nur Plugin-Bibliotheken) und stürzte beim Start ab.
-    if (System.getenv("ARM_ONLY") == "true") {
-        // abiFilters würden vom Flutter-Plugin überschrieben → beim Packen ausschließen.
-        packaging { jniLibs { excludes += listOf("lib/x86_64/**", "lib/x86/**") } }
-    }
-
     signingConfigs {
         if (keystorePropertiesFile.exists()) {
             create("release") {
