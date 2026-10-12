@@ -194,10 +194,12 @@ test/                      # Unit- + Widget-Tests (domain/ = 100 % Ziel)
   **Store** (`feierabend-unsigned.aab`, versionCode = 2 × run_number) und **Tester**
   (`feierabend-tester-unsigned.aab`, 2 × run_number + 1, `--dart-define=TESTER_BUILD=true`).
   **ABIs:** armeabi-v7a + arm64-v8a + **x86_64** (ohne x86_64 meldet Play „8 Geräte nicht mehr
-  unterstützt“; CI prüft, dass jedes ABI `libflutter.so` hat). **Vor dem Signieren** aus dem AAB entfernen:
-  `BUNDLE-METADATA/com.android.tools.build.debugsymbols/*` und `…/obfuscation/proguard.map`
-  (Übergabe-Grenze 30 MiB; die Play-Warnungen „keine Symbole/Deobfuskierungsdatei“ sind harmlos).
-  Das R8-Mapping hebt die CI 90 Tage als Artefakt `r8-mapping-run<N>` auf.
+  unterstützt“; CI prüft, dass jedes ABI `libflutter.so` hat). **Debug-Symbole + R8-Mapping bleiben im AAB**
+  (`BUNDLE-METADATA/…/debugsymbols`, `…/obfuscation/proguard.map`; Play übernimmt sie automatisch, sonst warnt
+  es) – NICHT mehr herauslöschen. Das signierte AAB (~61 MB) ist zu groß für die direkte Übergabe (30 MiB):
+  es kommt als Orphan-Commit in den Branch `signed-aab`, der Nutzer lädt es per
+  `https://github.com/f6vp76ctbb-stack/Feierabend-Rechner/raw/signed-aab/<datei>.aab` herunter.
+  Bereits hochgeladene versionCodes sind verbraucht → für jede neue Auslieferung neuer CI-Lauf.
 - **Tester-Version** (`MonetizationConfig.testerBuild` → `testerBuildProvider`): Pro + alle Designs frei,
   Werbe-SDK startet nie (weil Pro), Hinweis in den Einstellungen. Nur für den geschlossenen Test,
   **nie in Produktion** – dort immer das Store-Bundle.
