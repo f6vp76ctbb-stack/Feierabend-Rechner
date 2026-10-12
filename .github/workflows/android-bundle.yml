@@ -81,7 +81,6 @@ jobs:
       #                                 (Pro + alle Designs frei, keine Werbung) – NIE in Produktion!
       - name: App Bundles bauen (unsigniert)
         env:
-          ARM_ONLY: "true" # siehe android/app/build.gradle.kts (abiFilters)
           ADMOB_APP_ID: ${{ inputs.admob_app_id || env.RELEASE_ADMOB_APP_ID }}
           BANNER: ${{ inputs.admob_banner_android || env.RELEASE_ADMOB_BANNER_ANDROID }}
           REWARDED: ${{ inputs.admob_rewarded_android || env.RELEASE_ADMOB_REWARDED_ANDROID }}
@@ -93,9 +92,6 @@ jobs:
             DEFINES="$DEFINES --dart-define=FIREBASE_API_KEY=$FIREBASE_API_KEY --dart-define=FIREBASE_APP_ID=$FIREBASE_APP_ID"
             DEFINES="$DEFINES --dart-define=FIREBASE_SENDER_ID=$FIREBASE_SENDER_ID --dart-define=FIREBASE_PROJECT_ID=$FIREBASE_PROJECT_ID"
           fi
-          # Nur ARM (≈ alle Handys; Intel-Chromebooks übersetzen ARM). Ohne x86_64 bleibt das
-          # signierte AAB unter 30 MiB (Grenze für die Übergabe aus der Claude-Sitzung).
-          DEFINES="$DEFINES --target-platform android-arm,android-arm64"
           VC=$(( ${{ github.run_number }} * 2 ))
           mkdir out
           flutter build appbundle --release --build-number=$VC $DEFINES --dart-define=APP_VERSION_CODE=$VC
@@ -105,17 +101,35 @@ jobs:
           cp build/app/outputs/bundle/release/app-release.aab out/feierabend-tester-unsigned.aab
           echo "$((VC + 1))" > out/VERSION_CODE_TESTER
           ls -la out/
-          # Sicherung: keine x86-Reste (ein halbes ABI-Paket ohne libflutter.so stürzt ab).
+          # Sicherung: alle drei ABIs (ARM 32/64 + x86_64 – ohne x86_64 verliert Play Geräte),
+          # und jedes mit Flutter-Engine (ein halbes ABI-Paket ohne libflutter.so stürzt ab).
           for f in out/*.aab; do
-            if unzip -l "$f" | grep -q 'base/lib/x86'; then echo "::error::x86-Bibliothek in $f"; exit 1; fi
-            unzip -l "$f" | grep -q 'base/lib/arm64-v8a/libflutter.so' || { echo "::error::libflutter.so fehlt in $f"; exit 1; }
+            for abi in armeabi-v7a arm64-v8a x86_64; do
+              unzip -l "$f" | grep -q "base/lib/$abi/libflutter.so" || { echo "::error::$abi/libflutter.so fehlt in $f"; exit 1; }
+            done
+            for abi in $(unzip -l "$f" | grep -o 'base/lib/[^/]*/' | sort -u | cut -d/ -f3); do
+              unzip -l "$f" | grep -q "base/lib/$abi/libflutter.so" || { echo "::error::$abi ohne libflutter.so in $f"; exit 1; }
+            done
           done
+          # R8-Mapping (zum Entschlüsseln von Java-Absturzberichten) separat aufheben: beim
+          # Signieren wird es aus dem AAB entfernt, damit die Datei unter 30 MiB bleibt.
+          mkdir mapping
+          unzip -p out/feierabend-unsigned.aab BUNDLE-METADATA/com.android.tools.build.obfuscation/proguard.map > "mapping/mapping-vc$VC.txt"
+          unzip -p out/feierabend-tester-unsigned.aab BUNDLE-METADATA/com.android.tools.build.obfuscation/proguard.map > "mapping/mapping-vc$((VC + 1)).txt"
+          ls -la mapping/
 
       - name: Artefakt hochladen
         uses: actions/upload-artifact@v4
         with:
           name: app-release-unsigned
           path: out/*.aab
+
+      - name: R8-Mapping aufheben (90 Tage)
+        uses: actions/upload-artifact@v4
+        with:
+          name: r8-mapping-run${{ github.run_number }}
+          path: mapping/*.txt
+          retention-days: 90
 
       - name: AABs im Branch aab-build ablegen
         run: |
