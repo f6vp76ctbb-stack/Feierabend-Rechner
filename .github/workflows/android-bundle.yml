@@ -111,25 +111,18 @@ jobs:
               unzip -l "$f" | grep -q "base/lib/$abi/libflutter.so" || { echo "::error::$abi ohne libflutter.so in $f"; exit 1; }
             done
           done
-          # R8-Mapping (zum Entschlüsseln von Java-Absturzberichten) separat aufheben: beim
-          # Signieren wird es aus dem AAB entfernt, damit die Datei unter 30 MiB bleibt.
-          mkdir mapping
-          unzip -p out/feierabend-unsigned.aab BUNDLE-METADATA/com.android.tools.build.obfuscation/proguard.map > "mapping/mapping-vc$VC.txt"
-          unzip -p out/feierabend-tester-unsigned.aab BUNDLE-METADATA/com.android.tools.build.obfuscation/proguard.map > "mapping/mapping-vc$((VC + 1)).txt"
-          ls -la mapping/
+          # Debug-Symbole + R8-Mapping bleiben im AAB (BUNDLE-METADATA) – Play liest beide
+          # automatisch, dann gibt es keine Warnungen zu Symbolen/Offenlegungsdatei.
+          for f in out/*.aab; do
+            unzip -l "$f" | grep -q 'com.android.tools.build.debugsymbols/arm64-v8a/libapp.so.sym' || { echo "::error::Debug-Symbole fehlen in $f"; exit 1; }
+            unzip -l "$f" | grep -q 'com.android.tools.build.obfuscation/proguard.map' || { echo "::error::R8-Mapping fehlt in $f"; exit 1; }
+          done
 
       - name: Artefakt hochladen
         uses: actions/upload-artifact@v4
         with:
           name: app-release-unsigned
           path: out/*.aab
-
-      - name: R8-Mapping aufheben (90 Tage)
-        uses: actions/upload-artifact@v4
-        with:
-          name: r8-mapping-run${{ github.run_number }}
-          path: mapping/*.txt
-          retention-days: 90
 
       - name: AABs im Branch aab-build ablegen
         run: |

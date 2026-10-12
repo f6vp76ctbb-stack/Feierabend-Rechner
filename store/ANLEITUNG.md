@@ -6,7 +6,7 @@ Alles ist vorbereitet. Du brauchst nur die Play Console (am besten am Computer o
 
 | Was | Wo |
 |---|---|
-| **Tester-App-Bundle** (geschlossener Test) | `feierabend-TESTER-1.0.0-vc45.aab` – Pro + alle Designs frei, **keine Werbung**, Nutzungsstatistik nach Einwilligung, Tipps, Bewerten/Teilen/Feedback. Nur für den Test-Track, **nie in Produktion!** |
+| **Tester-App-Bundle** (geschlossener Test) | `feierabend-TESTER-1.0.0-vc47.aab` (Download-Link von mir, ~61 MB, inkl. Debug-Symbolen + Offenlegungsdatei) – Pro + alle Designs frei, **keine Werbung**, Nutzungsstatistik nach Einwilligung, Tipps, Bewerten/Teilen/Feedback. Nur für den Test-Track, **nie in Produktion!** |
 | **Store-App-Bundle** (Produktion, später) | `feierabend-release-1.0.0-vc<N>.aab` (gerade Nummer) – so wie Kunden die App bekommen: Werbung, Pro/Designs kaufbar. Schicke ich dir, sobald der Produktionszugang da ist. |
 | **Upload-Schlüssel + Passwort** | geschickt → sicher aufbewahren, siehe `SCHLUESSEL.md` |
 | Store-Texte DE + EN | `STORE_EINTRAG.md` |
@@ -50,7 +50,7 @@ Dann **Übersetzungen verwalten → Eigene Übersetzung hinzufügen → Englisch
 **Test und Release → Testen → Interner Test → Neuen Release erstellen**
 1. Play App-Signatur: **„Google Play generiert und verwaltet"** bestätigen (Standard)
 2. **App-Bundle hochladen:** Store-App-Bundle (`feierabend-release-…`) – nur für dich zum Kauf-Test; die Tester bekommen das Tester-Bundle (Schritt 8)
-   – Warnungen „keine Symbole zum Debuggen" und „keine Deobfuskierungsdatei" sind harmlos → ignorieren. „Geräte werden nicht mehr unterstützt" dagegen nicht → Bescheid geben.
+   – Debug-Symbole und Offenlegungsdatei (R8-Mapping) stecken im Bundle → dazu kommen keine Warnungen mehr. Erscheint doch eine Warnung (z. B. „Geräte werden nicht mehr unterstützt“) → nicht veröffentlichen, mir Bescheid geben.
 3. Release-Name: `1.0.0`
 4. Versionshinweise DE + EN aus `STORE_EINTRAG.md`
 5. **Weiter → Speichern → Release veröffentlichen**
