@@ -528,4 +528,82 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get analyticsSettingHint =>
       'Helps improve the app (Google Analytics).';
+
+  @override
+  String tipStep(int n, int total) {
+    return '$n of $total';
+  }
+
+  @override
+  String get tipRingTitle => 'Your clock-out at a glance';
+
+  @override
+  String get tipRingBody =>
+      'The big time is when you clock out. The ring fills up until then.';
+
+  @override
+  String get tipInputsTitle => 'Make it yours';
+
+  @override
+  String get tipInputsBody =>
+      'Tap start, work time or break to change them. The app remembers everything.';
+
+  @override
+  String get tipPresetsTitle => 'Quick pick';
+
+  @override
+  String get tipPresetsBody =>
+      'One tap for typical days – e.g. “6 h, no break”.';
+
+  @override
+  String get tipSettingsTitle => 'There\'s more';
+
+  @override
+  String get tipSettingsBody =>
+      'Reminders, home screen widget, designs and more live in Settings.';
+
+  @override
+  String get tipDone => 'Got it';
+
+  @override
+  String get tipsReplay => 'Show tips again';
+
+  @override
+  String get feedbackSection => 'Feedback & sharing';
+
+  @override
+  String get rateApp => 'Rate the app';
+
+  @override
+  String get rateAppHint => 'Takes 10 seconds and helps a lot.';
+
+  @override
+  String get shareApp => 'Share the app';
+
+  @override
+  String get shareAppHint => 'For everyone else waiting to clock out.';
+
+  @override
+  String shareText(String url) {
+    return 'When can you clock out? This app tells you in 2 seconds – with a live countdown: $url';
+  }
+
+  @override
+  String get sendFeedback => 'Send feedback';
+
+  @override
+  String get sendFeedbackHint => 'Ideas, wishes or bugs – straight by email.';
+
+  @override
+  String get feedbackSubject => 'Feedback on Clock-Out Calculator';
+
+  @override
+  String feedbackBody(String version) {
+    return 'Hi Thinkube,\n\n\n\n—\nApp version: $version';
+  }
+
+  @override
+  String feedbackNoMail(String email) {
+    return 'No email app found – write to us at $email.';
+  }
 }

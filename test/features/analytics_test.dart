@@ -1,4 +1,4 @@
-import 'package:feierabend_rechner/features/analytics/analytics_consent.dart';
+import 'package:feierabend_rechner/features/startup/startup_prompts.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -13,7 +13,7 @@ Future<void> _openPaywall(WidgetTester tester) async {
 }
 
 void main() {
-  setUp(() => AnalyticsConsentGate.delay = Duration.zero);
+  setUp(() => StartupPrompts.consentDelay = Duration.zero);
 
   testWidgets('Frage erscheint einmal; „Ja“ schaltet die Statistik ein', (
     tester,

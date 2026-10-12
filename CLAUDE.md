@@ -46,6 +46,7 @@ Ziel: **Play-Store-Release** (später optional App Store). Bezahlmodell, das zum
 | Benachrichtigungen | **flutter_local_notifications** | Countdown/„Feierabend erreicht" ohne Server |
 | Home-Widget        | **nativ** (RemoteViews + Chronometer, MethodChannel) | Kein Glance/Compose-Ballast; Countdown tickt ohne App |
 | Design-System      | **Material 3** + eigenes Theme | Modern, anpassbar |
+| Bewerten/Teilen    | **in_app_review** (Google-Play-Dialog) + **share_plus** | Offizielle API, kein eigener Server |
 | Analytics          | **Google Analytics 4 über Firebase** (`firebase_analytics`), nur nach Einwilligung | Nutzung verstehen; ohne Ja wird nichts erfasst/gesendet |
 | Übersetzung        | **gen-l10n** (`lib/l10n/*.arb`, DE + EN) | Offizieller Flutter-Weg |
 
@@ -173,6 +174,17 @@ test/                      # Unit- + Widget-Tests (domain/ = 100 % Ziel)
 - **Onboarding:** `lib/features/onboarding/onboarding_screen.dart` (`onboardingDoneProvider`, Key
   `onboarding_done`; Bestandsnutzer mit gespeicherten Eingaben überspringen es). `_Root` in `app.dart`
   blendet zum Home über; Werbe-Einwilligung/SDK startet erst danach. Tests: `buildApp(onboarding: true)`.
+- **Start-Abfolge** (`lib/features/startup/startup_prompts.dart`, umschließt `HomeScreen`): höchstens eins pro
+  Start – 1. **Tipps** (`lib/features/tips/tips.dart`: Overlay mit „Loch“ um `TipTargets.*` = Ring, Eingaben,
+  Schnellwahl, Einstellungen; `tipsDoneProvider`, Key `tips_done`; nach der Einführung bzw. „Tipps erneut
+  zeigen“), 2. **Statistik-Frage** (nicht in der Einführungs-/Tipps-Sitzung), 3. **Bewertungs-Bitte**
+  (Google In-App-Review, einmal ab dem 4. Nutzungstag: `lib/domain/review_policy.dart`, Keys `usage_days`,
+  `usage_last_day`, `review_asked`). Werbung/UMP startet erst nach den Tipps (`_adsWantedProvider`).
+- **Feedback & Weiterempfehlen** (Einstellungen, `lib/features/feedback/feedback_section.dart`): App bewerten
+  (Store-Seite), teilen (`share_plus`, Text + Play-Link), Feedback per E-Mail (`mailto`, mit App-Version aus
+  `lib/config/app_info.dart` / `APP_VERSION_CODE`), Tipps erneut zeigen. Plattform über
+  `lib/services/feedback_backend.dart` (`feedbackBackendProvider`, in Tests `FakeFeedbackBackend`).
+- **Performance:** Nur `_LiveRing` hört auf den Sekundentakt (`remainingProvider`), nicht der ganze Home-Screen.
 - **Übersetzung:** `lib/l10n/app_{de,en}.arb` → `flutter gen-l10n`; `context.l10n`, `context.units`.
 - **Store-Assets:** `flutter test tool/store_assets_test.dart` rendert Icon-Quellen (`assets/icon/`),
   Screenshots/Feature-Grafik (`store/graphics/`); danach `dart run flutter_launcher_icons`.

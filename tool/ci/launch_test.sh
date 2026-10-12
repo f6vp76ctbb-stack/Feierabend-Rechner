@@ -108,6 +108,14 @@ adbt logcat -c
 start_app 25
 shot "free-einfuehrung"
 tap "Skip" "Überspringen"
+sleep 5
+# Danach zeigt die App die Tipps auf dem Hauptbildschirm (Werbung erst danach).
+shot "free-tipps"
+dump_ui
+grep -qE '1 of 4|1 von 4' "$OUT/ui.xml" && log "Tipps sichtbar" || log "Tipps FEHLEN"
+tap 'Next' 'Weiter'
+shot "free-tipps-2"
+tap "Skip" "Überspringen"
 sleep 20
 shot "free-home-werbung"
 check "1-free-start"
@@ -170,6 +178,10 @@ tap 'Add to home screen' 'ADD TO HOME SCREEN' 'Add automatically' 'ADD AUTOMATIC
   'Zum Startbildschirm hinzufügen' 'Automatisch hinzufügen' 'Add' 'ADD' 'Hinzufügen'
 check "5-tester-widget"
 
+dump_ui
+grep -qE 'Rate the app|App bewerten' "$OUT/ui.xml" && log "Feedback-Bereich sichtbar" || \
+  { adbt shell input swipe $((W / 2)) $((H * 3 / 4)) $((W / 2)) $((H / 4)) 300; sleep 1; dump_ui
+    grep -qE 'Rate the app|App bewerten' "$OUT/ui.xml" && log "Feedback-Bereich sichtbar" || log "Feedback-Bereich FEHLT"; }
 tap 'Browse designs[^"]*' 'Designs ansehen[^"]*'
 shot "tester-designs"
 tap '[^"]*Forest[^"]*' '[^"]*Wald[^"]*'

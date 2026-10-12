@@ -98,10 +98,10 @@ jobs:
           DEFINES="$DEFINES --target-platform android-arm,android-arm64"
           VC=$(( ${{ github.run_number }} * 2 ))
           mkdir out
-          flutter build appbundle --release --build-number=$VC $DEFINES
+          flutter build appbundle --release --build-number=$VC $DEFINES --dart-define=APP_VERSION_CODE=$VC
           cp build/app/outputs/bundle/release/app-release.aab out/feierabend-unsigned.aab
           echo "$VC" > out/VERSION_CODE
-          flutter build appbundle --release --build-number=$((VC + 1)) $DEFINES --dart-define=TESTER_BUILD=true
+          flutter build appbundle --release --build-number=$((VC + 1)) $DEFINES --dart-define=TESTER_BUILD=true --dart-define=APP_VERSION_CODE=$((VC + 1))
           cp build/app/outputs/bundle/release/app-release.aab out/feierabend-tester-unsigned.aab
           echo "$((VC + 1))" > out/VERSION_CODE_TESTER
           ls -la out/

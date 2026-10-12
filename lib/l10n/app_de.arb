@@ -263,5 +263,58 @@
   "analyticsYes": "Ja, gern",
   "analyticsNo": "Nein danke",
   "analyticsSetting": "Nutzungsstatistik teilen",
-  "analyticsSettingHint": "Hilft, die App zu verbessern (Google Analytics)."
+  "analyticsSettingHint": "Hilft, die App zu verbessern (Google Analytics).",
+  "tipStep": "{n} von {total}",
+  "@tipStep": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "tipRingTitle": "Dein Feierabend auf einen Blick",
+  "tipRingBody": "Die große Uhrzeit ist dein Feierabend. Der Ring füllt sich, bis es so weit ist.",
+  "tipInputsTitle": "Alles anpassbar",
+  "tipInputsBody": "Tippe auf Start, Arbeitszeit oder Pause, um sie zu ändern. Die App merkt sich alles.",
+  "tipPresetsTitle": "Schnellwahl",
+  "tipPresetsBody": "Ein Tipp für typische Tage – z. B. „6 Std ohne Pause“.",
+  "tipSettingsTitle": "Noch mehr drin",
+  "tipSettingsBody": "Erinnerungen, Home-Screen-Widget, Designs und mehr findest du in den Einstellungen.",
+  "tipDone": "Alles klar",
+  "tipsReplay": "Tipps erneut zeigen",
+  "feedbackSection": "Feedback & Weiterempfehlen",
+  "rateApp": "App bewerten",
+  "rateAppHint": "Dauert 10 Sekunden und hilft enorm.",
+  "shareApp": "App weiterempfehlen",
+  "shareAppHint": "Für alle, die auch auf den Feierabend warten.",
+  "shareText": "Wann ist Feierabend? Diese App rechnet es dir in 2 Sekunden aus – mit Live-Countdown: {url}",
+  "@shareText": {
+    "placeholders": {
+      "url": {
+        "type": "String"
+      }
+    }
+  },
+  "sendFeedback": "Feedback senden",
+  "sendFeedbackHint": "Ideen, Wünsche oder Fehler – direkt per E-Mail.",
+  "feedbackSubject": "Feedback zu Feierabend Rechner",
+  "feedbackBody": "Hallo Thinkube,\n\n\n\n—\nApp-Version: {version}",
+  "@feedbackBody": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "feedbackNoMail": "Keine E-Mail-App gefunden – schreib uns an {email}.",
+  "@feedbackNoMail": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  }
 }

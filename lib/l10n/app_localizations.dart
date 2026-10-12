@@ -1039,6 +1039,138 @@ abstract class AppLocalizations {
   /// In de, this message translates to:
   /// **'Hilft, die App zu verbessern (Google Analytics).'**
   String get analyticsSettingHint;
+
+  /// No description provided for @tipStep.
+  ///
+  /// In de, this message translates to:
+  /// **'{n} von {total}'**
+  String tipStep(int n, int total);
+
+  /// No description provided for @tipRingTitle.
+  ///
+  /// In de, this message translates to:
+  /// **'Dein Feierabend auf einen Blick'**
+  String get tipRingTitle;
+
+  /// No description provided for @tipRingBody.
+  ///
+  /// In de, this message translates to:
+  /// **'Die große Uhrzeit ist dein Feierabend. Der Ring füllt sich, bis es so weit ist.'**
+  String get tipRingBody;
+
+  /// No description provided for @tipInputsTitle.
+  ///
+  /// In de, this message translates to:
+  /// **'Alles anpassbar'**
+  String get tipInputsTitle;
+
+  /// No description provided for @tipInputsBody.
+  ///
+  /// In de, this message translates to:
+  /// **'Tippe auf Start, Arbeitszeit oder Pause, um sie zu ändern. Die App merkt sich alles.'**
+  String get tipInputsBody;
+
+  /// No description provided for @tipPresetsTitle.
+  ///
+  /// In de, this message translates to:
+  /// **'Schnellwahl'**
+  String get tipPresetsTitle;
+
+  /// No description provided for @tipPresetsBody.
+  ///
+  /// In de, this message translates to:
+  /// **'Ein Tipp für typische Tage – z. B. „6 Std ohne Pause“.'**
+  String get tipPresetsBody;
+
+  /// No description provided for @tipSettingsTitle.
+  ///
+  /// In de, this message translates to:
+  /// **'Noch mehr drin'**
+  String get tipSettingsTitle;
+
+  /// No description provided for @tipSettingsBody.
+  ///
+  /// In de, this message translates to:
+  /// **'Erinnerungen, Home-Screen-Widget, Designs und mehr findest du in den Einstellungen.'**
+  String get tipSettingsBody;
+
+  /// No description provided for @tipDone.
+  ///
+  /// In de, this message translates to:
+  /// **'Alles klar'**
+  String get tipDone;
+
+  /// No description provided for @tipsReplay.
+  ///
+  /// In de, this message translates to:
+  /// **'Tipps erneut zeigen'**
+  String get tipsReplay;
+
+  /// No description provided for @feedbackSection.
+  ///
+  /// In de, this message translates to:
+  /// **'Feedback & Weiterempfehlen'**
+  String get feedbackSection;
+
+  /// No description provided for @rateApp.
+  ///
+  /// In de, this message translates to:
+  /// **'App bewerten'**
+  String get rateApp;
+
+  /// No description provided for @rateAppHint.
+  ///
+  /// In de, this message translates to:
+  /// **'Dauert 10 Sekunden und hilft enorm.'**
+  String get rateAppHint;
+
+  /// No description provided for @shareApp.
+  ///
+  /// In de, this message translates to:
+  /// **'App weiterempfehlen'**
+  String get shareApp;
+
+  /// No description provided for @shareAppHint.
+  ///
+  /// In de, this message translates to:
+  /// **'Für alle, die auch auf den Feierabend warten.'**
+  String get shareAppHint;
+
+  /// No description provided for @shareText.
+  ///
+  /// In de, this message translates to:
+  /// **'Wann ist Feierabend? Diese App rechnet es dir in 2 Sekunden aus – mit Live-Countdown: {url}'**
+  String shareText(String url);
+
+  /// No description provided for @sendFeedback.
+  ///
+  /// In de, this message translates to:
+  /// **'Feedback senden'**
+  String get sendFeedback;
+
+  /// No description provided for @sendFeedbackHint.
+  ///
+  /// In de, this message translates to:
+  /// **'Ideen, Wünsche oder Fehler – direkt per E-Mail.'**
+  String get sendFeedbackHint;
+
+  /// No description provided for @feedbackSubject.
+  ///
+  /// In de, this message translates to:
+  /// **'Feedback zu Feierabend Rechner'**
+  String get feedbackSubject;
+
+  /// No description provided for @feedbackBody.
+  ///
+  /// In de, this message translates to:
+  /// **'Hallo Thinkube,\n\n\n\n—\nApp-Version: {version}'**
+  String feedbackBody(String version);
+
+  /// No description provided for @feedbackNoMail.
+  ///
+  /// In de, this message translates to:
+  /// **'Keine E-Mail-App gefunden – schreib uns an {email}.'**
+  String feedbackNoMail(String email);
 }
 
 class _AppLocalizationsDelegate

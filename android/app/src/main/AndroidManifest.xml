@@ -79,6 +79,11 @@
             <action android:name="android.intent.action.PROCESS_TEXT"/>
             <data android:mimeType="text/plain"/>
         </intent>
+        <!-- „Feedback senden“: E-Mail-App finden (Android 11+ Paketsichtbarkeit). -->
+        <intent>
+            <action android:name="android.intent.action.SENDTO"/>
+            <data android:scheme="mailto"/>
+        </intent>
         <!-- Datenschutz-Link im Browser öffnen (url_launcher). -->
         <intent>
             <action android:name="android.intent.action.VIEW"/>

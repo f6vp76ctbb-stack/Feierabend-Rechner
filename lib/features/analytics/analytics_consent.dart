@@ -3,7 +3,6 @@ import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../l10n/l10n_ext.dart';
-import '../onboarding/onboarding_screen.dart';
 import 'analytics_providers.dart';
 
 /// Einmalige Frage nach der Nutzungsstatistik. „Ja“ und „Nein“ gleichwertig;
@@ -68,38 +67,4 @@ class AnalyticsConsentSheet extends ConsumerWidget {
       ),
     );
   }
-}
-
-/// Fragt beim ersten Start NACH der Einführung (nicht in derselben Sitzung –
-/// dort kommt ggf. schon die Werbe-Einwilligung) einmal nach der Statistik.
-class AnalyticsConsentGate extends ConsumerStatefulWidget {
-  const AnalyticsConsentGate({super.key, required this.child});
-
-  final Widget child;
-
-  /// Wartezeit, damit die App erst sichtbar ist (Tests setzen sie auf null).
-  static Duration delay = const Duration(seconds: 3);
-
-  @override
-  ConsumerState<AnalyticsConsentGate> createState() =>
-      _AnalyticsConsentGateState();
-}
-
-class _AnalyticsConsentGateState extends ConsumerState<AnalyticsConsentGate> {
-  @override
-  void initState() {
-    super.initState();
-    final ask = ref.read(analyticsBackendProvider).isSupported &&
-        ref.read(analyticsConsentProvider) == null &&
-        !ref.read(onboardingDoneProvider.notifier).finishedThisSession;
-    if (ask) {
-      Future.delayed(AnalyticsConsentGate.delay, () {
-        if (!mounted || ref.read(analyticsConsentProvider) != null) return;
-        AnalyticsConsentSheet.show(context, ref);
-      });
-    }
-  }
-
-  @override
-  Widget build(BuildContext context) => widget.child;
 }

@@ -4,44 +4,47 @@ App name:
 Clock-Out Calculator
 
 Short description:
-When can you go home? Tap your start time – breaks, profiles & overtime sorted.
+Work hours calculator: see when you clock out – breaks, overtime & countdown.
 
 Full description:
-When can you finally clock out?
-Clock-Out Calculator answers exactly that question. In two seconds, beautifully and without clutter.
+When can you clock out? Tap your start time – done.
+Clock-Out Calculator works out your clock-out time in two seconds, includes your break and counts down live until the end of your workday. No mental math, no notes, no sign-up.
 
-HOW IT WORKS
-• Tap your start time (e.g. 06:44)
-• Work time and break are already set (default: 8 h + 45 min)
-• Instantly see your clock-out time – with a live countdown ring
+Your work hours calculator for every day – at the office, on flextime, part-time or on shifts.
 
-MAKE IT YOURS
-• Freely adjustable work time and break
-• Quick pick “6 h, no break”
-• Night shift? No problem – the app calculates across midnight
-• Daily target for your overtime account
+★ HOW IT WORKS
+• Tap your start time, e.g. 06:44
+• Work time and break are already set (8 h + 45 min) – change anything you like
+• Instantly see when you can leave – with a live countdown ring
+• A short intro and tips show you the essentials on first launch
+
+★ WHAT IT DOES FOR YOU
+• Calculate work hours: your clock-out time including breaks, to the minute
+• Quick picks for typical days, e.g. “6 h, no break”
+• Shift work and night shifts: calculates cleanly across midnight
+• Set your daily target – part-time included
 • Home screen widget: your clock-out time always in view
+• Fun quotes for your job: office, trades, IT, care & health, teaching, hospitality, retail, shift work and more
+• Modern look and a beautiful dark mode
 
-CLOCK-OUT PRO – ONE-TIME, NO SUBSCRIPTION
-• Unlimited profiles, e.g. Mon–Thu, Friday, Night shift
-• Overtime account with weekly overview and one-tap “Book today”
-• Break adjusts automatically: no break needed up to 6 h, just the right one above that
-• Your own reminders: e.g. 1 h before, at halftime and right at clock-out – with a fun quote
-• Live countdown right in the home screen widget
+★ CLOCK-OUT PRO – PAY ONCE, NO SUBSCRIPTION
+• Break calculator “Automatic break”: no break needed up to 6 h, then 30 or 45 minutes as German labor law requires
+• Overtime tracker for flextime and overtime – with weekly overview and one-tap “Book today”
+• Unlimited profiles, e.g. Mon–Thu, Friday, early shift, late shift
+• Reminders your way: e.g. 1 h before, at halftime and right at clock-out – with a fun quote
+• Live countdown right in the widget
 • No ads
 • Try it free for 24 hours first – with a short video
 
-DESIGNS YOU'LL LOVE
+★ DESIGNS YOU'LL LOVE
 • 5 color themes available individually: Supporter with hearts, Midnight, Sunset, Ocean and Forest
 
-PURE GOOD MOOD
-• Fun quotes for your job: office, trades, IT, care & health, teaching, hospitality, retail, shift work and more
-• Modern design, pleasant colors and a beautiful dark mode
+★ YOUR DATA STAYS WITH YOU
+• No account, no sign-up, works offline
+• Work times, profiles and overtime stay on your device only
+• Usage statistics only if you explicitly agree
 
-YOUR DATA STAYS WITH YOU
-• No account, no sign-up
-• All inputs are stored only on your device
-• Works offline
+Ideas or wishes? In the app under Settings → “Send feedback” – we read everything.
 
 Note: Clock-Out Calculator is a calculation helper and does not replace your employer’s official time tracking.
 

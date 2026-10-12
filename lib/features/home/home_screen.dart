@@ -11,6 +11,7 @@ import '../pro/banner_ad_view.dart';
 import '../pro/paywall_sheet.dart';
 import '../pro/pro_providers.dart';
 import '../settings/settings_sheet.dart';
+import '../tips/tips.dart';
 import 'state/home_providers.dart';
 import 'widgets/auto_break_info_sheet.dart';
 import 'widgets/countdown_ring.dart';
@@ -29,10 +30,9 @@ class HomeScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
     final l = context.l10n;
+    // Nur Werte, die sich bei Eingaben ändern – der Sekundentakt steckt in _LiveRing,
+    // damit nicht jede Sekunde der ganze Bildschirm neu gebaut wird.
     final result = ref.watch(resultProvider);
-    final remaining = ref.watch(remainingProvider);
-    final progress = ref.watch(progressProvider);
-    final reached = remaining <= Duration.zero;
 
     return Scaffold(
       bottomNavigationBar: const BottomBannerAd(),
@@ -53,25 +53,20 @@ class HomeScreen extends ConsumerWidget {
                         const SizedBox(height: 12),
                         const ProfileBar(),
                         const SizedBox(height: 16),
-                        Center(
-                          child: CountdownRing(
-                            progress: progress,
-                            size: 300,
-                            child: _RingContent(
-                              reached: reached,
-                              endLabel: Formatting.clock(
-                                result.endHour,
-                                result.endMinute,
-                              ),
-                              crossesMidnight: result.crossesMidnight,
-                              remaining: remaining,
-                            ),
-                          ),
+                        KeyedSubtree(
+                          key: TipTargets.ring,
+                          child: const _LiveRing(),
                         ),
                         const SizedBox(height: 24),
-                        const _InputCard(),
+                        KeyedSubtree(
+                          key: TipTargets.inputs,
+                          child: const _InputCard(),
+                        ),
                         const SizedBox(height: 12),
-                        const _QuickPresets(),
+                        KeyedSubtree(
+                          key: TipTargets.presets,
+                          child: const _QuickPresets(),
+                        ),
                         const SizedBox(height: 16),
                         const SpruchCard(),
                         const SizedBox(height: 12),
@@ -101,6 +96,29 @@ class HomeScreen extends ConsumerWidget {
   }
 }
 
+/// Countdown-Ring – der einzige Teil, der sich jede Sekunde ändert.
+class _LiveRing extends ConsumerWidget {
+  const _LiveRing();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final result = ref.watch(resultProvider);
+    final remaining = ref.watch(remainingProvider);
+    return Center(
+      child: CountdownRing(
+        progress: ref.watch(progressProvider),
+        size: 300,
+        child: _RingContent(
+          reached: remaining <= Duration.zero,
+          endLabel: Formatting.clock(result.endHour, result.endMinute),
+          crossesMidnight: result.crossesMidnight,
+          remaining: remaining,
+        ),
+      ),
+    );
+  }
+}
+
 class _Header extends StatelessWidget {
   const _Header();
 
@@ -118,6 +136,7 @@ class _Header extends StatelessWidget {
         ],
         const Spacer(),
         IconButton(
+          key: TipTargets.settings,
           tooltip: context.l10n.settingsTooltip,
           icon: const Icon(Icons.settings_rounded),
           onPressed: () => SettingsSheet.show(context),
@@ -246,36 +265,31 @@ class _InputCard extends ConsumerWidget {
             SwitchListTile(
               contentPadding: const EdgeInsets.symmetric(horizontal: 16),
               secondary: const Icon(Icons.auto_awesome_rounded),
-              // Als Fließtext: auf schmalen Geräten bricht der Titel normal um und PRO
-              // läuft mit (in einer Row wurde er buchstabenweise gequetscht).
-              title: Text.rich(
+              title: Text(l.arbzgTitle),
+              // Erklärung als Fließtext: PRO vorne, ⓘ hinten (Details zum Gesetz nur
+              // auf Wunsch). So bleibt der Titel auch auf schmalen Geräten einzeilig.
+              subtitle: Text.rich(
                 TextSpan(
                   children: [
-                    TextSpan(text: l.arbzgTitle),
                     if (!isPro)
                       const WidgetSpan(
                         alignment: PlaceholderAlignment.middle,
                         child: Padding(
-                          padding: EdgeInsets.only(left: 8),
+                          padding: EdgeInsets.only(right: 6),
                           child: ProBadge(),
                         ),
                       ),
-                  ],
-                ),
-              ),
-              // Details zum Gesetz nur auf Wunsch (ⓘ am Ende der Erklärung) –
-              // der Schalter selbst bleibt schlicht.
-              subtitle: Text.rich(
-                TextSpan(
-                  children: [
                     TextSpan(text: l.arbzgSubtitle),
                     WidgetSpan(
                       alignment: PlaceholderAlignment.middle,
                       child: IconButton(
                         tooltip: l.autoBreakInfoTooltip,
                         padding: EdgeInsets.zero,
+                        // Sonst vergrößert Material die Zeile auf 48 px Tippfläche.
+                        style: IconButton.styleFrom(
+                            tapTargetSize: MaterialTapTargetSize.shrinkWrap),
                         constraints:
-                            const BoxConstraints.tightFor(width: 32, height: 28),
+                            const BoxConstraints.tightFor(width: 30, height: 22),
                         iconSize: 18,
                         icon: const Icon(Icons.info_outline_rounded),
                         onPressed: () => AutoBreakInfoSheet.show(context),

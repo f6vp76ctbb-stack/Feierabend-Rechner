@@ -11,6 +11,7 @@ import '../../l10n/l10n_ext.dart';
 import '../analytics/analytics_providers.dart';
 import '../designs/design_providers.dart';
 import '../designs/design_shop_sheet.dart';
+import '../feedback/feedback_section.dart';
 import '../home/state/home_providers.dart';
 import '../home/widgets/duration_adjust_sheet.dart';
 import '../pro/paywall_sheet.dart';
@@ -179,6 +180,10 @@ class SettingsSheet extends ConsumerWidget {
             const SizedBox(height: 12),
             Text(l.autosaveHint, style: theme.textTheme.bodyMedium),
             const SizedBox(height: 20),
+
+            // --- Bewerten, Weiterempfehlen, Feedback, Tipps ---
+            const FeedbackSection(),
+            const SizedBox(height: 16),
 
             // --- Rechtliches ---
             Text(l.legalSection, style: theme.textTheme.labelLarge),

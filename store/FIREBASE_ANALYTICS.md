@@ -23,6 +23,11 @@ als `FIREBASE_*` in `android-bundle.yml` und `launch-test.yml`). Fehlen sie, ble
 | `overtime_book` | „Heute buchen" | – |
 | `profile_add` | Profil angelegt | – |
 | `auto_break` | „Pause automatisch" umgeschaltet | `on` = 1/0 |
+| `tips_done` | Tipps beendet | `skipped` = 1/0, `step` (bis wohin) |
+| `rate_click` | „App bewerten" in den Einstellungen | – |
+| `share_click` | „App weiterempfehlen" | – |
+| `feedback_click` | „Feedback senden" | – |
+| `review_prompt` | Bewertungsdialog angefragt (einmal, ab 4. Nutzungstag) | – |
 
 ## Deine Schritte (~10 Minuten)
 
