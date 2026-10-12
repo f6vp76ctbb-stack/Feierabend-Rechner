@@ -6,7 +6,7 @@ Alles ist vorbereitet. Du brauchst nur die Play Console (am besten am Computer o
 
 | Was | Wo |
 |---|---|
-| **Tester-App-Bundle** (geschlossener Test) | `feierabend-TESTER-1.0.0-vc43.aab` – Pro + alle Designs frei, **keine Werbung**, Nutzungsstatistik nach Einwilligung, Tipps, Bewerten/Teilen/Feedback. Nur für den Test-Track, **nie in Produktion!** |
+| **Tester-App-Bundle** (geschlossener Test) | `feierabend-TESTER-1.0.0-vc45.aab` – Pro + alle Designs frei, **keine Werbung**, Nutzungsstatistik nach Einwilligung, Tipps, Bewerten/Teilen/Feedback. Nur für den Test-Track, **nie in Produktion!** |
 | **Store-App-Bundle** (Produktion, später) | `feierabend-release-1.0.0-vc<N>.aab` (gerade Nummer) – so wie Kunden die App bekommen: Werbung, Pro/Designs kaufbar. Schicke ich dir, sobald der Produktionszugang da ist. |
 | **Upload-Schlüssel + Passwort** | geschickt → sicher aufbewahren, siehe `SCHLUESSEL.md` |
 | Store-Texte DE + EN | `STORE_EINTRAG.md` |
