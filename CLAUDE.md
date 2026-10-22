@@ -151,7 +151,9 @@ test/                      # Unit- + Widget-Tests (domain/ = 100 % Ziel)
 
 ## 9. Aktueller Stand
 
-**Release-Kandidat 1.0.0 (Android)** — Paket `com.thinkube.feierabendrechner`, Entwickler „Thinkube".
+**Produktion 1.0.0 (Android)** — Paket `com.thinkube.feierabendrechner`, Entwickler „Thinkube".
+Geschlossener Test bestanden, Produktionszugang am 22.10.2026; Store-Bundle **vc48** (Commit `0c9a6e0`) ausgeliefert.
+Nächstes Update: neuer CI-Lauf (versionCode > 49), Start-Test grün, signieren, über `signed-aab` ausliefern.
 
 - **Fertig:** Phasen 0–6 + Store-Vorbereitung (Phase 8). Kern-Logik (`lib/domain/`), Home mit
   Countdown-Ring, Startzeit-Pfeile, Schnellwahl „6 Std ohne Pause", Profile, Überstunden-Konto
@@ -231,4 +233,6 @@ test/                      # Unit- + Widget-Tests (domain/ = 100 % Ziel)
   Android-Label über `res/values(-de)/strings.xml` `app_name`.
 - **Kontakt:** thinkube@outlook.de (Datenschutzerklärung, Store-Eintrag, IARC).
 - **Offen:**
-  Zeitzonen-/DST-Behandlung, iOS-Widget.
+  Zeitzonen-/DST-Behandlung, iOS-Widget; Impressum: vollständiger Name fehlt (nur „Thinkube“, wie bei Qubble);
+  vor einem Flutter-Upgrade: firebase_core/firebase_analytics/in_app_review nutzen noch das Kotlin-Gradle-Plugin
+  (Flutter warnt, künftige Versionen bauen damit nicht mehr) → Pakete vorher aktualisieren.
