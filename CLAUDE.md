@@ -216,6 +216,13 @@ test/                      # Unit- + Widget-Tests (domain/ = 100 % Ziel)
   `track(context, …)`, `AnalyticsConsentGate` fragt einmal ab dem 2. Start, Schalter in den Einstellungen).
   Manifest: Erfassung standardmäßig aus, keine Werbe-ID. Firebase-Werte zusätzlich als Android-Ressourcen
   (`resValue` in `build.gradle.kts`, sonst „Missing google_app_id“). Ereignisliste + Einrichtung: `store/FIREBASE_ANALYTICS.md`.
+- **Rechtliches:** Impressum in der App (`lib/features/legal/legal_notice_sheet.dart`, Einstellungen → Impressum,
+  offline lesbar; Anbieterdaten zentral in `lib/config/app_info.dart` = wie bei der App „Qubble“) + online
+  `web/impressum.html`; Datenschutzerklärung `web/privacy.html` (Verantwortlicher mit Anschrift, Rechtsgrundlagen,
+  Auftragsverarbeitung Analytics, Aufsichtsbehörde BW). Open-Source-Lizenzen: `showLicensePage` + Inter-OFL
+  (`assets/licenses/Inter-OFL.txt`, `registerExtraLicenses()` in `main.dart`). **Kein** Link zur EU-OS-Plattform
+  (seit 20.07.2025 abgeschaltet, Link wäre abmahnfähig). Keine Haftungsausschluss-Klauseln („ohne Gewähr“) –
+  nur sachlicher Hinweis „Rechenhilfe“. Keine Markennamen in Sprüchen.
 - **Web-Vorschau:** `deploy.yml` → `gh-pages` (Pages: „Deploy from a branch"); `web/privacy.html` ist
   die Datenschutz-URL.
 - **Store-Doku für den Nutzer:** `store/ANLEITUNG.md` (Start hier), `STORE_EINTRAG.md`,

@@ -178,5 +178,17 @@
   "sendFeedbackHint": "Ideas, wishes or bugs – straight by email.",
   "feedbackSubject": "Feedback on Clock-Out Calculator",
   "feedbackBody": "Hi Thinkube,\n\n\n\n—\nApp version: {version}",
-  "feedbackNoMail": "No email app found – write to us at {email}."
+  "feedbackNoMail": "No email app found – write to us at {email}.",
+  "legalNotice": "Legal notice",
+  "legalNoticeLaw": "Information pursuant to § 5 DDG (Germany)",
+  "legalCountry": "Germany",
+  "legalContact": "Contact",
+  "legalResponsible": "Responsible for the content",
+  "legalResponsibleBody": "{name}, address as above.",
+  "legalDispute": "Dispute resolution",
+  "legalDisputeBody": "We are neither obliged nor willing to take part in dispute resolution proceedings before a consumer arbitration board.",
+  "legalNote": "Note",
+  "legalNoteBody": "Clock-Out Calculator is a calculation aid. Your employment contract, the applicable working time law and your employer’s time tracking are what count.",
+  "openSourceLicenses": "Open-source licenses",
+  "analyticsAskDetails": "The provider is Google Ireland Ltd.; data may also be transferred to the USA (EU-US Data Privacy Framework)."
 }

@@ -611,4 +611,45 @@ class AppLocalizationsDe extends AppLocalizations {
   String feedbackNoMail(String email) {
     return 'Keine E-Mail-App gefunden – schreib uns an $email.';
   }
+
+  @override
+  String get legalNotice => 'Impressum';
+
+  @override
+  String get legalNoticeLaw => 'Angaben gemäß § 5 DDG';
+
+  @override
+  String get legalCountry => 'Deutschland';
+
+  @override
+  String get legalContact => 'Kontakt';
+
+  @override
+  String get legalResponsible => 'Verantwortlich für den Inhalt';
+
+  @override
+  String legalResponsibleBody(String name) {
+    return '$name, Anschrift wie oben.';
+  }
+
+  @override
+  String get legalDispute => 'Streitschlichtung';
+
+  @override
+  String get legalDisputeBody =>
+      'Wir sind nicht verpflichtet und nicht bereit, an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.';
+
+  @override
+  String get legalNote => 'Hinweis';
+
+  @override
+  String get legalNoteBody =>
+      'Feierabend Rechner ist eine Rechenhilfe. Maßgeblich sind dein Arbeitsvertrag, das Arbeitszeitgesetz und die Zeiterfassung deines Arbeitgebers.';
+
+  @override
+  String get openSourceLicenses => 'Open-Source-Lizenzen';
+
+  @override
+  String get analyticsAskDetails =>
+      'Anbieter ist Google Ireland Ltd.; Daten können auch in die USA übermittelt werden (EU-US Data Privacy Framework).';
 }

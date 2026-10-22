@@ -9,6 +9,16 @@ abstract final class AppInfo {
 
   static const contactEmail = 'thinkube@outlook.de';
 
+  /// Anbieter für Impressum (§ 5 DDG) und Datenschutzerklärung – an einer Stelle,
+  /// gleich wie bei der App „Qubble“ (web/impressum.html dort).
+  static const providerName = 'Thinkube';
+  static const providerStreet = 'Mähderweg 5';
+  static const providerCity = '88451 Dettingen';
+
+  /// Online-Fassung (Datenschutzerklärung: `MonetizationConfig.privacyPolicyUrl`).
+  static const legalNoticeUrl =
+      'https://f6vp76ctbb-stack.github.io/Feierabend-Rechner/impressum.html';
+
   /// Version – CI setzt den versionCode per `--dart-define=APP_VERSION_CODE`.
   static const versionName =
       String.fromEnvironment('APP_VERSION_NAME', defaultValue: '1.0.0');

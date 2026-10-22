@@ -606,4 +606,45 @@ class AppLocalizationsEn extends AppLocalizations {
   String feedbackNoMail(String email) {
     return 'No email app found – write to us at $email.';
   }
+
+  @override
+  String get legalNotice => 'Legal notice';
+
+  @override
+  String get legalNoticeLaw => 'Information pursuant to § 5 DDG (Germany)';
+
+  @override
+  String get legalCountry => 'Germany';
+
+  @override
+  String get legalContact => 'Contact';
+
+  @override
+  String get legalResponsible => 'Responsible for the content';
+
+  @override
+  String legalResponsibleBody(String name) {
+    return '$name, address as above.';
+  }
+
+  @override
+  String get legalDispute => 'Dispute resolution';
+
+  @override
+  String get legalDisputeBody =>
+      'We are neither obliged nor willing to take part in dispute resolution proceedings before a consumer arbitration board.';
+
+  @override
+  String get legalNote => 'Note';
+
+  @override
+  String get legalNoteBody =>
+      'Clock-Out Calculator is a calculation aid. Your employment contract, the applicable working time law and your employer’s time tracking are what count.';
+
+  @override
+  String get openSourceLicenses => 'Open-source licenses';
+
+  @override
+  String get analyticsAskDetails =>
+      'The provider is Google Ireland Ltd.; data may also be transferred to the USA (EU-US Data Privacy Framework).';
 }

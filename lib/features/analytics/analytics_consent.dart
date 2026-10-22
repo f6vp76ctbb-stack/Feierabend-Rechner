@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:url_launcher/url_launcher.dart';
 
+import '../../config/monetization_config.dart';
 import '../../l10n/l10n_ext.dart';
 import 'analytics_providers.dart';
 
@@ -44,7 +46,25 @@ class AnalyticsConsentSheet extends ConsumerWidget {
             Text(l.analyticsAskTitle, style: theme.textTheme.titleMedium),
             const SizedBox(height: 8),
             Text(l.analyticsAskBody, style: theme.textTheme.bodyMedium),
-            const SizedBox(height: 20),
+            const SizedBox(height: 8),
+            // Für eine informierte Einwilligung: wer verarbeitet, wohin, wo mehr steht.
+            Text(l.analyticsAskDetails, style: theme.textTheme.bodySmall),
+            Align(
+              alignment: Alignment.centerLeft,
+              child: TextButton(
+                style: TextButton.styleFrom(
+                  padding: EdgeInsets.zero,
+                  minimumSize: const Size(0, 36),
+                  tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                ),
+                onPressed: () => launchUrl(
+                  Uri.parse(MonetizationConfig.privacyPolicyUrl),
+                  mode: LaunchMode.externalApplication,
+                ),
+                child: Text(l.privacyPolicy),
+              ),
+            ),
+            const SizedBox(height: 12),
             Row(
               children: [
                 Expanded(

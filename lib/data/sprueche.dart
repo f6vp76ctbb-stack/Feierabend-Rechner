@@ -43,7 +43,7 @@ abstract final class Sprueche {
     ],
     'Büro': [
       'Noch drei Mails, dann rollt der Bürostuhl in den Feierabend.',
-      'Excel schließt sich gleich von selbst – versprochen.',
+      'Die Tabelle speichert sich gleich von selbst – versprochen.',
       'Das Meeting hätte eine E-Mail sein können. Der Feierabend nicht.',
       'Kaffee leer, Akku leer – Zeit für Feierabend.',
       'Postausgang leer, Kopf gleich auch.',
@@ -179,7 +179,7 @@ abstract final class Sprueche {
     ],
     'Büro': [
       'Three more emails, then your office chair rolls into the evening.',
-      'Excel will close itself soon – promise.',
+      'Your spreadsheet will save itself soon – promise.',
       'That meeting could have been an email. Clocking out can’t.',
       'Coffee empty, battery empty – time to clock out.',
       'Outbox empty, head empty soon too.',
