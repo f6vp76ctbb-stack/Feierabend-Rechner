@@ -151,7 +151,9 @@ test/                      # Unit- + Widget-Tests (domain/ = 100 % Ziel)
 
 ## 9. Aktueller Stand
 
-**Release-Kandidat 1.0.0 (Android)** — Paket `com.thinkube.feierabendrechner`, Entwickler „Thinkube".
+**Produktion 1.0.0 (Android)** — Paket `com.thinkube.feierabendrechner`, Entwickler „Thinkube".
+Geschlossener Test bestanden, Produktionszugang am 22.10.2026; Store-Bundle **vc48** (Commit `0c9a6e0`) ausgeliefert.
+Nächstes Update: neuer CI-Lauf (versionCode > 49), Start-Test grün, signieren, über `signed-aab` ausliefern.
 
 - **Fertig:** Phasen 0–6 + Store-Vorbereitung (Phase 8). Kern-Logik (`lib/domain/`), Home mit
   Countdown-Ring, Startzeit-Pfeile, Schnellwahl „6 Std ohne Pause", Profile, Überstunden-Konto
@@ -216,6 +218,13 @@ test/                      # Unit- + Widget-Tests (domain/ = 100 % Ziel)
   `track(context, …)`, `AnalyticsConsentGate` fragt einmal ab dem 2. Start, Schalter in den Einstellungen).
   Manifest: Erfassung standardmäßig aus, keine Werbe-ID. Firebase-Werte zusätzlich als Android-Ressourcen
   (`resValue` in `build.gradle.kts`, sonst „Missing google_app_id“). Ereignisliste + Einrichtung: `store/FIREBASE_ANALYTICS.md`.
+- **Rechtliches:** Impressum in der App (`lib/features/legal/legal_notice_sheet.dart`, Einstellungen → Impressum,
+  offline lesbar; Anbieterdaten zentral in `lib/config/app_info.dart` = wie bei der App „Qubble“) + online
+  `web/impressum.html`; Datenschutzerklärung `web/privacy.html` (Verantwortlicher mit Anschrift, Rechtsgrundlagen,
+  Auftragsverarbeitung Analytics, Aufsichtsbehörde BW). Open-Source-Lizenzen: `showLicensePage` + Inter-OFL
+  (`assets/licenses/Inter-OFL.txt`, `registerExtraLicenses()` in `main.dart`). **Kein** Link zur EU-OS-Plattform
+  (seit 20.07.2025 abgeschaltet, Link wäre abmahnfähig). Keine Haftungsausschluss-Klauseln („ohne Gewähr“) –
+  nur sachlicher Hinweis „Rechenhilfe“. Keine Markennamen in Sprüchen.
 - **Web-Vorschau:** `deploy.yml` → `gh-pages` (Pages: „Deploy from a branch"); `web/privacy.html` ist
   die Datenschutz-URL.
 - **Store-Doku für den Nutzer:** `store/ANLEITUNG.md` (Start hier), `STORE_EINTRAG.md`,
@@ -224,4 +233,6 @@ test/                      # Unit- + Widget-Tests (domain/ = 100 % Ziel)
   Android-Label über `res/values(-de)/strings.xml` `app_name`.
 - **Kontakt:** thinkube@outlook.de (Datenschutzerklärung, Store-Eintrag, IARC).
 - **Offen:**
-  Zeitzonen-/DST-Behandlung, iOS-Widget.
+  Zeitzonen-/DST-Behandlung, iOS-Widget; Impressum: vollständiger Name fehlt (nur „Thinkube“, wie bei Qubble);
+  vor einem Flutter-Upgrade: firebase_core/firebase_analytics/in_app_review nutzen noch das Kotlin-Gradle-Plugin
+  (Flutter warnt, künftige Versionen bauen damit nicht mehr) → Pakete vorher aktualisieren.

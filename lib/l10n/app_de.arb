@@ -316,5 +316,24 @@
         "type": "String"
       }
     }
-  }
+  },
+  "legalNotice": "Impressum",
+  "legalNoticeLaw": "Angaben gemäß § 5 DDG",
+  "legalCountry": "Deutschland",
+  "legalContact": "Kontakt",
+  "legalResponsible": "Verantwortlich für den Inhalt",
+  "legalResponsibleBody": "{name}, Anschrift wie oben.",
+  "@legalResponsibleBody": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "legalDispute": "Streitschlichtung",
+  "legalDisputeBody": "Wir sind nicht verpflichtet und nicht bereit, an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.",
+  "legalNote": "Hinweis",
+  "legalNoteBody": "Feierabend Rechner ist eine Rechenhilfe. Maßgeblich sind dein Arbeitsvertrag, das Arbeitszeitgesetz und die Zeiterfassung deines Arbeitgebers.",
+  "openSourceLicenses": "Open-Source-Lizenzen",
+  "analyticsAskDetails": "Anbieter ist Google Ireland Ltd.; Daten können auch in die USA übermittelt werden (EU-US Data Privacy Framework)."
 }

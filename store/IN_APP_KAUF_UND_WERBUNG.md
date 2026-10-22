@@ -77,8 +77,8 @@ Die **Produkt-IDs müssen exakt so heißen** (nicht änderbar); Preise sind Vors
 
 ## Teil B – Werbung mit Google AdMob
 
-Das mitgelieferte AAB nutzt **Googles offizielle Test-Anzeigen** („Test Ad"). Das ist für den internen Test genau richtig.
-Für echtes Geld brauchst du eigene IDs – das dauert ca. 15 Minuten:
+✅ Eingerichtet: Das Store-Bundle nutzt deine **echten** AdMob-IDs (siehe B5). Die Schritte hier dienen zum Nachschlagen –
+wichtig vor dem Produktionsstart ist nur noch **B4** (Einwilligungs-Dialog muss „Veröffentlicht“ sein).
 
 ### B1. AdMob-Konto
 <https://admob.google.com> → mit demselben Google-Konto anmelden → Land, Zeitzone, Zahlungswährung (EUR) wählen.
@@ -109,10 +109,7 @@ In der App: **Anzeigenblöcke → Anzeigenblock hinzufügen**
 Die App zeigt diesen Dialog dann automatisch beim Start (nur in der EU/UK) und bietet in den Einstellungen „Datenschutz-Einstellungen (Werbung)" an – das verlangt Google.
 
 ### B5. IDs an mich geben → echtes AAB
-✅ Erledigt: App-ID `ca-app-pub-8596176219181991~3672450377`, Banner `…/4877720835`, Belohnungsvideo `…/6079121863` – stehen fest im Release-Build (`.github/workflows/android-bundle.yml`), ab versionCode 7.
-
-Schick mir die **3 Werte** (App-ID, Banner-ID, Rewarded-ID) – ich baue dir das AAB damit neu und signiere es.
-Alternativ selbst: GitHub → Actions → **„Android App Bundle (AAB)" → Run workflow** → IDs eintragen → danach muss das Ergebnis noch mit deinem Upload-Schlüssel signiert werden (siehe `SCHLUESSEL.md`).
+✅ Erledigt: App-ID `ca-app-pub-8596176219181991~3672450377`, Banner `…/4877720835`, Belohnungsvideo `…/6079121863` – stehen fest im Release-Build (`.github/workflows/android-bundle.yml`). Die Tester-Version lädt keine Werbung.
 
 ### B6. Regeln, die du kennen musst
 - **Nie auf eigene echte Anzeigen klicken** – AdMob sperrt sonst dein Konto. Für eigene Tests dein Gerät als Testgerät eintragen: **AdMob → Einstellungen → Testgeräte**.

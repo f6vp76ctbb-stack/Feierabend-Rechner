@@ -1,89 +1,119 @@
-# 🚀 Feierabend Rechner veröffentlichen – Schritt für Schritt
+# 🚀 Feierabend Rechner – Produktions-Release 1.0.0
 
-Alles ist vorbereitet. Du brauchst nur die Play Console (am besten am Computer oder Tablet).
+Stand 22.10.2026: geschlossener Test bestanden, **Produktionszugang freigegeben**.
+App anlegen, App-Inhalte, Store-Eintrag, Händlerstatus, interner und geschlossener Test sind erledigt
+(Details zu den einzelnen Formularen: `APP_INHALTE.md`, `STORE_EINTRAG.md`, `IN_APP_KAUF_UND_WERBUNG.md`).
 
-## Das hast du bekommen
+## Das brauchst du
 
 | Was | Wo |
 |---|---|
-| **Tester-App-Bundle** (geschlossener Test) | `feierabend-TESTER-1.0.0-vc47.aab` (Download-Link von mir, ~61 MB, inkl. Debug-Symbolen + Offenlegungsdatei) – Pro + alle Designs frei, **keine Werbung**, Nutzungsstatistik nach Einwilligung, Tipps, Bewerten/Teilen/Feedback. Nur für den Test-Track, **nie in Produktion!** |
-| **Store-App-Bundle** (Produktion, später) | `feierabend-release-1.0.0-vc<N>.aab` (gerade Nummer) – so wie Kunden die App bekommen: Werbung, Pro/Designs kaufbar. Schicke ich dir, sobald der Produktionszugang da ist. |
-| **Upload-Schlüssel + Passwort** | geschickt → sicher aufbewahren, siehe `SCHLUESSEL.md` |
-| Store-Texte DE + EN | `STORE_EINTRAG.md` |
-| Icon, Feature-Grafik, 8 Screenshots je Sprache | `graphics/` |
-| Datenschutzerklärung (online) | https://f6vp76ctbb-stack.github.io/Feierabend-Rechner/privacy.html |
-| Antworten für „App-Inhalte" & Datensicherheit | `APP_INHALTE.md` |
-| In-App-Kauf & AdMob einrichten | `IN_APP_KAUF_UND_WERBUNG.md` |
-| Google Analytics (Firebase) einrichten | `FIREBASE_ANALYTICS.md` |
+| **Store-App-Bundle** (Produktion) | `feierabend-release-1.0.0-vc48.aab` – Download-Link von mir (~61 MB). Werbung (AdMob), Pro + 5 Designs kaufbar, Nutzungsstatistik nur nach Einwilligung, inkl. Debug-Symbolen + Offenlegungsdatei |
+| Tester-App-Bundle | nur für den geschlossenen Test (ungerade versionCode) – **nie in Produktion** |
+| Upload-Schlüssel + Passwort | bei dir gesichert (`SCHLUESSEL.md`) – für **jedes** Update nötig |
+| Datenschutzerklärung | https://f6vp76ctbb-stack.github.io/Feierabend-Rechner/privacy.html |
+| Impressum | https://f6vp76ctbb-stack.github.io/Feierabend-Rechner/impressum.html (auch in der App: Einstellungen → Impressum) |
 
-**Eckdaten:** Paketname `com.thinkube.feierabendrechner` · Version 1.0.0 (versionCode siehe Dateiname/Nachricht) · Android 7.0+ · Ziel-API 36 · Deutsch + Englisch.
+**Eckdaten:** Paketname `com.thinkube.feierabendrechner` · Version 1.0.0 · Android 7.0+ · Ziel-API 36 · Deutsch + Englisch.
 
 ---
 
-## Schritt 1 – App anlegen (falls noch nicht geschehen)
-Play Console → **Alle Apps → App erstellen**
-- App-Name: `Feierabend Rechner`
-- Standardsprache: **Deutsch – de-DE**
-- App oder Spiel: **App**
-- Kostenlos oder kostenpflichtig: **Kostenlos** (Geld kommt über In-App-Kauf + Werbung; „kostenlos" lässt sich später nicht mehr ändern – so ist es richtig)
-- Erklärungen bestätigen → **App erstellen**
+## A. Einmal prüfen, bevor du veröffentlichst (~15 Minuten)
 
-## Schritt 2 – Händlerstatus & Zahlungsprofil
-- **Einstellungen → Zahlungsprofil**: Händlerkonto (für In-App-Käufe) einrichten, falls noch nicht vorhanden.
-- Weil die App Geld verdient, fragt Google nach dem **Händlerstatus (EU Digital Services Act)** → „Händler" angeben. Deine Kontaktdaten werden dann im Store angezeigt.
+1. **In-App-Produkte aktiv** – Play Console → *Monetarisieren → Produkte → In-App-Produkte*:
+   `feierabend_pro` (3,99 €), `design_supporter`, `design_midnight`, `design_sunset`, `design_ocean`, `design_forest`
+   → alle Status **„Aktiv“**. Fehlt eines, zeigt die App beim Kaufen „Store nicht erreichbar“.
+2. **AdMob-Einwilligungsdialog veröffentlicht** – AdMob → *Datenschutz & Mitteilungen → Europäische Vorschriften*:
+   Die Mitteilung für „Feierabend Rechner“ muss **„Veröffentlicht“** sein (siehe `IN_APP_KAUF_UND_WERBUNG.md`, Teil B).
+   Ohne sie werden Nutzer im EWR nicht gefragt – das verstößt gegen Googles Einwilligungsrichtlinie, und es gibt kaum Werbung.
+3. **AdMob-Anzeigeninhalte** – AdMob → *Apps → Feierabend Rechner → App-Einstellungen*: maximale Anzeigeninhalts-Einstufung
+   **„T“ (Jugendliche)** – passt zur Zielgruppe ab 16.
+4. **Google Analytics / Firebase** (für die Nutzungsstatistik):
+   - Datenverarbeitungsbedingungen annehmen: Firebase-Konsole → *Projekteinstellungen* → Datenschutz-Bereich, und
+     Google Analytics → *Verwaltung → Kontoeinstellungen* → „Änderung zur Datenverarbeitung“ / „Datenverarbeitungsbedingungen“.
+     (Die Datenschutzerklärung nennt Google als Auftragsverarbeiter – das stimmt erst damit.)
+   - *Datenerfassung und -änderung → Datenaufbewahrung* → **14 Monate**; **Google Signale aus** lassen.
+5. **Datensicherheit ergänzen** – Play Console → *Richtlinien → App-Inhalte → Datensicherheit* → zusätzlich
+   **Finanzinfos → Kaufverlauf**: erfasst, **nicht** geteilt, **optional**, Zweck **Analysen** (siehe `APP_INHALTE.md`).
+6. **Store-Eintrag** aktuell? Texte aus `STORE_EINTRAG.md` (DE + EN) und Screenshots aus `graphics/` (01 → 08).
+   Unter *Store-Präsenz → Store-Einstellungen* bei **Website** das Impressum eintragen
+   (`https://f6vp76ctbb-stack.github.io/Feierabend-Rechner/impressum.html`) – so ist es auch im Store verlinkt.
 
-## Schritt 3 – App-Inhalte ausfüllen
-Dashboard → **„App einrichten"** → jede Aufgabe mit den Antworten aus **`APP_INHALTE.md`** ausfüllen:
-Datenschutzerklärung · App-Zugriff · Anzeigen · Einstufung · Zielgruppe · Nachrichten-App · Werbe-ID · Behörden/Finanzen/Gesundheit · **Datensicherheit**.
+## B. Kauf selbst ausprobieren (empfohlen, ~20 Minuten)
 
-## Schritt 4 – Store-Eintrag
-**Store-Präsenz → Haupteintrag im Store** → Texte aus **`STORE_EINTRAG.md`** (Deutsch) einfügen, Grafiken hochladen:
-- App-Symbol: `graphics/icon-512.png`
-- Vorstellungsgrafik: `graphics/de/feature-graphic.png`
-- Smartphone-Screenshots: alle 8 aus `graphics/de/screenshots/` (in Reihenfolge 01 → 08)
+1. *Einstellungen (Konto-Ebene) → Lizenztests*: deine Gmail eintragen → Käufe kosten dich nichts (Testkarte).
+2. *Test und Release → Testen → **Interner Test** → Neuen Release erstellen* → **Store-App-Bundle vc48** hochladen
+   → Release-Name `1.0.0` → Versionshinweise (unten) → **Veröffentlichen**.
+3. Über den Link des internen Tests installieren (die Tester-Version wird dabei ersetzt) und prüfen:
+   - Einführung → Tipps → Werbung erscheint unten (**nie auf eigene Anzeigen tippen!**)
+   - *Pro freischalten* → Testkarte „Immer genehmigen“ → Pro aktiv, Werbung weg
+   - *Designs ansehen* → ein Design kaufen → es ist sofort aktiv
+   - *Käufe wiederherstellen* → Pro bleibt aktiv
+4. Passt alles: beim Release im internen Test **„Release übernehmen“ → Produktion** – das ist dasselbe Store-Bundle,
+   kein neuer Upload nötig. (Den Release aus dem **geschlossenen** Test nie übernehmen: das ist die Tester-Version.)
 
-Dann **Übersetzungen verwalten → Eigene Übersetzung hinzufügen → Englisch (Vereinigte Staaten) – en-US** → englische Texte + `graphics/en/…` hochladen.
+## C. Produktion veröffentlichen
 
-**Store-Einstellungen:** Kategorie **Effizienz**, Tags Arbeit · Effizienz · Rechner · Uhr, Wecker & Timer · Humor, Kontakt-E-Mail `thinkube@outlook.de`.
+*Test und Release → **Produktion** → Neuen Release erstellen* (bzw. den übernommenen Release öffnen)
+1. App-Bundle: **vc48** (Store-Bundle; aus der Bibliothek oder per Download-Link hochladen)
+2. Release-Name: `1.0.0`
+3. Versionshinweise:
+   ```
+   <de-DE>
+   Wann ist Feierabend? Startzeit tippen – fertig. Mit Live-Countdown, Schnellwahl, Pause automatisch, Überstunden-Konto, Profilen, Erinnerungen, Home-Screen-Widget, lustigen Sprüchen und 5 Designs.
+   </de-DE>
+   <en-US>
+   When can you clock out? Tap your start time – done. With live countdown, quick picks, automatic break, overtime account, profiles, reminders, home screen widget, fun quotes and 5 designs.
+   </en-US>
+   ```
+4. **Länder/Regionen:** alle (mindestens Deutschland, Österreich, Schweiz).
+5. **Einführung:** 100 % (es gibt noch keine Bestandsnutzer – ein gestaffelter Rollout bringt nichts).
+6. **Zur Überprüfung senden.** Google prüft meist in Stunden bis wenigen Tagen.
 
-## Schritt 5 – AAB hochladen (Interner Test)
-**Test und Release → Testen → Interner Test → Neuen Release erstellen**
-1. Play App-Signatur: **„Google Play generiert und verwaltet"** bestätigen (Standard)
-2. **App-Bundle hochladen:** Store-App-Bundle (`feierabend-release-…`) – nur für dich zum Kauf-Test; die Tester bekommen das Tester-Bundle (Schritt 8)
-   – Debug-Symbole und Offenlegungsdatei (R8-Mapping) stecken im Bundle → dazu kommen keine Warnungen mehr. Erscheint doch eine Warnung (z. B. „Geräte werden nicht mehr unterstützt“) → nicht veröffentlichen, mir Bescheid geben.
-3. Release-Name: `1.0.0`
-4. Versionshinweise DE + EN aus `STORE_EINTRAG.md`
-5. **Weiter → Speichern → Release veröffentlichen**
-6. Tab **Tester**: E-Mail-Liste anlegen (deine + Tester), speichern → **Link kopieren** → auf einem Android-Gerät öffnen und installieren.
+> Warnungen beim Hochladen: Zu Debug-Symbolen/Offenlegungsdatei kommen keine mehr. Erscheint eine andere
+> (z. B. „Geräte werden nicht mehr unterstützt“) → nicht veröffentlichen, mir Bescheid geben.
 
-> Interne Tests sind meist in Minuten verfügbar. **Nie auf die eigenen (echten) Anzeigen tippen** – das verbietet AdMob.
+## D. Nach dem Start
 
-## Schritt 6 – In-App-Produkt „feierabend_pro" anlegen
-Jetzt (nach dem Upload) geht es: siehe **`IN_APP_KAUF_UND_WERBUNG.md`, Teil A** – Produkt-ID exakt `feierabend_pro`, Preis 3,99 €, aktivieren. Deine Gmail unter **Lizenztests** eintragen → Kauf kostenlos testen.
-
-## Schritt 7 – AdMob (echte Werbung)
-Siehe **`IN_APP_KAUF_UND_WERBUNG.md`, Teil B** (~15 Minuten). Schick mir danach App-ID + 2 Anzeigenblock-IDs → ich baue dir **Version 1.0.0 (neuer versionCode) mit echten Anzeigen** und signiere sie.
-
-## Schritt 8 – Geschlossener Test (12 Tester, 14 Tage)
-- **Test und Release → Testen → Geschlossener Test → Neuen Release erstellen** → **Tester-App-Bundle** hochladen (`feierabend-TESTER-…`, ungerade versionCode).
-- Darin ist **alles freigeschaltet** (Pro, alle 5 Designs) und es gibt **keine Werbung**: Tester probieren jede Funktion aus, und niemand klickt im Test auf echte Anzeigen (schützt dein AdMob-Konto).
-- In den Einstellungen steht „Testversion: Pro und alle Designs sind freigeschaltet“ – so wissen die Tester Bescheid.
-- Kauf selbst testen: deine Gmail unter **Einstellungen → Lizenztests** eintragen und das **Store-App-Bundle** im **internen Test** installieren → Kauf läuft mit Testkarte, kostet nichts.
-
-## Schritt 9 – Produktion
-- Nach den 14 Tagen: Dashboard → „**Zugriff auf Produktion beantragen**".
-- **Produktion → Neuen Release erstellen** → das **Store-App-Bundle** (`feierabend-release-…`, gerade versionCode) hochladen → **Länder/Regionen** wählen (z. B. alle, mindestens DACH) → **Einführen**.
-- ⚠️ **Nicht** den Release aus dem geschlossenen Test in die Produktion übernehmen („Release übernehmen/hochstufen") – sonst bekäme jeder Pro gratis und es gäbe keine Werbung.
-- Google-Prüfung: meist wenige Stunden bis ~3 Tage, bei neuen Apps manchmal bis 7 Tage.
+1. **AdMob mit dem Store verknüpfen:** AdMob → *Apps → Feierabend Rechner → App-Einstellungen → App-Store-Details
+   hinzufügen* → Google Play → App auswählen. Danach prüft AdMob die App („App-Bereitschaft“); bis dahin kann es
+   weniger Werbung geben.
+2. **Geschlossener Test** darf weiterlaufen: Tester bekommen automatisch die Produktionsversion (höhere Nummer) –
+   Pro ist dann nicht mehr gratis. Wer mag, pausiert den Track.
+3. **Firebase → Analytics → Echtzeit:** dort siehst du die ersten Nutzer, die der Statistik zugestimmt haben.
+4. **Updates:** sag mir Bescheid – ich baue, teste im Emulator und schicke dir den Download-Link.
 
 ---
+
+## Rechtliches – geprüft am 22.10.2026
+
+Erledigt in App und Webseite:
+- **Impressum** in der App (Einstellungen → Impressum, auch offline) und online – wie bei Qubble
+- **Datenschutzerklärung** vollständig: Verantwortlicher mit Anschrift, alle Datenflüsse (AdMob, Google Play,
+  Nutzungsstatistik, Feedback-E-Mail), Rechtsgrundlagen, Speicherdauer, USA-Übermittlung, Rechte, Aufsichtsbehörde
+- **Einwilligungen:** Werbung über Googles zertifizierten Dialog (UMP/TCF), Statistik nur nach „Ja“ (gleichwertige
+  Knöpfe, Anbieter + USA genannt, jederzeit abschaltbar); ohne Einwilligung wird nichts erfasst
+- **Open-Source-Lizenzen** in der App (inkl. Schrift Inter, SIL OFL)
+- **Kein** Link zur abgeschalteten EU-Streitschlichtungsplattform (wäre seit 20.07.2025 abmahnfähig); Hinweis zur
+  Verbraucherschlichtung vorhanden
+- Käufe laufen komplett über Google Play (Preise inkl. MwSt., Bezahlung, Erstattung, Widerruf) – keine eigenen AGB nötig
+- Keine Haftungsausschluss-Klauseln, keine Markennamen, keine fremden Texte/Bilder; Zielgruppe ab 16
+
+**Offen – nur du kannst das klären:**
+1. **Vollständiger Name im Impressum:** Als Einzelunternehmer musst du mit Vor- und Nachnamen genannt sein;
+   „Thinkube“ allein reicht nur, wenn es im Handelsregister steht. Das gilt auch für Qubble. Schick mir den Namen –
+   ich trage ihn in beiden Apps an einer Stelle ein.
+2. **Steuern/Gewerbe:** Mit Einnahmen aus Käufen und Werbung brauchst du in der Regel eine Gewerbeanmeldung und
+   musst die Einnahmen beim Finanzamt angeben (Umsatzsteuer für Play-Käufe in der EU führt Google ab; zu
+   AdMob-Einnahmen und Kleinunternehmerregelung im Zweifel Steuerberatung fragen).
+3. **Letzte Sicherheit:** Ich habe sorgfältig geprüft, bin aber kein Anwalt. Wer ganz sicher gehen will, lässt
+   Impressum und Datenschutzerklärung von einem Rechtstexte-Dienst oder einer IT-Kanzlei gegenlesen.
 
 ## Checkliste vor dem Absenden
-- [x] Kontakt-E-Mail in der Datenschutzerklärung eingetragen (thinkube@outlook.de)
-- [ ] Datenschutz-URL öffnet sich im Browser
-- [ ] App-Inhalte alle grün
-- [ ] Store-Eintrag DE + EN inkl. Grafiken
-- [ ] AAB im internen Test installiert & ausprobiert
-- [ ] In-App-Produkt `feierabend_pro` aktiv, Testkauf klappt
-- [ ] Geschlossener Test: **Tester**-AAB · Produktion: **Store**-AAB (nie vertauschen)
+- [ ] In-App-Produkte (6) aktiv
+- [ ] AdMob-Einwilligungsdialog veröffentlicht, Anzeigeninhalte „T“
+- [ ] Firebase/GA: Datenverarbeitungsbedingungen angenommen, Aufbewahrung 14 Monate
+- [ ] Datensicherheit um „Kaufverlauf“ ergänzt
+- [ ] Kauf im internen Test ausprobiert (Pro + ein Design + Wiederherstellen)
+- [ ] Produktion: **Store**-Bundle vc48 (nie das Tester-Bundle), Länder gewählt, 100 %
 - [ ] Upload-Schlüssel gesichert

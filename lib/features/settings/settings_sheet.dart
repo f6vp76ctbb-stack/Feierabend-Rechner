@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:intl/intl.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../../config/app_info.dart';
 import '../../config/monetization_config.dart';
 import '../../core/formatting.dart';
 import '../../domain/reminder_planner.dart';
@@ -12,6 +13,7 @@ import '../analytics/analytics_providers.dart';
 import '../designs/design_providers.dart';
 import '../designs/design_shop_sheet.dart';
 import '../feedback/feedback_section.dart';
+import '../legal/legal_notice_sheet.dart';
 import '../home/state/home_providers.dart';
 import '../home/widgets/duration_adjust_sheet.dart';
 import '../pro/paywall_sheet.dart';
@@ -187,6 +189,13 @@ class SettingsSheet extends ConsumerWidget {
 
             // --- Rechtliches ---
             Text(l.legalSection, style: theme.textTheme.labelLarge),
+            // Impressum in der App (offline lesbar, zwei Tipps vom Hauptbildschirm).
+            ListTile(
+              contentPadding: EdgeInsets.zero,
+              leading: const Icon(Icons.info_outline_rounded),
+              title: Text(l.legalNotice),
+              onTap: () => LegalNoticeSheet.show(context),
+            ),
             ListTile(
               contentPadding: EdgeInsets.zero,
               leading: const Icon(Icons.policy_outlined),
@@ -217,6 +226,18 @@ class SettingsSheet extends ConsumerWidget {
                 onTap: () =>
                     ref.read(adsBackendProvider).showPrivacyOptions(),
               ),
+            // Pflichtangaben der Open-Source-Pakete und der Schrift Inter (OFL).
+            ListTile(
+              contentPadding: EdgeInsets.zero,
+              leading: const Icon(Icons.description_outlined),
+              title: Text(l.openSourceLicenses),
+              onTap: () => showLicensePage(
+                context: context,
+                applicationName: l.appTitle,
+                applicationVersion: AppInfo.versionLabel,
+                applicationLegalese: '© ${AppInfo.providerName}',
+              ),
+            ),
           ],
         ),
       ),

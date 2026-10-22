@@ -1171,6 +1171,78 @@ abstract class AppLocalizations {
   /// In de, this message translates to:
   /// **'Keine E-Mail-App gefunden – schreib uns an {email}.'**
   String feedbackNoMail(String email);
+
+  /// No description provided for @legalNotice.
+  ///
+  /// In de, this message translates to:
+  /// **'Impressum'**
+  String get legalNotice;
+
+  /// No description provided for @legalNoticeLaw.
+  ///
+  /// In de, this message translates to:
+  /// **'Angaben gemäß § 5 DDG'**
+  String get legalNoticeLaw;
+
+  /// No description provided for @legalCountry.
+  ///
+  /// In de, this message translates to:
+  /// **'Deutschland'**
+  String get legalCountry;
+
+  /// No description provided for @legalContact.
+  ///
+  /// In de, this message translates to:
+  /// **'Kontakt'**
+  String get legalContact;
+
+  /// No description provided for @legalResponsible.
+  ///
+  /// In de, this message translates to:
+  /// **'Verantwortlich für den Inhalt'**
+  String get legalResponsible;
+
+  /// No description provided for @legalResponsibleBody.
+  ///
+  /// In de, this message translates to:
+  /// **'{name}, Anschrift wie oben.'**
+  String legalResponsibleBody(String name);
+
+  /// No description provided for @legalDispute.
+  ///
+  /// In de, this message translates to:
+  /// **'Streitschlichtung'**
+  String get legalDispute;
+
+  /// No description provided for @legalDisputeBody.
+  ///
+  /// In de, this message translates to:
+  /// **'Wir sind nicht verpflichtet und nicht bereit, an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.'**
+  String get legalDisputeBody;
+
+  /// No description provided for @legalNote.
+  ///
+  /// In de, this message translates to:
+  /// **'Hinweis'**
+  String get legalNote;
+
+  /// No description provided for @legalNoteBody.
+  ///
+  /// In de, this message translates to:
+  /// **'Feierabend Rechner ist eine Rechenhilfe. Maßgeblich sind dein Arbeitsvertrag, das Arbeitszeitgesetz und die Zeiterfassung deines Arbeitgebers.'**
+  String get legalNoteBody;
+
+  /// No description provided for @openSourceLicenses.
+  ///
+  /// In de, this message translates to:
+  /// **'Open-Source-Lizenzen'**
+  String get openSourceLicenses;
+
+  /// No description provided for @analyticsAskDetails.
+  ///
+  /// In de, this message translates to:
+  /// **'Anbieter ist Google Ireland Ltd.; Daten können auch in die USA übermittelt werden (EU-US Data Privacy Framework).'**
+  String get analyticsAskDetails;
 }
 
 class _AppLocalizationsDelegate
