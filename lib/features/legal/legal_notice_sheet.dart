@@ -46,6 +46,7 @@ class LegalNoticeSheet extends StatelessWidget {
               SelectableText(
                 [
                   AppInfo.providerName,
+                  AppInfo.businessName,
                   AppInfo.providerStreet,
                   AppInfo.providerCity,
                   l.legalCountry,

@@ -9,7 +9,7 @@ Die Antworten passen genau zu dem, was die App tut (lokale Speicherung, AdMob, G
 ```
 https://f6vp76ctbb-stack.github.io/Feierabend-Rechner/privacy.html
 ```
-> Verantwortlicher in der Erklärung: Thinkube, Mähderweg 5, 88451 Dettingen · thinkube@outlook.de
+> Verantwortlicher in der Erklärung: Sam Däubler (Thinkube), Mähderweg 5, 88451 Dettingen · thinkube@outlook.de
 > Impressum: `https://f6vp76ctbb-stack.github.io/Feierabend-Rechner/impressum.html` (zusätzlich in der App: Einstellungen → Impressum)
 
 ## App-Zugriff

@@ -219,8 +219,10 @@ Nächstes Update: neuer CI-Lauf (versionCode > 49), Start-Test grün, signieren,
   Manifest: Erfassung standardmäßig aus, keine Werbe-ID. Firebase-Werte zusätzlich als Android-Ressourcen
   (`resValue` in `build.gradle.kts`, sonst „Missing google_app_id“). Ereignisliste + Einrichtung: `store/FIREBASE_ANALYTICS.md`.
 - **Rechtliches:** Impressum in der App (`lib/features/legal/legal_notice_sheet.dart`, Einstellungen → Impressum,
-  offline lesbar; Anbieterdaten zentral in `lib/config/app_info.dart` = wie bei der App „Qubble“) + online
-  `web/impressum.html`; Datenschutzerklärung `web/privacy.html` (Verantwortlicher mit Anschrift, Rechtsgrundlagen,
+  offline lesbar; Anbieterdaten zentral in `lib/config/app_info.dart`: **Sam Däubler**, Geschäftsbezeichnung
+  „Thinkube“, wie bei der App „Qubble“) + online `web/impressum.html`; `test/features/legal_test.dart` prüft, dass
+  beide Webseiten dieselben Angaben haben. USt-IdNr./W-IdNr. kommen dazu, sobald vorhanden – die Steuernummer
+  nie. Datenschutzerklärung `web/privacy.html` (Verantwortlicher mit Anschrift, Rechtsgrundlagen,
   Auftragsverarbeitung Analytics, Aufsichtsbehörde BW). Open-Source-Lizenzen: `showLicensePage` + Inter-OFL
   (`assets/licenses/Inter-OFL.txt`, `registerExtraLicenses()` in `main.dart`). **Kein** Link zur EU-OS-Plattform
   (seit 20.07.2025 abgeschaltet, Link wäre abmahnfähig). Keine Haftungsausschluss-Klauseln („ohne Gewähr“) –
@@ -233,6 +235,6 @@ Nächstes Update: neuer CI-Lauf (versionCode > 49), Start-Test grün, signieren,
   Android-Label über `res/values(-de)/strings.xml` `app_name`.
 - **Kontakt:** thinkube@outlook.de (Datenschutzerklärung, Store-Eintrag, IARC).
 - **Offen:**
-  Zeitzonen-/DST-Behandlung, iOS-Widget; Impressum: vollständiger Name fehlt (nur „Thinkube“, wie bei Qubble);
+  Zeitzonen-/DST-Behandlung, iOS-Widget; Impressum: USt-IdNr./W-IdNr. nachtragen, sobald der Nutzer sie hat;
   vor einem Flutter-Upgrade: firebase_core/firebase_analytics/in_app_review nutzen noch das Kotlin-Gradle-Plugin
   (Flutter warnt, künftige Versionen bauen damit nicht mehr) → Pakete vorher aktualisieren.

@@ -10,8 +10,11 @@ abstract final class AppInfo {
   static const contactEmail = 'thinkube@outlook.de';
 
   /// Anbieter für Impressum (§ 5 DDG) und Datenschutzerklärung – an einer Stelle,
-  /// gleich wie bei der App „Qubble“ (web/impressum.html dort).
-  static const providerName = 'Thinkube';
+  /// gleich wie bei der App „Qubble“ (web/impressum.html dort). Einzelunternehmen:
+  /// Pflicht ist der volle Name, „Thinkube“ ist nur die Geschäftsbezeichnung.
+  /// USt-IdNr./W-IdNr. gehören dazu, sobald vorhanden – die Steuernummer nie.
+  static const providerName = 'Sam Däubler';
+  static const businessName = 'Thinkube';
   static const providerStreet = 'Mähderweg 5';
   static const providerCity = '88451 Dettingen';
 

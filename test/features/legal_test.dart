@@ -1,3 +1,6 @@
+import 'dart:io';
+
+import 'package:feierabend_rechner/config/app_info.dart';
 import 'package:feierabend_rechner/features/legal/licenses.dart';
 import 'package:feierabend_rechner/features/startup/startup_prompts.dart';
 import 'package:flutter/material.dart';
@@ -22,10 +25,12 @@ void main() {
     await _openSettingsTile(tester, 'Impressum');
 
     expect(find.text('Angaben gemäß § 5 DDG'), findsOneWidget);
+    // Einzelunternehmen: voller Name Pflicht, „Thinkube“ nur Geschäftsbezeichnung.
     expect(
-      find.text('Thinkube\nMähderweg 5\n88451 Dettingen\nDeutschland'),
+      find.text('Sam Däubler\nThinkube\nMähderweg 5\n88451 Dettingen\nDeutschland'),
       findsOneWidget,
     );
+    expect(find.text('Sam Däubler, Anschrift wie oben.'), findsOneWidget);
     expect(find.text('thinkube@outlook.de'), findsOneWidget);
     expect(find.textContaining('nicht bereit, an einem Streitbeilegungsverfahren'),
         findsOneWidget);
@@ -38,8 +43,25 @@ void main() {
     await tester.pumpAndSettle();
     await _openSettingsTile(tester, 'Legal notice');
     expect(find.text('Information pursuant to § 5 DDG (Germany)'), findsOneWidget);
-    expect(find.text('Thinkube\nMähderweg 5\n88451 Dettingen\nGermany'),
-        findsOneWidget);
+    expect(
+      find.text('Sam Däubler\nThinkube\nMähderweg 5\n88451 Dettingen\nGermany'),
+      findsOneWidget,
+    );
+  });
+
+  test('Web-Impressum und Datenschutzerklärung nennen dieselben Anbieterdaten', () {
+    for (final page in ['web/impressum.html', 'web/privacy.html']) {
+      final html = File(page).readAsStringSync();
+      for (final value in [
+        AppInfo.providerName,
+        AppInfo.businessName,
+        AppInfo.providerStreet,
+        AppInfo.providerCity,
+        AppInfo.contactEmail,
+      ]) {
+        expect(html, contains(value), reason: '$page: $value');
+      }
+    }
   });
 
   testWidgets('Open-Source-Lizenzen enthalten die Schrift Inter (OFL)', (

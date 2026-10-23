@@ -235,7 +235,7 @@ class SettingsSheet extends ConsumerWidget {
                 context: context,
                 applicationName: l.appTitle,
                 applicationVersion: AppInfo.versionLabel,
-                applicationLegalese: '© ${AppInfo.providerName}',
+                applicationLegalese: '© ${AppInfo.businessName}',
               ),
             ),
           ],

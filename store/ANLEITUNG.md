@@ -85,10 +85,11 @@ App anlegen, App-Inhalte, Store-Eintrag, Händlerstatus, interner und geschlosse
 
 ---
 
-## Rechtliches – geprüft am 22.10.2026
+## Rechtliches – geprüft am 22.10.2026, Name ergänzt am 23.10.2026
 
 Erledigt in App und Webseite:
-- **Impressum** in der App (Einstellungen → Impressum, auch offline) und online – wie bei Qubble
+- **Impressum** in der App (Einstellungen → Impressum, auch offline) und online – wie bei Qubble, mit vollem
+  Namen (Sam Däubler, Geschäftsbezeichnung „Thinkube“)
 - **Datenschutzerklärung** vollständig: Verantwortlicher mit Anschrift, alle Datenflüsse (AdMob, Google Play,
   Nutzungsstatistik, Feedback-E-Mail), Rechtsgrundlagen, Speicherdauer, USA-Übermittlung, Rechte, Aufsichtsbehörde
 - **Einwilligungen:** Werbung über Googles zertifizierten Dialog (UMP/TCF), Statistik nur nach „Ja“ (gleichwertige
@@ -100,13 +101,15 @@ Erledigt in App und Webseite:
 - Keine Haftungsausschluss-Klauseln, keine Markennamen, keine fremden Texte/Bilder; Zielgruppe ab 16
 
 **Offen – nur du kannst das klären:**
-1. **Vollständiger Name im Impressum:** Als Einzelunternehmer musst du mit Vor- und Nachnamen genannt sein;
-   „Thinkube“ allein reicht nur, wenn es im Handelsregister steht. Das gilt auch für Qubble. Schick mir den Namen –
-   ich trage ihn in beiden Apps an einer Stelle ein.
-2. **Steuern/Gewerbe:** Mit Einnahmen aus Käufen und Werbung brauchst du in der Regel eine Gewerbeanmeldung und
-   musst die Einnahmen beim Finanzamt angeben (Umsatzsteuer für Play-Käufe in der EU führt Google ab; zu
-   AdMob-Einnahmen und Kleinunternehmerregelung im Zweifel Steuerberatung fragen).
-3. **Letzte Sicherheit:** Ich habe sorgfältig geprüft, bin aber kein Anwalt. Wer ganz sicher gehen will, lässt
+1. **Steuern** (Gewerbe ist angemeldet ✓):
+   - **Fragebogen zur steuerlichen Erfassung** über *Mein ELSTER* abschicken, falls noch nicht geschehen – innerhalb
+     eines Monats nach Beginn, nicht auf Post vom Finanzamt warten. Danach kommt die **Steuernummer** per Brief.
+   - Im Fragebogen entscheidest du über die **Kleinunternehmerregelung** – im Zweifel kurz Steuerberatung oder die
+     kostenlose Gründungsberatung deiner IHK fragen. Die Umsatzsteuer für Play-Käufe in der EU führt Google ab.
+   - **Ins Impressum gehört keine Steuernummer** (und auch nicht deine persönliche Steuer-ID). Pflicht wird erst
+     eine **USt-IdNr.** oder die **Wirtschafts-IdNr.** (kommt automatisch vom Bundeszentralamt für Steuern über
+     ELSTER) – sobald du eine davon hast, schick sie mir, dann kommt sie ins Impressum.
+2. **Letzte Sicherheit:** Ich habe sorgfältig geprüft, bin aber kein Anwalt. Wer ganz sicher gehen will, lässt
    Impressum und Datenschutzerklärung von einem Rechtstexte-Dienst oder einer IT-Kanzlei gegenlesen.
 
 ## Checkliste vor dem Absenden
