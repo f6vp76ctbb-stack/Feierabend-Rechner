@@ -1,0 +1,33 @@
+10-23 10:25:45.892  6225  6225 D AndroidRuntime: Shutting down VM
+10-23 10:25:47.021  6235  6235 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 10:25:47.022  6235  6235 D AndroidRuntime: CheckJNI is OFF
+10-23 10:25:47.053  6235  6235 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-23 10:25:48.102  6235  6235 D AndroidRuntime: Shutting down VM
+10-23 10:25:48.269  6248  6248 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 10:25:48.270  6248  6248 D AndroidRuntime: CheckJNI is OFF
+10-23 10:25:48.301  6248  6248 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-23 10:25:49.330  6248  6248 D AndroidRuntime: Shutting down VM
+10-23 10:25:49.482  6261  6261 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 10:25:49.483  6261  6261 D AndroidRuntime: CheckJNI is OFF
+10-23 10:25:49.511  6261  6261 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-23 10:25:49.818  6261  6261 D AndroidRuntime: Shutting down VM
+10-23 10:25:50.946  6271  6271 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 10:25:50.948  6271  6271 D AndroidRuntime: CheckJNI is OFF
+10-23 10:25:50.981  6271  6271 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-23 10:25:52.013  6271  6271 D AndroidRuntime: Shutting down VM
+10-23 10:25:52.159  6284  6284 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 10:25:52.160  6284  6284 D AndroidRuntime: CheckJNI is OFF
+10-23 10:25:52.192  6284  6284 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-23 10:25:52.494  6284  6284 D AndroidRuntime: Shutting down VM
+10-23 10:25:53.621  6303  6303 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 10:25:53.622  6303  6303 D AndroidRuntime: CheckJNI is OFF
+10-23 10:25:53.654  6303  6303 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-23 10:25:54.699  6303  6303 D AndroidRuntime: Shutting down VM
+10-23 10:25:54.849  6316  6316 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 10:25:54.850  6316  6316 D AndroidRuntime: CheckJNI is OFF
+10-23 10:25:54.877  6316  6316 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-23 10:25:55.177  6316  6316 D AndroidRuntime: Shutting down VM
+10-23 10:25:56.321  6326  6326 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 10:25:56.322  6326  6326 D AndroidRuntime: CheckJNI is OFF
+10-23 10:25:56.356  6326  6326 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-23 10:25:57.398  6326  6326 D AndroidRuntime: Shutting down VM

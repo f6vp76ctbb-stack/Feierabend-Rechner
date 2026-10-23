@@ -1,0 +1,44 @@
+10-23 10:26:40.847  6754  6754 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-23 10:26:41.879  6754  6754 D AndroidRuntime: Shutting down VM
+10-23 10:26:42.084  6772  6772 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 10:26:42.085  6772  6772 D AndroidRuntime: CheckJNI is OFF
+10-23 10:26:42.117  6772  6772 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-23 10:26:43.144  6772  6772 D AndroidRuntime: Shutting down VM
+10-23 10:26:43.316  6785  6785 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 10:26:43.317  6785  6785 D AndroidRuntime: CheckJNI is OFF
+10-23 10:26:43.345  6785  6785 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-23 10:26:43.653  6785  6785 D AndroidRuntime: Shutting down VM
+10-23 10:26:44.777  6796  6796 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 10:26:44.778  6796  6796 D AndroidRuntime: CheckJNI is OFF
+10-23 10:26:44.810  6796  6796 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-23 10:26:45.846  6796  6796 D AndroidRuntime: Shutting down VM
+10-23 10:26:45.995  6809  6809 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 10:26:45.996  6809  6809 D AndroidRuntime: CheckJNI is OFF
+10-23 10:26:46.024  6809  6809 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-23 10:26:46.325  6809  6809 D AndroidRuntime: Shutting down VM
+10-23 10:26:47.452  6819  6819 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 10:26:47.453  6819  6819 D AndroidRuntime: CheckJNI is OFF
+10-23 10:26:47.483  6819  6819 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-23 10:26:48.512  6819  6819 D AndroidRuntime: Shutting down VM
+10-23 10:26:48.654  6832  6832 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 10:26:48.656  6832  6832 D AndroidRuntime: CheckJNI is OFF
+10-23 10:26:48.683  6832  6832 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-23 10:26:48.986  6832  6832 D AndroidRuntime: Shutting down VM
+10-23 10:26:50.110  6842  6842 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 10:26:50.111  6842  6842 D AndroidRuntime: CheckJNI is OFF
+10-23 10:26:50.143  6842  6842 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-23 10:26:51.182  6842  6842 D AndroidRuntime: Shutting down VM
+10-23 10:26:56.392  6861  6861 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 10:26:56.394  6861  6861 D AndroidRuntime: CheckJNI is OFF
+10-23 10:26:56.423  6861  6861 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-23 10:26:56.432  6861  6861 D AndroidRuntime: Shutting down VM
+10-23 10:26:56.549  1647  2261 I WindowManager: Destroying surface Surface(name=SurfaceView - com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity) called by com.android.server.wm.WindowStateAnimator.destroySurface:2016 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:882 com.android.server.wm.WindowState.removeLocked:1456 com.android.server.wm.WindowManagerService.removeWindowInnerLocked:2484 com.android.server.wm.WindowManagerService.removeWindowLocked:2442 com.android.server.wm.WindowManagerService.removeWindowLocked:2311 com.android.server.wm.WindowManagerService.removeWindow:2306 com.android.server.wm.Session.remove:202 
+10-23 10:26:56.552  1647  2263 I WindowManager: Destroying surface Surface(name=com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity) called by com.android.server.wm.WindowStateAnimator.destroySurface:2016 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:882 com.android.server.wm.WindowState.removeLocked:1456 com.android.server.wm.WindowManagerService.removeWindowInnerLocked:2484 com.android.server.wm.WindowManagerService.removeWindowLocked:2442 com.android.server.wm.WindowManagerService.removeWindowLocked:2311 com.android.server.wm.WindowManagerService.removeWindow:2306 com.android.server.wm.Session.remove:202 
+10-23 10:26:58.564  6876  6876 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 10:26:58.565  6876  6876 D AndroidRuntime: CheckJNI is OFF
+10-23 10:26:58.594  6876  6876 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-23 10:26:58.599  6876  6876 D AndroidRuntime: Shutting down VM
+10-23 10:27:00.721  6886  6886 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 10:27:00.722  6886  6886 D AndroidRuntime: CheckJNI is OFF
+10-23 10:27:00.749  6886  6886 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-23 10:27:00.753  6886  6886 D AndroidRuntime: Shutting down VM

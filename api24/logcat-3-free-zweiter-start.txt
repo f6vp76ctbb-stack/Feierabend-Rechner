@@ -1,0 +1,774 @@
+--------- beginning of main
+10-23 10:24:02.459  5394  5394 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 10:24:02.460  5394  5394 D AndroidRuntime: CheckJNI is OFF
+10-23 10:24:02.473  5394  5394 W art     : Unexpected CPU variant for X86 using defaults: x86_64
+10-23 10:24:02.475  5394  5394 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+10-23 10:24:02.483  5394  5394 E memtrack: Couldn't load memtrack module (No such file or directory)
+10-23 10:24:02.483  5394  5394 E android.os.Debug: failed to load memtrack module: -2
+10-23 10:24:02.484  5394  5394 I Radio-JNI: register_android_hardware_Radio DONE
+10-23 10:24:02.487  5394  5394 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+--------- beginning of system
+10-23 10:24:02.490  1647  1659 I ActivityManager: Force stopping com.thinkube.feierabendrechner appid=10078 user=0: from pid 5394
+10-23 10:24:02.490  1647  1659 I ActivityManager: Killing 4122:com.thinkube.feierabendrechner/u0a78 (adj 900): stop com.thinkube.feierabendrechner
+10-23 10:24:02.490  1647  1659 D ActivityManager: cleanUpApplicationRecord -- 4122
+10-23 10:24:02.494  1909  1909 D CarrierSvcBindHelper: No carrier app for: 0
+10-23 10:24:02.495  5394  5394 D AndroidRuntime: Shutting down VM
+10-23 10:24:02.513  1647  2227 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(NetworkRequest [ id=12, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ], android.os.BinderProxy@5bcb9f4)
+10-23 10:24:02.513  1647  1676 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(NetworkRequest [ id=13, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ], android.os.BinderProxy@8bbb51d)
+10-23 10:24:02.513  1647  1676 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(NetworkRequest [ id=11, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED] ], android.os.BinderProxy@a892392)
+10-23 10:24:02.513  1647  2227 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(NetworkRequest [ id=10, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED] ], android.os.BinderProxy@a26d163)
+10-23 10:24:02.514  1647  2227 D GraphicsStats: Buffer count: 2
+10-23 10:24:02.514  1647  1732 D ConnectivityService: releasing NetworkRequest NetworkRequest [ id=12, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+10-23 10:24:02.518  1647  1732 E ConnectivityService: RemoteException caught trying to send a callback msg for NetworkRequest [ id=12, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+10-23 10:24:02.518  1647  1732 D ConnectivityService: releasing NetworkRequest NetworkRequest [ id=13, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+10-23 10:24:02.519  1647  1732 E ConnectivityService: RemoteException caught trying to send a callback msg for NetworkRequest [ id=13, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+10-23 10:24:02.519  1647  1732 E ConnectivityService: RemoteException caught trying to send a callback msg for NetworkRequest [ id=10, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED] ]
+10-23 10:24:02.519  1647  1732 E ConnectivityService: RemoteException caught trying to send a callback msg for NetworkRequest [ id=11, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED] ]
+10-23 10:24:02.625  5405  5405 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 10:24:02.626  5405  5405 D AndroidRuntime: CheckJNI is OFF
+10-23 10:24:02.639  5405  5405 W art     : Unexpected CPU variant for X86 using defaults: x86_64
+10-23 10:24:02.641  5405  5405 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+10-23 10:24:02.651  5405  5405 E memtrack: Couldn't load memtrack module (No such file or directory)
+10-23 10:24:02.651  5405  5405 E android.os.Debug: failed to load memtrack module: -2
+10-23 10:24:02.651  5405  5405 I Radio-JNI: register_android_hardware_Radio DONE
+10-23 10:24:02.654  5405  5405 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+10-23 10:24:02.659  1647  2115 I ActivityManager: START u0 {flg=0x10000000 cmp=com.thinkube.feierabendrechner/.MainActivity} from uid 2000 on display 0
+10-23 10:24:02.668  5415  5415 W art     : Unexpected CPU variant for X86 using defaults: x86_64
+10-23 10:24:02.674  1647  2262 I ActivityManager: Start proc 5415:com.thinkube.feierabendrechner/u0a78 for activity com.thinkube.feierabendrechner/.MainActivity
+10-23 10:24:02.697  1314  1317 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 819200
+10-23 10:24:02.704  5415  5415 I FirebaseApp: Device unlocked: initializing all Firebase APIs for app [DEFAULT]
+10-23 10:24:02.709  5415  5415 I FirebaseInitProvider: FirebaseApp initialization successful
+10-23 10:24:02.711  5415  5415 D WM-WrkMgrInitializer: Initializing WorkManager with default configuration.
+10-23 10:24:02.713  2356  2493 D EGL_emulation: eglMakeCurrent: 0x72890b836b40: ver 3 0 (tinfo 0x72890b80c840)
+10-23 10:24:02.730  5415  5431 I DynamiteModule: Considering local module com.google.android.gms.measurement.dynamite:185 and remote module com.google.android.gms.measurement.dynamite:15
+10-23 10:24:02.730  5415  5431 I DynamiteModule: Selected local version of com.google.android.gms.measurement.dynamite
+10-23 10:24:02.773  5415  5440 D skia    : [SkFontMgr Android Parser] '/product/etc/fonts_customization.xml' could not be opened
+10-23 10:24:02.787  5415  5415 W System  : ClassLoader referenced unknown path: 
+10-23 10:24:02.817  5415  5443 D Phlogger: Application doesn't implement PhenotypeApplication interface, falling back to globally set context. See go/phenotype-flag#process-stable-init for more info.
+10-23 10:24:02.839  5415  5415 I flutter : [IMPORTANT:flutter/shell/common/shell.cc(528)] [Action Required]: Impeller opt-out deprecated.
+10-23 10:24:02.839  5415  5415 I flutter :     The application opted out of Impeller by either using the
+10-23 10:24:02.839  5415  5415 I flutter :     `--no-enable-impeller` flag or the
+10-23 10:24:02.839  5415  5415 I flutter :     `io.flutter.embedding.android.EnableImpeller` `AndroidManifest.xml` entry.
+10-23 10:24:02.839  5415  5415 I flutter :     These options are going to go away in an upcoming Flutter release. Remove
+10-23 10:24:02.839  5415  5415 I flutter :     the explicit opt-out. If you need to opt-out, please report a bug describing
+10-23 10:24:02.839  5415  5415 I flutter :     the issue.
+10-23 10:24:02.839  5415  5415 I flutter : 
+10-23 10:24:02.839  5415  5415 I flutter :     https://github.com/flutter/flutter/issues/new?template=02_bug.yml
+10-23 10:24:02.839  5415  5415 I flutter : 
+10-23 10:24:02.841  5415  5436 I FA      : App measurement initialized, version: 161000
+10-23 10:24:02.842  5415  5436 I FA      : To enable debug logging run: adb shell setprop log.tag.FA VERBOSE
+10-23 10:24:02.842  5415  5436 I FA      : To enable faster debug mode event logging run:
+10-23 10:24:02.842  5415  5436 I FA      :   adb shell setprop debug.firebase.analytics.app com.thinkube.feierabendrechner
+10-23 10:24:02.843  5415  5415 D         : HostConnection::get() New Host Connection established 0x7288fb3567a0, tid 5415
+10-23 10:24:02.845  5415  5415 D EGL_emulation: eglCreateContext: 0x7288fb3a15a0: maj 3 min 0 rcv 3
+10-23 10:24:02.846  5415  5415 D EGL_emulation: eglCreateContext: 0x7288fb3a1640: maj 3 min 0 rcv 3
+10-23 10:24:02.847  5415  5442 D         : HostConnection::get() New Host Connection established 0x7288fb3569e0, tid 5442
+10-23 10:24:02.848  5415  5442 D EGL_emulation: eglMakeCurrent: 0x7288fb3a1640: ver 3 0 (tinfo 0x72890b9022c0)
+10-23 10:24:02.848  5415  5442 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008cdf
+10-23 10:24:02.848  5415  5442 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008824
+10-23 10:24:02.853  5415  5442 E eglCodecCommon: glUtilsParamSize: unknow param 0x000087fe
+10-23 10:24:02.901  5415  5420 I art     : Do partial code cache collection, code=22KB, data=24KB
+10-23 10:24:02.904  5415  5420 I art     : After code cache collection, code=22KB, data=24KB
+10-23 10:24:02.904  5415  5420 I art     : Increasing code cache capacity to 128KB
+10-23 10:24:02.912  1314  2025 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+10-23 10:24:02.926  5415  5436 I FA      : Tag Manager is not found and thus will not be used
+10-23 10:24:02.930  5415  5458 I OpenGLRenderer: Initialized EGL, version 1.4
+10-23 10:24:02.930  5415  5458 D OpenGLRenderer: Swap behavior 1
+10-23 10:24:02.930  5415  5458 D         : HostConnection::get() New Host Connection established 0x72890b81c260, tid 5458
+10-23 10:24:02.933  5415  5458 D EGL_emulation: eglCreateContext: 0x72890b849480: maj 3 min 0 rcv 3
+10-23 10:24:02.934  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:02.935  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008cdf
+10-23 10:24:02.935  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008824
+10-23 10:24:02.936  5415  5441 D         : HostConnection::get() New Host Connection established 0x72891322f0a0, tid 5441
+10-23 10:24:02.937  5415  5441 D EGL_emulation: eglMakeCurrent: 0x7288fb3a15a0: ver 3 0 (tinfo 0x7288fb32df80)
+10-23 10:24:02.938  5415  5441 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008cdf
+10-23 10:24:02.938  5415  5441 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008824
+10-23 10:24:02.940  5415  5441 D EGL_emulation: eglCreateContext: 0x7288fb3a2540: maj 3 min 0 rcv 3
+10-23 10:24:02.940  5415  5441 D EGL_emulation: eglMakeCurrent: 0x7288fb3a2540: ver 3 0 (tinfo 0x7288fb32df80)
+10-23 10:24:02.941  5415  5441 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008cdf
+10-23 10:24:02.941  5415  5441 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008824
+10-23 10:24:02.942  5415  5441 D EGL_emulation: eglMakeCurrent: 0x7288fb3a15a0: ver 3 0 (tinfo 0x7288fb32df80)
+10-23 10:24:02.948  5415  5441 E eglCodecCommon: glUtilsParamSize: unknow param 0x000087fe
+10-23 10:24:02.949  5415  5441 D EGL_emulation: eglMakeCurrent: 0x7288fb3a15a0: ver 3 0 (tinfo 0x7288fb32df80)
+10-23 10:24:03.013  5415  5462 I UserMessagingPlatform: Use new ConsentDebugSettings.Builder().addTestDeviceHashedId("B3EEABB8EE11C2BE770B684D95219ECB") to set this as a debug device.
+10-23 10:24:03.015  5415  5462 D UserMessagingPlatform: Stored info not exists: IABTCF_idfaFlowControl
+10-23 10:24:03.016  5415  5462 D UserMessagingPlatform: Stored info not exists: IABTCF_TCString
+10-23 10:24:03.016  5415  5462 D UserMessagingPlatform: Stored info not exists: UMP_CoMoAdPersonalizationPurposeConsentStatus
+10-23 10:24:03.016  5415  5462 D UserMessagingPlatform: Stored info not exists: IABTCF_AddtlConsent
+10-23 10:24:03.016  5415  5462 D UserMessagingPlatform: Stored info not exists: UMP_CoMoAnalyticsStoragePurposeConsentStatus
+10-23 10:24:03.016  5415  5462 D UserMessagingPlatform: Stored info not exists: IDFA_freqCapNumViews
+10-23 10:24:03.016  5415  5462 D UserMessagingPlatform: Stored info not exists: UMP_CoMoAdStoragePurposeConsentStatus
+10-23 10:24:03.016  5415  5462 D UserMessagingPlatform: Stored info not exists: UMP_CoMoAdUserDataPurposeConsentStatus
+10-23 10:24:03.017  5415  5462 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-23 10:24:03.026  5415  5462 W System  : ClassLoader referenced unknown path: /system/app/Chrome/lib/x86_64
+10-23 10:24:03.031  5415  5462 I WebViewFactory: Loading com.android.chrome version 69.0.3497.100 (code 349710067)
+10-23 10:24:03.068  5415  5462 I art     : Rejecting re-init on previously-failed class java.lang.Class<uJ>: java.lang.NoClassDefFoundError: Failed resolution of: Landroid/webkit/TracingController;
+10-23 10:24:03.068  5415  5462 I art     :   at java.lang.Class java.lang.Class.classForName!(java.lang.String, boolean, java.lang.ClassLoader) (Class.java:-2)
+10-23 10:24:03.069  5415  5462 I art     :   at java.lang.Class java.lang.Class.forName(java.lang.String, boolean, java.lang.ClassLoader) (Class.java:400)
+10-23 10:24:03.069  5415  5462 I art     :   at java.lang.Class android.webkit.WebViewFactory.getProviderClass() (WebViewFactory.java:349)
+10-23 10:24:03.069  5415  5462 I art     :   at android.webkit.WebViewFactoryProvider android.webkit.WebViewFactory.getProvider() (WebViewFactory.java:194)
+10-23 10:24:03.069  5415  5462 I art     :   at java.lang.String android.webkit.WebSettings.getDefaultUserAgent(android.content.Context) (WebSettings.java:1246)
+10-23 10:24:03.069  5415  5462 I art     :   at com.google.android.gms.internal.ads.ww1 com.google.android.gms.internal.consent_sdk.d.s(com.google.android.gms.internal.ads.j20) (r8-map-id-cafda62918829fa5807efb72c5ad89dffc68979e4a68b745cb238c7baf4cb329:22)
+10-23 10:24:03.069  5415  5462 I art     :   at void com.google.android.gms.internal.consent_sdk.i7.run() (r8-map-id-cafda62918829fa5807efb72c5ad89dffc68979e4a68b745cb238c7baf4cb329:531)
+10-23 10:24:03.069  5415  5462 I art     :   at void java.util.concurrent.ThreadPoolExecutor.runWorker(java.util.concurrent.ThreadPoolExecutor$Worker) (ThreadPoolExecutor.java:1133)
+10-23 10:24:03.069  5415  5462 I art     :   at void java.util.concurrent.ThreadPoolExecutor$Worker.run() (ThreadPoolExecutor.java:607)
+10-23 10:24:03.069  5415  5462 I art     :   at void java.lang.Thread.run() (Thread.java:761)
+10-23 10:24:03.069  5415  5462 I art     : Caused by: java.lang.ClassNotFoundException: Didn't find class "android.webkit.TracingController" on path: DexPathList[[zip file "/system/app/Chrome/Chrome.apk"],nativeLibraryDirectories=[/system/app/Chrome/lib/x86_64, /system/app/Chrome/Chrome.apk!/lib/x86_64, /system/lib64, /vendor/lib64, /system/lib64, /vendor/lib64]]
+10-23 10:24:03.069  5415  5462 I art     :   at java.lang.Class dalvik.system.BaseDexClassLoader.findClass(java.lang.String) (BaseDexClassLoader.java:56)
+10-23 10:24:03.069  5415  5462 I art     :   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String, boolean) (ClassLoader.java:380)
+10-23 10:24:03.069  5415  5462 I art     :   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String) (ClassLoader.java:312)
+10-23 10:24:03.069  5415  5462 I art     :   at java.lang.Class java.lang.Class.classForName!(java.lang.String, boolean, java.lang.ClassLoader) (Class.java:-2)
+10-23 10:24:03.069  5415  5462 I art     :   at java.lang.Class java.lang.Class.forName(java.lang.String, boolean, java.lang.ClassLoader) (Class.java:400)
+10-23 10:24:03.069  5415  5462 I art     :   at java.lang.Class android.webkit.WebViewFactory.getProviderClass() (WebViewFactory.java:349)
+10-23 10:24:03.069  5415  5462 I art     :   at android.webkit.WebViewFactoryProvider android.webkit.WebViewFactory.getProvider() (WebViewFactory.java:194)
+10-23 10:24:03.069  5415  5462 I art     :   at java.lang.String android.webkit.WebSettings.getDefaultUserAgent(android.content.Context) (WebSettings.java:1246)
+10-23 10:24:03.069  5415  5462 I art     :   at com.google.android.gms.internal.ads.ww1 com.google.android.gms.internal.consent_sdk.d.s(com.google.android.gms.internal.ads.j20) (r8-map-id-cafda62918829fa5807efb72c5ad89dffc68979e4a68b745cb238c7baf4cb329:22)
+10-23 10:24:03.069  5415  5462 I art     :   at void com.google.android.gms.internal.consent_sdk.i7.run() (r8-map-id-cafda62918829fa5807efb72c5ad89dffc68979e4a68b745cb238c7baf4cb329:531)
+10-23 10:24:03.069  5415  5462 I art     :   at void java.util.concurrent.ThreadPoolExecutor.runWorker(java.util.concurrent.ThreadPoolExecutor$Worker) (ThreadPoolExecutor.java:1133)
+10-23 10:24:03.069  5415  5462 I art     :   at void java.util.concurrent.ThreadPoolExecutor$Worker.run() (ThreadPoolExecutor.java:607)
+10-23 10:24:03.069  5415  5462 I art     :   at void java.lang.Thread.run() (Thread.java:761)
+10-23 10:24:03.069  5415  5462 I art     : 
+10-23 10:24:03.083  2323  5475 I Vision  : Requesting optional module download of ocr.
+10-23 10:24:03.083  2323  5475 I Vision  : Exceeded maximum feature download tries for ocr
+10-23 10:24:03.083  2323  5475 W Vision  : Request of optional module download of ocr failed.
+10-23 10:24:03.083  5415  5462 I cr_LibraryLoader: Time to load native libraries: 8 ms (timestamps 7047-7055)
+10-23 10:24:03.084  2323  5475 I Vision  : Checking for download completion for 257055 -- ocr
+10-23 10:24:03.103  5415  5435 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 203400000 but found 202414023
+10-23 10:24:03.103  5415  5435 W GoogleApiManager: The service for u4.c is not available: b{statusCode=SERVICE_VERSION_UPDATE_REQUIRED, resolution=null, message=null, clientMethodKey=null}
+10-23 10:24:03.104  5415  5435 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 203400000 but found 202414023
+10-23 10:24:03.104  5415  5435 W GoogleApiManager: The service for u4.c is not available: b{statusCode=SERVICE_VERSION_UPDATE_REQUIRED, resolution=null, message=null, clientMethodKey=null}
+10-23 10:24:03.113  5415  5415 I chromium: [INFO:library_loader_hooks.cc(36)] Chromium logging enabled: level = 0, default verbosity = 0
+10-23 10:24:03.113  5415  5415 I cr_LibraryLoader: Expected native library version number "69.0.3497.100", actual native library version number "69.0.3497.100"
+10-23 10:24:03.123  5415  5415 I cr_BrowserStartup: Initializing chromium process, singleProcess=true
+10-23 10:24:03.126  5415  5415 W ResourceType: Failure getting entry for 0x7f1204b0 (t=17 e=1200) (error -2147483647)
+10-23 10:24:03.139  5415  5415 I chromium: [INFO:aw_field_trial_creator.cc(54)] First-WebView-Experiment not found
+10-23 10:24:03.224  5415  5462 D UserMessagingPlatform: Action[clear]: {"keys":["UMP_eids"]}
+10-23 10:24:03.225  5415  5462 D UserMessagingPlatform: Action[write]: {"UMP_consentModeValues":"4444","IABTCF_CmpSdkID":300,"IABTCF_gdprApplies":0}
+10-23 10:24:03.225  5415  5462 D UserMessagingPlatform: Writing to storage: [UMP_consentModeValues] 4444
+10-23 10:24:03.225  5415  5462 D UserMessagingPlatform: Writing to storage: [IABTCF_CmpSdkID] 300
+10-23 10:24:03.225  5415  5462 D UserMessagingPlatform: Writing to storage: [IABTCF_gdprApplies] 0
+10-23 10:24:03.230  5415  5473 W cr_CrashFileManager: /data/user/0/com.thinkube.feierabendrechner/cache/WebView/Crash Reports does not exist or is not a directory
+10-23 10:24:03.337  5415  5499 W System  : ClassLoader referenced unknown path: /system/priv-app/PrebuiltGmsCore/lib/x86_64
+10-23 10:24:03.368  5415  5514 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 212800000 but found 202414023
+10-23 10:24:03.368  5415  5435 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 212800000 but found 202414023
+10-23 10:24:03.369  5415  5435 W GoogleApiManager: The service for c5.b is not available: b{statusCode=SERVICE_VERSION_UPDATE_REQUIRED, resolution=null, message=null, clientMethodKey=null}
+10-23 10:24:03.420  5415  5485 W cr_media: Requires BLUETOOTH permission
+10-23 10:24:03.449  5415  5523 E libEGL  : validate_display:99 error 3008 (EGL_BAD_DISPLAY)
+10-23 10:24:03.451  5415  5523 D         : HostConnection::get() New Host Connection established 0x7288efe0f7a0, tid 5523
+10-23 10:24:03.480  5415  5523 D EGL_emulation: eglCreateContext: 0x7288efe4b440: maj 3 min 0 rcv 3
+10-23 10:24:03.481  5415  5523 D EGL_emulation: eglMakeCurrent: 0x7288efe4b440: ver 3 0 (tinfo 0x7288efb35f20)
+10-23 10:24:03.481  5415  5523 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008cdf
+10-23 10:24:03.481  5415  5523 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008824
+10-23 10:24:03.573  5415  5523 E eglCodecCommon: glUtilsParamSize: unknow param 0x000087fe
+10-23 10:24:03.594  5415  5523 I VideoCapabilities: Unsupported profile 4 for video/mp4v-es
+10-23 10:24:03.595  5415  5523 W cr_MediaCodecUtil: HW encoder for video/avc is not available on this device.
+10-23 10:24:03.671  5415  5523 D EGL_emulation: eglCreateContext: 0x7288efbf30c0: maj 3 min 0 rcv 3
+10-23 10:24:03.671  5415  5523 D EGL_emulation: eglMakeCurrent: 0x7288efbf30c0: ver 3 0 (tinfo 0x7288efb35f20)
+10-23 10:24:03.672  5415  5523 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008cdf
+10-23 10:24:03.672  5415  5523 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008824
+10-23 10:24:03.679  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:03.681  5415  5523 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008a34
+10-23 10:24:03.682  5415  5523 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008073
+10-23 10:24:03.683  5415  5523 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ff
+10-23 10:24:03.850  1647  1668 I ActivityManager: Displayed com.thinkube.feierabendrechner/.MainActivity: +1s186ms
+10-23 10:24:03.850  5405  5405 D AndroidRuntime: Shutting down VM
+10-23 10:24:03.865  5415  5533 I Ads     : This request is sent from a test device.
+10-23 10:24:03.869  5415  5534 D GASS    : Clearcut logging disabled
+10-23 10:24:03.878  1647  1668 I WindowManager: Destroying surface Surface(name=Starting com.thinkube.feierabendrechner) called by com.android.server.wm.WindowStateAnimator.destroySurface:2016 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:882 com.android.server.wm.WindowState.destroyOrSaveSurface:2100 com.android.server.wm.AppWindowToken.destroySurfaces:363 com.android.server.wm.WindowStateAnimator.finishExit:565 com.android.server.wm.WindowStateAnimator.stepAnimationLocked:491 com.android.server.wm.WindowAnimator.updateWindowsLocked:303 com.android.server.wm.WindowAnimator.animateLocked:704 
+10-23 10:24:03.928  1647  1941 D ConnectivityService: requestNetwork for Track default from uid/pid:10078/5415 for NetworkRequest [ id=16, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+10-23 10:24:03.929  1909  1909 D PhoneSwitcherNetworkRequstListener: got request NetworkRequest [ id=16, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ] with score 50
+10-23 10:24:03.930  1647  1728 D WIFI    : got request NetworkRequest [ id=16, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ] with score 50
+10-23 10:24:03.930  1647  1728 D WIFI_UT : got request NetworkRequest [ id=16, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ] with score 50
+10-23 10:24:03.933  5415  5534 W art     : Before Android 4.1, method double java.util.concurrent.ThreadLocalRandom.internalNextDouble(double, double) would have incorrectly overridden the package-private method in java.util.Random
+10-23 10:24:03.933  5415  5534 W art     : Before Android 4.1, method int java.util.concurrent.ThreadLocalRandom.internalNextInt(int, int) would have incorrectly overridden the package-private method in java.util.Random
+10-23 10:24:03.934  5415  5534 W art     : Before Android 4.1, method long java.util.concurrent.ThreadLocalRandom.internalNextLong(long, long) would have incorrectly overridden the package-private method in java.util.Random
+10-23 10:24:03.938  1647  1676 D ConnectivityService: requestNetwork for Track default from uid/pid:10078/5415 for NetworkRequest [ id=17, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+10-23 10:24:03.939  1647  1728 D WIFI    : got request NetworkRequest [ id=17, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ] with score 50
+10-23 10:24:03.939  1647  1728 D WIFI_UT : got request NetworkRequest [ id=17, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ] with score 50
+10-23 10:24:03.939  1909  1909 D PhoneSwitcherNetworkRequstListener: got request NetworkRequest [ id=17, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ] with score 50
+10-23 10:24:03.966  5415  5561 D GASS    : Clearcut logging disabled
+10-23 10:24:03.989  5415  5511 W Ads     : Not retrying to fetch app settings
+10-23 10:24:03.993  5415  5573 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 254730000 but found 202414023
+10-23 10:24:04.002  5415  5420 I art     : Do partial code cache collection, code=49KB, data=61KB
+10-23 10:24:04.002  5415  5420 I art     : After code cache collection, code=49KB, data=61KB
+10-23 10:24:04.002  5415  5420 I art     : Increasing code cache capacity to 256KB
+10-23 10:24:04.108  1647  2261 I WindowManager: Destroying surface Surface(name=com.android.launcher3/com.android.launcher3.Launcher) called by com.android.server.wm.WindowStateAnimator.destroySurface:2016 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:882 com.android.server.wm.WindowState.destroyOrSaveSurface:2100 com.android.server.wm.AppWindowToken.destroySurfaces:363 com.android.server.wm.AppWindowToken.notifyAppStopped:389 com.android.server.wm.WindowManagerService.notifyAppStopped:4463 com.android.server.am.ActivityStack.activityStoppedLocked:1252 com.android.server.am.ActivityManagerService.activityStopped:6903 
+10-23 10:24:04.200  5415  5523 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ff
+10-23 10:24:04.237  5415  5523 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ff
+10-23 10:24:04.449  5415  5415 I Ads     : JS: The jsLoaded GMSG has been sent (https://googleads.g.doubleclick.net/mads/static/sdk/native/sdk-core-v40.html:1102)
+10-23 10:24:04.449  5415  5415 I chromium: [INFO:CONSOLE(1102)] "The jsLoaded GMSG has been sent", source: https://googleads.g.doubleclick.net/mads/static/sdk/native/sdk-core-v40.html (1102)
+10-23 10:24:04.528  5415  5415 I Ads     : JS: The jsLoaded GMSG has been sent (https://googleads.g.doubleclick.net/mads/static/mad/sdk/native/production/sdk-core-v40-impl.js?n=true&lv=sdk_20190107_RC02:1095)
+10-23 10:24:04.528  5415  5415 I chromium: [INFO:CONSOLE(1095)] "The jsLoaded GMSG has been sent", source: https://googleads.g.doubleclick.net/mads/static/mad/sdk/native/production/sdk-core-v40-impl.js?n=true&lv=sdk_20190107_RC02 (1095)
+10-23 10:24:04.588  5415  5515 I Ads     : SDK version: afma-sdk-a-v262180000.262180000.0
+10-23 10:24:04.588  5415  5515 I Ads     : HTTP timeout: 60000 milliseconds.
+10-23 10:24:05.590  5415  5523 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ff
+10-23 10:24:05.606  5415  5523 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ff
+10-23 10:24:06.103  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:06.182  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:06.187  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008a34
+10-23 10:24:06.187  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008073
+10-23 10:24:06.187  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ff
+10-23 10:24:06.303  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:06.305  5415  5415 I Ads     : JS: The jsLoaded GMSG has been sent (https://googleads.g.doubleclick.net/mads/static/sdk/native/sdk-core-v40.html:1102)
+10-23 10:24:06.305  5415  5415 I chromium: [INFO:CONSOLE(1102)] "The jsLoaded GMSG has been sent", source: https://googleads.g.doubleclick.net/mads/static/sdk/native/sdk-core-v40.html (1102)
+10-23 10:24:06.325  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:06.338  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:06.394  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:06.403  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:06.411  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:06.421  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:06.434  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:06.441  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:06.447  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:06.452  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:06.463  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:06.472  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:06.480  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:06.602  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:06.607  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:06.613  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:06.620  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:06.624  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:06.633  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:06.638  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:06.643  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:07.713  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:07.717  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:07.721  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:07.730  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:07.736  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:07.741  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:07.748  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:07.756  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:07.761  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:07.767  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:07.771  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:07.774  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:07.782  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:07.785  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:07.789  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:07.797  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:07.806  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:07.810  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:07.815  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:07.820  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:07.824  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:07.830  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:07.841  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:07.847  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:07.852  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:07.856  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:07.860  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:07.867  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:07.873  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:07.877  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:07.882  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:07.888  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:07.893  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:07.902  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:07.908  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:07.914  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:07.918  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:07.922  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:07.927  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:07.932  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:07.936  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:07.940  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:07.947  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:07.952  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:07.956  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:07.964  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:07.976  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:07.985  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:07.988  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:08.002  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:08.007  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:08.360  5415  5590 D ProfileInstaller: Skipping profile installation for com.thinkube.feierabendrechner
+10-23 10:24:10.880  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:10.884  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:10.888  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:10.898  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:10.905  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:10.910  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:10.917  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:10.922  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:10.926  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:10.932  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:10.939  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:10.944  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:10.951  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:10.955  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:10.959  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:10.969  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:10.976  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:10.984  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:10.990  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.001  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:11.006  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.010  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.019  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:11.024  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.027  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.034  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:11.038  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.043  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.055  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:11.059  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.062  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.070  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:11.075  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.079  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.084  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:11.088  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.097  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.103  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:11.108  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.115  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.123  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:11.127  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.134  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.139  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:11.143  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.152  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.159  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:11.166  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.169  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.174  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:11.180  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.184  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.188  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:11.192  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.199  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.203  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:11.207  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.214  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.224  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:11.227  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.233  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.238  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:11.242  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.247  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.254  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:11.258  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.265  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.274  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:11.279  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.284  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.288  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:11.292  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.298  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.303  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:11.306  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.315  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.319  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:11.323  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.330  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.338  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:11.342  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.348  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.355  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:11.359  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.367  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.376  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:11.383  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.386  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.392  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:11.399  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.403  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.406  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:11.410  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.415  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.420  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:11.424  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.434  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.440  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:11.444  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.451  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.454  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:11.458  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.464  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.469  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:11.473  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.483  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.490  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:11.495  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.502  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.506  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:11.510  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.517  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:11.522  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:11.527  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:12.170  5415  5420 I art     : Do full code cache collection, code=105KB, data=119KB
+10-23 10:24:12.171  5415  5420 I art     : After code cache collection, code=68KB, data=56KB
+10-23 10:24:12.827  5415  5435 W GoogleApiManager: com.google.android.gms.internal.measurement.ca could not execute call because it requires feature (get_storage_info_api, 1).
+10-23 10:24:13.091  2323  5592 I Vision  : Requesting optional module download of ocr.
+10-23 10:24:13.096  2323  5593 I ChimeraConfigurator: Starting update, reason: 4 urgentFeatures: vision.ocr:-1
+10-23 10:24:13.098  2323  5592 I Vision  : Checking for download completion for 267070 -- ocr
+10-23 10:24:15.880  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:15.884  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:15.887  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:15.899  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:15.903  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:15.907  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:15.917  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:15.925  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:15.930  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:15.935  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:15.939  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:15.943  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:15.950  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:15.954  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:15.959  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:15.968  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:15.973  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:15.977  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:15.986  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:15.992  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:15.998  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.003  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.007  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:16.011  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.018  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.022  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:16.026  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.032  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.041  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:16.046  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.051  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.056  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:16.060  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.066  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.072  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:16.076  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.080  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.087  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:16.092  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.099  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.108  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:16.112  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.118  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.121  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:16.126  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.133  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.138  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:16.143  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.150  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.160  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:16.168  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.172  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.176  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:16.184  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.187  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.193  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:16.200  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.204  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.208  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:16.212  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.217  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.223  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:16.227  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.234  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.244  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:16.255  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.259  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.269  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:16.274  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.277  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.285  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:16.290  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.294  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.301  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:16.305  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.309  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.317  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:16.321  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.330  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.335  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:16.339  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.346  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.353  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:16.358  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.363  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.369  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:16.373  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.380  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.387  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:16.391  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.398  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.409  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:16.418  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.422  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.427  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:16.435  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.439  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.443  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:16.451  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.454  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.459  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:16.463  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.469  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.474  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:16.478  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.485  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.494  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:16.502  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.506  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.510  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:16.518  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.520  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:16.524  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:16.528  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:20.880  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:20.883  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:20.887  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:20.897  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:20.904  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:20.907  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:20.915  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:20.925  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:20.933  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:20.936  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:20.940  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:20.943  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:20.949  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:20.954  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:20.959  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:20.965  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:20.970  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:20.974  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:20.982  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:20.990  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:20.993  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.001  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.009  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:21.017  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.021  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.026  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:21.034  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.039  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.051  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:21.054  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.058  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.066  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:21.070  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.074  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.082  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:21.085  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.091  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.103  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:21.107  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.111  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.118  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:21.122  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.126  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.133  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:21.137  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.141  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.147  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:21.153  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.156  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.161  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:21.169  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.175  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.185  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:21.189  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.192  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.200  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:21.204  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.207  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.212  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:21.219  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.223  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.227  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:21.235  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.238  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.244  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:21.252  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.255  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.268  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:21.272  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.275  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.284  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:21.288  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.291  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.298  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:21.302  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.306  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.310  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:21.317  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.321  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.325  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:21.330  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.338  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.350  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:21.354  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.358  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.366  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:21.370  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.373  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.377  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:21.384  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.388  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.392  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:21.400  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.404  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.417  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:21.420  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.424  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.430  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:21.435  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.439  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.444  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:21.452  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.456  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.465  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:21.470  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.473  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.477  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:21.485  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.488  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.502  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:21.506  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.510  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.518  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:21.522  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.525  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:21.534  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:21.539  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:23.102  2323  5598 I Vision  : Requesting optional module download of ocr.
+10-23 10:24:23.102  2323  5598 I Vision  : Checking for download completion for 277074 -- ocr
+10-23 10:24:25.879  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:25.884  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:25.888  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:25.898  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:25.904  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:25.908  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:25.914  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:25.921  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:25.924  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:25.930  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:25.936  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:25.940  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:25.950  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:25.956  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:25.960  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:25.966  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:25.971  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:25.974  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:25.980  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:25.986  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:25.990  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:25.998  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.007  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:26.012  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.021  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.027  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:26.034  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.039  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.044  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:26.052  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.057  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.067  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:26.071  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.075  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.083  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:26.087  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.089  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.096  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:26.102  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.106  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.118  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:26.122  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.125  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.133  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:26.137  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.140  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.149  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:26.153  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.157  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.161  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:26.168  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.172  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.177  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:26.185  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.189  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.201  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:26.205  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.209  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.216  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:26.221  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.225  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.234  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:26.238  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.242  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.250  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:26.253  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.257  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.267  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:26.272  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.276  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.288  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:26.293  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.299  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.303  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:26.306  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.312  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.319  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:26.323  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.329  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.336  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:26.341  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.345  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.353  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:26.357  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.366  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.373  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:26.378  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.383  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.388  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:26.391  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.397  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.403  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:26.407  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.413  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.423  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:26.427  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.433  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.438  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:26.442  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.447  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.454  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:26.458  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.467  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.473  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:26.478  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.483  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.489  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:26.493  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.499  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.505  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:26.510  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.518  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:26.526  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:26.533  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:27.996  5599  5599 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 10:24:27.998  5599  5599 D AndroidRuntime: CheckJNI is OFF
+10-23 10:24:28.019  5599  5599 W art     : Unexpected CPU variant for X86 using defaults: x86_64
+10-23 10:24:28.021  5599  5599 D ICU     : No timezone override file found: /data/local/tmp/misc/zoneinfo/current/icu/icu_tzdata.dat
+10-23 10:24:28.031  5599  5599 E memtrack: Couldn't load memtrack module (No such file or directory)
+10-23 10:24:28.031  5599  5599 E android.os.Debug: failed to load memtrack module: -2
+10-23 10:24:28.032  5599  5599 I Radio-JNI: register_android_hardware_Radio DONE
+10-23 10:24:28.036  5599  5599 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-23 10:24:28.068  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:28.073  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:28.077  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:29.068  5599  5599 I AccessibilityNodeInfoDumper: Null child 0/1, parent: android.view.accessibility.AccessibilityNodeInfo@7c7b; boundsInParent: Rect(0, 540 - 320, 640); boundsInScreen: Rect(0, 540 - 320, 640); packageName: com.thinkube.feierabendrechner; className: android.view.View; text: null; error: null; maxTextLength: -1; contentDescription: null; viewIdResName: ; checkable: false; checked: false; focusable: true; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; actions: [AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null]
+10-23 10:24:29.068  5599  5599 W AccessibilityNodeInfoDumper: Fetch time: 3ms
+10-23 10:24:29.069  1647  2227 W WindowManager: Attempted to remove non-existing token: android.os.Binder@f261ff1
+10-23 10:24:29.072  5599  5599 D AndroidRuntime: Shutting down VM
+10-23 10:24:29.096  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:29.110  5415  5458 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+10-23 10:24:29.116  5415  5458 D EGL_emulation: eglMakeCurrent: 0x72890b849480: ver 3 0 (tinfo 0x72890b80c300)
+10-23 10:24:29.141  1314  2025 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+10-23 10:24:29.142  1314  1319 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 819200
+10-23 10:24:29.144  5624  5624 D         : HostConnection::get() New Host Connection established 0x7fed1422d4e0, tid 5624
