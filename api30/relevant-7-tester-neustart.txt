@@ -1,0 +1,121 @@
+10-23 04:29:10.093 28655 28655 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 04:29:10.094 28655 28655 I AndroidRuntime: Using default boot image
+10-23 04:29:10.094 28655 28655 I AndroidRuntime: Leaving lock profiling enabled
+10-23 04:29:10.141 28655 28655 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-23 04:29:10.143 28655 28655 D AndroidRuntime: Shutting down VM
+10-23 04:29:12.644 28679 28679 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 04:29:12.645 28679 28679 I AndroidRuntime: Using default boot image
+10-23 04:29:12.645 28679 28679 I AndroidRuntime: Leaving lock profiling enabled
+10-23 04:29:12.692 28679 28679 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-23 04:29:12.696 28679 28679 D AndroidRuntime: Shutting down VM
+10-23 04:29:18.250   489  1536 I ActivityManager: Force stopping com.thinkube.feierabendrechner appid=10154 user=0: from pid 28704
+10-23 04:29:18.250   489  1536 I ActivityManager: Killing 27289:com.thinkube.feierabendrechner/u0a154 (adj 900): stop com.thinkube.feierabendrechner due to from pid 28704
+10-23 04:29:18.284   489  1536 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.thinkube.feierabendrechner/.MainActivity} from uid 2000
+10-23 04:29:18.314   489   527 I ActivityManager: Start proc 28717:com.thinkube.feierabendrechner/u0a154 for pre-top-activity {com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity}
+10-23 04:29:18.357 28717 28717 I TetheringManager: registerTetheringEventCallback:com.thinkube.feierabendrechner
+10-23 04:29:18.402 28717 28736 W ierabendrechne: ClassLoaderContext classpath size mismatch. expected=15, found=2 (DLC[];PCL[base.apk*4013745869:base.apk!classes2.dex*776455533:base.apk!classes3.dex*1872229072:base.apk!classes4.dex*722511955:base.apk!classes5.dex*2125648653:base.apk!classes6.dex*3704055972:base.apk!classes7.dex*2553099980:base.apk!classes8.dex*305676514:base.apk!classes9.dex*2303613707:base.apk!classes10.dex*2322894105:base.apk!classes11.dex*209803306:base.apk!classes12.dex*622794223:base.apk!classes13.dex*1685772054:base.apk!classes14.dex*3286661156:base.apk!classes15.dex*81041412]{PCL[/system/framework/org.apache.http.legacy.jar*1452144318]#PCL[/system/framework/com.android.location.provider.jar*4177849200]#PCL[/system/framework/com.android.media.remotedisplay.jar*1128910120]#PCL[/system_ext/framework/androidx.window.sidecar.jar*709954415]} | DLC[];PCL[/data/app/~~HLWdXbKF1vwx7A_KIjBkZA==/com.thinkube.feierabendrechner-Q-kQ94RZa62Ng4Y1Qlw3ww==/base.apk*3910732977:/data/app/~~HLWdXbKF1vwx7A_KIjBkZA==/com.thinkube.feierabendrechner-Q-kQ94RZa62Ng4Y1Qlw3ww==/base.apk!classes2.dex*4212119164]{PCL[/system_ext/framework/androidx.window.sidecar.jar*709954415]})
+10-23 04:29:18.403 28717 28736 W ierabendrechne: Found duplicated class when checking oat files: 'Landroid/app/AppComponentFactory;' in /data/app/~~tFs1uc-qkB1VDhWpYFZagA==/com.google.android.gms-iqnCY54JD_A0IHdeV5cDzQ==/split_MeasurementDynamite_installtime.apk!classes2.dex and /data/app/~~HLWdXbKF1vwx7A_KIjBkZA==/com.thinkube.feierabendrechner-Q-kQ94RZa62Ng4Y1Qlw3ww==/base.apk
+10-23 04:29:18.420 28717 28717 W ierabendrechner: type=1400 audit(0.0:699): avc: denied { read } for name="max_map_count" dev="proc" ino=467116 scontext=u:r:untrusted_app:s0:c154,c256,c512,c768 tcontext=u:object_r:proc_max_map_count:s0 tclass=file permissive=0 app=com.thinkube.feierabendrechner
+10-23 04:29:18.460 28717 28750 E flutter : [ERROR:flutter/impeller/toolkit/egl/egl.cc(56)] EGL Error: Success (12288) in ../../../flutter/impeller/toolkit/egl/display.cc:161
+10-23 04:29:18.460 28717 28750 E flutter : [ERROR:flutter/impeller/toolkit/egl/egl.cc(56)] EGL Error: Success (12288) in ../../../flutter/impeller/toolkit/egl/display.cc:161
+10-23 04:29:18.469 28717 28750 I flutter : [IMPORTANT:flutter/shell/platform/android/android_context_gl_impeller.cc(104)] Using the Impeller rendering backend (OpenGLES).
+10-23 04:29:18.478 28717 28757 I PhClient: Shared storage file not found for com.google.android.gms.measurement#com.thinkube.feierabendrechner
+10-23 04:29:18.487 28140 28252 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.thinkube.feierabendrechner
+10-23 04:29:18.492 28717 28756 I FA      :   adb shell setprop debug.firebase.analytics.app com.thinkube.feierabendrechner
+10-23 04:29:19.256 26950 26993 W Finsky  : [3673] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.257 26950 26995 I Finsky  : [3675] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.261 26950 26995 W Finsky  : [3675] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.261 26950 26995 I Finsky  : [3675] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.262 26950 26993 W Finsky  : [3673] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.263 26950 26993 I Finsky  : [3673] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.266 26950 26992 W Finsky  : [3672] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.266 26950 26992 I Finsky  : [3672] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.268 26950 26992 W Finsky  : [3672] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.268 26950 26992 I Finsky  : [3672] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.270 26950 26992 W Finsky  : [3672] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.270 26950 26992 I Finsky  : [3672] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.273 26950 26992 W Finsky  : [3672] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.273 26950 26992 I Finsky  : [3672] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.275 26950 26992 W Finsky  : [3672] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.275 26950 26992 I Finsky  : [3672] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.277 26950 26993 W Finsky  : [3673] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.278 26950 26992 I Finsky  : [3672] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.280 26950 26992 W Finsky  : [3672] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.280 26950 26992 I Finsky  : [3672] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.281 26950 26992 W Finsky  : [3672] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.281 26950 26992 I Finsky  : [3672] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.284 26950 26992 W Finsky  : [3672] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.284 26950 26992 I Finsky  : [3672] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.286 26950 26992 W Finsky  : [3672] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.286 26950 26992 I Finsky  : [3672] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.288 26950 26992 W Finsky  : [3672] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.288 26950 26992 I Finsky  : [3672] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.290 26950 26992 W Finsky  : [3672] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.290 26950 26992 I Finsky  : [3672] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.292 26950 26992 W Finsky  : [3672] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.292 26950 26992 I Finsky  : [3672] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.294 26950 26992 W Finsky  : [3672] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.294 26950 26992 I Finsky  : [3672] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.296 26950 26995 W Finsky  : [3675] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.296 26950 26995 I Finsky  : [3675] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.297 26950 26992 W Finsky  : [3672] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.298 26950 26992 I Finsky  : [3672] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.299 26950 26995 W Finsky  : [3675] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.300 26950 26995 I Finsky  : [3675] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.301 26950 26992 W Finsky  : [3672] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.301 26950 26992 I Finsky  : [3672] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.303 26950 26993 W Finsky  : [3673] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.303 26950 26995 I Finsky  : [3675] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.305 26950 26992 W Finsky  : [3672] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.305 26950 26992 I Finsky  : [3672] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.307 26950 26995 W Finsky  : [3675] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.307 26950 26995 I Finsky  : [3675] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.308 26950 26995 W Finsky  : [3675] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.309 26950 26995 I Finsky  : [3675] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.311 26950 26995 W Finsky  : [3675] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.311 26950 26995 I Finsky  : [3675] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.313 26950 26993 W Finsky  : [3673] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.313 26950 26993 I Finsky  : [3673] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.314 26950 26995 W Finsky  : [3675] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.314 26950 26995 I Finsky  : [3675] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.317 26950 26993 W Finsky  : [3673] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.317 26950 26993 I Finsky  : [3673] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.319 26950 26995 W Finsky  : [3675] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.320 26950 26995 I Finsky  : [3675] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.321 26950 26993 W Finsky  : [3673] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.321 26950 26993 I Finsky  : [3673] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.323 26950 26993 W Finsky  : [3673] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.323 26950 26993 I Finsky  : [3673] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.325 26950 26993 W Finsky  : [3673] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.325 26950 26993 I Finsky  : [3673] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.329 26950 26993 W Finsky  : [3673] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.330 26950 26993 I Finsky  : [3673] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.332 26950 26993 W Finsky  : [3673] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.332 26950 26993 I Finsky  : [3673] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.334 26950 26993 W Finsky  : [3673] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.334 26950 26993 I Finsky  : [3673] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.335 26950 27003 W Finsky  : [3676] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.336 26950 27003 I Finsky  : [3676] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.337 26950 26993 W Finsky  : [3673] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.337 26950 26993 I Finsky  : [3673] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.339 26950 26992 W Finsky  : [3672] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.339 26950 27003 I Finsky  : [3676] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.342 26950 26993 W Finsky  : [3673] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.342 26950 26993 I Finsky  : [3673] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.345 26950 26992 W Finsky  : [3672] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.345 26950 26992 I Finsky  : [3672] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.346 26950 26993 W Finsky  : [3673] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.346 26950 26993 I Finsky  : [3673] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.349 26950 26995 W Finsky  : [3675] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.349 26950 26995 I Finsky  : [3675] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.350 26950 26993 W Finsky  : [3673] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.350 26950 26993 I Finsky  : [3673] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.352 26950 26995 W Finsky  : [3675] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.352 26950 26995 I Finsky  : [3675] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.354 26950 26993 W Finsky  : [3673] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.354 26950 26993 I Finsky  : [3673] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.779   489   525 D ArtManagerInternalImpl: /data/misc/iorapd/com.thinkube.feierabendrechner/1/com.thinkube.feierabendrechner.MainActivity/compiled_traces/compiled_trace.pb doesn't exist
+10-23 04:29:19.790   489   525 I ActivityTaskManager: Displayed com.thinkube.feierabendrechner/.MainActivity: +1s485ms
+10-23 04:29:19.790   489   525 I ActivityTaskManager: Fully drawn com.thinkube.feierabendrechner/.MainActivity: +1s485ms
+10-23 04:29:23.313   405 28713 I iorapd  : Perfetto TraceBuffer saved to file: /data/misc/iorapd/com.thinkube.feierabendrechner/1/com.thinkube.feierabendrechner.MainActivity/raw_traces/1792751363313126883.perfetto_trace.pb
+10-23 04:29:24.089 28717 28779 D ProfileInstaller: Skipping profile installation for com.thinkube.feierabendrechner

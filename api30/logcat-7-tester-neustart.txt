@@ -1,0 +1,513 @@
+--------- beginning of main
+10-23 04:29:10.093 28655 28655 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 04:29:10.094 28655 28655 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
+10-23 04:29:10.094 28655 28655 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
+10-23 04:29:10.094 28655 28655 I AndroidRuntime: Using default boot image
+10-23 04:29:10.094 28655 28655 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
+10-23 04:29:10.094 28655 28655 I AndroidRuntime: Leaving lock profiling enabled
+10-23 04:29:10.094 28655 28655 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
+10-23 04:29:10.088 28655 28655 W app_process: type=1400 audit(0.0:690): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8253 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+10-23 04:29:10.088 28655 28655 I chatty  : uid=2000(shell) app_process identical 2 lines
+10-23 04:29:10.088 28655 28655 W app_process: type=1400 audit(0.0:693): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8253 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+10-23 04:29:10.129 28655 28655 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+10-23 04:29:10.129 28655 28655 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+10-23 04:29:10.132 28655 28655 W app_process: Unexpected CPU variant for X86 using defaults: x86_64
+10-23 04:29:10.133 28655 28655 I app_process: The ClassLoaderContext is a special shared library.
+10-23 04:29:10.139 28655 28655 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+10-23 04:29:10.141 28655 28655 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-23 04:29:10.143 28655 28655 D AndroidRuntime: Shutting down VM
+10-23 04:29:10.145   299   338 D goldfish-address-space: claimShared: Ask to claim region [0x3ffcf5000 0x3ffd75000]
+10-23 04:29:10.151   489  1052 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+10-23 04:29:10.151   489  1052 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+10-23 04:29:10.151   489  1052 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+10-23 04:29:10.151   489  1052 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+10-23 04:29:10.151   489  1052 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+10-23 04:29:10.151   489  1052 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+10-23 04:29:10.151   489  1052 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+10-23 04:29:10.151   489  1052 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+10-23 04:29:10.151   489  1052 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+10-23 04:29:10.151   489  1052 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+10-23 04:29:10.151   489  1052 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+10-23 04:29:10.151   489  1052 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+10-23 04:29:10.151   489  1052 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+10-23 04:29:10.151   489  1052 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+10-23 04:29:10.151   489  1052 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+10-23 04:29:10.151   489  1052 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+10-23 04:29:10.151   489  1052 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+10-23 04:29:10.151   489  1052 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+10-23 04:29:10.151   489  1052 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+10-23 04:29:10.151   489  1052 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+10-23 04:29:10.159 28140 28140 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+10-23 04:29:10.159 28140 28140 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+10-23 04:29:10.175 27183 27267 D HostConnection: HostConnection::get() New Host Connection established 0x701ce00785d0, tid 27267
+10-23 04:29:10.185 27183 27267 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+10-23 04:29:10.186   299   338 D goldfish-address-space: claimShared: Ask to claim region [0x3ffd75000 0x3ffe3d000]
+10-23 04:29:10.187 27183 27267 D EGL_emulation: eglCreateContext: 0x701cd009de10: maj 3 min 0 rcv 3
+10-23 04:29:10.188 27183 27267 D EGL_emulation: eglMakeCurrent: 0x701cd009de10: ver 3 0 (tinfo 0x701c700efb20) (first time)
+10-23 04:29:10.189   299   338 D goldfish-address-space: claimShared: Ask to claim region [0x3ffe3d000 0x3fff05000]
+10-23 04:29:10.199   299   338 D goldfish-address-space: claimShared: Ask to claim region [0x3fff05000 0x3fffcd000]
+10-23 04:29:10.204   299   338 D goldfish-address-space: claimShared: Ask to claim region [0x3ffaad000 0x3ffb75000]
+10-23 04:29:10.206   299   338 D goldfish-address-space: claimShared: Ask to claim region [0x3ffb75000 0x3ffc3d000]
+10-23 04:29:10.207   299   338 D goldfish-address-space: claimShared: Ask to claim region [0x3fec9c000 0x3fed64000]
+10-23 04:29:10.287 27289 27351 W ierabendrechne: Verification of int j$.util.concurrent.i.hashCode() took 119.515ms (234.28 bytecodes/s) (1808B approximate peak alloc)
+10-23 04:29:10.304 27183 27183 I cohq    : onStart
+10-23 04:29:10.313 27183 27183 I cnzg    : onStart
+--------- beginning of system
+10-23 04:29:10.143   489   518 E RemoteAugmentedAutofillService: Bad service name for flags 1048704: com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiAugmentedAutofillService
+10-23 04:29:10.314   489  1642 D ConnectivityService: requestNetwork for uid/pid:10105/27183 NetworkRequest [ TRACK_DEFAULT id=105, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10105 AdministratorUids: [] RequestorUid: 10105 RequestorPackageName: com.google.android.googlequicksearchbox] ]
+10-23 04:29:10.314   489   634 D ConnectivityService: NetReassign [105 : null → 100]
+10-23 04:29:10.315   489   628 D WifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=105, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10105 AdministratorUids: [] RequestorUid: 10105 RequestorPackageName: com.google.android.googlequicksearchbox] ] with score 60 and providerId 3
+10-23 04:29:10.315   489   628 D UntrustedWifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=105, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10105 AdministratorUids: [] RequestorUid: 10105 RequestorPackageName: com.google.android.googlequicksearchbox] ] with score 60 and providerId 3
+10-23 04:29:10.315  1014  1014 D PhoneSwitcherNetworkRequstListener: got request NetworkRequest [ TRACK_DEFAULT id=105, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10105 AdministratorUids: [] RequestorUid: 10105 RequestorPackageName: com.google.android.googlequicksearchbox] ] with score 60 and providerId 3
+10-23 04:29:10.316 27183 27183 I clvb    : (REDACTED) [%s] onStart()
+10-23 04:29:10.320 27183 27183 W clvb    : Failed RenderableStream callback; SubscriptionCallbacks#onError(Throwable) called.
+10-23 04:29:10.320 27183 27183 W clvb    : clhy: clrv: hbym: INVALID_ARGUMENT: Application credential header not valid. Please fix the client to pass a valid application credential header.
+10-23 04:29:10.320 27183 27183 W clvb    : 	at cljp.c(PG:3)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at cljn.e(PG:305)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at cljh.invokeSuspend(PG:13)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at hdzw.resumeWith(PG:11)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at hemo.x(PG:27)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at heie.resumeWith(PG:13)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at hdzw.resumeWith(PG:36)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at hemo.x(PG:27)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at heie.resumeWith(PG:13)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at hdzw.resumeWith(PG:36)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at hemo.x(PG:27)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at heie.resumeWith(PG:13)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at hdzw.resumeWith(PG:36)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at hemo.x(PG:27)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at heie.resumeWith(PG:13)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at hdzw.resumeWith(PG:36)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at hemo.x(PG:27)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at heie.resumeWith(PG:13)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at hdzw.resumeWith(PG:36)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at hejy.run(PG:115)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at fvsx.run(PG:3)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at domr.run(PG:5)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at ghdu.run(PG:46)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at domd.run(PG:81)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at java.lang.Thread.run(Thread.java:923)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at donw.run(PG:63)
+10-23 04:29:10.320 27183 27183 W clvb    : Caused by: clrv: hbym: INVALID_ARGUMENT: Application credential header not valid. Please fix the client to pass a valid application credential header.
+10-23 04:29:10.320 27183 27183 W clvb    : 	at clqv.invokeSuspend(PG:911)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at hdzw.resumeWith(PG:11)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at hemo.x(PG:27)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at heie.resumeWith(PG:13)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at hdzw.resumeWith(PG:36)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at hemo.x(PG:27)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at heie.resumeWith(PG:13)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at hdzw.resumeWith(PG:36)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at hemo.x(PG:27)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at heie.resumeWith(PG:13)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at hdzw.resumeWith(PG:36)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at hejy.run(PG:107)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at fvsx.run(PG:3)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at fxja.run(PG:17)
+10-23 04:29:10.320 27183 27183 W clvb    : 	... 5 more
+10-23 04:29:10.320 27183 27183 W clvb    : Caused by: hbym: INVALID_ARGUMENT: Application credential header not valid. Please fix the client to pass a valid application credential header.
+10-23 04:29:10.320 27183 27183 W clvb    : 	at hctl.d(PG:41)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at hbxn.d(PG:3)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at gkah.m(PG:97)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at gkah.s(PG:23)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at gkah.d(PG:8)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at gkat.run(PG:9)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at gkav.k(PG:28)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at gkav.d(PG:6)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at gjzx.run(PG:14)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at gjzu.run(PG:54)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at gikx.run(PG:3)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at giky.run(PG:63)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at gija.execute(PG:1)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at gkab.execute(PG:3)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at gikz.execute(PG:33)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at gjzr.execute(PG:11)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at gjzz.d(PG:10)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at fwvt.d(PG:4)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at gkaf.run(PG:181)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at fxjf.run(PG:28)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at gjzu.run(PG:54)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at gikx.run(PG:3)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at giky.run(PG:63)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at gija.execute(PG:1)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at gkab.execute(PG:3)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at gikz.execute(PG:33)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at gjzr.execute(PG:11)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at gihf.d(PG:1)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at gihf.j(PG:95)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at gihf.m(PG:15)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at hevf.a(PG:15)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at heku.b(PG:3)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at helj.z(PG:75)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at helj.f(PG:46)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at helj.G(PG:6)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at heie.resumeWith(PG:5)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at hdzw.resumeWith(PG:36)
+10-23 04:29:10.320 27183 27183 W clvb    : 	at hejy.run(PG:115)
+10-23 04:29:10.320 27183 27183 W clvb    : 	... 7 more
+10-23 04:29:10.320 27183 27183 I clwz    : (REDACTED) Clearing batch update data for stream %s
+10-23 04:29:10.320 27183 27183 I clwz    : (REDACTED) Removed set %s for stream %s
+10-23 04:29:10.327  1014  1014 D Telephony: isEmergencyPreferredAccount: subId=1, activeData=1
+10-23 04:29:10.327  1014  1014 D Telephony: isEmergencyPreferredAccount: Device does not require preference.
+10-23 04:29:10.328 27183 27183 E NetworkErrorMessage: (REDACTED) Invalid connectivity state: %s
+10-23 04:29:10.328 27183 27183 I cohq    : onResume
+10-23 04:29:10.329 27183 27183 W eflk    : missing event name
+10-23 04:29:10.329 27183 27183 I cnzg    : onResume
+10-23 04:29:10.331   489   520 I ActivityManager: Killing 7078:com.android.vending:quick_launch/u0a108 (adj 975): empty #17
+10-23 04:29:10.332   696   696 V KeyguardUpdateMonitor: onSubscriptionInfoChanged()
+10-23 04:29:10.335   696   696 V KeyguardUpdateMonitor: SubInfo:{id=1 iccId=890141032[****] simSlotIndex=0 carrierId=1 displayName=T-Mobile carrierName=T-Mobile nameSource=3 iconTint=-16746133 number=[****] dataRoaming=0 iconBitmap=android.graphics.Bitmap@67bf8d1 mcc=310 mnc=260 countryIso=us isEmbedded=false nativeAccessRules=null cardString=890141032[****] cardId=-1 isOpportunistic=false groupUUID=null isGroupDisabled=false profileClass=-1 ehplmns=null hplmns=null subscriptionType=0 groupOwner=null carrierConfigAccessRules=null areUiccApplicationsEnabled=true}
+10-23 04:29:10.339   278   278 I Zygote  : Process 7078 exited due to signal 9 (Killed)
+10-23 04:29:10.358   489   528 I libprocessgroup: Successfully killed process cgroup uid 10108 pid 7078 in 25ms
+10-23 04:29:10.369 27289 27289 W BillingBroadcastManager: Receiver is not registered.
+10-23 04:29:10.369 27289 27289 W BillingBroadcastManager: Receiver is not registered.
+10-23 04:29:10.375 28140 28234 I FontLog : (REDACTED) Received query %s, URI %s
+10-23 04:29:10.377   358   358 E Layer   : [Surface(name=Task=1)/@0x7ced4b5 - animation-leash#0] No local sync point found
+10-23 04:29:10.377   358   358 E Layer   : [Surface(name=Task=1)/@0x7ced4b5 - animation-leash#0] No local sync point found
+10-23 04:29:10.377   358   358 E Layer   : [Surface(name=Task=11)/@0xde2581b - animation-leash#0] No local sync point found
+10-23 04:29:10.377   358   358 E Layer   : [Surface(name=Task=11)/@0xde2581b - animation-leash#0] No local sync point found
+10-23 04:29:10.386 27289 27289 D HostConnection: HostConnection::get() New Host Connection established 0x701ce0084d50, tid 27289
+10-23 04:29:10.390 28140 28256 I FontLog : (REDACTED) Updating from directory version %d to %d from disk
+10-23 04:29:10.391 27289 27289 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+10-23 04:29:10.392 28140 28234 I FontLog : (REDACTED) Query [%s] resolved to %s
+10-23 04:29:10.398 28140 28234 I FontLog : (REDACTED) Font PFD returned from cache for %s
+10-23 04:29:10.398 28140 28234 I FontLog : (REDACTED) Fetch %s end status %s
+10-23 04:29:10.399 28140 28255 I FontLog : (REDACTED) Using directory in FlatBuffer format
+10-23 04:29:10.401 28140 28158 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+10-23 04:29:10.407 28140 28158 I FontLog : (REDACTED) Received query %s, URI %s
+10-23 04:29:10.407 28140 28158 I FontLog : (REDACTED) Query [%s] resolved to %s
+10-23 04:29:10.409 28140 28158 I FontLog : (REDACTED) Font PFD returned from cache for %s
+10-23 04:29:10.409 28140 28158 I FontLog : (REDACTED) Fetch %s end status %s
+10-23 04:29:10.416 28140 28158 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+10-23 04:29:10.420 27183 27183 W View    : requestLayout() improperly called by android.widget.FrameLayout{616f53f V.E...... ......ID 0,0-320,112} during layout: running second layout pass
+10-23 04:29:10.717   696   696 V ShadeControllerImpl: NotificationShadeWindow: com.android.systemui.statusbar.phone.NotificationShadeWindowView{187b65b I.E...... ......ID 0,0-320,640} canPanelBeCollapsed(): false
+10-23 04:29:12.352 27289 27354 I FA      : Application backgrounded at: timestamp_millis: 1792751350316
+10-23 04:29:12.644 28679 28679 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 04:29:12.645 28679 28679 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
+10-23 04:29:12.645 28679 28679 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
+10-23 04:29:12.645 28679 28679 I AndroidRuntime: Using default boot image
+10-23 04:29:12.645 28679 28679 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
+10-23 04:29:12.645 28679 28679 I AndroidRuntime: Leaving lock profiling enabled
+10-23 04:29:12.645 28679 28679 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
+10-23 04:29:12.640 28679 28679 W app_process: type=1400 audit(0.0:694): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8253 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+10-23 04:29:12.640 28679 28679 I chatty  : uid=2000(shell) app_process identical 2 lines
+10-23 04:29:12.640 28679 28679 W app_process: type=1400 audit(0.0:697): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8253 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+10-23 04:29:12.680 28679 28679 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+10-23 04:29:12.681 28679 28679 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+10-23 04:29:12.683 28679 28679 W app_process: Unexpected CPU variant for X86 using defaults: x86_64
+10-23 04:29:12.684 28679 28679 I app_process: The ClassLoaderContext is a special shared library.
+10-23 04:29:12.690 28679 28679 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+10-23 04:29:12.692 28679 28679 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-23 04:29:12.695   696   696 V ShadeControllerImpl: NotificationShadeWindow: com.android.systemui.statusbar.phone.NotificationShadeWindowView{187b65b I.E...... ......ID 0,0-320,640} canPanelBeCollapsed(): false
+10-23 04:29:12.696 28679 28679 D AndroidRuntime: Shutting down VM
+10-23 04:29:12.696   489   518 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000100 cmp=com.google.android.apps.nexuslauncher/.NexusLauncherActivity (has extras)} from uid 0
+10-23 04:29:12.697   489   520 D EventSequenceValidator: inc AccIntentStartedEvents to 2
+10-23 04:29:12.701   489   520 D EventSequenceValidator: dec AccIntentStartedEvents to 1
+10-23 04:29:12.702   696   696 V ShadeControllerImpl: NotificationShadeWindow: com.android.systemui.statusbar.phone.NotificationShadeWindowView{187b65b I.E...... ......ID 0,0-320,640} canPanelBeCollapsed(): false
+10-23 04:29:15.380  1350  1405 I PeriodicStatsRunner: PeriodicStatsRunner.call():180 call()
+10-23 04:29:15.380  1350  1405 I PeriodicStatsRunner: PeriodicStatsRunner.call():184 No submit PeriodicStats since input started.
+10-23 04:29:15.440 28140 28140 W ThreadPoolForeg: type=1400 audit(0.0:698): avc: denied { write } for name="traced_producer" dev="tmpfs" ino=11875 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:traced_producer_socket:s0 tclass=sock_file permissive=0 app=com.google.android.gms
+10-23 04:29:17.607   489  1536 D WifiNl80211Manager: Scan result ready event
+10-23 04:29:17.607   489  1536 D WifiNative: Scan result ready event
+10-23 04:29:18.159   299   338 D goldfish-address-space: claimShared: Ask to claim region [0x3fed64000 0x3fee2c000]
+10-23 04:29:18.163   160   160 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+10-23 04:29:18.163 28700 28700 I Gralloc4: mapper 4.x is not supported
+10-23 04:29:18.166 28700 28700 D HostConnection: createUnique: call
+10-23 04:29:18.169 28700 28700 D HostConnection: HostConnection::get() New Host Connection established 0x73b181009850, tid 28700
+10-23 04:29:18.169 28700 28700 D goldfish-address-space: allocate: Ask for block of size 0x100
+10-23 04:29:18.169 28700 28700 D goldfish-address-space: allocate: ioctl allocate returned offset 0x3f9ffc000 size 0x2000
+10-23 04:29:18.181 28700 28700 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+10-23 04:29:18.250   489  1536 I ActivityManager: Force stopping com.thinkube.feierabendrechner appid=10154 user=0: from pid 28704
+10-23 04:29:18.250   489  1536 I ActivityManager: Killing 27289:com.thinkube.feierabendrechner/u0a154 (adj 900): stop com.thinkube.feierabendrechner due to from pid 28704
+10-23 04:29:18.255 28140 28140 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+10-23 04:29:18.258  1014  1014 D CarrierSvcBindHelper: No carrier app for: 0
+10-23 04:29:18.259 28704 28706 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+10-23 04:29:18.269   489   520 W ActivityManager: setHasOverlayUi called on unknown pid: 27289
+10-23 04:29:18.269   278   278 I Zygote  : Process 27289 exited due to signal 9 (Killed)
+10-23 04:29:18.284   489  1536 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.thinkube.feierabendrechner/.MainActivity} from uid 2000
+10-23 04:29:18.285   489   520 D EventSequenceValidator: inc AccIntentStartedEvents to 2
+10-23 04:29:18.288   489   520 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10154; state: DISABLED
+10-23 04:29:18.289   489   527 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10154; state: ENABLED
+10-23 04:29:18.298   489   528 I libprocessgroup: Successfully killed process cgroup uid 10154 pid 27289 in 47ms
+10-23 04:29:18.301   299   338 D goldfish-address-space: claimShared: Ask to claim region [0x3fed64000 0x3fee2c000]
+10-23 04:29:18.303   394   394 I perfetto: ing_service_impl.cc:758 Configured tracing session 8, #sources:1, duration:5000 ms, #buffers:1, total buffer size:4096 KB, total sessions:1, uid:1071 session name: ""
+10-23 04:29:18.303   393   393 I perfetto: probes_producer.cc:230  Ftrace setup (target_buf=8)
+10-23 04:29:18.309   278   278 D Zygote  : Forked child process 28717
+10-23 04:29:18.314   489   527 I ActivityManager: Start proc 28717:com.thinkube.feierabendrechner/u0a154 for pre-top-activity {com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity}
+10-23 04:29:18.323   393   393 I perfetto: ftrace_procfs.cc:176    enabled ftrace
+10-23 04:29:18.325 28717 28717 W ierabendrechne: Unexpected CPU variant for X86 using defaults: x86_64
+10-23 04:29:18.327 28717 28717 E ierabendrechne: Not starting debugger since process cannot load the jdwp agent.
+10-23 04:29:18.333   489  2128 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+10-23 04:29:18.333   489  2128 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+10-23 04:29:18.333   489  2128 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+10-23 04:29:18.333   489  2128 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+10-23 04:29:18.333   489  2128 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+10-23 04:29:18.333   489  2128 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+10-23 04:29:18.333   489  2128 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+10-23 04:29:18.333   489  2128 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+10-23 04:29:18.333   489  2128 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+10-23 04:29:18.333   489  2128 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+10-23 04:29:18.333   489  2128 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+10-23 04:29:18.333   489  2128 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+10-23 04:29:18.333   489  2128 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+10-23 04:29:18.333   489  2128 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+10-23 04:29:18.333   489  2128 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+10-23 04:29:18.333   489  2128 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+10-23 04:29:18.333   489  2128 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+10-23 04:29:18.333   489  2128 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+10-23 04:29:18.333   489  2128 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+10-23 04:29:18.333   489  2128 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+10-23 04:29:18.338 28717 28717 I ierabendrechne: The ClassLoaderContext is a special shared library.
+10-23 04:29:18.342 28717 28717 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-23 04:29:18.342 28717 28717 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-23 04:29:18.350 28717 28717 I FirebaseApp: Device unlocked: initializing all Firebase APIs for app [DEFAULT]
+10-23 04:29:18.353 28717 28717 I FirebaseInitProvider: FirebaseApp initialization successful
+10-23 04:29:18.355 28717 28717 D WM-WrkMgrInitializer: Initializing WorkManager with default configuration.
+10-23 04:29:18.357 28717 28717 I TetheringManager: registerTetheringEventCallback:com.thinkube.feierabendrechner
+10-23 04:29:18.374 28717 28743 D libEGL  : loaded /vendor/lib64/egl/libEGL_emulation.so
+10-23 04:29:18.374 28717 28743 D libEGL  : loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+10-23 04:29:18.380 28717 28743 D libEGL  : loaded /vendor/lib64/egl/libGLESv2_emulation.so
+10-23 04:29:18.386 28717 28736 W ierabendrechne: ClassLoaderContext classpath size mismatch. expected=15, found=0 (DLC[];PCL[base.apk*4013745869:base.apk!classes2.dex*776455533:base.apk!classes3.dex*1872229072:base.apk!classes4.dex*722511955:base.apk!classes5.dex*2125648653:base.apk!classes6.dex*3704055972:base.apk!classes7.dex*2553099980:base.apk!classes8.dex*305676514:base.apk!classes9.dex*2303613707:base.apk!classes10.dex*2322894105:base.apk!classes11.dex*209803306:base.apk!classes12.dex*622794223:base.apk!classes13.dex*1685772054:base.apk!classes14.dex*3286661156:base.apk!classes15.dex*81041412]{PCL[/system/framework/org.apache.http.legacy.jar*1452144318]#PCL[/system/framework/com.android.location.provider.jar*4177849200]#PCL[/system/framework/com.android.media.remotedisplay.jar*1128910120]#PCL[/system_ext/framework/androidx.window.sidecar.jar*709954415]} | DLC[];PCL[])
+10-23 04:29:18.386 28717 28736 I DynamiteModule: Considering local module com.google.android.gms.measurement.dynamite:185 and remote module com.google.android.gms.measurement.dynamite:216
+10-23 04:29:18.386 28717 28736 I DynamiteModule: Selected remote version of com.google.android.gms.measurement.dynamite, version >= 216
+10-23 04:29:18.387 28717 28736 V DynamiteModule: Dynamite loader version >= 2, using loadModule2NoCrashUtils
+10-23 04:29:18.389 28717 28736 W System  : ClassLoader referenced unknown path: 
+10-23 04:29:18.391 27183 27183 I cohq    : onPause
+10-23 04:29:18.391 27183 27183 I cnzg    : onPause
+10-23 04:29:18.392 27183 27183 W eflk    : measuring already stopped.
+10-23 04:29:18.401 28717 28749 D skia    : [SkFontMgr Android Parser] '/product/etc/fonts_customization.xml' could not be opened
+10-23 04:29:18.402 28717 28736 W ierabendrechne: ClassLoaderContext classpath size mismatch. expected=15, found=2 (DLC[];PCL[base.apk*4013745869:base.apk!classes2.dex*776455533:base.apk!classes3.dex*1872229072:base.apk!classes4.dex*722511955:base.apk!classes5.dex*2125648653:base.apk!classes6.dex*3704055972:base.apk!classes7.dex*2553099980:base.apk!classes8.dex*305676514:base.apk!classes9.dex*2303613707:base.apk!classes10.dex*2322894105:base.apk!classes11.dex*209803306:base.apk!classes12.dex*622794223:base.apk!classes13.dex*1685772054:base.apk!classes14.dex*3286661156:base.apk!classes15.dex*81041412]{PCL[/system/framework/org.apache.http.legacy.jar*1452144318]#PCL[/system/framework/com.android.location.provider.jar*4177849200]#PCL[/system/framework/com.android.media.remotedisplay.jar*1128910120]#PCL[/system_ext/framework/androidx.window.sidecar.jar*709954415]} | DLC[];PCL[/data/app/~~HLWdXbKF1vwx7A_KIjBkZA==/com.thinkube.feierabendrechner-Q-kQ94RZa62Ng4Y1Qlw3ww==/base.apk*3910732977:/data/app/~~HLWdXbKF1vwx7A_KIjBkZA==/com.thinkube.feierabendrechner-Q-kQ94RZa62Ng4Y1Qlw3ww==/base.apk!classes2.dex*4212119164]{PCL[/system_ext/framework/androidx.window.sidecar.jar*709954415]})
+10-23 04:29:18.403 28717 28736 W ierabendrechne: Found duplicate classes, falling back to extracting from APK : /data/app/~~tFs1uc-qkB1VDhWpYFZagA==/com.google.android.gms-iqnCY54JD_A0IHdeV5cDzQ==/split_MeasurementDynamite_installtime.apk
+10-23 04:29:18.403 28717 28736 W ierabendrechne: NOTE: This wastes RAM and hurts startup performance.
+10-23 04:29:18.403 28717 28736 W ierabendrechne: Found duplicated class when checking oat files: 'Landroid/app/AppComponentFactory;' in /data/app/~~tFs1uc-qkB1VDhWpYFZagA==/com.google.android.gms-iqnCY54JD_A0IHdeV5cDzQ==/split_MeasurementDynamite_installtime.apk!classes2.dex and /data/app/~~HLWdXbKF1vwx7A_KIjBkZA==/com.thinkube.feierabendrechner-Q-kQ94RZa62Ng4Y1Qlw3ww==/base.apk
+10-23 04:29:18.404 28717 28717 W ierabendrechne: Accessing hidden method Landroid/view/SurfaceControl$Builder;->setHidden(Z)Landroid/view/SurfaceControl$Builder; (blacklist, linking, denied)
+10-23 04:29:18.420 28717 28717 W ierabendrechner: type=1400 audit(0.0:699): avc: denied { read } for name="max_map_count" dev="proc" ino=467116 scontext=u:r:untrusted_app:s0:c154,c256,c512,c768 tcontext=u:object_r:proc_max_map_count:s0 tclass=file permissive=0 app=com.thinkube.feierabendrechner
+10-23 04:29:18.438 28717 28750 D HostConnection: HostConnection::get() New Host Connection established 0x701ce0073d10, tid 28750
+10-23 04:29:18.446   489  2119 D CompatibilityChangeReporter: Compat change id reported: 136274596; UID 10154; state: ENABLED
+10-23 04:29:18.452 28717 28750 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+10-23 04:29:18.459   160   160 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device manifest.
+10-23 04:29:18.460 28717 28750 E flutter : [ERROR:flutter/impeller/toolkit/egl/egl.cc(56)] EGL Error: Success (12288) in ../../../flutter/impeller/toolkit/egl/display.cc:161
+10-23 04:29:18.460 28717 28750 E flutter : [ERROR:flutter/impeller/toolkit/egl/egl.cc(56)] EGL Error: Success (12288) in ../../../flutter/impeller/toolkit/egl/display.cc:161
+10-23 04:29:18.461 28717 28750 D EGL_emulation: eglCreateContext: 0x701cd009e700: maj 3 min 0 rcv 3
+10-23 04:29:18.462 28717 28750 D EGL_emulation: eglCreateContext: 0x701cd009e9c0: maj 3 min 0 rcv 3
+10-23 04:29:18.463 28717 28750 D EGL_emulation: eglMakeCurrent: 0x701cd009e9c0: ver 3 0 (tinfo 0x701c700f2af0) (first time)
+10-23 04:29:18.469 28717 28750 I flutter : [IMPORTANT:flutter/shell/platform/android/android_context_gl_impeller.cc(104)] Using the Impeller rendering backend (OpenGLES).
+10-23 04:29:18.471 28717 28751 D HostConnection: HostConnection::get() New Host Connection established 0x701ce0077e50, tid 28751
+10-23 04:29:18.473 28717 28751 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+10-23 04:29:18.473 28717 28751 D EGL_emulation: eglMakeCurrent: 0x701cd009e9c0: ver 3 0 (tinfo 0x701c700f4ad0) (first time)
+10-23 04:29:18.478 28717 28757 I PhClient: Shared storage file not found for com.google.android.gms.measurement#com.thinkube.feierabendrechner
+10-23 04:29:18.487 28140 28252 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.thinkube.feierabendrechner
+10-23 04:29:18.490 28717 28756 E ierabendrechne: No package ID 6b found for ID 0x6b0b0013.
+10-23 04:29:18.492 28717 28756 I FA      : App measurement initialized, version: 192007
+10-23 04:29:18.492 28717 28756 I FA      : To enable debug logging run: adb shell setprop log.tag.FA VERBOSE
+10-23 04:29:18.492 28717 28756 I FA      : To enable faster debug mode event logging run:
+10-23 04:29:18.492 28717 28756 I FA      :   adb shell setprop debug.firebase.analytics.app com.thinkube.feierabendrechner
+10-23 04:29:18.507 28140 28140 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+10-23 04:29:18.507 28140 28140 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+10-23 04:29:18.608 28717 28756 I FA      : Tag Manager is not found and thus will not be used
+10-23 04:29:18.618 28717 28741 D HostConnection: HostConnection::get() New Host Connection established 0x701ce0085350, tid 28741
+10-23 04:29:18.620 28717 28741 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+10-23 04:29:18.621 28717 28741 D EGL_emulation: eglCreateContext: 0x701cd009cb80: maj 3 min 0 rcv 3
+10-23 04:29:18.622 28717 28741 D EGL_emulation: eglMakeCurrent: 0x701cd009cb80: ver 3 0 (tinfo 0x701c700ee590) (first time)
+10-23 04:29:18.627   299   338 D goldfish-address-space: claimShared: Ask to claim region [0x3fec9c000 0x3fed64000]
+10-23 04:29:18.630   160   160 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+10-23 04:29:18.630 28717 28750 I Gralloc4: mapper 4.x is not supported
+10-23 04:29:18.631 28717 28750 D HostConnection: createUnique: call
+10-23 04:29:18.631 28717 28750 D HostConnection: HostConnection::get() New Host Connection established 0x701ce0083d90, tid 28750
+10-23 04:29:18.632 28717 28750 D goldfish-address-space: allocate: Ask for block of size 0x100
+10-23 04:29:18.632 28717 28750 D goldfish-address-space: allocate: ioctl allocate returned offset 0x3f9ffc000 size 0x2000
+10-23 04:29:18.640   299   338 D goldfish-address-space: claimShared: Ask to claim region [0x3ffe3d000 0x3fff05000]
+10-23 04:29:18.646 28717 28750 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+10-23 04:29:19.022   299   338 D goldfish-address-space: claimShared: Ask to claim region [0x3fec9c000 0x3fed64000]
+10-23 04:29:19.256 26950 26993 W Finsky  : [3673] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.257 26950 26995 I Finsky  : [3675] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.261 26950 26995 W Finsky  : [3675] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.261 26950 26995 I Finsky  : [3675] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.262 26950 26993 W Finsky  : [3673] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.263 26950 26993 I Finsky  : [3673] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.263 28140 28140 D BoundBrokerSvc: onRebind: Intent { act=com.google.android.gms.common.telemetry.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-23 04:29:19.266 26950 26992 W Finsky  : [3672] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.266 26950 26992 I Finsky  : [3672] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.268 26950 26992 W Finsky  : [3672] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.268 26950 26992 I Finsky  : [3672] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.270 26950 26992 W Finsky  : [3672] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.270 26950 26992 I Finsky  : [3672] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.273 26950 26992 W Finsky  : [3672] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.273 26950 26992 I Finsky  : [3672] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.275 26950 26992 W Finsky  : [3672] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.275 26950 26992 I Finsky  : [3672] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.277 26950 26993 W Finsky  : [3673] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.278 26950 26992 I Finsky  : [3672] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.280 26950 26992 W Finsky  : [3672] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.280 26950 26992 I Finsky  : [3672] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.281 26950 26992 W Finsky  : [3672] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.281 26950 26992 I Finsky  : [3672] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.284 26950 26992 W Finsky  : [3672] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.284 26950 26992 I Finsky  : [3672] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.286 26950 26992 W Finsky  : [3672] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.286 26950 26992 I Finsky  : [3672] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.288 26950 26992 W Finsky  : [3672] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.288 26950 26992 I Finsky  : [3672] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.290 26950 26992 W Finsky  : [3672] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.290 26950 26992 I Finsky  : [3672] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.292 26950 26992 W Finsky  : [3672] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.292 26950 26992 I Finsky  : [3672] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.294 26950 26992 W Finsky  : [3672] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.294 26950 26992 I Finsky  : [3672] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.296 26950 26995 W Finsky  : [3675] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.296 26950 26995 I Finsky  : [3675] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.297 26950 26992 W Finsky  : [3672] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.298 26950 26992 I Finsky  : [3672] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.299 26950 26995 W Finsky  : [3675] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.300 26950 26995 I Finsky  : [3675] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.301 26950 26992 W Finsky  : [3672] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.301 26950 26992 I Finsky  : [3672] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.303 26950 26993 W Finsky  : [3673] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.303 26950 26995 I Finsky  : [3675] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.305 26950 26992 W Finsky  : [3672] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.305 26950 26992 I Finsky  : [3672] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.307 26950 26995 W Finsky  : [3675] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.307 26950 26995 I Finsky  : [3675] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.308 26950 26995 W Finsky  : [3675] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.309 26950 26995 I Finsky  : [3675] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.311 26950 26995 W Finsky  : [3675] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.311 26950 26995 I Finsky  : [3675] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.313 26950 26993 W Finsky  : [3673] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.313 26950 26993 I Finsky  : [3673] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.314 26950 26995 W Finsky  : [3675] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.314 26950 26995 I Finsky  : [3675] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.317 26950 26993 W Finsky  : [3673] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.317 26950 26993 I Finsky  : [3673] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.319 26950 26995 W Finsky  : [3675] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.320 26950 26995 I Finsky  : [3675] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.321 26950 26993 W Finsky  : [3673] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.321 26950 26993 I Finsky  : [3673] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.323 26950 26993 W Finsky  : [3673] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.323 26950 26993 I Finsky  : [3673] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.325 26950 26993 W Finsky  : [3673] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.325 26950 26993 I Finsky  : [3673] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.329 26950 26993 W Finsky  : [3673] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.330 26950 26993 I Finsky  : [3673] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.332 26950 26993 W Finsky  : [3673] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.332 26950 26993 I Finsky  : [3673] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.334 26950 26993 W Finsky  : [3673] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.334 26950 26993 I Finsky  : [3673] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.335 26950 27003 W Finsky  : [3676] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.336 26950 27003 I Finsky  : [3676] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.337 26950 26993 W Finsky  : [3673] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.337 26950 26993 I Finsky  : [3673] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.339 26950 26992 W Finsky  : [3672] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.339 26950 27003 I Finsky  : [3676] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.342 26950 26993 W Finsky  : [3673] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.342 26950 26993 I Finsky  : [3673] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.345 26950 26992 W Finsky  : [3672] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.345 26950 26992 I Finsky  : [3672] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.346 26950 26993 W Finsky  : [3673] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.346 26950 26993 I Finsky  : [3673] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.349 26950 26995 W Finsky  : [3675] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.349 26950 26995 I Finsky  : [3675] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.350 26950 26993 W Finsky  : [3673] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.350 26950 26993 I Finsky  : [3673] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.352 26950 26995 W Finsky  : [3675] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.352 26950 26995 I Finsky  : [3675] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.354 26950 26993 W Finsky  : [3673] com.thinkube.feierabendrechner: No account found.
+10-23 04:29:19.354 26950 26993 I Finsky  : [3673] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+10-23 04:29:19.355 28717 28775 W BillingClient: In-app billing API version 3 is not supported on this device.
+10-23 04:29:19.585   299   338 D goldfish-address-space: claimShared: Ask to claim region [0x3fff05000 0x3fffcd000]
+10-23 04:29:19.766   299   338 D goldfish-address-space: claimShared: Ask to claim region [0x3ffb75000 0x3ffc3d000]
+10-23 04:29:19.771 28709 28711 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+10-23 04:29:19.771   489   520 D EventSequenceValidator: dec AccIntentStartedEvents to 1
+10-23 04:29:19.774 27183 27183 I cohq    : onStop
+10-23 04:29:19.775   489   634 D ConnectivityService: releasing NetworkRequest [ TRACK_DEFAULT id=105, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10105 AdministratorUids: [] RequestorUid: 10105 RequestorPackageName: com.google.android.googlequicksearchbox] ] (release request)
+10-23 04:29:19.779   489   525 D ArtManagerInternalImpl: /data/misc/iorapd/com.thinkube.feierabendrechner/1/com.thinkube.feierabendrechner.MainActivity/compiled_traces/compiled_trace.pb doesn't exist
+10-23 04:29:19.785 27183 27183 I cnzg    : onStop
+10-23 04:29:19.787   696   696 V KeyguardUpdateMonitor: onSubscriptionInfoChanged()
+10-23 04:29:19.788  1014  1014 D Telephony: isEmergencyPreferredAccount: subId=1, activeData=1
+10-23 04:29:19.788  1014  1014 D Telephony: isEmergencyPreferredAccount: Device does not require preference.
+10-23 04:29:19.788   696   696 V KeyguardUpdateMonitor: SubInfo:{id=1 iccId=890141032[****] simSlotIndex=0 carrierId=1 displayName=T-Mobile carrierName=T-Mobile nameSource=3 iconTint=-16746133 number=[****] dataRoaming=0 iconBitmap=android.graphics.Bitmap@5718fa4 mcc=310 mnc=260 countryIso=us isEmbedded=false nativeAccessRules=null cardString=890141032[****] cardId=-1 isOpportunistic=false groupUUID=null isGroupDisabled=false profileClass=-1 ehplmns=null hplmns=null subscriptionType=0 groupOwner=null carrierConfigAccessRules=null areUiccApplicationsEnabled=true}
+10-23 04:29:19.790   489   525 I ActivityTaskManager: Displayed com.thinkube.feierabendrechner/.MainActivity: +1s485ms
+10-23 04:29:19.790   489   525 I ActivityTaskManager: Fully drawn com.thinkube.feierabendrechner/.MainActivity: +1s485ms
+10-23 04:29:19.806   299   338 D goldfish-address-space: claimShared: Ask to claim region [0x3fee2c000 0x3feef4000]
+10-23 04:29:21.252  1717 27468 I Dialer  : OmtpVvmCarrierCfgHlpr - OmtpEvent:CONFIG_STATUS_SMS_TIME_OUT
+10-23 04:29:21.253  1717  1717 I Dialer  : RetryPolicy - Retry limit for com.android.voicemail.impl.ActivationTask@46fbd04 reached
+10-23 04:29:21.253  1717  1717 I Dialer  : RetryPolicy - committing deferred status: configuration_state=4
+10-23 04:29:21.261  6778 27162 I VoicemailNotifier: receivers for android.intent.action.PROVIDER_CHANGED :[]
+10-23 04:29:21.261  1717  1717 I Dialer  : VvmTaskExecutor - no more tasks, stopping service if no task are added in 5000 millis
+10-23 04:29:23.308   393   393 I perfetto: probes_producer.cc:329  Producer stop (id=8)
+10-23 04:29:23.309   393   393 I perfetto: ftrace_procfs.cc:183    disabled ftrace
+10-23 04:29:23.310   394   394 I perfetto: ng_service_impl.cc:1948 Tracing session 8 ended, total sessions:0
+10-23 04:29:23.313   405 28713 I iorapd  : Perfetto TraceBuffer saved to file: /data/misc/iorapd/com.thinkube.feierabendrechner/1/com.thinkube.feierabendrechner.MainActivity/raw_traces/1792751363313126883.perfetto_trace.pb
+10-23 04:29:23.501  8856  8856 D GH.SharedServiceConnect: unbind() [foregroundBound:true, bound:true]
+10-23 04:29:23.502  8856  8856 D GH.CarClientManager: unregistered listener cfr@6fa67ec
+10-23 04:29:23.502  8856  8856 D GH.HatsManager: Stopping HatsManager.
+10-23 04:29:23.502  8856  8856 D GH.RatingPromptManager: Stopping RatingPromptManager.
+10-23 04:29:23.502  8856  8856 D GH.AutoLaunchPromptMgr: Stopping AutoLaunchPromptManager.
+10-23 04:29:23.502  8856  8856 D GH.FeedbackNotifManager: Stopping FeedbackNotificationManager.
+10-23 04:29:23.502  8856  8856 D GH.CarClientManager: stop
+10-23 04:29:23.502  8856  8856 D GH.CarClientManager: disconnect and reset
+10-23 04:29:23.502  8856  8856 I CAR.TOKEN: Disconnecting com.google.android.gms.car.api.impl.GearheadCarClientToken@cf3e7c9 (cx attempt: 611).
+10-23 04:29:23.503  8856  8856 D CAR.CLIENT: tearDown() com.google.android.gms.car.api.impl.CarClientImpl@d4b198f
+10-23 04:29:23.503  8856  8856 D CAR.CLIENT: tearDownProjectionSessionState() com.google.android.gms.car.api.impl.CarClientImpl@d4b198f
+10-23 04:29:23.503  8856  8856 D CAR.CLIENT: tearDownCarManagers() com.google.android.gms.car.api.impl.CarClientImpl@d4b198f
+10-23 04:29:23.504  8856  8856 I GH.GhCarClientCtor: Disconnecting GearheadCarClientConnector.
+10-23 04:29:23.504  8856  8856 I GH.GhCarClientCtor: Unbinding service connection.
+10-23 04:29:23.504 26612 26612 I GH.CAR  : onDestroy
+10-23 04:29:23.504  8856  8856 I CAR.TOKEN: Disconnected com.google.android.gms.car.api.impl.GearheadCarClientToken@cf3e7c9 using class com.google.android.gms.car.api.impl.CarClientImpl@223025551 (cx attempt 611).
+10-23 04:29:23.504 26612 26612 I GH.CAR  : tearDown()
+10-23 04:29:23.504  8856  8856 I GH.SharedService: Shared Service destroyed
+10-23 04:29:23.504 26612 26612 I GH.DelegateMngCarSvc: tearDown()
+10-23 04:29:23.504 26612 27536 I GH.DelegateICarSupplier: Calling release callback on delegate com.google.android.gms.car.DelegatingCarServiceBinder@bed4aa0
+10-23 04:29:23.504 26612 27536 I GH.DelegateICarSupplier: Releasing delegate ICar.
+10-23 04:29:23.505 26612 26612 E ActivityThread: Service com.google.android.apps.auto.carservice.service.impl.GearheadCarStartupService has leaked ServiceConnection bdx@ef3e517 that was originally bound here
+10-23 04:29:23.505 26612 26612 E ActivityThread: android.app.ServiceConnectionLeaked: Service com.google.android.apps.auto.carservice.service.impl.GearheadCarStartupService has leaked ServiceConnection bdx@ef3e517 that was originally bound here
+10-23 04:29:23.505 26612 26612 E ActivityThread: 	at android.app.LoadedApk$ServiceDispatcher.<init>(LoadedApk.java:1811)
+10-23 04:29:23.505 26612 26612 E ActivityThread: 	at android.app.LoadedApk.getServiceDispatcherCommon(LoadedApk.java:1683)
+10-23 04:29:23.505 26612 26612 E ActivityThread: 	at android.app.LoadedApk.getServiceDispatcher(LoadedApk.java:1662)
+10-23 04:29:23.505 26612 26612 E ActivityThread: 	at android.app.ContextImpl.bindServiceCommon(ContextImpl.java:1819)
+10-23 04:29:23.505 26612 26612 E ActivityThread: 	at android.app.ContextImpl.bindService(ContextImpl.java:1749)
+10-23 04:29:23.505 26612 26612 E ActivityThread: 	at android.content.ContextWrapper.bindService(ContextWrapper.java:756)
+10-23 04:29:23.505 26612 26612 E ActivityThread: 	at bdu.run(Unknown Source:1)
+10-23 04:29:23.505 26612 26612 E ActivityThread: 	at android.os.Handler.handleCallback(Handler.java:938)
+10-23 04:29:23.505 26612 26612 E ActivityThread: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+10-23 04:29:23.505 26612 26612 E ActivityThread: 	at android.os.Looper.loop(Looper.java:223)
+10-23 04:29:23.505 26612 26612 E ActivityThread: 	at android.os.HandlerThread.run(HandlerThread.java:67)
+10-23 04:29:23.506 26612 27536 W GH.DelegateICarSupplier: ICar release task failed.
+10-23 04:29:23.506 26612 27536 W GH.DelegateICarSupplier: java.lang.IllegalArgumentException: Service not registered: bdx@ef3e517
+10-23 04:29:23.506 26612 27536 W GH.DelegateICarSupplier: 	at android.app.LoadedApk.forgetServiceDispatcher(LoadedApk.java:1757)
+10-23 04:29:23.506 26612 27536 W GH.DelegateICarSupplier: 	at android.app.ContextImpl.unbindService(ContextImpl.java:1874)
+10-23 04:29:23.506 26612 27536 W GH.DelegateICarSupplier: 	at android.content.ContextWrapper.unbindService(ContextWrapper.java:792)
+10-23 04:29:23.506 26612 27536 W GH.DelegateICarSupplier: 	at bdv.a(Unknown Source:1)
+10-23 04:29:23.506 26612 27536 W GH.DelegateICarSupplier: 	at kwk.a(SourceFile:3)
+10-23 04:29:23.506 26612 27536 W GH.DelegateICarSupplier: 	at kwl.run(SourceFile:23)
+10-23 04:29:23.506 26612 27536 W GH.DelegateICarSupplier: 	at kwz.execute(SourceFile:3)
+10-23 04:29:23.506 26612 27536 W GH.DelegateICarSupplier: 	at kwh.b(SourceFile:77)
+10-23 04:29:23.506 26612 27536 W GH.DelegateICarSupplier: 	at kwh.a(SourceFile:29)
+10-23 04:29:23.506 26612 27536 W GH.DelegateICarSupplier: 	at kxd.a(SourceFile:3)
+10-23 04:29:23.506 26612 27536 W GH.DelegateICarSupplier: 	at kwl.a(SourceFile:7)
+10-23 04:29:23.506 26612 27536 W GH.DelegateICarSupplier: 	at bdt.a(Unknown Source:3)
+10-23 04:29:23.506 26612 27536 W GH.DelegateICarSupplier: 	at beg.a(SourceFile:29)
+10-23 04:29:23.506 26612 27536 W GH.DelegateICarSupplier: 	at bea.a(Unknown Source:4)
+10-23 04:29:23.506 26612 27536 W GH.DelegateICarSupplier: 	at khf.a(SourceFile:3)
+10-23 04:29:23.506 26612 27536 W GH.DelegateICarSupplier: 	at bed.a(SourceFile:8)
+10-23 04:29:23.506 26612 27536 W GH.DelegateICarSupplier: 	at kxh.run(SourceFile:8)
+10-23 04:29:23.506 26612 27536 W GH.DelegateICarSupplier: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+10-23 04:29:23.506 26612 27536 W GH.DelegateICarSupplier: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+10-23 04:29:23.506 26612 27536 W GH.DelegateICarSupplier: 	at java.lang.Thread.run(Thread.java:923)
+10-23 04:29:23.507 26612 27536 I GH.DelegateICarSupplier: Logging successful delegate lifespan (130449 ms). Acquisition (59 ms). [Generation: 1]
+10-23 04:29:24.089 28717 28779 D ProfileInstaller: Skipping profile installation for com.thinkube.feierabendrechner
+10-23 04:29:24.303 28140 28140 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.telemetry.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-23 04:29:24.813  1350  1405 I PeriodicStatsRunner: PeriodicStatsRunner.call():180 call()
+10-23 04:29:24.813  1350  1405 I PeriodicStatsRunner: PeriodicStatsRunner.call():184 No submit PeriodicStats since input started.
+10-23 04:29:26.293  1717  1717 I Dialer  : VvmTaskExecutor - Stopping service
+10-23 04:29:26.293  1717  1717 I Dialer  : VvmTaskExecutor - finishing Job
+10-23 04:29:26.293  1717  1717 I Dialer  : TaskSchedulerJobService - finishing job
+10-23 04:29:26.296  1717  1717 I Dialer  : JobFinishedPoller.run - Job finished
+10-23 04:29:26.296  1717  1717 I Dialer  : VvmTaskExecutor - terminated
+10-23 04:29:29.363 28140 28140 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+10-23 04:29:29.396 27099 27099 W ThreadPoolForeg: type=1400 audit(0.0:700): avc: denied { write } for name="traced_producer" dev="tmpfs" ino=11875 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:traced_producer_socket:s0 tclass=sock_file permissive=0 app=com.google.android.gms
+10-23 04:29:39.817   299   338 D goldfish-address-space: claimShared: Ask to claim region [0x3fed64000 0x3fee2c000]
+10-23 04:29:39.822   160   160 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+10-23 04:29:39.822 28785 28785 I Gralloc4: mapper 4.x is not supported
+10-23 04:29:39.825 28785 28785 D HostConnection: createUnique: call
+10-23 04:29:39.825 28785 28785 D HostConnection: HostConnection::get() New Host Connection established 0x774ce764ef90, tid 28785
+10-23 04:29:39.825 28785 28785 D goldfish-address-space: allocate: Ask for block of size 0x100
+10-23 04:29:39.825 28785 28785 D goldfish-address-space: allocate: ioctl allocate returned offset 0x3f9ffc000 size 0x2000
+10-23 04:29:39.835 28785 28785 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 

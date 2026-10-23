@@ -1,0 +1,258 @@
+--------- beginning of main
+10-23 04:28:21.124 28140 28140 W ThreadPoolForeg: type=1400 audit(0.0:603): avc: denied { write } for name="traced_producer" dev="tmpfs" ino=11875 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:traced_producer_socket:s0 tclass=sock_file permissive=0 app=com.google.android.gms
+10-23 04:28:21.210  1717 27468 I Dialer  : VvmTaskExecutor - executing task com.android.voicemail.impl.ActivationTask@46fbd04
+10-23 04:28:21.210  1717 27468 I Dialer  : PreOMigrationHandler - ComponentInfo{com.android.phone/com.android.services.telephony.TelephonyConnectionService}, ***, UserHandle{0} already migrated
+10-23 04:28:21.222  6778 27162 I VoicemailNotifier: receivers for android.intent.action.PROVIDER_CHANGED :[]
+10-23 04:28:21.223  1717 27468 I Dialer  : VvmActivationTask - VVM content provider configured - vvm_type_cvvm
+10-23 04:28:21.223  1717 27468 I Dialer  : OmtpVvmCarrierCfgHlpr - OmtpEvent:CONFIG_ACTIVATING
+10-23 04:28:21.225  6778 27162 I VoicemailNotifier: receivers for android.intent.action.PROVIDER_CHANGED :[]
+10-23 04:28:22.855 28140 28140 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.contextmanager.service.ContextManagerService.START pkg=com.google.android.gms }
+10-23 04:28:22.856 28140 28140 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.clearcut.sampler.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentDirectBootAwareApiService }
+10-23 04:28:22.857 28140 28140 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.gmscompliance.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentBoundBrokerService }
+10-23 04:28:22.858 28140 28140 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.pseudonymous.service.START pkg=com.google.android.gms }
+10-23 04:28:22.859 28140 28140 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.inappreach.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.GmsApiService }
+10-23 04:28:22.859 28140 28140 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.mobstore.service.START pkg=com.google.android.gms }
+10-23 04:28:22.862 28140 28140 D BoundBrokerSvc: onRebind: Intent { act=com.google.android.gms.clearcut.sampler.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentDirectBootAwareApiService }
+10-23 04:28:22.869 28140 28140 D BoundBrokerSvc: onRebind: Intent { act=com.google.android.gms.inappreach.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.GmsApiService }
+10-23 04:28:23.156 28140 28140 W ThreadPoolForeg: type=1400 audit(0.0:604): avc: denied { write } for name="traced_producer" dev="tmpfs" ino=11875 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:traced_producer_socket:s0 tclass=sock_file permissive=0 app=com.google.android.gms
+10-23 04:28:23.453   489  2129 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+10-23 04:28:23.811   299   338 D goldfish-address-space: claimShared: Ask to claim region [0x3ffaad000 0x3ffb75000]
+10-23 04:28:23.815   160   160 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+10-23 04:28:23.815 28309 28309 I Gralloc4: mapper 4.x is not supported
+10-23 04:28:23.819 28309 28309 D HostConnection: createUnique: call
+10-23 04:28:23.819 28309 28309 D HostConnection: HostConnection::get() New Host Connection established 0x78187adf3350, tid 28309
+10-23 04:28:23.819 28309 28309 D goldfish-address-space: allocate: Ask for block of size 0x100
+10-23 04:28:23.820 28309 28309 D goldfish-address-space: allocate: ioctl allocate returned offset 0x3f9ffc000 size 0x2000
+10-23 04:28:23.830 28309 28309 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+10-23 04:28:23.974 28319 28319 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 04:28:23.976 28319 28319 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
+10-23 04:28:23.976 28319 28319 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
+10-23 04:28:23.976 28319 28319 I AndroidRuntime: Using default boot image
+10-23 04:28:23.976 28319 28319 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
+10-23 04:28:23.976 28319 28319 I AndroidRuntime: Leaving lock profiling enabled
+10-23 04:28:23.976 28319 28319 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
+10-23 04:28:23.972 28319 28319 W app_process: type=1400 audit(0.0:605): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8253 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+10-23 04:28:23.972 28319 28319 I chatty  : uid=2000(shell) app_process identical 2 lines
+10-23 04:28:23.972 28319 28319 W app_process: type=1400 audit(0.0:608): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8253 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+10-23 04:28:24.017 28319 28319 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+10-23 04:28:24.017 28319 28319 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+10-23 04:28:24.020 28319 28319 W app_process: Unexpected CPU variant for X86 using defaults: x86_64
+10-23 04:28:24.021 28319 28319 I app_process: The ClassLoaderContext is a special shared library.
+10-23 04:28:24.021 28319 28319 I app_process: The ClassLoaderContext is a special shared library.
+10-23 04:28:24.027 28319 28319 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+10-23 04:28:24.029 28319 28319 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-23 04:28:24.653 28140 28140 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.nearby.uwb.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentApiServiceNoInstantApps }
+10-23 04:28:24.692 28140 28140 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.findmydevice.spot.service.locationreport.START dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-23 04:28:24.738 28140 28140 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.dtdi.identity.START dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-23 04:28:24.742 28140 28140 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.telemetry.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-23 04:28:25.060 28319 28319 W AccessibilityNodeInfoDumper: Fetch time: 3ms
+--------- beginning of system
+10-23 04:28:25.060   489  2129 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@612c480
+10-23 04:28:25.070 28319 28319 D AndroidRuntime: Shutting down VM
+10-23 04:28:25.555 28336 28336 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 04:28:25.556 28336 28336 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
+10-23 04:28:25.556 28336 28336 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
+10-23 04:28:25.556 28336 28336 I AndroidRuntime: Using default boot image
+10-23 04:28:25.556 28336 28336 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
+10-23 04:28:25.556 28336 28336 I AndroidRuntime: Leaving lock profiling enabled
+10-23 04:28:25.556 28336 28336 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
+10-23 04:28:25.552 28336 28336 W app_process: type=1400 audit(0.0:609): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8253 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+10-23 04:28:25.552 28336 28336 I chatty  : uid=2000(shell) app_process identical 2 lines
+10-23 04:28:25.552 28336 28336 W app_process: type=1400 audit(0.0:612): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8253 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+10-23 04:28:25.593 28336 28336 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+10-23 04:28:25.593 28336 28336 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+10-23 04:28:25.596 28336 28336 W app_process: Unexpected CPU variant for X86 using defaults: x86_64
+10-23 04:28:25.596 28336 28336 I app_process: The ClassLoaderContext is a special shared library.
+10-23 04:28:25.602 28336 28336 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+10-23 04:28:25.605 28336 28336 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-23 04:28:25.905 28336 28336 D AndroidRuntime: Shutting down VM
+10-23 04:28:26.192 28140 28140 W ThreadPoolForeg: type=1400 audit(0.0:613): avc: denied { write } for name="traced_producer" dev="tmpfs" ino=11875 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:traced_producer_socket:s0 tclass=sock_file permissive=0 app=com.google.android.gms
+10-23 04:28:27.392 28351 28351 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 04:28:27.409 28351 28351 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
+10-23 04:28:27.409 28351 28351 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
+10-23 04:28:27.409 28351 28351 I AndroidRuntime: Using default boot image
+10-23 04:28:27.409 28351 28351 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
+10-23 04:28:27.409 28351 28351 I AndroidRuntime: Leaving lock profiling enabled
+10-23 04:28:27.410 28351 28351 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
+10-23 04:28:27.449 28351 28351 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+10-23 04:28:27.449 28351 28351 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+10-23 04:28:27.453 28351 28351 W app_process: Unexpected CPU variant for X86 using defaults: x86_64
+10-23 04:28:27.453 28351 28351 I app_process: The ClassLoaderContext is a special shared library.
+10-23 04:28:27.453 28351 28351 I app_process: The ClassLoaderContext is a special shared library.
+10-23 04:28:27.396 28351 28351 W app_process: type=1400 audit(0.0:614): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8253 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+10-23 04:28:27.471 28351 28351 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+10-23 04:28:27.474 28351 28351 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-23 04:28:27.408 28351 28351 W app_process: type=1400 audit(0.0:615): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8253 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+10-23 04:28:27.408 28351 28351 I chatty  : uid=2000(shell) app_process identical 1 line
+10-23 04:28:27.408 28351 28351 W app_process: type=1400 audit(0.0:617): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8253 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+10-23 04:28:28.526 28351 28351 W AccessibilityNodeInfoDumper: Fetch time: 2ms
+10-23 04:28:28.526   489  1618 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@927bd0a
+10-23 04:28:28.532 28351 28351 D AndroidRuntime: Shutting down VM
+10-23 04:28:29.025 28369 28369 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 04:28:29.026 28369 28369 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
+10-23 04:28:29.026 28369 28369 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
+10-23 04:28:29.026 28369 28369 I AndroidRuntime: Using default boot image
+10-23 04:28:29.026 28369 28369 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
+10-23 04:28:29.026 28369 28369 I AndroidRuntime: Leaving lock profiling enabled
+10-23 04:28:29.026 28369 28369 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
+10-23 04:28:29.020 28369 28369 W app_process: type=1400 audit(0.0:618): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8253 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+10-23 04:28:29.020 28369 28369 I chatty  : uid=2000(shell) app_process identical 2 lines
+10-23 04:28:29.020 28369 28369 W app_process: type=1400 audit(0.0:621): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8253 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+10-23 04:28:29.062 28369 28369 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+10-23 04:28:29.063 28369 28369 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+10-23 04:28:29.066 28369 28369 W app_process: Unexpected CPU variant for X86 using defaults: x86_64
+10-23 04:28:29.066 28369 28369 I app_process: The ClassLoaderContext is a special shared library.
+10-23 04:28:29.072 28369 28369 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+10-23 04:28:29.075 28369 28369 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-23 04:28:29.078 28369 28369 D AndroidRuntime: Shutting down VM
+10-23 04:28:29.079   489  2129 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+10-23 04:28:29.079   489  2129 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+10-23 04:28:29.079   352   352 I android.hardware.vibrator-service.example: Vibrator reporting capabilities
+10-23 04:28:29.080   352   352 I android.hardware.vibrator-service.example: Vibrator off
+10-23 04:28:29.080   352   352 I android.hardware.vibrator-service.example: Vibrator perform
+10-23 04:28:29.080   489  1617 E VibratorService: Failed to issue command to vibrator HAL. Retrying.
+10-23 04:28:29.080   155   155 I servicemanager: Found android.hardware.vibrator.IVibrator/default in device VINTF manifest.
+10-23 04:28:29.080   352   352 I android.hardware.vibrator-service.example: Vibrator perform
+10-23 04:28:29.080   489  1617 E VibratorService: Failed to issue command to vibrator HAL. Retrying.
+10-23 04:28:29.080   155   155 I servicemanager: Found android.hardware.vibrator.IVibrator/default in device VINTF manifest.
+10-23 04:28:29.081   352   352 I android.hardware.vibrator-service.example: Vibrator perform
+10-23 04:28:29.081   352 28383 I android.hardware.vibrator-service.example: Starting perform on another thread
+10-23 04:28:29.086   489  1617 I ActivityTaskManager: START u0 {act=android.content.pm.action.CONFIRM_PIN_APPWIDGET flg=0x10008000 cmp=com.google.android.apps.nexuslauncher/com.android.launcher3.dragndrop.AddItemActivity (has extras)} from uid 1000
+10-23 04:28:29.087   489   520 D EventSequenceValidator: inc AccIntentStartedEvents to 2
+10-23 04:28:29.093   489  1618 W ActivityTaskManager: Tried to set launchTime (0) < mLastActivityLaunchTime (26544)
+10-23 04:28:29.093   489  1618 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+10-23 04:28:29.093   489  1618 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+10-23 04:28:29.093   489  1618 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+10-23 04:28:29.093   489  1618 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+10-23 04:28:29.093   489  1618 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+10-23 04:28:29.093   489  1618 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+10-23 04:28:29.093   489  1618 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+10-23 04:28:29.093   489  1618 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+10-23 04:28:29.093   489  1618 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+10-23 04:28:29.093   489  1618 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+10-23 04:28:29.093   489  1618 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+10-23 04:28:29.093   489  1618 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+10-23 04:28:29.093   489  1618 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+10-23 04:28:29.093   489  1618 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+10-23 04:28:29.093   489  1618 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+10-23 04:28:29.093   489  1618 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+10-23 04:28:29.093   489  1618 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+10-23 04:28:29.093   489  1618 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+10-23 04:28:29.093   489  1618 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+10-23 04:28:29.093   489  1618 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+10-23 04:28:29.135 28140 28140 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+10-23 04:28:29.135 28140 28140 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+10-23 04:28:29.154   299   338 D goldfish-address-space: claimShared: Ask to claim region [0x3ffaad000 0x3ffb45000]
+10-23 04:28:29.156   299   338 D goldfish-address-space: claimShared: Ask to claim region [0x3ffb45000 0x3ffbdd000]
+10-23 04:28:29.165   299   338 D goldfish-address-space: claimShared: Ask to claim region [0x3ffbdd000 0x3ffc75000]
+10-23 04:28:29.173   489   525 D ArtManagerInternalImpl: /data/misc/iorapd/com.google.android.apps.nexuslauncher/821/com.android.launcher3.dragndrop.AddItemActivity/compiled_traces/compiled_trace.pb doesn't exist
+10-23 04:28:29.173   489   525 I ActivityTaskManager: Displayed com.google.android.apps.nexuslauncher/com.android.launcher3.dragndrop.AddItemActivity: +85ms
+10-23 04:28:29.181   489   520 D EventSequenceValidator: dec AccIntentStartedEvents to 1
+10-23 04:28:29.181   352 28383 I android.hardware.vibrator-service.example: Notifying perform complete
+10-23 04:28:29.181   352   352 I android.hardware.vibrator-service.example: Vibrator off
+10-23 04:28:29.189   489  1104 W Binder  : Caught a RuntimeException from the binder stub implementation.
+10-23 04:28:29.189   489  1104 W Binder  : java.lang.IllegalStateException: Can't change activity type once set: { mBounds=Rect(0, 0 - 320, 640) mAppBounds=Rect(0, 0 - 320, 640) mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=standard mAlwaysOnTop=undefined mRotation=ROTATION_0} activityType=home
+10-23 04:28:29.189   489  1104 W Binder  : 	at android.app.WindowConfiguration.setActivityType(WindowConfiguration.java:371)
+10-23 04:28:29.189   489  1104 W Binder  : 	at android.app.WindowConfiguration.setTo(WindowConfiguration.java:385)
+10-23 04:28:29.189   489  1104 W Binder  : 	at android.content.res.Configuration.setTo(Configuration.java:954)
+10-23 04:28:29.189   489  1104 W Binder  : 	at android.util.MergedConfiguration.updateMergedConfig(MergedConfiguration.java:155)
+10-23 04:28:29.189   489  1104 W Binder  : 	at android.util.MergedConfiguration.setGlobalConfiguration(MergedConfiguration.java:108)
+10-23 04:28:29.189   489  1104 W Binder  : 	at com.android.server.wm.ActivityRecord.setLastReportedGlobalConfiguration(ActivityRecord.java:6318)
+10-23 04:28:29.189   489  1104 W Binder  : 	at com.android.server.wm.ActivityStackSupervisor.activityIdleInternal(ActivityStackSupervisor.java:1277)
+10-23 04:28:29.189   489  1104 W Binder  : 	at com.android.server.wm.ActivityTaskManagerService.activityIdle(ActivityTaskManagerService.java:1808)
+10-23 04:28:29.189   489  1104 W Binder  : 	at android.app.IActivityTaskManager$Stub.onTransact(IActivityTaskManager.java:1920)
+10-23 04:28:29.189   489  1104 W Binder  : 	at android.os.Binder.execTransactInternal(Binder.java:1159)
+10-23 04:28:29.189   489  1104 W Binder  : 	at android.os.Binder.execTransact(Binder.java:1123)
+10-23 04:28:29.204 28140 28390 I FA-SVC  : App measurement initialized, version: 264131
+10-23 04:28:29.213   489  1220 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+10-23 04:28:29.316 27099 27099 W ThreadPoolForeg: type=1400 audit(0.0:622): avc: denied { write } for name="traced_producer" dev="tmpfs" ino=11875 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:traced_producer_socket:s0 tclass=sock_file permissive=0 app=com.google.android.gms
+10-23 04:28:30.171 28140 28140 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.presencemanager.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-23 04:28:30.171 28140 28140 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.presencemanager.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-23 04:28:30.173 28140 28140 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.presencemanager.service.INTERNAL_IDENTITY dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-23 04:28:30.173 28140 28140 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.presencemanager.service.INTERNAL_IDENTITY dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentApiService }
+10-23 04:28:30.224 28140 28140 W ThreadPoolForeg: type=1400 audit(0.0:623): avc: denied { write } for name="traced_producer" dev="tmpfs" ino=11875 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:traced_producer_socket:s0 tclass=sock_file permissive=0 app=com.google.android.gms
+10-23 04:28:31.137 27289 27354 I FA      : Application backgrounded at: timestamp_millis: 1792751309135
+10-23 04:28:32.179   489  1104 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+10-23 04:28:32.542   299   338 D goldfish-address-space: claimShared: Ask to claim region [0x3ffc75000 0x3ffd3d000]
+10-23 04:28:32.547   160   160 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+10-23 04:28:32.547 28400 28400 I Gralloc4: mapper 4.x is not supported
+10-23 04:28:32.550 28400 28400 D HostConnection: createUnique: call
+10-23 04:28:32.550 28400 28400 D HostConnection: HostConnection::get() New Host Connection established 0x785f16969c90, tid 28400
+10-23 04:28:32.550 28400 28400 D goldfish-address-space: allocate: Ask for block of size 0x100
+10-23 04:28:32.550 28400 28400 D goldfish-address-space: allocate: ioctl allocate returned offset 0x3f9ffc000 size 0x2000
+10-23 04:28:32.560 28400 28400 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+10-23 04:28:32.624 28402 28402 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 04:28:32.626 28402 28402 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
+10-23 04:28:32.626 28402 28402 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
+10-23 04:28:32.626 28402 28402 I AndroidRuntime: Using default boot image
+10-23 04:28:32.626 28402 28402 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
+10-23 04:28:32.626 28402 28402 I AndroidRuntime: Leaving lock profiling enabled
+10-23 04:28:32.626 28402 28402 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
+10-23 04:28:32.620 28402 28402 W app_process: type=1400 audit(0.0:624): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8253 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+10-23 04:28:32.620 28402 28402 I chatty  : uid=2000(shell) app_process identical 2 lines
+10-23 04:28:32.620 28402 28402 W app_process: type=1400 audit(0.0:627): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8253 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+10-23 04:28:32.662 28402 28402 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+10-23 04:28:32.662 28402 28402 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+10-23 04:28:32.665 28402 28402 W app_process: Unexpected CPU variant for X86 using defaults: x86_64
+10-23 04:28:32.665 28402 28402 I app_process: The ClassLoaderContext is a special shared library.
+10-23 04:28:32.666 28402 28402 I app_process: The ClassLoaderContext is a special shared library.
+10-23 04:28:32.672 28402 28402 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+10-23 04:28:32.674 28402 28402 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-23 04:28:33.690 28402 28402 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@1f41d; boundsInParent: Rect(0, 0 - 288, 0); boundsInScreen: Rect(16, 224 - 304, 224); packageName: com.google.android.apps.nexuslauncher; className: android.view.View; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; viewIdResName: null; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+10-23 04:28:33.690 28402 28402 W AccessibilityNodeInfoDumper: Fetch time: 2ms
+10-23 04:28:33.691   489  1618 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@478c136
+10-23 04:28:33.698 28402 28402 D AndroidRuntime: Shutting down VM
+10-23 04:28:34.187 28420 28420 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 04:28:34.188 28420 28420 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
+10-23 04:28:34.188 28420 28420 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
+10-23 04:28:34.188 28420 28420 I AndroidRuntime: Using default boot image
+10-23 04:28:34.188 28420 28420 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
+10-23 04:28:34.188 28420 28420 I AndroidRuntime: Leaving lock profiling enabled
+10-23 04:28:34.188 28420 28420 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
+10-23 04:28:34.184 28420 28420 W app_process: type=1400 audit(0.0:628): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8253 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+10-23 04:28:34.184 28420 28420 I chatty  : uid=2000(shell) app_process identical 2 lines
+10-23 04:28:34.184 28420 28420 W app_process: type=1400 audit(0.0:631): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8253 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+10-23 04:28:34.223  1350  1405 I PeriodicStatsRunner: PeriodicStatsRunner.call():180 call()
+10-23 04:28:34.223  1350  1405 I PeriodicStatsRunner: PeriodicStatsRunner.call():184 No submit PeriodicStats since input started.
+10-23 04:28:34.224 28420 28420 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+10-23 04:28:34.224 28420 28420 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+10-23 04:28:34.227 28420 28420 W app_process: Unexpected CPU variant for X86 using defaults: x86_64
+10-23 04:28:34.227 28420 28420 I app_process: The ClassLoaderContext is a special shared library.
+10-23 04:28:34.234 28420 28420 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+10-23 04:28:34.236 28420 28420 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+10-23 04:28:34.239 28420 28420 D AndroidRuntime: Shutting down VM
+10-23 04:28:34.253   489  1104 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+10-23 04:28:34.253   489  1104 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+10-23 04:28:34.257   299   338 D goldfish-address-space: claimShared: Ask to claim region [0x3ffc75000 0x3ffcf5000]
+10-23 04:28:34.390   489  1104 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+10-23 04:28:34.390   489  1104 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+10-23 04:28:34.390   489  1104 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+10-23 04:28:34.390   489  1104 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+10-23 04:28:34.390   489  1104 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+10-23 04:28:34.390   489  1104 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+10-23 04:28:34.390   489  1104 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+10-23 04:28:34.390   489  1104 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+10-23 04:28:34.390   489  1104 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+10-23 04:28:34.390   489  1104 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+10-23 04:28:34.390   489  1104 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+10-23 04:28:34.390   489  1104 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+10-23 04:28:34.390   489  1104 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+10-23 04:28:34.390   489  1104 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+10-23 04:28:34.390   489  1104 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+10-23 04:28:34.390   489  1104 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+10-23 04:28:34.390   489  1104 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+10-23 04:28:34.390   489  1104 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+10-23 04:28:34.390   489  1104 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+10-23 04:28:34.390   489  1104 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+10-23 04:28:34.391   489 11946 D HostConnection: HostConnection::get() New Host Connection established 0x701ce007bf90, tid 11946
+10-23 04:28:34.400   489 11946 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+10-23 04:28:34.401   489 11946 D EGL_emulation: eglCreateContext: 0x701cd01495e0: maj 3 min 0 rcv 3
+10-23 04:28:34.402   489   518 W Looper  : Slow dispatch took 148ms android.ui h=com.android.server.am.ActivityManagerService$UiHandler c=null m=31
+10-23 04:28:34.403   489 11946 D EGL_emulation: eglMakeCurrent: 0x701cd01495e0: ver 3 0 (tinfo 0x701c7015d410) (first time)
+10-23 04:28:34.442   489  1104 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+10-23 04:28:34.507   284  5879 W android.hardware.audio.service.ranchu: TinyalsaSink::write:125 pcm_write was late reading frames, dropping 22131 us of audio
+10-23 04:28:34.522   284  5879 I chatty  : uid=1041(audioserver) audio.service.r identical 1 line
+10-23 04:28:34.536   284  5879 W android.hardware.audio.service.ranchu: TinyalsaSink::write:125 pcm_write was late reading frames, dropping 22131 us of audio
+10-23 04:28:34.691 28140 28190 I AggregationService: (REDACTED) Starting finalization task for expired aggregation windows. Total number of expired files: %s
+10-23 04:28:35.256 28140 28140 W ThreadPoolForeg: type=1400 audit(0.0:632): avc: denied { write } for name="traced_producer" dev="tmpfs" ino=11875 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:traced_producer_socket:s0 tclass=sock_file permissive=0 app=com.google.android.gms
+10-23 04:28:37.419   489  2120 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
