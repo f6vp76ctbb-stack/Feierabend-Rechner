@@ -1,0 +1,40 @@
+10-23 10:26:03.717  7548  7548 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 10:26:03.721  7548  7548 I AndroidRuntime: Using default boot image
+10-23 10:26:03.721  7548  7548 I AndroidRuntime: Leaving lock profiling enabled
+10-23 10:26:03.822  7548  7548 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-23 10:26:04.853  7548  7548 D AndroidRuntime: Shutting down VM
+10-23 10:26:08.842  7572  7572 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 10:26:08.846  7572  7572 I AndroidRuntime: Using default boot image
+10-23 10:26:08.846  7572  7572 I AndroidRuntime: Leaving lock profiling enabled
+10-23 10:26:08.951  7572  7572 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-23 10:26:10.008  7572  7572 D AndroidRuntime: Shutting down VM
+10-23 10:26:10.957  7591  7591 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 10:26:10.963  7591  7591 I AndroidRuntime: Using default boot image
+10-23 10:26:10.963  7591  7591 I AndroidRuntime: Leaving lock profiling enabled
+10-23 10:26:11.081  7591  7591 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-23 10:26:12.115  7591  7591 D AndroidRuntime: Shutting down VM
+10-23 10:26:16.132  7619  7619 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 10:26:16.136  7619  7619 I AndroidRuntime: Using default boot image
+10-23 10:26:16.136  7619  7619 I AndroidRuntime: Leaving lock profiling enabled
+10-23 10:26:16.237  7619  7619 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-23 10:26:17.216  6160  6160 D ActivityThread: Package [com.thinkube.feierabendrechner] reported as REPLACED, but missing application info. Assuming REMOVED.
+10-23 10:26:17.217  6160  6160 D ActivityThread: Package [com.thinkube.feierabendrechner] reported as REPLACED, but missing application info. Assuming REMOVED.
+10-23 10:26:17.325  7619  7619 D AndroidRuntime: Shutting down VM
+10-23 10:26:17.414  5827  5833 W gle.android.gms: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~G5yGRGcCS5i7Y2gjWxowdw==/com.thinkube.feierabendrechner-exHGzAKPDwNudi6hKSZo6Q==/base.apk' with 1 weak references
+10-23 10:26:19.670  1175  1182 W s.nexuslauncher: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~G5yGRGcCS5i7Y2gjWxowdw==/com.thinkube.feierabendrechner-exHGzAKPDwNudi6hKSZo6Q==/base.apk' with 1 weak references
+10-23 10:26:21.393  4977  4977 D ActivityThread: Package [com.thinkube.feierabendrechner] reported as REPLACED, but missing application info. Assuming REMOVED.
+10-23 10:26:21.394  4977  4977 D ActivityThread: Package [com.thinkube.feierabendrechner] reported as REPLACED, but missing application info. Assuming REMOVED.
+10-23 10:26:21.394  5098  5098 D ActivityThread: Package [com.thinkube.feierabendrechner] reported as REPLACED, but missing application info. Assuming REMOVED.
+10-23 10:26:21.395  5098  5098 D ActivityThread: Package [com.thinkube.feierabendrechner] reported as REPLACED, but missing application info. Assuming REMOVED.
+10-23 10:26:21.621  7027  7027 I AndroidRuntime: VM exiting with result code 0, cleanup skipped.
+10-23 10:26:21.640  7742  7742 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-23 10:26:21.650  7742  7742 I AndroidRuntime: Using default boot image
+10-23 10:26:21.650  7742  7742 I AndroidRuntime: Leaving lock profiling enabled
+10-23 10:26:21.899  7742  7742 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+10-23 10:26:22.012   895   902 W ndroid.systemui: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~G5yGRGcCS5i7Y2gjWxowdw==/com.thinkube.feierabendrechner-exHGzAKPDwNudi6hKSZo6Q==/base.apk' with 1 weak references
+10-23 10:26:23.174  7742  7742 D AndroidRuntime: Shutting down VM
+10-23 10:26:25.293  6292  6298 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~G5yGRGcCS5i7Y2gjWxowdw==/com.thinkube.feierabendrechner-exHGzAKPDwNudi6hKSZo6Q==/base.apk' with 1 weak references
+10-23 10:26:25.588  2979  2979 D ActivityThread: Package [com.thinkube.feierabendrechner] reported as REPLACED, but missing application info. Assuming REMOVED.
+10-23 10:26:25.589  2979  2979 D ActivityThread: Package [com.thinkube.feierabendrechner] reported as REPLACED, but missing application info. Assuming REMOVED.
+10-23 10:26:26.718  4442  4442 D ActivityThread: Package [com.thinkube.feierabendrechner] reported as REPLACED, but missing application info. Assuming REMOVED.
+10-23 10:26:26.718  4442  4442 D ActivityThread: Package [com.thinkube.feierabendrechner] reported as REPLACED, but missing application info. Assuming REMOVED.
