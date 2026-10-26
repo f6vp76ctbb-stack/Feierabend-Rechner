@@ -152,8 +152,8 @@ test/                      # Unit- + Widget-Tests (domain/ = 100 % Ziel)
 ## 9. Aktueller Stand
 
 **Produktion 1.0.0 (Android)** — Paket `com.thinkube.feierabendrechner`, Entwickler „Thinkube".
-Geschlossener Test bestanden, Produktionszugang am 22.10.2026; Store-Bundle **vc48** (Commit `0c9a6e0`) ausgeliefert.
-Nächstes Update: neuer CI-Lauf (versionCode > 49), Start-Test grün, signieren, über `signed-aab` ausliefern.
+Geschlossener Test bestanden, Produktionszugang am 22.10.2026; Store-Bundle **vc50** (Commit `77474ea`, Impressum mit
+vollem Namen; ersetzt vc48) ausgeliefert. Nächstes Update: neuer CI-Lauf (versionCode > 51), Start-Test grün, signieren, über `signed-aab` ausliefern.
 
 - **Fertig:** Phasen 0–6 + Store-Vorbereitung (Phase 8). Kern-Logik (`lib/domain/`), Home mit
   Countdown-Ring, Startzeit-Pfeile, Schnellwahl „6 Std ohne Pause", Profile, Überstunden-Konto

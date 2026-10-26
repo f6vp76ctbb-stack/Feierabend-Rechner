@@ -94,6 +94,7 @@ Legende: `[ ]` offen · `[x]` erledigt · 👤 = du · 🤖 = Claude · 🤝 = z
 
 ## Phase 9 — Launch & Wachstum 🤝
 - [x] 🤖 Produktions-Bundle vc48 + rechtlicher Check (Impressum in der App, Datenschutz, Lizenzen) – 22.10.2026
+- [x] 🤖 Produktions-Bundle vc50 (Impressum mit vollem Namen, ersetzt vc48) – 26.10.2026
 - [ ] 👤 Produktions-Release absenden (Checkliste in `store/ANLEITUNG.md`)
 - [x] 👤 Vollständiger Name fürs Impressum (Sam Däubler, Geschäftsbezeichnung Thinkube) – App + Webseite, 23.10.2026
 - [x] 👤 Gewerbe angemeldet

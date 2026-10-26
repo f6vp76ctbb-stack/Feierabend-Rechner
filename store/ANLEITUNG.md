@@ -1,6 +1,6 @@
 # 🚀 Feierabend Rechner – Produktions-Release 1.0.0
 
-Stand 22.10.2026: geschlossener Test bestanden, **Produktionszugang freigegeben**.
+Stand 26.10.2026: geschlossener Test bestanden, **Produktionszugang freigegeben**, Store-Bundle **vc50**.
 App anlegen, App-Inhalte, Store-Eintrag, Händlerstatus, interner und geschlossener Test sind erledigt
 (Details zu den einzelnen Formularen: `APP_INHALTE.md`, `STORE_EINTRAG.md`, `IN_APP_KAUF_UND_WERBUNG.md`).
 
@@ -8,11 +8,14 @@ App anlegen, App-Inhalte, Store-Eintrag, Händlerstatus, interner und geschlosse
 
 | Was | Wo |
 |---|---|
-| **Store-App-Bundle** (Produktion) | `feierabend-release-1.0.0-vc48.aab` – Download-Link von mir (~61 MB). Werbung (AdMob), Pro + 5 Designs kaufbar, Nutzungsstatistik nur nach Einwilligung, inkl. Debug-Symbolen + Offenlegungsdatei |
+| **Store-App-Bundle** (Produktion) | `feierabend-release-1.0.0-vc50.aab` – [Download](https://github.com/f6vp76ctbb-stack/Feierabend-Rechner/raw/signed-aab/feierabend-release-1.0.0-vc50.aab) (~62 MB). Werbung (AdMob), Pro + 5 Designs kaufbar, Nutzungsstatistik nur nach Einwilligung, Impressum mit vollem Namen, inkl. Debug-Symbolen + Offenlegungsdatei. **Ersetzt vc48** |
 | Tester-App-Bundle | nur für den geschlossenen Test (ungerade versionCode) – **nie in Produktion** |
 | Upload-Schlüssel + Passwort | bei dir gesichert (`SCHLUESSEL.md`) – für **jedes** Update nötig |
 | Datenschutzerklärung | https://f6vp76ctbb-stack.github.io/Feierabend-Rechner/privacy.html |
 | Impressum | https://f6vp76ctbb-stack.github.io/Feierabend-Rechner/impressum.html (auch in der App: Einstellungen → Impressum) |
+
+> **vc48 schon hochgeladen?** Kein Problem: vc50 einfach als neuen Release hinterher (im internen Test bzw. in der
+> Produktion) – er ersetzt vc48. In vc48 fehlte im Impressum der App noch der volle Name.
 
 **Eckdaten:** Paketname `com.thinkube.feierabendrechner` · Version 1.0.0 · Android 7.0+ · Ziel-API 36 · Deutsch + Englisch.
 
@@ -42,7 +45,7 @@ App anlegen, App-Inhalte, Store-Eintrag, Händlerstatus, interner und geschlosse
 ## B. Kauf selbst ausprobieren (empfohlen, ~20 Minuten)
 
 1. *Einstellungen (Konto-Ebene) → Lizenztests*: deine Gmail eintragen → Käufe kosten dich nichts (Testkarte).
-2. *Test und Release → Testen → **Interner Test** → Neuen Release erstellen* → **Store-App-Bundle vc48** hochladen
+2. *Test und Release → Testen → **Interner Test** → Neuen Release erstellen* → **Store-App-Bundle vc50** hochladen
    → Release-Name `1.0.0` → Versionshinweise (unten) → **Veröffentlichen**.
 3. Über den Link des internen Tests installieren (die Tester-Version wird dabei ersetzt) und prüfen:
    - Einführung → Tipps → Werbung erscheint unten (**nie auf eigene Anzeigen tippen!**)
@@ -55,7 +58,7 @@ App anlegen, App-Inhalte, Store-Eintrag, Händlerstatus, interner und geschlosse
 ## C. Produktion veröffentlichen
 
 *Test und Release → **Produktion** → Neuen Release erstellen* (bzw. den übernommenen Release öffnen)
-1. App-Bundle: **vc48** (Store-Bundle; aus der Bibliothek oder per Download-Link hochladen)
+1. App-Bundle: **vc50** (Store-Bundle; aus der Bibliothek oder per Download-Link hochladen)
 2. Release-Name: `1.0.0`
 3. Versionshinweise:
    ```
@@ -118,5 +121,5 @@ Erledigt in App und Webseite:
 - [ ] Firebase/GA: Datenverarbeitungsbedingungen angenommen, Aufbewahrung 14 Monate
 - [ ] Datensicherheit um „Kaufverlauf“ ergänzt
 - [ ] Kauf im internen Test ausprobiert (Pro + ein Design + Wiederherstellen)
-- [ ] Produktion: **Store**-Bundle vc48 (nie das Tester-Bundle), Länder gewählt, 100 %
+- [ ] Produktion: **Store**-Bundle vc50 (nie das Tester-Bundle), Länder gewählt, 100 %
 - [ ] Upload-Schlüssel gesichert
