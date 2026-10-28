@@ -65,15 +65,91 @@ Die **Produkt-IDs müssen exakt so heißen** (nicht änderbar); Preise sind Vors
 
 | Produkt-ID | Name (DE) | Name (EN) | Preis | Beschreibung (DE) | Beschreibung (EN) |
 |---|---|---|---|---|---|
-| `design_supporter` | Design „Supporter“ ❤ | Supporter design ❤ | **4,99 €** | Mit Herzen – das größte Dankeschön an den Entwickler. | With hearts – the biggest thank-you to the developer. |
-| `design_midnight` | Design „Mitternacht“ | Midnight design | 1,99 € | Tiefes Nachtblau mit goldenem Feierabend. | Deep night blue with a golden clock-out. |
-| `design_sunset` | Design „Sonnenuntergang“ | Sunset design | 1,99 € | Warme Orangetöne wie ein Sommerabend. | Warm orange tones like a summer evening. |
-| `design_ocean` | Design „Ozean“ | Ocean design | 1,49 € | Frisches Blau und Türkis. | Fresh blue and turquoise. |
-| `design_forest` | Design „Wald“ | Forest design | 0,99 € | Ruhiges Grün zum Durchatmen. | Calm green to breathe. |
+| `design_supporter` | Design Supporter | Supporter design | **4,99 €** | Mit Herzen – das größte Dankeschön an den Entwickler. | With hearts – the biggest thank-you to the developer. |
+| `design_midnight` | Design Mitternacht | Midnight design | 1,99 € | Tiefes Nachtblau mit goldenem Feierabend. | Deep night blue with a golden clock-out. |
+| `design_sunset` | Design Sonnenuntergang | Sunset design | 1,99 € | Warme Orangetöne wie ein Sommerabend. | Warm orange tones like a summer evening. |
+| `design_ocean` | Design Ozean | Ocean design | 1,49 € | Frisches Blau und Türkis. | Fresh blue and turquoise. |
+| `design_forest` | Design Wald | Forest design | 0,99 € | Ruhiges Grün zum Durchatmen. | Calm green to breathe. |
 
 - Gekaufte Designs bleiben für immer, auch nach Neuinstallation („Käufe wiederherstellen“).
 - Nach dem Kauf wird das Design sofort aktiv; wechseln: **Einstellungen → Designs ansehen**.
 - Testen wie bei Pro über **Lizenztests** (keine Abbuchung).
+
+## Teil A3 – Alle 6 Produkte mit der KI der Play Console anlegen
+
+Die Play Console hat einen KI-Assistenten für den Produktkatalog. Er kann Einmalprodukte anlegen, Preise setzen,
+übersetzen und den Katalog prüfen – **nur den Katalog**: Release, Datensicherheit, Store-Eintrag, AdMob und Firebase
+bleiben Handarbeit. Diesen Text komplett einfügen und die Übersicht vor dem Bestätigen prüfen, vor allem die
+**Produkt-IDs** (nie mehr änderbar, gelöschte IDs sind verbraucht):
+
+```text
+Lege für meine App „Feierabend Rechner“ (Paketname com.thinkube.feierabendrechner) die In-App-Produkte an. Zeig mir vor dem Speichern eine Übersicht, ich bestätige dann.
+
+Regeln:
+- 6 Einmalprodukte, keine Abos. Die Produkt-IDs exakt so schreiben wie unten – die App sucht genau diese IDs.
+- Prüf zuerst, ob es Produkte mit diesen IDs schon gibt. Vorhandene nur an die Werte unten angleichen (ID nicht ändern, nichts löschen), fehlende neu anlegen.
+- Pro Produkt genau eine Kaufoption: Typ „Kaufen“ (nicht „Leihen“), abwärtskompatibel, ohne Angebote oder Rabatte, kein Mehrfachkauf. Die App kauft sie als nicht verbrauchbare Einmalkäufe (Play Billing Library 8).
+- Standardsprache Deutsch (de-DE), Übersetzung Englisch (en-US).
+- Preise sind Endpreise in EUR inkl. MwSt. Andere Länder: aus dem EUR-Preis umrechnen (aktueller Wechselkurs, übliche lokale Rundung). Verfügbar in allen Ländern, in denen die App angeboten wird.
+- Steuer- und Compliance-Einstellungen auf Standard lassen.
+- Am Ende alle 6 Produkte auf „Aktiv“ setzen.
+
+Produkt 1
+- Produkt-ID: feierabend_pro
+- Preis: 3,99 €
+- Tag: pro
+- Name (de-DE): Feierabend Pro
+- Beschreibung (de-DE): Einmal zahlen, für immer frei: keine Werbung, unbegrenzt Profile, Überstunden-Konto, Erinnerungen, Widget-Countdown und Pause nach Arbeitszeitgesetz.
+- Name (en-US): Clock-Out Pro
+- Beschreibung (en-US): Pay once, free forever: no ads, unlimited profiles, overtime account, reminders, widget countdown and automatic legal breaks.
+
+Produkt 2
+- Produkt-ID: design_supporter
+- Preis: 4,99 €
+- Tag: design
+- Name (de-DE): Design Supporter
+- Beschreibung (de-DE): Mit Herzen – das größte Dankeschön an den Entwickler.
+- Name (en-US): Supporter design
+- Beschreibung (en-US): With hearts – the biggest thank-you to the developer.
+
+Produkt 3
+- Produkt-ID: design_midnight
+- Preis: 1,99 €
+- Tag: design
+- Name (de-DE): Design Mitternacht
+- Beschreibung (de-DE): Tiefes Nachtblau mit goldenem Feierabend.
+- Name (en-US): Midnight design
+- Beschreibung (en-US): Deep night blue with a golden clock-out.
+
+Produkt 4
+- Produkt-ID: design_sunset
+- Preis: 1,99 €
+- Tag: design
+- Name (de-DE): Design Sonnenuntergang
+- Beschreibung (de-DE): Warme Orangetöne wie ein Sommerabend.
+- Name (en-US): Sunset design
+- Beschreibung (en-US): Warm orange tones like a summer evening.
+
+Produkt 5
+- Produkt-ID: design_ocean
+- Preis: 1,49 €
+- Tag: design
+- Name (de-DE): Design Ozean
+- Beschreibung (de-DE): Frisches Blau und Türkis.
+- Name (en-US): Ocean design
+- Beschreibung (en-US): Fresh blue and turquoise.
+
+Produkt 6
+- Produkt-ID: design_forest
+- Preis: 0,99 €
+- Tag: design
+- Name (de-DE): Design Wald
+- Beschreibung (de-DE): Ruhiges Grün zum Durchatmen.
+- Name (en-US): Forest design
+- Beschreibung (en-US): Calm green to breathe.
+
+Führe danach einen Zustandscheck (Health Check) für den Katalog aus und nenne mir alle Auffälligkeiten.
+```
 
 ## Teil B – Werbung mit Google AdMob
 

@@ -26,6 +26,7 @@ App anlegen, App-Inhalte, Store-Eintrag, Händlerstatus, interner und geschlosse
 1. **In-App-Produkte aktiv** – Play Console → *Monetarisieren → Produkte → In-App-Produkte*:
    `feierabend_pro` (3,99 €), `design_supporter`, `design_midnight`, `design_sunset`, `design_ocean`, `design_forest`
    → alle Status **„Aktiv“**. Fehlt eines, zeigt die App beim Kaufen „Store nicht erreichbar“.
+   Am schnellsten mit der KI der Play Console: fertiger Prompt in `IN_APP_KAUF_UND_WERBUNG.md`, Teil A3.
 2. **AdMob-Einwilligungsdialog veröffentlicht** – AdMob → *Datenschutz & Mitteilungen → Europäische Vorschriften*:
    Die Mitteilung für „Feierabend Rechner“ muss **„Veröffentlicht“** sein (siehe `IN_APP_KAUF_UND_WERBUNG.md`, Teil B).
    Ohne sie werden Nutzer im EWR nicht gefragt – das verstößt gegen Googles Einwilligungsrichtlinie, und es gibt kaum Werbung.
