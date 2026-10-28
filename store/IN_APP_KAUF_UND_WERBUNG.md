@@ -151,6 +151,23 @@ Produkt 6
 Führe danach einen Zustandscheck (Health Check) für den Katalog aus und nenne mir alle Auffälligkeiten.
 ```
 
+**Danach prüfen lassen** (ändert nichts). Wichtig ist vor allem „abwärtskompatibel“: Das Kauf-Plugin der App liest
+genau diese Kaufoption (`oneTimePurchaseOfferDetails`). Fehlt sie, lädt kein Preis und der Kauf schlägt fehl.
+
+```text
+Bitte nur prüfen, nichts ändern. Zeig mir für die 6 Produkte feierabend_pro, design_supporter, design_midnight, design_sunset, design_ocean und design_forest eine Tabelle mit:
+- Status (aktiv, inaktiv oder Entwurf)
+- Kaufoptionen: Anzahl, Typ (Kaufen/Leihen), abwärtskompatibel ja/nein, Mehrfachkauf ja/nein, Angebote oder Rabatte
+- in wie vielen Ländern/Regionen es einen Preis hat, und ob Länder fehlen, in denen die App verfügbar ist
+- Preis in Deutschland, Österreich, Schweiz, USA und Großbritannien
+- ob Titel und Beschreibung auf Deutsch und Englisch vorhanden sind
+
+Führe danach den Zustandscheck (Health Check) aus und liste alle Befunde auf. Exportiere zum Schluss alle Einmalprodukte als CSV-Datei.
+```
+
+Zeigt die Tabelle ein Produkt nicht aktiv oder ohne abwärtskompatible Kaufoption:
+`Setze bei allen 6 Produkten die Kaufoption „Kaufen“ als abwärtskompatibel und aktiviere alle 6.`
+
 ## Teil B – Werbung mit Google AdMob
 
 ✅ Eingerichtet: Das Store-Bundle nutzt deine **echten** AdMob-IDs (siehe B5). Die Schritte hier dienen zum Nachschlagen –
