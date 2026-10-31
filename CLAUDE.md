@@ -164,6 +164,8 @@ vollem Namen; ersetzt vc48) ausgeliefert. Nächstes Update: neuer CI-Lauf (versi
   `lib/features/pro/` (ProController, Paywall, Banner). AdMob-Anzeigenblöcke per
   `--dart-define=ADMOB_BANNER_ANDROID/ADMOB_REWARDED_ANDROID`, App-ID per Env `ADMOB_APP_ID`
   (Default im Code: Google-Test-IDs; CI-Release-Builds setzen die echten IDs aus `android-bundle.yml` → `RELEASE_ADMOB_*`).
+  `app-ads.txt` liegt im Repo `f6vp76ctbb-stack.github.io` (Thinkube-Startseite, gilt für alle Apps des AdMob-Kontos);
+  Website im Store-Eintrag muss genau `https://f6vp76ctbb-stack.github.io` sein, sonst scheitert die AdMob-Bestätigung.
 - **Erinnerungen:** `lib/domain/reminder_planner.dart` (`ReminderOptions` + Planer, rein, getestet) →
   `lib/features/reminders/` (Optionen persistiert, `reminderScheduleProvider` nur mit Pro,
   `buildReminderNotifications` formuliert Texte + Spruch) → Sync in `app.dart` via `NotificationBackend`
@@ -192,7 +194,8 @@ vollem Namen; ersetzt vc48) ausgeliefert. Nächstes Update: neuer CI-Lauf (versi
   Screenshots/Feature-Grafik (`store/graphics/`); danach `dart run flutter_launcher_icons`.
 - **Android-Build:** `.github/workflows/android-bundle.yml` baut **unsigniert** (dl.google.com ist in der
   Claude-Sandbox gesperrt) und legt das AAB im Branch `aab-build` ab; Signatur lokal per `jarsigner`
-  mit dem Upload-Schlüssel (**nie ins Repo**, siehe `store/SCHLUESSEL.md`). Pro Lauf zwei Bundles:
+  mit dem Upload-Schlüssel (**nie ins Repo**, siehe `store/SCHLUESSEL.md`; liegt nur beim Nutzer – die Kopie im
+  Session-Scratchpad ist seit dem Neustart der Umgebung am 31.10.2026 weg, für die nächste Signatur neu anfordern). Pro Lauf zwei Bundles:
   **Store** (`feierabend-unsigned.aab`, versionCode = 2 × run_number) und **Tester**
   (`feierabend-tester-unsigned.aab`, 2 × run_number + 1, `--dart-define=TESTER_BUILD=true`).
   **ABIs:** armeabi-v7a + arm64-v8a + **x86_64** (ohne x86_64 meldet Play „8 Geräte nicht mehr

@@ -208,4 +208,6 @@ Die App zeigt diesen Dialog dann automatisch beim Start (nur in der EU/UK) und b
 - **Nie auf eigene echte Anzeigen klicken** – AdMob sperrt sonst dein Konto. Für eigene Tests dein Gerät als Testgerät eintragen: **AdMob → Einstellungen → Testgeräte**.
 - Neue Konten/Anzeigenblöcke brauchen oft einige Stunden bis Tage, bis echte Anzeigen ausgeliefert werden.
 - Auszahlung ab 70 € Guthaben (AdMob-Standard) nach Steuer- und Zahlungsangaben.
-- `app-ads.txt` ist optional und braucht eine eigene Website-Domain – kann später ergänzt werden.
+- `app-ads.txt` liegt unter `https://f6vp76ctbb-stack.github.io/app-ads.txt` (Repo `f6vp76ctbb-stack.github.io`, eine
+  Zeile für das ganze AdMob-Konto, gilt auch für Qubble). AdMob findet sie nur, wenn im Store-Eintrag als **Website**
+  `https://f6vp76ctbb-stack.github.io` steht (siehe `ANLEITUNG.md` A6).

@@ -40,8 +40,10 @@ App anlegen, App-Inhalte, Store-Eintrag, Händlerstatus, interner und geschlosse
 5. **Datensicherheit ergänzen** – Play Console → *Richtlinien → App-Inhalte → Datensicherheit* → zusätzlich
    **Finanzinfos → Kaufverlauf**: erfasst, **nicht** geteilt, **optional**, Zweck **Analysen** (siehe `APP_INHALTE.md`).
 6. **Store-Eintrag** aktuell? Texte aus `STORE_EINTRAG.md` (DE + EN) und Screenshots aus `graphics/` (01 → 08).
-   Unter *Store-Präsenz → Store-Einstellungen* bei **Website** das Impressum eintragen
-   (`https://f6vp76ctbb-stack.github.io/Feierabend-Rechner/impressum.html`) – so ist es auch im Store verlinkt.
+   Unter *Store-Präsenz → Store-Einstellungen* bei **Website** `https://f6vp76ctbb-stack.github.io` eintragen –
+   genau so, ohne Pfad (wie bei Qubble). **Pflicht für AdMob:** AdMob sucht die `app-ads.txt` in der Wurzel dieser
+   Website; ohne das Feld schlägt die Bestätigung fehl, egal wie korrekt die Datei liegt. Die Startseite verlinkt
+   Datenschutz und Impressum beider Apps.
 
 ## B. Kauf selbst ausprobieren (empfohlen, ~20 Minuten)
 
@@ -81,7 +83,9 @@ App anlegen, App-Inhalte, Store-Eintrag, Händlerstatus, interner und geschlosse
 
 1. **AdMob mit dem Store verknüpfen:** AdMob → *Apps → Feierabend Rechner → App-Einstellungen → App-Store-Details
    hinzufügen* → Google Play → App auswählen. Danach prüft AdMob die App („App-Bereitschaft“); bis dahin kann es
-   weniger Werbung geben.
+   weniger Werbung geben. Voraussetzung: die Website aus A6 steht im Store-Eintrag. „Konnte nicht bestätigt werden“
+   direkt danach ist normal – Google crawlt bis zu 24 Std., nach geänderter Website länger (bei Qubble bis zu
+   11 Tage). Nach dem Eintragen in AdMob die `app-ads.txt` neu prüfen lassen („Nach Updates suchen“).
 2. **Geschlossener Test** darf weiterlaufen: Tester bekommen automatisch die Produktionsversion (höhere Nummer) –
    Pro ist dann nicht mehr gratis. Wer mag, pausiert den Track.
 3. **Firebase → Analytics → Echtzeit:** dort siehst du die ersten Nutzer, die der Statistik zugestimmt haben.
