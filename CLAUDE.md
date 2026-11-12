@@ -236,7 +236,9 @@ vollem Namen; ersetzt vc48) ausgeliefert. Nächstes Update: neuer CI-Lauf (versi
   `APP_INHALTE.md`, `IN_APP_KAUF_UND_WERBUNG.md`, `FIREBASE_ANALYTICS.md`, `SCHLUESSEL.md`.
 - **Name:** DE „Feierabend Rechner“ (Icon: „Feierabend“), EN „Clock-Out Calculator“ (Icon: „Clock-Out“, Pro: „Clock-Out Pro“);
   Android-Label über `res/values(-de)/strings.xml` `app_name`.
-- **Kontakt:** thinkube@outlook.de (Datenschutzerklärung, Store-Eintrag, IARC).
+- **Kontakt:** thinkube@outlook.de (Datenschutzerklärung, Store-Eintrag, IARC). Telefon (`AppInfo.contactPhone`,
+  seit 10.11.2026) **nur im Impressum** (App + Web) – Nutzerwunsch: nirgends, wo es nicht Pflicht ist (nicht in
+  Datenschutzerklärung, Doku, Commit-Messages); `test/features/legal_test.dart` prüft das.
 - **Offen:**
   Zeitzonen-/DST-Behandlung, iOS-Widget; Impressum: USt-IdNr./W-IdNr. nachtragen, sobald der Nutzer sie hat;
   vor einem Flutter-Upgrade: firebase_core/firebase_analytics/in_app_review nutzen noch das Kotlin-Gradle-Plugin

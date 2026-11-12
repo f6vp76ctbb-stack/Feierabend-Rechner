@@ -99,6 +99,8 @@ Legende: `[ ]` offen · `[x]` erledigt · 👤 = du · 🤖 = Claude · 🤝 = z
 - [ ] 👤 Produktions-Release absenden (Checkliste in `store/ANLEITUNG.md`)
 - [x] 👤 Vollständiger Name fürs Impressum (Sam Däubler, Geschäftsbezeichnung Thinkube) – App + Webseite, 23.10.2026
 - [x] 👤 Gewerbe angemeldet
+- [x] 🤖 Telefonnummer ins Impressum (App + Web), nur dort – 10.11.2026; in der App ab dem nächsten Bundle
+- [ ] 👤 Händlerangabe (DSA) mit Telefonnummer in der Play Console – Anleitung: Qubble `ANLEITUNG.md` Schritt 6
 - [ ] 👤 Fragebogen zur steuerlichen Erfassung (ELSTER) → Steuernummer; USt-IdNr./W-IdNr. ins Impressum, sobald vorhanden
 - [x] 🤖 ASO: Beschreibung DE/EN mit Suchbegriffen + Stichpunkten (Tester-Feedback, 12.10.2026)
 - [ ] 🤝 ASO: Keywords & Listing nach echten Daten (Play Console/GA4) nachschärfen

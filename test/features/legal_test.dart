@@ -32,6 +32,8 @@ void main() {
     );
     expect(find.text('Sam Däubler, Anschrift wie oben.'), findsOneWidget);
     expect(find.text('thinkube@outlook.de'), findsOneWidget);
+    // Zweiter Kontaktweg (EuGH C-298/07), für Google Plays Händlerstatus Pflicht.
+    expect(find.text(AppInfo.contactPhone), findsOneWidget);
     expect(find.textContaining('nicht bereit, an einem Streitbeilegungsverfahren'),
         findsOneWidget);
     // Kein Link auf die abgeschaltete EU-OS-Plattform (seit 20.07.2025 abmahnfähig).
@@ -62,6 +64,17 @@ void main() {
         expect(html, contains(value), reason: '$page: $value');
       }
     }
+  });
+
+  test('Telefonnummer nur im Impressum, nicht in der Datenschutzerklärung', () {
+    // Nutzerwunsch: die Nummer nur dort, wo sie Pflicht ist (zweiter
+    // Kontaktweg nach § 5 DDG / EuGH C-298/07). Art. 13 DSGVO verlangt sie nicht.
+    final impressum = File('web/impressum.html').readAsStringSync();
+    expect(impressum, contains(AppInfo.contactPhone));
+    expect(impressum, contains(AppInfo.contactPhoneUri));
+    final privacy = File('web/privacy.html').readAsStringSync();
+    final digits = AppInfo.contactPhoneUri.substring('tel:+49'.length);
+    expect(privacy.replaceAll(' ', ''), isNot(contains(digits)));
   });
 
   testWidgets('Open-Source-Lizenzen enthalten die Schrift Inter (OFL)', (

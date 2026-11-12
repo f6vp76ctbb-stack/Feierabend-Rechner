@@ -9,6 +9,11 @@ abstract final class AppInfo {
 
   static const contactEmail = 'thinkube@outlook.de';
 
+  /// Zweiter schneller Kontaktweg neben der E-Mail (EuGH C-298/07); Google Play
+  /// verlangt ihn für den Händlerstatus nach DSA. Gleiche Nummer wie bei Qubble.
+  static const contactPhone = '+49 152 04328161';
+  static const contactPhoneUri = 'tel:+4915204328161';
+
   /// Anbieter für Impressum (§ 5 DDG) und Datenschutzerklärung – an einer Stelle,
   /// gleich wie bei der App „Qubble“ (web/impressum.html dort). Einzelunternehmen:
   /// Pflicht ist der volle Name, „Thinkube“ ist nur die Geschäftsbezeichnung.

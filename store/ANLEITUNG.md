@@ -93,11 +93,12 @@ App anlegen, App-Inhalte, Store-Eintrag, Händlerstatus, interner und geschlosse
 
 ---
 
-## Rechtliches – geprüft am 22.10.2026, Name ergänzt am 23.10.2026
+## Rechtliches – geprüft am 22.10.2026, Name ergänzt am 23.10.2026, Telefon am 10.11.2026
 
 Erledigt in App und Webseite:
 - **Impressum** in der App (Einstellungen → Impressum, auch offline) und online – wie bei Qubble, mit vollem
-  Namen (Sam Däubler, Geschäftsbezeichnung „Thinkube“)
+  Namen (Sam Däubler, Geschäftsbezeichnung „Thinkube“) und Telefon (nur im Impressum; in der App ab
+  dem nächsten Update)
 - **Datenschutzerklärung** vollständig: Verantwortlicher mit Anschrift, alle Datenflüsse (AdMob, Google Play,
   Nutzungsstatistik, Feedback-E-Mail), Rechtsgrundlagen, Speicherdauer, USA-Übermittlung, Rechte, Aufsichtsbehörde
 - **Einwilligungen:** Werbung über Googles zertifizierten Dialog (UMP/TCF), Statistik nur nach „Ja“ (gleichwertige

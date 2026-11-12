@@ -33,6 +33,17 @@ class LegalNoticeSheet extends StatelessWidget {
           ),
         );
 
+    Widget link(String label, Uri uri) => InkWell(
+          onTap: () => launchUrl(uri, mode: LaunchMode.externalApplication),
+          child: Text(
+            label,
+            style: theme.textTheme.bodyLarge?.copyWith(
+              color: theme.colorScheme.primary,
+              decoration: TextDecoration.underline,
+            ),
+          ),
+        );
+
     return SafeArea(
       child: SingleChildScrollView(
         padding: const EdgeInsets.fromLTRB(24, 0, 24, 24),
@@ -56,18 +67,14 @@ class LegalNoticeSheet extends StatelessWidget {
             ),
             section(
               l.legalContact,
-              InkWell(
-                onTap: () => launchUrl(
-                  Uri(scheme: 'mailto', path: AppInfo.contactEmail),
-                  mode: LaunchMode.externalApplication,
-                ),
-                child: Text(
-                  AppInfo.contactEmail,
-                  style: theme.textTheme.bodyLarge?.copyWith(
-                    color: theme.colorScheme.primary,
-                    decoration: TextDecoration.underline,
-                  ),
-                ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  link(AppInfo.contactPhone, Uri.parse(AppInfo.contactPhoneUri)),
+                  const SizedBox(height: 4),
+                  link(AppInfo.contactEmail,
+                      Uri(scheme: 'mailto', path: AppInfo.contactEmail)),
+                ],
               ),
             ),
             section(
