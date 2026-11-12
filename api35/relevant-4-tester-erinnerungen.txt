@@ -1,0 +1,33 @@
+11-12 10:25:16.990  7918  7918 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:25:16.997  7918  7918 I AndroidRuntime: Using default boot image
+11-12 10:25:16.997  7918  7918 I AndroidRuntime: Leaving lock profiling enabled
+11-12 10:25:17.201  7918  7918 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 10:25:17.287  4560  4560 D ActivityThread: Package [com.thinkube.feierabendrechner] reported as REPLACED, but missing application info. Assuming REMOVED.
+11-12 10:25:17.288  4560  4560 D ActivityThread: Package [com.thinkube.feierabendrechner] reported as REPLACED, but missing application info. Assuming REMOVED.
+11-12 10:25:17.431  2842  2842 D ActivityThread: Package [com.thinkube.feierabendrechner] reported as REPLACED, but missing application info. Assuming REMOVED.
+11-12 10:25:17.433  2842  2842 D ActivityThread: Package [com.thinkube.feierabendrechner] reported as REPLACED, but missing application info. Assuming REMOVED.
+11-12 10:25:18.277  7918  7918 D AndroidRuntime: Shutting down VM
+11-12 10:25:18.710  6783  6791 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~tm9wsxuGzLFctao2_PFtrw==/com.thinkube.feierabendrechner-qsJmtvmcBaY1cczCGAZF9Q==/base.apk' with 1 weak references
+11-12 10:25:18.890  6070  6077 W gle.android.gms: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~tm9wsxuGzLFctao2_PFtrw==/com.thinkube.feierabendrechner-qsJmtvmcBaY1cczCGAZF9Q==/base.apk' with 1 weak references
+11-12 10:25:19.053   544  1379 W ActivityManager: pid 7420 com.thinkube.feierabendrechner sent binder code 14 with flags 2 to frozen apps and got error -32
+11-12 10:25:22.361  8123  8123 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:25:22.368  8123  8123 I AndroidRuntime: Using default boot image
+11-12 10:25:22.368  8123  8123 I AndroidRuntime: Leaving lock profiling enabled
+11-12 10:25:22.544  8123  8123 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 10:25:23.593  8123  8123 D AndroidRuntime: Shutting down VM
+11-12 10:25:24.511  8142  8142 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:25:24.516  8142  8142 I AndroidRuntime: Using default boot image
+11-12 10:25:24.516  8142  8142 I AndroidRuntime: Leaving lock profiling enabled
+11-12 10:25:24.601  8142  8142 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 10:25:25.631  8142  8142 D AndroidRuntime: Shutting down VM
+11-12 10:25:29.591  8187  8187 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:25:29.595  8187  8187 I AndroidRuntime: Using default boot image
+11-12 10:25:29.595  8187  8187 I AndroidRuntime: Leaving lock profiling enabled
+11-12 10:25:29.676  8187  8187 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 10:25:30.720  8187  8187 D AndroidRuntime: Shutting down VM
+11-12 10:25:32.630  1148  1157 W s.nexuslauncher: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~tm9wsxuGzLFctao2_PFtrw==/com.thinkube.feierabendrechner-qsJmtvmcBaY1cczCGAZF9Q==/base.apk' with 1 weak references
+11-12 10:25:34.683  8218  8218 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:25:34.687  8218  8218 I AndroidRuntime: Using default boot image
+11-12 10:25:34.687  8218  8218 I AndroidRuntime: Leaving lock profiling enabled
+11-12 10:25:34.774  8218  8218 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 10:25:35.805  8218  8218 D AndroidRuntime: Shutting down VM

@@ -1,0 +1,126 @@
+11-12 10:26:33.234   544  1515 I ActivityManager: Force stopping com.thinkube.feierabendrechner appid=10209 user=0: from pid 8516
+11-12 10:26:33.235   544  1515 I ActivityManager: Killing 7420:com.thinkube.feierabendrechner/u0a209 (adj 900): stop com.thinkube.feierabendrechner due to from pid 8516
+11-12 10:26:33.239   544  1515 I AppsFilter: interaction: PackageSetting{835437c com.android.microdroid.empty_payload/10194} -> PackageSetting{d9f6bfd com.thinkube.feierabendrechner/10209} BLOCKED
+11-12 10:26:33.242  1064  1064 D CarrierSvcBindHelper: onHandleForceStop: [com.thinkube.feierabendrechner]
+11-12 10:26:33.253   544  1764 V ActivityManager: Got obituary of 7420:com.thinkube.feierabendrechner
+11-12 10:26:33.284   890   928 V WindowManagerShell: Transition requested (#39): android.os.BinderProxy@47753fc TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=12 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.thinkube.feierabendrechner/.MainActivity } baseActivity=ComponentInfo{com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity} topActivity=ComponentInfo{com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity} origActivity=null realActivity=ComponentInfo{com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity} numActivities=1 lastActiveTime=418571 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@34dba85} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=ActivityInfo{ecb20da com.thinkube.feierabendrechner.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= falseisLetterboxEducationEnabled= true isLetterboxDoubleTapEnabled= false topActivityEligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=320 topActivityLetterboxHeight=640 isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatControlState=hidden freeformCameraCompatMode=inactive}}}, pipTask = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 39 }
+11-12 10:26:33.284   544  1391 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.thinkube.feierabendrechner/.MainActivity} with LAUNCH_SINGLE_TOP from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+11-12 10:26:33.294   544  1394 I AppsFilter: interaction: PackageSetting{835437c com.android.microdroid.empty_payload/10194} -> PackageSetting{20475ab com.thinkube.feierabendrechner/10209} BLOCKED
+11-12 10:26:33.296  1148  1148 I TopTaskTracker: onTaskMovedToFront: (moved taskInfo to front) taskId=12, baseIntent=Intent { flg=0x10000000 cmp=com.thinkube.feierabendrechner/.MainActivity }
+11-12 10:26:33.296   544  1394 D CoreBackPreview: Window{299de25 u0 Splash Screen com.thinkube.feierabendrechner}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@2af37a1, mPriority=0, mIsAnimationCallback=false}
+11-12 10:26:33.309   544   838 D AppWidgetServiceImpl: Trying to notify widget update for package com.thinkube.feierabendrechner with widget id: 2
+11-12 10:26:33.315   544   578 I ActivityManager: Start proc 8525:com.thinkube.feierabendrechner/u0a209 for next-top-activity {com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity}
+11-12 10:26:33.328   544   565 V WindowManager: Sent Transition (#39) createdAt=11-12 10:26:33.275 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=12 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.thinkube.feierabendrechner/.MainActivity } baseActivity=ComponentInfo{com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity} topActivity=ComponentInfo{com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity} origActivity=null realActivity=ComponentInfo{com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity} numActivities=1 lastActiveTime=418571 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{d1adf38 Task{6b4a6f0 #12 type=standard I=com.thinkube.feierabendrechner/.MainActivity}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=ActivityInfo{1c44b11 com.thinkube.feierabendrechner.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= falseisLetterboxEducationEnabled= true isLetterboxDoubleTapEnabled= false topActivityEligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=320 topActivityLetterboxHeight=640 isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatControlState=hidden freeformCameraCompatMode=inactive}}}, pipTask = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 39 }
+11-12 10:26:33.328   544   565 V WindowManager:         {WCT{RemoteToken{d1adf38 Task{6b4a6f0 #12 type=standard I=com.thinkube.feierabendrechner/.MainActivity}}} m=OPEN f=NONE leash=Surface(name=Task=12)/@0xf7b6a4c sb=Rect(0, 0 - 320, 640) eb=Rect(0, 0 - 320, 640) d=0 taskParent=-1},
+11-12 10:26:33.376  8525  8525 D nativeloader: Configuring clns-7 for other apk /data/app/~~tm9wsxuGzLFctao2_PFtrw==/com.thinkube.feierabendrechner-qsJmtvmcBaY1cczCGAZF9Q==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~tm9wsxuGzLFctao2_PFtrw==/com.thinkube.feierabendrechner-qsJmtvmcBaY1cczCGAZF9Q==/lib/x86_64:/data/app/~~tm9wsxuGzLFctao2_PFtrw==/com.thinkube.feierabendrechner-qsJmtvmcBaY1cczCGAZF9Q==/base.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.thinkube.feierabendrechner
+11-12 10:26:33.425  8525  8549 D nativeloader: Load /data/app/~~tm9wsxuGzLFctao2_PFtrw==/com.thinkube.feierabendrechner-qsJmtvmcBaY1cczCGAZF9Q==/base.apk!/lib/x86_64/libflutter.so using ns clns-7 from class loader (caller=/data/app/~~tm9wsxuGzLFctao2_PFtrw==/com.thinkube.feierabendrechner-qsJmtvmcBaY1cczCGAZF9Q==/base.apk): ok
+11-12 10:26:33.436  8525  8525 W ierabendrechner: type=1400 audit(0.0:102): avc:  denied  { read } for  name="max_map_count" dev="proc" ino=73810 scontext=u:r:untrusted_app:s0:c209,c256,c512,c768 tcontext=u:object_r:proc_max_map_count:s0 tclass=file permissive=0 app=com.thinkube.feierabendrechner
+11-12 10:26:33.449  8525  8539 W ierabendrechner: ClassLoaderContext classpath element checksum mismatch. expected=2522377792, found=303487692 (DLC[];PCL[base.apk*2522377792]{PCL[/system/framework/org.apache.http.legacy.jar*437079508]#PCL[/system/framework/com.android.location.provider.jar*3414091812]#PCL[/system/framework/com.android.media.remotedisplay.jar*2042759013]#PCL[/system_ext/framework/androidx.window.extensions.jar*1060046784]#PCL[/system_ext/framework/androidx.window.sidecar.jar*2147524027]} | DLC[];PCL[/data/app/~~tm9wsxuGzLFctao2_PFtrw==/com.thinkube.feierabendrechner-qsJmtvmcBaY1cczCGAZF9Q==/base.apk*303487692]{PCL[/system_ext/framework/androidx.window.extensions.jar*1060046784]#PCL[/system_ext/framework/androidx.window.sidecar.jar*2147524027]})
+11-12 10:26:33.475  8525  8552 I flutter : [IMPORTANT:flutter/shell/platform/android/android_context_gl_impeller.cc(104)] Using the Impeller rendering backend (OpenGLES).
+11-12 10:26:33.506  8525  8559 I FA      :   adb shell setprop debug.firebase.analytics.app com.thinkube.feierabendrechner
+11-12 10:26:33.508  7981  8063 I PhenotypeResourceReader: unable to find any Phenotype resource metadata for com.thinkube.feierabendrechner
+11-12 10:26:33.636  8525  8525 D nativeloader: Load /data/app/~~tm9wsxuGzLFctao2_PFtrw==/com.thinkube.feierabendrechner-qsJmtvmcBaY1cczCGAZF9Q==/base.apk!/lib/x86_64/libdartjni.so using ns clns-7 from class loader (caller=/data/app/~~tm9wsxuGzLFctao2_PFtrw==/com.thinkube.feierabendrechner-qsJmtvmcBaY1cczCGAZF9Q==/base.apk): ok
+11-12 10:26:33.659   544   838 D AppWidgetServiceImpl: Trying to notify widget update for package com.thinkube.feierabendrechner with widget id: 2
+11-12 10:26:33.690   544  1394 D CoreBackPreview: Window{82fe9d u0 com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@a546455, mPriority=0, mIsAnimationCallback=false}
+11-12 10:26:34.179   544   838 D AppWidgetServiceImpl: Trying to notify widget update for package com.thinkube.feierabendrechner with widget id: 2
+11-12 10:26:34.254  6319  6385 W Finsky  : [57] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.259  6319  6385 I Finsky  : [57] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.269  6319  6385 W Finsky  : [57] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.269  6319  6385 I Finsky  : [57] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.286  6319  6385 W Finsky  : [57] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.286  6319  6385 I Finsky  : [57] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.296  6319  6398 W Finsky  : [66] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.297  6319  6398 I Finsky  : [66] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.298  6319  6386 W Finsky  : [58] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.298  6319  6386 I Finsky  : [58] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.298  6319  6387 W Finsky  : [59] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.298  6319  6387 I Finsky  : [59] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.299  6319  6386 W Finsky  : [58] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.299  6319  6386 I Finsky  : [58] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.306  6319  6387 W Finsky  : [59] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.307  6319  6387 I Finsky  : [59] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.309  6319  6387 W Finsky  : [59] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.309  6319  6387 I Finsky  : [59] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.313  6319  6387 W Finsky  : [59] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.313  6319  6387 I Finsky  : [59] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.317  6319  6398 W Finsky  : [66] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.317  6319  6398 I Finsky  : [66] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.318  6319  6398 W Finsky  : [66] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.318  6319  6398 I Finsky  : [66] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.325  6319  6387 W Finsky  : [59] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.326  6319  6387 I Finsky  : [59] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.329  6319  6385 W Finsky  : [57] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.329  6319  6385 I Finsky  : [57] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.330  6319  6398 W Finsky  : [66] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.330  6319  6398 I Finsky  : [66] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.333  6319  6398 W Finsky  : [66] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.333  6319  6398 I Finsky  : [66] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.339  6319  6386 W Finsky  : [58] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.339  6319  6386 I Finsky  : [58] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.348  6319  6398 W Finsky  : [66] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.348  6319  6398 I Finsky  : [66] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.350  6319  6398 W Finsky  : [66] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.350  6319  6398 I Finsky  : [66] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.358  6319  6398 W Finsky  : [66] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.358  6319  6398 I Finsky  : [66] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.361  6319  6398 W Finsky  : [66] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.361  6319  6398 I Finsky  : [66] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.373  6319  6398 W Finsky  : [66] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.374  6319  6398 I Finsky  : [66] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.374  6319  6386 W Finsky  : [58] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.374  6319  6386 I Finsky  : [58] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.377  6319  6387 W Finsky  : [59] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.377  6319  6387 I Finsky  : [59] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.378  6319  6387 W Finsky  : [59] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.378  6319  6387 I Finsky  : [59] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.381  6319  6387 W Finsky  : [59] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.381  6319  6387 I Finsky  : [59] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.386  6319  6387 W Finsky  : [59] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.386  6319  6387 I Finsky  : [59] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.389  6319  6387 W Finsky  : [59] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.389  6319  6387 I Finsky  : [59] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.390  6319  6398 W Finsky  : [66] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.390  6319  6398 I Finsky  : [66] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.390  6319  6386 W Finsky  : [58] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.390  6319  6386 I Finsky  : [58] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.393  6319  6385 W Finsky  : [57] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.393  6319  6385 I Finsky  : [57] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.394  6319  6387 W Finsky  : [59] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.394  6319  6387 I Finsky  : [59] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.397  6319  6398 W Finsky  : [66] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.397  6319  6398 I Finsky  : [66] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.398  6319  6386 W Finsky  : [58] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.398  6319  6386 I Finsky  : [58] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.398  6319  6385 W Finsky  : [57] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.398  6319  6385 I Finsky  : [57] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.399  6319  6386 W Finsky  : [58] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.399  6319  6386 I Finsky  : [58] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.401  6319  6386 W Finsky  : [58] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.401  6319  6386 I Finsky  : [58] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.403  6319  6387 W Finsky  : [59] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.403  6319  6387 I Finsky  : [59] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.404  6319  6387 W Finsky  : [59] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.404  6319  6387 I Finsky  : [59] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.404  6319  6386 W Finsky  : [58] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.404  6319  6386 I Finsky  : [58] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.404  6319  6398 W Finsky  : [66] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.404  6319  6398 I Finsky  : [66] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.405  6319  6398 W Finsky  : [66] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.405  6319  6398 I Finsky  : [66] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.405  6319  6385 W Finsky  : [57] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.405  6319  6385 I Finsky  : [57] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.406  6319  6385 W Finsky  : [57] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.406  6319  6385 I Finsky  : [57] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.406  6319  6398 W Finsky  : [66] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.406  6319  6398 I Finsky  : [66] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.406  6319  6385 W Finsky  : [57] com.thinkube.feierabendrechner: No account found.
+11-12 10:26:34.406  6319  6385 I Finsky  : [57] Billing preferred account via installer for com.thinkube.feierabendrechner: [dCNOmK_nSY-12vHzasLXiswzlGT5UHA7jAGYkvmCuQs]
+11-12 10:26:34.997   544   565 I ActivityTaskManager: Displayed com.thinkube.feierabendrechner/.MainActivity for user 0: +1s723ms
+11-12 10:26:34.997   544   565 I ActivityTaskManager: Fully drawn com.thinkube.feierabendrechner/.MainActivity: +1s723ms
+11-12 10:26:35.007   544  1391 D CoreBackPreview: Window{299de25 u0 Splash Screen com.thinkube.feierabendrechner EXITING}: Setting back callback null
+11-12 10:26:35.009   544   962 W InputManager-JNI: Input channel object '299de25 Splash Screen com.thinkube.feierabendrechner (client)' was disposed without first being removed with the input manager!
+11-12 10:26:35.031   544   666 I ImeTracker: com.thinkube.feierabendrechner:8c6a4ad0: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false
+11-12 10:26:35.031   544   666 I ImeTracker: com.thinkube.feierabendrechner:8c6a4ad0: onCancelled at PHASE_SERVER_SHOULD_HIDE
+11-12 10:26:35.033  6242  6242 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1986 onStartInput(EditorInfo{EditorInfo{packageName=com.thinkube.feierabendrechner, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+11-12 10:26:35.034   544  1391 W PackageConfigPersister: App-specific configuration not found for packageName: com.thinkube.feierabendrechner and userId: 0
+11-12 10:26:39.605  8525  8582 D ProfileInstaller: Skipping profile installation for com.thinkube.feierabendrechner

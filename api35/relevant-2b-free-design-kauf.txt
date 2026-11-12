@@ -1,0 +1,96 @@
+11-12 10:22:34.650   544  1018 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.thinkube.feierabendrechner/.MainActivity} with LAUNCH_SINGLE_TOP from uid 2000 (BAL_ALLOW_PERMISSION) result code=3
+11-12 10:22:34.651   890   928 D WindowManagerShell: onActivityRestartAttempt: ComponentInfo{com.thinkube.feierabendrechner/com.google.android.gms.ads.AdActivity}
+11-12 10:22:42.993  1307  1322 W .apps.wellbeing: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~V-sPe5fujawCWeGQMhjyMw==/com.thinkube.feierabendrechner-ARXBapSlS_5cUy-ufjjeRw==/base.apk' with 1 weak references
+11-12 10:22:48.139   544  1765 I ActivityManager:   Force stopping service ServiceRecord{e3bcda2 u0 com.google.android.gms/.chimera.PersistentApiService c:com.thinkube.feierabendrechner}
+11-12 10:22:49.225  5707  5707 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:22:49.229  5707  5707 I AndroidRuntime: Using default boot image
+11-12 10:22:49.229  5707  5707 I AndroidRuntime: Leaving lock profiling enabled
+11-12 10:22:49.614  5707  5707 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 10:22:50.786  5707  5707 D AndroidRuntime: Shutting down VM
+11-12 10:22:54.002  5752  5752 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:22:54.007  5752  5752 I AndroidRuntime: Using default boot image
+11-12 10:22:54.007  5752  5752 I AndroidRuntime: Leaving lock profiling enabled
+11-12 10:22:54.266  5752  5752 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 10:22:55.317  5752  5752 D AndroidRuntime: Shutting down VM
+11-12 10:22:57.860  5780  5780 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:22:57.874  5780  5780 I AndroidRuntime: Using default boot image
+11-12 10:22:57.874  5780  5780 I AndroidRuntime: Leaving lock profiling enabled
+11-12 10:22:58.057  5780  5780 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 10:22:59.119  5780  5780 D AndroidRuntime: Shutting down VM
+11-12 10:23:01.666  5804  5804 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:23:01.681  5804  5804 I AndroidRuntime: Using default boot image
+11-12 10:23:01.681  5804  5804 I AndroidRuntime: Leaving lock profiling enabled
+11-12 10:23:01.897  5804  5804 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 10:23:02.012   544  1018 I ActivityManager:   Force stopping service ServiceRecord{5542f4e u0 com.google.android.gms/.chimera.GmsApiService c:com.thinkube.feierabendrechner}
+11-12 10:23:02.978  5804  5804 D AndroidRuntime: Shutting down VM
+11-12 10:23:03.078  4857  4903 I Finsky  : [57] ItemStore: Not cached: com.thinkube.feierabendrechner
+11-12 10:23:03.242  5664  5664 I artd    : Dex parent of /data/app/~~V-sPe5fujawCWeGQMhjyMw==/com.thinkube.feierabendrechner-ARXBapSlS_5cUy-ufjjeRw==/base.apk is not writable: Permission denied
+11-12 10:23:03.242  5664  5664 I artd    : GetBestInfo checking odex in dalvik-cache (/data/dalvik-cache/x86_64/data@app@~~V-sPe5fujawCWeGQMhjyMw==@com.thinkube.feierabendrechner-ARXBapSlS_5cUy-ufjjeRw==@base.apk@classes.dex)
+11-12 10:23:03.242  5664  5664 I artd    : Loading /data/dalvik-cache/x86_64/data@app@~~V-sPe5fujawCWeGQMhjyMw==@com.thinkube.feierabendrechner-ARXBapSlS_5cUy-ufjjeRw==@base.apk@classes.dex with executable: 0
+11-12 10:23:03.242  5664  5664 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/x86_64/data@app@~~V-sPe5fujawCWeGQMhjyMw==@com.thinkube.feierabendrechner-ARXBapSlS_5cUy-ufjjeRw==@base.apk@classes.dex: File /data/dalvik-cache/x86_64/data@app@~~V-sPe5fujawCWeGQMhjyMw==@com.thinkube.feierabendrechner-ARXBapSlS_5cUy-ufjjeRw==@base.apk@classes.vdex does not exist.
+11-12 10:23:03.242  5664  5664 I artd    : GetBestInfo checking odex next to the dex file (/data/app/~~V-sPe5fujawCWeGQMhjyMw==/com.thinkube.feierabendrechner-ARXBapSlS_5cUy-ufjjeRw==/oat/x86_64/base.odex)
+11-12 10:23:03.242  5664  5664 I artd    : Loading /data/app/~~V-sPe5fujawCWeGQMhjyMw==/com.thinkube.feierabendrechner-ARXBapSlS_5cUy-ufjjeRw==/oat/x86_64/base.odex with executable: 0
+11-12 10:23:03.242  5664  5664 I artd    : Successfully loaded /data/app/~~V-sPe5fujawCWeGQMhjyMw==/com.thinkube.feierabendrechner-ARXBapSlS_5cUy-ufjjeRw==/oat/x86_64/base.odex with executable: 0
+11-12 10:23:03.243  5664  5664 I artd    : /data/app/~~V-sPe5fujawCWeGQMhjyMw==/com.thinkube.feierabendrechner-ARXBapSlS_5cUy-ufjjeRw==/oat/x86_64/base.odex is kOatUpToDate with filter verify
+11-12 10:23:03.244  5664  5664 I artd    : Dex parent of /data/user/0/com.thinkube.feierabendrechner/app_pccache/6/1FECF17D179A896CE8C02AACE0C580FE8C2F25DD/pcam.jar is not writable: Permission denied
+11-12 10:23:03.244  5664  5664 I artd    : GetBestInfo checking odex in dalvik-cache (/data/dalvik-cache/x86_64/data@user@0@com.thinkube.feierabendrechner@app_pccache@6@1FECF17D179A896CE8C02AACE0C580FE8C2F25DD@pcam.jar@classes.dex)
+11-12 10:23:03.244  5664  5664 I artd    : Loading /data/dalvik-cache/x86_64/data@user@0@com.thinkube.feierabendrechner@app_pccache@6@1FECF17D179A896CE8C02AACE0C580FE8C2F25DD@pcam.jar@classes.dex with executable: 0
+11-12 10:23:03.244  5664  5664 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/x86_64/data@user@0@com.thinkube.feierabendrechner@app_pccache@6@1FECF17D179A896CE8C02AACE0C580FE8C2F25DD@pcam.jar@classes.dex: File /data/dalvik-cache/x86_64/data@user@0@com.thinkube.feierabendrechner@app_pccache@6@1FECF17D179A896CE8C02AACE0C580FE8C2F25DD@pcam.jar@classes.vdex does not exist.
+11-12 10:23:03.244  5664  5664 I artd    : GetBestInfo checking odex next to the dex file (/data/user/0/com.thinkube.feierabendrechner/app_pccache/6/1FECF17D179A896CE8C02AACE0C580FE8C2F25DD/oat/x86_64/pcam.odex)
+11-12 10:23:03.244  5664  5664 I artd    : Loading /data/user/0/com.thinkube.feierabendrechner/app_pccache/6/1FECF17D179A896CE8C02AACE0C580FE8C2F25DD/oat/x86_64/pcam.odex with executable: 0
+11-12 10:23:03.245  5664  5664 I artd    : OatFileAssistant test for existing oat file /data/user/0/com.thinkube.feierabendrechner/app_pccache/6/1FECF17D179A896CE8C02AACE0C580FE8C2F25DD/oat/x86_64/pcam.odex: Failed to open oat filename for reading: No such file or directory
+11-12 10:23:03.245  5664  5664 I artd    : GetBestInfo checking vdex in dalvik-cache (/data/dalvik-cache/x86_64/data@user@0@com.thinkube.feierabendrechner@app_pccache@6@1FECF17D179A896CE8C02AACE0C580FE8C2F25DD@pcam.jar@classes.vdex)
+11-12 10:23:03.245  5664  5664 I artd    : unable to open vdex file /data/dalvik-cache/x86_64/data@user@0@com.thinkube.feierabendrechner@app_pccache@6@1FECF17D179A896CE8C02AACE0C580FE8C2F25DD@pcam.jar@classes.vdex: File /data/dalvik-cache/x86_64/data@user@0@com.thinkube.feierabendrechner@app_pccache@6@1FECF17D179A896CE8C02AACE0C580FE8C2F25DD@pcam.jar@classes.vdex does not exist.
+11-12 10:23:03.245  5664  5664 I artd    : OatFileAssistant test for existing oat file /data/dalvik-cache/x86_64/data@user@0@com.thinkube.feierabendrechner@app_pccache@6@1FECF17D179A896CE8C02AACE0C580FE8C2F25DD@pcam.jar@classes.vdex: File /data/dalvik-cache/x86_64/data@user@0@com.thinkube.feierabendrechner@app_pccache@6@1FECF17D179A896CE8C02AACE0C580FE8C2F25DD@pcam.jar@classes.vdex does not exist.
+11-12 10:23:03.245  5664  5664 I artd    : GetBestInfo checking vdex next to the dex file (/data/user/0/com.thinkube.feierabendrechner/app_pccache/6/1FECF17D179A896CE8C02AACE0C580FE8C2F25DD/oat/x86_64/pcam.vdex)
+11-12 10:23:03.247  5664  5664 I artd    : Successfully loaded /data/user/0/com.thinkube.feierabendrechner/app_pccache/6/1FECF17D179A896CE8C02AACE0C580FE8C2F25DD/oat/x86_64/pcam.vdex with executable: 0
+11-12 10:23:03.247  5664  5664 I artd    : Image checksum test skipped for vdex file /data/user/0/com.thinkube.feierabendrechner/app_pccache/6/1FECF17D179A896CE8C02AACE0C580FE8C2F25DD/oat/x86_64/pcam.vdex
+11-12 10:23:03.247  5664  5664 I artd    : /data/user/0/com.thinkube.feierabendrechner/app_pccache/6/1FECF17D179A896CE8C02AACE0C580FE8C2F25DD/oat/x86_64/pcam.vdex is kOatUpToDate with filter verify
+11-12 10:23:05.464  5878  5878 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:23:05.467  5878  5878 I AndroidRuntime: Using default boot image
+11-12 10:23:05.467  5878  5878 I AndroidRuntime: Leaving lock profiling enabled
+11-12 10:23:05.581  5878  5878 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 10:23:06.619  5878  5878 D AndroidRuntime: Shutting down VM
+11-12 10:23:07.708  5899  5899 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:23:07.714  5899  5899 I AndroidRuntime: Using default boot image
+11-12 10:23:07.718  5899  5899 I AndroidRuntime: Leaving lock profiling enabled
+11-12 10:23:07.941  5899  5899 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 10:23:08.965  5899  5899 D AndroidRuntime: Shutting down VM
+11-12 10:23:11.413  5923  5923 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:23:11.417  5923  5923 I AndroidRuntime: Using default boot image
+11-12 10:23:11.417  5923  5923 I AndroidRuntime: Leaving lock profiling enabled
+11-12 10:23:11.546  5923  5923 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 10:23:12.591  5923  5923 D AndroidRuntime: Shutting down VM
+11-12 10:23:15.076  5967  5967 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:23:15.081  5967  5967 I AndroidRuntime: Using default boot image
+11-12 10:23:15.088  5967  5967 I AndroidRuntime: Leaving lock profiling enabled
+11-12 10:23:15.272  5967  5967 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 10:23:16.317  5967  5967 D AndroidRuntime: Shutting down VM
+11-12 10:23:18.778  6002  6002 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:23:18.787  6002  6002 I AndroidRuntime: Using default boot image
+11-12 10:23:18.787  6002  6002 I AndroidRuntime: Leaving lock profiling enabled
+11-12 10:23:18.997  6002  6002 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 10:23:19.593   544  1516 I ActivityManager:   Force stopping service ServiceRecord{3b2d5c u0 com.google.android.gms/.chimera.PersistentApiService c:com.thinkube.feierabendrechner}
+11-12 10:23:20.114  6002  6002 D AndroidRuntime: Shutting down VM
+11-12 10:23:21.214  6038  6038 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:23:21.218  6038  6038 I AndroidRuntime: Using default boot image
+11-12 10:23:21.218  6038  6038 I AndroidRuntime: Leaving lock profiling enabled
+11-12 10:23:21.402  6038  6038 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 10:23:22.723  6038  6038 D AndroidRuntime: Shutting down VM
+11-12 10:23:25.393  6216  6216 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:23:25.400  6216  6216 I AndroidRuntime: Using default boot image
+11-12 10:23:25.400  6216  6216 I AndroidRuntime: Leaving lock profiling enabled
+11-12 10:23:25.530  6216  6216 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 10:23:26.647  6216  6216 D AndroidRuntime: Shutting down VM
+11-12 10:23:29.158  6444  6444 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:23:29.168  6444  6444 I AndroidRuntime: Using default boot image
+11-12 10:23:29.168  6444  6444 I AndroidRuntime: Leaving lock profiling enabled
+11-12 10:23:29.341  6444  6444 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 10:23:30.445  6444  6444 D AndroidRuntime: Shutting down VM
+11-12 10:23:33.015  6566  6566 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:23:33.045  6566  6566 I AndroidRuntime: Using default boot image
+11-12 10:23:33.045  6566  6566 I AndroidRuntime: Leaving lock profiling enabled
+11-12 10:23:33.238  6566  6566 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 10:23:34.665  6566  6566 D AndroidRuntime: Shutting down VM
+11-12 10:23:36.397  6070  6077 W gle.android.gms: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~V-sPe5fujawCWeGQMhjyMw==/com.thinkube.feierabendrechner-ARXBapSlS_5cUy-ufjjeRw==/base.apk' with 1 weak references
+11-12 10:23:38.683  6070  6077 W gle.android.gms: ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~V-sPe5fujawCWeGQMhjyMw==/com.thinkube.feierabendrechner-ARXBapSlS_5cUy-ufjjeRw==/base.apk' with 1 weak references

@@ -1,0 +1,25 @@
+11-12 10:25:40.087  8257  8257 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:25:40.090  8257  8257 I AndroidRuntime: Using default boot image
+11-12 10:25:40.090  8257  8257 I AndroidRuntime: Leaving lock profiling enabled
+11-12 10:25:40.181  8257  8257 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 10:25:41.219  8257  8257 D AndroidRuntime: Shutting down VM
+11-12 10:25:43.490  8278  8278 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:25:43.493  8278  8278 I AndroidRuntime: Using default boot image
+11-12 10:25:43.493  8278  8278 I AndroidRuntime: Leaving lock profiling enabled
+11-12 10:25:43.600  8278  8278 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 10:25:44.648  8278  8278 D AndroidRuntime: Shutting down VM
+11-12 10:25:45.640  1148  1148 D b/267448330: provider: ComponentInfo{com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.FeierabendWidgetProvider}, paddedSizes: [112.0x150.0, 112.0x150.0, 196.0x104.0, 196.0x104.0], getMinMaxSizes: Rect(112, 104 - 196, 150)
+11-12 10:25:45.650  1148  1148 D nativeloader: Configuring clns-8 for other apk . target_sdk_version=36, uses_libraries=, library_path=/data/app/~~tm9wsxuGzLFctao2_PFtrw==/com.thinkube.feierabendrechner-qsJmtvmcBaY1cczCGAZF9Q==/lib/x86_64:/data/app/~~tm9wsxuGzLFctao2_PFtrw==/com.thinkube.feierabendrechner-qsJmtvmcBaY1cczCGAZF9Q==/base.apk!/lib/x86_64, permitted_path=/data:/mnt/expand
+11-12 10:25:48.744  8306  8306 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:25:48.748  8306  8306 I AndroidRuntime: Using default boot image
+11-12 10:25:48.748  8306  8306 I AndroidRuntime: Leaving lock profiling enabled
+11-12 10:25:48.833  8306  8306 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 10:25:49.852  8306  8306 D AndroidRuntime: Shutting down VM
+11-12 10:25:50.742   544  1391 I AppWidgetServiceImpl: Bound widget 2 to provider ProviderId{user:0, app:10209, cmp:ComponentInfo{com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.FeierabendWidgetProvider}}
+11-12 10:25:50.745  1148  1208 D ItemInstallQueue: Adding PendingInstallShortcutInfo to queue. Attached info: ItemInfo(id=-1 type=WIDGET container=# com.android.launcher3.logger.LauncherAtom$ContainerInfo@7bc6f targetComponent=ComponentInfo{com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.FeierabendWidgetProvider} screen=-1 cell(-1,-1) span(2,2) minSpan(2,2) rank=0 user=UserHandle{0} title=null providerName=ComponentInfo{com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.FeierabendWidgetProvider} appWidgetId=2)
+11-12 10:25:50.761   544   838 D AppWidgetServiceImpl: Trying to notify widget update for package com.thinkube.feierabendrechner with widget id: 2
+11-12 10:25:51.011  1148  1148 I TopTaskTracker: onTaskMovedToFront: (moved taskInfo to front) taskId=10, baseIntent=Intent { flg=0x10000000 cmp=com.thinkube.feierabendrechner/.MainActivity }
+11-12 10:25:51.034   544   666 I ImeTracker: com.thinkube.feierabendrechner:c3491052: onRequestHide at ORIGIN_SERVER reason HIDE_UNSPECIFIED_WINDOW fromUser false
+11-12 10:25:51.034   544   666 I ImeTracker: com.thinkube.feierabendrechner:c3491052: onCancelled at PHASE_SERVER_SHOULD_HIDE
+11-12 10:25:51.044  6242  6242 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1986 onStartInput(EditorInfo{EditorInfo{packageName=com.thinkube.feierabendrechner, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+11-12 10:25:51.045   544   800 W PackageConfigPersister: App-specific configuration not found for packageName: com.thinkube.feierabendrechner and userId: 0
