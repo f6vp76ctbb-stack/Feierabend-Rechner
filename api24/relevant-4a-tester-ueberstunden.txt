@@ -1,0 +1,34 @@
+11-12 10:23:51.388  2330  5618 I ChromeSync: [Persistence,AffiliationManager] One of affiliation or grouping data for android://LKOoQNvkYjOF5pta5XnVJ4unwIimJN1q95NiM5yvNNPhmLql4Sk9C9tdCs_bpFziPYDI5avj9q--wDS7ztSKVQ==@com.thinkube.feierabendrechner/ was not found. Marking affiliation data as stale...
+11-12 10:23:51.494  1644  2179 I ActivityManager: START u0 {flg=0x10000000 cmp=com.thinkube.feierabendrechner/.MainActivity} from uid 2000 on display 0
+11-12 10:23:51.507  1644  1782 I ActivityManager: Start proc 5656:com.thinkube.feierabendrechner/u0a78 for activity com.thinkube.feierabendrechner/.MainActivity
+11-12 10:23:51.609  1821  1821 W asset   : Asset path /data/app/com.thinkube.feierabendrechner-1/base.apk is neither a directory nor file (type=1).
+11-12 10:23:51.609  1821  1821 W PackageManager: Failure retrieving resources for com.thinkube.feierabendrechner
+11-12 10:23:51.609  1821  1821 W asset   : Asset path /data/app/com.thinkube.feierabendrechner-1/base.apk is neither a directory nor file (type=1).
+11-12 10:23:51.609  1821  1821 W PackageManager: Failure retrieving resources for com.thinkube.feierabendrechner
+11-12 10:23:51.609  1821  1821 W asset   : Asset path /data/app/com.thinkube.feierabendrechner-1/base.apk is neither a directory nor file (type=1).
+11-12 10:23:51.609  1821  1821 W PackageManager: Failure retrieving resources for com.thinkube.feierabendrechner
+11-12 10:23:51.629  5656  5656 I flutter : [IMPORTANT:flutter/shell/common/shell.cc(528)] [Action Required]: Impeller opt-out deprecated.
+11-12 10:23:51.629  5656  5656 I flutter :     The application opted out of Impeller by either using the
+11-12 10:23:51.629  5656  5656 I flutter :     `--no-enable-impeller` flag or the
+11-12 10:23:51.629  5656  5656 I flutter :     `io.flutter.embedding.android.EnableImpeller` `AndroidManifest.xml` entry.
+11-12 10:23:51.629  5656  5656 I flutter :     These options are going to go away in an upcoming Flutter release. Remove
+11-12 10:23:51.629  5656  5656 I flutter :     the explicit opt-out. If you need to opt-out, please report a bug describing
+11-12 10:23:51.629  5656  5656 I flutter :     the issue.
+11-12 10:23:51.629  5656  5656 I flutter : 
+11-12 10:23:51.629  5656  5656 I flutter :     https://github.com/flutter/flutter/issues/new?template=02_bug.yml
+11-12 10:23:51.629  5656  5656 I flutter : 
+11-12 10:23:51.712  5656  5679 I FA      :   adb shell setprop debug.firebase.analytics.app com.thinkube.feierabendrechner
+11-12 10:23:51.921  5656  5677 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 203400000 but found 202414023
+11-12 10:23:51.924  5656  5677 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 203400000 but found 202414023
+11-12 10:23:52.408  1644  1668 I ActivityManager: Displayed com.thinkube.feierabendrechner/.MainActivity: +911ms
+11-12 10:23:52.442  1644  1668 I WindowManager: Destroying surface Surface(name=Starting com.thinkube.feierabendrechner) called by com.android.server.wm.WindowStateAnimator.destroySurface:2016 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:882 com.android.server.wm.WindowState.destroyOrSaveSurface:2100 com.android.server.wm.AppWindowToken.destroySurfaces:363 com.android.server.wm.WindowStateAnimator.finishExit:565 com.android.server.wm.WindowStateAnimator.stepAnimationLocked:491 com.android.server.wm.WindowAnimator.updateWindowsLocked:303 com.android.server.wm.WindowAnimator.animateLocked:704 
+11-12 10:23:57.638  5656  5715 D ProfileInstaller: Installing profile for com.thinkube.feierabendrechner
+11-12 10:24:34.229  5866  5866 D AndroidRuntime: Shutting down VM
+11-12 10:24:34.327  5876  5876 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:24:34.328  5876  5876 D AndroidRuntime: CheckJNI is OFF
+11-12 10:24:34.357  5876  5876 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+11-12 10:24:34.559  5876  5876 D AndroidRuntime: Shutting down VM
+11-12 10:24:34.656  5886  5886 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:24:34.657  5886  5886 D AndroidRuntime: CheckJNI is OFF
+11-12 10:24:34.690  5886  5886 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+11-12 10:24:34.895  5886  5886 D AndroidRuntime: Shutting down VM

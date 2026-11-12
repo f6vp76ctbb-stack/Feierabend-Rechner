@@ -1,0 +1,32 @@
+11-12 10:26:16.398  6812  6812 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:26:16.399  6812  6812 D AndroidRuntime: CheckJNI is OFF
+11-12 10:26:16.423  6812  6812 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+11-12 10:26:16.445  6812  6812 D AndroidRuntime: Shutting down VM
+11-12 10:26:21.581  6827  6827 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:26:21.582  6827  6827 D AndroidRuntime: CheckJNI is OFF
+11-12 10:26:21.606  6827  6827 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-12 10:26:21.608  1644  2329 I ActivityManager: Force stopping com.thinkube.feierabendrechner appid=10078 user=0: from pid 6827
+11-12 10:26:21.608  1644  2329 I ActivityManager: Killing 5656:com.thinkube.feierabendrechner/u0a78 (adj 900): stop com.thinkube.feierabendrechner
+11-12 10:26:21.610  6827  6827 D AndroidRuntime: Shutting down VM
+11-12 10:26:21.701  6837  6837 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:26:21.702  6837  6837 D AndroidRuntime: CheckJNI is OFF
+11-12 10:26:21.728  6837  6837 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-12 10:26:21.731  1644  2180 I ActivityManager: START u0 {flg=0x10000000 cmp=com.thinkube.feierabendrechner/.MainActivity} from uid 2000 on display 0
+11-12 10:26:21.744  1644  1782 I ActivityManager: Start proc 6847:com.thinkube.feierabendrechner/u0a78 for activity com.thinkube.feierabendrechner/.MainActivity
+11-12 10:26:21.908  6847  6869 I FA      :   adb shell setprop debug.firebase.analytics.app com.thinkube.feierabendrechner
+11-12 10:26:21.918  6847  6847 I flutter : [IMPORTANT:flutter/shell/common/shell.cc(528)] [Action Required]: Impeller opt-out deprecated.
+11-12 10:26:21.918  6847  6847 I flutter :     The application opted out of Impeller by either using the
+11-12 10:26:21.918  6847  6847 I flutter :     `--no-enable-impeller` flag or the
+11-12 10:26:21.918  6847  6847 I flutter :     `io.flutter.embedding.android.EnableImpeller` `AndroidManifest.xml` entry.
+11-12 10:26:21.918  6847  6847 I flutter :     These options are going to go away in an upcoming Flutter release. Remove
+11-12 10:26:21.918  6847  6847 I flutter :     the explicit opt-out. If you need to opt-out, please report a bug describing
+11-12 10:26:21.918  6847  6847 I flutter :     the issue.
+11-12 10:26:21.918  6847  6847 I flutter : 
+11-12 10:26:21.918  6847  6847 I flutter :     https://github.com/flutter/flutter/issues/new?template=02_bug.yml
+11-12 10:26:21.918  6847  6847 I flutter : 
+11-12 10:26:22.091  6847  6867 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 203400000 but found 202414023
+11-12 10:26:22.092  6847  6867 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 203400000 but found 202414023
+11-12 10:26:22.664  1644  1668 I ActivityManager: Displayed com.thinkube.feierabendrechner/.MainActivity: +930ms
+11-12 10:26:22.665  6837  6837 D AndroidRuntime: Shutting down VM
+11-12 10:26:22.691  1644  1668 I WindowManager: Destroying surface Surface(name=Starting com.thinkube.feierabendrechner) called by com.android.server.wm.WindowStateAnimator.destroySurface:2016 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:882 com.android.server.wm.WindowState.destroyOrSaveSurface:2100 com.android.server.wm.AppWindowToken.destroySurfaces:363 com.android.server.wm.WindowStateAnimator.finishExit:565 com.android.server.wm.WindowStateAnimator.stepAnimationLocked:491 com.android.server.wm.WindowAnimator.updateWindowsLocked:303 com.android.server.wm.WindowAnimator.animateLocked:704 
+11-12 10:26:27.912  6847  6904 D ProfileInstaller: Skipping profile installation for com.thinkube.feierabendrechner

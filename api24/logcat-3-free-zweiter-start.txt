@@ -1,0 +1,293 @@
+--------- beginning of main
+11-12 10:23:22.012  5314  5314 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:23:22.013  5314  5314 D AndroidRuntime: CheckJNI is OFF
+11-12 10:23:22.025  5314  5314 W art     : Unexpected CPU variant for X86 using defaults: x86_64
+11-12 10:23:22.028  5314  5314 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-12 10:23:22.035  5314  5314 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-12 10:23:22.035  5314  5314 E android.os.Debug: failed to load memtrack module: -2
+11-12 10:23:22.035  5314  5314 I Radio-JNI: register_android_hardware_Radio DONE
+11-12 10:23:22.039  5314  5314 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+--------- beginning of system
+11-12 10:23:22.043  1644  1937 I ActivityManager: Force stopping com.thinkube.feierabendrechner appid=10078 user=0: from pid 5314
+11-12 10:23:22.043  1644  1937 I ActivityManager: Killing 4019:com.thinkube.feierabendrechner/u0a78 (adj 900): stop com.thinkube.feierabendrechner
+11-12 10:23:22.043  1644  1937 D ActivityManager: cleanUpApplicationRecord -- 4019
+11-12 10:23:22.046  5314  5314 D AndroidRuntime: Shutting down VM
+11-12 10:23:22.048  1905  1905 D CarrierSvcBindHelper: No carrier app for: 0
+11-12 10:23:22.102  1644  2131 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(NetworkRequest [ id=12, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ], android.os.BinderProxy@18e62df)
+11-12 10:23:22.102  1644  2132 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(NetworkRequest [ id=10, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED] ], android.os.BinderProxy@33a3b2c)
+11-12 10:23:22.102  1644  3965 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(NetworkRequest [ id=9, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED] ], android.os.BinderProxy@ddac9f5)
+11-12 10:23:22.102  1644  3965 D GraphicsStats: Buffer count: 2
+11-12 10:23:22.102  1644  1937 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(NetworkRequest [ id=11, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ], android.os.BinderProxy@82ed38a)
+11-12 10:23:22.103  1644  1732 D ConnectivityService: releasing NetworkRequest NetworkRequest [ id=12, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+11-12 10:23:22.105  1644  1732 E ConnectivityService: RemoteException caught trying to send a callback msg for NetworkRequest [ id=12, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+11-12 10:23:22.105  1644  1732 E ConnectivityService: RemoteException caught trying to send a callback msg for NetworkRequest [ id=9, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED] ]
+11-12 10:23:22.105  1644  1732 D ConnectivityService: releasing NetworkRequest NetworkRequest [ id=11, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+11-12 10:23:22.105  1644  1732 E ConnectivityService: RemoteException caught trying to send a callback msg for NetworkRequest [ id=11, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+11-12 10:23:22.105  1644  1732 E ConnectivityService: RemoteException caught trying to send a callback msg for NetworkRequest [ id=10, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED] ]
+11-12 10:23:22.151  5324  5324 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:23:22.152  5324  5324 D AndroidRuntime: CheckJNI is OFF
+11-12 10:23:22.164  5324  5324 W art     : Unexpected CPU variant for X86 using defaults: x86_64
+11-12 10:23:22.166  5324  5324 D ICU     : No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-12 10:23:22.174  5324  5324 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-12 10:23:22.174  5324  5324 E android.os.Debug: failed to load memtrack module: -2
+11-12 10:23:22.175  5324  5324 I Radio-JNI: register_android_hardware_Radio DONE
+11-12 10:23:22.178  5324  5324 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-12 10:23:22.182  1644  3965 I ActivityManager: START u0 {flg=0x10000000 cmp=com.thinkube.feierabendrechner/.MainActivity} from uid 2000 on display 0
+11-12 10:23:22.188  5335  5335 W art     : Unexpected CPU variant for X86 using defaults: x86_64
+11-12 10:23:22.196  1644  1789 I ActivityManager: Start proc 5335:com.thinkube.feierabendrechner/u0a78 for activity com.thinkube.feierabendrechner/.MainActivity
+11-12 10:23:22.225  1314  1322 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 819200
+11-12 10:23:22.238  5335  5335 I FirebaseApp: Device unlocked: initializing all Firebase APIs for app [DEFAULT]
+11-12 10:23:22.248  5335  5335 I FirebaseInitProvider: FirebaseApp initialization successful
+11-12 10:23:22.254  5335  5335 D WM-WrkMgrInitializer: Initializing WorkManager with default configuration.
+11-12 10:23:22.261  2308  2421 D EGL_emulation: eglMakeCurrent: 0x74a6c4035aa0: ver 3 0 (tinfo 0x74a6c400c960)
+11-12 10:23:22.263  1644  2329 I WindowManager: Destroying surface Surface(name=com.android.launcher3/com.android.launcher3.Launcher) called by com.android.server.wm.WindowStateAnimator.destroySurface:2016 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:882 com.android.server.wm.WindowState.destroyOrSaveSurface:2100 com.android.server.wm.WindowManagerService.tryStartExitingAnimation:3024 com.android.server.wm.WindowManagerService.relayoutWindow:2904 com.android.server.wm.Session.relayout:224 android.view.IWindowSession$Stub.onTransact:286 com.android.server.wm.Session.onTransact:145 
+11-12 10:23:22.264  5335  5351 I DynamiteModule: Considering local module com.google.android.gms.measurement.dynamite:185 and remote module com.google.android.gms.measurement.dynamite:15
+11-12 10:23:22.264  5335  5351 I DynamiteModule: Selected local version of com.google.android.gms.measurement.dynamite
+11-12 10:23:22.309  5335  5360 D skia    : [SkFontMgr Android Parser] '/product/etc/fonts_customization.xml' could not be opened
+11-12 10:23:22.319  5335  5335 W System  : ClassLoader referenced unknown path: 
+11-12 10:23:22.341  5335  5362 D Phlogger: Application doesn't implement PhenotypeApplication interface, falling back to globally set context. See go/phenotype-flag#process-stable-init for more info.
+11-12 10:23:22.346  5335  5335 I flutter : [IMPORTANT:flutter/shell/common/shell.cc(528)] [Action Required]: Impeller opt-out deprecated.
+11-12 10:23:22.346  5335  5335 I flutter :     The application opted out of Impeller by either using the
+11-12 10:23:22.346  5335  5335 I flutter :     `--no-enable-impeller` flag or the
+11-12 10:23:22.346  5335  5335 I flutter :     `io.flutter.embedding.android.EnableImpeller` `AndroidManifest.xml` entry.
+11-12 10:23:22.346  5335  5335 I flutter :     These options are going to go away in an upcoming Flutter release. Remove
+11-12 10:23:22.346  5335  5335 I flutter :     the explicit opt-out. If you need to opt-out, please report a bug describing
+11-12 10:23:22.346  5335  5335 I flutter :     the issue.
+11-12 10:23:22.346  5335  5335 I flutter : 
+11-12 10:23:22.346  5335  5335 I flutter :     https://github.com/flutter/flutter/issues/new?template=02_bug.yml
+11-12 10:23:22.346  5335  5335 I flutter : 
+11-12 10:23:22.363  5335  5335 D         : HostConnection::get() New Host Connection established 0x74a6c17fd7a0, tid 5335
+11-12 10:23:22.364  5335  5335 D EGL_emulation: eglCreateContext: 0x74a6c17c05c0: maj 3 min 0 rcv 3
+11-12 10:23:22.365  5335  5335 D EGL_emulation: eglCreateContext: 0x74a6c17c0660: maj 3 min 0 rcv 3
+11-12 10:23:22.366  5335  5363 D         : HostConnection::get() New Host Connection established 0x74a6c17fd9e0, tid 5363
+11-12 10:23:22.367  5335  5363 D EGL_emulation: eglMakeCurrent: 0x74a6c17c0660: ver 3 0 (tinfo 0x74a6c40c9e00)
+11-12 10:23:22.367  5335  5363 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008cdf
+11-12 10:23:22.367  5335  5363 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008824
+11-12 10:23:22.370  5335  5363 E eglCodecCommon: glUtilsParamSize: unknow param 0x000087fe
+11-12 10:23:22.381  5335  5357 I FA      : App measurement initialized, version: 161000
+11-12 10:23:22.381  5335  5357 I FA      : To enable debug logging run: adb shell setprop log.tag.FA VERBOSE
+11-12 10:23:22.382  5335  5357 I FA      : To enable faster debug mode event logging run:
+11-12 10:23:22.382  5335  5357 I FA      :   adb shell setprop debug.firebase.analytics.app com.thinkube.feierabendrechner
+11-12 10:23:22.422  5335  5340 I art     : Do partial code cache collection, code=22KB, data=29KB
+11-12 10:23:22.422  5335  5340 I art     : After code cache collection, code=22KB, data=29KB
+11-12 10:23:22.422  5335  5340 I art     : Increasing code cache capacity to 128KB
+11-12 10:23:22.424  1314  1690 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+11-12 10:23:22.442  5335  5377 I OpenGLRenderer: Initialized EGL, version 1.4
+11-12 10:23:22.442  5335  5377 D OpenGLRenderer: Swap behavior 1
+11-12 10:23:22.443  5335  5377 D         : HostConnection::get() New Host Connection established 0x74a6c17796e0, tid 5377
+11-12 10:23:22.444  5335  5377 D EGL_emulation: eglCreateContext: 0x74a6c17c0c00: maj 3 min 0 rcv 3
+11-12 10:23:22.446  5335  5377 D EGL_emulation: eglMakeCurrent: 0x74a6c17c0c00: ver 3 0 (tinfo 0x74a6b3be81c0)
+11-12 10:23:22.446  5335  5377 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008cdf
+11-12 10:23:22.446  5335  5377 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008824
+11-12 10:23:22.450  5335  5361 D         : HostConnection::get() New Host Connection established 0x74a6ae52a020, tid 5361
+11-12 10:23:22.452  5335  5361 D EGL_emulation: eglMakeCurrent: 0x74a6c17c05c0: ver 3 0 (tinfo 0x74a6b3b86680)
+11-12 10:23:22.452  5335  5357 I FA      : Tag Manager is not found and thus will not be used
+11-12 10:23:22.452  5335  5361 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008cdf
+11-12 10:23:22.452  5335  5361 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008824
+11-12 10:23:22.453  5335  5361 D EGL_emulation: eglCreateContext: 0x74a6c17c12e0: maj 3 min 0 rcv 3
+11-12 10:23:22.454  5335  5361 D EGL_emulation: eglMakeCurrent: 0x74a6c17c12e0: ver 3 0 (tinfo 0x74a6b3b86680)
+11-12 10:23:22.454  5335  5361 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008cdf
+11-12 10:23:22.454  5335  5361 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008824
+11-12 10:23:22.454  5335  5361 D EGL_emulation: eglMakeCurrent: 0x74a6c17c05c0: ver 3 0 (tinfo 0x74a6b3b86680)
+11-12 10:23:22.458  5335  5361 E eglCodecCommon: glUtilsParamSize: unknow param 0x000087fe
+11-12 10:23:22.460  5335  5361 D EGL_emulation: eglMakeCurrent: 0x74a6c17c05c0: ver 3 0 (tinfo 0x74a6b3b86680)
+11-12 10:23:22.518  5335  5382 I UserMessagingPlatform: Use new ConsentDebugSettings.Builder().addTestDeviceHashedId("B3EEABB8EE11C2BE770B684D95219ECB") to set this as a debug device.
+11-12 10:23:22.521  5335  5382 D UserMessagingPlatform: Stored info not exists: IABTCF_idfaFlowControl
+11-12 10:23:22.521  5335  5382 D UserMessagingPlatform: Stored info not exists: IABTCF_TCString
+11-12 10:23:22.521  5335  5382 D UserMessagingPlatform: Stored info not exists: UMP_CoMoAdPersonalizationPurposeConsentStatus
+11-12 10:23:22.521  5335  5382 D UserMessagingPlatform: Stored info not exists: IABTCF_AddtlConsent
+11-12 10:23:22.521  5335  5382 D UserMessagingPlatform: Stored info not exists: UMP_CoMoAnalyticsStoragePurposeConsentStatus
+11-12 10:23:22.521  5335  5382 D UserMessagingPlatform: Stored info not exists: IDFA_freqCapNumViews
+11-12 10:23:22.521  5335  5382 D UserMessagingPlatform: Stored info not exists: UMP_CoMoAdStoragePurposeConsentStatus
+11-12 10:23:22.521  5335  5382 D UserMessagingPlatform: Stored info not exists: UMP_CoMoAdUserDataPurposeConsentStatus
+11-12 10:23:22.523  5335  5382 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-12 10:23:22.534  5335  5382 W System  : ClassLoader referenced unknown path: /system/app/Chrome/lib/x86_64
+11-12 10:23:22.543  5335  5382 I WebViewFactory: Loading com.android.chrome version 69.0.3497.100 (code 349710067)
+11-12 10:23:22.569  5335  5382 I art     : Rejecting re-init on previously-failed class java.lang.Class<uJ>: java.lang.NoClassDefFoundError: Failed resolution of: Landroid/webkit/TracingController;
+11-12 10:23:22.569  5335  5382 I art     :   at java.lang.Class java.lang.Class.classForName!(java.lang.String, boolean, java.lang.ClassLoader) (Class.java:-2)
+11-12 10:23:22.569  5335  5382 I art     :   at java.lang.Class java.lang.Class.forName(java.lang.String, boolean, java.lang.ClassLoader) (Class.java:400)
+11-12 10:23:22.569  5335  5382 I art     :   at java.lang.Class android.webkit.WebViewFactory.getProviderClass() (WebViewFactory.java:349)
+11-12 10:23:22.569  5335  5382 I art     :   at android.webkit.WebViewFactoryProvider android.webkit.WebViewFactory.getProvider() (WebViewFactory.java:194)
+11-12 10:23:22.570  5335  5382 I art     :   at java.lang.String android.webkit.WebSettings.getDefaultUserAgent(android.content.Context) (WebSettings.java:1246)
+11-12 10:23:22.570  5335  5382 I art     :   at com.google.android.gms.internal.ads.ww1 com.google.android.gms.internal.consent_sdk.d.s(com.google.android.gms.internal.ads.j20) (r8-map-id-cafda62918829fa5807efb72c5ad89dffc68979e4a68b745cb238c7baf4cb329:22)
+11-12 10:23:22.570  5335  5382 I art     :   at void com.google.android.gms.internal.consent_sdk.i7.run() (r8-map-id-cafda62918829fa5807efb72c5ad89dffc68979e4a68b745cb238c7baf4cb329:531)
+11-12 10:23:22.570  5335  5382 I art     :   at void java.util.concurrent.ThreadPoolExecutor.runWorker(java.util.concurrent.ThreadPoolExecutor$Worker) (ThreadPoolExecutor.java:1133)
+11-12 10:23:22.570  5335  5382 I art     :   at void java.util.concurrent.ThreadPoolExecutor$Worker.run() (ThreadPoolExecutor.java:607)
+11-12 10:23:22.570  5335  5382 I art     :   at void java.lang.Thread.run() (Thread.java:761)
+11-12 10:23:22.570  5335  5382 I art     : Caused by: java.lang.ClassNotFoundException: Didn't find class "android.webkit.TracingController" on path: DexPathList[[zip file "/system/app/Chrome/Chrome.apk"],nativeLibraryDirectories=[/system/app/Chrome/lib/x86_64, /system/app/Chrome/Chrome.apk!/lib/x86_64, /system/lib64, /vendor/lib64, /system/lib64, /vendor/lib64]]
+11-12 10:23:22.570  5335  5382 I art     :   at java.lang.Class dalvik.system.BaseDexClassLoader.findClass(java.lang.String) (BaseDexClassLoader.java:56)
+11-12 10:23:22.570  5335  5382 I art     :   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String, boolean) (ClassLoader.java:380)
+11-12 10:23:22.570  5335  5382 I art     :   at java.lang.Class java.lang.ClassLoader.loadClass(java.lang.String) (ClassLoader.java:312)
+11-12 10:23:22.570  5335  5382 I art     :   at java.lang.Class java.lang.Class.classForName!(java.lang.String, boolean, java.lang.ClassLoader) (Class.java:-2)
+11-12 10:23:22.570  5335  5382 I art     :   at java.lang.Class java.lang.Class.forName(java.lang.String, boolean, java.lang.ClassLoader) (Class.java:400)
+11-12 10:23:22.570  5335  5382 I art     :   at java.lang.Class android.webkit.WebViewFactory.getProviderClass() (WebViewFactory.java:349)
+11-12 10:23:22.570  5335  5382 I art     :   at android.webkit.WebViewFactoryProvider android.webkit.WebViewFactory.getProvider() (WebViewFactory.java:194)
+11-12 10:23:22.570  5335  5382 I art     :   at java.lang.String android.webkit.WebSettings.getDefaultUserAgent(android.content.Context) (WebSettings.java:1246)
+11-12 10:23:22.570  5335  5382 I art     :   at com.google.android.gms.internal.ads.ww1 com.google.android.gms.internal.consent_sdk.d.s(com.google.android.gms.internal.ads.j20) (r8-map-id-cafda62918829fa5807efb72c5ad89dffc68979e4a68b745cb238c7baf4cb329:22)
+11-12 10:23:22.570  5335  5382 I art     :   at void com.google.android.gms.internal.consent_sdk.i7.run() (r8-map-id-cafda62918829fa5807efb72c5ad89dffc68979e4a68b745cb238c7baf4cb329:531)
+11-12 10:23:22.570  5335  5382 I art     :   at void java.util.concurrent.ThreadPoolExecutor.runWorker(java.util.concurrent.ThreadPoolExecutor$Worker) (ThreadPoolExecutor.java:1133)
+11-12 10:23:22.570  5335  5382 I art     :   at void java.util.concurrent.ThreadPoolExecutor$Worker.run() (ThreadPoolExecutor.java:607)
+11-12 10:23:22.570  5335  5382 I art     :   at void java.lang.Thread.run() (Thread.java:761)
+11-12 10:23:22.570  5335  5382 I art     : 
+11-12 10:23:22.589  5335  5355 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 203400000 but found 202414023
+11-12 10:23:22.589  5335  5355 W GoogleApiManager: The service for u4.c is not available: b{statusCode=SERVICE_VERSION_UPDATE_REQUIRED, resolution=null, message=null, clientMethodKey=null}
+11-12 10:23:22.591  5335  5382 I cr_LibraryLoader: Time to load native libraries: 12 ms (timestamps 7537-7549)
+11-12 10:23:22.593  5335  5355 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 203400000 but found 202414023
+11-12 10:23:22.593  5335  5355 W GoogleApiManager: The service for u4.c is not available: b{statusCode=SERVICE_VERSION_UPDATE_REQUIRED, resolution=null, message=null, clientMethodKey=null}
+11-12 10:23:22.608  5335  5335 I chromium: [INFO:library_loader_hooks.cc(36)] Chromium logging enabled: level = 0, default verbosity = 0
+11-12 10:23:22.608  5335  5335 I cr_LibraryLoader: Expected native library version number "69.0.3497.100", actual native library version number "69.0.3497.100"
+11-12 10:23:22.618  5335  5335 I cr_BrowserStartup: Initializing chromium process, singleProcess=true
+11-12 10:23:22.620  5335  5335 W ResourceType: Failure getting entry for 0x7f1204b0 (t=17 e=1200) (error -2147483647)
+11-12 10:23:22.635  5335  5335 I chromium: [INFO:aw_field_trial_creator.cc(54)] First-WebView-Experiment not found
+11-12 10:23:22.709  5335  5393 W cr_CrashFileManager: /data/user/0/com.thinkube.feierabendrechner/cache/WebView/Crash Reports does not exist or is not a directory
+11-12 10:23:22.756  5335  5382 D UserMessagingPlatform: Action[clear]: {"keys":["UMP_eids"]}
+11-12 10:23:22.756  5335  5382 D UserMessagingPlatform: Action[write]: {"UMP_consentModeValues":"4444","IABTCF_CmpSdkID":300,"IABTCF_gdprApplies":0}
+11-12 10:23:22.756  5335  5382 D UserMessagingPlatform: Writing to storage: [UMP_consentModeValues] 4444
+11-12 10:23:22.756  5335  5382 D UserMessagingPlatform: Writing to storage: [IABTCF_CmpSdkID] 300
+11-12 10:23:22.756  5335  5382 D UserMessagingPlatform: Writing to storage: [IABTCF_gdprApplies] 0
+11-12 10:23:22.864  5335  5418 W System  : ClassLoader referenced unknown path: /system/priv-app/PrebuiltGmsCore/lib/x86_64
+11-12 10:23:22.888  5335  5433 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 212800000 but found 202414023
+11-12 10:23:22.889  5335  5355 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 212800000 but found 202414023
+11-12 10:23:22.889  5335  5355 W GoogleApiManager: The service for c5.b is not available: b{statusCode=SERVICE_VERSION_UPDATE_REQUIRED, resolution=null, message=null, clientMethodKey=null}
+11-12 10:23:22.937  5335  5403 W cr_media: Requires BLUETOOTH permission
+11-12 10:23:22.939  5335  5441 E libEGL  : validate_display:99 error 3008 (EGL_BAD_DISPLAY)
+11-12 10:23:22.939  5335  5441 D         : HostConnection::get() New Host Connection established 0x74a6aa5a6f40, tid 5441
+11-12 10:23:23.010  5335  5441 D EGL_emulation: eglCreateContext: 0x74a698c2e720: maj 3 min 0 rcv 3
+11-12 10:23:23.055  5335  5441 D EGL_emulation: eglMakeCurrent: 0x74a698c2e720: ver 3 0 (tinfo 0x74a699815ee0)
+11-12 10:23:23.056  5335  5441 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008cdf
+11-12 10:23:23.056  5335  5441 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008824
+11-12 10:23:23.187  5335  5441 E eglCodecCommon: glUtilsParamSize: unknow param 0x000087fe
+11-12 10:23:23.194  5335  5377 D EGL_emulation: eglMakeCurrent: 0x74a6c17c0c00: ver 3 0 (tinfo 0x74a6b3be81c0)
+11-12 10:23:23.200  5335  5441 I VideoCapabilities: Unsupported profile 4 for video/mp4v-es
+11-12 10:23:23.201  5335  5441 W cr_MediaCodecUtil: HW encoder for video/avc is not available on this device.
+11-12 10:23:23.265  5335  5441 D EGL_emulation: eglCreateContext: 0x74a698c2fe40: maj 3 min 0 rcv 3
+11-12 10:23:23.266  5335  5441 D EGL_emulation: eglMakeCurrent: 0x74a698c2fe40: ver 3 0 (tinfo 0x74a699815ee0)
+11-12 10:23:23.266  5335  5441 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008cdf
+11-12 10:23:23.267  5335  5441 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008824
+11-12 10:23:23.356  1644  1668 I ActivityManager: Displayed com.thinkube.feierabendrechner/.MainActivity: +1s171ms
+11-12 10:23:23.356  5324  5324 D AndroidRuntime: Shutting down VM
+11-12 10:23:23.362  5335  5441 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008a34
+11-12 10:23:23.362  5335  5441 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008073
+11-12 10:23:23.362  5335  5441 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ff
+11-12 10:23:23.377  1644  1668 I WindowManager: Destroying surface Surface(name=Starting com.thinkube.feierabendrechner) called by com.android.server.wm.WindowStateAnimator.destroySurface:2016 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:882 com.android.server.wm.WindowState.destroyOrSaveSurface:2100 com.android.server.wm.AppWindowToken.destroySurfaces:363 com.android.server.wm.WindowStateAnimator.finishExit:565 com.android.server.wm.WindowStateAnimator.stepAnimationLocked:491 com.android.server.wm.WindowAnimator.updateWindowsLocked:303 com.android.server.wm.WindowAnimator.animateLocked:704 
+11-12 10:23:23.383  5335  5452 I Ads     : This request is sent from a test device.
+11-12 10:23:23.392  5335  5453 D GASS    : Clearcut logging disabled
+11-12 10:23:23.485  1644  2179 D ConnectivityService: requestNetwork for Track default from uid/pid:10078/5335 for NetworkRequest [ id=15, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+11-12 10:23:23.487  1644  1726 D WIFI_UT : got request NetworkRequest [ id=15, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ] with score 50
+11-12 10:23:23.487  1644  1726 D WIFI    : got request NetworkRequest [ id=15, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ] with score 50
+11-12 10:23:23.487  1905  1905 D PhoneSwitcherNetworkRequstListener: got request NetworkRequest [ id=15, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ] with score 50
+11-12 10:23:23.490  1644  2344 D ConnectivityService: requestNetwork for Track default from uid/pid:10078/5335 for NetworkRequest [ id=16, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+11-12 10:23:23.490  1644  1726 D WIFI_UT : got request NetworkRequest [ id=16, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ] with score 50
+11-12 10:23:23.490  1644  1726 D WIFI    : got request NetworkRequest [ id=16, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ] with score 50
+11-12 10:23:23.490  1905  1905 D PhoneSwitcherNetworkRequstListener: got request NetworkRequest [ id=16, legacyType=-1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ] with score 50
+11-12 10:23:23.493  5335  5488 D GASS    : Clearcut logging disabled
+11-12 10:23:23.493  5335  5455 W art     : Before Android 4.1, method double java.util.concurrent.ThreadLocalRandom.internalNextDouble(double, double) would have incorrectly overridden the package-private method in java.util.Random
+11-12 10:23:23.493  5335  5455 W art     : Before Android 4.1, method int java.util.concurrent.ThreadLocalRandom.internalNextInt(int, int) would have incorrectly overridden the package-private method in java.util.Random
+11-12 10:23:23.493  5335  5455 W art     : Before Android 4.1, method long java.util.concurrent.ThreadLocalRandom.internalNextLong(long, long) would have incorrectly overridden the package-private method in java.util.Random
+11-12 10:23:23.532  5335  5436 W Ads     : Not retrying to fetch app settings
+11-12 10:23:23.542  5335  5340 I art     : Do partial code cache collection, code=50KB, data=60KB
+11-12 10:23:23.542  5335  5340 I art     : After code cache collection, code=50KB, data=60KB
+11-12 10:23:23.542  5335  5340 I art     : Increasing code cache capacity to 256KB
+11-12 10:23:23.544  5335  5498 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 254730000 but found 202414023
+11-12 10:23:23.629  5335  5441 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ff
+11-12 10:23:23.718  5335  5441 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ff
+11-12 10:23:23.721  5335  5335 I Ads     : JS: The jsLoaded GMSG has been sent (https://googleads.g.doubleclick.net/mads/static/sdk/native/sdk-core-v40.html:1108)
+11-12 10:23:23.722  5335  5335 I chromium: [INFO:CONSOLE(1108)] "The jsLoaded GMSG has been sent", source: https://googleads.g.doubleclick.net/mads/static/sdk/native/sdk-core-v40.html (1108)
+11-12 10:23:23.960  5335  5335 I Ads     : JS: The jsLoaded GMSG has been sent (https://googleads.g.doubleclick.net/mads/static/mad/sdk/native/production/sdk-core-v40-impl.js?n=true&lv=sdk_20190107_RC02:1101)
+11-12 10:23:23.960  5335  5335 I chromium: [INFO:CONSOLE(1101)] "The jsLoaded GMSG has been sent", source: https://googleads.g.doubleclick.net/mads/static/mad/sdk/native/production/sdk-core-v40-impl.js?n=true&lv=sdk_20190107_RC02 (1101)
+11-12 10:23:24.014  5335  5463 I Ads     : SDK version: afma-sdk-a-v262180000.262180000.0
+11-12 10:23:24.015  5335  5463 I Ads     : HTTP timeout: 60000 milliseconds.
+11-12 10:23:25.279  5335  5441 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ff
+11-12 10:23:25.295  5335  5346 W art     : Suspending all threads took: 6.259ms
+11-12 10:23:25.297  5335  5441 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ff
+11-12 10:23:25.309  5335  5346 I art     : Background partial concurrent mark sweep GC freed 8565(525KB) AllocSpace objects, 32(8MB) LOS objects, 35% free, 7MB/11MB, paused 8.001ms total 57.801ms
+11-12 10:23:25.684  5335  5377 D EGL_emulation: eglMakeCurrent: 0x74a6c17c0c00: ver 3 0 (tinfo 0x74a6b3be81c0)
+11-12 10:23:25.750  5335  5377 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+11-12 10:23:25.753  5335  5377 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008a34
+11-12 10:23:25.754  5335  5377 E eglCodecCommon: glUtilsParamSize: unknow param 0x00008073
+11-12 10:23:25.754  5335  5377 E eglCodecCommon: glUtilsParamSize: unknow param 0x000088ff
+11-12 10:23:25.852  5335  5377 D EGL_emulation: eglMakeCurrent: 0x74a6c17c0c00: ver 3 0 (tinfo 0x74a6b3be81c0)
+11-12 10:23:25.854  5335  5335 I Ads     : JS: The jsLoaded GMSG has been sent (https://googleads.g.doubleclick.net/mads/static/sdk/native/sdk-core-v40.html:1108)
+11-12 10:23:25.854  5335  5335 I chromium: [INFO:CONSOLE(1108)] "The jsLoaded GMSG has been sent", source: https://googleads.g.doubleclick.net/mads/static/sdk/native/sdk-core-v40.html (1108)
+11-12 10:23:25.870  5335  5377 D EGL_emulation: eglMakeCurrent: 0x74a6c17c0c00: ver 3 0 (tinfo 0x74a6b3be81c0)
+11-12 10:23:25.881  5335  5377 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+11-12 10:23:25.883  5335  5377 D EGL_emulation: eglMakeCurrent: 0x74a6c17c0c00: ver 3 0 (tinfo 0x74a6b3be81c0)
+11-12 10:23:25.900  5335  5377 D EGL_emulation: eglMakeCurrent: 0x74a6c17c0c00: ver 3 0 (tinfo 0x74a6b3be81c0)
+11-12 10:23:25.905  5335  5377 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+11-12 10:23:25.910  5335  5377 D EGL_emulation: eglMakeCurrent: 0x74a6c17c0c00: ver 3 0 (tinfo 0x74a6b3be81c0)
+11-12 10:23:26.462  2330  5512 I Vision  : Requesting optional module download of ocr.
+11-12 10:23:26.462  2330  5512 I Vision  : Exceeded maximum feature download tries for ocr
+11-12 10:23:26.462  2330  5512 W Vision  : Request of optional module download of ocr failed.
+11-12 10:23:26.463  2330  5512 I Vision  : Checking for download completion for 251421 -- ocr
+11-12 10:23:27.309  5335  5377 D EGL_emulation: eglMakeCurrent: 0x74a6c17c0c00: ver 3 0 (tinfo 0x74a6b3be81c0)
+11-12 10:23:27.313  5335  5377 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+11-12 10:23:27.318  5335  5377 D EGL_emulation: eglMakeCurrent: 0x74a6c17c0c00: ver 3 0 (tinfo 0x74a6b3be81c0)
+11-12 10:23:27.326  5335  5377 D EGL_emulation: eglMakeCurrent: 0x74a6c17c0c00: ver 3 0 (tinfo 0x74a6b3be81c0)
+11-12 10:23:27.331  5335  5377 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+11-12 10:23:27.335  5335  5377 D EGL_emulation: eglMakeCurrent: 0x74a6c17c0c00: ver 3 0 (tinfo 0x74a6b3be81c0)
+11-12 10:23:27.342  5335  5377 D EGL_emulation: eglMakeCurrent: 0x74a6c17c0c00: ver 3 0 (tinfo 0x74a6b3be81c0)
+11-12 10:23:27.349  5335  5377 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+11-12 10:23:27.353  5335  5377 D EGL_emulation: eglMakeCurrent: 0x74a6c17c0c00: ver 3 0 (tinfo 0x74a6b3be81c0)
+11-12 10:23:27.359  5335  5377 D EGL_emulation: eglMakeCurrent: 0x74a6c17c0c00: ver 3 0 (tinfo 0x74a6b3be81c0)
+11-12 10:23:27.365  5335  5377 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+11-12 10:23:27.368  5335  5377 D EGL_emulation: eglMakeCurrent: 0x74a6c17c0c00: ver 3 0 (tinfo 0x74a6b3be81c0)
+11-12 10:23:27.377  5335  5377 D EGL_emulation: eglMakeCurrent: 0x74a6c17c0c00: ver 3 0 (tinfo 0x74a6b3be81c0)
+11-12 10:23:27.383  5335  5377 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+11-12 10:23:27.388  5335  5377 D EGL_emulation: eglMakeCurrent: 0x74a6c17c0c00: ver 3 0 (tinfo 0x74a6b3be81c0)
+11-12 10:23:27.394  5335  5377 D EGL_emulation: eglMakeCurrent: 0x74a6c17c0c00: ver 3 0 (tinfo 0x74a6b3be81c0)
+11-12 10:23:27.398  5335  5377 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+11-12 10:23:27.402  5335  5377 D EGL_emulation: eglMakeCurrent: 0x74a6c17c0c00: ver 3 0 (tinfo 0x74a6b3be81c0)
+11-12 10:23:27.410  5335  5377 D EGL_emulation: eglMakeCurrent: 0x74a6c17c0c00: ver 3 0 (tinfo 0x74a6b3be81c0)
+11-12 10:23:27.416  5335  5377 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+11-12 10:23:27.420  5335  5377 D EGL_emulation: eglMakeCurrent: 0x74a6c17c0c00: ver 3 0 (tinfo 0x74a6b3be81c0)
+11-12 10:23:27.425  5335  5377 D EGL_emulation: eglMakeCurrent: 0x74a6c17c0c00: ver 3 0 (tinfo 0x74a6b3be81c0)
+11-12 10:23:27.431  5335  5377 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+11-12 10:23:27.435  5335  5377 D EGL_emulation: eglMakeCurrent: 0x74a6c17c0c00: ver 3 0 (tinfo 0x74a6b3be81c0)
+11-12 10:23:27.442  5335  5377 D EGL_emulation: eglMakeCurrent: 0x74a6c17c0c00: ver 3 0 (tinfo 0x74a6b3be81c0)
+11-12 10:23:27.449  5335  5377 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+11-12 10:23:27.453  5335  5377 D EGL_emulation: eglMakeCurrent: 0x74a6c17c0c00: ver 3 0 (tinfo 0x74a6b3be81c0)
+11-12 10:23:27.459  5335  5377 D EGL_emulation: eglMakeCurrent: 0x74a6c17c0c00: ver 3 0 (tinfo 0x74a6b3be81c0)
+11-12 10:23:27.464  5335  5377 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+11-12 10:23:27.468  5335  5377 D EGL_emulation: eglMakeCurrent: 0x74a6c17c0c00: ver 3 0 (tinfo 0x74a6b3be81c0)
+11-12 10:23:27.477  5335  5377 D EGL_emulation: eglMakeCurrent: 0x74a6c17c0c00: ver 3 0 (tinfo 0x74a6b3be81c0)
+11-12 10:23:27.482  5335  5377 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+11-12 10:23:27.486  5335  5377 D EGL_emulation: eglMakeCurrent: 0x74a6c17c0c00: ver 3 0 (tinfo 0x74a6b3be81c0)
+11-12 10:23:27.493  5335  5377 D EGL_emulation: eglMakeCurrent: 0x74a6c17c0c00: ver 3 0 (tinfo 0x74a6b3be81c0)
+11-12 10:23:27.499  5335  5377 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+11-12 10:23:27.503  5335  5377 D EGL_emulation: eglMakeCurrent: 0x74a6c17c0c00: ver 3 0 (tinfo 0x74a6b3be81c0)
+11-12 10:23:27.509  5335  5377 D EGL_emulation: eglMakeCurrent: 0x74a6c17c0c00: ver 3 0 (tinfo 0x74a6b3be81c0)
+11-12 10:23:27.517  5335  5377 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+11-12 10:23:27.521  5335  5377 D EGL_emulation: eglMakeCurrent: 0x74a6c17c0c00: ver 3 0 (tinfo 0x74a6b3be81c0)
+11-12 10:23:27.527  5335  5377 D EGL_emulation: eglMakeCurrent: 0x74a6c17c0c00: ver 3 0 (tinfo 0x74a6b3be81c0)
+11-12 10:23:27.534  5335  5377 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+11-12 10:23:27.538  5335  5377 D EGL_emulation: eglMakeCurrent: 0x74a6c17c0c00: ver 3 0 (tinfo 0x74a6b3be81c0)
+11-12 10:23:27.542  5335  5377 D EGL_emulation: eglMakeCurrent: 0x74a6c17c0c00: ver 3 0 (tinfo 0x74a6b3be81c0)
+11-12 10:23:27.548  5335  5377 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+11-12 10:23:27.551  5335  5377 D EGL_emulation: eglMakeCurrent: 0x74a6c17c0c00: ver 3 0 (tinfo 0x74a6b3be81c0)
+11-12 10:23:27.559  5335  5377 D EGL_emulation: eglMakeCurrent: 0x74a6c17c0c00: ver 3 0 (tinfo 0x74a6b3be81c0)
+11-12 10:23:27.565  5335  5377 E eglCodecCommon: glUtilsParamSize: unknow param 0x000085b5
+11-12 10:23:27.568  5335  5377 D EGL_emulation: eglMakeCurrent: 0x74a6c17c0c00: ver 3 0 (tinfo 0x74a6b3be81c0)
+11-12 10:23:28.324  5335  5513 D ProfileInstaller: Skipping profile installation for com.thinkube.feierabendrechner
+11-12 10:23:32.357  5335  5355 W GoogleApiManager: com.google.android.gms.internal.measurement.ca could not execute call because it requires feature (get_storage_info_api, 1).
+11-12 10:23:33.687  5335  5340 I art     : Do full code cache collection, code=104KB, data=117KB
+11-12 10:23:33.687  5335  5340 I art     : After code cache collection, code=67KB, data=55KB
+11-12 10:23:36.466  2330  5517 I Vision  : Requesting optional module download of ocr.
+11-12 10:23:36.470  2330  5518 I ChimeraConfigurator: Starting update, reason: 4 urgentFeatures: vision.ocr:-1
+11-12 10:23:36.471  2330  5517 I Vision  : Checking for download completion for 261429 -- ocr
+11-12 10:23:46.474  2330  5520 I Vision  : Requesting optional module download of ocr.
+11-12 10:23:46.474  2330  5520 I Vision  : Checking for download completion for 271432 -- ocr
+11-12 10:23:47.456  5521  5521 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:23:47.457  5521  5521 D AndroidRuntime: CheckJNI is OFF
+11-12 10:23:47.473  5521  5521 W art     : Unexpected CPU variant for X86 using defaults: x86_64
+11-12 10:23:47.475  5521  5521 D ICU     : No timezone override file found: /data/local/tmp/misc/zoneinfo/current/icu/icu_tzdata.dat
+11-12 10:23:47.493  5521  5521 E memtrack: Couldn't load memtrack module (No such file or directory)
+11-12 10:23:47.493  5521  5521 E android.os.Debug: failed to load memtrack module: -2
+11-12 10:23:47.494  5521  5521 I Radio-JNI: register_android_hardware_Radio DONE
+11-12 10:23:47.498  5521  5521 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 10:23:48.531  5521  5521 I AccessibilityNodeInfoDumper: Null child 0/1, parent: android.view.accessibility.AccessibilityNodeInfo@7c7a; boundsInParent: Rect(0, 540 - 320, 640); boundsInScreen: Rect(0, 540 - 320, 640); packageName: com.thinkube.feierabendrechner; className: android.view.View; text: null; error: null; maxTextLength: -1; contentDescription: null; viewIdResName: ; checkable: false; checked: false; focusable: true; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; actions: [AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null]
+11-12 10:23:48.532  5521  5521 W AccessibilityNodeInfoDumper: Fetch time: 3ms
+11-12 10:23:48.532  1644  2179 W WindowManager: Attempted to remove non-existing token: android.os.Binder@1586b50
+11-12 10:23:48.536  5521  5521 D AndroidRuntime: Shutting down VM
+11-12 10:23:48.581  1314  1322 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+11-12 10:23:48.581  1314  1320 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 819200
+11-12 10:23:48.583  5545  5545 D         : HostConnection::get() New Host Connection established 0x72a33822d4e0, tid 5545

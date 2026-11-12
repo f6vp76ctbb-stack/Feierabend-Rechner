@@ -1,0 +1,27 @@
+11-12 10:26:00.099  6722  6722 D AndroidRuntime: Shutting down VM
+11-12 10:26:01.183  6732  6732 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:26:01.184  6732  6732 D AndroidRuntime: CheckJNI is OFF
+11-12 10:26:01.211  6732  6732 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 10:26:02.242  6732  6732 D AndroidRuntime: Shutting down VM
+11-12 10:26:02.347  6745  6745 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:26:02.348  6745  6745 D AndroidRuntime: CheckJNI is OFF
+11-12 10:26:02.369  6745  6745 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+11-12 10:26:02.671  6745  6745 D AndroidRuntime: Shutting down VM
+11-12 10:26:03.757  6755  6755 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:26:03.758  6755  6755 D AndroidRuntime: CheckJNI is OFF
+11-12 10:26:03.784  6755  6755 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 10:26:04.805  6755  6755 D AndroidRuntime: Shutting down VM
+11-12 10:26:09.956  6773  6773 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:26:09.957  6773  6773 D AndroidRuntime: CheckJNI is OFF
+11-12 10:26:09.979  6773  6773 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+11-12 10:26:09.985  6773  6773 D AndroidRuntime: Shutting down VM
+11-12 10:26:10.078  1644  1655 I WindowManager: Destroying surface Surface(name=SurfaceView - com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity) called by com.android.server.wm.WindowStateAnimator.destroySurface:2016 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:882 com.android.server.wm.WindowState.removeLocked:1456 com.android.server.wm.WindowManagerService.removeWindowInnerLocked:2484 com.android.server.wm.WindowManagerService.removeWindowLocked:2442 com.android.server.wm.WindowManagerService.removeWindowLocked:2311 com.android.server.wm.WindowManagerService.removeWindow:2306 com.android.server.wm.Session.remove:202 
+11-12 10:26:10.080  1644  1937 I WindowManager: Destroying surface Surface(name=com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity) called by com.android.server.wm.WindowStateAnimator.destroySurface:2016 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:882 com.android.server.wm.WindowState.removeLocked:1456 com.android.server.wm.WindowManagerService.removeWindowInnerLocked:2484 com.android.server.wm.WindowManagerService.removeWindowLocked:2442 com.android.server.wm.WindowManagerService.removeWindowLocked:2311 com.android.server.wm.WindowManagerService.removeWindow:2306 com.android.server.wm.Session.remove:202 
+11-12 10:26:12.082  6787  6787 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:26:12.083  6787  6787 D AndroidRuntime: CheckJNI is OFF
+11-12 10:26:12.107  6787  6787 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+11-12 10:26:12.111  6787  6787 D AndroidRuntime: Shutting down VM
+11-12 10:26:14.195  6797  6797 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:26:14.196  6797  6797 D AndroidRuntime: CheckJNI is OFF
+11-12 10:26:14.220  6797  6797 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+11-12 10:26:14.224  6797  6797 D AndroidRuntime: Shutting down VM

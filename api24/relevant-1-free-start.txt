@@ -1,0 +1,63 @@
+11-12 10:20:20.238  4008  4008 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:20:20.239  4008  4008 D AndroidRuntime: CheckJNI is OFF
+11-12 10:20:20.279  4008  4008 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-12 10:20:20.291  1644  2180 I ActivityManager: START u0 {flg=0x10000000 cmp=com.thinkube.feierabendrechner/.MainActivity} from uid 2000 on display 0
+11-12 10:20:20.312  1644  2131 I ActivityManager: Start proc 4019:com.thinkube.feierabendrechner/u0a78 for activity com.thinkube.feierabendrechner/.MainActivity
+11-12 10:20:20.445  4019  4019 I flutter : [IMPORTANT:flutter/shell/common/shell.cc(528)] [Action Required]: Impeller opt-out deprecated.
+11-12 10:20:20.445  4019  4019 I flutter :     The application opted out of Impeller by either using the
+11-12 10:20:20.445  4019  4019 I flutter :     `--no-enable-impeller` flag or the
+11-12 10:20:20.445  4019  4019 I flutter :     `io.flutter.embedding.android.EnableImpeller` `AndroidManifest.xml` entry.
+11-12 10:20:20.445  4019  4019 I flutter :     These options are going to go away in an upcoming Flutter release. Remove
+11-12 10:20:20.445  4019  4019 I flutter :     the explicit opt-out. If you need to opt-out, please report a bug describing
+11-12 10:20:20.445  4019  4019 I flutter :     the issue.
+11-12 10:20:20.445  4019  4019 I flutter : 
+11-12 10:20:20.445  4019  4019 I flutter :     https://github.com/flutter/flutter/issues/new?template=02_bug.yml
+11-12 10:20:20.445  4019  4019 I flutter : 
+11-12 10:20:20.594  4019  4053 I Phlogger: Unable to retrieve flag snapshot for com.google.android.gms.measurement#com.thinkube.feierabendrechner, using defaults.
+11-12 10:20:20.633  4019  4043 I FA      :   adb shell setprop debug.firebase.analytics.app com.thinkube.feierabendrechner
+11-12 10:20:20.748  1768  3902 I aopq    : Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.gms.measurement#com.thinkube.feierabendrechner) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+11-12 10:20:21.523  1644  1668 I ActivityManager: Displayed com.thinkube.feierabendrechner/.MainActivity: +1s222ms
+11-12 10:20:21.524  4008  4008 D AndroidRuntime: Shutting down VM
+11-12 10:20:21.541  1644  1668 I WindowManager: Destroying surface Surface(name=Starting com.thinkube.feierabendrechner) called by com.android.server.wm.WindowStateAnimator.destroySurface:2016 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:882 com.android.server.wm.WindowState.destroyOrSaveSurface:2100 com.android.server.wm.AppWindowToken.destroySurfaces:363 com.android.server.wm.WindowStateAnimator.finishExit:565 com.android.server.wm.WindowStateAnimator.stepAnimationLocked:491 com.android.server.wm.WindowAnimator.updateWindowsLocked:303 com.android.server.wm.WindowAnimator.animateLocked:704 
+11-12 10:20:26.208  4019  4096 D ProfileInstaller: Installing profile for com.thinkube.feierabendrechner
+11-12 10:20:46.655  4117  4117 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:20:46.656  4117  4117 D AndroidRuntime: CheckJNI is OFF
+11-12 10:20:46.797  4117  4117 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 10:20:47.845  4117  4117 D AndroidRuntime: Shutting down VM
+11-12 10:20:47.947  4134  4134 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:20:47.948  4134  4134 D AndroidRuntime: CheckJNI is OFF
+11-12 10:20:47.972  4134  4134 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+11-12 10:20:47.979  4134  4134 D AndroidRuntime: Shutting down VM
+11-12 10:20:56.119  4165  4165 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:20:56.120  4165  4165 D AndroidRuntime: CheckJNI is OFF
+11-12 10:20:56.146  4165  4165 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 10:20:57.177  4165  4165 D AndroidRuntime: Shutting down VM
+11-12 10:20:57.279  4178  4178 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:20:57.280  4178  4178 D AndroidRuntime: CheckJNI is OFF
+11-12 10:20:57.305  4178  4178 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 10:20:58.342  4178  4178 D AndroidRuntime: Shutting down VM
+11-12 10:20:58.444  4193  4193 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:20:58.445  4193  4193 D AndroidRuntime: CheckJNI is OFF
+11-12 10:20:58.468  4193  4193 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+11-12 10:20:58.472  4193  4193 D AndroidRuntime: Shutting down VM
+11-12 10:21:01.626  4210  4210 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:21:01.627  4210  4210 D AndroidRuntime: CheckJNI is OFF
+11-12 10:21:01.653  4210  4210 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 10:21:02.690  4210  4210 D AndroidRuntime: Shutting down VM
+11-12 10:21:02.799  4223  4223 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:21:02.800  4223  4223 D AndroidRuntime: CheckJNI is OFF
+11-12 10:21:02.823  4223  4223 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+11-12 10:21:02.827  4223  4223 D AndroidRuntime: Shutting down VM
+11-12 10:21:02.941  4019  4238 E cr_VariationsUtils: Failed reading seed file "/data/user/0/com.thinkube.feierabendrechner/app_webview/variations_seed_new": /data/user/0/com.thinkube.feierabendrechner/app_webview/variations_seed_new (No such file or directory)
+11-12 10:21:02.941  4019  4238 E cr_VariationsUtils: Failed reading seed file "/data/user/0/com.thinkube.feierabendrechner/app_webview/variations_seed": /data/user/0/com.thinkube.feierabendrechner/app_webview/variations_seed (No such file or directory)
+11-12 10:21:03.032  4019  4236 W cr_CrashFileManager: /data/user/0/com.thinkube.feierabendrechner/cache/WebView/Crash Reports does not exist or is not a directory
+11-12 10:21:03.213  4019  4041 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 212800000 but found 202414023
+11-12 10:21:03.214  4019  4288 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 212800000 but found 202414023
+11-12 10:21:03.856  4324  4324 I dex2oat : /system/bin/dex2oat --dex-file=/data/user/0/com.thinkube.feierabendrechner/cache/1762298034389.jar --oat-fd=153 --oat-location=/data/user/0/com.thinkube.feierabendrechner/cache/1762298034389.dex --compiler-filter=speed
+11-12 10:21:03.913  4019  4286 D lg      : File /data/user/0/com.thinkube.feierabendrechner/cache/1762298034389.dex not found. No need for deletion
+11-12 10:21:03.952  4019  4380 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 254730000 but found 202414023
+11-12 10:21:25.920  4401  4401 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 10:21:25.920  4401  4401 D AndroidRuntime: CheckJNI is OFF
+11-12 10:21:25.950  4401  4401 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 10:21:26.977  4401  4401 I AccessibilityNodeInfoDumper: Null child 0/1, parent: android.view.accessibility.AccessibilityNodeInfo@8add; boundsInParent: Rect(0, 540 - 320, 640); boundsInScreen: Rect(0, 540 - 320, 640); packageName: com.thinkube.feierabendrechner; className: android.view.View; text: null; error: null; maxTextLength: -1; contentDescription: null; viewIdResName: ; checkable: false; checked: false; focusable: true; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; actions: [AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null]
+11-12 10:21:26.981  4401  4401 D AndroidRuntime: Shutting down VM
