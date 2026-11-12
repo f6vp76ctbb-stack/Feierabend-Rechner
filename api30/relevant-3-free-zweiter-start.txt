@@ -1,0 +1,45 @@
+11-12 02:23:08.631  7520  7520 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 02:23:08.639  7520  7520 I AndroidRuntime: Using default boot image
+11-12 02:23:08.639  7520  7520 I AndroidRuntime: Leaving lock profiling enabled
+11-12 02:23:08.687  7520  7520 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+11-12 02:23:08.691  7520  7520 D AndroidRuntime: Shutting down VM
+11-12 02:23:08.697  7520  7531 I AndroidRuntime: NOTE: attach of thread 'Binder:7520_1' failed
+11-12 02:23:11.302   488  1708 I ActivityManager: Force stopping com.thinkube.feierabendrechner appid=10154 user=0: from pid 7548
+11-12 02:23:11.303   488  1708 I ActivityManager: Killing 4175:com.thinkube.feierabendrechner/u0a154 (adj 900): stop com.thinkube.feierabendrechner due to from pid 7548
+11-12 02:23:11.354   488  1708 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.thinkube.feierabendrechner/.MainActivity} from uid 2000
+11-12 02:23:11.359   488  2477 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(NetworkRequest [ TRACK_DEFAULT id=52, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10154 AdministratorUids: [] RequestorUid: 10154 RequestorPackageName: com.thinkube.feierabendrechner] ], android.os.BinderProxy@46114fe)
+11-12 02:23:11.359   488  2477 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(NetworkRequest [ TRACK_DEFAULT id=49, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10154 AdministratorUids: [] RequestorUid: 10154 RequestorPackageName: com.thinkube.feierabendrechner] ], android.os.BinderProxy@c2f845f)
+11-12 02:23:11.359   488  2477 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(NetworkRequest [ TRACK_DEFAULT id=50, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10154 AdministratorUids: [] RequestorUid: 10154 RequestorPackageName: com.thinkube.feierabendrechner] ], android.os.BinderProxy@b0a7eac)
+11-12 02:23:11.359   488  2477 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(NetworkRequest [ LISTEN id=51, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&FOREGROUND Uid: 10154 AdministratorUids: [] RequestorUid: 10154 RequestorPackageName: com.thinkube.feierabendrechner] ], android.os.BinderProxy@b188775)
+11-12 02:23:11.359   488  2477 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(NetworkRequest [ TRACK_DEFAULT id=53, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10154 AdministratorUids: [] RequestorUid: 10154 RequestorPackageName: com.thinkube.feierabendrechner] ], android.os.BinderProxy@c35830a)
+11-12 02:23:11.360   488   628 D ConnectivityService: releasing NetworkRequest [ TRACK_DEFAULT id=52, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10154 AdministratorUids: [] RequestorUid: 10154 RequestorPackageName: com.thinkube.feierabendrechner] ] (release request)
+11-12 02:23:11.360   488   628 D ConnectivityService: releasing NetworkRequest [ TRACK_DEFAULT id=49, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10154 AdministratorUids: [] RequestorUid: 10154 RequestorPackageName: com.thinkube.feierabendrechner] ] (release request)
+11-12 02:23:11.360   488   628 D ConnectivityService: releasing NetworkRequest [ TRACK_DEFAULT id=50, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10154 AdministratorUids: [] RequestorUid: 10154 RequestorPackageName: com.thinkube.feierabendrechner] ] (release request)
+11-12 02:23:11.360   488   628 D ConnectivityService: releasing NetworkRequest [ TRACK_DEFAULT id=53, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10154 AdministratorUids: [] RequestorUid: 10154 RequestorPackageName: com.thinkube.feierabendrechner] ] (release request)
+11-12 02:23:11.409   488   526 I ActivityManager: Start proc 7562:com.thinkube.feierabendrechner/u0a154 for pre-top-activity {com.thinkube.feierabendrechner/com.thinkube.feierabendrechner.MainActivity}
+11-12 02:23:11.454  7562  7562 I TetheringManager: registerTetheringEventCallback:com.thinkube.feierabendrechner
+11-12 02:23:11.516  7562  7562 W ierabendrechner: type=1400 audit(0.0:411): avc: denied { read } for name="max_map_count" dev="proc" ino=171090 scontext=u:r:untrusted_app:s0:c154,c256,c512,c768 tcontext=u:object_r:proc_max_map_count:s0 tclass=file permissive=0 app=com.thinkube.feierabendrechner
+11-12 02:23:11.560  7562  7593 E flutter : [ERROR:flutter/impeller/toolkit/egl/egl.cc(56)] EGL Error: Success (12288) in ../../../flutter/impeller/toolkit/egl/display.cc:161
+11-12 02:23:11.562  7562  7593 E flutter : [ERROR:flutter/impeller/toolkit/egl/egl.cc(56)] EGL Error: Success (12288) in ../../../flutter/impeller/toolkit/egl/display.cc:161
+11-12 02:23:11.582  7562  7593 I flutter : [IMPORTANT:flutter/shell/platform/android/android_context_gl_impeller.cc(104)] Using the Impeller rendering backend (OpenGLES).
+11-12 02:23:11.697  7562  7596 I FA      :   adb shell setprop debug.firebase.analytics.app com.thinkube.feierabendrechner
+11-12 02:23:12.029  2410  3925 W Finsky  : [290] ges.d(21): com.thinkube.feierabendrechner: No account found.
+11-12 02:23:12.131  2410  3925 W Finsky  : [290] ges.d(21): com.thinkube.feierabendrechner: No account found.
+11-12 02:23:12.167  2410  2592 W Finsky  : [209] ges.d(21): com.thinkube.feierabendrechner: No account found.
+11-12 02:23:12.173  2410  2592 W Finsky  : [209] ges.d(21): com.thinkube.feierabendrechner: No account found.
+11-12 02:23:12.842   488   524 D ArtManagerInternalImpl: /data/misc/iorapd/com.thinkube.feierabendrechner/1/com.thinkube.feierabendrechner.MainActivity/compiled_traces/compiled_trace.pb doesn't exist
+11-12 02:23:12.865   488   524 I ActivityTaskManager: Displayed com.thinkube.feierabendrechner/.MainActivity: +1s429ms
+11-12 02:23:12.870   488   524 I ActivityTaskManager: Fully drawn com.thinkube.feierabendrechner/.MainActivity: +1s429ms
+11-12 02:23:16.619  7562  7618 D ProfileInstaller: Skipping profile installation for com.thinkube.feierabendrechner
+11-12 02:23:36.832  7631  7631 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 02:23:36.833  7631  7631 I AndroidRuntime: Using default boot image
+11-12 02:23:36.833  7631  7631 I AndroidRuntime: Leaving lock profiling enabled
+11-12 02:23:36.876  7631  7631 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 02:23:37.908  7631  7631 D AndroidRuntime: Shutting down VM
+11-12 02:23:38.374  7649  7649 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 02:23:38.375  7649  7649 I AndroidRuntime: Using default boot image
+11-12 02:23:38.375  7649  7649 I AndroidRuntime: Leaving lock profiling enabled
+11-12 02:23:38.418  7649  7649 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+11-12 02:23:38.421  7649  7649 D AndroidRuntime: Shutting down VM
+11-12 02:23:38.488  7562  7591 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 203400000 but found 201817023
+11-12 02:23:38.488  7562  7591 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 203400000 but found 201817023

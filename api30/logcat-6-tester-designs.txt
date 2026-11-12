@@ -1,0 +1,1135 @@
+--------- beginning of main
+11-12 02:25:03.312  3183  3411 I CarrierServices: [92] drv.a: (PEv2-SM): DisabledState: event Timeout
+11-12 02:25:03.583   488  2480 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+11-12 02:25:03.965   298   298 D goldfish-address-space: claimShared: Ask to claim region [0x3ffbad000 0x3ffc75000]
+11-12 02:25:03.969   156   156 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+11-12 02:25:03.969  8409  8409 I Gralloc4: mapper 4.x is not supported
+11-12 02:25:03.972  8409  8409 D HostConnection: createUnique: call
+11-12 02:25:03.972  8409  8409 D HostConnection: HostConnection::get() New Host Connection established 0x762fa8ba8f90, tid 8409
+11-12 02:25:03.973  8409  8409 D goldfish-address-space: allocate: Ask for block of size 0x100
+11-12 02:25:03.973  8409  8409 D goldfish-address-space: allocate: ioctl allocate returned offset 0x3f9ffc000 size 0x2000
+11-12 02:25:03.985  8409  8409 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-12 02:25:04.073  8411  8411 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 02:25:04.084  8411  8411 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
+11-12 02:25:04.084  8411  8411 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
+11-12 02:25:04.084  8411  8411 I AndroidRuntime: Using default boot image
+11-12 02:25:04.088  8411  8411 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
+11-12 02:25:04.088  8411  8411 I AndroidRuntime: Leaving lock profiling enabled
+11-12 02:25:04.089  8411  8411 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
+11-12 02:25:04.072  8411  8411 W app_process: type=1400 audit(0.0:536): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8299 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-12 02:25:04.080  8411  8411 W app_process: type=1400 audit(0.0:537): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8299 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-12 02:25:04.127  8411  8411 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+11-12 02:25:04.127  8411  8411 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+11-12 02:25:04.130  8411  8411 W app_process: Unexpected CPU variant for X86 using defaults: x86_64
+11-12 02:25:04.080  8411  8411 W app_process: type=1400 audit(0.0:538): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8299 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-12 02:25:04.135  8411  8411 I app_process: The ClassLoaderContext is a special shared library.
+11-12 02:25:04.136  8411  8411 I app_process: The ClassLoaderContext is a special shared library.
+11-12 02:25:04.084  8411  8411 W app_process: type=1400 audit(0.0:539): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8299 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-12 02:25:04.143  8411  8411 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+11-12 02:25:04.145  8411  8411 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 02:25:04.825  1361  8427 I Vision  : Requesting optional module download of ocr.
+11-12 02:25:04.825  1361  8427 I Vision  : Checking for download completion for 345186 -- ocr
+11-12 02:25:05.155  8411  8411 I AccessibilityNodeInfoDumper: Skipping invisible child: android.view.accessibility.AccessibilityNodeInfo@1f3ef; boundsInParent: Rect(0, 0 - 288, 0); boundsInScreen: Rect(16, 224 - 304, 224); packageName: com.google.android.apps.nexuslauncher; className: android.view.View; text: null; error: null; maxTextLength: -1; stateDescription: null; contentDescription: null; tooltipText: null; viewIdResName: null; checkable: false; checked: false; focusable: false; focused: false; selected: false; clickable: false; longClickable: false; contextClickable: false; enabled: true; password: false; scrollable: false; importantForAccessibility: false; visible: false; actions: [AccessibilityAction: ACTION_SELECT - null, AccessibilityAction: ACTION_CLEAR_SELECTION - null, AccessibilityAction: ACTION_ACCESSIBILITY_FOCUS - null, AccessibilityAction: ACTION_SHOW_ON_SCREEN - null]
+11-12 02:25:05.155  8411  8411 W AccessibilityNodeInfoDumper: Fetch time: 1ms
+--------- beginning of system
+11-12 02:25:05.156   488  2077 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@253fd0a
+11-12 02:25:05.160  8411  8411 D AndroidRuntime: Shutting down VM
+11-12 02:25:05.496   393   393 I perfetto: probes_producer.cc:329  Producer stop (id=9)
+11-12 02:25:05.496   398   398 I perfetto: ng_service_impl.cc:1948 Tracing session 9 ended, total sessions:0
+11-12 02:25:05.497   393   393 I perfetto: ftrace_procfs.cc:183    disabled ftrace
+11-12 02:25:05.562  1336  1396 I PeriodicStatsRunner: PeriodicStatsRunner.call():180 call()
+11-12 02:25:05.562  1336  1396 I PeriodicStatsRunner: PeriodicStatsRunner.call():184 No submit PeriodicStats since input started.
+11-12 02:25:05.633  8430  8430 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 02:25:05.634  8430  8430 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
+11-12 02:25:05.634  8430  8430 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
+11-12 02:25:05.634  8430  8430 I AndroidRuntime: Using default boot image
+11-12 02:25:05.634  8430  8430 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
+11-12 02:25:05.634  8430  8430 I AndroidRuntime: Leaving lock profiling enabled
+11-12 02:25:05.634  8430  8430 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
+11-12 02:25:05.632  8430  8430 W app_process: type=1400 audit(0.0:540): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8299 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-12 02:25:05.632  8430  8430 I chatty  : uid=2000(shell) app_process identical 2 lines
+11-12 02:25:05.632  8430  8430 W app_process: type=1400 audit(0.0:543): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8299 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-12 02:25:05.665  8430  8430 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+11-12 02:25:05.665  8430  8430 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+11-12 02:25:05.668  8430  8430 W app_process: Unexpected CPU variant for X86 using defaults: x86_64
+11-12 02:25:05.668  8430  8430 I app_process: The ClassLoaderContext is a special shared library.
+11-12 02:25:05.673  8430  8430 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+11-12 02:25:05.675  8430  8430 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+11-12 02:25:05.678  8430  8430 D AndroidRuntime: Shutting down VM
+11-12 02:25:05.683   488  2480 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+11-12 02:25:05.683   488  2480 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+11-12 02:25:05.698   298   298 D goldfish-address-space: claimShared: Ask to claim region [0x3ffbad000 0x3ffc2d000]
+11-12 02:25:05.785   488  2077 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+11-12 02:25:05.785   488  2077 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+11-12 02:25:05.785   488  2077 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+11-12 02:25:05.785   488  2077 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+11-12 02:25:05.785   488  2077 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+11-12 02:25:05.785   488  2077 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+11-12 02:25:05.785   488  2077 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+11-12 02:25:05.785   488  2077 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+11-12 02:25:05.785   488  2077 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+11-12 02:25:05.785   488  2077 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+11-12 02:25:05.785   488  2077 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+11-12 02:25:05.785   488  2077 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+11-12 02:25:05.785   488  2077 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+11-12 02:25:05.785   488  2077 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+11-12 02:25:05.785   488  2077 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+11-12 02:25:05.785   488  2077 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+11-12 02:25:05.785   488  2077 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+11-12 02:25:05.785   488  2077 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+11-12 02:25:05.785   488  2077 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+11-12 02:25:05.785   488  2077 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+11-12 02:25:05.788   488  7186 D HostConnection: HostConnection::get() New Host Connection established 0x79b69938c4d0, tid 7186
+11-12 02:25:05.791   488  7186 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-12 02:25:05.793   488  7186 D EGL_emulation: eglCreateContext: 0x79b6895291c0: maj 3 min 0 rcv 3
+11-12 02:25:05.794   488  7186 D EGL_emulation: eglMakeCurrent: 0x79b6895291c0: ver 3 0 (tinfo 0x79b629469a00) (first time)
+11-12 02:25:05.879   488  2077 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+11-12 02:25:08.804   488  2077 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+11-12 02:25:09.174  8449  8449 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 02:25:09.176  8449  8449 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
+11-12 02:25:09.176  8449  8449 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
+11-12 02:25:09.176  8449  8449 I AndroidRuntime: Using default boot image
+11-12 02:25:09.176  8449  8449 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
+11-12 02:25:09.176  8449  8449 I AndroidRuntime: Leaving lock profiling enabled
+11-12 02:25:09.176  8449  8449 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
+11-12 02:25:09.172  8449  8449 W app_process: type=1400 audit(0.0:544): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8299 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-12 02:25:09.172  8449  8449 I chatty  : uid=2000(shell) app_process identical 2 lines
+11-12 02:25:09.172  8449  8449 W app_process: type=1400 audit(0.0:547): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8299 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-12 02:25:09.213  8449  8449 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+11-12 02:25:09.213  8449  8449 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+11-12 02:25:09.216  8449  8449 W app_process: Unexpected CPU variant for X86 using defaults: x86_64
+11-12 02:25:09.216  8449  8449 I app_process: The ClassLoaderContext is a special shared library.
+11-12 02:25:09.216  8449  8449 I app_process: The ClassLoaderContext is a special shared library.
+11-12 02:25:09.221  8449  8449 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+11-12 02:25:09.223  8449  8449 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 02:25:10.244  8449  8449 W AccessibilityNodeInfoDumper: Fetch time: 1ms
+11-12 02:25:10.244   488  2077 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@1490136
+11-12 02:25:10.248  8449  8449 D AndroidRuntime: Shutting down VM
+11-12 02:25:10.711  8467  8467 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 02:25:10.712  8467  8467 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
+11-12 02:25:10.712  8467  8467 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
+11-12 02:25:10.712  8467  8467 I AndroidRuntime: Using default boot image
+11-12 02:25:10.712  8467  8467 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
+11-12 02:25:10.712  8467  8467 I AndroidRuntime: Leaving lock profiling enabled
+11-12 02:25:10.712  8467  8467 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
+11-12 02:25:10.708  8467  8467 W app_process: type=1400 audit(0.0:548): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8299 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-12 02:25:10.708  8467  8467 I chatty  : uid=2000(shell) app_process identical 2 lines
+11-12 02:25:10.708  8467  8467 W app_process: type=1400 audit(0.0:551): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8299 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-12 02:25:10.744  8467  8467 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+11-12 02:25:10.744  8467  8467 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+11-12 02:25:10.747  8467  8467 W app_process: Unexpected CPU variant for X86 using defaults: x86_64
+11-12 02:25:10.747  8467  8467 I app_process: The ClassLoaderContext is a special shared library.
+11-12 02:25:10.752  8467  8467 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+11-12 02:25:10.754  8467  8467 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+11-12 02:25:10.842  1336  1396 I PeriodicStatsRunner: PeriodicStatsRunner.call():180 call()
+11-12 02:25:10.842  1336  1396 I PeriodicStatsRunner: PeriodicStatsRunner.call():184 No submit PeriodicStats since input started.
+11-12 02:25:11.055  8467  8467 D AndroidRuntime: Shutting down VM
+11-12 02:25:12.514  8481  8481 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 02:25:12.515  8481  8481 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
+11-12 02:25:12.515  8481  8481 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
+11-12 02:25:12.515  8481  8481 I AndroidRuntime: Using default boot image
+11-12 02:25:12.515  8481  8481 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
+11-12 02:25:12.515  8481  8481 I AndroidRuntime: Leaving lock profiling enabled
+11-12 02:25:12.515  8481  8481 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
+11-12 02:25:12.512  8481  8481 W app_process: type=1400 audit(0.0:552): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8299 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-12 02:25:12.512  8481  8481 I chatty  : uid=2000(shell) app_process identical 2 lines
+11-12 02:25:12.512  8481  8481 W app_process: type=1400 audit(0.0:555): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8299 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-12 02:25:12.547  8481  8481 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+11-12 02:25:12.547  8481  8481 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+11-12 02:25:12.549  8481  8481 W app_process: Unexpected CPU variant for X86 using defaults: x86_64
+11-12 02:25:12.550  8481  8481 I app_process: The ClassLoaderContext is a special shared library.
+11-12 02:25:12.550  8481  8481 I app_process: The ClassLoaderContext is a special shared library.
+11-12 02:25:12.555  8481  8481 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+11-12 02:25:12.557  8481  8481 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 02:25:13.571  8481  8481 W AccessibilityNodeInfoDumper: Fetch time: 1ms
+11-12 02:25:13.572   488   607 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@df2a410
+11-12 02:25:13.574  8481  8481 D AndroidRuntime: Shutting down VM
+11-12 02:25:14.065  8499  8499 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 02:25:14.073  8499  8499 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
+11-12 02:25:14.073  8499  8499 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
+11-12 02:25:14.064  8499  8499 W app_process: type=1400 audit(0.0:556): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8299 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-12 02:25:14.073  8499  8499 I AndroidRuntime: Using default boot image
+11-12 02:25:14.073  8499  8499 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
+11-12 02:25:14.073  8499  8499 I AndroidRuntime: Leaving lock profiling enabled
+11-12 02:25:14.073  8499  8499 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
+11-12 02:25:14.068  8499  8499 W app_process: type=1400 audit(0.0:557): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8299 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-12 02:25:14.068  8499  8499 I chatty  : uid=2000(shell) app_process identical 1 line
+11-12 02:25:14.068  8499  8499 W app_process: type=1400 audit(0.0:559): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8299 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-12 02:25:14.106  8499  8499 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+11-12 02:25:14.106  8499  8499 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+11-12 02:25:14.109  8499  8499 W app_process: Unexpected CPU variant for X86 using defaults: x86_64
+11-12 02:25:14.109  8499  8499 I app_process: The ClassLoaderContext is a special shared library.
+11-12 02:25:14.115  8499  8499 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+11-12 02:25:14.117  8499  8499 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+11-12 02:25:14.418  8499  8499 D AndroidRuntime: Shutting down VM
+11-12 02:25:14.831  1361  8513 I Vision  : Requesting optional module download of ocr.
+11-12 02:25:14.831  1361  8513 I Vision  : Checking for download completion for 355192 -- ocr
+11-12 02:25:14.878  6635  6664 E libc    : Access denied finding property "persist.adb.tls_server.enable"
+11-12 02:25:14.878  6635  6664 E libc    : Access denied finding property "service.adb.tls.port"
+11-12 02:25:14.876  6635  6635 W Binder:6635_4: type=1400 audit(0.0:560): avc: denied { read } for name="u:object_r:system_adbd_prop:s0" dev="tmpfs" ino=8390 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:system_adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+11-12 02:25:14.876  6635  6635 W Binder:6635_4: type=1400 audit(0.0:561): avc: denied { read } for name="u:object_r:adbd_prop:s0" dev="tmpfs" ino=8250 scontext=u:r:gmscore_app:s0:c512,c768 tcontext=u:object_r:adbd_prop:s0 tclass=file permissive=0 app=com.google.android.gms
+11-12 02:25:14.937  1107  2203 W GLSUser : [AppCertManager] Failed to get security token.
+11-12 02:25:14.937  1107  2203 W GLSUser : java.io.IOException: Invalid scope
+11-12 02:25:14.937  1107  2203 W GLSUser : 	at adac.b(:com.google.android.gms@201817023@20.18.17 (040800-311416286):23)
+11-12 02:25:14.937  1107  2203 W GLSUser : 	at adac.a(:com.google.android.gms@201817023@20.18.17 (040800-311416286):18)
+11-12 02:25:14.937  1107  2203 W GLSUser : 	at adac.a(:com.google.android.gms@201817023@20.18.17 (040800-311416286):11)
+11-12 02:25:14.937  1107  2203 W GLSUser : 	at huk.a(:com.google.android.gms@201817023@20.18.17 (040800-311416286):16)
+11-12 02:25:14.937  1107  2203 W GLSUser : 	at hui.a(:com.google.android.gms@201817023@20.18.17 (040800-311416286):41)
+11-12 02:25:14.937  1107  2203 W GLSUser : 	at hud.a(:com.google.android.gms@201817023@20.18.17 (040800-311416286):0)
+11-12 02:25:14.937  1107  2203 W GLSUser : 	at hug.a(:com.google.android.gms@201817023@20.18.17 (040800-311416286):10)
+11-12 02:25:14.937  1107  2203 W GLSUser : 	at fzn.call(:com.google.android.gms@201817023@20.18.17 (040800-311416286):5)
+11-12 02:25:14.937  1107  2203 W GLSUser : 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+11-12 02:25:14.937  1107  2203 W GLSUser : 	at sji.b(:com.google.android.gms@201817023@20.18.17 (040800-311416286):12)
+11-12 02:25:14.937  1107  2203 W GLSUser : 	at sji.run(:com.google.android.gms@201817023@20.18.17 (040800-311416286):7)
+11-12 02:25:14.937  1107  2203 W GLSUser : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-12 02:25:14.937  1107  2203 W GLSUser : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-12 02:25:14.937  1107  2203 W GLSUser : 	at spj.run(:com.google.android.gms@201817023@20.18.17 (040800-311416286):0)
+11-12 02:25:14.937  1107  2203 W GLSUser : 	at java.lang.Thread.run(Thread.java:923)
+11-12 02:25:14.957  1107  2203 W GLSUser : [AppCertManager] IOException while requesting key: 
+11-12 02:25:14.957  1107  2203 W GLSUser : java.io.IOException: Invalid device key response.
+11-12 02:25:14.957  1107  2203 W GLSUser : 	at huk.a(:com.google.android.gms@201817023@20.18.17 (040800-311416286):46)
+11-12 02:25:14.957  1107  2203 W GLSUser : 	at hui.a(:com.google.android.gms@201817023@20.18.17 (040800-311416286):41)
+11-12 02:25:14.957  1107  2203 W GLSUser : 	at hud.a(:com.google.android.gms@201817023@20.18.17 (040800-311416286):0)
+11-12 02:25:14.957  1107  2203 W GLSUser : 	at hug.a(:com.google.android.gms@201817023@20.18.17 (040800-311416286):10)
+11-12 02:25:14.957  1107  2203 W GLSUser : 	at fzn.call(:com.google.android.gms@201817023@20.18.17 (040800-311416286):5)
+11-12 02:25:14.957  1107  2203 W GLSUser : 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+11-12 02:25:14.957  1107  2203 W GLSUser : 	at sji.b(:com.google.android.gms@201817023@20.18.17 (040800-311416286):12)
+11-12 02:25:14.957  1107  2203 W GLSUser : 	at sji.run(:com.google.android.gms@201817023@20.18.17 (040800-311416286):7)
+11-12 02:25:14.957  1107  2203 W GLSUser : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-12 02:25:14.957  1107  2203 W GLSUser : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-12 02:25:14.957  1107  2203 W GLSUser : 	at spj.run(:com.google.android.gms@201817023@20.18.17 (040800-311416286):0)
+11-12 02:25:14.957  1107  2203 W GLSUser : 	at java.lang.Thread.run(Thread.java:923)
+11-12 02:25:15.873  8517  8517 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 02:25:15.872  8517  8517 W app_process: type=1400 audit(0.0:562): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8299 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-12 02:25:15.874  8517  8517 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
+11-12 02:25:15.874  8517  8517 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
+11-12 02:25:15.874  8517  8517 I AndroidRuntime: Using default boot image
+11-12 02:25:15.874  8517  8517 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
+11-12 02:25:15.874  8517  8517 I AndroidRuntime: Leaving lock profiling enabled
+11-12 02:25:15.872  8517  8517 W app_process: type=1400 audit(0.0:563): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8299 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-12 02:25:15.883  8517  8517 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
+11-12 02:25:15.872  8517  8517 W app_process: type=1400 audit(0.0:564): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8299 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-12 02:25:15.915  8517  8517 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+11-12 02:25:15.915  8517  8517 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+11-12 02:25:15.917  8517  8517 W app_process: Unexpected CPU variant for X86 using defaults: x86_64
+11-12 02:25:15.918  8517  8517 I app_process: The ClassLoaderContext is a special shared library.
+11-12 02:25:15.918  8517  8517 I app_process: The ClassLoaderContext is a special shared library.
+11-12 02:25:15.923  8517  8517 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+11-12 02:25:15.925  8517  8517 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 02:25:16.940  8517  8517 W AccessibilityNodeInfoDumper: Fetch time: 2ms
+11-12 02:25:16.940   488   953 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@e48a1e9
+11-12 02:25:16.944  8517  8517 D AndroidRuntime: Shutting down VM
+11-12 02:25:17.406   298   298 D goldfish-address-space: claimShared: Ask to claim region [0x3ffc2d000 0x3ffcf5000]
+11-12 02:25:17.409   156   156 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+11-12 02:25:17.409  8537  8537 I Gralloc4: mapper 4.x is not supported
+11-12 02:25:17.412  8537  8537 D HostConnection: createUnique: call
+11-12 02:25:17.412  8537  8537 D HostConnection: HostConnection::get() New Host Connection established 0x7dd5aa8919d0, tid 8537
+11-12 02:25:17.412  8537  8537 D goldfish-address-space: allocate: Ask for block of size 0x100
+11-12 02:25:17.413  8537  8537 D goldfish-address-space: allocate: ioctl allocate returned offset 0x3f9ffc000 size 0x2000
+11-12 02:25:17.424  8537  8537 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-12 02:25:17.483  8539  8539 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 02:25:17.485  8539  8539 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
+11-12 02:25:17.485  8539  8539 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
+11-12 02:25:17.485  8539  8539 I AndroidRuntime: Using default boot image
+11-12 02:25:17.485  8539  8539 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
+11-12 02:25:17.485  8539  8539 I AndroidRuntime: Leaving lock profiling enabled
+11-12 02:25:17.485  8539  8539 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
+11-12 02:25:17.480  8539  8539 W app_process: type=1400 audit(0.0:566): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8299 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-12 02:25:17.480  8539  8539 I chatty  : uid=2000(shell) app_process identical 2 lines
+11-12 02:25:17.480  8539  8539 W app_process: type=1400 audit(0.0:569): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8299 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-12 02:25:17.524  8539  8539 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+11-12 02:25:17.524  8539  8539 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+11-12 02:25:17.526  8539  8539 W app_process: Unexpected CPU variant for X86 using defaults: x86_64
+11-12 02:25:17.527  8539  8539 I app_process: The ClassLoaderContext is a special shared library.
+11-12 02:25:17.527  8539  8539 I app_process: The ClassLoaderContext is a special shared library.
+11-12 02:25:17.532  8539  8539 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+11-12 02:25:17.534  8539  8539 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 02:25:18.556  8539  8539 W AccessibilityNodeInfoDumper: Fetch time: 2ms
+11-12 02:25:18.557   488   953 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@506c72b
+11-12 02:25:18.561  8539  8539 D AndroidRuntime: Shutting down VM
+11-12 02:25:19.048  8557  8557 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 02:25:19.059  8557  8557 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
+11-12 02:25:19.059  8557  8557 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
+11-12 02:25:19.059  8557  8557 I AndroidRuntime: Using default boot image
+11-12 02:25:19.059  8557  8557 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
+11-12 02:25:19.059  8557  8557 I AndroidRuntime: Leaving lock profiling enabled
+11-12 02:25:19.059  8557  8557 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
+11-12 02:25:19.044  8557  8557 W app_process: type=1400 audit(0.0:570): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8299 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-12 02:25:19.056  8557  8557 I chatty  : uid=2000(shell) app_process identical 2 lines
+11-12 02:25:19.056  8557  8557 W app_process: type=1400 audit(0.0:573): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8299 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-12 02:25:19.095  8557  8557 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+11-12 02:25:19.095  8557  8557 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+11-12 02:25:19.097  8557  8557 W app_process: Unexpected CPU variant for X86 using defaults: x86_64
+11-12 02:25:19.098  8557  8557 I app_process: The ClassLoaderContext is a special shared library.
+11-12 02:25:19.103  8557  8557 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+11-12 02:25:19.105  8557  8557 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+11-12 02:25:19.109   488  2077 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+11-12 02:25:19.109   488  2077 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+11-12 02:25:19.109  8557  8557 D AndroidRuntime: Shutting down VM
+11-12 02:25:19.131   328   442 D AudioFlinger: mixer(0x74d64a1e9040) throttle end: throttle time(33)
+11-12 02:25:19.243   488  2478 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+11-12 02:25:21.530  1432  3161 I Dialer  : OmtpVvmCarrierCfgHlpr - OmtpEvent:CONFIG_STATUS_SMS_TIME_OUT
+11-12 02:25:21.532  1432  1432 I Dialer  : RetryPolicy - Retry limit for com.android.voicemail.impl.ActivationTask@41db0c6 reached
+11-12 02:25:21.533  1432  1432 I Dialer  : RetryPolicy - committing deferred status: configuration_state=4
+11-12 02:25:21.554  6588  7211 I VoicemailNotifier: receivers for android.intent.action.PROVIDER_CHANGED :[]
+11-12 02:25:21.556  1432  1432 I Dialer  : VvmTaskExecutor - no more tasks, stopping service if no task are added in 5000 millis
+11-12 02:25:22.208   488  2478 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+11-12 02:25:22.561   298   298 D goldfish-address-space: claimShared: Ask to claim region [0x3ffc2d000 0x3ffcf5000]
+11-12 02:25:22.564   156   156 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+11-12 02:25:22.564  8574  8574 I Gralloc4: mapper 4.x is not supported
+11-12 02:25:22.567  8574  8574 D HostConnection: createUnique: call
+11-12 02:25:22.567  8574  8574 D HostConnection: HostConnection::get() New Host Connection established 0x7552822f7f90, tid 8574
+11-12 02:25:22.567  8574  8574 D goldfish-address-space: allocate: Ask for block of size 0x100
+11-12 02:25:22.567  8574  8574 D goldfish-address-space: allocate: ioctl allocate returned offset 0x3f9ffc000 size 0x2000
+11-12 02:25:22.577  8574  8574 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-12 02:25:22.641  8576  8576 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 02:25:22.640  8576  8576 W app_process: type=1400 audit(0.0:574): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8299 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-12 02:25:22.642  8576  8576 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
+11-12 02:25:22.642  8576  8576 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
+11-12 02:25:22.642  8576  8576 I AndroidRuntime: Using default boot image
+11-12 02:25:22.642  8576  8576 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
+11-12 02:25:22.642  8576  8576 I AndroidRuntime: Leaving lock profiling enabled
+11-12 02:25:22.642  8576  8576 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
+11-12 02:25:22.640  8576  8576 W app_process: type=1400 audit(0.0:575): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8299 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-12 02:25:22.640  8576  8576 I chatty  : uid=2000(shell) app_process identical 1 line
+11-12 02:25:22.640  8576  8576 W app_process: type=1400 audit(0.0:577): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8299 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-12 02:25:22.675  8576  8576 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+11-12 02:25:22.675  8576  8576 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+11-12 02:25:22.677  8576  8576 W app_process: Unexpected CPU variant for X86 using defaults: x86_64
+11-12 02:25:22.678  8576  8576 I app_process: The ClassLoaderContext is a special shared library.
+11-12 02:25:22.678  8576  8576 I app_process: The ClassLoaderContext is a special shared library.
+11-12 02:25:22.685  8576  8576 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+11-12 02:25:22.687  8576  8576 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 02:25:23.707  8576  8576 W AccessibilityNodeInfoDumper: Fetch time: 1ms
+11-12 02:25:23.707   488   953 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@cae9015
+11-12 02:25:23.710  8576  8576 D AndroidRuntime: Shutting down VM
+11-12 02:25:24.186  8593  8593 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 02:25:24.187  8593  8593 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
+11-12 02:25:24.187  8593  8593 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
+11-12 02:25:24.187  8593  8593 I AndroidRuntime: Using default boot image
+11-12 02:25:24.187  8593  8593 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
+11-12 02:25:24.187  8593  8593 I AndroidRuntime: Leaving lock profiling enabled
+11-12 02:25:24.187  8593  8593 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
+11-12 02:25:24.184  8593  8593 W app_process: type=1400 audit(0.0:578): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8299 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-12 02:25:24.184  8593  8593 I chatty  : uid=2000(shell) app_process identical 2 lines
+11-12 02:25:24.184  8593  8593 W app_process: type=1400 audit(0.0:581): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8299 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-12 02:25:24.224  8593  8593 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+11-12 02:25:24.224  8593  8593 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+11-12 02:25:24.227  8593  8593 W app_process: Unexpected CPU variant for X86 using defaults: x86_64
+11-12 02:25:24.227  8593  8593 I app_process: The ClassLoaderContext is a special shared library.
+11-12 02:25:24.232  8593  8593 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+11-12 02:25:24.234  8593  8593 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+11-12 02:25:24.534  8593  8593 D AndroidRuntime: Shutting down VM
+11-12 02:25:24.835  2410  2410 I Finsky  : [2] wbh.a(20): SCH: onJobSchedulerWakeup with jobId 9002
+11-12 02:25:24.836  2410  2410 I Finsky  : [2] vyk.a(19): Scheduling fallback job with id: 9034, and delay: 43200000 ms
+11-12 02:25:24.837  2410  2410 I Finsky  : [2] vyk.a(9): Scheduling fallback in 64800000 (absolute: 65155198)
+11-12 02:25:24.837  1361  8608 I Vision  : Requesting optional module download of ocr.
+11-12 02:25:24.838  1361  8608 I Vision  : Checking for download completion for 365198 -- ocr
+11-12 02:25:24.844  2410  2410 I Finsky  : [2] vyt.handleMessage(7): SCH: DeviceState: DeviceState{currentTime=1794479124843, isCharging=true, isIdle=false, netAny=true, netNotRoaming=true, netUnmetered=true, batteryPercent=100.0}
+11-12 02:25:24.845  2410  8610 I Finsky  : [357] wbh.a(7): SCH: Jobs in database: 1-1337 24-77777777 26-1414141414 31-305419896 
+11-12 02:25:24.846  2410  2410 I Finsky  : [2] vyu.a(16): SCH: Running job: 31-305419896
+11-12 02:25:24.846  2410  2410 W Finsky  : [2] dpw.a(25): For unauth, use getDfeApiNonAuthenticated() instead!
+11-12 02:25:24.846  2410  2410 I Finsky  : [2] vyt.handleMessage(58): SCH: RunningQueue size: 1, PendingQueue size: 0
+11-12 02:25:24.846  2410  2410 I Finsky  : [2] vyt.handleMessage(62): SCH: Running queue: 31-305419896 
+11-12 02:25:24.847  2410  2900 I Finsky  : [234] jbf.c(2): Account name null when calculating account hash
+11-12 02:25:24.866   488  2480 D WifiNl80211Manager: Scan result ready event
+11-12 02:25:24.866   488  2480 D WifiNative: Scan result ready event
+11-12 02:25:24.955  2410  2900 E Volley  : [234] bok.a: Unexpected response code 404 for https://play-fe.googleapis.com/fdfe/deviceSettings
+11-12 02:25:24.955  2410  2900 W Finsky  : [234] drc.a(10): IOException while manually unzipping request.
+11-12 02:25:24.961  2410  2798 E Finsky  : [220] jed.a(7): Error getting device settings.
+11-12 02:25:24.961  2410  2798 E Finsky  : network time: 109, HTTP status code: na, exception com.android.volley.ClientError
+11-12 02:25:24.961  2410  2798 E Finsky  : 	at rrk.a(Unknown Source:4)
+11-12 02:25:24.961  2410  2798 E Finsky  : 	at bnu.b(PG:3)
+11-12 02:25:24.961  2410  2798 E Finsky  : 	at dqe.b(PG:6)
+11-12 02:25:24.961  2410  2798 E Finsky  : 	at bnm.run(PG:3)
+11-12 02:25:24.961  2410  2798 E Finsky  : 	at android.os.Handler.handleCallback(Handler.java:938)
+11-12 02:25:24.961  2410  2798 E Finsky  : 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-12 02:25:24.961  2410  2798 E Finsky  : 	at android.os.Looper.loop(Looper.java:223)
+11-12 02:25:24.961  2410  2798 E Finsky  : 	at android.app.ActivityThread.main(ActivityThread.java:7656)
+11-12 02:25:24.961  2410  2798 E Finsky  : 	at java.lang.reflect.Method.invoke(Native Method)
+11-12 02:25:24.961  2410  2798 E Finsky  : 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+11-12 02:25:24.961  2410  2798 E Finsky  : 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
+11-12 02:25:24.961  2410  2798 E Finsky  : [220] jdw.a(3): Error while refreshing device settings: network time: 109, HTTP status code: na, exception com.android.volley.ClientError. Retrying.
+11-12 02:25:24.961  2410  2798 E Finsky  : network time: 109, HTTP status code: na, exception com.android.volley.ClientError
+11-12 02:25:24.961  2410  2798 E Finsky  : 	at rrk.a(Unknown Source:4)
+11-12 02:25:24.961  2410  2798 E Finsky  : 	at bnu.b(PG:3)
+11-12 02:25:24.961  2410  2798 E Finsky  : 	at dqe.b(PG:6)
+11-12 02:25:24.961  2410  2798 E Finsky  : 	at bnm.run(PG:3)
+11-12 02:25:24.961  2410  2798 E Finsky  : 	at android.os.Handler.handleCallback(Handler.java:938)
+11-12 02:25:24.961  2410  2798 E Finsky  : 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-12 02:25:24.961  2410  2798 E Finsky  : 	at android.os.Looper.loop(Looper.java:223)
+11-12 02:25:24.961  2410  2798 E Finsky  : 	at android.app.ActivityThread.main(ActivityThread.java:7656)
+11-12 02:25:24.961  2410  2798 E Finsky  : 	at java.lang.reflect.Method.invoke(Native Method)
+11-12 02:25:24.961  2410  2798 E Finsky  : 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+11-12 02:25:24.961  2410  2798 E Finsky  : 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
+11-12 02:25:24.961  2410  2798 I Finsky  : [220] wae.a(14): SCH: jobFinished: 31-305419896. TimeElapsed: 115ms.
+11-12 02:25:24.962  2410  2410 I Finsky  : [2] vyu.a(39): SCH: Job 31-305419896 finished. Rescheduling.
+11-12 02:25:24.962  2410  2410 I Finsky  : [2] vyt.handleMessage(58): SCH: RunningQueue size: 0, PendingQueue size: 0
+11-12 02:25:24.962  2410  2410 I Finsky  : [2] vyt.handleMessage(24): Executor finished
+11-12 02:25:24.969  2410  2410 I Finsky  : [2] wbh.a(7): SCH: Jobs in database: 1-1337 24-77777777 26-1414141414 31-305419896 
+11-12 02:25:24.970  2410  2410 I Finsky  : [2] vxc.a(58): SCH: ConstraintMapping: 24-77777777,  -> L: 0ms, D: 82491580ms, C: false, I: true, N: 0
+11-12 02:25:24.970  2410  2410 I Finsky  : [2] vxc.a(58): SCH: ConstraintMapping: 1-1337, 31-305419896,  -> L: 255992ms, D: 30868570ms, C: false, I: false, N: 1
+11-12 02:25:24.970  2410  2410 I Finsky  : [2] vxc.a(58): SCH: ConstraintMapping: 26-1414141414,  -> L: 591653ms, D: 1491653ms, C: false, I: false, N: 0
+11-12 02:25:24.974  2410  2410 I Finsky  : [2] vzr.a(36): Cancelling existing jobscheduler jobs: 9000 9004 
+11-12 02:25:24.974  2410  2410 I Finsky  : [2] vzr.a(12): Throttling wakeup for job 9001 (expected to run in 0 ms) due to recent wakeup
+11-12 02:25:24.974  2410  2410 I Finsky  : [2] vzr.a(29): Scheduling job Id: 9001, L: 30000, D: 82491580, C: false, I: true, N: 0
+11-12 02:25:24.975  2410  2410 I Finsky  : [2] vzr.a(29): Scheduling job Id: 9003, L: 255992, D: 30868570, C: false, I: false, N: 1
+11-12 02:25:24.975  2410  2410 I Finsky  : [2] vzr.a(29): Scheduling job Id: 9005, L: 591653, D: 1491653, C: false, I: false, N: 0
+11-12 02:25:25.395  1647  1647 I BgTaskExecutorImpl: Starting EXCLUSIVE background task SEND_GSA_HOME_REQUEST.
+11-12 02:25:25.423  1647  8613 E ApplicationPropertiesBu: Date 2021-12-06T00:00:00Z is out of expected range.
+11-12 02:25:25.423  1647  8613 E ApplicationPropertiesBu: Date 2022-02-15T00:00:00Z is out of expected range.
+11-12 02:25:25.423  1647  8613 E ApplicationPropertiesBu: Date 2022-02-22T00:00:00Z is out of expected range.
+11-12 02:25:25.424  1647  2153 W SearchServiceCore: Abort, client detached.
+11-12 02:25:25.526  1107  2203 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-12 02:25:25.527  1107  2203 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@201817023@20.18.17 (040800-311416286):2)
+11-12 02:25:25.527  1107  2203 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@201817023@20.18.17 (040800-311416286):0)
+11-12 02:25:25.542  1107  2203 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-12 02:25:25.542  1107  2203 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@201817023@20.18.17 (040800-311416286):2)
+11-12 02:25:25.542  1107  2203 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@201817023@20.18.17 (040800-311416286):0)
+11-12 02:25:26.018  8618  8618 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 02:25:26.029  8618  8618 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
+11-12 02:25:26.033  8618  8618 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
+11-12 02:25:26.033  8618  8618 I AndroidRuntime: Using default boot image
+11-12 02:25:26.033  8618  8618 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
+11-12 02:25:26.033  8618  8618 I AndroidRuntime: Leaving lock profiling enabled
+11-12 02:25:26.033  8618  8618 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
+11-12 02:25:26.073  8618  8618 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+11-12 02:25:26.073  8618  8618 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+11-12 02:25:26.077  8618  8618 W app_process: Unexpected CPU variant for X86 using defaults: x86_64
+11-12 02:25:26.078  8618  8618 I app_process: The ClassLoaderContext is a special shared library.
+11-12 02:25:26.078  8618  8618 I app_process: The ClassLoaderContext is a special shared library.
+11-12 02:25:26.016  8618  8618 W app_process: type=1400 audit(0.0:582): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8299 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-12 02:25:26.094  8618  8618 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+11-12 02:25:26.098  8618  8618 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 02:25:26.024  8618  8618 W app_process: type=1400 audit(0.0:583): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8299 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-12 02:25:26.028  8618  8618 I chatty  : uid=2000(shell) app_process identical 1 line
+11-12 02:25:26.028  8618  8618 W app_process: type=1400 audit(0.0:585): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8299 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-12 02:25:26.212  1336  1336 I PhenotypeModule: PhenotypeModule.receiveBroadcast():356 onReceive() urgent = false
+11-12 02:25:26.212  1336  1336 I PhenotypeModule: PhenotypeModule.maybeFetchAndUpdate():167 maybeFetchAndUpdate: forceRefresh=false
+11-12 02:25:26.213  1107  2203 I SQLiteConnection: /data/user/0/com.google.android.gms/databases/phenotype.db-wal 1400832 bytes: Bigger than 1048576; truncating
+11-12 02:25:26.238  1336  8635 E PhenotypeModule: PhenotypeModule.handlePhenotypeConfigurationUpdates():246 Get empty configurations.
+11-12 02:25:26.245  1647  1647 I BgTaskExecutorImpl: Starting EXCLUSIVE background task FETCH_CONFIGS_FROM_PHENOTYPE.
+11-12 02:25:26.246  1647  1647 W n       : Received update for unknown package com.google.android.googlequicksearchbox
+11-12 02:25:26.254   488   607 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10122; state: DISABLED
+11-12 02:25:26.254   488   526 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10122; state: ENABLED
+11-12 02:25:26.258   278   278 D Zygote  : Forked child process 8638
+11-12 02:25:26.259   488   526 I ActivityManager: Start proc 8638:com.google.android.apps.photos/u0a122 for broadcast {com.google.android.apps.photos/com.google.android.apps.photos.experiments.phenotype.full.PhenotypeUpdateBroadcastReceiver}
+11-12 02:25:26.264  8638  8638 W oid.apps.photo: Unexpected CPU variant for X86 using defaults: x86_64
+11-12 02:25:26.268  8638  8638 E oid.apps.photo: Not starting debugger since process cannot load the jdwp agent.
+11-12 02:25:26.274  1336  8635 I PhenotypeModule: PhenotypeModule.lambda$fetchAndUpdate$3():215 fetchAndUpdate() : Success, hasFlags=true, flagCount=447, lastFetchStatus=November 12, 2:25 AM {reason=2, isFullFetch=false, success=true, isEmpty=true, isDelta=false, updatedFlagsCount=0, deletedFlagsCount=0, totalTime=19}
+11-12 02:25:26.277   488   499 W System  : A resource failed to call release. 
+11-12 02:25:26.277   488   499 W System  : A resource failed to call release. 
+11-12 02:25:26.290  8638  8638 I oid.apps.photo: The ClassLoaderContext is a special shared library.
+11-12 02:25:26.292  8638  8638 I oid.apps.photo: The ClassLoaderContext is a special shared library.
+11-12 02:25:26.292  8638  8638 D nativeloader: classloader namespace configured for unbundled product apk. library_path=/product/app/Photos/lib/x86:/product/app/Photos/Photos.apk!/lib/x86:/product/lib:/system/product/lib
+11-12 02:25:26.296  8638  8638 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-12 02:25:26.296  8638  8638 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-12 02:25:26.301  1107  1120 I .gms.persisten: Background concurrent copying GC freed 162465(7938KB) AllocSpace objects, 18(1124KB) LOS objects, 49% free, 9071KB/17MB, paused 11us total 126.031ms
+11-12 02:25:26.311  8638  8638 W oid.apps.photo: Accessing hidden field Ljava/util/Collections$SynchronizedCollection;->mutex:Ljava/lang/Object; (greylist-max-o, reflection, denied)
+11-12 02:25:26.311  8638  8638 W oid.apps.photo: Accessing hidden method Ljava/util/Collections$SynchronizedSet;-><init>(Ljava/util/Set;Ljava/lang/Object;)V (greylist-max-o, reflection, denied)
+11-12 02:25:26.311  8638  8638 W oid.apps.photo: Accessing hidden method Ljava/util/Collections$SynchronizedCollection;-><init>(Ljava/util/Collection;Ljava/lang/Object;)V (greylist-max-o, reflection, denied)
+11-12 02:25:26.317  1107  2203 I anhw    : Scheduling Phenotype for a PhenotypeSyncImmediately(12, com.google.android.googlequicksearchbox) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+11-12 02:25:26.335  1647  8613 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_birthdaydoodle_jar__name to integer.
+11-12 02:25:26.335  1647  8613 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_call_jar__name to integer.
+11-12 02:25:26.335  1647  8613 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_canvas_jar__name to integer.
+11-12 02:25:26.335  1647  8613 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_chkpkg_jar__name to integer.
+11-12 02:25:26.335  1647  8613 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_crashtest_jar__name to integer.
+11-12 02:25:26.335  1647  8613 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_dining_jar__name to integer.
+11-12 02:25:26.335  1647  8613 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_doodle_notifications_jar__name to integer.
+11-12 02:25:26.335  1647  8613 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_imageviewer_jar__name to integer.
+11-12 02:25:26.335  1647  8613 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_ipa_jar__name to integer.
+11-12 02:25:26.335  1647  8613 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_jslocation_jar__name to integer.
+11-12 02:25:26.335  1647  8613 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_localintent_jar__name to integer.
+11-12 02:25:26.335  1647  8613 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_messaging_jar__name to integer.
+11-12 02:25:26.335  1647  8613 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_nativesrp_activity_jar__name to integer.
+11-12 02:25:26.335  1647  8613 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_nativesrp_presenter_jar__name to integer.
+11-12 02:25:26.335  1647  8613 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_nowcontent_jar__name to integer.
+11-12 02:25:26.335  1647  8613 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_recents_activity_jar__name to integer.
+11-12 02:25:26.335  1647  8613 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_save_jar__name to integer.
+11-12 02:25:26.335  1647  8613 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_searchresults_activity_jar__name to integer.
+11-12 02:25:26.335  1647  8613 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_test_jar__name to integer.
+11-12 02:25:26.335  1647  8613 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_weather_jar__name to integer.
+11-12 02:25:26.335  1647  8613 W PhenotypeToGsaConfigs: Can't format flag bindle_flags__bloblobber_blob to integer.
+11-12 02:25:26.335  1647  8613 W PhenotypeToGsaConfigs: Can't format flag bindle_flags__velour_jar to integer.
+11-12 02:25:26.346   488   953 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10116; state: DISABLED
+11-12 02:25:26.346   488   526 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10116; state: DISABLED
+11-12 02:25:26.355  1647  8613 I BlobLobber: Canceling downloads: []
+11-12 02:25:26.357  1647  1647 I BgTaskExecutorImpl: Starting EXCLUSIVE background task BLOBLOBBER_SYNC.
+11-12 02:25:26.360  1647  2153 W SearchServiceCore: Abort, client detached.
+11-12 02:25:26.360  1647  2153 W SearchServiceCore: Abort, client detached.
+11-12 02:25:26.365   278   278 D Zygote  : Forked child process 8666
+11-12 02:25:26.365   488   526 I ActivityManager: Start proc 8666:com.google.android.apps.tachyon/u0a116 for broadcast {com.google.android.apps.tachyon/com.google.android.apps.tachyon.phenotype.PhenotypeBroadcastReceiver}
+11-12 02:25:26.368  8666  8666 W id.apps.tachyo: Unexpected CPU variant for X86 using defaults: x86_64
+11-12 02:25:26.371  8666  8666 E id.apps.tachyo: Not starting debugger since process cannot load the jdwp agent.
+11-12 02:25:26.392  8638  8662 I TetheringManager: registerTetheringEventCallback:com.google.android.apps.photos
+11-12 02:25:26.400  1647  2184 I ModelDownloadListener: Schdedule model download
+11-12 02:25:26.400  1647  2132 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_birthdaydoodle_jar__name to integer.
+11-12 02:25:26.400  1647  2132 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_call_jar__name to integer.
+11-12 02:25:26.400  1647  2132 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_canvas_jar__name to integer.
+11-12 02:25:26.400  1647  2132 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_chkpkg_jar__name to integer.
+11-12 02:25:26.400  1647  2156 I FedAssExpListener: Fed-ass not supported for signed out users.
+11-12 02:25:26.400  1647  2132 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_crashtest_jar__name to integer.
+11-12 02:25:26.400  1647  2132 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_dining_jar__name to integer.
+11-12 02:25:26.400  1647  2132 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_doodle_notifications_jar__name to integer.
+11-12 02:25:26.400  1647  2132 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_imageviewer_jar__name to integer.
+11-12 02:25:26.400  1647  2132 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_ipa_jar__name to integer.
+11-12 02:25:26.400  1647  2132 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_jslocation_jar__name to integer.
+11-12 02:25:26.400  1647  2132 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_localintent_jar__name to integer.
+11-12 02:25:26.400  1647  2132 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_messaging_jar__name to integer.
+11-12 02:25:26.400  1647  2132 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_nativesrp_activity_jar__name to integer.
+11-12 02:25:26.400  1647  2132 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_nativesrp_presenter_jar__name to integer.
+11-12 02:25:26.400  1647  2132 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_nowcontent_jar__name to integer.
+11-12 02:25:26.400  1647  2132 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_recents_activity_jar__name to integer.
+11-12 02:25:26.400  1647  2132 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_save_jar__name to integer.
+11-12 02:25:26.400  1647  2132 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_searchresults_activity_jar__name to integer.
+11-12 02:25:26.400  1647  2132 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_test_jar__name to integer.
+11-12 02:25:26.400  1647  2132 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_weather_jar__name to integer.
+11-12 02:25:26.400  1647  2132 W PhenotypeToGsaConfigs: Can't format flag bindle_flags__bloblobber_blob to integer.
+11-12 02:25:26.400  1647  2132 W PhenotypeToGsaConfigs: Can't format flag bindle_flags__velour_jar to integer.
+11-12 02:25:26.406  1647  2156 I FedAssExpListener: Successfully processed experiments changed.
+11-12 02:25:26.408  1647  1647 I BgTaskExecutorImpl: Starting EXCLUSIVE background task UPDATE_HOTWORD_MODELS.
+11-12 02:25:26.410  1647  8637 I ModelDownloadController: requestHotwordModelUpdate modelType-2 modelLocale-en-US
+11-12 02:25:26.410  1647  8637 I ModelDownloadController: shouldDownloadModel: modelLocale is en-US
+11-12 02:25:26.411  8666  8666 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+11-12 02:25:26.413  8666  8666 I id.apps.tachyo: The ClassLoaderContext is a special shared library.
+11-12 02:25:26.413  1647  8637 I ModelDownloadController: We already downloaded model from given location.
+11-12 02:25:26.413  1647  8637 I ModelDownloadController: Model download not requested.
+11-12 02:25:26.414  1647  2153 W SearchServiceCore: Abort, client detached.
+11-12 02:25:26.414  1647  2153 W SearchServiceCore: Abort, client detached.
+11-12 02:25:26.419  8666  8666 I id.apps.tachyo: The ClassLoaderContext is a special shared library.
+11-12 02:25:26.420  8666  8666 D nativeloader: classloader namespace configured for unbundled product apk. library_path=/product/app/Duo/lib/x86:/product/app/Duo/Duo.apk!/lib/x86:/product/lib:/system/product/lib
+11-12 02:25:26.421  1647  1647 I BgTaskExecutorImpl: Starting EXCLUSIVE background task ON_EXPERIMENTS_UPDATED.
+11-12 02:25:26.424  1647  2184 I OpaEligibilityChecker: send OpaEligibilityChange broadcast to CommonBroadcastReceiver
+11-12 02:25:26.426  1647  2153 I SNBWorker: Updating bootstrap data
+11-12 02:25:26.426  1647  2153 I MonetActivityIntentUtil: Initialization data file not found
+11-12 02:25:26.426  1647  2153 W b       : Root proto not found when parsing Uri agsa:/data?type=searchnow.TYPE_SEARCHNOW
+11-12 02:25:26.426  1647  2153 W b       : Root proto not found in extras.
+11-12 02:25:26.427  1647  1647 I BgTaskExecutorImpl: Starting EXCLUSIVE background task UPDATE_LAUNCHER_SHORTCUT.
+11-12 02:25:26.430  8666  8666 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-12 02:25:26.430  8666  8666 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-12 02:25:26.434  1647  2153 W SearchServiceCore: Abort, client detached.
+11-12 02:25:26.434  1647  2153 I chatty  : uid=10106(com.google.android.googlequicksearchbox) EventBus0 identical 1 line
+11-12 02:25:26.434  1647  2153 W SearchServiceCore: Abort, client detached.
+11-12 02:25:26.447  1647  2184 W CorpusConfigHelper: Invalid input from icing corpus JSON flag.
+11-12 02:25:26.447  1647  2184 W CorpusConfigHelper: android.util.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 123 column 2
+11-12 02:25:26.447  1647  2184 W CorpusConfigHelper: 	at android.util.JsonReader.syntaxError(JsonReader.java:1162)
+11-12 02:25:26.447  1647  2184 W CorpusConfigHelper: 	at android.util.JsonReader.checkLenient(JsonReader.java:840)
+11-12 02:25:26.447  1647  2184 W CorpusConfigHelper: 	at android.util.JsonReader.nextInArray(JsonReader.java:615)
+11-12 02:25:26.447  1647  2184 W CorpusConfigHelper: 	at android.util.JsonReader.peek(JsonReader.java:345)
+11-12 02:25:26.447  1647  2184 W CorpusConfigHelper: 	at android.util.JsonReader.hasNext(JsonReader.java:321)
+11-12 02:25:26.447  1647  2184 W CorpusConfigHelper: 	at com.google.android.apps.gsa.searchbox.c.b.b.k.a(SourceFile:25)
+11-12 02:25:26.447  1647  2184 W CorpusConfigHelper: 	at com.google.android.apps.gsa.searchbox.c.b.b.j.a(SourceFile:1)
+11-12 02:25:26.447  1647  2184 W CorpusConfigHelper: 	at com.google.android.apps.gsa.search.core.i.i.run(Unknown Source:2)
+11-12 02:25:26.447  1647  2184 W CorpusConfigHelper: 	at com.google.android.libraries.gsa.l.a.l.call(Unknown Source:2)
+11-12 02:25:26.447  1647  2184 W CorpusConfigHelper: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+11-12 02:25:26.447  1647  2184 W CorpusConfigHelper: 	at com.google.apps.tiktok.concurrent.aq.run(SourceFile:1)
+11-12 02:25:26.447  1647  2184 W CorpusConfigHelper: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-12 02:25:26.447  1647  2184 W CorpusConfigHelper: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-12 02:25:26.447  1647  2184 W CorpusConfigHelper: 	at com.google.apps.tiktok.concurrent.f.run(Unknown Source:3)
+11-12 02:25:26.447  1647  2184 W CorpusConfigHelper: 	at java.lang.Thread.run(Thread.java:923)
+11-12 02:25:26.457  1647  2183 I EngineIdGenerator: Refusing EXCLUSIVE task 24, it is already pending. Try again in 359 seconds.
+11-12 02:25:26.463  1647  2184 I FedAssExpListener: Fed-ass not supported for signed out users.
+11-12 02:25:26.463  1647  2153 W SearchServiceCore: Abort, client detached.
+11-12 02:25:26.463  1647  2153 W SearchServiceCore: Abort, client detached.
+11-12 02:25:26.469  1647  2183 I ModelDownloadListener: Schdedule model download
+11-12 02:25:26.472  1361  2440 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=32 [CONTEXT service_id=21 ]
+11-12 02:25:26.472  1361  2126 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=33 [CONTEXT service_id=21 ]
+11-12 02:25:26.475  1647  2156 I FedAssExpListener: Successfully processed experiments changed.
+11-12 02:25:26.478  1361  7809 W Icing   : No valid account for uploading user actions [CONTEXT service_id=21 ]
+11-12 02:25:26.481  1647  2183 I OpaEligibilityChecker: send OpaEligibilityChange broadcast to CommonBroadcastReceiver
+11-12 02:25:26.481  1647  1647 I BgTaskExecutorImpl: Starting EXCLUSIVE background task UPDATE_HOTWORD_MODELS.
+11-12 02:25:26.482  1647  8695 I ModelDownloadController: requestHotwordModelUpdate modelType-2 modelLocale-en-US
+11-12 02:25:26.483  1647  8695 I ModelDownloadController: shouldDownloadModel: modelLocale is en-US
+11-12 02:25:26.483  1647  8695 I ModelDownloadController: We already downloaded model from given location.
+11-12 02:25:26.483  1647  8695 I ModelDownloadController: Model download not requested.
+11-12 02:25:26.488  1647  2153 W SearchServiceCore: Abort, client detached.
+11-12 02:25:26.488  1647  2153 W SearchServiceCore: Abort, client detached.
+11-12 02:25:26.491  1647  2183 W CorpusConfigHelper: Invalid input from icing corpus JSON flag.
+11-12 02:25:26.491  1647  2183 W CorpusConfigHelper: android.util.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 123 column 2
+11-12 02:25:26.491  1647  2183 W CorpusConfigHelper: 	at android.util.JsonReader.syntaxError(JsonReader.java:1162)
+11-12 02:25:26.491  1647  2183 W CorpusConfigHelper: 	at android.util.JsonReader.checkLenient(JsonReader.java:840)
+11-12 02:25:26.491  1647  2183 W CorpusConfigHelper: 	at android.util.JsonReader.nextInArray(JsonReader.java:615)
+11-12 02:25:26.491  1647  2183 W CorpusConfigHelper: 	at android.util.JsonReader.peek(JsonReader.java:345)
+11-12 02:25:26.491  1647  2183 W CorpusConfigHelper: 	at android.util.JsonReader.hasNext(JsonReader.java:321)
+11-12 02:25:26.491  1647  2183 W CorpusConfigHelper: 	at com.google.android.apps.gsa.searchbox.c.b.b.k.a(SourceFile:25)
+11-12 02:25:26.491  1647  2183 W CorpusConfigHelper: 	at com.google.android.apps.gsa.searchbox.c.b.b.j.a(SourceFile:1)
+11-12 02:25:26.491  1647  2183 W CorpusConfigHelper: 	at com.google.android.apps.gsa.search.core.i.i.run(Unknown Source:2)
+11-12 02:25:26.491  1647  2183 W CorpusConfigHelper: 	at com.google.android.libraries.gsa.l.a.l.call(Unknown Source:2)
+11-12 02:25:26.491  1647  2183 W CorpusConfigHelper: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+11-12 02:25:26.491  1647  2183 W CorpusConfigHelper: 	at com.google.apps.tiktok.concurrent.aq.run(SourceFile:1)
+11-12 02:25:26.491  1647  2183 W CorpusConfigHelper: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-12 02:25:26.491  1647  2183 W CorpusConfigHelper: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-12 02:25:26.491  1647  2183 W CorpusConfigHelper: 	at com.google.apps.tiktok.concurrent.f.run(Unknown Source:3)
+11-12 02:25:26.491  1647  2183 W CorpusConfigHelper: 	at java.lang.Thread.run(Thread.java:923)
+11-12 02:25:26.498  1361  2440 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=null serviceId=30 [CONTEXT service_id=21 ]
+11-12 02:25:26.516  1361  7809 I Icing   : Usage reports ok 1, Failed Usage reports 0, indexed 0, rejected 0 [CONTEXT service_id=21 ]
+11-12 02:25:26.517  8666  8704 W id.apps.tachyo: Accessing hidden field Ljava/util/Collections$SynchronizedCollection;->mutex:Ljava/lang/Object; (greylist-max-o, reflection, denied)
+11-12 02:25:26.517  8666  8704 W id.apps.tachyo: Accessing hidden method Ljava/util/Collections$SynchronizedSet;-><init>(Ljava/util/Set;Ljava/lang/Object;)V (greylist-max-o, reflection, denied)
+11-12 02:25:26.517  8666  8704 W id.apps.tachyo: Accessing hidden method Ljava/util/Collections$SynchronizedCollection;-><init>(Ljava/util/Collection;Ljava/lang/Object;)V (greylist-max-o, reflection, denied)
+11-12 02:25:26.542  8666  8666 W TY_CallManagerModule: installed monitors: temp(true)
+11-12 02:25:26.563  1361  7809 W Icing   : No valid account for uploading user actions [CONTEXT service_id=21 ]
+11-12 02:25:26.568  8666  8726 W DynamiteModule: Local module descriptor class for com.google.android.gms.googlecertificates not found.
+11-12 02:25:26.580  8666  8724 W DynamiteModule: Local module descriptor class for com.google.android.gms.measurement.dynamite not found.
+11-12 02:25:26.582  1361  7809 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0 [CONTEXT service_id=21 ]
+11-12 02:25:26.587  8666  8697 I TetheringManager: registerTetheringEventCallback:com.google.android.apps.tachyon
+11-12 02:25:26.587  8666  8697 D EventBus: No subscribers registered for event class jhw
+11-12 02:25:26.587  8666  8697 D EventBus: No subscribers registered for event class vwt
+11-12 02:25:26.595  1361  7809 W Icing   : No valid account for uploading user actions [CONTEXT service_id=21 ]
+11-12 02:25:26.596  1432  1432 I Dialer  : VvmTaskExecutor - Stopping service
+11-12 02:25:26.596  1432  1432 I Dialer  : VvmTaskExecutor - finishing Job
+11-12 02:25:26.596  1432  1432 I Dialer  : TaskSchedulerJobService - finishing job
+11-12 02:25:26.599  1432  1432 I Dialer  : JobFinishedPoller.run - Job finished
+11-12 02:25:26.599  1432  1432 I Dialer  : VvmTaskExecutor - terminated
+11-12 02:25:26.601  1361  7809 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0 [CONTEXT service_id=21 ]
+11-12 02:25:26.603  1647  2153 W SearchServiceCore: Abort, client detached.
+11-12 02:25:26.603  1647  8695 I BgTaskExecutorImpl: Starting EXCLUSIVE background task FETCH_CONFIGS_FROM_PHENOTYPE.
+11-12 02:25:26.612  8666  8700 D EventBus: No subscribers registered for event class kjb
+11-12 02:25:26.612  8666  8700 D EventBus: No subscribers registered for event class vwt
+11-12 02:25:26.638  8666  8724 I DynamiteLoaderV2: [70] Measurementdynamite
+11-12 02:25:26.639  8666  8724 W id.apps.tachyo: Unsupported class loader
+11-12 02:25:26.643  8666  8724 W id.apps.tachyo: Unsupported class loader
+11-12 02:25:26.643   488  1930 E system_server: Invalid class loader spec: =UnsupportedClassLoaderContext=
+11-12 02:25:26.643   488  1930 E PackageDexUsage: Unsupported context?
+11-12 02:25:26.648  1647  2184 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_birthdaydoodle_jar__name to integer.
+11-12 02:25:26.648  1647  2184 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_call_jar__name to integer.
+11-12 02:25:26.648  1647  2184 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_canvas_jar__name to integer.
+11-12 02:25:26.648  1647  2184 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_chkpkg_jar__name to integer.
+11-12 02:25:26.648  1647  2184 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_crashtest_jar__name to integer.
+11-12 02:25:26.648  1647  2184 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_dining_jar__name to integer.
+11-12 02:25:26.648  1647  2184 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_doodle_notifications_jar__name to integer.
+11-12 02:25:26.648  1647  2184 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_imageviewer_jar__name to integer.
+11-12 02:25:26.648  1647  2184 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_ipa_jar__name to integer.
+11-12 02:25:26.648  1647  2184 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_jslocation_jar__name to integer.
+11-12 02:25:26.648  1647  2184 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_localintent_jar__name to integer.
+11-12 02:25:26.648  1647  2184 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_messaging_jar__name to integer.
+11-12 02:25:26.648  1647  2184 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_nativesrp_activity_jar__name to integer.
+11-12 02:25:26.648  1647  2184 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_nativesrp_presenter_jar__name to integer.
+11-12 02:25:26.648  1647  2184 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_nowcontent_jar__name to integer.
+11-12 02:25:26.648  1647  2184 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_recents_activity_jar__name to integer.
+11-12 02:25:26.648  1647  2184 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_save_jar__name to integer.
+11-12 02:25:26.648  1647  2184 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_searchresults_activity_jar__name to integer.
+11-12 02:25:26.648  1647  2184 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_test_jar__name to integer.
+11-12 02:25:26.648  1647  2184 W PhenotypeToGsaConfigs: Can't format flag AndroidGsaVelourJars__velour_weather_jar__name to integer.
+11-12 02:25:26.648  1647  2184 W PhenotypeToGsaConfigs: Can't format flag bindle_flags__bloblobber_blob to integer.
+11-12 02:25:26.648  1647  2184 W PhenotypeToGsaConfigs: Can't format flag bindle_flags__velour_jar to integer.
+11-12 02:25:26.650  8666  8724 W DynamiteModule: Local module descriptor class for com.google.android.gms.measurement.dynamite not found.
+11-12 02:25:26.651  8666  8726 I DynamiteLoaderV2: [70] Googlecertificates
+11-12 02:25:26.651  8666  8726 W id.apps.tachyo: Unsupported class loader
+11-12 02:25:26.652  8666  8726 W id.apps.tachyo: Unsupported class loader
+11-12 02:25:26.652   488  1930 E system_server: Invalid class loader spec: =UnsupportedClassLoaderContext=
+11-12 02:25:26.679  1647  2156 I EngineIdGenerator: Refusing EXCLUSIVE task 24, it is already pending. Try again in 358 seconds.
+11-12 02:25:26.680  1647  2132 I FedAssExpListener: Fed-ass not supported for signed out users.
+11-12 02:25:26.680  1647  2132 I FedAssExpListener: Successfully processed experiments changed.
+11-12 02:25:26.680  1647  2156 I ModelDownloadListener: Schdedule model download
+11-12 02:25:26.682  1647  1647 I BgTaskExecutorImpl: Starting EXCLUSIVE background task UPDATE_HOTWORD_MODELS.
+11-12 02:25:26.684  1647  8695 I ModelDownloadController: requestHotwordModelUpdate modelType-2 modelLocale-en-US
+11-12 02:25:26.684  1647  8695 I ModelDownloadController: shouldDownloadModel: modelLocale is en-US
+11-12 02:25:26.684  1647  8695 I ModelDownloadController: We already downloaded model from given location.
+11-12 02:25:26.684  1647  8695 I ModelDownloadController: Model download not requested.
+11-12 02:25:26.684  1647  2156 I OpaEligibilityChecker: send OpaEligibilityChange broadcast to CommonBroadcastReceiver
+11-12 02:25:26.685  1647  2153 W SearchServiceCore: Abort, client detached.
+11-12 02:25:26.685  1647  2153 W SearchServiceCore: Abort, client detached.
+11-12 02:25:26.697  1647  2156 W CorpusConfigHelper: Invalid input from icing corpus JSON flag.
+11-12 02:25:26.697  1647  2156 W CorpusConfigHelper: android.util.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 123 column 2
+11-12 02:25:26.697  1647  2156 W CorpusConfigHelper: 	at android.util.JsonReader.syntaxError(JsonReader.java:1162)
+11-12 02:25:26.697  1647  2156 W CorpusConfigHelper: 	at android.util.JsonReader.checkLenient(JsonReader.java:840)
+11-12 02:25:26.697  1647  2156 W CorpusConfigHelper: 	at android.util.JsonReader.nextInArray(JsonReader.java:615)
+11-12 02:25:26.697  1647  2156 W CorpusConfigHelper: 	at android.util.JsonReader.peek(JsonReader.java:345)
+11-12 02:25:26.697  1647  2156 W CorpusConfigHelper: 	at android.util.JsonReader.hasNext(JsonReader.java:321)
+11-12 02:25:26.697  1647  2156 W CorpusConfigHelper: 	at com.google.android.apps.gsa.searchbox.c.b.b.k.a(SourceFile:25)
+11-12 02:25:26.697  1647  2156 W CorpusConfigHelper: 	at com.google.android.apps.gsa.searchbox.c.b.b.j.a(SourceFile:1)
+11-12 02:25:26.697  1647  2156 W CorpusConfigHelper: 	at com.google.android.apps.gsa.search.core.i.i.run(Unknown Source:2)
+11-12 02:25:26.697  1647  2156 W CorpusConfigHelper: 	at com.google.android.libraries.gsa.l.a.l.call(Unknown Source:2)
+11-12 02:25:26.697  1647  2156 W CorpusConfigHelper: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+11-12 02:25:26.697  1647  2156 W CorpusConfigHelper: 	at com.google.apps.tiktok.concurrent.aq.run(SourceFile:1)
+11-12 02:25:26.697  1647  2156 W CorpusConfigHelper: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+11-12 02:25:26.697  1647  2156 W CorpusConfigHelper: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+11-12 02:25:26.697  1647  2156 W CorpusConfigHelper: 	at com.google.apps.tiktok.concurrent.f.run(Unknown Source:3)
+11-12 02:25:26.697  1647  2156 W CorpusConfigHelper: 	at java.lang.Thread.run(Thread.java:923)
+11-12 02:25:26.698  1361  2440 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=32 [CONTEXT service_id=21 ]
+11-12 02:25:26.699  1361  2126 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.googlequicksearchbox componentName=agsa_icing_connection serviceId=33 [CONTEXT service_id=21 ]
+11-12 02:25:26.700  1361  7809 W Icing   : No valid account for uploading user actions [CONTEXT service_id=21 ]
+11-12 02:25:26.703  1361  7809 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0 [CONTEXT service_id=21 ]
+11-12 02:25:26.706  1361  7809 W Icing   : No valid account for uploading user actions [CONTEXT service_id=21 ]
+11-12 02:25:26.712  1361  7809 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0 [CONTEXT service_id=21 ]
+11-12 02:25:26.652   488  1930 E PackageDexUsage: Unsupported context?
+11-12 02:25:26.712   488  1930 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10108; state: DISABLED
+11-12 02:25:26.712   488   526 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10108; state: DISABLED
+11-12 02:25:26.723  8666  8732 W DynamiteModule: Local module descriptor class for providerinstaller not found.
+11-12 02:25:26.726  1107  1412 W ProviderHelper: Unknown dynamite feature providerinstaller
+11-12 02:25:26.727   277   277 D Zygote  : Forked child process 8753
+11-12 02:25:26.727   488   526 I ActivityManager: Start proc 8753:com.android.vending:instant_app_installer/u0a108 for broadcast {com.android.vending/com.google.android.finsky.instantapps.PhenotypeUpdateReceiver}
+11-12 02:25:26.733  8666  8732 W ProviderInstaller: Failed to load providerinstaller module: No acceptable module found. Local version is 0 and remote version is 0.
+11-12 02:25:26.733  8753  8753 W t_app_installe: Unexpected CPU variant for X86 using defaults: x86_64
+11-12 02:25:26.734  8753  8753 E t_app_installe: Not starting debugger since process cannot load the jdwp agent.
+11-12 02:25:26.735  8666  8732 I id.apps.tachyo: The ClassLoaderContext is a special shared library.
+11-12 02:25:26.741  1647  2153 W SearchServiceCore: Abort, client detached.
+11-12 02:25:26.742  8666  8732 I id.apps.tachyo: The ClassLoaderContext is a special shared library.
+11-12 02:25:26.743  8753  8753 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+11-12 02:25:26.744  8753  8753 I t_app_installe: The ClassLoaderContext is a special shared library.
+11-12 02:25:26.746  8753  8753 I t_app_installe: The ClassLoaderContext is a special shared library.
+11-12 02:25:26.746  8753  8753 D nativeloader: classloader namespace configured for unbundled product apk. library_path=/product/priv-app/Phonesky/lib/x86_64:/product/priv-app/Phonesky/Phonesky.apk!/lib/x86_64:/product/lib64:/system/product/lib64
+11-12 02:25:26.751  8753  8753 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-12 02:25:26.751  8753  8753 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-12 02:25:26.757  8666  8732 I id.apps.tachyo: The ClassLoaderContext is a special shared library.
+11-12 02:25:26.757  8666  8732 D nativeloader: classloader namespace configured for unbundled product apk. library_path=/product/priv-app/PrebuiltGmsCore/lib/x86:/product/priv-app/PrebuiltGmsCore/PrebuiltGmsCore.apk!/lib/x86:/product/lib:/system/product/lib
+11-12 02:25:26.759  8753  8753 I Finsky:instant_app_inst: [2] ebc.aX(5): Process created at version: 20.4.33-all [0] [PR] 319051143
+11-12 02:25:26.770  8666  8732 V NativeCrypto: Registering com/google/android/gms/org/conscrypt/NativeCrypto's 286 native methods...
+11-12 02:25:26.779  1107  2203 I anhw    : Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.libraries.notifications.platform#com.google.android.apps.tachyon) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+11-12 02:25:26.780  8666  8666 D CompatibilityChangeReporter: Compat change id reported: 119147584; UID 10116; state: DISABLED
+11-12 02:25:26.784  8666  8732 I ProviderInstaller: Installed default security provider GmsCore_OpenSSL
+11-12 02:25:26.793  1107  2195 I anhw    : Scheduling Phenotype for a PhenotypeSyncImmediately(6, com.google.android.libraries.internal.growth.growthkit#com.google.android.apps.tachyon) one off with window [1, 2] in seconds [CONTEXT service_id=51 ]
+11-12 02:25:26.796  8753  8753 I TetheringManager: registerTetheringEventCallback:com.android.vending
+11-12 02:25:26.811  7046  7087 I BuglePhenotype: onReceive for cslib package [CONTEXT package_name="com.google.android.ims.library" ]
+11-12 02:25:26.817  7046  7046 W ConfigurationUpdatedRec: Received update for unknown package com.google.android.ims.library
+11-12 02:25:26.820  7046  7081 I BuglePhenotype: onReceive for bugle package [CONTEXT package_name="com.google.android.apps.messaging" ]
+11-12 02:25:26.822  8753  8753 D PhenotypeUpdateService: onCreate called
+11-12 02:25:26.826  7046  7046 W ConfigurationUpdatedRec: Received update for unknown package com.google.android.apps.messaging
+11-12 02:25:26.834  8753  8789 D PhenotypeUpdateService: Updating Phenotype configs
+11-12 02:25:26.835  7046  7083 I BuglePhenotype: Notify about updates in current package [CONTEXT current_package_name="com.google.android.ims.library" ]
+11-12 02:25:26.836  3183  6090 I CarrierServices: [110] czm.b: Reinitialize CSLib Flags: com.google.android.ims.library
+11-12 02:25:26.843  7046  7087 I BugleRcsEngine: [127] aeec.connect: Connecting SignupService
+11-12 02:25:26.846  7046  7087 I BugleRcsEngine: [127] aeec.connect: shouldUseCarrierServicesJibeService: true, CarrierServices rcs service found: true
+11-12 02:25:26.848  3183  6090 W CarrierServices: [110] dvk.a: No config URL. RCS will be disabled!
+11-12 02:25:26.849  7046  7087 I BugleRcsEngine: [127] aeec.connect: Binding to JibeService in CarrierServices.
+11-12 02:25:26.850  7046  7046 I RcsClientLib: Service com.google.android.rcs.client.signup.SignupService connected. Will notify listeners: true
+11-12 02:25:26.851  3183  3199 I CarrierServices: [56] dsd.a: RcsAvailabilityManager: Calculating Rcs Availability
+11-12 02:25:26.852  3183  3199 I CarrierServices: [56] dtf.b: Bugle has minimum required RCS permissions: true
+11-12 02:25:26.858  3183  6090 I CarrierServices: [110] dsd.a: RcsAvailabilityManager: Calculating Rcs Availability
+11-12 02:25:26.861   488   953 D ConnectivityService: requestNetwork for uid/pid:10116/8666 NetworkRequest [ TRACK_DEFAULT id=57, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10116 AdministratorUids: [] RequestorUid: 10116 RequestorPackageName: com.google.android.apps.tachyon] ]
+11-12 02:25:26.861   488   628 D ConnectivityService: NetReassign [57 : null → 101]
+11-12 02:25:26.861   488   624 D UntrustedWifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=57, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10116 AdministratorUids: [] RequestorUid: 10116 RequestorPackageName: com.google.android.apps.tachyon] ] with score 60 and providerId 3
+11-12 02:25:26.861   488   624 D WifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=57, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10116 AdministratorUids: [] RequestorUid: 10116 RequestorPackageName: com.google.android.apps.tachyon] ] with score 60 and providerId 3
+11-12 02:25:26.862  1012  1012 D PhoneSwitcherNetworkRequstListener: got request NetworkRequest [ TRACK_DEFAULT id=57, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10116 AdministratorUids: [] RequestorUid: 10116 RequestorPackageName: com.google.android.apps.tachyon] ] with score 60 and providerId 3
+11-12 02:25:26.863   488   628 D ConnectivityService: NetReassign [no changes]
+11-12 02:25:26.863   681   681 V KeyguardUpdateMonitor: onSubscriptionInfoChanged()
+11-12 02:25:26.863  1012  1012 D Telephony: isEmergencyPreferredAccount: subId=1, activeData=1
+11-12 02:25:26.863  1012  1012 D Telephony: isEmergencyPreferredAccount: Device does not require preference.
+11-12 02:25:26.864   681   681 V KeyguardUpdateMonitor: SubInfo:{id=1 iccId=890141032[****] simSlotIndex=0 carrierId=1 displayName=T-Mobile carrierName=T-Mobile nameSource=3 iconTint=-16746133 number=[****] dataRoaming=0 iconBitmap=android.graphics.Bitmap@e42676 mcc=310 mnc=260 countryIso=us isEmbedded=false nativeAccessRules=null cardString=890141032[****] cardId=-1 isOpportunistic=false groupUUID=null isGroupDisabled=false profileClass=-1 ehplmns=null hplmns=null subscriptionType=0 groupOwner=null carrierConfigAccessRules=null areUiccApplicationsEnabled=true}
+11-12 02:25:26.865  3183  6090 I CarrierServices: [110] dtf.b: Bugle has minimum required RCS permissions: true
+11-12 02:25:26.874  3183  6090 I CarrierServices: [110] dtf.a: Rcs is enabled from user settings: true
+11-12 02:25:26.874  3183  6090 I CarrierServices: [110] dtf.c: Bugle is default SMS app: true
+11-12 02:25:26.876  3183  6090 W CarrierServices: [110] dvk.a: No config URL. RCS will be disabled!
+11-12 02:25:26.876  3183  6090 I CarrierServices: [110] ekb.b: Checking if using CarrierServices.apk is possible. Enabled: true, isAtLeastM: true, runningInsideBugle: false
+11-12 02:25:26.876  3183  6090 I CarrierServices: [110] chn.h: BindingManager: binding and reset P/H Flag stay same
+11-12 02:25:26.877  3183  6090 I CarrierServices: [110] dsd.a: RcsAvailabilityManager: Rcs Availability still DISABLED_VIA_GSERVICES (RCS is disabled for this carrier by Google)
+11-12 02:25:26.895   488  2478 W ActivityManager: Unable to start service Intent { act=com.google.android.gms.auth.key.retrieval.service.START pkg=com.google.android.gms } U=0: not found
+11-12 02:25:26.896  1107  8787 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Updating password complexity components state.
+11-12 02:25:26.896  1107  8787 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.admin.DeviceAdminReceiver
+11-12 02:25:26.896  1107  8787 I Auth    : [AuthManaged,PasswordComplexityHelperImpl] Disabling com.google.android.gms.auth.managed.ui.SetNewPasswordActivity
+11-12 02:25:26.898  1361  8608 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=com.google.android.gms.phenotype.COMMITTED flg=0x10 pkg=com.google.android.gms cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+11-12 02:25:26.899  1107  8787 I PTCommittedOperation: Receive new configuration for com.google.android.gms.clearcut.public
+11-12 02:25:26.900  1361  8608 I MdiSyncModule: flag handling is skipping irrelevant intent.
+11-12 02:25:26.902  1361  8821 W ModuleInitIntentOp: Dropping unexpected action com.google.android.gms.phenotype.COMMITTED
+11-12 02:25:26.903   488  2478 W ActivityManager: Unbind failed: could not find connection for android.os.BinderProxy@f17ec17
+11-12 02:25:26.905  1361  2121 E GmsClient: unable to connect to service: com.google.android.gms.auth.key.retrieval.service.START on com.google.android.gms
+11-12 02:25:26.906  8753  8816 W t_app_installe: Accessing hidden field Ljava/util/Collections$SynchronizedCollection;->mutex:Ljava/lang/Object; (greylist-max-o, reflection, denied)
+11-12 02:25:26.907  8753  8816 W t_app_installe: Accessing hidden method Ljava/util/Collections$SynchronizedSet;-><init>(Ljava/util/Set;Ljava/lang/Object;)V (greylist-max-o, reflection, denied)
+11-12 02:25:26.907  8753  8816 W t_app_installe: Accessing hidden method Ljava/util/Collections$SynchronizedCollection;-><init>(Ljava/util/Collection;Ljava/lang/Object;)V (greylist-max-o, reflection, denied)
+11-12 02:25:26.921  3183  3199 I CarrierServices: [56] dtf.a: Rcs is enabled from user settings: true
+11-12 02:25:26.922  3183  3199 I CarrierServices: [56] dtf.c: Bugle is default SMS app: true
+11-12 02:25:26.922  3183  3199 W CarrierServices: [56] dvk.a: No config URL. RCS will be disabled!
+11-12 02:25:26.922  3183  3199 I CarrierServices: [56] ekb.b: Checking if using CarrierServices.apk is possible. Enabled: true, isAtLeastM: true, runningInsideBugle: false
+11-12 02:25:26.922  3183  3199 I CarrierServices: [56] chn.h: BindingManager: binding and reset P/H Flag stay same
+11-12 02:25:26.922  3183  3199 I CarrierServices: [56] dsd.a: RcsAvailabilityManager: Rcs Availability still DISABLED_VIA_GSERVICES (RCS is disabled for this carrier by Google)
+11-12 02:25:26.923  7046  7083 I BugleRcs: RcsAvailabilityUtilForProvisioningEngineV2: Get Updated RcsAvailability, RcsAvailability: DISABLED_VIA_GSERVICES, SimId: Redacted-20
+11-12 02:25:26.923  7046  7046 I BugleRcsEngine: [2] aeec.disconnect: Disconnecting ChatSessionService
+11-12 02:25:26.923  7046  7046 W RcsClientLib: Unexpected error when trying to unbind com.google.android.ims.rcsservice.chatsession.IChatSession: Service not registered: aeed@59bcc85
+11-12 02:25:26.923  7046  7046 W RcsClientLib: java.lang.IllegalArgumentException: Service not registered: aeed@59bcc85
+11-12 02:25:26.923  7046  7046 W RcsClientLib: 	at android.app.LoadedApk.forgetServiceDispatcher(LoadedApk.java:1757)
+11-12 02:25:26.923  7046  7046 W RcsClientLib: 	at android.app.ContextImpl.unbindService(ContextImpl.java:1874)
+11-12 02:25:26.923  7046  7046 W RcsClientLib: 	at android.content.ContextWrapper.unbindService(ContextWrapper.java:792)
+11-12 02:25:26.923  7046  7046 W RcsClientLib: 	at aeec.b(PG:43)
+11-12 02:25:26.923  7046  7046 W RcsClientLib: 	at aeec.disconnect(PG:41)
+11-12 02:25:26.923  7046  7046 W RcsClientLib: 	at koc.b(PG:36)
+11-12 02:25:26.923  7046  7046 W RcsClientLib: 	at kof.a(PG:38)
+11-12 02:25:26.923  7046  7046 W RcsClientLib: 	at riw.a(PG:43)
+11-12 02:25:26.923  7046  7046 W RcsClientLib: 	at rif.run(Unknown Source:1)
+11-12 02:25:26.923  7046  7046 W RcsClientLib: 	at afou.run(PG:3)
+11-12 02:25:26.923  7046  7046 W RcsClientLib: 	at android.os.Handler.handleCallback(Handler.java:938)
+11-12 02:25:26.923  7046  7046 W RcsClientLib: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-12 02:25:26.923  7046  7046 W RcsClientLib: 	at android.os.Looper.loop(Looper.java:223)
+11-12 02:25:26.923  7046  7046 W RcsClientLib: 	at android.app.ActivityThread.main(ActivityThread.java:7656)
+11-12 02:25:26.923  7046  7046 W RcsClientLib: 	at java.lang.reflect.Method.invoke(Native Method)
+11-12 02:25:26.923  7046  7046 W RcsClientLib: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+11-12 02:25:26.923  7046  7046 W RcsClientLib: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
+11-12 02:25:26.924  7046  7046 I BugleRcsEngine: [2] aeec.disconnect: Disconnecting EventService
+11-12 02:25:26.924  7046  7046 W RcsClientLib: Unexpected error when trying to unbind com.google.android.ims.rcsservice.events.IEvent: Service not registered: aeed@54e6de8
+11-12 02:25:26.924  7046  7046 W RcsClientLib: java.lang.IllegalArgumentException: Service not registered: aeed@54e6de8
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.app.LoadedApk.forgetServiceDispatcher(LoadedApk.java:1757)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.app.ContextImpl.unbindService(ContextImpl.java:1874)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.content.ContextWrapper.unbindService(ContextWrapper.java:792)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at aeec.b(PG:43)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at aeec.disconnect(PG:41)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at com.google.android.rcs.client.events.EventService.disconnect(PG:7)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at koc.b(PG:37)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at kof.a(PG:38)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at riw.a(PG:43)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at rif.run(Unknown Source:1)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at afou.run(PG:3)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.os.Handler.handleCallback(Handler.java:938)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.os.Looper.loop(Looper.java:223)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.app.ActivityThread.main(ActivityThread.java:7656)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at java.lang.reflect.Method.invoke(Native Method)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
+11-12 02:25:26.924  7046  7046 I BugleRcsEngine: [2] aeec.disconnect: Disconnecting ContactsService
+11-12 02:25:26.924  7046  7046 W RcsClientLib: Unexpected error when trying to unbind com.google.android.ims.rcsservice.contacts.IContactsManagement: Service not registered: aeed@bf4baa6
+11-12 02:25:26.924  7046  7046 W RcsClientLib: java.lang.IllegalArgumentException: Service not registered: aeed@bf4baa6
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.app.LoadedApk.forgetServiceDispatcher(LoadedApk.java:1757)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.app.ContextImpl.unbindService(ContextImpl.java:1874)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.content.ContextWrapper.unbindService(ContextWrapper.java:792)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at aeec.b(PG:43)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at aeec.disconnect(PG:41)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at koc.b(PG:38)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at kof.a(PG:38)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at riw.a(PG:43)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at rif.run(Unknown Source:1)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at afou.run(PG:3)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.os.Handler.handleCallback(Handler.java:938)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.os.Looper.loop(Looper.java:223)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.app.ActivityThread.main(ActivityThread.java:7656)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at java.lang.reflect.Method.invoke(Native Method)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
+11-12 02:25:26.924  7046  7046 I BugleRcsEngine: [2] aeec.disconnect: Disconnecting FileTransferService
+11-12 02:25:26.924  7046  7046 W RcsClientLib: Unexpected error when trying to unbind com.google.android.ims.rcsservice.filetransfer.IFileTransfer: Service not registered: aeed@c908094
+11-12 02:25:26.924  7046  7046 W RcsClientLib: java.lang.IllegalArgumentException: Service not registered: aeed@c908094
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.app.LoadedApk.forgetServiceDispatcher(LoadedApk.java:1757)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.app.ContextImpl.unbindService(ContextImpl.java:1874)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.content.ContextWrapper.unbindService(ContextWrapper.java:792)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at aeec.b(PG:43)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at aeec.disconnect(PG:41)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at koc.b(PG:39)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at kof.a(PG:38)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at riw.a(PG:43)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at rif.run(Unknown Source:1)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at afou.run(PG:3)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.os.Handler.handleCallback(Handler.java:938)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.os.Looper.loop(Looper.java:223)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.app.ActivityThread.main(ActivityThread.java:7656)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at java.lang.reflect.Method.invoke(Native Method)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
+11-12 02:25:26.924  7046  7046 I BugleRcsEngine: [2] aeec.disconnect: Disconnecting LocationSharingService
+11-12 02:25:26.924  7046  7046 W RcsClientLib: Unexpected error when trying to unbind com.google.android.ims.rcsservice.locationsharing.ILocationSharing: Service not registered: aeed@e21db32
+11-12 02:25:26.924  7046  7046 W RcsClientLib: java.lang.IllegalArgumentException: Service not registered: aeed@e21db32
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.app.LoadedApk.forgetServiceDispatcher(LoadedApk.java:1757)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.app.ContextImpl.unbindService(ContextImpl.java:1874)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.content.ContextWrapper.unbindService(ContextWrapper.java:792)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at aeec.b(PG:43)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at aeec.disconnect(PG:41)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at koc.b(PG:40)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at kof.a(PG:38)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at riw.a(PG:43)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at rif.run(Unknown Source:1)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at afou.run(PG:3)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.os.Handler.handleCallback(Handler.java:938)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.os.Looper.loop(Looper.java:223)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.app.ActivityThread.main(ActivityThread.java:7656)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at java.lang.reflect.Method.invoke(Native Method)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
+11-12 02:25:26.924  7046  7046 I BugleRcsEngine: [2] aeec.disconnect: Disconnecting ImsConnectionTrackerService
+11-12 02:25:26.924  7046  7046 W RcsClientLib: Unexpected error when trying to unbind com.google.android.ims.rcsservice.ims.IImsConnectionTracker: Service not registered: aeed@73f1200
+11-12 02:25:26.924  7046  7046 W RcsClientLib: java.lang.IllegalArgumentException: Service not registered: aeed@73f1200
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.app.LoadedApk.forgetServiceDispatcher(LoadedApk.java:1757)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.app.ContextImpl.unbindService(ContextImpl.java:1874)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.content.ContextWrapper.unbindService(ContextWrapper.java:792)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at aeec.b(PG:43)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at aeec.disconnect(PG:41)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at koc.b(PG:41)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at kof.a(PG:38)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at riw.a(PG:43)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at rif.run(Unknown Source:1)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at afou.run(PG:3)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.os.Handler.handleCallback(Handler.java:938)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.os.Looper.loop(Looper.java:223)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.app.ActivityThread.main(ActivityThread.java:7656)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at java.lang.reflect.Method.invoke(Native Method)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
+11-12 02:25:26.924  7046  7046 I BugleRcsEngine: [2] aeec.disconnect: Disconnecting RcsProfileService
+11-12 02:25:26.924  7046  7046 W RcsClientLib: Unexpected error when trying to unbind com.google.android.ims.rcsservice.profile.IRcsProfile: Service not registered: aeed@18e787e
+11-12 02:25:26.924  7046  7046 W RcsClientLib: java.lang.IllegalArgumentException: Service not registered: aeed@18e787e
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.app.LoadedApk.forgetServiceDispatcher(LoadedApk.java:1757)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.app.ContextImpl.unbindService(ContextImpl.java:1874)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.content.ContextWrapper.unbindService(ContextWrapper.java:792)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at aeec.b(PG:43)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at aeec.disconnect(PG:41)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at koc.b(PG:42)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at kof.a(PG:38)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at riw.a(PG:43)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at rif.run(Unknown Source:1)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at afou.run(PG:3)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.os.Handler.handleCallback(Handler.java:938)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.os.Looper.loop(Looper.java:223)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.app.ActivityThread.main(ActivityThread.java:7656)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at java.lang.reflect.Method.invoke(Native Method)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
+11-12 02:25:26.924  7046  7046 I BugleRcsEngine: [2] aeec.disconnect: Disconnecting BusinessInfoService
+11-12 02:25:26.924  7046  7046 W RcsClientLib: Unexpected error when trying to unbind com.google.android.ims.rcsservice.businessinfo.IBusinessInfo: Service not registered: aeed@7834e2c
+11-12 02:25:26.924  7046  7046 W RcsClientLib: java.lang.IllegalArgumentException: Service not registered: aeed@7834e2c
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.app.LoadedApk.forgetServiceDispatcher(LoadedApk.java:1757)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.app.ContextImpl.unbindService(ContextImpl.java:1874)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.content.ContextWrapper.unbindService(ContextWrapper.java:792)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at aeec.b(PG:43)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at aeec.disconnect(PG:41)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at koc.b(PG:43)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at kof.a(PG:38)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at riw.a(PG:43)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at rif.run(Unknown Source:1)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at afou.run(PG:3)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.os.Handler.handleCallback(Handler.java:938)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.os.Looper.loop(Looper.java:223)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.app.ActivityThread.main(ActivityThread.java:7656)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at java.lang.reflect.Method.invoke(Native Method)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
+11-12 02:25:26.924  7046  7046 I BugleRcsEngine: [2] aeec.disconnect: Disconnecting RcsMessagingService
+11-12 02:25:26.924  7046  7046 W RcsClientLib: Unexpected error when trying to unbind com.google.android.rcs.client.messaging.IMessaging: Service not registered: aeed@5959e8a
+11-12 02:25:26.924  7046  7046 W RcsClientLib: java.lang.IllegalArgumentException: Service not registered: aeed@5959e8a
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.app.LoadedApk.forgetServiceDispatcher(LoadedApk.java:1757)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.app.ContextImpl.unbindService(ContextImpl.java:1874)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.content.ContextWrapper.unbindService(ContextWrapper.java:792)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at aeec.b(PG:43)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at aeec.disconnect(PG:41)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at koc.b(PG:44)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at kof.a(PG:38)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at riw.a(PG:43)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at rif.run(Unknown Source:1)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at afou.run(PG:3)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.os.Handler.handleCallback(Handler.java:938)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.os.Looper.loop(Looper.java:223)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.app.ActivityThread.main(ActivityThread.java:7656)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at java.lang.reflect.Method.invoke(Native Method)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
+11-12 02:25:26.924  7046  7046 I BugleRcsEngine: [2] aeec.disconnect: Disconnecting TransportControlService
+11-12 02:25:26.924  7046  7046 W RcsClientLib: Unexpected error when trying to unbind com.google.android.ims.rcsservice.transportcontrol.ITransportControl: Service not registered: aeed@6ed2118
+11-12 02:25:26.924  7046  7046 W RcsClientLib: java.lang.IllegalArgumentException: Service not registered: aeed@6ed2118
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.app.LoadedApk.forgetServiceDispatcher(LoadedApk.java:1757)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.app.ContextImpl.unbindService(ContextImpl.java:1874)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.content.ContextWrapper.unbindService(ContextWrapper.java:792)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at aeec.b(PG:43)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at aeec.disconnect(PG:41)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at koc.b(PG:45)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at kof.a(PG:38)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at riw.a(PG:43)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at rif.run(Unknown Source:1)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at afou.run(PG:3)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.os.Handler.handleCallback(Handler.java:938)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.os.Looper.loop(Looper.java:223)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at android.app.ActivityThread.main(ActivityThread.java:7656)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at java.lang.reflect.Method.invoke(Native Method)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:592)
+11-12 02:25:26.924  7046  7046 W RcsClientLib: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:947)
+11-12 02:25:26.924  7046  7046 W BugleRcs: disconnecting from all Rcs Services
+11-12 02:25:26.925  7046  7083 I BugleRcsEngine: [126] aeec.disconnect: Disconnecting SignupService
+11-12 02:25:26.926  7046  7083 I BugleRcs: RcsAvailabilityUtilForProvisioningEngineV2: success updating RCS availability async
+11-12 02:25:26.936  8753  8753 D CompatibilityChangeReporter: Compat change id reported: 119147584; UID 10108; state: DISABLED
+11-12 02:25:26.965  3183  6090 I CarrierServices: [110] eav.a: Received Provisioning Event: [Bugle information (100)]
+11-12 02:25:26.965  3183  6090 I CarrierServices: [110] eav.a: JibeService is running, passing event to provisioning engine.
+11-12 02:25:26.965  3183  6090 I CarrierServices: [110] dqc.a: Handling Provisioning Event: [Bugle information (100)]
+11-12 02:25:26.966  3183  6090 I CarrierServices: [110] dsd.a: RcsAvailabilityManager: Calculating Rcs Availability
+11-12 02:25:26.982  3183  6090 I CarrierServices: [110] dtf.b: Bugle has minimum required RCS permissions: true
+11-12 02:25:26.991  8666  8749 I FA      : App measurement initialized, version: 26016
+11-12 02:25:26.991  8666  8749 I FA      : To enable debug logging run: adb shell setprop log.tag.FA VERBOSE
+11-12 02:25:26.991  8666  8749 I FA      : To enable faster debug mode event logging run:
+11-12 02:25:26.991  8666  8749 I FA      :   adb shell setprop debug.firebase.analytics.app com.google.android.apps.tachyon
+11-12 02:25:27.000  3183  6090 I CarrierServices: [110] dtf.a: Rcs is enabled from user settings: true
+11-12 02:25:27.005  3183  6090 I CarrierServices: [110] dtf.c: Bugle is default SMS app: true
+11-12 02:25:27.007  3183  6090 W CarrierServices: [110] dvk.a: No config URL. RCS will be disabled!
+11-12 02:25:27.009  3183  6090 I CarrierServices: [110] ekb.b: Checking if using CarrierServices.apk is possible. Enabled: true, isAtLeastM: true, runningInsideBugle: false
+11-12 02:25:27.010  3183  6090 I CarrierServices: [110] chn.h: BindingManager: binding and reset P/H Flag stay same
+11-12 02:25:27.010  3183  6090 I CarrierServices: [110] dsd.a: RcsAvailabilityManager: Rcs Availability still DISABLED_VIA_GSERVICES (RCS is disabled for this carrier by Google)
+11-12 02:25:27.125  8618  8618 W AccessibilityNodeInfoDumper: Fetch time: 2ms
+11-12 02:25:27.125   488  1700 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@b7a82c4
+11-12 02:25:27.129  8618  8618 D AndroidRuntime: Shutting down VM
+11-12 02:25:27.614  8852  8852 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 02:25:27.615  8852  8852 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
+11-12 02:25:27.615  8852  8852 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
+11-12 02:25:27.615  8852  8852 I AndroidRuntime: Using default boot image
+11-12 02:25:27.615  8852  8852 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
+11-12 02:25:27.615  8852  8852 I AndroidRuntime: Leaving lock profiling enabled
+11-12 02:25:27.615  8852  8852 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
+11-12 02:25:27.612  8852  8852 W app_process: type=1400 audit(0.0:586): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8299 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-12 02:25:27.612  8852  8852 I chatty  : uid=2000(shell) app_process identical 2 lines
+11-12 02:25:27.612  8852  8852 W app_process: type=1400 audit(0.0:589): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8299 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-12 02:25:27.653  8852  8852 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+11-12 02:25:27.653  8852  8852 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+11-12 02:25:27.656  8852  8852 W app_process: Unexpected CPU variant for X86 using defaults: x86_64
+11-12 02:25:27.656  8852  8852 I app_process: The ClassLoaderContext is a special shared library.
+11-12 02:25:27.662  8852  8852 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+11-12 02:25:27.664  8852  8852 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+11-12 02:25:27.668   326   326 I android.hardware.vibrator-service.example: Vibrator reporting capabilities
+11-12 02:25:27.669   326   326 I android.hardware.vibrator-service.example: Vibrator off
+11-12 02:25:27.669   326   326 I android.hardware.vibrator-service.example: Vibrator perform
+11-12 02:25:27.669   488   953 E VibratorService: Failed to issue command to vibrator HAL. Retrying.
+11-12 02:25:27.669   155   155 I servicemanager: Found android.hardware.vibrator.IVibrator/default in device VINTF manifest.
+11-12 02:25:27.669   326   326 I android.hardware.vibrator-service.example: Vibrator perform
+11-12 02:25:27.669   488   953 E VibratorService: Failed to issue command to vibrator HAL. Retrying.
+11-12 02:25:27.669   155   155 I servicemanager: Found android.hardware.vibrator.IVibrator/default in device VINTF manifest.
+11-12 02:25:27.669   326   326 I android.hardware.vibrator-service.example: Vibrator perform
+11-12 02:25:27.670  8852  8852 D AndroidRuntime: Shutting down VM
+11-12 02:25:27.671   488  1930 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+11-12 02:25:27.671   488  1930 I chatty  : uid=1000(system) Binder:488_13 identical 1 line
+11-12 02:25:27.671   488  1930 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+11-12 02:25:27.671   326  8865 I android.hardware.vibrator-service.example: Starting perform on another thread
+11-12 02:25:27.771   326  8865 I android.hardware.vibrator-service.example: Notifying perform complete
+11-12 02:25:27.771   326   326 I android.hardware.vibrator-service.example: Vibrator off
+11-12 02:25:27.803   488  1700 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+11-12 02:25:30.769   488   953 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+11-12 02:25:32.074  8666  8749 W ConnectionTracker: Exception thrown while unbinding
+11-12 02:25:32.074  8666  8749 W ConnectionTracker: java.lang.IllegalArgumentException: Service not registered: lm@5408694
+11-12 02:25:32.074  8666  8749 W ConnectionTracker: 	at android.app.LoadedApk.forgetServiceDispatcher(LoadedApk.java:1757)
+11-12 02:25:32.074  8666  8749 W ConnectionTracker: 	at android.app.ContextImpl.unbindService(ContextImpl.java:1874)
+11-12 02:25:32.074  8666  8749 W ConnectionTracker: 	at android.content.ContextWrapper.unbindService(ContextWrapper.java:792)
+11-12 02:25:32.074  8666  8749 W ConnectionTracker: 	at ce.b(:com.google.android.gms.dynamite_measurementdynamite@201817056@20.18.17 (040800-0):1)
+11-12 02:25:32.074  8666  8749 W ConnectionTracker: 	at ce.a(:com.google.android.gms.dynamite_measurementdynamite@201817056@20.18.17 (040800-0):5)
+11-12 02:25:32.074  8666  8749 W ConnectionTracker: 	at ln.A(:com.google.android.gms.dynamite_measurementdynamite@201817056@20.18.17 (040800-0):10)
+11-12 02:25:32.074  8666  8749 W ConnectionTracker: 	at ky.a(:com.google.android.gms.dynamite_measurementdynamite@201817056@20.18.17 (040800-0):3)
+11-12 02:25:32.074  8666  8749 W ConnectionTracker: 	at dy.run(:com.google.android.gms.dynamite_measurementdynamite@201817056@20.18.17 (040800-0):2)
+11-12 02:25:32.074  8666  8749 W ConnectionTracker: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:462)
+11-12 02:25:32.074  8666  8749 W ConnectionTracker: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+11-12 02:25:32.074  8666  8749 W ConnectionTracker: 	at iw.run(:com.google.android.gms.dynamite_measurementdynamite@201817056@20.18.17 (040800-0):15)
+11-12 02:25:32.785  1107  6275 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-12 02:25:32.785  1107  6275 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@201817023@20.18.17 (040800-311416286):2)
+11-12 02:25:32.785  1107  6275 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@201817023@20.18.17 (040800-311416286):0)
+11-12 02:25:32.799  1107  6275 W Conscrypt: Could not set socket write timeout: java.net.SocketException: Socket closed
+11-12 02:25:32.799  1107  6275 W Conscrypt: 	at com.google.android.gms.org.conscrypt.Platform.setSocketWriteTimeout(:com.google.android.gms@201817023@20.18.17 (040800-311416286):2)
+11-12 02:25:32.799  1107  6275 W Conscrypt: 	at com.google.android.gms.org.conscrypt.ConscryptFileDescriptorSocket.setSoWriteTimeout(:com.google.android.gms@201817023@20.18.17 (040800-311416286):0)
+11-12 02:25:32.923  1107  6275 I anhw    : Scheduling adaptive one off task with window [14400, 604800] in seconds [CONTEXT service_id=51 ]
+11-12 02:25:34.841  1361  8876 I Vision  : Requesting optional module download of ocr.
+11-12 02:25:34.841  1361  8876 I Vision  : Checking for download completion for 375202 -- ocr
+11-12 02:25:36.144   298   298 D goldfish-address-space: claimShared: Ask to claim region [0x3ffc2d000 0x3ffcf5000]
+11-12 02:25:36.149   156   156 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+11-12 02:25:36.149  8879  8879 I Gralloc4: mapper 4.x is not supported
+11-12 02:25:36.152  8879  8879 D HostConnection: createUnique: call
+11-12 02:25:36.153  8879  8879 D HostConnection: HostConnection::get() New Host Connection established 0x78c4e244e5d0, tid 8879
+11-12 02:25:36.153  8879  8879 D goldfish-address-space: allocate: Ask for block of size 0x100
+11-12 02:25:36.153  8879  8879 D goldfish-address-space: allocate: ioctl allocate returned offset 0x3f9ffc000 size 0x2000
+11-12 02:25:36.164  8879  8879 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-12 02:25:36.227  8881  8881 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 02:25:36.228  8881  8881 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
+11-12 02:25:36.228  8881  8881 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
+11-12 02:25:36.228  8881  8881 I AndroidRuntime: Using default boot image
+11-12 02:25:36.228  8881  8881 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
+11-12 02:25:36.228  8881  8881 I AndroidRuntime: Leaving lock profiling enabled
+11-12 02:25:36.228  8881  8881 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
+11-12 02:25:36.224  8881  8881 W app_process: type=1400 audit(0.0:590): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8299 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-12 02:25:36.224  8881  8881 I chatty  : uid=2000(shell) app_process identical 2 lines
+11-12 02:25:36.224  8881  8881 W app_process: type=1400 audit(0.0:593): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8299 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-12 02:25:36.265  8881  8881 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+11-12 02:25:36.265  8881  8881 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+11-12 02:25:36.268  8881  8881 W app_process: Unexpected CPU variant for X86 using defaults: x86_64
+11-12 02:25:36.268  8881  8881 I app_process: The ClassLoaderContext is a special shared library.
+11-12 02:25:36.273  8881  8881 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+11-12 02:25:36.275  8881  8881 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+11-12 02:25:36.277   488   517 E RemoteAugmentedAutofillService: Bad service name for flags 1048704: com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiAugmentedAutofillService
+11-12 02:25:36.278  8881  8881 D AndroidRuntime: Shutting down VM
+11-12 02:25:36.769   488  1659 I ActivityManager: Killing 6410:com.google.android.webview:webview_service/u0a112 (adj 975): empty #17
+11-12 02:25:36.774   278   278 I Zygote  : Process 6410 exited due to signal 9 (Killed)
+11-12 02:25:36.812   488   527 I libprocessgroup: Successfully killed process cgroup uid 10112 pid 6410 in 42ms
+11-12 02:25:36.928  8666  8873 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10116; state: DISABLED
+11-12 02:25:36.929  6690  6802 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10135; state: DISABLED
+11-12 02:25:36.929  8638  8656 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10122; state: ENABLED
+11-12 02:25:36.930  6612  6627 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10132; state: DISABLED
+11-12 02:25:38.730  8895  8895 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 02:25:38.731  8895  8895 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
+11-12 02:25:38.731  8895  8895 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
+11-12 02:25:38.731  8895  8895 I AndroidRuntime: Using default boot image
+11-12 02:25:38.731  8895  8895 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
+11-12 02:25:38.731  8895  8895 I AndroidRuntime: Leaving lock profiling enabled
+11-12 02:25:38.731  8895  8895 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
+11-12 02:25:38.728  8895  8895 W app_process: type=1400 audit(0.0:594): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8299 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-12 02:25:38.728  8895  8895 I chatty  : uid=2000(shell) app_process identical 2 lines
+11-12 02:25:38.728  8895  8895 W app_process: type=1400 audit(0.0:597): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8299 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-12 02:25:38.763  8895  8895 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+11-12 02:25:38.763  8895  8895 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+11-12 02:25:38.766  8895  8895 W app_process: Unexpected CPU variant for X86 using defaults: x86_64
+11-12 02:25:38.766  8895  8895 I app_process: The ClassLoaderContext is a special shared library.
+11-12 02:25:38.771  8895  8895 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+11-12 02:25:38.773  8895  8895 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+11-12 02:25:38.774   488   517 E RemoteAugmentedAutofillService: Bad service name for flags 1048704: com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiAugmentedAutofillService
+11-12 02:25:38.775  8895  8895 D AndroidRuntime: Shutting down VM
+11-12 02:25:41.227  8909  8909 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 02:25:41.228  8909  8909 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
+11-12 02:25:41.229  8909  8909 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
+11-12 02:25:41.229  8909  8909 I AndroidRuntime: Using default boot image
+11-12 02:25:41.229  8909  8909 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
+11-12 02:25:41.229  8909  8909 I AndroidRuntime: Leaving lock profiling enabled
+11-12 02:25:41.229  8909  8909 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
+11-12 02:25:41.224  8909  8909 W app_process: type=1400 audit(0.0:598): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8299 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-12 02:25:41.224  8909  8909 I chatty  : uid=2000(shell) app_process identical 2 lines
+11-12 02:25:41.224  8909  8909 W app_process: type=1400 audit(0.0:601): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=8299 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+11-12 02:25:41.266  8909  8909 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+11-12 02:25:41.266  8909  8909 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+11-12 02:25:41.268  8909  8909 W app_process: Unexpected CPU variant for X86 using defaults: x86_64
+11-12 02:25:41.269  8909  8909 I app_process: The ClassLoaderContext is a special shared library.
+11-12 02:25:41.274  8909  8909 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+11-12 02:25:41.276  8909  8909 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+11-12 02:25:41.278  8909  8909 D AndroidRuntime: Shutting down VM
+11-12 02:25:41.279   298   298 D goldfish-address-space: claimShared: Ask to claim region [0x3ffc2d000 0x3ffcad000]
+11-12 02:25:41.287   488  1659 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+11-12 02:25:41.287   488  1659 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+11-12 02:25:41.287   488  1659 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+11-12 02:25:41.287   488  1659 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+11-12 02:25:41.287   488  1659 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+11-12 02:25:41.287   488  1659 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+11-12 02:25:41.287   488  1659 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+11-12 02:25:41.287   488  1659 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+11-12 02:25:41.287   488  1659 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+11-12 02:25:41.287   488  1659 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+11-12 02:25:41.287   488  1659 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+11-12 02:25:41.287   488  1659 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+11-12 02:25:41.287   488  1659 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+11-12 02:25:41.287   488  1659 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+11-12 02:25:41.287   488  1659 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+11-12 02:25:41.287   488  1659 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+11-12 02:25:41.287   488  1659 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+11-12 02:25:41.287   488  1659 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+11-12 02:25:41.287   488  1659 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+11-12 02:25:41.287   488  1659 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+11-12 02:25:41.309   298   298 D goldfish-address-space: claimShared: Ask to claim region [0x3ffcad000 0x3ffd75000]
+11-12 02:25:41.312   298   348 D goldfish-address-space: claimShared: Ask to claim region [0x3ffd75000 0x3ffe3d000]
+11-12 02:25:41.318   298   348 D goldfish-address-space: claimShared: Ask to claim region [0x3ffe3d000 0x3fff05000]
+11-12 02:25:41.322   298   348 D goldfish-address-space: claimShared: Ask to claim region [0x3fff05000 0x3fffcd000]
+11-12 02:25:41.326   298   348 D goldfish-address-space: claimShared: Ask to claim region [0x3ff9e5000 0x3ffaad000]
+11-12 02:25:41.278   488   517 E RemoteAugmentedAutofillService: Bad service name for flags 1048704: com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiAugmentedAutofillService
+11-12 02:25:41.336   488   519 I ActivityManager: Killing 6612:com.google.android.syncadapters.contacts/u0a132 (adj 975): empty #17
+11-12 02:25:41.346   335   335 E Layer   : [Surface(name=Task=1)/@0x64efaa4 - animation-leash#0] No local sync point found
+11-12 02:25:41.346   335   335 E Layer   : [Surface(name=Task=1)/@0x64efaa4 - animation-leash#0] No local sync point found
+11-12 02:25:41.346   335   335 E Layer   : [Surface(name=Task=11)/@0x31797ed - animation-leash#0] No local sync point found
+11-12 02:25:41.346   335   335 E Layer   : [Surface(name=Task=11)/@0x31797ed - animation-leash#0] No local sync point found
+11-12 02:25:41.327   298   348 D goldfish-address-space: claimShared: Ask to claim region [0x3ffaad000 0x3ffb75000]
+11-12 02:25:41.360  1647  2153 W ThreadPoolDumper: Queue length for executor EventBus is now 11. Perhaps some tasks are too long, or the pool is too small.
+11-12 02:25:41.363  1647  2184 W LocationOracle: No location history returned by ContextManager
+11-12 02:25:41.372  1107  2722 W GCoreFlp: No location to return for getLastLocation()
+11-12 02:25:41.386  7846  7846 W BillingBroadcastManager: Receiver is not registered.
+11-12 02:25:41.386  7846  7846 W BillingBroadcastManager: Receiver is not registered.
+11-12 02:25:41.396  7846  7846 D HostConnection: HostConnection::get() New Host Connection established 0x79b69939ba10, tid 7846
+11-12 02:25:41.401  7846  7846 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-12 02:25:41.433  1647  1647 I BgTaskExecutorImpl: Starting EXCLUSIVE background task TNG_MINUS_ONE_SYNC.
+11-12 02:25:41.437  1647  2184 E MDD     : DownloadProgressMonitor: Can't find file group for uri: android://com.google.android.googlequicksearchbox/files/sharedminusonemodule/shared/SharedMinusOneData.pb.tmp
+11-12 02:25:41.440  1647  2153 I TngMinusOneSync: Syncing TNG:-1
+11-12 02:25:41.440   277   277 I Zygote  : Process 6612 exited due to signal 9 (Killed)
+11-12 02:25:41.470   488   527 I libprocessgroup: Successfully killed process cgroup uid 10132 pid 6612 in 131ms
+11-12 02:25:41.827   681   681 V ShadeControllerImpl: NotificationShadeWindow: com.android.systemui.statusbar.phone.NotificationShadeWindowView{23aa59f I.E...... ......ID 0,0-320,640} canPanelBeCollapsed(): false
+11-12 02:25:42.170   488  2073 D WifiNl80211Manager: Scan result ready event
+11-12 02:25:42.170   488  2073 D WifiNative: Scan result ready event
+11-12 02:25:42.999   463   463 E wifi_forwarder: qemu_pipe_open_ns:62: Could not connect to the 'pipe:qemud:wififorward' service: Invalid argument
+11-12 02:25:42.999   463   463 E wifi_forwarder: RemoteConnection failed to initialize: RemoteConnection failed to open pipe
+11-12 02:25:43.079   457   457 E netmgr  : qemu_pipe_open_ns:62: Could not connect to the 'pipe:qemud:network' service: Invalid argument
+11-12 02:25:43.079   457   457 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+11-12 02:25:43.332  7846  8084 I FA      : Application backgrounded at: timestamp_millis: 1794479141308

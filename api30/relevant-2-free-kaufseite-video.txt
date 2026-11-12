@@ -1,0 +1,70 @@
+11-12 02:21:20.777  6775  6775 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 02:21:20.791  6775  6775 I AndroidRuntime: Using default boot image
+11-12 02:21:20.791  6775  6775 I AndroidRuntime: Leaving lock profiling enabled
+11-12 02:21:20.923  6775  6775 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 02:21:22.024  6775  6775 D AndroidRuntime: Shutting down VM
+11-12 02:21:23.043  6814  6814 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 02:21:23.051  6814  6814 I AndroidRuntime: Using default boot image
+11-12 02:21:23.051  6814  6814 I AndroidRuntime: Leaving lock profiling enabled
+11-12 02:21:23.108  6814  6814 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 02:21:24.680  6814  6814 D AndroidRuntime: Shutting down VM
+11-12 02:21:25.327  6842  6842 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 02:21:25.344  6842  6842 I AndroidRuntime: Using default boot image
+11-12 02:21:25.345  6842  6842 I AndroidRuntime: Leaving lock profiling enabled
+11-12 02:21:25.467  6842  6842 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+11-12 02:21:25.473  6842  6842 D AndroidRuntime: Shutting down VM
+11-12 02:21:28.973  6857  6857 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 02:21:28.991  6857  6857 I AndroidRuntime: Using default boot image
+11-12 02:21:28.991  6857  6857 I AndroidRuntime: Leaving lock profiling enabled
+11-12 02:21:29.049  6857  6857 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 02:21:30.605  6857  6857 D AndroidRuntime: Shutting down VM
+11-12 02:21:31.118  6874  6874 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 02:21:31.119  6874  6874 I AndroidRuntime: Using default boot image
+11-12 02:21:31.119  6874  6874 I AndroidRuntime: Leaving lock profiling enabled
+11-12 02:21:31.168  6874  6874 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+11-12 02:21:31.172  6874  6874 D AndroidRuntime: Shutting down VM
+11-12 02:21:34.697  6899  6899 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 02:21:34.698  6899  6899 I AndroidRuntime: Using default boot image
+11-12 02:21:34.698  6899  6899 I AndroidRuntime: Leaving lock profiling enabled
+11-12 02:21:34.740  6899  6899 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 02:21:36.270  6899  6899 D AndroidRuntime: Shutting down VM
+11-12 02:21:36.736  6924  6924 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 02:21:36.737  6924  6924 I AndroidRuntime: Using default boot image
+11-12 02:21:36.737  6924  6924 I AndroidRuntime: Leaving lock profiling enabled
+11-12 02:21:36.779  6924  6924 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+11-12 02:21:37.216  6924  6924 D AndroidRuntime: Shutting down VM
+11-12 02:21:38.674  6938  6938 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 02:21:38.675  6938  6938 I AndroidRuntime: Using default boot image
+11-12 02:21:38.675  6938  6938 I AndroidRuntime: Leaving lock profiling enabled
+11-12 02:21:38.722  6938  6938 D AndroidRuntime: Calling main entry com.android.commands.uiautomator.Launcher
+11-12 02:21:40.256  6938  6938 D AndroidRuntime: Shutting down VM
+11-12 02:21:40.725  6961  6961 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 02:21:40.726  6961  6961 I AndroidRuntime: Using default boot image
+11-12 02:21:40.726  6961  6961 I AndroidRuntime: Leaving lock profiling enabled
+11-12 02:21:40.773  6961  6961 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+11-12 02:21:40.778  6961  6961 D AndroidRuntime: Shutting down VM
+11-12 02:21:40.802  4175  6976 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 254730000 but found 201817023
+11-12 02:21:43.034   488  1930 I ActivityTaskManager: START u0 {cmp=com.thinkube.feierabendrechner/com.google.android.gms.ads.AdActivity (has extras)} from uid 10154
+11-12 02:21:43.287   488  1930 I MediaFocusControl: requestAudioFocus() from uid/pid 10154/4175 clientId=android.media.AudioManager@3d5a18eorg.chromium.content.browser.AudioFocusDelegate@b033daf callingPack=com.thinkube.feierabendrechner req=1 flags=0x0 sdk=36
+11-12 02:21:43.322   488   524 I ActivityTaskManager: Displayed com.thinkube.feierabendrechner/com.google.android.gms.ads.AdActivity: +330ms
+11-12 02:21:58.919   488  2076 I MediaFocusControl: requestAudioFocus() from uid/pid 10154/4175 clientId=android.media.AudioManager@3d5a18eorg.chromium.content.browser.AudioFocusDelegate@b033daf callingPack=com.thinkube.feierabendrechner req=1 flags=0x0 sdk=36
+11-12 02:21:59.478  4175  7043 W GooglePlayServicesUtil: Google Play services out of date for com.thinkube.feierabendrechner.  Requires 254730000 but found 201817023
+11-12 02:22:00.673  7090  7090 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 02:22:00.707  7090  7090 I AndroidRuntime: Using default boot image
+11-12 02:22:00.707  7090  7090 I AndroidRuntime: Leaving lock profiling enabled
+11-12 02:22:01.060  7090  7090 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+11-12 02:22:01.144  7090  7090 D AndroidRuntime: Shutting down VM
+11-12 02:22:01.158  7090  7121 I AndroidRuntime: NOTE: attach of thread 'Binder:7090_2' failed
+11-12 02:22:03.303  4175  4207 I chatty  : uid=10154(com.thinkube.feierabendrechner) RenderThread identical 2 lines
+11-12 02:22:03.944  7126  7126 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 02:22:03.950  7126  7126 I AndroidRuntime: Using default boot image
+11-12 02:22:03.950  7126  7126 I AndroidRuntime: Leaving lock profiling enabled
+11-12 02:22:04.205  7126  7126 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+11-12 02:22:04.267  7126  7126 D AndroidRuntime: Shutting down VM
+11-12 02:22:06.866  7173  7173 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-12 02:22:06.875  7173  7173 I AndroidRuntime: Using default boot image
+11-12 02:22:06.875  7173  7173 I AndroidRuntime: Leaving lock profiling enabled
+11-12 02:22:07.035  7173  7173 D AndroidRuntime: Calling main entry com.android.commands.input.Input
+11-12 02:22:07.041  7173  7173 D AndroidRuntime: Shutting down VM
+11-12 02:22:07.379   488   514 W ActivityTaskManager: Duplicate finish request for r=ActivityRecord{8fe0b8c u0 com.thinkube.feierabendrechner/com.google.android.gms.ads.AdActivity t9 f}}
+11-12 02:22:07.392  4175  4175 I chatty  : uid=10154(com.thinkube.feierabendrechner) identical 2 lines
